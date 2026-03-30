@@ -3,7 +3,10 @@
     "company": "Company",
     "solutions": "Solutions",
     "about": "About",
-    "news": "News"
+    "news": "News",
+    "compliance": "Compliance",
+    "resources": "Resources",
+    "contact": "Contact Us"
   },
   "home": {
     "hero": {
@@ -535,6 +538,178 @@
       "subsidiary": "US Subsidiary of Hicare Co., Ltd.",
       "location": "California, United States",
       "emailLabel": "Email: "
+    }
+  },
+  "compliance": {
+    "hero": {
+      "tag": "SECURITY & TRUST",
+      "title": "Your Data. Our Highest Priority.",
+      "desc": "HicareNet maintains the most rigorous security standards in healthcare IT — HIPAA compliant, ISO 27001 and ISO 27701 certified — ensuring your patient data is protected at every layer."
+    },
+    "certs": {
+      "label": "CERTIFIED STANDARDS",
+      "title": "Industry-Leading Certifications",
+      "desc": "Multiple independent certifications validate our commitment to security and privacy across all operations."
+    },
+    "cert1": { "title": "HIPAA Compliant", "desc": "Full compliance with HIPAA Privacy, Security, and Breach Notification Rules. BAA available for all covered entities." },
+    "cert2": { "title": "ISO 27001", "desc": "Information Security Management System certified to international ISO 27001 standards. Last audited December 2025." },
+    "cert3": { "title": "ISO 27701", "desc": "Privacy Information Management System certified, extending ISO 27001 with GDPR and CCPA-aligned privacy controls." },
+    "cert4": { "title": "FDA 510(k)", "desc": "US FDA Class 2 medical device clearance (HX-461) demonstrating rigorous regulatory compliance and product safety." },
+    "hipaa": {
+      "tag": "HEALTHCARE STANDARD",
+      "title": "HIPAA Compliance",
+      "desc": "HicareNet maintains full compliance with the Health Insurance Portability and Accountability Act, ensuring the highest standards of protection for protected health information (PHI) across all systems and processes.",
+      "f1": "End-to-end PHI encryption with strict role-based access controls",
+      "f2": "Business Associate Agreements (BAA) available for all covered entities",
+      "f3": "Mandatory staff training and annual HIPAA recertification",
+      "f4": "Documented breach notification procedures and incident response plan"
+    },
+    "iso27001": {
+      "tag": "INFORMATION SECURITY",
+      "title": "ISO 27001 Certified",
+      "desc": "Our ISMS is certified to ISO 27001, demonstrating systematic management of sensitive information. Annual independent audit by accredited certification body.",
+      "audit": "Last audit: December 2025"
+    },
+    "iso27701": {
+      "tag": "PRIVACY MANAGEMENT",
+      "title": "ISO 27701 Certified",
+      "desc": "Our PIMS extends ISO 27001 with specific privacy controls, supporting GDPR, CCPA and global privacy regulations. Data subject rights fully supported.",
+      "audit": "Last audit: December 2025"
+    },
+    "security": {
+      "label": "TECHNICAL SAFEGUARDS",
+      "title": "Data Security Practices",
+      "desc": "Multi-layered security controls protect your data at every level of our infrastructure.",
+      "enc": { "title": "Encryption", "desc": "AES-256 encryption at rest and TLS 1.3 for all data in transit. All PHI is encrypted end-to-end with regularly rotated keys." },
+      "access": { "title": "Access Control", "desc": "Role-based access control (RBAC) with mandatory multi-factor authentication. Comprehensive audit logs track all data access events." },
+      "infra": { "title": "Infrastructure", "desc": "HIPAA-eligible cloud infrastructure with SOC 2 Type II compliance. Physically secure data centers with 99.99% uptime SLA." },
+      "monitor": { "title": "24/7 Monitoring", "desc": "SIEM integration with automated intrusion detection and real-time alerting for anomalous activity patterns." },
+      "backup": { "title": "Backup & Recovery", "desc": "Automated daily backups with geo-redundant storage. Point-in-time recovery and tested disaster recovery plans." },
+      "incident": { "title": "Incident Response", "desc": "24-hour breach notification commitment. Documented escalation paths and regular tabletop exercises." }
+    },
+    "faq": {
+      "label": "COMMON QUESTIONS",
+      "title": "Compliance FAQ",
+      "q1": "Can HicareNet sign a Business Associate Agreement (BAA)?",
+      "a1": "Yes. We provide a signed BAA to all covered entities based on the HHS model agreement, reviewed annually by our legal and compliance teams.",
+      "q2": "Can we review audit reports?",
+      "a2": "Upon signing an NDA, we can share our ISO 27001 and ISO 27701 certification reports, SOC 2 Type II report, and the most recent penetration test summary.",
+      "q3": "Where is patient data stored?",
+      "a3": "All patient data is stored within the United States on HIPAA-eligible cloud infrastructure with geo-redundant data centers. Data never leaves US jurisdiction.",
+      "q4": "How does HicareNet handle breach notification?",
+      "a4": "We commit to notifying affected covered entities within 24 hours of a confirmed PHI breach, with a detailed incident report and remediation steps."
+    },
+    "cta": {
+      "title": "Need Our Compliance Documentation?",
+      "desc": "Request certifications, audit reports, or schedule a security review with our compliance team.",
+      "cta": "Request Compliance Report"
+    }
+  },
+  "contact": {
+    "hero": {
+      "tag": "GET IN TOUCH",
+      "title": "Let's Transform Patient Care Together.",
+      "desc": "Whether you're ready to deploy RPM, exploring CCM options, or need compliance documentation — our team is here to help you take the next step."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "We'll respond within one business day.",
+      "name": "Full Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email",
+      "emailPlaceholder": "john@hospital.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(555) 123-4567",
+      "org": "Organization",
+      "orgPlaceholder": "Your organization",
+      "providerType": "Provider Type",
+      "providerSelect": "Select provider type",
+      "providerHospital": "Hospital",
+      "providerClinic": "Clinic / Practice",
+      "providerACO": "ACO",
+      "providerSNF": "SNF / Long-term Care",
+      "providerOther": "Other",
+      "interest": "Areas of Interest",
+      "interestRPM": "RPM",
+      "interestCCM": "CCM",
+      "interestAWV": "AWV",
+      "interestVBC": "VBC",
+      "interestFHIR": "FHIR Integration",
+      "interestCompliance": "Compliance Docs",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your needs and how we can help...",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Quick Contact",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "hoursLabel": "Business Hours",
+      "hoursValue": "Mon–Fri, 8 AM – 6 PM PT",
+      "supportLabel": "Urgent Support",
+      "supportNote": "On-call team responds within 2 hours"
+    },
+    "offices": {
+      "title": "Offices",
+      "us": { "name": "US Operations", "address": "California, United States\nHicare.net Inc." },
+      "hq": { "name": "Global R&D HQ", "address": "Digital District, Seoul\nRepublic of Korea" }
+    },
+    "cta": {
+      "title": "Start with a 30-Min Discovery Call",
+      "stat1": "Clinics Served",
+      "stat2": "Patients Monitored",
+      "desc": "See how HicareNet's RPM and CCM platform fits your clinical workflow — with no commitment required.",
+      "btn": "Schedule a Demo"
+    }
+  },
+  "resources": {
+    "hero": {
+      "tag": "Featured Article",
+      "title": "The Future of Remote Patient Monitoring: 2026 Trends",
+      "desc": "Explore how AI-driven analytics, wearable devices, and evolving CMS regulations are reshaping the RPM landscape.",
+      "cta": "Read Full Article"
+    },
+    "articles": {
+      "title": "Latest Articles",
+      "count": "6 articles",
+      "more": "View More Articles"
+    },
+    "filter": {
+      "all": "All Topics",
+      "rpm": "RPM",
+      "ccm": "CCM",
+      "awv": "AWV",
+      "vbc": "VBC",
+      "industry": "Industry"
+    },
+    "read_article": "Read Article",
+    "cards": {
+      "c1": { "tag": "RPM", "title": "5 FDA-Cleared RPM Devices That Are Changing Patient Outcomes", "desc": "A comprehensive review of the latest remote monitoring devices and their clinical impact on chronic disease management programs." },
+      "c2": { "tag": "CCM", "title": "Multilingual Patient Engagement: Breaking Language Barriers in CCM", "desc": "How supporting 7+ languages in chronic care management improves patient adherence and health outcomes." },
+      "c3": { "tag": "VBC", "title": "Navigating CMS Value-Based Care Models in 2026" },
+      "c4": { "tag": "AWV", "title": "Maximizing Annual Wellness Visit Completion Rates" },
+      "c5": { "tag": "Industry", "title": "FHIR R4 Interoperability: What Providers Need to Know" },
+      "c6": { "tag": "RPM", "title": "RPM Billing Guide: CPT Codes and Reimbursement Best Practices", "desc": "A detailed walkthrough of RPM-related CPT codes, documentation requirements, and strategies to maximize reimbursement." }
+    },
+    "faq": {
+      "label": "COMMON QUESTIONS",
+      "title": "FAQ",
+      "desc": "Quick answers to the most common questions about our RPM and CCM platform.",
+      "q1": "What devices are compatible with the Hicare Hub platform?",
+      "a1": "Hicare Hub supports 100+ FDA-cleared device models including blood pressure monitors, pulse oximeters, weight scales, and glucometers via Bluetooth and cellular connections.",
+      "q2": "How quickly can we onboard a new practice?",
+      "a2": "Most practices are fully onboarded within 2–4 weeks, including device provisioning, EHR integration, staff training, and patient enrollment.",
+      "q3": "Does HicareNet support HL7 FHIR integration?",
+      "a3": "Yes. Our platform natively supports HL7 FHIR R4 with bi-directional data exchange for Epic, Cerner, and athenahealth. Full FHIR-based EMR integration is planned for H1 2026.",
+      "q4": "What languages does the patient app support?",
+      "a4": "The Hicare patient app supports 7 languages: English, Spanish, Korean, Chinese (Simplified), Vietnamese, Tagalog, and Portuguese."
+    },
+    "newsletter": {
+      "title": "Stay Ahead of Healthcare Innovation",
+      "desc": "Subscribe to our monthly digest for exclusive insights into medical technology trends and clinical best practices.",
+      "placeholder": "Enter your business email",
+      "submit": "Subscribe",
+      "privacy": "By subscribing, you agree to our Privacy Policy"
     }
   },
   "article": {

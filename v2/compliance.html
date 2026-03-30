@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security & Compliance | HicareNet</title>
+  <meta name="description" content="HicareNet is HIPAA compliant and ISO 27001/27701 certified. Learn about our data security infrastructure and compliance framework.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1A8FD8">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HicareNet">
+  <meta property="og:title" content="Security &amp; Compliance | HicareNet">
+  <meta property="og:description" content="HicareNet is HIPAA compliant and ISO 27001/27701 certified. Learn about our data security infrastructure and compliance framework.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Analytics (replace GA_MEASUREMENT_ID with actual ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="../assets/images/hicare-logo.png" alt="HicareNet" class="nav__logo-img" height="30"></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link" data-i18n="nav.company">Company</a></li>
+        <li><a href="solutions.html" class="nav__link" data-i18n="nav.solutions">Solutions</a></li>
+        <li><a href="about.html" class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="news.html" class="nav__link" data-i18n="nav.news">News</a></li>
+        <li><a href="compliance.html" class="nav__link nav__link--active" data-i18n="nav.compliance">Compliance</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
+        <a href="contact.html" class="btn btn--primary" style="padding: var(--space-2) var(--space-5); font-size: 0.875rem;" data-i18n="nav.contact">Contact Us</a>
+        <button class="nav__menu-btn" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav__link" data-i18n="nav.company">Company</a>
+      <a href="solutions.html" class="nav__link" data-i18n="nav.solutions">Solutions</a>
+      <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+      <a href="news.html" class="nav__link" data-i18n="nav.news">News</a>
+      <a href="compliance.html" class="nav__link nav__link--active" data-i18n="nav.compliance">Compliance</a>
+      <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact Us</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero hero--medium" aria-label="Compliance Hero">
+      <div class="hero__bg">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0U6rFZVBwRQrg87quK5l_b6ruciHFG8jshc9XxNe9r8qK-99wzGIRpLjA254dntr7GEPZFFSoCfK9TMYACsGJ5xnf_Ci4aeKKvqlM2K9nY1pdFZKdMkT-zixSMFd1F5fnhwjYSFfH6hCqre0735cYwmQ1usxogLL4Kbmm2ANjSrU67c_0QfGR5IyRMqG0hYERT7bGv17xgFMbvAcq6xq8ZwTJPoLqgtvRRHV8gyeg0d3k8m1MfjZjGbPiQ8GStW9R1FgkU4dmWcU" alt="Security Background" style="opacity: 0.15; transform: scale(1.05);" loading="eager">
+        <div class="hero__overlay hero__overlay--gradient-right-light"></div>
+      </div>
+      <div class="hero__content">
+        <div style="max-width: 42rem;">
+          <span class="label-md text-primary" style="letter-spacing: 0.2em; margin-bottom: var(--space-4); display: block;" data-i18n="compliance.hero.tag">SECURITY & TRUST</span>
+          <h1 class="hero__title hero__title--dark" data-i18n="compliance.hero.title">
+            Your Data.<br><span class="highlight-secondary">Our Highest Priority.</span>
+          </h1>
+          <p class="hero__desc hero__desc--on-light" data-i18n="compliance.hero.desc">
+            HicareNet maintains the most rigorous security standards in healthcare IT — HIPAA compliant, ISO 27001 and ISO 27701 certified — ensuring your patient data is protected at every layer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification Badges -->
+    <section class="section-lg bg-white" aria-label="Certifications Overview">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-20);" data-animate="fade-up">
+          <span class="label-md" style="color: var(--secondary-container); margin-bottom: var(--space-2); display: block;" data-i18n="compliance.certs.label">CERTIFIED STANDARDS</span>
+          <h2 class="headline-lg text-primary" data-i18n="compliance.certs.title">Industry-Leading Certifications</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto" style="margin-top: var(--space-4);" data-i18n="compliance.certs.desc">Multiple independent certifications validate our commitment to security and privacy across all operations.</p>
+        </div>
+
+        <div class="grid grid-4" data-animate="stagger">
+          <div class="expertise-card" style="text-align: center;">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1; color: var(--primary);">verified_user</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.cert1.title">HIPAA Compliant</h4>
+            <p class="expertise-card__text" data-i18n="compliance.cert1.desc">Full compliance with HIPAA Privacy, Security, and Breach Notification Rules. BAA available for all covered entities.</p>
+          </div>
+          <div class="expertise-card" style="text-align: center;">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1; color: var(--primary);">lock</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.cert2.title">ISO 27001</h4>
+            <p class="expertise-card__text" data-i18n="compliance.cert2.desc">Information Security Management System certified to international ISO 27001 standards. Last audited December 2025.</p>
+          </div>
+          <div class="expertise-card" style="text-align: center;">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1; color: var(--primary);">privacy_tip</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.cert3.title">ISO 27701</h4>
+            <p class="expertise-card__text" data-i18n="compliance.cert3.desc">Privacy Information Management System certified, extending ISO 27001 with GDPR and CCPA-aligned privacy controls.</p>
+          </div>
+          <div class="expertise-card" style="text-align: center;">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1; color: var(--primary);">health_and_safety</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.cert4.title">FDA 510(k)</h4>
+            <p class="expertise-card__text" data-i18n="compliance.cert4.desc">US FDA Class 2 medical device clearance (HX-461) demonstrating rigorous regulatory compliance and product safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIPAA Detail -->
+    <section class="section-lg bg-surface-low" aria-label="HIPAA Compliance" id="hipaa">
+      <div class="container">
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-16); align-items: center;">
+          <div style="flex: 1; min-width: 300px;" data-animate="slide-left">
+            <div style="width: 5rem; height: 5rem; background: var(--primary-container); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-8);">
+              <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--on-primary-container); font-variation-settings: 'FILL' 1;">verified_user</span>
+            </div>
+            <span class="label-md" style="color: var(--secondary-container); display: block; margin-bottom: var(--space-2);" data-i18n="compliance.hipaa.tag">HEALTHCARE STANDARD</span>
+            <h2 class="headline-lg text-primary" style="margin-bottom: var(--space-6);" data-i18n="compliance.hipaa.title">HIPAA Compliance</h2>
+            <p style="color: var(--on-surface-variant); font-size: 1.0625rem; line-height: 1.7; margin-bottom: var(--space-8);" data-i18n="compliance.hipaa.desc">
+              HicareNet maintains full compliance with the Health Insurance Portability and Accountability Act, ensuring the highest standards of protection for protected health information (PHI) across all systems and processes.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: var(--space-4); list-style: none; padding: 0;">
+              <li style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                <span class="material-symbols-outlined" style="color: var(--secondary-container); font-size: 1.25rem; margin-top: 2px; flex-shrink: 0; font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span style="color: var(--on-surface-variant);" data-i18n="compliance.hipaa.f1">End-to-end PHI encryption with strict role-based access controls</span>
+              </li>
+              <li style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                <span class="material-symbols-outlined" style="color: var(--secondary-container); font-size: 1.25rem; margin-top: 2px; flex-shrink: 0; font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span style="color: var(--on-surface-variant);" data-i18n="compliance.hipaa.f2">Business Associate Agreements (BAA) available for all covered entities</span>
+              </li>
+              <li style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                <span class="material-symbols-outlined" style="color: var(--secondary-container); font-size: 1.25rem; margin-top: 2px; flex-shrink: 0; font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span style="color: var(--on-surface-variant);" data-i18n="compliance.hipaa.f3">Mandatory staff training and annual HIPAA recertification</span>
+              </li>
+              <li style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                <span class="material-symbols-outlined" style="color: var(--secondary-container); font-size: 1.25rem; margin-top: 2px; flex-shrink: 0; font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span style="color: var(--on-surface-variant);" data-i18n="compliance.hipaa.f4">Documented breach notification procedures and incident response plan</span>
+              </li>
+            </ul>
+          </div>
+          <div style="flex: 1; min-width: 300px;" data-animate="slide-right">
+            <!-- ISO 27001 -->
+            <div id="iso27001" style="background: var(--surface); border-radius: var(--radius-xl); padding: var(--space-10); border: 1px solid rgba(199,197,212,0.3); margin-bottom: var(--space-6);">
+              <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                <span class="material-symbols-outlined" style="font-size: 2rem; color: var(--primary); font-variation-settings: 'FILL' 1;">lock</span>
+                <div>
+                  <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--on-surface-variant); font-weight: 700;" data-i18n="compliance.iso27001.tag">INFORMATION SECURITY</p>
+                  <h3 style="font-family: var(--font-headline); font-weight: 800; color: var(--primary);" data-i18n="compliance.iso27001.title">ISO 27001 Certified</h3>
+                </div>
+              </div>
+              <p style="color: var(--on-surface-variant); font-size: 0.9375rem; line-height: 1.6; margin-bottom: var(--space-4);" data-i18n="compliance.iso27001.desc">
+                Our ISMS is certified to ISO 27001, demonstrating systematic management of sensitive information. Annual independent audit by accredited certification body.
+              </p>
+              <p style="font-size: 0.8125rem; color: var(--primary); font-weight: 600;" data-i18n="compliance.iso27001.audit">Last audit: December 2025</p>
+            </div>
+            <!-- ISO 27701 -->
+            <div id="iso27701" style="background: var(--surface); border-radius: var(--radius-xl); padding: var(--space-10); border: 1px solid rgba(199,197,212,0.3);">
+              <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                <span class="material-symbols-outlined" style="font-size: 2rem; color: var(--primary); font-variation-settings: 'FILL' 1;">privacy_tip</span>
+                <div>
+                  <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--on-surface-variant); font-weight: 700;" data-i18n="compliance.iso27701.tag">PRIVACY MANAGEMENT</p>
+                  <h3 style="font-family: var(--font-headline); font-weight: 800; color: var(--primary);" data-i18n="compliance.iso27701.title">ISO 27701 Certified</h3>
+                </div>
+              </div>
+              <p style="color: var(--on-surface-variant); font-size: 0.9375rem; line-height: 1.6; margin-bottom: var(--space-4);" data-i18n="compliance.iso27701.desc">
+                Our PIMS extends ISO 27001 with specific privacy controls, supporting GDPR, CCPA and global privacy regulations. Data subject rights fully supported.
+              </p>
+              <p style="font-size: 0.8125rem; color: var(--primary); font-weight: 600;" data-i18n="compliance.iso27701.audit">Last audit: December 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security Practices -->
+    <section class="section-lg bg-white" aria-label="Security Practices">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-20);" data-animate="fade-up">
+          <span class="label-md" style="color: var(--secondary-container); margin-bottom: var(--space-2); display: block;" data-i18n="compliance.security.label">TECHNICAL SAFEGUARDS</span>
+          <h2 class="headline-lg text-primary" data-i18n="compliance.security.title">Data Security Practices</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto" style="margin-top: var(--space-4);" data-i18n="compliance.security.desc">Multi-layered security controls protect your data at every level of our infrastructure.</p>
+        </div>
+        <div class="grid grid-4" data-animate="stagger">
+          <div class="expertise-card">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1;">encrypted</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.security.enc.title">Encryption</h4>
+            <p class="expertise-card__text" data-i18n="compliance.security.enc.desc">AES-256 encryption at rest and TLS 1.3 for all data in transit. All PHI is encrypted end-to-end with regularly rotated keys.</p>
+          </div>
+          <div class="expertise-card">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1;">manage_accounts</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.security.access.title">Access Control</h4>
+            <p class="expertise-card__text" data-i18n="compliance.security.access.desc">Role-based access control (RBAC) with mandatory multi-factor authentication. Comprehensive audit logs track all data access events.</p>
+          </div>
+          <div class="expertise-card">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.security.infra.title">Infrastructure</h4>
+            <p class="expertise-card__text" data-i18n="compliance.security.infra.desc">HIPAA-eligible cloud infrastructure with SOC 2 Type II compliance. Physically secure data centers with 99.99% uptime SLA.</p>
+          </div>
+          <div class="expertise-card">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.security.monitor.title">24/7 Monitoring</h4>
+            <p class="expertise-card__text" data-i18n="compliance.security.monitor.desc">SIEM integration with automated intrusion detection and real-time alerting for anomalous activity patterns.</p>
+          </div>
+          <div class="expertise-card">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1;">backup</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.security.backup.title">Backup & Recovery</h4>
+            <p class="expertise-card__text" data-i18n="compliance.security.backup.desc">Automated daily backups with geo-redundant storage. Point-in-time recovery and tested disaster recovery plans.</p>
+          </div>
+          <div class="expertise-card">
+            <span class="material-symbols-outlined expertise-card__icon" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
+            <h4 class="expertise-card__title" data-i18n="compliance.security.incident.title">Incident Response</h4>
+            <p class="expertise-card__text" data-i18n="compliance.security.incident.desc">24-hour breach notification commitment. Documented escalation paths and regular tabletop exercises.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-lg bg-surface-low" aria-label="Compliance FAQ">
+      <div class="container" style="max-width: 48rem; margin-inline: auto;">
+        <div class="text-center" style="margin-bottom: var(--space-16);" data-animate="fade-up">
+          <span class="label-md" style="color: var(--secondary-container); margin-bottom: var(--space-2); display: block;" data-i18n="compliance.faq.label">COMMON QUESTIONS</span>
+          <h2 class="headline-lg text-primary" data-i18n="compliance.faq.title">Compliance FAQ</h2>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: var(--space-4);" data-animate="fade-up">
+          <details style="background: var(--surface); border-radius: var(--radius-xl); border: 1px solid rgba(199,197,212,0.3); overflow: hidden;">
+            <summary style="padding: var(--space-6) var(--space-8); cursor: pointer; font-weight: 600; color: var(--on-surface); list-style: none; display: flex; justify-content: space-between; align-items: center;" data-i18n="compliance.faq.q1">Can HicareNet sign a Business Associate Agreement (BAA)?</summary>
+            <div style="padding: 0 var(--space-8) var(--space-6); color: var(--on-surface-variant); line-height: 1.7;" data-i18n="compliance.faq.a1">Yes. We provide a signed BAA to all covered entities based on the HHS model agreement, reviewed annually by our legal and compliance teams.</div>
+          </details>
+          <details style="background: var(--surface); border-radius: var(--radius-xl); border: 1px solid rgba(199,197,212,0.3); overflow: hidden;">
+            <summary style="padding: var(--space-6) var(--space-8); cursor: pointer; font-weight: 600; color: var(--on-surface); list-style: none; display: flex; justify-content: space-between; align-items: center;" data-i18n="compliance.faq.q2">Can we review audit reports?</summary>
+            <div style="padding: 0 var(--space-8) var(--space-6); color: var(--on-surface-variant); line-height: 1.7;" data-i18n="compliance.faq.a2">Upon signing an NDA, we can share our ISO 27001 and ISO 27701 certification reports, SOC 2 Type II report, and the most recent penetration test summary.</div>
+          </details>
+          <details style="background: var(--surface); border-radius: var(--radius-xl); border: 1px solid rgba(199,197,212,0.3); overflow: hidden;">
+            <summary style="padding: var(--space-6) var(--space-8); cursor: pointer; font-weight: 600; color: var(--on-surface); list-style: none; display: flex; justify-content: space-between; align-items: center;" data-i18n="compliance.faq.q3">Where is patient data stored?</summary>
+            <div style="padding: 0 var(--space-8) var(--space-6); color: var(--on-surface-variant); line-height: 1.7;" data-i18n="compliance.faq.a3">All patient data is stored within the United States on HIPAA-eligible cloud infrastructure with geo-redundant data centers. Data never leaves US jurisdiction.</div>
+          </details>
+          <details style="background: var(--surface); border-radius: var(--radius-xl); border: 1px solid rgba(199,197,212,0.3); overflow: hidden;">
+            <summary style="padding: var(--space-6) var(--space-8); cursor: pointer; font-weight: 600; color: var(--on-surface); list-style: none; display: flex; justify-content: space-between; align-items: center;" data-i18n="compliance.faq.q4">How does HicareNet handle breach notification?</summary>
+            <div style="padding: 0 var(--space-8) var(--space-6); color: var(--on-surface-variant); line-height: 1.7;" data-i18n="compliance.faq.a4">We commit to notifying affected covered entities within 24 hours of a confirmed PHI breach, with a detailed incident report and remediation steps.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-lg bg-surface" aria-label="Compliance CTA">
+      <div class="container" data-animate="fade-up">
+        <div class="cta-banner">
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-12); align-items: center; justify-content: space-between;">
+            <div style="flex: 1; min-width: 280px;">
+              <h2 class="headline-lg" style="color: var(--on-primary); margin-bottom: var(--space-4);" data-i18n="compliance.cta.title">Need Our Compliance Documentation?</h2>
+              <p style="color: var(--on-primary-container); font-size: 1.0625rem; line-height: 1.7;" data-i18n="compliance.cta.desc">Request certifications, audit reports, or schedule a security review with our compliance team.</p>
+            </div>
+            <div style="display: flex; gap: var(--space-4); flex-shrink: 0;">
+              <a href="contact.html" class="btn btn--primary" data-i18n="compliance.cta.cta">Request Compliance Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand"><img src="../assets/images/hicare-logo.png" alt="HicareNet" class="footer__logo-img" height="24"></div>
+          <p class="footer__desc" data-i18n="footer.desc">A global pioneer in medical IT convergence. Our California subsidiary, Hicare.net Inc, brings world-class RPM solutions to the US market.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col1.title">US Operations</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col1.link1">RPM Services</a></li>
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col1.link2">CCM Management</a></li>
+            <li><a href="compliance.html" class="footer__link nav__link--active" data-i18n="footer.col1.link3">HIPAA Compliance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col2.title">R&D & Tech</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col2.link1">HL7 FHIR Standards</a></li>
+            <li><a href="compliance.html" class="footer__link">ISO Certifications</a></li>
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col2.link3">Proprietary Hardware</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col3.title">Global Offices</h4>
+          <p style="font-size: 0.875rem; color: #64748b;">
+            <strong data-i18n="footer.col3.hq">Global R&D HQ</strong><br>
+            <span data-i18n="footer.col3.address">Digital District, Seoul, Korea</span><br>
+            E. <a href="mailto:info@hicare.net" style="color: inherit;">info@hicare.net</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright" data-i18n="footer.copyright">&copy; 2026 HicareNet. ISO 27001, ISO 27701 Certified. HIPAA Compliant. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="compliance.html" data-i18n="footer.certs">Certifications</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
