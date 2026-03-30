@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HicareNet | Powering Global Remote Patient Monitoring</title>
+  <meta name="description" content="HicareNet provides cutting-edge RPM and CCM solutions with ISO 27001, ISO 27701, HIPAA compliance and HL7 FHIR integration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip to Content -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">HICARE NET</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link nav__link--active" data-i18n="nav.company">Company</a></li>
+        <li><a href="solutions.html" class="nav__link" data-i18n="nav.solutions">Solutions</a></li>
+        <li><a href="about.html" class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="news.html" class="nav__link" data-i18n="nav.news">News</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
+        <button class="nav__menu-btn" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="nav__mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav__link nav__link--active" data-i18n="nav.company">Company</a>
+      <a href="solutions.html" class="nav__link" data-i18n="nav.solutions">Solutions</a>
+      <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+      <a href="news.html" class="nav__link" data-i18n="nav.news">News</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__bg">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcTIOOKsJZcm3XAoJbgB8g3qnrmqpqF3nnudDeN5Fq1GBtu3Eo480H3CK18ajjDqTZ99FCeBfYYWTh4lWc65DB7SvZ0sMtvp0Bvn4O_Ip3-XxqfajbIUVsQFwXkWU2MYPp8ySkIEuy97_mbOf5j6SS1A-z3HoiR3rwd4K_2o90bqHV2GJILvKc2Q3JWtcuq3M0SjIJQJLoesZOz-W30fh1-Kx066pup4mVsZPwPzdci9kHiktYjKQL9SYKoOwRJ9PdqXMxL43SWwc" alt="Global Healthcare Infrastructure" loading="eager">
+        <div class="hero__overlay hero__overlay--gradient-right"></div>
+      </div>
+      <div class="hero__content">
+        <div style="max-width: 48rem;">
+          <span class="hero__tag" data-i18n="home.hero.tag">Global Healthcare IT Infrastructure</span>
+          <h1 class="hero__title" data-i18n="home.hero.title">
+            The Standard in <br><span class="highlight">Remote Care.</span>
+          </h1>
+          <p class="hero__desc hero__desc--on-dark" data-i18n="home.hero.desc">
+            HicareNet drives advanced RPM and CCM operations through cutting-edge medical IT convergence, powering Hicare.net Inc's US market leadership with HL7 FHIR standard integration.
+          </p>
+          <div class="hero__actions">
+            <a href="solutions.html" class="btn btn--primary" data-i18n="home.hero.cta1">Explore RPM Services</a>
+            <a href="about.html" class="btn btn--secondary" data-i18n="home.hero.cta2">R&D Innovation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance & Certifications Strip -->
+    <section class="cert-strip" aria-label="Certifications" data-animate="fade-in">
+      <div class="container">
+        <div class="cert-strip__inner">
+          <div class="cert-strip__item">
+            <span class="material-symbols-outlined">verified_user</span>
+            <span data-i18n="home.certs.iso27001">ISO 27001 Certified</span>
+          </div>
+          <div class="cert-strip__item">
+            <span class="material-symbols-outlined">privacy_tip</span>
+            <span data-i18n="home.certs.iso27701">ISO 27701 Certified</span>
+          </div>
+          <div class="cert-strip__item">
+            <span class="material-symbols-outlined">security</span>
+            <span data-i18n="home.certs.hipaa">HIPAA Compliant</span>
+          </div>
+          <div class="cert-strip__item">
+            <span class="material-symbols-outlined">hub</span>
+            <span data-i18n="home.certs.fhir">HL7 FHIR Standards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section (Bento Grid) -->
+    <section class="section-lg bg-surface-low" aria-label="Services">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-20);" data-animate="fade-up">
+          <h2 class="headline-lg text-primary" style="margin-bottom: var(--space-6);" data-i18n="home.services.title">Our Operations & Technology</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto" style="font-size: 1.125rem;" data-i18n="home.services.desc">Providing seamless RPM/CCM solutions backed by global R&D excellence and direct US market operations through Hicare.net Inc in California.</p>
+        </div>
+
+        <div class="bento">
+          <!-- US Subsidiary Focus -->
+          <div class="bento__item--8" data-animate="fade-up">
+            <div class="card" style="height: 100%;">
+              <div class="card__body--lg flex" style="flex-direction: column; gap: var(--space-8);">
+                <div style="display: flex; flex-wrap: wrap; gap: var(--space-8); align-items: center;">
+                  <div style="flex: 1; min-width: 280px;">
+                    <span class="card__tag card__tag--teal" style="color: var(--tertiary);" data-i18n="home.services.us.tag">Hicare.net Inc (California)</span>
+                    <h3 class="card__title" style="font-size: 1.75rem;" data-i18n="home.services.us.title">Direct US Market Operation</h3>
+                    <p class="card__text" style="margin-bottom: var(--space-6);" data-i18n="home.services.us.desc">Our California subsidiary directly manages Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) services, ensuring localized expertise with global scale.</p>
+                    <span class="material-symbols-outlined card__arrow">arrow_forward</span>
+                  </div>
+                  <div style="flex: 1; min-width: 280px;">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGWJdG3LpxwSOTHu-QJkkrt1rlxbEz3aaYwK6uqTiyz-4i5Uf6xs9vPdhaqtwrMrnjI3XigZ1TZ3RgiLtxKsD1-uMoQpQwkkr5JXxA4kdk6P65QsCJko-oMgA7TCCqALG2YNSD7UUf9YD072b94VznJhy7Y51-12swUVQJIGMh7-wOCSUN2ZyAcljZoOQ5OOcuOkDKd94fvm3o2p1pnqwg9K59mB8chzUWgdCCC7gn8Kdac9xd-ID_jKklLT70EOMbSBBjMrBO_Cg" alt="US Healthcare Integration" class="rounded-xl" style="width: 100%; height: 16rem; object-fit: cover;" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HL7 FHIR Integration -->
+          <div class="bento__item--4" data-animate="fade-up" style="--delay: 100ms;">
+            <div class="card card--dark" style="height: 100%; padding: var(--space-10); display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <span class="card__tag card__tag--teal" data-i18n="home.services.fhir.tag">Interoperability</span>
+                <h3 class="card__title" style="font-size: 1.75rem;" data-i18n="home.services.fhir.title">FHIR Standard</h3>
+                <p class="card__text" data-i18n="home.services.fhir.desc">Active adoption of HL7 FHIR protocols for seamless data integration with major US medical service providers and EHR systems.</p>
+              </div>
+              <div style="margin-top: var(--space-8); text-align: right;">
+                <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--tertiary-fixed);">integration_instructions</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- R&D Foundation -->
+          <div class="bento__item--4" data-animate="fade-up" style="--delay: 200ms;">
+            <div class="card card--teal" style="height: 100%; padding: var(--space-10); display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <span class="card__tag card__tag--teal" data-i18n="home.services.rd.tag">Centralized R&D</span>
+                <h3 class="card__title" style="font-size: 1.75rem;" data-i18n="home.services.rd.title">Service Core</h3>
+                <p class="card__text" data-i18n="home.services.rd.desc">Our dedicated R&D organization develops all proprietary services and provides direct technical support for the US subsidiary.</p>
+              </div>
+              <div style="margin-top: var(--space-8); text-align: right;">
+                <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--tertiary-fixed);">developer_board</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Global Infrastructure -->
+          <div class="bento__item--8" data-animate="fade-up" style="--delay: 300ms;">
+            <div class="card card--surface-high" style="height: 100%; padding: var(--space-10); display: flex; align-items: center; justify-content: space-between; overflow: hidden; position: relative;">
+              <div style="position: relative; z-index: 1; max-width: 24rem;">
+                <h3 class="card__title" style="font-size: 1.5rem;" data-i18n="home.services.infra.title">Network Infrastructure</h3>
+                <p class="card__text" data-i18n="home.services.infra.desc">Powering hundreds of clinics across the United States and international markets with high-availability cloud medical systems.</p>
+              </div>
+              <div style="position: absolute; right: 0; top: 0; bottom: 0; width: 50%; opacity: 0.15; display: flex; align-items: center; justify-content: center; pointer-events: none;">
+                <span class="material-symbols-outlined" style="font-size: 12rem; color: var(--primary); font-variation-settings: 'FILL' 1;">cloud_sync</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Section -->
+    <section class="section-lg bg-surface" aria-label="Company" style="overflow: hidden;">
+      <div class="container">
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-20); align-items: center;">
+          <!-- Image Side -->
+          <div style="flex: 1; min-width: 320px; position: relative;" data-animate="slide-left">
+            <div style="position: absolute; top: -2.5rem; left: -2.5rem; width: 16rem; height: 16rem; background: rgba(21,21,125,0.05); border-radius: 50%; filter: blur(48px);"></div>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZtNFQZXehoFLnugRXG5AfqvyR8XQgv53ZVW4OveOdFjiX9afgr0sRn21snzm3osjB_wShx8mhYIT4zP0GRITIgIRZxjq2gKCkaicZrxT3MWTfCxSvgloMIx5rqMtcbFv1NXBiBjwflrEDHNpNwGFl20PBQe1V3WbXalvQCMCxNEjwBnCX0vFddd6eBRkZ7XU2QlPDmLnnK8HluSVkni1uTfFmLEBCsHIzFsJleBHzv_XvgKEu8yvHG6R49_zqCS9u3Zgl1aVvAAI" alt="Global R&D Excellence" class="rounded-2xl shadow-2xl" style="position: relative; z-index: 1; width: 100%; aspect-ratio: 4/3; object-fit: cover;" loading="lazy">
+            <div class="glass rounded-xl shadow-xl" style="position: absolute; bottom: -2.5rem; right: -2.5rem; padding: var(--space-8); z-index: 2; max-width: 15rem;">
+              <div class="stat__number" style="font-size: 2.5rem;">20+</div>
+              <div class="stat__label" data-i18n="home.company.stat">Countries with Hicare Infrastructure</div>
+            </div>
+          </div>
+
+          <!-- Text Side -->
+          <div style="flex: 1; min-width: 320px;" data-animate="slide-right">
+            <span class="label-md text-primary" style="margin-bottom: var(--space-4); display: block;" data-i18n="home.company.label">R&D Driven Excellence</span>
+            <h2 class="headline-lg text-primary" style="margin-bottom: var(--space-8); line-height: 1.15;" data-i18n="home.company.title">Technology Built for <br>Direct Patient Impact.</h2>
+            <p class="text-on-surface-variant" style="font-size: 1.125rem; line-height: 1.7; margin-bottom: var(--space-8);" data-i18n="home.company.desc">
+              HicareNet is the engine behind Hicare.net Inc's success in the US. By centralizing our R&D, we ensure every terminal and platform meets stringent ISO and HIPAA standards while pushing the boundaries of what is possible in remote care.
+            </p>
+            <div class="grid grid-2" style="gap: var(--space-8); margin-bottom: var(--space-10);">
+              <div>
+                <h4 style="font-family: var(--font-headline); font-weight: 700; color: var(--primary); margin-bottom: var(--space-2);" data-i18n="home.company.feature1.title">US Compliance</h4>
+                <p style="font-size: 0.875rem; color: var(--on-surface-variant);" data-i18n="home.company.feature1.desc">Full HIPAA alignment for Hicare.net Inc's RPM/CCM service delivery.</p>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-headline); font-weight: 700; color: var(--primary); margin-bottom: var(--space-2);" data-i18n="home.company.feature2.title">Standardization</h4>
+                <p style="font-size: 0.875rem; color: var(--on-surface-variant);" data-i18n="home.company.feature2.desc">Leading the industry in FHIR-based medical data exchange protocols.</p>
+              </div>
+            </div>
+            <a href="about.html" class="flex items-center gap-2 text-primary" style="font-weight: 700; text-decoration: none;">
+              <span data-i18n="home.company.cta">Explore our Technology Stack</span>
+              <span class="material-symbols-outlined">trending_flat</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="section-lg bg-surface-low" aria-label="News">
+      <div class="container">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; margin-bottom: var(--space-16); gap: var(--space-6);" data-animate="fade-up">
+          <div>
+            <h2 class="headline-lg text-primary" style="margin-bottom: var(--space-4);" data-i18n="home.news.title">Global Health Tech Updates</h2>
+            <p class="text-on-surface-variant" data-i18n="home.news.desc">Latest from our US operations and global R&D centers.</p>
+          </div>
+          <a href="news.html" class="btn btn--outline" data-i18n="home.news.cta">View Press Releases</a>
+        </div>
+
+        <div class="grid grid-3" data-animate="stagger">
+          <!-- News Card 1 -->
+          <article class="card">
+            <div class="card__image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv7sC1c6fh15wNOYGDrEYn4k4kS9WyEIdNqvBErw8J18Q1Bc5IAI1mJD3sXXB-1rTOZfNi5vDbEjLeWIiVERT0UEq2GNAx7JMWj8jHIv4WYGHnOXicRBdP5KCxdjn5IF8H1l4AdCqO-T_hjkb6wchPfkuwRrau4KIkJOTXSx4V7tKTw9aE3SiCUU1XNXT3zL0CBLumhaCxBfImkHRlX2xpgslb6j4ZR2V59deLoBpTWlWvrpF5dpLC1hoqZgmSq5XjdDx8zJAF6dk" alt="US RPM Growth" loading="lazy">
+            </div>
+            <div class="card__body">
+              <time class="card__meta">Nov 12, 2024</time>
+              <h3 class="card__title" style="font-size: 1.25rem;" data-i18n="home.news.item1.title">Hicare.net Inc Expands California Service Center</h3>
+              <p class="card__text line-clamp-2" data-i18n="home.news.item1.desc">Direct support for RPM/CCM clients across the US West Coast enhanced with new service capabilities.</p>
+            </div>
+          </article>
+
+          <!-- News Card 2 -->
+          <article class="card">
+            <div class="card__image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0R50O5Nlk7jilsrO96n32iyfzYMtSkGcHeg8uAOsviUcDTb1FUiL-bEuH74J-hkgMlUX8Rz0VEYT0T0Zl5A6Ycs3Dg4BMUFzTcdt_em1ReWuyzfNKB4iqOrXR1w2f9gz0Ev2m9K2qnskRCZsIJj2Aq7HeX3KNGhLrjIIEfg79O6ES51zsjajJOZ3YEVFyllipGq6r2R83SodA1Z1mWKsDWuTzZrWjkITj3tcRvDIvt7xyh5VOx2K11aIByMUlAzy_lPSc2xfOKrc" alt="R&D Innovation" loading="lazy">
+            </div>
+            <div class="card__body">
+              <time class="card__meta">Oct 05, 2024</time>
+              <h3 class="card__title" style="font-size: 1.25rem;" data-i18n="home.news.item2.title">Proprietary FHIR Integration Layer Launched</h3>
+              <p class="card__text line-clamp-2" data-i18n="home.news.item2.desc">Our R&D team announces 100% compatibility with FHIR standards for all new Hicare Hub terminals.</p>
+            </div>
+          </article>
+
+          <!-- News Card 3 -->
+          <article class="card">
+            <div class="card__image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGFpPxaHbr23b0N6ngqn5OAAQ6JiPxxoef_AR-eXiRaISiF47LJ-O60jKnj7YZYghBgEePKZ2-Xm0-g-KSwzg5IHckwF8KVYZPNqj_Ra0MYRzlMpzCZSWRNCTipEeMt4E_Qs0OW7D97xXArngODwxc0kj059r5lDrl9wx3o0YmqF6ihyYBUnGTubxf_CDkTf1oV2zf5zcxPIfQUCZc1X7AZaC8CGwag1aR5DYabSFnE9cR4advXeT7LFpyLcKud6MAv3Fmu1ZQ6E8" alt="Security Certification" loading="lazy">
+            </div>
+            <div class="card__body">
+              <time class="card__meta">Sept 15, 2024</time>
+              <h3 class="card__title" style="font-size: 1.25rem;" data-i18n="home.news.item3.title">Successful ISO 27701 Re-certification</h3>
+              <p class="card__text line-clamp-2" data-i18n="home.news.item3.desc">HicareNet maintains world-class privacy management standards for all global healthcare data.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">HICARE NET</div>
+          <p class="footer__desc" data-i18n="footer.desc">A global pioneer in medical IT convergence. Our California subsidiary, Hicare.net Inc, brings world-class RPM solutions to the US market.</p>
+          <div class="flex gap-4">
+            <span class="material-symbols-outlined text-primary" style="cursor: pointer; opacity: 0.6;">language</span>
+            <span class="material-symbols-outlined text-primary" style="cursor: pointer; opacity: 0.6;">security</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col1.title">US Operations</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col1.link1">RPM Services</a></li>
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col1.link2">CCM Management</a></li>
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col1.link3">HIPAA Compliance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col2.title">R&D & Tech</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col2.link1">HL7 FHIR Standards</a></li>
+            <li><a href="about.html" class="footer__link" data-i18n="footer.col2.link2">ISO Certifications</a></li>
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col2.link3">Proprietary Hardware</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col3.title">Global Offices</h4>
+          <p style="font-size: 0.875rem; color: #64748b; margin-bottom: var(--space-4);">
+            <strong>Global R&D HQ</strong><br>
+            Digital District, Seoul, Korea<br>
+            E. info@hicare.net
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 HicareNet. ISO 27001, ISO 27701 Certified. HIPAA Compliant. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#" data-i18n="footer.terms">Terms of Service</a>
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.certs">Certifications</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

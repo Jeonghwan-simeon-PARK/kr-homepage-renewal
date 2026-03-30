@@ -1,0 +1,337 @@
+{
+  "nav": {
+    "company": "Company",
+    "solutions": "Solutions",
+    "about": "About",
+    "news": "News"
+  },
+  "home": {
+    "hero": {
+      "tag": "Global Healthcare IT Infrastructure",
+      "title": "The Standard in Remote Care.",
+      "desc": "HicareNet drives advanced RPM and CCM operations through cutting-edge medical IT convergence, powering Hicare.net Inc's US market leadership with HL7 FHIR standard integration.",
+      "cta1": "Explore RPM Services",
+      "cta2": "R&D Innovation"
+    },
+    "certs": {
+      "iso27001": "ISO 27001 Certified",
+      "iso27701": "ISO 27701 Certified",
+      "hipaa": "HIPAA Compliant",
+      "fhir": "HL7 FHIR Standards"
+    },
+    "services": {
+      "title": "Our Operations & Technology",
+      "desc": "Providing seamless RPM/CCM solutions backed by global R&D excellence and direct US market operations through Hicare.net Inc in California.",
+      "us": {
+        "tag": "Hicare.net Inc (California)",
+        "title": "Direct US Market Operation",
+        "desc": "Our California subsidiary directly manages Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) services, ensuring localized expertise with global scale."
+      },
+      "fhir": {
+        "tag": "Interoperability",
+        "title": "FHIR Standard",
+        "desc": "Active adoption of HL7 FHIR protocols for seamless data integration with major US medical service providers and EHR systems."
+      },
+      "rd": {
+        "tag": "Centralized R&D",
+        "title": "Service Core",
+        "desc": "Our dedicated R&D organization develops all proprietary services and provides direct technical support for the US subsidiary."
+      },
+      "infra": {
+        "title": "Network Infrastructure",
+        "desc": "Powering hundreds of clinics across the United States and international markets with high-availability cloud medical systems."
+      }
+    },
+    "company": {
+      "label": "R&D Driven Excellence",
+      "title": "Technology Built for Direct Patient Impact.",
+      "desc": "HicareNet is the engine behind Hicare.net Inc's success in the US. By centralizing our R&D, we ensure every terminal and platform meets stringent ISO and HIPAA standards while pushing the boundaries of what is possible in remote care.",
+      "stat": "Countries with Hicare Infrastructure",
+      "feature1": {
+        "title": "US Compliance",
+        "desc": "Full HIPAA alignment for Hicare.net Inc's RPM/CCM service delivery."
+      },
+      "feature2": {
+        "title": "Standardization",
+        "desc": "Leading the industry in FHIR-based medical data exchange protocols."
+      },
+      "cta": "Explore our Technology Stack"
+    },
+    "news": {
+      "title": "Global Health Tech Updates",
+      "desc": "Latest from our US operations and global R&D centers.",
+      "cta": "View Press Releases",
+      "item1": {
+        "title": "Hicare.net Inc Expands California Service Center",
+        "desc": "Direct support for RPM/CCM clients across the US West Coast enhanced with new service capabilities."
+      },
+      "item2": {
+        "title": "Proprietary FHIR Integration Layer Launched",
+        "desc": "Our R&D team announces 100% compatibility with FHIR standards for all new Hicare Hub terminals."
+      },
+      "item3": {
+        "title": "Successful ISO 27701 Re-certification",
+        "desc": "HicareNet maintains world-class privacy management standards for all global healthcare data."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "tag": "HICARE.NET INC",
+      "title": "Empowering US RPM & CCM Services.",
+      "desc": "Based in California, Hicare.net Inc. is the United States subsidiary of HicareNet, dedicated to delivering advanced Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) solutions."
+    },
+    "focus": {
+      "title": "Our Focus",
+      "desc": "We specialize in bridging clinical gaps with our comprehensive RPM and CCM platform, optimized for US healthcare providers to improve patient outcomes and operational efficiency."
+    },
+    "security": {
+      "title": "Security & Standards",
+      "desc": "Unwavering commitment to data integrity. Our solutions are fully HIPAA compliant and certified under ISO 27001 (Information Security) and ISO 27701 (Privacy Information Management)."
+    },
+    "rd": {
+      "title": "Global R&D Organization: Full-Stack Innovation.",
+      "desc1": "Our R&D organization is the backbone of HicareNet, driving full-stack service development from embedded hardware systems to cloud-native healthcare software. We don't just build apps; we architect entire care ecosystems.",
+      "desc2": "Based strategically to provide 24/7 technical support for our US partners, our engineering teams ensure that the Hicare platform remains the most reliable and interoperable solution in the market, natively supporting HL7 FHIR protocols.",
+      "feature1": {
+        "title": "Full-Stack Dev",
+        "desc": "End-to-end service architecture from device to cloud."
+      },
+      "feature2": {
+        "title": "US Support",
+        "desc": "Dedicated technical organization for North American operations."
+      }
+    },
+    "timeline": {
+      "title": "Milestones",
+      "desc": "Our strategic journey in bringing digital healthcare excellence to global markets.",
+      "y2024": {
+        "title": "ISO 27701 Certification",
+        "desc": "Further solidified our commitment to privacy information management, achieving global ISO 27701 standards."
+      },
+      "y2022": {
+        "title": "Hicare.net Inc. California",
+        "desc": "Established our dedicated US headquarters in California to spearhead RPM and CCM operations."
+      },
+      "y2018": {
+        "title": "FHIR & Interoperability",
+        "desc": "Integrated native FHIR protocol support across all Hicare Hub solutions for seamless US EMR integration."
+      },
+      "y2016": {
+        "title": "FDA 510(k) Clearance",
+        "desc": "Successfully obtained US FDA certification for our remote monitoring hardware ecosystem."
+      }
+    },
+    "expertise": {
+      "label": "EXPERTISE",
+      "title": "Core Competencies",
+      "desc": "Bridging clinical medicine, advanced engineering, and rigorous security standards.",
+      "card1": {
+        "title": "FHIR Protocol",
+        "desc": "Full HL7 FHIR support ensuring seamless interoperability with major US health systems and EMRs."
+      },
+      "card2": {
+        "title": "HIPAA & ISO",
+        "desc": "Highest security tier: ISO 27001 and ISO 27701 certified, ensuring strict HIPAA data compliance."
+      },
+      "card3": {
+        "title": "Full-Stack R&D",
+        "desc": "Internal expertise across embedded hardware, mobile development, and scalable cloud platforms."
+      },
+      "card4": {
+        "title": "US Ops Support",
+        "desc": "24/7 technical operations focused specifically on the unique needs of the US RPM/CCM market."
+      }
+    },
+    "cta": {
+      "title": "A Trusted Partner in US Healthcare",
+      "desc": "From our global R&D headquarters, we provide the technology that powers clinical care for thousands of patients across the United States.",
+      "stat1": "Compliance",
+      "badge": "Integrated RPM/CCM Infrastructure"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "tag": "US Market RPM & CCM Solutions",
+      "title": "Empowering US Value-Based Care.",
+      "desc": "HicareNet provides a comprehensive ecosystem for Remote Patient Monitoring (RPM) and Chronic Care Management (CCM), fully integrated with US healthcare standards.",
+      "cta1": "Our Solutions",
+      "cta2": "US Compliance"
+    },
+    "hub": {
+      "label": "Central Gateway for RPM",
+      "title": "Hicare Hub: Streamlining Clinical Workflow",
+      "desc": "A medical-grade gateway specifically designed for US clinical environments. Hicare Hub automates the collection of vitals for RPM reimbursement billing, ensuring data accuracy and physician productivity.",
+      "f1": {
+        "title": "HL7 & FHIR Ready",
+        "desc": "Seamless integration with EPIC, Cerner, and Athenahealth via industry-standard HL7 and FHIR protocols."
+      },
+      "f2": {
+        "title": "EHR/EMR Connectivity",
+        "desc": "Direct data flow into patient records to support CCM documentation requirements and medical necessity."
+      },
+      "f3": {
+        "title": "FDA-Cleared Vitals",
+        "desc": "Aggregates data from FDA-cleared peripheral devices for clinically valid remote monitoring."
+      }
+    },
+    "mobile": {
+      "label": "Patient Engagement for CCM",
+      "title": "Hicare M: The Bridge to Better Outcomes.",
+      "desc": "Designed for the US patient experience, Hicare M empowers individuals to participate in their care plans. It facilitates the 20 minutes of monthly clinical staff time required for CCM billing through secure messaging and tele-consultation.",
+      "f1": {
+        "title": "Automated Reporting",
+        "desc": "Generates patient logs required for US insurance reimbursement audits."
+      },
+      "f2": {
+        "title": "Care Plan Access",
+        "desc": "Instant access to personalized clinician-developed CCM care plans."
+      },
+      "f3": {
+        "title": "Secure FHIR Messaging",
+        "desc": "HIPAA-compliant communication that records interactions directly to the patient's chart."
+      },
+      "f4": {
+        "title": "Educational Content",
+        "desc": "Provider-approved health resources to improve patient self-management."
+      }
+    },
+    "rd": {
+      "label": "Innovation Excellence",
+      "title": "Powered by our Global R&D Center",
+      "desc": "The intelligence behind HicareNet is developed at our world-class R&D center. Our engineers and data scientists have built a robust, high-availability backend that handles millions of medical data points with sub-second latency.",
+      "backend": {
+        "title": "Proprietary Backend Architecture",
+        "desc": "Our backend orchestrates the entire ecosystem — from IoT device provisioning to FHIR data transformation. It's built on a microservices architecture that ensures 99.99% uptime, meeting the critical demands of US healthcare systems."
+      },
+      "stat1": "Proprietary APIs",
+      "stat2": "Uptime Reliability",
+      "stat3": {
+        "title": "Clinical Data Intelligence",
+        "desc": "Advanced algorithms for automated vitals trend detection and physician alerting."
+      }
+    },
+    "compliance": {
+      "label": "Trust & Governance",
+      "title": "US Healthcare Compliance & Security",
+      "desc": "Security is not a feature; it is the foundation of our existence. HicareNet adheres to the world's most stringent security and privacy standards.",
+      "hipaa": {
+        "status": "Compliant",
+        "desc": "Full adherence to US Health Insurance Portability and Accountability Act standards for PHI protection."
+      },
+      "iso27001": {
+        "status": "Certified",
+        "desc": "International standard for Information Security Management Systems (ISMS)."
+      },
+      "iso27701": {
+        "status": "Certified",
+        "desc": "Privacy Information Management System (PIMS) certification for global data privacy compliance."
+      },
+      "fda": {
+        "title": "Medical Device",
+        "status": "Class-Certified",
+        "desc": "Regulatory clearance for clinical use in RPM and diagnostic monitoring environments."
+      },
+      "encryption": {
+        "title": "End-to-End Encryption",
+        "desc": "All data in transit and at rest is secured with AES-256 and TLS 1.3 encryption."
+      }
+    },
+    "global": {
+      "title": "Expanding US Clinical Footprint",
+      "desc": "Serving leading US healthcare systems with FHIR-enabled solutions for scalable population health management.",
+      "stat1": "US Partner Clinics",
+      "stat2": "Monthly Readings",
+      "cta": "Partner with Us"
+    },
+    "cta": {
+      "title": "Optimize your RPM/CCM Billing today.",
+      "desc": "Contact our solutions team for a demonstration of our EMR-integrated gateway.",
+      "placeholder": "Enter your business email",
+      "submit": "Connect"
+    }
+  },
+  "news": {
+    "hero": {
+      "tag": "Featured Story",
+      "title": "Pioneering Global R&D: The New US Service Support Model",
+      "desc": "HicareNet establishes a new benchmark for global R&D leadership, integrating localized US support to ensure 24/7 clinical excellence for our North American partners.",
+      "cta": "Read Full Story"
+    },
+    "newsroom": {
+      "title": "Newsroom",
+      "count": "Showing 6 of 52 articles",
+      "more": "View More News"
+    },
+    "filter": {
+      "all": "All News",
+      "press": "Press Release",
+      "business": "Business News",
+      "notices": "Notices"
+    },
+    "read_article": "Read Article",
+    "cards": {
+      "c1": {
+        "tag": "Business News",
+        "title": "Hicare.net Inc. Achieves Major Expansion Milestone in California",
+        "desc": "Our US subsidiary, Hicare.net Inc., reports record adoption rates across California's leading healthcare networks, solidifying our footprint in the US market."
+      },
+      "c2": {
+        "tag": "Press Release",
+        "title": "HicareNet Achieves Gold Standard ISO and HIPAA Certifications",
+        "desc": "Demonstrating our commitment to data security and international quality management, HicareNet has officially received ISO 27001 and HIPAA compliance certification."
+      },
+      "c3": {
+        "title": "Advancing Interoperability: R&D Breakthrough in FHIR Integration"
+      },
+      "c4": {
+        "tag": "Business News",
+        "title": "Partnership with Global Insurance Providers to Subsidize IoT Care"
+      },
+      "c5": {
+        "tag": "Press Release",
+        "title": "Sustainable Healthcare: New Eco-Friendly Manufacturing Standards"
+      }
+    },
+    "gallery": {
+      "title": "Media Gallery",
+      "desc": "Experience HicareNet's global events, product launches, and technological breakthroughs in high definition.",
+      "v1": {
+        "tag": "Brand Film",
+        "title": "2024 Vision: Global Connected Health"
+      },
+      "p1": {
+        "tag": "Event Photo",
+        "title": "Innovation Summit: Seoul Headquarters"
+      }
+    },
+    "newsletter": {
+      "title": "Stay Ahead of Healthcare Innovation",
+      "desc": "Subscribe to our monthly digest for exclusive insights into medical technology trends and HicareNet corporate updates.",
+      "placeholder": "Enter your business email",
+      "submit": "Subscribe",
+      "privacy": "By subscribing, you agree to our Privacy Policy"
+    }
+  },
+  "footer": {
+    "desc": "A global pioneer in medical IT convergence. Our California subsidiary, Hicare.net Inc, brings world-class RPM solutions to the US market.",
+    "col1": {
+      "title": "US Operations",
+      "link1": "RPM Services",
+      "link2": "CCM Management",
+      "link3": "HIPAA Compliance"
+    },
+    "col2": {
+      "title": "R&D & Tech",
+      "link1": "HL7 FHIR Standards",
+      "link2": "ISO Certifications",
+      "link3": "Proprietary Hardware"
+    },
+    "col3": {
+      "title": "Global Offices"
+    },
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "certs": "Certifications"
+  }
+}
