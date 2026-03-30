@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temp files
+*.tmp
+*.log
+screenshots/
+_workspace/
+
+# Playwright
+.playwright-mcp/
+
+# Environment
+.env
+.env.local
