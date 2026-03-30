@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page not found - HicareNet">
+  <title>404 - Page Not Found | HicareNet</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1A8FD8">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HicareNet">
+  <meta property="og:title" content="404 - Page Not Found | HicareNet">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Google Analytics (replace GA_MEASUREMENT_ID with actual ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <style>
+    .error-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      text-align: center;
+      padding: 64px 24px;
+    }
+    .error-page__code {
+      font-size: clamp(6rem, 15vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      color: var(--primary-200, #B3DAF0);
+      margin-bottom: 16px;
+      letter-spacing: -0.04em;
+    }
+    .error-page__title {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 700;
+      color: var(--neutral-900, #111827);
+      margin-bottom: 12px;
+    }
+    .error-page__description {
+      font-size: 1.125rem;
+      color: var(--neutral-600, #4B5563);
+      max-width: 480px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+    .error-page__actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">Skip to main content</a>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <!-- Logo -->
+      <a href="index.html" class="nav__logo" aria-label="HicareNet Home">
+        <span class="nav__logo-text">HicareNet</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="nav__menu" aria-label="Main navigation">
+        <a href="solutions.html" class="nav__link" data-i18n="nav.solutions._label">Solutions</a>
+        <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="resources.html" class="nav__link" data-i18n="nav.resources">Resources</a>
+        <a href="compliance.html" class="nav__link" data-i18n="nav.compliance">Compliance</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav__actions">
+        <!-- Language Toggle -->
+        <div class="lang-toggle" role="group" aria-label="Language selection">
+          <button class="lang-toggle__btn is-active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-toggle__btn" data-lang="ko" aria-label="한국어">KO</button>
+        </div>
+
+        <!-- CTA -->
+        <a href="contact.html" class="btn btn--primary btn--sm hide-mobile" data-i18n="nav.contact">Contact Us</a>
+
+        <!-- Mobile Hamburger -->
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="solutions.html" class="nav__mobile-link" data-i18n="nav.solutions._label">Solutions</a>
+      <a href="about.html" class="nav__mobile-link" data-i18n="nav.about">About</a>
+      <a href="resources.html" class="nav__mobile-link" data-i18n="nav.resources">Resources</a>
+      <a href="compliance.html" class="nav__mobile-link" data-i18n="nav.compliance">Compliance</a>
+      <a href="contact.html" class="nav__mobile-link" data-i18n="nav.contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content">
+    <section class="error-page" aria-label="Error page">
+      <div class="error-page__code" aria-hidden="true">404</div>
+      <h1 class="error-page__title" data-i18n="error404.title">Page Not Found</h1>
+      <p class="error-page__description" data-i18n="error404.description">The page you're looking for doesn't exist or has been moved.</p>
+      <div class="error-page__actions">
+        <a href="index.html" class="btn btn--primary btn--lg" data-i18n="error404.goHome">Go Home</a>
+        <a href="contact.html" class="btn btn--outline btn--lg" data-i18n="error404.contact">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__col">
+          <span class="footer__logo-text">HicareNet</span>
+          <p class="footer__brand-desc" data-i18n="footer.description">Comprehensive healthcare technology solutions enabling better patient outcomes through innovation and clinical excellence.</p>
+        </div>
+        <!-- Solutions -->
+        <div class="footer__col">
+          <h3 class="footer__heading" data-i18n="footer.solutions">Solutions</h3>
+          <div class="footer__links">
+            <a href="solutions.html#rpm" class="footer__link" data-i18n="nav.solutions.rpm">RPM</a>
+            <a href="solutions.html#ccm" class="footer__link" data-i18n="nav.solutions.ccm">CCM</a>
+            <a href="solutions.html#awv" class="footer__link" data-i18n="nav.solutions.awv">AWV</a>
+            <a href="solutions.html#vbc" class="footer__link" data-i18n="nav.solutions.vbc">Value-Based Care</a>
+            <a href="solutions.html#fhir" class="footer__link" data-i18n="nav.solutions.fhir">FHIR Integration</a>
+          </div>
+        </div>
+        <!-- Company -->
+        <div class="footer__col">
+          <h3 class="footer__heading" data-i18n="footer.company">Company</h3>
+          <div class="footer__links">
+            <a href="about.html" class="footer__link" data-i18n="nav.about">About</a>
+            <a href="about.html#team" class="footer__link" data-i18n="nav.team">Team</a>
+            <a href="compliance.html" class="footer__link" data-i18n="nav.compliance">Compliance</a>
+          </div>
+        </div>
+        <!-- Resources -->
+        <div class="footer__col">
+          <h3 class="footer__heading" data-i18n="footer.resources">Resources</h3>
+          <div class="footer__links">
+            <a href="resources.html" class="footer__link" data-i18n="nav.blog">Blog</a>
+            <a href="resources.html#faq" class="footer__link" data-i18n="nav.faq">FAQ</a>
+            <a href="contact.html" class="footer__link" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copyright">&copy; 2026 HicareNet, Inc. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

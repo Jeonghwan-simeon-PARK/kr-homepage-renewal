@@ -537,6 +537,12 @@
       "emailLabel": "Email: "
     }
   },
+  "error404": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go Home",
+    "solutions": "View Solutions"
+  },
   "footer": {
     "desc": "A global pioneer in medical IT convergence. Our California subsidiary, Hicare.net Inc, brings world-class RPM solutions to the US market.",
     "col1": {

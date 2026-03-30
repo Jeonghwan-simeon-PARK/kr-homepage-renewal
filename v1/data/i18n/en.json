@@ -843,6 +843,12 @@
       "form": "Contact Form"
     }
   },
+  "error404": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go Home",
+    "contact": "Contact Us"
+  },
   "footer": {
     "description": "From FDA 510(K) certified medical devices to cloud-based RPM/CCM solutions — 20+ years of healthcare technology innovation, proven across global markets.",
     "solutions": "Solutions",

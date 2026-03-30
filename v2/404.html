@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | HicareNet</title>
+  <meta name="description" content="Page not found - HicareNet">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1A8FD8">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HicareNet">
+  <meta property="og:title" content="404 - Page Not Found | HicareNet">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Analytics (replace GA_MEASUREMENT_ID with actual ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <style>
+    .error-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      text-align: center;
+      padding: 96px 24px;
+    }
+    .error-page__icon {
+      font-size: 4rem;
+      color: var(--color-primary, #1A8FD8);
+      margin-bottom: 16px;
+      opacity: 0.6;
+    }
+    .error-page__code {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(6rem, 15vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--color-primary, #1A8FD8), var(--color-primary-light, #4DA8E5));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+      letter-spacing: -0.04em;
+    }
+    .error-page__title {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 700;
+      color: var(--color-text, #1e293b);
+      margin-bottom: 12px;
+    }
+    .error-page__description {
+      font-size: 1.125rem;
+      color: var(--color-text-secondary, #64748b);
+      max-width: 480px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+    .error-page__actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-page__actions .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .error-page__actions .btn--primary {
+      background: var(--color-primary, #1A8FD8);
+      color: #fff;
+    }
+    .error-page__actions .btn--primary:hover {
+      background: var(--color-primary-dark, #1576B5);
+      transform: translateY(-1px);
+    }
+    .error-page__actions .btn--outline {
+      border: 2px solid var(--color-primary, #1A8FD8);
+      color: var(--color-primary, #1A8FD8);
+      background: transparent;
+    }
+    .error-page__actions .btn--outline:hover {
+      background: var(--color-primary, #1A8FD8);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to Content -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">HICARE NET</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link" data-i18n="nav.company">Company</a></li>
+        <li><a href="solutions.html" class="nav__link" data-i18n="nav.solutions">Solutions</a></li>
+        <li><a href="about.html" class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="news.html" class="nav__link" data-i18n="nav.news">News</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
+        <button class="nav__menu-btn" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="nav__mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav__link" data-i18n="nav.company">Company</a>
+      <a href="solutions.html" class="nav__link" data-i18n="nav.solutions">Solutions</a>
+      <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+      <a href="news.html" class="nav__link" data-i18n="nav.news">News</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="error-page" aria-label="Error page">
+      <span class="material-symbols-outlined error-page__icon" aria-hidden="true">error_outline</span>
+      <div class="error-page__code" aria-hidden="true">404</div>
+      <h1 class="error-page__title" data-i18n="error404.title">Page Not Found</h1>
+      <p class="error-page__description" data-i18n="error404.description">The page you're looking for doesn't exist or has been moved.</p>
+      <div class="error-page__actions">
+        <a href="index.html" class="btn btn--primary" data-i18n="error404.goHome">Go Home</a>
+        <a href="solutions.html" class="btn btn--outline" data-i18n="error404.solutions">View Solutions</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">HICARE NET</div>
+          <p class="footer__desc" data-i18n="footer.desc">A global pioneer in medical IT convergence. Our California subsidiary, Hicare.net Inc, brings world-class RPM solutions to the US market.</p>
+          <div class="flex gap-4">
+            <span class="material-symbols-outlined text-primary" style="cursor: pointer; opacity: 0.6;">language</span>
+            <span class="material-symbols-outlined text-primary" style="cursor: pointer; opacity: 0.6;">security</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col1.title">US Operations</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col1.link1">RPM Services</a></li>
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col1.link2">CCM Management</a></li>
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col1.link3">HIPAA Compliance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col2.title">R&D & Tech</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col2.link1">HL7 FHIR Standards</a></li>
+            <li><a href="about.html" class="footer__link" data-i18n="footer.col2.link2">ISO Certifications</a></li>
+            <li><a href="solutions.html" class="footer__link" data-i18n="footer.col2.link3">Proprietary Hardware</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.col3.title">Global Offices</h4>
+          <p style="font-size: 0.875rem; color: #64748b; margin-bottom: var(--space-4);">
+            <strong data-i18n="footer.col3.hq">Global R&D HQ</strong><br>
+            <span data-i18n="footer.col3.address">Digital District, Seoul, Korea</span><br>
+            E. <a href="mailto:info@hicare.net" style="color: inherit;">info@hicare.net</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright" data-i18n="footer.copyright">&copy; 2026 HicareNet. ISO 27001, ISO 27701 Certified. HIPAA Compliant. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="solutions.html#compliance" data-i18n="footer.certs">Certifications</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
