@@ -107,3 +107,10 @@
 .footer__legal a:hover {
   color: var(--color-neutral-0);
 }
+
+.footer__logo-img {
+  display: block;
+  height: 28px;
+  width: auto;
+  margin-bottom: 1rem;
+}

@@ -186,3 +186,9 @@
 .nav__mobile-link:hover {
   color: var(--color-primary-500);
 }
+
+.nav__logo-img {
+  display: block;
+  height: 32px;
+  width: auto;
+}

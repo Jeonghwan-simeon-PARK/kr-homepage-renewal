@@ -232,6 +232,12 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.nav__logo-img {
+  display: block;
+  height: 30px;
+  width: auto;
+}
+
 .nav__links {
   display: flex;
   align-items: center;
@@ -986,6 +992,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #1e3a5f;
   margin-bottom: var(--space-6);
+}
+
+.footer__logo-img {
+  display: block;
+  height: 24px;
+  width: auto;
 }
 
 .footer__desc {
