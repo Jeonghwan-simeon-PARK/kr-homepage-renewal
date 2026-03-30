@@ -1149,6 +1149,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Stagger container is always visible; only children animate */
+[data-animate="stagger"] { opacity: 1; transform: none; }
+
 /* Stagger children */
 [data-animate="stagger"] > * {
   opacity: 0;
