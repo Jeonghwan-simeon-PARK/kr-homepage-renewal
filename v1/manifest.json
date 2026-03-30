@@ -1,0 +1,16 @@
+{
+  "name": "HicareNet - Healthcare Technology Solutions",
+  "short_name": "HicareNet",
+  "description": "Comprehensive RPM, CCM, AWV and Value-Based Care solutions for US healthcare providers",
+  "start_url": "/v1/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1A8FD8",
+  "icons": [
+    {
+      "src": "../assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
