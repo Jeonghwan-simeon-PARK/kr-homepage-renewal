@@ -1,0 +1,28 @@
+{
+  "testimonials": [
+    {
+      "id": "testimonial-1",
+      "quote_key": "testimonials.1.quote",
+      "author": "Dr. Robert Williams",
+      "role_key": "testimonials.1.role",
+      "organization": "Sunrise Family Medicine",
+      "photo": "/assets/images/testimonials/doctor-1.jpg"
+    },
+    {
+      "id": "testimonial-2",
+      "quote_key": "testimonials.2.quote",
+      "author": "Linda Martinez, RN",
+      "role_key": "testimonials.2.role",
+      "organization": "Valley Health Partners",
+      "photo": "/assets/images/testimonials/doctor-2.jpg"
+    },
+    {
+      "id": "testimonial-3",
+      "quote_key": "testimonials.3.quote",
+      "author": "Dr. Andrew Thompson",
+      "role_key": "testimonials.3.role",
+      "organization": "Northwest Community Health",
+      "photo": "/assets/images/testimonials/doctor-3.jpg"
+    }
+  ]
+}

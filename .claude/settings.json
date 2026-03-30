@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Write",
+      "Edit",
+      "MultiEdit",
+      "Bash(mkdir *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(git *)"
+    ]
+  },
+  "agents": {
+    "content-strategist": {
+      "model": "opus",
+      "description": "Healthcare B2B marketing copy, SEO, CTA strategy following Vivify Health patterns"
+    },
+    "visual-designer": {
+      "model": "opus",
+      "description": "Design system, hero banners, visual concepts using Pencil MCP and Hanwha Ocean ESG patterns"
+    },
+    "frontend-builder": {
+      "model": "opus",
+      "description": "HTML/CSS/JS implementation with semantic markup, mobile-first responsive, progressive enhancement"
+    },
+    "ux-animator": {
+      "model": "opus",
+      "description": "Scroll animations, parallax, transitions using IntersectionObserver and GPU-accelerated CSS"
+    },
+    "data-architect": {
+      "model": "opus",
+      "description": "JSON data structure design, i18n key system, data-HTML binding conventions"
+    },
+    "qa-validator": {
+      "model": "opus",
+      "description": "Accessibility, performance, i18n completeness, link integrity, cross-browser testing via Playwright"
+    }
+  }
+}

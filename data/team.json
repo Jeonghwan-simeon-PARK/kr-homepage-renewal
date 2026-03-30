@@ -1,0 +1,32 @@
+{
+  "members": [
+    {
+      "id": "ceo",
+      "name": "James K. Park",
+      "title_key": "about.team.ceo.title",
+      "bio_key": "about.team.ceo.bio",
+      "photo": "/assets/images/team/ceo.jpg"
+    },
+    {
+      "id": "cto",
+      "name": "David S. Kim",
+      "title_key": "about.team.cto.title",
+      "bio_key": "about.team.cto.bio",
+      "photo": "/assets/images/team/cto.jpg"
+    },
+    {
+      "id": "vp-clinical",
+      "name": "Sarah M. Johnson",
+      "title_key": "about.team.vp_clinical.title",
+      "bio_key": "about.team.vp_clinical.bio",
+      "photo": "/assets/images/team/vp-clinical.jpg"
+    },
+    {
+      "id": "vp-business",
+      "name": "Michael R. Chen",
+      "title_key": "about.team.vp_business.title",
+      "bio_key": "about.team.vp_business.bio",
+      "photo": "/assets/images/team/vp-business.jpg"
+    }
+  ]
+}

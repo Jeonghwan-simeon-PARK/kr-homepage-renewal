@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with HicareNet. Schedule a demo, ask questions, or learn how our RPM and healthcare technology solutions can help your practice.">
+  <meta name="keywords" content="contact HicareNet, schedule demo, healthcare technology, RPM provider contact">
+  <title>Contact Us | HicareNet</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">Skip to main content</a>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="/src/index.html" class="nav__logo" aria-label="HicareNet Home">
+        <span class="nav__logo-text">HicareNet</span>
+      </a>
+      <nav class="nav__menu" aria-label="Main navigation">
+        <a href="/src/solutions.html" class="nav__link" data-i18n="nav.solutions._label">Solutions</a>
+        <a href="/src/about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="/src/resources.html" class="nav__link" data-i18n="nav.resources">Resources</a>
+        <a href="/src/compliance.html" class="nav__link" data-i18n="nav.compliance">Compliance</a>
+      </nav>
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="Language selection">
+          <button class="lang-toggle__btn is-active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-toggle__btn" data-lang="ko" aria-label="한국어">KO</button>
+        </div>
+        <a href="/src/contact.html" class="btn btn--primary btn--sm hide-mobile" data-i18n="nav.contact">Contact Us</a>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="/src/solutions.html" class="nav__mobile-link" data-i18n="nav.solutions._label">Solutions</a>
+      <a href="/src/about.html" class="nav__mobile-link" data-i18n="nav.about">About</a>
+      <a href="/src/resources.html" class="nav__mobile-link" data-i18n="nav.resources">Resources</a>
+      <a href="/src/compliance.html" class="nav__mobile-link" data-i18n="nav.compliance">Compliance</a>
+      <a href="/src/contact.html" class="nav__mobile-link" data-i18n="nav.contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--contact" id="hero">
+      <div class="hero__content container">
+        <h1 class="hero__headline" data-i18n="contact.hero.headline" data-animate="fade-up">
+          Get in Touch
+        </h1>
+        <p class="hero__subtext" data-i18n="contact.hero.subtext" data-animate="fade-up" data-animate-delay="200">
+          We're here to help you transform your patient care
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT FORM + QUICK INFO ===== -->
+    <section class="section" id="demo">
+      <div class="container">
+        <div class="contact-layout" data-animate="fade-up">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2 class="section__title" style="text-align:left;margin-bottom:var(--space-4)" data-i18n="contact.form.title">Send Us a Message</h2>
+
+            <form action="#" method="post" novalidate aria-label="Contact form">
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label form-label--required" data-i18n="contact.form.name">Full Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" required autocomplete="name" data-i18n-placeholder="contact.form.namePlaceholder" placeholder="John Smith">
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label form-label--required" data-i18n="contact.form.email">Email</label>
+                <input type="email" id="contact-email" name="email" class="form-input" required autocomplete="email" data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="john@example.com">
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="contact-phone" class="form-label" data-i18n="contact.form.phone">Phone</label>
+                <input type="tel" id="contact-phone" name="phone" class="form-input" autocomplete="tel" data-i18n-placeholder="contact.form.phonePlaceholder" placeholder="(555) 123-4567">
+              </div>
+
+              <!-- Organization -->
+              <div class="form-group">
+                <label for="contact-org" class="form-label" data-i18n="contact.form.organization">Organization</label>
+                <input type="text" id="contact-org" name="organization" class="form-input" autocomplete="organization" data-i18n-placeholder="contact.form.orgPlaceholder" placeholder="Your organization name">
+              </div>
+
+              <!-- Provider Type -->
+              <div class="form-group">
+                <label for="contact-provider" class="form-label" data-i18n="contact.form.providerType">Provider Type</label>
+                <select id="contact-provider" name="provider_type" class="form-select">
+                  <option value="" data-i18n="contact.form.providerSelect">Select provider type</option>
+                  <option value="hospital" data-i18n="contact.form.providerHospital">Hospital</option>
+                  <option value="clinic" data-i18n="contact.form.providerClinic">Clinic</option>
+                  <option value="aco" data-i18n="contact.form.providerACO">ACO</option>
+                  <option value="snf" data-i18n="contact.form.providerSNF">SNF</option>
+                  <option value="other" data-i18n="contact.form.providerOther">Other</option>
+                </select>
+              </div>
+
+              <!-- Interest -->
+              <div class="form-group">
+                <span class="form-label" data-i18n="contact.form.interest">Areas of Interest</span>
+                <div class="form-checkbox-group" role="group" aria-label="Areas of interest">
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="interest" value="rpm">
+                    <span data-i18n="contact.form.interestRPM">RPM</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="interest" value="ccm">
+                    <span data-i18n="contact.form.interestCCM">CCM</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="interest" value="awv">
+                    <span data-i18n="contact.form.interestAWV">AWV</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="interest" value="vbc">
+                    <span data-i18n="contact.form.interestVBC">VBC</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="interest" value="fhir">
+                    <span data-i18n="contact.form.interestFHIR">FHIR Integration</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="interest" value="other">
+                    <span data-i18n="contact.form.interestOther">Other</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label" data-i18n="contact.form.message">Message</label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="5" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Tell us about your needs..."></textarea>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn--primary btn--lg" data-i18n="contact.form.submit">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Quick Info Sidebar -->
+          <aside class="quick-info" aria-label="Contact information">
+            <h3 class="quick-info__title" data-i18n="contact.quickInfo.title">Quick Contact</h3>
+
+            <!-- Phone -->
+            <div class="quick-info__item">
+              <div class="quick-info__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="quick-info__label" data-i18n="contact.quickInfo.phoneLabel">Phone</p>
+                <p class="quick-info__value"><a href="tel:+8221234567">(02) 1234-5678</a></p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="quick-info__item">
+              <div class="quick-info__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <p class="quick-info__label" data-i18n="contact.quickInfo.emailLabel">Email</p>
+                <p class="quick-info__value"><a href="mailto:info@hicare.net">info@hicare.net</a></p>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="quick-info__item">
+              <div class="quick-info__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <p class="quick-info__label" data-i18n="contact.quickInfo.hoursLabel">Business Hours</p>
+                <p class="quick-info__value" data-i18n="contact.quickInfo.hoursValue">Mon&ndash;Fri 8:00 AM &ndash; 6:00 PM PT</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SUPPORT HOURS ===== -->
+    <section class="section" id="support-hours">
+      <div class="container">
+        <div class="support-hours" data-animate="fade-up">
+          <h2 class="support-hours__title" data-i18n="contact.support.title">Support Hours</h2>
+          <p class="support-hours__text" data-i18n="contact.support.text">
+            Our clinical support team is available Monday through Friday, 8:00 AM to 6:00 PM Pacific Time. For urgent technical issues outside business hours, please email <a href="mailto:support@hicare.net">support@hicare.net</a> and our on-call team will respond within 2 hours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <span class="footer__logo-text">HicareNet</span>
+          <p class="footer__brand-desc" data-i18n="footer.description">Comprehensive healthcare technology solutions enabling better patient outcomes through innovation and clinical excellence.</p>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading" data-i18n="footer.solutions">Solutions</h3>
+          <div class="footer__links">
+            <a href="/src/solutions.html#rpm" class="footer__link">RPM</a>
+            <a href="/src/solutions.html#ccm" class="footer__link">CCM</a>
+            <a href="/src/solutions.html#awv" class="footer__link">AWV</a>
+            <a href="/src/solutions.html#vbc" class="footer__link">Value-Based Care</a>
+            <a href="/src/solutions.html#fhir" class="footer__link">FHIR Integration</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading" data-i18n="footer.company">Company</h3>
+          <div class="footer__links">
+            <a href="/src/about.html" class="footer__link" data-i18n="nav.about">About</a>
+            <a href="/src/about.html#team" class="footer__link" data-i18n="nav.team">Team</a>
+            <a href="/src/compliance.html" class="footer__link" data-i18n="nav.compliance">Compliance</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading" data-i18n="footer.resources">Resources</h3>
+          <div class="footer__links">
+            <a href="/src/resources.html" class="footer__link" data-i18n="nav.blog">Blog</a>
+            <a href="/src/resources.html#faq" class="footer__link" data-i18n="nav.faq">FAQ</a>
+            <a href="/src/contact.html" class="footer__link" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 HicareNet, Inc. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

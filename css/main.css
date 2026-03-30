@@ -1,0 +1,28 @@
+/* ============================================
+   HicareNet Main Stylesheet
+   Import aggregator - order matters
+   ============================================ */
+
+/* Design System Foundation */
+@import 'design-system/reset.css';
+@import 'design-system/tokens.css';
+@import 'design-system/utilities.css';
+
+/* Components */
+@import 'components/nav.css';
+@import 'components/hero.css';
+@import 'components/buttons.css';
+@import 'components/cards.css';
+@import 'components/forms.css';
+@import 'components/footer.css';
+
+/* Pages */
+@import 'pages/home.css';
+@import 'pages/solutions.css';
+@import 'pages/about.css';
+@import 'pages/resources.css';
+@import 'pages/contact.css';
+@import 'pages/compliance.css';
+
+/* Animations */
+@import 'animations/scroll-reveal.css';

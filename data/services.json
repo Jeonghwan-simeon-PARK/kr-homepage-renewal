@@ -1,0 +1,92 @@
+{
+  "services": [
+    {
+      "id": "rpm",
+      "slug": "remote-patient-monitoring",
+      "icon": "activity",
+      "color": "blue",
+      "title_key": "solutions.rpm.title",
+      "description_key": "solutions.rpm.description",
+      "cpt_codes": ["99453", "99454", "99457", "99458"],
+      "features": [
+        {"text_key": "solutions.rpm.feature1"},
+        {"text_key": "solutions.rpm.feature2"},
+        {"text_key": "solutions.rpm.feature3"},
+        {"text_key": "solutions.rpm.feature4"}
+      ],
+      "outcomes": [
+        {"text_key": "solutions.rpm.outcome1"},
+        {"text_key": "solutions.rpm.outcome2"},
+        {"text_key": "solutions.rpm.outcome3"}
+      ],
+      "cta_key": "solutions.rpm.cta",
+      "cta_href": "/src/contact.html?service=rpm"
+    },
+    {
+      "id": "ccm",
+      "slug": "chronic-care-management",
+      "icon": "users",
+      "color": "green",
+      "title_key": "solutions.ccm.title",
+      "description_key": "solutions.ccm.description",
+      "cpt_codes": ["99490", "99491", "99487", "99489"],
+      "features": [
+        {"text_key": "solutions.ccm.feature1"},
+        {"text_key": "solutions.ccm.feature2"},
+        {"text_key": "solutions.ccm.feature3"},
+        {"text_key": "solutions.ccm.feature4"}
+      ],
+      "outcomes": [
+        {"text_key": "solutions.ccm.outcome1"},
+        {"text_key": "solutions.ccm.outcome2"},
+        {"text_key": "solutions.ccm.outcome3"}
+      ],
+      "cta_key": "solutions.ccm.cta",
+      "cta_href": "/src/contact.html?service=ccm"
+    },
+    {
+      "id": "awv",
+      "slug": "annual-wellness-visits",
+      "icon": "clipboard-check",
+      "color": "teal",
+      "title_key": "solutions.awv.title",
+      "description_key": "solutions.awv.description",
+      "cpt_codes": ["G0438", "G0439"],
+      "features": [
+        {"text_key": "solutions.awv.feature1"},
+        {"text_key": "solutions.awv.feature2"},
+        {"text_key": "solutions.awv.feature3"},
+        {"text_key": "solutions.awv.feature4"}
+      ],
+      "outcomes": [
+        {"text_key": "solutions.awv.outcome1"},
+        {"text_key": "solutions.awv.outcome2"},
+        {"text_key": "solutions.awv.outcome3"}
+      ],
+      "cta_key": "solutions.awv.cta",
+      "cta_href": "/src/contact.html?service=awv"
+    },
+    {
+      "id": "vbc",
+      "slug": "value-based-care",
+      "icon": "bar-chart",
+      "color": "purple",
+      "title_key": "solutions.vbc.title",
+      "description_key": "solutions.vbc.description",
+      "cpt_codes": [],
+      "features": [
+        {"text_key": "solutions.vbc.feature1"},
+        {"text_key": "solutions.vbc.feature2"},
+        {"text_key": "solutions.vbc.feature3"},
+        {"text_key": "solutions.vbc.feature4"}
+      ],
+      "outcomes": [
+        {"text_key": "solutions.vbc.outcome1"},
+        {"text_key": "solutions.vbc.outcome2"},
+        {"text_key": "solutions.vbc.outcome3"}
+      ],
+      "cta_key": "solutions.vbc.cta",
+      "cta_href": "/src/contact.html?service=vbc"
+    }
+  ]
+}

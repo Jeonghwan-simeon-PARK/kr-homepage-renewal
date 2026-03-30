@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "id": "solutions",
+      "label_key": "nav.solutions",
+      "href": "/src/solutions.html",
+      "children": [
+        {"id": "rpm", "label_key": "nav.solutions.rpm", "href": "/src/solutions.html#rpm"},
+        {"id": "ccm", "label_key": "nav.solutions.ccm", "href": "/src/solutions.html#ccm"},
+        {"id": "awv", "label_key": "nav.solutions.awv", "href": "/src/solutions.html#awv"},
+        {"id": "vbc", "label_key": "nav.solutions.vbc", "href": "/src/solutions.html#vbc"},
+        {"id": "fhir", "label_key": "nav.solutions.fhir", "href": "/src/solutions.html#fhir"}
+      ]
+    },
+    {
+      "id": "about",
+      "label_key": "nav.about",
+      "href": "/src/about.html",
+      "children": [
+        {"id": "story", "label_key": "nav.story", "href": "/src/about.html#story"},
+        {"id": "team", "label_key": "nav.team", "href": "/src/about.html#team"},
+        {"id": "us-operations", "label_key": "nav.us_operations", "href": "/src/about.html#us-operations"}
+      ]
+    },
+    {
+      "id": "resources",
+      "label_key": "nav.resources",
+      "href": "/src/resources.html",
+      "children": [
+        {"id": "blog", "label_key": "nav.blog", "href": "/src/resources.html"},
+        {"id": "faq", "label_key": "nav.faq", "href": "/src/resources.html#faq"}
+      ]
+    },
+    {
+      "id": "compliance",
+      "label_key": "nav.compliance",
+      "href": "/src/compliance.html",
+      "children": [
+        {"id": "hipaa", "label_key": "compliance.hipaa.name", "href": "/src/compliance.html#hipaa"},
+        {"id": "iso27001", "label_key": "compliance.iso27001.name", "href": "/src/compliance.html#iso27001"},
+        {"id": "iso27701", "label_key": "compliance.iso27701.name", "href": "/src/compliance.html#iso27701"}
+      ]
+    },
+    {
+      "id": "contact",
+      "label_key": "nav.contact",
+      "href": "/src/contact.html"
+    }
+  ]
+}
