@@ -152,6 +152,56 @@
     });
   }
 
+  // ── Form Handling ──
+  function initForms() {
+    const forms = document.querySelectorAll('.newsletter-form');
+    forms.forEach(form => {
+      form.removeAttribute('onsubmit');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const emailInput = form.querySelector('input[type="email"]');
+        if (!emailInput || !emailInput.value.trim()) return;
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+          emailInput.style.borderColor = 'var(--error, #dc2626)';
+          return;
+        }
+
+        const isContact = form.closest('[aria-label]')?.getAttribute('aria-label')?.includes('contact') ||
+                          form.querySelector('button')?.textContent?.toLowerCase().includes('connect');
+
+        const subject = encodeURIComponent(isContact ? 'HicareNet Contact Inquiry' : 'HicareNet Newsletter Subscription');
+        const body = encodeURIComponent(
+          isContact
+            ? `I would like to learn more about HicareNet services.\n\nEmail: ${emailInput.value}`
+            : `I would like to subscribe to the HicareNet newsletter.\n\nEmail: ${emailInput.value}`
+        );
+        window.location.href = `mailto:info@hicare.net?subject=${subject}&body=${body}`;
+
+        const btn = form.querySelector('button[type="submit"]');
+        if (btn) {
+          const originalText = btn.textContent;
+          btn.textContent = '\u2713 Sent!';
+          btn.disabled = true;
+          emailInput.value = '';
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+          }, 3000);
+        }
+      });
+
+      // Clear error on input
+      const emailInput = form.querySelector('input[type="email"]');
+      if (emailInput) {
+        emailInput.addEventListener('input', () => {
+          emailInput.style.borderColor = '';
+        });
+      }
+    });
+  }
+
   // ── Init ──
   document.addEventListener('DOMContentLoaded', () => {
     initNav();
@@ -159,5 +209,6 @@
     initI18n();
     initFilters();
     initGallery();
+    initForms();
   });
 })();
