@@ -849,6 +849,12 @@
     "goHome": "Go Home",
     "contact": "Contact Us"
   },
+  "article": {
+    "backToResources": "\u2190 Back to Resources",
+    "relatedTitle": "Related Articles",
+    "comingSoon": "Full article content coming soon.",
+    "readTime": "min read"
+  },
   "footer": {
     "description": "From FDA 510(K) certified medical devices to cloud-based RPM/CCM solutions — 20+ years of healthcare technology innovation, proven across global markets.",
     "solutions": "Solutions",

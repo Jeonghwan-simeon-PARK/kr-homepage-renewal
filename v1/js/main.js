@@ -9,6 +9,7 @@ import { initI18n } from './i18n/i18n-manager.js';
 import { initFaqAccordion } from './components/faq-accordion.js';
 import { initFormHandler } from './components/form-handler.js';
 import { initBlogFilter } from './components/blog-filter.js';
+import { initArticleLoader } from './components/article-loader.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Core components
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initFormHandler();
   initBlogFilter();
+  initArticleLoader();
 
   // Back to top button
   initBackToTop();

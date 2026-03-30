@@ -202,6 +202,62 @@
     });
   }
 
+  // ── Article Detail ──
+  function initArticle() {
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get('slug');
+    if (!slug) return;
+
+    loadArticle(slug);
+  }
+
+  async function loadArticle(slug) {
+    try {
+      const newsRes = await fetch('data/news.json');
+      const newsData = await newsRes.json();
+      const article = newsData.articles.find(a => a.slug === slug);
+
+      if (!article) {
+        window.location.href = 'news.html';
+        return;
+      }
+
+      const lang = localStorage.getItem('hicarenet-lang') || 'en';
+      const i18nRes = await fetch(`data/i18n/${lang}.json`);
+      const i18n = await i18nRes.json();
+
+      const i18nKey = article.i18nKey || `c${article.id}`;
+      const cardData = article.featured
+        ? i18n.news?.hero
+        : i18n.news?.cards?.[i18nKey];
+
+      if (!cardData) return;
+
+      // Set hero background image
+      const hero = document.getElementById('article-hero');
+      if (hero && article.image) {
+        hero.style.backgroundImage = `url(${article.image})`;
+      }
+
+      document.getElementById('article-title').textContent = cardData.title;
+      document.getElementById('article-tag').textContent = cardData.tag || article.category;
+      document.getElementById('article-date').textContent = article.date;
+      document.getElementById('article-readtime').textContent = '5 min read';
+      document.title = `${cardData.title} | HicareNet`;
+
+      // Article body from i18n
+      const articleContent = i18n.articles?.[i18nKey];
+      const bodyEl = document.getElementById('article-body');
+      if (articleContent && bodyEl) {
+        bodyEl.innerHTML = articleContent.body;
+      } else if (bodyEl) {
+        bodyEl.innerHTML = `<p style="font-size: 1.125rem; color: var(--on-surface-variant);">${cardData.desc || ''}</p><p style="margin-top: 2rem; color: var(--on-surface-variant); font-style: italic;">${i18n.article?.comingSoon || 'Full article content coming soon.'}</p>`;
+      }
+    } catch (err) {
+      console.error('Failed to load article:', err);
+    }
+  }
+
   // ── Init ──
   document.addEventListener('DOMContentLoaded', () => {
     initNav();
@@ -210,5 +266,6 @@
     initFilters();
     initGallery();
     initForms();
+    initArticle();
   });
 })();

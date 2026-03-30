@@ -24,6 +24,7 @@
 @import 'pages/contact.css';
 @import 'pages/compliance.css';
 @import 'pages/legal.css';
+@import 'pages/article.css';
 
 /* Animations */
 @import 'animations/scroll-reveal.css';

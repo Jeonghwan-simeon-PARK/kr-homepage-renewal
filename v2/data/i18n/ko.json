@@ -1,570 +1,574 @@
 {
   "nav": {
-    "company": "회사소개",
-    "solutions": "솔루션",
-    "about": "소개",
-    "news": "뉴스"
+    "company": "\ud68c\uc0ac\uc18c\uac1c",
+    "solutions": "\uc194\ub8e8\uc158",
+    "about": "\uc18c\uac1c",
+    "news": "\ub274\uc2a4"
   },
   "home": {
     "hero": {
-      "tag": "글로벌 헬스케어 IT 인프라",
-      "title": "원격 의료의 표준.",
-      "desc": "하이케어넷은 첨단 의료 IT 융합을 통해 RPM 및 CCM 운영을 주도하며, HL7 FHIR 표준 통합으로 Hicare.net Inc의 미국 시장 리더십을 지원합니다.",
-      "cta1": "RPM 서비스 탐색",
-      "cta2": "R&D 혁신"
+      "tag": "\uae00\ub85c\ubc8c \ud5ec\uc2a4\ucf00\uc5b4 IT \uc778\ud504\ub77c",
+      "title": "\uc6d0\uaca9 \uc758\ub8cc\uc758 \ud45c\uc900.",
+      "desc": "\ud558\uc774\ucf00\uc5b4\ub137\uc740 \ucca8\ub2e8 \uc758\ub8cc IT \uc735\ud569\uc744 \ud1b5\ud574 RPM \ubc0f CCM \uc6b4\uc601\uc744 \uc8fc\ub3c4\ud558\uba70, HL7 FHIR \ud45c\uc900 \ud1b5\ud569\uc73c\ub85c Hicare.net Inc\uc758 \ubbf8\uad6d \uc2dc\uc7a5 \ub9ac\ub354\uc2ed\uc744 \uc9c0\uc6d0\ud569\ub2c8\ub2e4.",
+      "cta1": "RPM \uc11c\ube44\uc2a4 \ud0d0\uc0c9",
+      "cta2": "R&D \ud601\uc2e0"
     },
     "certs": {
-      "iso27001": "ISO 27001 인증",
-      "iso27701": "ISO 27701 인증",
-      "hipaa": "HIPAA 준수",
-      "fhir": "HL7 FHIR 표준"
+      "iso27001": "ISO 27001 \uc778\uc99d",
+      "iso27701": "ISO 27701 \uc778\uc99d",
+      "hipaa": "HIPAA \uc900\uc218",
+      "fhir": "HL7 FHIR \ud45c\uc900"
     },
     "services": {
-      "title": "운영 및 기술",
-      "desc": "캘리포니아 Hicare.net Inc를 통한 미국 시장 직접 운영과 글로벌 R&D 역량으로 원활한 RPM/CCM 솔루션을 제공합니다.",
+      "title": "\uc6b4\uc601 \ubc0f \uae30\uc220",
+      "desc": "\uce98\ub9ac\ud3ec\ub2c8\uc544 Hicare.net Inc\ub97c \ud1b5\ud55c \ubbf8\uad6d \uc2dc\uc7a5 \uc9c1\uc811 \uc6b4\uc601\uacfc \uae00\ub85c\ubc8c R&D \uc5ed\ub7c9\uc73c\ub85c \uc6d0\ud65c\ud55c RPM/CCM \uc194\ub8e8\uc158\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.",
       "us": {
-        "tag": "Hicare.net Inc (캘리포니아)",
-        "title": "미국 시장 직접 운영",
-        "desc": "캘리포니아 자회사가 원격 환자 모니터링(RPM)과 만성질환 관리(CCM) 서비스를 직접 관리하여, 글로벌 규모의 현지 전문성을 보장합니다."
+        "tag": "Hicare.net Inc (\uce98\ub9ac\ud3ec\ub2c8\uc544)",
+        "title": "\ubbf8\uad6d \uc2dc\uc7a5 \uc9c1\uc811 \uc6b4\uc601",
+        "desc": "\uce98\ub9ac\ud3ec\ub2c8\uc544 \uc790\ud68c\uc0ac\uac00 \uc6d0\uaca9 \ud658\uc790 \ubaa8\ub2c8\ud130\ub9c1(RPM)\uacfc \ub9cc\uc131\uc9c8\ud658 \uad00\ub9ac(CCM) \uc11c\ube44\uc2a4\ub97c \uc9c1\uc811 \uad00\ub9ac\ud558\uc5ec, \uae00\ub85c\ubc8c \uaddc\ubaa8\uc758 \ud604\uc9c0 \uc804\ubb38\uc131\uc744 \ubcf4\uc7a5\ud569\ub2c8\ub2e4."
       },
       "fhir": {
-        "tag": "상호운용성",
-        "title": "FHIR 표준",
-        "desc": "주요 미국 의료 서비스 제공업체 및 EHR 시스템과의 원활한 데이터 통합을 위한 HL7 FHIR 프로토콜 적극 도입."
+        "tag": "\uc0c1\ud638\uc6b4\uc6a9\uc131",
+        "title": "FHIR \ud45c\uc900",
+        "desc": "\uc8fc\uc694 \ubbf8\uad6d \uc758\ub8cc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc5c5\uccb4 \ubc0f EHR \uc2dc\uc2a4\ud15c\uacfc\uc758 \uc6d0\ud65c\ud55c \ub370\uc774\ud130 \ud1b5\ud569\uc744 \uc704\ud55c HL7 FHIR \ud504\ub85c\ud1a0\ucf5c \uc801\uadf9 \ub3c4\uc785."
       },
       "rd": {
-        "tag": "중앙 집중 R&D",
-        "title": "서비스 코어",
-        "desc": "전담 R&D 조직이 모든 독자 서비스를 개발하고 미국 자회사에 직접 기술 지원을 제공합니다."
+        "tag": "\uc911\uc559 \uc9d1\uc911 R&D",
+        "title": "\uc11c\ube44\uc2a4 \ucf54\uc5b4",
+        "desc": "\uc804\ub2f4 R&D \uc870\uc9c1\uc774 \ubaa8\ub4e0 \ub3c5\uc790 \uc11c\ube44\uc2a4\ub97c \uac1c\ubc1c\ud558\uace0 \ubbf8\uad6d \uc790\ud68c\uc0ac\uc5d0 \uc9c1\uc811 \uae30\uc220 \uc9c0\uc6d0\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4."
       },
       "infra": {
-        "title": "네트워크 인프라",
-        "desc": "고가용성 클라우드 의료 시스템으로 미국 전역 수백 개 클리닉과 국제 시장을 지원합니다."
+        "title": "\ub124\ud2b8\uc6cc\ud06c \uc778\ud504\ub77c",
+        "desc": "\uace0\uac00\uc6a9\uc131 \ud074\ub77c\uc6b0\ub4dc \uc758\ub8cc \uc2dc\uc2a4\ud15c\uc73c\ub85c \ubbf8\uad6d \uc804\uc5ed \uc218\ubc31 \uac1c \ud074\ub9ac\ub2c9\uacfc \uad6d\uc81c \uc2dc\uc7a5\uc744 \uc9c0\uc6d0\ud569\ub2c8\ub2e4."
       }
     },
     "company": {
-      "label": "R&D 기반 우수성",
-      "title": "환자에게 직접 영향을 미치는 기술.",
-      "desc": "하이케어넷은 미국 Hicare.net Inc 성공의 원동력입니다. R&D를 중앙 집중화하여 모든 단말기와 플랫폼이 엄격한 ISO 및 HIPAA 표준을 충족하면서 원격 의료의 한계를 넓히고 있습니다.",
-      "stat": "Hicare 인프라 운영 국가",
+      "label": "R&D \uae30\ubc18 \uc6b0\uc218\uc131",
+      "title": "\ud658\uc790\uc5d0\uac8c \uc9c1\uc811 \uc601\ud5a5\uc744 \ubbf8\uce58\ub294 \uae30\uc220.",
+      "desc": "\ud558\uc774\ucf00\uc5b4\ub137\uc740 \ubbf8\uad6d Hicare.net Inc \uc131\uacf5\uc758 \uc6d0\ub3d9\ub825\uc785\ub2c8\ub2e4. R&D\ub97c \uc911\uc559 \uc9d1\uc911\ud654\ud558\uc5ec \ubaa8\ub4e0 \ub2e8\ub9d0\uae30\uc640 \ud50c\ub7ab\ud3fc\uc774 \uc5c4\uaca9\ud55c ISO \ubc0f HIPAA \ud45c\uc900\uc744 \ucda9\uc871\ud558\uba74\uc11c \uc6d0\uaca9 \uc758\ub8cc\uc758 \ud55c\uacc4\ub97c \ub113\ud788\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
+      "stat": "Hicare \uc778\ud504\ub77c \uc6b4\uc601 \uad6d\uac00",
       "feature1": {
-        "title": "미국 규정 준수",
-        "desc": "Hicare.net Inc의 RPM/CCM 서비스 제공을 위한 완전한 HIPAA 준수."
+        "title": "\ubbf8\uad6d \uaddc\uc815 \uc900\uc218",
+        "desc": "Hicare.net Inc\uc758 RPM/CCM \uc11c\ube44\uc2a4 \uc81c\uacf5\uc744 \uc704\ud55c \uc644\uc804\ud55c HIPAA \uc900\uc218."
       },
       "feature2": {
-        "title": "표준화",
-        "desc": "FHIR 기반 의료 데이터 교환 프로토콜 업계 선도."
+        "title": "\ud45c\uc900\ud654",
+        "desc": "FHIR \uae30\ubc18 \uc758\ub8cc \ub370\uc774\ud130 \uad50\ud658 \ud504\ub85c\ud1a0\ucf5c \uc5c5\uacc4 \uc120\ub3c4."
       },
-      "cta": "기술 스택 살펴보기"
+      "cta": "\uae30\uc220 \uc2a4\ud0dd \uc0b4\ud3b4\ubcf4\uae30"
     },
     "news": {
-      "title": "글로벌 헬스 테크 업데이트",
-      "desc": "미국 운영 및 글로벌 R&D 센터의 최신 소식.",
-      "cta": "보도자료 보기",
+      "title": "\uae00\ub85c\ubc8c \ud5ec\uc2a4 \ud14c\ud06c \uc5c5\ub370\uc774\ud2b8",
+      "desc": "\ubbf8\uad6d \uc6b4\uc601 \ubc0f \uae00\ub85c\ubc8c R&D \uc13c\ud130\uc758 \ucd5c\uc2e0 \uc18c\uc2dd.",
+      "cta": "\ubcf4\ub3c4\uc790\ub8cc \ubcf4\uae30",
       "item1": {
-        "title": "Hicare.net Inc 캘리포니아 서비스 센터 확장",
-        "desc": "미국 서부 해안 RPM/CCM 고객을 위한 새로운 서비스 역량으로 직접 지원 강화."
+        "title": "Hicare.net Inc \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc11c\ube44\uc2a4 \uc13c\ud130 \ud655\uc7a5",
+        "desc": "\ubbf8\uad6d \uc11c\ubd80 \ud574\uc548 RPM/CCM \uace0\uac1d\uc744 \uc704\ud55c \uc0c8\ub85c\uc6b4 \uc11c\ube44\uc2a4 \uc5ed\ub7c9\uc73c\ub85c \uc9c1\uc811 \uc9c0\uc6d0 \uac15\ud654."
       },
       "item2": {
-        "title": "독자 FHIR 통합 레이어 출시",
-        "desc": "R&D 팀이 모든 신규 Hicare Hub 단말기에 대한 FHIR 표준 100% 호환성 발표."
+        "title": "\ub3c5\uc790 FHIR \ud1b5\ud569 \ub808\uc774\uc5b4 \ucd9c\uc2dc",
+        "desc": "R&D \ud300\uc774 \ubaa8\ub4e0 \uc2e0\uaddc Hicare Hub \ub2e8\ub9d0\uae30\uc5d0 \ub300\ud55c FHIR \ud45c\uc900 100% \ud638\ud658\uc131 \ubc1c\ud45c."
       },
       "item3": {
-        "title": "ISO 27701 재인증 성공",
-        "desc": "하이케어넷, 모든 글로벌 의료 데이터에 대한 세계 최고 수준의 개인정보 관리 표준 유지."
+        "title": "ISO 27701 \uc7ac\uc778\uc99d \uc131\uacf5",
+        "desc": "\ud558\uc774\ucf00\uc5b4\ub137, \ubaa8\ub4e0 \uae00\ub85c\ubc8c \uc758\ub8cc \ub370\uc774\ud130\uc5d0 \ub300\ud55c \uc138\uacc4 \ucd5c\uace0 \uc218\uc900\uc758 \uac1c\uc778\uc815\ubcf4 \uad00\ub9ac \ud45c\uc900 \uc720\uc9c0."
       }
     }
   },
   "about": {
     "hero": {
       "tag": "HICARE.NET INC",
-      "title": "미국 RPM & CCM 서비스 강화.",
-      "desc": "캘리포니아에 본사를 둔 Hicare.net Inc.는 하이케어넷의 미국 자회사로, 첨단 원격 환자 모니터링(RPM) 및 만성질환 관리(CCM) 솔루션 제공에 전념합니다."
+      "title": "\ubbf8\uad6d RPM & CCM \uc11c\ube44\uc2a4 \uac15\ud654.",
+      "desc": "\uce98\ub9ac\ud3ec\ub2c8\uc544\uc5d0 \ubcf8\uc0ac\ub97c \ub454 Hicare.net Inc.\ub294 \ud558\uc774\ucf00\uc5b4\ub137\uc758 \ubbf8\uad6d \uc790\ud68c\uc0ac\ub85c, \ucca8\ub2e8 \uc6d0\uaca9 \ud658\uc790 \ubaa8\ub2c8\ud130\ub9c1(RPM) \ubc0f \ub9cc\uc131\uc9c8\ud658 \uad00\ub9ac(CCM) \uc194\ub8e8\uc158 \uc81c\uacf5\uc5d0 \uc804\ub150\ud569\ub2c8\ub2e4."
     },
     "focus": {
-      "title": "우리의 초점",
-      "desc": "미국 의료 서비스 제공업체의 환자 결과 개선과 운영 효율성 향상을 위해 최적화된 종합 RPM 및 CCM 플랫폼으로 임상 격차를 해소하는 데 전문화되어 있습니다."
+      "title": "\uc6b0\ub9ac\uc758 \ucd08\uc810",
+      "desc": "\ubbf8\uad6d \uc758\ub8cc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc5c5\uccb4\uc758 \ud658\uc790 \uacb0\uacfc \uac1c\uc120\uacfc \uc6b4\uc601 \ud6a8\uc728\uc131 \ud5a5\uc0c1\uc744 \uc704\ud574 \ucd5c\uc801\ud654\ub41c \uc885\ud569 RPM \ubc0f CCM \ud50c\ub7ab\ud3fc\uc73c\ub85c \uc784\uc0c1 \uaca9\ucc28\ub97c \ud574\uc18c\ud558\ub294 \ub370 \uc804\ubb38\ud654\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4."
     },
     "security": {
-      "title": "보안 및 표준",
-      "desc": "데이터 무결성에 대한 확고한 의지. 당사 솔루션은 완전한 HIPAA 준수와 ISO 27001(정보 보안) 및 ISO 27701(개인정보 관리) 인증을 획득했습니다."
+      "title": "\ubcf4\uc548 \ubc0f \ud45c\uc900",
+      "desc": "\ub370\uc774\ud130 \ubb34\uacb0\uc131\uc5d0 \ub300\ud55c \ud655\uace0\ud55c \uc758\uc9c0. \ub2f9\uc0ac \uc194\ub8e8\uc158\uc740 \uc644\uc804\ud55c HIPAA \uc900\uc218\uc640 ISO 27001(\uc815\ubcf4 \ubcf4\uc548) \ubc0f ISO 27701(\uac1c\uc778\uc815\ubcf4 \uad00\ub9ac) \uc778\uc99d\uc744 \ud68d\ub4dd\ud588\uc2b5\ub2c8\ub2e4."
     },
     "rd": {
-      "title": "글로벌 R&D 조직: 풀스택 혁신.",
-      "desc1": "R&D 조직은 하이케어넷의 근간으로, 임베디드 하드웨어 시스템부터 클라우드 네이티브 의료 소프트웨어까지 풀스택 서비스 개발을 주도합니다. 단순한 앱 개발이 아닌 전체 케어 생태계를 설계합니다.",
-      "desc2": "미국 파트너에게 24/7 기술 지원을 제공하기 위해 전략적으로 배치된 엔지니어링 팀은 Hicare 플랫폼이 시장에서 가장 안정적이고 상호운용 가능한 솔루션으로 유지되도록 HL7 FHIR 프로토콜을 기본 지원합니다.",
+      "title": "\uae00\ub85c\ubc8c R&D \uc870\uc9c1: \ud480\uc2a4\ud0dd \ud601\uc2e0.",
+      "desc1": "R&D \uc870\uc9c1\uc740 \ud558\uc774\ucf00\uc5b4\ub137\uc758 \uadfc\uac04\uc73c\ub85c, \uc784\ubca0\ub514\ub4dc \ud558\ub4dc\uc6e8\uc5b4 \uc2dc\uc2a4\ud15c\ubd80\ud130 \ud074\ub77c\uc6b0\ub4dc \ub124\uc774\ud2f0\ube0c \uc758\ub8cc \uc18c\ud504\ud2b8\uc6e8\uc5b4\uae4c\uc9c0 \ud480\uc2a4\ud0dd \uc11c\ube44\uc2a4 \uac1c\ubc1c\uc744 \uc8fc\ub3c4\ud569\ub2c8\ub2e4. \ub2e8\uc21c\ud55c \uc571 \uac1c\ubc1c\uc774 \uc544\ub2cc \uc804\uccb4 \ucf00\uc5b4 \uc0dd\ud0dc\uacc4\ub97c \uc124\uacc4\ud569\ub2c8\ub2e4.",
+      "desc2": "\ubbf8\uad6d \ud30c\ud2b8\ub108\uc5d0\uac8c 24/7 \uae30\uc220 \uc9c0\uc6d0\uc744 \uc81c\uacf5\ud558\uae30 \uc704\ud574 \uc804\ub7b5\uc801\uc73c\ub85c \ubc30\uce58\ub41c \uc5d4\uc9c0\ub2c8\uc5b4\ub9c1 \ud300\uc740 Hicare \ud50c\ub7ab\ud3fc\uc774 \uc2dc\uc7a5\uc5d0\uc11c \uac00\uc7a5 \uc548\uc815\uc801\uc774\uace0 \uc0c1\ud638\uc6b4\uc6a9 \uac00\ub2a5\ud55c \uc194\ub8e8\uc158\uc73c\ub85c \uc720\uc9c0\ub418\ub3c4\ub85d HL7 FHIR \ud504\ub85c\ud1a0\ucf5c\uc744 \uae30\ubcf8 \uc9c0\uc6d0\ud569\ub2c8\ub2e4.",
       "feature1": {
-        "title": "풀스택 개발",
-        "desc": "디바이스에서 클라우드까지 엔드투엔드 서비스 아키텍처."
+        "title": "\ud480\uc2a4\ud0dd \uac1c\ubc1c",
+        "desc": "\ub514\ubc14\uc774\uc2a4\uc5d0\uc11c \ud074\ub77c\uc6b0\ub4dc\uae4c\uc9c0 \uc5d4\ub4dc\ud22c\uc5d4\ub4dc \uc11c\ube44\uc2a4 \uc544\ud0a4\ud14d\ucc98."
       },
       "feature2": {
-        "title": "미국 지원",
-        "desc": "북미 운영을 위한 전담 기술 조직."
+        "title": "\ubbf8\uad6d \uc9c0\uc6d0",
+        "desc": "\ubd81\ubbf8 \uc6b4\uc601\uc744 \uc704\ud55c \uc804\ub2f4 \uae30\uc220 \uc870\uc9c1."
       }
     },
     "timeline": {
-      "title": "주요 이정표",
-      "desc": "글로벌 시장에 디지털 헬스케어 우수성을 제공하기 위한 전략적 여정.",
+      "title": "\uc8fc\uc694 \uc774\uc815\ud45c",
+      "desc": "\uae00\ub85c\ubc8c \uc2dc\uc7a5\uc5d0 \ub514\uc9c0\ud138 \ud5ec\uc2a4\ucf00\uc5b4 \uc6b0\uc218\uc131\uc744 \uc81c\uacf5\ud558\uae30 \uc704\ud55c \uc804\ub7b5\uc801 \uc5ec\uc815.",
       "y2024": {
-        "title": "ISO 27701 인증 획득",
-        "desc": "개인정보 관리에 대한 의지를 더욱 공고히 하며 글로벌 ISO 27701 표준 달성."
+        "title": "ISO 27701 \uc778\uc99d \ud68d\ub4dd",
+        "desc": "\uac1c\uc778\uc815\ubcf4 \uad00\ub9ac\uc5d0 \ub300\ud55c \uc758\uc9c0\ub97c \ub354\uc6b1 \uacf5\uace0\ud788 \ud558\uba70 \uae00\ub85c\ubc8c ISO 27701 \ud45c\uc900 \ub2ec\uc131."
       },
       "y2022": {
-        "title": "Hicare.net Inc. 캘리포니아 설립",
-        "desc": "RPM 및 CCM 운영을 선도하기 위해 캘리포니아에 전용 미국 본부 설립."
+        "title": "Hicare.net Inc. \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc124\ub9bd",
+        "desc": "RPM \ubc0f CCM \uc6b4\uc601\uc744 \uc120\ub3c4\ud558\uae30 \uc704\ud574 \uce98\ub9ac\ud3ec\ub2c8\uc544\uc5d0 \uc804\uc6a9 \ubbf8\uad6d \ubcf8\ubd80 \uc124\ub9bd."
       },
       "y2018": {
-        "title": "FHIR 및 상호운용성",
-        "desc": "미국 EMR과의 원활한 통합을 위해 모든 Hicare Hub 솔루션에 네이티브 FHIR 프로토콜 지원 통합."
+        "title": "FHIR \ubc0f \uc0c1\ud638\uc6b4\uc6a9\uc131",
+        "desc": "\ubbf8\uad6d EMR\uacfc\uc758 \uc6d0\ud65c\ud55c \ud1b5\ud569\uc744 \uc704\ud574 \ubaa8\ub4e0 Hicare Hub \uc194\ub8e8\uc158\uc5d0 \ub124\uc774\ud2f0\ube0c FHIR \ud504\ub85c\ud1a0\ucf5c \uc9c0\uc6d0 \ud1b5\ud569."
       },
       "y2016": {
-        "title": "FDA 510(k) 인증 획득",
-        "desc": "원격 모니터링 하드웨어 생태계에 대한 미국 FDA 인증 성공적 획득."
+        "title": "FDA 510(k) \uc778\uc99d \ud68d\ub4dd",
+        "desc": "\uc6d0\uaca9 \ubaa8\ub2c8\ud130\ub9c1 \ud558\ub4dc\uc6e8\uc5b4 \uc0dd\ud0dc\uacc4\uc5d0 \ub300\ud55c \ubbf8\uad6d FDA \uc778\uc99d \uc131\uacf5\uc801 \ud68d\ub4dd."
       }
     },
     "expertise": {
-      "label": "전문성",
-      "title": "핵심 역량",
-      "desc": "임상 의학, 첨단 엔지니어링, 엄격한 보안 표준의 가교.",
+      "label": "\uc804\ubb38\uc131",
+      "title": "\ud575\uc2ec \uc5ed\ub7c9",
+      "desc": "\uc784\uc0c1 \uc758\ud559, \ucca8\ub2e8 \uc5d4\uc9c0\ub2c8\uc5b4\ub9c1, \uc5c4\uaca9\ud55c \ubcf4\uc548 \ud45c\uc900\uc758 \uac00\uad50.",
       "card1": {
-        "title": "FHIR 프로토콜",
-        "desc": "주요 미국 의료 시스템 및 EMR과의 원활한 상호운용성을 보장하는 완전한 HL7 FHIR 지원."
+        "title": "FHIR \ud504\ub85c\ud1a0\ucf5c",
+        "desc": "\uc8fc\uc694 \ubbf8\uad6d \uc758\ub8cc \uc2dc\uc2a4\ud15c \ubc0f EMR\uacfc\uc758 \uc6d0\ud65c\ud55c \uc0c1\ud638\uc6b4\uc6a9\uc131\uc744 \ubcf4\uc7a5\ud558\ub294 \uc644\uc804\ud55c HL7 FHIR \uc9c0\uc6d0."
       },
       "card2": {
         "title": "HIPAA & ISO",
-        "desc": "최고 수준의 보안: ISO 27001 및 ISO 27701 인증, 엄격한 HIPAA 데이터 준수 보장."
+        "desc": "\ucd5c\uace0 \uc218\uc900\uc758 \ubcf4\uc548: ISO 27001 \ubc0f ISO 27701 \uc778\uc99d, \uc5c4\uaca9\ud55c HIPAA \ub370\uc774\ud130 \uc900\uc218 \ubcf4\uc7a5."
       },
       "card3": {
-        "title": "풀스택 R&D",
-        "desc": "임베디드 하드웨어, 모바일 개발, 확장 가능한 클라우드 플랫폼 전반의 내부 전문성."
+        "title": "\ud480\uc2a4\ud0dd R&D",
+        "desc": "\uc784\ubca0\ub514\ub4dc \ud558\ub4dc\uc6e8\uc5b4, \ubaa8\ubc14\uc77c \uac1c\ubc1c, \ud655\uc7a5 \uac00\ub2a5\ud55c \ud074\ub77c\uc6b0\ub4dc \ud50c\ub7ab\ud3fc \uc804\ubc18\uc758 \ub0b4\ubd80 \uc804\ubb38\uc131."
       },
       "card4": {
-        "title": "미국 운영 지원",
-        "desc": "미국 RPM/CCM 시장의 고유한 요구에 특화된 24/7 기술 운영."
+        "title": "\ubbf8\uad6d \uc6b4\uc601 \uc9c0\uc6d0",
+        "desc": "\ubbf8\uad6d RPM/CCM \uc2dc\uc7a5\uc758 \uace0\uc720\ud55c \uc694\uad6c\uc5d0 \ud2b9\ud654\ub41c 24/7 \uae30\uc220 \uc6b4\uc601."
       }
     },
     "cta": {
-      "title": "미국 헬스케어의 신뢰받는 파트너",
-      "desc": "글로벌 R&D 본부에서 미국 전역 수천 명의 환자를 위한 임상 케어를 구동하는 기술을 제공합니다.",
-      "stat1": "규정 준수",
-      "badge": "통합 RPM/CCM 인프라"
+      "title": "\ubbf8\uad6d \ud5ec\uc2a4\ucf00\uc5b4\uc758 \uc2e0\ub8b0\ubc1b\ub294 \ud30c\ud2b8\ub108",
+      "desc": "\uae00\ub85c\ubc8c R&D \ubcf8\ubd80\uc5d0\uc11c \ubbf8\uad6d \uc804\uc5ed \uc218\ucc9c \uba85\uc758 \ud658\uc790\ub97c \uc704\ud55c \uc784\uc0c1 \ucf00\uc5b4\ub97c \uad6c\ub3d9\ud558\ub294 \uae30\uc220\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.",
+      "stat1": "\uaddc\uc815 \uc900\uc218",
+      "badge": "\ud1b5\ud569 RPM/CCM \uc778\ud504\ub77c"
     }
   },
   "solutions": {
     "hero": {
-      "tag": "미국 시장 RPM & CCM 솔루션",
-      "title": "미국 가치 기반 케어 강화.",
-      "desc": "하이케어넷은 미국 의료 표준과 완전히 통합된 원격 환자 모니터링(RPM) 및 만성질환 관리(CCM)를 위한 종합 생태계를 제공합니다.",
-      "cta1": "솔루션 보기",
-      "cta2": "미국 규정 준수"
+      "tag": "\ubbf8\uad6d \uc2dc\uc7a5 RPM & CCM \uc194\ub8e8\uc158",
+      "title": "\ubbf8\uad6d \uac00\uce58 \uae30\ubc18 \ucf00\uc5b4 \uac15\ud654.",
+      "desc": "\ud558\uc774\ucf00\uc5b4\ub137\uc740 \ubbf8\uad6d \uc758\ub8cc \ud45c\uc900\uacfc \uc644\uc804\ud788 \ud1b5\ud569\ub41c \uc6d0\uaca9 \ud658\uc790 \ubaa8\ub2c8\ud130\ub9c1(RPM) \ubc0f \ub9cc\uc131\uc9c8\ud658 \uad00\ub9ac(CCM)\ub97c \uc704\ud55c \uc885\ud569 \uc0dd\ud0dc\uacc4\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4.",
+      "cta1": "\uc194\ub8e8\uc158 \ubcf4\uae30",
+      "cta2": "\ubbf8\uad6d \uaddc\uc815 \uc900\uc218"
     },
     "hub": {
-      "label": "RPM을 위한 중앙 게이트웨이",
-      "title": "Hicare Hub: 임상 워크플로우 간소화",
-      "desc": "미국 임상 환경을 위해 특별히 설계된 의료급 게이트웨이. Hicare Hub는 RPM 수가 청구를 위한 바이탈 수집을 자동화하여 데이터 정확성과 의사 생산성을 보장합니다.",
+      "label": "RPM\uc744 \uc704\ud55c \uc911\uc559 \uac8c\uc774\ud2b8\uc6e8\uc774",
+      "title": "Hicare Hub: \uc784\uc0c1 \uc6cc\ud06c\ud50c\ub85c\uc6b0 \uac04\uc18c\ud654",
+      "desc": "\ubbf8\uad6d \uc784\uc0c1 \ud658\uacbd\uc744 \uc704\ud574 \ud2b9\ubcc4\ud788 \uc124\uacc4\ub41c \uc758\ub8cc\uae09 \uac8c\uc774\ud2b8\uc6e8\uc774. Hicare Hub\ub294 RPM \uc218\uac00 \uccad\uad6c\ub97c \uc704\ud55c \ubc14\uc774\ud0c8 \uc218\uc9d1\uc744 \uc790\ub3d9\ud654\ud558\uc5ec \ub370\uc774\ud130 \uc815\ud655\uc131\uacfc \uc758\uc0ac \uc0dd\uc0b0\uc131\uc744 \ubcf4\uc7a5\ud569\ub2c8\ub2e4.",
       "f1": {
-        "title": "HL7 & FHIR 대응",
-        "desc": "업계 표준 HL7 및 FHIR 프로토콜을 통한 EPIC, Cerner, Athenahealth와의 원활한 통합."
+        "title": "HL7 & FHIR \ub300\uc751",
+        "desc": "\uc5c5\uacc4 \ud45c\uc900 HL7 \ubc0f FHIR \ud504\ub85c\ud1a0\ucf5c\uc744 \ud1b5\ud55c EPIC, Cerner, Athenahealth\uc640\uc758 \uc6d0\ud65c\ud55c \ud1b5\ud569."
       },
       "f2": {
-        "title": "EHR/EMR 연결성",
-        "desc": "CCM 문서화 요건과 의료 필요성을 지원하기 위한 환자 기록으로의 직접 데이터 흐름."
+        "title": "EHR/EMR \uc5f0\uacb0\uc131",
+        "desc": "CCM \ubb38\uc11c\ud654 \uc694\uac74\uacfc \uc758\ub8cc \ud544\uc694\uc131\uc744 \uc9c0\uc6d0\ud558\uae30 \uc704\ud55c \ud658\uc790 \uae30\ub85d\uc73c\ub85c\uc758 \uc9c1\uc811 \ub370\uc774\ud130 \ud750\ub984."
       },
       "f3": {
-        "title": "FDA 인증 바이탈",
-        "desc": "임상적으로 유효한 원격 모니터링을 위해 FDA 인증 주변 장치의 데이터를 집계."
+        "title": "FDA \uc778\uc99d \ubc14\uc774\ud0c8",
+        "desc": "\uc784\uc0c1\uc801\uc73c\ub85c \uc720\ud6a8\ud55c \uc6d0\uaca9 \ubaa8\ub2c8\ud130\ub9c1\uc744 \uc704\ud574 FDA \uc778\uc99d \uc8fc\ubcc0 \uc7a5\uce58\uc758 \ub370\uc774\ud130\ub97c \uc9d1\uacc4."
       }
     },
     "mobile": {
-      "label": "CCM을 위한 환자 참여",
-      "title": "Hicare M: 더 나은 결과를 위한 다리.",
-      "desc": "미국 환자 경험을 위해 설계된 Hicare M은 개인이 케어 플랜에 참여할 수 있도록 지원합니다. 안전한 메시징과 원격 상담을 통해 CCM 수가 청구에 필요한 월 20분의 임상 직원 시간을 촉진합니다.",
+      "label": "CCM\uc744 \uc704\ud55c \ud658\uc790 \ucc38\uc5ec",
+      "title": "Hicare M: \ub354 \ub098\uc740 \uacb0\uacfc\ub97c \uc704\ud55c \ub2e4\ub9ac.",
+      "desc": "\ubbf8\uad6d \ud658\uc790 \uacbd\ud5d8\uc744 \uc704\ud574 \uc124\uacc4\ub41c Hicare M\uc740 \uac1c\uc778\uc774 \ucf00\uc5b4 \ud50c\ub79c\uc5d0 \ucc38\uc5ec\ud560 \uc218 \uc788\ub3c4\ub85d \uc9c0\uc6d0\ud569\ub2c8\ub2e4. \uc548\uc804\ud55c \uba54\uc2dc\uc9d5\uacfc \uc6d0\uaca9 \uc0c1\ub2f4\uc744 \ud1b5\ud574 CCM \uc218\uac00 \uccad\uad6c\uc5d0 \ud544\uc694\ud55c \uc6d4 20\ubd84\uc758 \uc784\uc0c1 \uc9c1\uc6d0 \uc2dc\uac04\uc744 \ucd09\uc9c4\ud569\ub2c8\ub2e4.",
       "f1": {
-        "title": "자동화된 리포팅",
-        "desc": "미국 보험 수가 감사에 필요한 환자 로그 자동 생성."
+        "title": "\uc790\ub3d9\ud654\ub41c \ub9ac\ud3ec\ud305",
+        "desc": "\ubbf8\uad6d \ubcf4\ud5d8 \uc218\uac00 \uac10\uc0ac\uc5d0 \ud544\uc694\ud55c \ud658\uc790 \ub85c\uadf8 \uc790\ub3d9 \uc0dd\uc131."
       },
       "f2": {
-        "title": "케어 플랜 접근",
-        "desc": "임상의가 개발한 개인 맞춤 CCM 케어 플랜에 즉시 접근."
+        "title": "\ucf00\uc5b4 \ud50c\ub79c \uc811\uadfc",
+        "desc": "\uc784\uc0c1\uc758\uac00 \uac1c\ubc1c\ud55c \uac1c\uc778 \ub9de\ucda4 CCM \ucf00\uc5b4 \ud50c\ub79c\uc5d0 \uc989\uc2dc \uc811\uadfc."
       },
       "f3": {
-        "title": "보안 FHIR 메시징",
-        "desc": "환자 차트에 직접 상호작용을 기록하는 HIPAA 준수 커뮤니케이션."
+        "title": "\ubcf4\uc548 FHIR \uba54\uc2dc\uc9d5",
+        "desc": "\ud658\uc790 \ucc28\ud2b8\uc5d0 \uc9c1\uc811 \uc0c1\ud638\uc791\uc6a9\uc744 \uae30\ub85d\ud558\ub294 HIPAA \uc900\uc218 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158."
       },
       "f4": {
-        "title": "교육 콘텐츠",
-        "desc": "환자 자기 관리를 개선하기 위한 의료진 승인 건강 자료."
+        "title": "\uad50\uc721 \ucf58\ud150\uce20",
+        "desc": "\ud658\uc790 \uc790\uae30 \uad00\ub9ac\ub97c \uac1c\uc120\ud558\uae30 \uc704\ud55c \uc758\ub8cc\uc9c4 \uc2b9\uc778 \uac74\uac15 \uc790\ub8cc."
       }
     },
     "rd": {
-      "label": "혁신 우수성",
-      "title": "글로벌 R&D 센터가 구동",
-      "desc": "하이케어넷의 핵심 지능은 세계적 수준의 R&D 센터에서 개발됩니다. 엔지니어와 데이터 사이언티스트가 수백만 건의 의료 데이터 포인트를 밀리초 이내 지연 시간으로 처리하는 강력한 고가용성 백엔드를 구축했습니다.",
+      "label": "\ud601\uc2e0 \uc6b0\uc218\uc131",
+      "title": "\uae00\ub85c\ubc8c R&D \uc13c\ud130\uac00 \uad6c\ub3d9",
+      "desc": "\ud558\uc774\ucf00\uc5b4\ub137\uc758 \ud575\uc2ec \uc9c0\ub2a5\uc740 \uc138\uacc4\uc801 \uc218\uc900\uc758 R&D \uc13c\ud130\uc5d0\uc11c \uac1c\ubc1c\ub429\ub2c8\ub2e4. \uc5d4\uc9c0\ub2c8\uc5b4\uc640 \ub370\uc774\ud130 \uc0ac\uc774\uc5b8\ud2f0\uc2a4\ud2b8\uac00 \uc218\ubc31\ub9cc \uac74\uc758 \uc758\ub8cc \ub370\uc774\ud130 \ud3ec\uc778\ud2b8\ub97c \ubc00\ub9ac\ucd08 \uc774\ub0b4 \uc9c0\uc5f0 \uc2dc\uac04\uc73c\ub85c \ucc98\ub9ac\ud558\ub294 \uac15\ub825\ud55c \uace0\uac00\uc6a9\uc131 \ubc31\uc5d4\ub4dc\ub97c \uad6c\ucd95\ud588\uc2b5\ub2c8\ub2e4.",
       "backend": {
-        "title": "독자 백엔드 아키텍처",
-        "desc": "IoT 디바이스 프로비저닝부터 FHIR 데이터 변환까지 전체 생태계를 조율하는 백엔드. 미국 의료 시스템의 중대한 요구를 충족하는 99.99% 가동률의 마이크로서비스 아키텍처 기반."
+        "title": "\ub3c5\uc790 \ubc31\uc5d4\ub4dc \uc544\ud0a4\ud14d\ucc98",
+        "desc": "IoT \ub514\ubc14\uc774\uc2a4 \ud504\ub85c\ube44\uc800\ub2dd\ubd80\ud130 FHIR \ub370\uc774\ud130 \ubcc0\ud658\uae4c\uc9c0 \uc804\uccb4 \uc0dd\ud0dc\uacc4\ub97c \uc870\uc728\ud558\ub294 \ubc31\uc5d4\ub4dc. \ubbf8\uad6d \uc758\ub8cc \uc2dc\uc2a4\ud15c\uc758 \uc911\ub300\ud55c \uc694\uad6c\ub97c \ucda9\uc871\ud558\ub294 99.99% \uac00\ub3d9\ub960\uc758 \ub9c8\uc774\ud06c\ub85c\uc11c\ube44\uc2a4 \uc544\ud0a4\ud14d\ucc98 \uae30\ubc18."
       },
-      "stat1": "독자 API",
-      "stat2": "가동 안정성",
+      "stat1": "\ub3c5\uc790 API",
+      "stat2": "\uac00\ub3d9 \uc548\uc815\uc131",
       "stat3": {
-        "title": "임상 데이터 인텔리전스",
-        "desc": "자동 바이탈 트렌드 감지 및 의사 알림을 위한 고급 알고리즘."
+        "title": "\uc784\uc0c1 \ub370\uc774\ud130 \uc778\ud154\ub9ac\uc804\uc2a4",
+        "desc": "\uc790\ub3d9 \ubc14\uc774\ud0c8 \ud2b8\ub80c\ub4dc \uac10\uc9c0 \ubc0f \uc758\uc0ac \uc54c\ub9bc\uc744 \uc704\ud55c \uace0\uae09 \uc54c\uace0\ub9ac\uc998."
       }
     },
     "compliance": {
-      "label": "신뢰 및 거버넌스",
-      "title": "미국 헬스케어 규정 준수 및 보안",
-      "desc": "보안은 기능이 아니라 존재의 기반입니다. 하이케어넷은 세계에서 가장 엄격한 보안 및 개인정보 보호 표준을 준수합니다.",
+      "label": "\uc2e0\ub8b0 \ubc0f \uac70\ubc84\ub10c\uc2a4",
+      "title": "\ubbf8\uad6d \ud5ec\uc2a4\ucf00\uc5b4 \uaddc\uc815 \uc900\uc218 \ubc0f \ubcf4\uc548",
+      "desc": "\ubcf4\uc548\uc740 \uae30\ub2a5\uc774 \uc544\ub2c8\ub77c \uc874\uc7ac\uc758 \uae30\ubc18\uc785\ub2c8\ub2e4. \ud558\uc774\ucf00\uc5b4\ub137\uc740 \uc138\uacc4\uc5d0\uc11c \uac00\uc7a5 \uc5c4\uaca9\ud55c \ubcf4\uc548 \ubc0f \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638 \ud45c\uc900\uc744 \uc900\uc218\ud569\ub2c8\ub2e4.",
       "hipaa": {
-        "status": "준수",
-        "desc": "PHI 보호를 위한 미국 건강보험 이동성 및 책임에 관한 법률(HIPAA) 표준 완전 준수."
+        "status": "\uc900\uc218",
+        "desc": "PHI \ubcf4\ud638\ub97c \uc704\ud55c \ubbf8\uad6d \uac74\uac15\ubcf4\ud5d8 \uc774\ub3d9\uc131 \ubc0f \ucc45\uc784\uc5d0 \uad00\ud55c \ubc95\ub960(HIPAA) \ud45c\uc900 \uc644\uc804 \uc900\uc218."
       },
       "iso27001": {
-        "status": "인증",
-        "desc": "정보보안관리체계(ISMS)에 대한 국제 표준."
+        "status": "\uc778\uc99d",
+        "desc": "\uc815\ubcf4\ubcf4\uc548\uad00\ub9ac\uccb4\uacc4(ISMS)\uc5d0 \ub300\ud55c \uad6d\uc81c \ud45c\uc900."
       },
       "iso27701": {
-        "status": "인증",
-        "desc": "글로벌 데이터 프라이버시 준수를 위한 개인정보관리체계(PIMS) 인증."
+        "status": "\uc778\uc99d",
+        "desc": "\uae00\ub85c\ubc8c \ub370\uc774\ud130 \ud504\ub77c\uc774\ubc84\uc2dc \uc900\uc218\ub97c \uc704\ud55c \uac1c\uc778\uc815\ubcf4\uad00\ub9ac\uccb4\uacc4(PIMS) \uc778\uc99d."
       },
       "fda": {
-        "title": "의료기기",
-        "status": "등급 인증",
-        "desc": "RPM 및 진단 모니터링 환경에서의 임상 사용을 위한 규제 인증."
+        "title": "\uc758\ub8cc\uae30\uae30",
+        "status": "\ub4f1\uae09 \uc778\uc99d",
+        "desc": "RPM \ubc0f \uc9c4\ub2e8 \ubaa8\ub2c8\ud130\ub9c1 \ud658\uacbd\uc5d0\uc11c\uc758 \uc784\uc0c1 \uc0ac\uc6a9\uc744 \uc704\ud55c \uaddc\uc81c \uc778\uc99d."
       },
       "encryption": {
-        "title": "종단간 암호화",
-        "desc": "전송 및 저장 중인 모든 데이터는 AES-256 및 TLS 1.3 암호화로 보호됩니다."
+        "title": "\uc885\ub2e8\uac04 \uc554\ud638\ud654",
+        "desc": "\uc804\uc1a1 \ubc0f \uc800\uc7a5 \uc911\uc778 \ubaa8\ub4e0 \ub370\uc774\ud130\ub294 AES-256 \ubc0f TLS 1.3 \uc554\ud638\ud654\ub85c \ubcf4\ud638\ub429\ub2c8\ub2e4."
       }
     },
     "global": {
-      "title": "미국 임상 영역 확대",
-      "desc": "확장 가능한 인구 건강 관리를 위한 FHIR 기반 솔루션으로 미국 주요 의료 시스템 서비스 제공.",
-      "stat1": "미국 파트너 클리닉",
-      "stat2": "월간 리딩 수",
-      "cta": "파트너 문의"
+      "title": "\ubbf8\uad6d \uc784\uc0c1 \uc601\uc5ed \ud655\ub300",
+      "desc": "\ud655\uc7a5 \uac00\ub2a5\ud55c \uc778\uad6c \uac74\uac15 \uad00\ub9ac\ub97c \uc704\ud55c FHIR \uae30\ubc18 \uc194\ub8e8\uc158\uc73c\ub85c \ubbf8\uad6d \uc8fc\uc694 \uc758\ub8cc \uc2dc\uc2a4\ud15c \uc11c\ube44\uc2a4 \uc81c\uacf5.",
+      "stat1": "\ubbf8\uad6d \ud30c\ud2b8\ub108 \ud074\ub9ac\ub2c9",
+      "stat2": "\uc6d4\uac04 \ub9ac\ub529 \uc218",
+      "cta": "\ud30c\ud2b8\ub108 \ubb38\uc758"
     },
     "cta": {
-      "title": "오늘 RPM/CCM 청구를 최적화하세요.",
-      "desc": "EMR 통합 게이트웨이 데모를 위해 솔루션 팀에 문의하세요.",
-      "placeholder": "비즈니스 이메일 입력",
-      "submit": "문의하기"
+      "title": "\uc624\ub298 RPM/CCM \uccad\uad6c\ub97c \ucd5c\uc801\ud654\ud558\uc138\uc694.",
+      "desc": "EMR \ud1b5\ud569 \uac8c\uc774\ud2b8\uc6e8\uc774 \ub370\ubaa8\ub97c \uc704\ud574 \uc194\ub8e8\uc158 \ud300\uc5d0 \ubb38\uc758\ud558\uc138\uc694.",
+      "placeholder": "\ube44\uc988\ub2c8\uc2a4 \uc774\uba54\uc77c \uc785\ub825",
+      "submit": "\ubb38\uc758\ud558\uae30"
     }
   },
   "news": {
     "hero": {
-      "tag": "주요 기사",
-      "title": "글로벌 R&D 선도: 새로운 미국 서비스 지원 모델",
-      "desc": "하이케어넷이 글로벌 R&D 리더십의 새로운 기준을 수립하고, 북미 파트너를 위한 24/7 임상 우수성을 보장하기 위해 현지화된 미국 지원을 통합합니다.",
-      "cta": "전체 기사 읽기"
+      "tag": "\uc8fc\uc694 \uae30\uc0ac",
+      "title": "\uae00\ub85c\ubc8c R&D \uc120\ub3c4: \uc0c8\ub85c\uc6b4 \ubbf8\uad6d \uc11c\ube44\uc2a4 \uc9c0\uc6d0 \ubaa8\ub378",
+      "desc": "\ud558\uc774\ucf00\uc5b4\ub137\uc774 \uae00\ub85c\ubc8c R&D \ub9ac\ub354\uc2ed\uc758 \uc0c8\ub85c\uc6b4 \uae30\uc900\uc744 \uc218\ub9bd\ud558\uace0, \ubd81\ubbf8 \ud30c\ud2b8\ub108\ub97c \uc704\ud55c 24/7 \uc784\uc0c1 \uc6b0\uc218\uc131\uc744 \ubcf4\uc7a5\ud558\uae30 \uc704\ud574 \ud604\uc9c0\ud654\ub41c \ubbf8\uad6d \uc9c0\uc6d0\uc744 \ud1b5\ud569\ud569\ub2c8\ub2e4.",
+      "cta": "\uc804\uccb4 \uae30\uc0ac \uc77d\uae30"
     },
     "newsroom": {
-      "title": "뉴스룸",
-      "count": "52개 기사 중 6개 표시",
-      "more": "뉴스 더보기"
+      "title": "\ub274\uc2a4\ub8f8",
+      "count": "52\uac1c \uae30\uc0ac \uc911 6\uac1c \ud45c\uc2dc",
+      "more": "\ub274\uc2a4 \ub354\ubcf4\uae30"
     },
     "filter": {
-      "all": "전체 뉴스",
-      "press": "보도자료",
-      "business": "비즈니스 뉴스",
-      "notices": "공지사항"
+      "all": "\uc804\uccb4 \ub274\uc2a4",
+      "press": "\ubcf4\ub3c4\uc790\ub8cc",
+      "business": "\ube44\uc988\ub2c8\uc2a4 \ub274\uc2a4",
+      "notices": "\uacf5\uc9c0\uc0ac\ud56d"
     },
-    "read_article": "기사 읽기",
+    "read_article": "\uae30\uc0ac \uc77d\uae30",
     "cards": {
       "c1": {
-        "tag": "비즈니스 뉴스",
-        "title": "Hicare.net Inc. 캘리포니아 주요 확장 이정표 달성",
-        "desc": "미국 자회사 Hicare.net Inc.가 캘리포니아 주요 의료 네트워크 전반에서 기록적인 도입률을 보고하며 미국 시장 입지를 강화했습니다."
+        "tag": "\ube44\uc988\ub2c8\uc2a4 \ub274\uc2a4",
+        "title": "Hicare.net Inc. \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc8fc\uc694 \ud655\uc7a5 \uc774\uc815\ud45c \ub2ec\uc131",
+        "desc": "\ubbf8\uad6d \uc790\ud68c\uc0ac Hicare.net Inc.\uac00 \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc8fc\uc694 \uc758\ub8cc \ub124\ud2b8\uc6cc\ud06c \uc804\ubc18\uc5d0\uc11c \uae30\ub85d\uc801\uc778 \ub3c4\uc785\ub960\uc744 \ubcf4\uace0\ud558\uba70 \ubbf8\uad6d \uc2dc\uc7a5 \uc785\uc9c0\ub97c \uac15\ud654\ud588\uc2b5\ub2c8\ub2e4."
       },
       "c2": {
-        "tag": "보도자료",
-        "title": "하이케어넷 최고 수준 ISO 및 HIPAA 인증 획득",
-        "desc": "데이터 보안과 국제 품질 관리에 대한 의지를 입증하며, 하이케어넷이 공식적으로 ISO 27001 및 HIPAA 준수 인증을 받았습니다."
+        "tag": "\ubcf4\ub3c4\uc790\ub8cc",
+        "title": "\ud558\uc774\ucf00\uc5b4\ub137 \ucd5c\uace0 \uc218\uc900 ISO \ubc0f HIPAA \uc778\uc99d \ud68d\ub4dd",
+        "desc": "\ub370\uc774\ud130 \ubcf4\uc548\uacfc \uad6d\uc81c \ud488\uc9c8 \uad00\ub9ac\uc5d0 \ub300\ud55c \uc758\uc9c0\ub97c \uc785\uc99d\ud558\uba70, \ud558\uc774\ucf00\uc5b4\ub137\uc774 \uacf5\uc2dd\uc801\uc73c\ub85c ISO 27001 \ubc0f HIPAA \uc900\uc218 \uc778\uc99d\uc744 \ubc1b\uc558\uc2b5\ub2c8\ub2e4."
       },
       "c3": {
-        "title": "상호운용성 발전: FHIR 통합 R&D 돌파구"
+        "title": "\uc0c1\ud638\uc6b4\uc6a9\uc131 \ubc1c\uc804: FHIR \ud1b5\ud569 R&D \ub3cc\ud30c\uad6c"
       },
       "c4": {
-        "tag": "비즈니스 뉴스",
-        "title": "글로벌 보험사와 IoT 케어 보조금 파트너십 체결"
+        "tag": "\ube44\uc988\ub2c8\uc2a4 \ub274\uc2a4",
+        "title": "\uae00\ub85c\ubc8c \ubcf4\ud5d8\uc0ac\uc640 IoT \ucf00\uc5b4 \ubcf4\uc870\uae08 \ud30c\ud2b8\ub108\uc2ed \uccb4\uacb0"
       },
       "c5": {
-        "tag": "보도자료",
-        "title": "지속 가능한 헬스케어: 새로운 친환경 제조 표준"
+        "tag": "\ubcf4\ub3c4\uc790\ub8cc",
+        "title": "\uc9c0\uc18d \uac00\ub2a5\ud55c \ud5ec\uc2a4\ucf00\uc5b4: \uc0c8\ub85c\uc6b4 \uce5c\ud658\uacbd \uc81c\uc870 \ud45c\uc900"
       }
     },
     "gallery": {
-      "title": "미디어 갤러리",
-      "desc": "하이케어넷의 글로벌 이벤트, 제품 출시, 기술 혁신을 고화질로 경험하세요.",
+      "title": "\ubbf8\ub514\uc5b4 \uac24\ub7ec\ub9ac",
+      "desc": "\ud558\uc774\ucf00\uc5b4\ub137\uc758 \uae00\ub85c\ubc8c \uc774\ubca4\ud2b8, \uc81c\ud488 \ucd9c\uc2dc, \uae30\uc220 \ud601\uc2e0\uc744 \uace0\ud654\uc9c8\ub85c \uacbd\ud5d8\ud558\uc138\uc694.",
       "v1": {
-        "tag": "브랜드 필름",
-        "title": "2024 비전: 글로벌 연결 건강"
+        "tag": "\ube0c\ub79c\ub4dc \ud544\ub984",
+        "title": "2024 \ube44\uc804: \uae00\ub85c\ubc8c \uc5f0\uacb0 \uac74\uac15"
       },
       "p1": {
-        "tag": "이벤트 사진",
-        "title": "이노베이션 서밋: 서울 본사"
+        "tag": "\uc774\ubca4\ud2b8 \uc0ac\uc9c4",
+        "title": "\uc774\ub178\ubca0\uc774\uc158 \uc11c\ubc0b: \uc11c\uc6b8 \ubcf8\uc0ac"
       }
     },
     "newsletter": {
-      "title": "헬스케어 혁신의 앞서가세요",
-      "desc": "의료 기술 트렌드와 하이케어넷 기업 업데이트에 대한 독점 인사이트를 월간 다이제스트로 구독하세요.",
-      "placeholder": "비즈니스 이메일 입력",
-      "submit": "구독하기",
-      "privacy": "구독 시 개인정보 처리방침에 동의합니다"
+      "title": "\ud5ec\uc2a4\ucf00\uc5b4 \ud601\uc2e0\uc758 \uc55e\uc11c\uac00\uc138\uc694",
+      "desc": "\uc758\ub8cc \uae30\uc220 \ud2b8\ub80c\ub4dc\uc640 \ud558\uc774\ucf00\uc5b4\ub137 \uae30\uc5c5 \uc5c5\ub370\uc774\ud2b8\uc5d0 \ub300\ud55c \ub3c5\uc810 \uc778\uc0ac\uc774\ud2b8\ub97c \uc6d4\uac04 \ub2e4\uc774\uc81c\uc2a4\ud2b8\ub85c \uad6c\ub3c5\ud558\uc138\uc694.",
+      "placeholder": "\ube44\uc988\ub2c8\uc2a4 \uc774\uba54\uc77c \uc785\ub825",
+      "submit": "\uad6c\ub3c5\ud558\uae30",
+      "privacy": "\uad6c\ub3c5 \uc2dc \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68\uc5d0 \ub3d9\uc758\ud569\ub2c8\ub2e4"
     }
   },
   "privacy": {
     "hero": {
-      "title": "개인정보 처리방침",
-      "effective": "시행일: 2026년 1월 1일",
-      "updated": "최종 수정일: 2026년 3월 15일"
+      "title": "\uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68",
+      "effective": "\uc2dc\ud589\uc77c: 2026\ub144 1\uc6d4 1\uc77c",
+      "updated": "\ucd5c\uc885 \uc218\uc815\uc77c: 2026\ub144 3\uc6d4 15\uc77c"
     },
     "intro": {
-      "text": "HicareNet, Inc.(이하 \"하이케어넷\", \"당사\")는 Hicare Co., Ltd.의 캘리포니아 소재 자회사로서, 귀하의 개인정보 보호 및 보안에 전념하고 있습니다. 본 개인정보 처리방침은 귀하가 당사의 원격 환자 모니터링(RPM), 만성질환 관리(CCM), 연례 건강검진(AWV) 및 가치 기반 케어(VBC) 서비스를 이용하거나 당사 웹사이트를 방문할 때 당사가 귀하의 정보를 수집, 이용, 공개 및 보호하는 방법을 설명합니다."
+      "text": "HicareNet, Inc.(\uc774\ud558 \"\ud558\uc774\ucf00\uc5b4\ub137\", \"\ub2f9\uc0ac\")\ub294 Hicare Co., Ltd.\uc758 \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc18c\uc7ac \uc790\ud68c\uc0ac\ub85c\uc11c, \uadc0\ud558\uc758 \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638 \ubc0f \ubcf4\uc548\uc5d0 \uc804\ub150\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubcf8 \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68\uc740 \uadc0\ud558\uac00 \ub2f9\uc0ac\uc758 \uc6d0\uaca9 \ud658\uc790 \ubaa8\ub2c8\ud130\ub9c1(RPM), \ub9cc\uc131\uc9c8\ud658 \uad00\ub9ac(CCM), \uc5f0\ub840 \uac74\uac15\uac80\uc9c4(AWV) \ubc0f \uac00\uce58 \uae30\ubc18 \ucf00\uc5b4(VBC) \uc11c\ube44\uc2a4\ub97c \uc774\uc6a9\ud558\uac70\ub098 \ub2f9\uc0ac \uc6f9\uc0ac\uc774\ud2b8\ub97c \ubc29\ubb38\ud560 \ub54c \ub2f9\uc0ac\uac00 \uadc0\ud558\uc758 \uc815\ubcf4\ub97c \uc218\uc9d1, \uc774\uc6a9, \uacf5\uac1c \ubc0f \ubcf4\ud638\ud558\ub294 \ubc29\ubc95\uc744 \uc124\uba85\ud569\ub2c8\ub2e4."
     },
     "collect": {
-      "title": "1. 수집하는 정보",
+      "title": "1. \uc218\uc9d1\ud558\ub294 \uc815\ubcf4",
       "personal": {
-        "title": "개인정보",
-        "text": "당사 서비스와 상호작용할 때 다음과 같은 개인정보를 수집할 수 있습니다:",
-        "item1": "성명, 주소, 이메일 주소 및 전화번호",
-        "item2": "생년월일, 성별 및 기타 인구통계 정보",
-        "item3": "보험 및 청구 정보",
-        "item4": "전문 자격 및 소속 기관 정보 (의료 서비스 제공자의 경우)"
+        "title": "\uac1c\uc778\uc815\ubcf4",
+        "text": "\ub2f9\uc0ac \uc11c\ube44\uc2a4\uc640 \uc0c1\ud638\uc791\uc6a9\ud560 \ub54c \ub2e4\uc74c\uacfc \uac19\uc740 \uac1c\uc778\uc815\ubcf4\ub97c \uc218\uc9d1\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4:",
+        "item1": "\uc131\uba85, \uc8fc\uc18c, \uc774\uba54\uc77c \uc8fc\uc18c \ubc0f \uc804\ud654\ubc88\ud638",
+        "item2": "\uc0dd\ub144\uc6d4\uc77c, \uc131\ubcc4 \ubc0f \uae30\ud0c0 \uc778\uad6c\ud1b5\uacc4 \uc815\ubcf4",
+        "item3": "\ubcf4\ud5d8 \ubc0f \uccad\uad6c \uc815\ubcf4",
+        "item4": "\uc804\ubb38 \uc790\uaca9 \ubc0f \uc18c\uc18d \uae30\uad00 \uc815\ubcf4 (\uc758\ub8cc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc790\uc758 \uacbd\uc6b0)"
       },
       "health": {
-        "title": "보호대상 건강정보 (PHI)",
-        "text": "당사의 의료 IT 서비스를 제공하는 과정에서 다음을 처리할 수 있습니다:",
-        "item1": "RPM 디바이스를 통해 수집된 활력 징후 및 생체 데이터 (혈압, 혈당, 체중, 맥박산소측정, 체온)",
-        "item2": "만성질환 관리 기록 및 케어 플랜",
-        "item3": "임상 노트, 진단 및 치료 정보",
-        "item4": "의약품 및 처방 데이터"
+        "title": "\ubcf4\ud638\ub300\uc0c1 \uac74\uac15\uc815\ubcf4 (PHI)",
+        "text": "\ub2f9\uc0ac\uc758 \uc758\ub8cc IT \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud558\ub294 \uacfc\uc815\uc5d0\uc11c \ub2e4\uc74c\uc744 \ucc98\ub9ac\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4:",
+        "item1": "RPM \ub514\ubc14\uc774\uc2a4\ub97c \ud1b5\ud574 \uc218\uc9d1\ub41c \ud65c\ub825 \uc9d5\ud6c4 \ubc0f \uc0dd\uccb4 \ub370\uc774\ud130 (\ud608\uc555, \ud608\ub2f9, \uccb4\uc911, \ub9e5\ubc15\uc0b0\uc18c\uce21\uc815, \uccb4\uc628)",
+        "item2": "\ub9cc\uc131\uc9c8\ud658 \uad00\ub9ac \uae30\ub85d \ubc0f \ucf00\uc5b4 \ud50c\ub79c",
+        "item3": "\uc784\uc0c1 \ub178\ud2b8, \uc9c4\ub2e8 \ubc0f \uce58\ub8cc \uc815\ubcf4",
+        "item4": "\uc758\uc57d\ud488 \ubc0f \ucc98\ubc29 \ub370\uc774\ud130"
       },
       "usage": {
-        "title": "이용 및 기술 데이터",
-        "text": "귀하가 당사 웹사이트를 방문하거나 플랫폼을 사용할 때 자동으로 특정 정보를 수집합니다:",
-        "item1": "IP 주소, 브라우저 유형, 운영체제 및 디바이스 식별자",
-        "item2": "방문 페이지, 체류 시간 및 탐색 패턴",
-        "item3": "참조 URL 및 검색어",
-        "item4": "서비스 개선을 위한 로그 데이터 및 오류 보고서"
+        "title": "\uc774\uc6a9 \ubc0f \uae30\uc220 \ub370\uc774\ud130",
+        "text": "\uadc0\ud558\uac00 \ub2f9\uc0ac \uc6f9\uc0ac\uc774\ud2b8\ub97c \ubc29\ubb38\ud558\uac70\ub098 \ud50c\ub7ab\ud3fc\uc744 \uc0ac\uc6a9\ud560 \ub54c \uc790\ub3d9\uc73c\ub85c \ud2b9\uc815 \uc815\ubcf4\ub97c \uc218\uc9d1\ud569\ub2c8\ub2e4:",
+        "item1": "IP \uc8fc\uc18c, \ube0c\ub77c\uc6b0\uc800 \uc720\ud615, \uc6b4\uc601\uccb4\uc81c \ubc0f \ub514\ubc14\uc774\uc2a4 \uc2dd\ubcc4\uc790",
+        "item2": "\ubc29\ubb38 \ud398\uc774\uc9c0, \uccb4\ub958 \uc2dc\uac04 \ubc0f \ud0d0\uc0c9 \ud328\ud134",
+        "item3": "\ucc38\uc870 URL \ubc0f \uac80\uc0c9\uc5b4",
+        "item4": "\uc11c\ube44\uc2a4 \uac1c\uc120\uc744 \uc704\ud55c \ub85c\uadf8 \ub370\uc774\ud130 \ubc0f \uc624\ub958 \ubcf4\uace0\uc11c"
       }
     },
     "use": {
-      "title": "2. 정보의 이용 목적",
-      "intro": "당사는 수집한 정보를 다음 목적으로 이용합니다:",
-      "item1": "원격 환자 모니터링 및 만성질환 관리 서비스의 제공 및 관리",
-      "item2": "환자와 의료 서비스 제공자 간 커뮤니케이션 지원",
-      "item3": "청구, 보험 청구 및 결제 거래 처리",
-      "item4": "분석을 통한 플랫폼, 서비스 및 사용자 경험 개선",
-      "item5": "HIPAA 및 주 의료 규정을 포함한 법적 의무 준수",
-      "item6": "서비스 관련 알림 및 업데이트 발송",
-      "item7": "품질 보증 및 임상 결과 분석 수행",
-      "item8": "문의, 지원 요청 및 피드백에 대한 응답"
+      "title": "2. \uc815\ubcf4\uc758 \uc774\uc6a9 \ubaa9\uc801",
+      "intro": "\ub2f9\uc0ac\ub294 \uc218\uc9d1\ud55c \uc815\ubcf4\ub97c \ub2e4\uc74c \ubaa9\uc801\uc73c\ub85c \uc774\uc6a9\ud569\ub2c8\ub2e4:",
+      "item1": "\uc6d0\uaca9 \ud658\uc790 \ubaa8\ub2c8\ud130\ub9c1 \ubc0f \ub9cc\uc131\uc9c8\ud658 \uad00\ub9ac \uc11c\ube44\uc2a4\uc758 \uc81c\uacf5 \ubc0f \uad00\ub9ac",
+      "item2": "\ud658\uc790\uc640 \uc758\ub8cc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc790 \uac04 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158 \uc9c0\uc6d0",
+      "item3": "\uccad\uad6c, \ubcf4\ud5d8 \uccad\uad6c \ubc0f \uacb0\uc81c \uac70\ub798 \ucc98\ub9ac",
+      "item4": "\ubd84\uc11d\uc744 \ud1b5\ud55c \ud50c\ub7ab\ud3fc, \uc11c\ube44\uc2a4 \ubc0f \uc0ac\uc6a9\uc790 \uacbd\ud5d8 \uac1c\uc120",
+      "item5": "HIPAA \ubc0f \uc8fc \uc758\ub8cc \uaddc\uc815\uc744 \ud3ec\ud568\ud55c \ubc95\uc801 \uc758\ubb34 \uc900\uc218",
+      "item6": "\uc11c\ube44\uc2a4 \uad00\ub828 \uc54c\ub9bc \ubc0f \uc5c5\ub370\uc774\ud2b8 \ubc1c\uc1a1",
+      "item7": "\ud488\uc9c8 \ubcf4\uc99d \ubc0f \uc784\uc0c1 \uacb0\uacfc \ubd84\uc11d \uc218\ud589",
+      "item8": "\ubb38\uc758, \uc9c0\uc6d0 \uc694\uccad \ubc0f \ud53c\ub4dc\ubc31\uc5d0 \ub300\ud55c \uc751\ub2f5"
     },
     "hipaa": {
-      "title": "3. HIPAA 준수",
-      "intro": "의료 기술 제공업체로서 하이케어넷은 건강보험 이동성 및 책임에 관한 법률(HIPAA) 및 HITECH법의 완전한 준수에 전념합니다.",
+      "title": "3. HIPAA \uc900\uc218",
+      "intro": "\uc758\ub8cc \uae30\uc220 \uc81c\uacf5\uc5c5\uccb4\ub85c\uc11c \ud558\uc774\ucf00\uc5b4\ub137\uc740 \uac74\uac15\ubcf4\ud5d8 \uc774\ub3d9\uc131 \ubc0f \ucc45\uc784\uc5d0 \uad00\ud55c \ubc95\ub960(HIPAA) \ubc0f HITECH\ubc95\uc758 \uc644\uc804\ud55c \uc900\uc218\uc5d0 \uc804\ub150\ud569\ub2c8\ub2e4.",
       "phi": {
-        "title": "PHI 처리",
-        "text": "당사 플랫폼을 통해 처리되는 모든 보호대상 건강정보(PHI)는 HIPAA 프라이버시 및 보안 규칙을 엄격히 준수하여 처리됩니다. 당사는 PHI의 기밀성, 무결성 및 가용성을 보호하기 위해 관리적, 기술적, 물리적 보호 조치를 시행합니다."
+        "title": "PHI \ucc98\ub9ac",
+        "text": "\ub2f9\uc0ac \ud50c\ub7ab\ud3fc\uc744 \ud1b5\ud574 \ucc98\ub9ac\ub418\ub294 \ubaa8\ub4e0 \ubcf4\ud638\ub300\uc0c1 \uac74\uac15\uc815\ubcf4(PHI)\ub294 HIPAA \ud504\ub77c\uc774\ubc84\uc2dc \ubc0f \ubcf4\uc548 \uaddc\uce59\uc744 \uc5c4\uaca9\ud788 \uc900\uc218\ud558\uc5ec \ucc98\ub9ac\ub429\ub2c8\ub2e4. \ub2f9\uc0ac\ub294 PHI\uc758 \uae30\ubc00\uc131, \ubb34\uacb0\uc131 \ubc0f \uac00\uc6a9\uc131\uc744 \ubcf4\ud638\ud558\uae30 \uc704\ud574 \uad00\ub9ac\uc801, \uae30\uc220\uc801, \ubb3c\ub9ac\uc801 \ubcf4\ud638 \uc870\uce58\ub97c \uc2dc\ud589\ud569\ub2c8\ub2e4."
       },
       "baa": {
-        "title": "업무 제휴 계약",
-        "text": "당사는 플랫폼을 통해 PHI를 취급하는 모든 적용 대상 기관 및 하도급업체와 업무 제휴 계약(BAA)을 체결합니다. 이 계약은 PHI의 허용된 사용 및 공개를 정의하고 건강 정보 보호를 위한 의무를 설정합니다."
+        "title": "\uc5c5\ubb34 \uc81c\ud734 \uacc4\uc57d",
+        "text": "\ub2f9\uc0ac\ub294 \ud50c\ub7ab\ud3fc\uc744 \ud1b5\ud574 PHI\ub97c \ucde8\uae09\ud558\ub294 \ubaa8\ub4e0 \uc801\uc6a9 \ub300\uc0c1 \uae30\uad00 \ubc0f \ud558\ub3c4\uae09\uc5c5\uccb4\uc640 \uc5c5\ubb34 \uc81c\ud734 \uacc4\uc57d(BAA)\uc744 \uccb4\uacb0\ud569\ub2c8\ub2e4. \uc774 \uacc4\uc57d\uc740 PHI\uc758 \ud5c8\uc6a9\ub41c \uc0ac\uc6a9 \ubc0f \uacf5\uac1c\ub97c \uc815\uc758\ud558\uace0 \uac74\uac15 \uc815\ubcf4 \ubcf4\ud638\ub97c \uc704\ud55c \uc758\ubb34\ub97c \uc124\uc815\ud569\ub2c8\ub2e4."
       },
       "minimum": {
-        "title": "최소 필요 기준",
-        "text": "당사는 PHI의 모든 사용, 공개 및 요청에 최소 필요 기준을 적용합니다. PHI에 대한 접근은 지정된 기능을 수행하기 위해 필요한 권한이 있는 인력으로 제한되며, 역할 기반 접근 제어를 통해 관리됩니다."
+        "title": "\ucd5c\uc18c \ud544\uc694 \uae30\uc900",
+        "text": "\ub2f9\uc0ac\ub294 PHI\uc758 \ubaa8\ub4e0 \uc0ac\uc6a9, \uacf5\uac1c \ubc0f \uc694\uccad\uc5d0 \ucd5c\uc18c \ud544\uc694 \uae30\uc900\uc744 \uc801\uc6a9\ud569\ub2c8\ub2e4. PHI\uc5d0 \ub300\ud55c \uc811\uadfc\uc740 \uc9c0\uc815\ub41c \uae30\ub2a5\uc744 \uc218\ud589\ud558\uae30 \uc704\ud574 \ud544\uc694\ud55c \uad8c\ud55c\uc774 \uc788\ub294 \uc778\ub825\uc73c\ub85c \uc81c\ud55c\ub418\uba70, \uc5ed\ud560 \uae30\ubc18 \uc811\uadfc \uc81c\uc5b4\ub97c \ud1b5\ud574 \uad00\ub9ac\ub429\ub2c8\ub2e4."
       }
     },
     "sharing": {
-      "title": "4. 데이터 공유 및 공개",
-      "intro": "당사는 귀하의 개인정보를 판매하지 않습니다. 다음과 같은 경우에만 귀하의 정보를 공유할 수 있습니다:",
-      "item1": "의료 서비스 제공자: 승인된 치료, 케어 코디네이션 및 임상 운영을 지원하기 위해",
-      "item2": "서비스 제공업체: 해당되는 경우 기밀 유지 의무 및 BAA에 따라 당사 플랫폼 운영을 지원하는 신뢰할 수 있는 제3자 벤더와",
-      "item3": "법적 요구: 법률, 규정, 법적 절차 또는 정부 요청에 의해 요구되는 경우",
-      "item4": "사업 양도: 적절한 보호 조치를 갖추고 합병, 인수 또는 자산 매각과 관련하여",
-      "item5": "동의에 의한 공유: 특정 공개에 대해 귀하가 명시적 동의를 제공한 경우"
+      "title": "4. \ub370\uc774\ud130 \uacf5\uc720 \ubc0f \uacf5\uac1c",
+      "intro": "\ub2f9\uc0ac\ub294 \uadc0\ud558\uc758 \uac1c\uc778\uc815\ubcf4\ub97c \ud310\ub9e4\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ub2e4\uc74c\uacfc \uac19\uc740 \uacbd\uc6b0\uc5d0\ub9cc \uadc0\ud558\uc758 \uc815\ubcf4\ub97c \uacf5\uc720\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4:",
+      "item1": "\uc758\ub8cc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc790: \uc2b9\uc778\ub41c \uce58\ub8cc, \ucf00\uc5b4 \ucf54\ub514\ub124\uc774\uc158 \ubc0f \uc784\uc0c1 \uc6b4\uc601\uc744 \uc9c0\uc6d0\ud558\uae30 \uc704\ud574",
+      "item2": "\uc11c\ube44\uc2a4 \uc81c\uacf5\uc5c5\uccb4: \ud574\ub2f9\ub418\ub294 \uacbd\uc6b0 \uae30\ubc00 \uc720\uc9c0 \uc758\ubb34 \ubc0f BAA\uc5d0 \ub530\ub77c \ub2f9\uc0ac \ud50c\ub7ab\ud3fc \uc6b4\uc601\uc744 \uc9c0\uc6d0\ud558\ub294 \uc2e0\ub8b0\ud560 \uc218 \uc788\ub294 \uc81c3\uc790 \ubca4\ub354\uc640",
+      "item3": "\ubc95\uc801 \uc694\uad6c: \ubc95\ub960, \uaddc\uc815, \ubc95\uc801 \uc808\ucc28 \ub610\ub294 \uc815\ubd80 \uc694\uccad\uc5d0 \uc758\ud574 \uc694\uad6c\ub418\ub294 \uacbd\uc6b0",
+      "item4": "\uc0ac\uc5c5 \uc591\ub3c4: \uc801\uc808\ud55c \ubcf4\ud638 \uc870\uce58\ub97c \uac16\ucd94\uace0 \ud569\ubcd1, \uc778\uc218 \ub610\ub294 \uc790\uc0b0 \ub9e4\uac01\uacfc \uad00\ub828\ud558\uc5ec",
+      "item5": "\ub3d9\uc758\uc5d0 \uc758\ud55c \uacf5\uc720: \ud2b9\uc815 \uacf5\uac1c\uc5d0 \ub300\ud574 \uadc0\ud558\uac00 \uba85\uc2dc\uc801 \ub3d9\uc758\ub97c \uc81c\uacf5\ud55c \uacbd\uc6b0"
     },
     "security": {
-      "title": "5. 데이터 보안",
-      "intro": "당사는 귀하의 정보를 보호하기 위해 포괄적인 보안 조치를 시행합니다:",
-      "item1": "암호화: 전송 중인 모든 데이터는 TLS 1.2 이상으로 보호됩니다. 저장 데이터는 AES-256 암호화를 사용합니다",
-      "item2": "ISO 27001 인증: 당사의 정보보안관리체계는 ISO 27001 국제 표준 인증을 받았습니다",
-      "item3": "ISO 27701 인증: 당사의 개인정보관리체계는 데이터 프라이버시를 위한 ISO 27701 표준을 충족합니다",
-      "item4": "접근 제어: 다중 인증, 역할 기반 접근 및 정기적 접근 검토",
-      "item5": "모니터링: 지속적인 보안 모니터링, 취약점 평가 및 정기적 침투 테스트",
-      "item6": "사고 대응: HIPAA 및 관련 주법을 준수하는 문서화된 위반 통지 절차"
+      "title": "5. \ub370\uc774\ud130 \ubcf4\uc548",
+      "intro": "\ub2f9\uc0ac\ub294 \uadc0\ud558\uc758 \uc815\ubcf4\ub97c \ubcf4\ud638\ud558\uae30 \uc704\ud574 \ud3ec\uad04\uc801\uc778 \ubcf4\uc548 \uc870\uce58\ub97c \uc2dc\ud589\ud569\ub2c8\ub2e4:",
+      "item1": "\uc554\ud638\ud654: \uc804\uc1a1 \uc911\uc778 \ubaa8\ub4e0 \ub370\uc774\ud130\ub294 TLS 1.2 \uc774\uc0c1\uc73c\ub85c \ubcf4\ud638\ub429\ub2c8\ub2e4. \uc800\uc7a5 \ub370\uc774\ud130\ub294 AES-256 \uc554\ud638\ud654\ub97c \uc0ac\uc6a9\ud569\ub2c8\ub2e4",
+      "item2": "ISO 27001 \uc778\uc99d: \ub2f9\uc0ac\uc758 \uc815\ubcf4\ubcf4\uc548\uad00\ub9ac\uccb4\uacc4\ub294 ISO 27001 \uad6d\uc81c \ud45c\uc900 \uc778\uc99d\uc744 \ubc1b\uc558\uc2b5\ub2c8\ub2e4",
+      "item3": "ISO 27701 \uc778\uc99d: \ub2f9\uc0ac\uc758 \uac1c\uc778\uc815\ubcf4\uad00\ub9ac\uccb4\uacc4\ub294 \ub370\uc774\ud130 \ud504\ub77c\uc774\ubc84\uc2dc\ub97c \uc704\ud55c ISO 27701 \ud45c\uc900\uc744 \ucda9\uc871\ud569\ub2c8\ub2e4",
+      "item4": "\uc811\uadfc \uc81c\uc5b4: \ub2e4\uc911 \uc778\uc99d, \uc5ed\ud560 \uae30\ubc18 \uc811\uadfc \ubc0f \uc815\uae30\uc801 \uc811\uadfc \uac80\ud1a0",
+      "item5": "\ubaa8\ub2c8\ud130\ub9c1: \uc9c0\uc18d\uc801\uc778 \ubcf4\uc548 \ubaa8\ub2c8\ud130\ub9c1, \ucde8\uc57d\uc810 \ud3c9\uac00 \ubc0f \uc815\uae30\uc801 \uce68\ud22c \ud14c\uc2a4\ud2b8",
+      "item6": "\uc0ac\uace0 \ub300\uc751: HIPAA \ubc0f \uad00\ub828 \uc8fc\ubc95\uc744 \uc900\uc218\ud558\ub294 \ubb38\uc11c\ud654\ub41c \uc704\ubc18 \ud1b5\uc9c0 \uc808\ucc28"
     },
     "rights": {
-      "title": "6. 귀하의 권리",
-      "intro": "귀하는 개인정보 및 PHI에 관해 다음과 같은 권리를 가집니다:",
-      "item1": "접근권: 당사가 보유한 개인정보의 사본을 요청할 수 있습니다",
-      "item2": "정정권: 부정확하거나 불완전한 정보의 정정을 요청할 수 있습니다",
-      "item3": "삭제권: 법적 보존 요건에 따라 개인정보의 삭제를 요청할 수 있습니다",
-      "item4": "처리 제한권: 귀하의 정보에 대한 특정 처리의 제한을 요청할 수 있습니다",
-      "item5": "공개 내역 요청권: PHI의 특정 공개에 대한 기록을 요청할 수 있습니다",
-      "item6": "수신 거부권: 비필수 커뮤니케이션을 언제든지 수신 거부할 수 있습니다",
-      "exercise": "이러한 권리를 행사하시려면 info@hicare.net으로 연락해 주시기 바랍니다. 관련 법률에서 요구하는 바에 따라 30일 이내에 요청에 응답하겠습니다."
+      "title": "6. \uadc0\ud558\uc758 \uad8c\ub9ac",
+      "intro": "\uadc0\ud558\ub294 \uac1c\uc778\uc815\ubcf4 \ubc0f PHI\uc5d0 \uad00\ud574 \ub2e4\uc74c\uacfc \uac19\uc740 \uad8c\ub9ac\ub97c \uac00\uc9d1\ub2c8\ub2e4:",
+      "item1": "\uc811\uadfc\uad8c: \ub2f9\uc0ac\uac00 \ubcf4\uc720\ud55c \uac1c\uc778\uc815\ubcf4\uc758 \uc0ac\ubcf8\uc744 \uc694\uccad\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4",
+      "item2": "\uc815\uc815\uad8c: \ubd80\uc815\ud655\ud558\uac70\ub098 \ubd88\uc644\uc804\ud55c \uc815\ubcf4\uc758 \uc815\uc815\uc744 \uc694\uccad\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4",
+      "item3": "\uc0ad\uc81c\uad8c: \ubc95\uc801 \ubcf4\uc874 \uc694\uac74\uc5d0 \ub530\ub77c \uac1c\uc778\uc815\ubcf4\uc758 \uc0ad\uc81c\ub97c \uc694\uccad\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4",
+      "item4": "\ucc98\ub9ac \uc81c\ud55c\uad8c: \uadc0\ud558\uc758 \uc815\ubcf4\uc5d0 \ub300\ud55c \ud2b9\uc815 \ucc98\ub9ac\uc758 \uc81c\ud55c\uc744 \uc694\uccad\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4",
+      "item5": "\uacf5\uac1c \ub0b4\uc5ed \uc694\uccad\uad8c: PHI\uc758 \ud2b9\uc815 \uacf5\uac1c\uc5d0 \ub300\ud55c \uae30\ub85d\uc744 \uc694\uccad\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4",
+      "item6": "\uc218\uc2e0 \uac70\ubd80\uad8c: \ube44\ud544\uc218 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158\uc744 \uc5b8\uc81c\ub4e0\uc9c0 \uc218\uc2e0 \uac70\ubd80\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4",
+      "exercise": "\uc774\ub7ec\ud55c \uad8c\ub9ac\ub97c \ud589\uc0ac\ud558\uc2dc\ub824\uba74 info@hicare.net\uc73c\ub85c \uc5f0\ub77d\ud574 \uc8fc\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4. \uad00\ub828 \ubc95\ub960\uc5d0\uc11c \uc694\uad6c\ud558\ub294 \ubc14\uc5d0 \ub530\ub77c 30\uc77c \uc774\ub0b4\uc5d0 \uc694\uccad\uc5d0 \uc751\ub2f5\ud558\uaca0\uc2b5\ub2c8\ub2e4."
     },
     "cookies": {
-      "title": "7. 쿠키 정책",
-      "intro": "당사 웹사이트는 귀하의 경험을 향상시키기 위해 쿠키 및 유사 추적 기술을 사용합니다:",
-      "item1": "필수 쿠키: 인증 및 보안을 포함한 기본 웹사이트 기능에 필요합니다",
-      "item2": "분석 쿠키: 성능 향상을 위해 방문자가 웹사이트와 상호작용하는 방식을 이해하는 데 도움이 됩니다",
-      "item3": "환경 설정 쿠키: 언어 선택 및 기타 표시 환경 설정을 기억합니다",
-      "manage": "브라우저 설정을 통해 쿠키 환경 설정을 관리할 수 있습니다. 특정 쿠키를 비활성화하면 웹사이트의 일부 기능 사용이 제한될 수 있습니다."
+      "title": "7. \ucfe0\ud0a4 \uc815\ucc45",
+      "intro": "\ub2f9\uc0ac \uc6f9\uc0ac\uc774\ud2b8\ub294 \uadc0\ud558\uc758 \uacbd\ud5d8\uc744 \ud5a5\uc0c1\uc2dc\ud0a4\uae30 \uc704\ud574 \ucfe0\ud0a4 \ubc0f \uc720\uc0ac \ucd94\uc801 \uae30\uc220\uc744 \uc0ac\uc6a9\ud569\ub2c8\ub2e4:",
+      "item1": "\ud544\uc218 \ucfe0\ud0a4: \uc778\uc99d \ubc0f \ubcf4\uc548\uc744 \ud3ec\ud568\ud55c \uae30\ubcf8 \uc6f9\uc0ac\uc774\ud2b8 \uae30\ub2a5\uc5d0 \ud544\uc694\ud569\ub2c8\ub2e4",
+      "item2": "\ubd84\uc11d \ucfe0\ud0a4: \uc131\ub2a5 \ud5a5\uc0c1\uc744 \uc704\ud574 \ubc29\ubb38\uc790\uac00 \uc6f9\uc0ac\uc774\ud2b8\uc640 \uc0c1\ud638\uc791\uc6a9\ud558\ub294 \ubc29\uc2dd\uc744 \uc774\ud574\ud558\ub294 \ub370 \ub3c4\uc6c0\uc774 \ub429\ub2c8\ub2e4",
+      "item3": "\ud658\uacbd \uc124\uc815 \ucfe0\ud0a4: \uc5b8\uc5b4 \uc120\ud0dd \ubc0f \uae30\ud0c0 \ud45c\uc2dc \ud658\uacbd \uc124\uc815\uc744 \uae30\uc5b5\ud569\ub2c8\ub2e4",
+      "manage": "\ube0c\ub77c\uc6b0\uc800 \uc124\uc815\uc744 \ud1b5\ud574 \ucfe0\ud0a4 \ud658\uacbd \uc124\uc815\uc744 \uad00\ub9ac\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ud2b9\uc815 \ucfe0\ud0a4\ub97c \ube44\ud65c\uc131\ud654\ud558\uba74 \uc6f9\uc0ac\uc774\ud2b8\uc758 \uc77c\ubd80 \uae30\ub2a5 \uc0ac\uc6a9\uc774 \uc81c\ud55c\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4."
     },
     "retention": {
-      "title": "8. 데이터 보존",
-      "text": "당사는 본 개인정보 처리방침에 기술된 목적을 이행하고, 법적 의무를 준수하며, 분쟁을 해결하고, 계약을 이행하기 위해 필요한 기간 동안 개인정보 및 PHI를 보존합니다. 의료 기록은 HIPAA 요건 및 관련 주 의료 기록 보존법에 따라 보존됩니다. 데이터가 더 이상 필요하지 않은 경우 안전하게 삭제되거나 비식별화됩니다."
+      "title": "8. \ub370\uc774\ud130 \ubcf4\uc874",
+      "text": "\ub2f9\uc0ac\ub294 \ubcf8 \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68\uc5d0 \uae30\uc220\ub41c \ubaa9\uc801\uc744 \uc774\ud589\ud558\uace0, \ubc95\uc801 \uc758\ubb34\ub97c \uc900\uc218\ud558\uba70, \ubd84\uc7c1\uc744 \ud574\uacb0\ud558\uace0, \uacc4\uc57d\uc744 \uc774\ud589\ud558\uae30 \uc704\ud574 \ud544\uc694\ud55c \uae30\uac04 \ub3d9\uc548 \uac1c\uc778\uc815\ubcf4 \ubc0f PHI\ub97c \ubcf4\uc874\ud569\ub2c8\ub2e4. \uc758\ub8cc \uae30\ub85d\uc740 HIPAA \uc694\uac74 \ubc0f \uad00\ub828 \uc8fc \uc758\ub8cc \uae30\ub85d \ubcf4\uc874\ubc95\uc5d0 \ub530\ub77c \ubcf4\uc874\ub429\ub2c8\ub2e4. \ub370\uc774\ud130\uac00 \ub354 \uc774\uc0c1 \ud544\uc694\ud558\uc9c0 \uc54a\uc740 \uacbd\uc6b0 \uc548\uc804\ud558\uac8c \uc0ad\uc81c\ub418\uac70\ub098 \ube44\uc2dd\ubcc4\ud654\ub429\ub2c8\ub2e4."
     },
     "changes": {
-      "title": "9. 본 방침의 변경",
-      "text": "당사는 관행, 기술, 법적 요건 또는 기타 요인의 변경을 반영하기 위해 수시로 본 개인정보 처리방침을 업데이트할 수 있습니다. 중대한 변경이 있는 경우 본 페이지 상단의 \"최종 수정일\"을 업데이트하고, 필요한 경우 이메일 또는 웹사이트의 눈에 띄는 공지를 통해 알려드립니다. 본 개인정보 처리방침을 정기적으로 검토하시기 바랍니다."
+      "title": "9. \ubcf8 \ubc29\uce68\uc758 \ubcc0\uacbd",
+      "text": "\ub2f9\uc0ac\ub294 \uad00\ud589, \uae30\uc220, \ubc95\uc801 \uc694\uac74 \ub610\ub294 \uae30\ud0c0 \uc694\uc778\uc758 \ubcc0\uacbd\uc744 \ubc18\uc601\ud558\uae30 \uc704\ud574 \uc218\uc2dc\ub85c \ubcf8 \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68\uc744 \uc5c5\ub370\uc774\ud2b8\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc911\ub300\ud55c \ubcc0\uacbd\uc774 \uc788\ub294 \uacbd\uc6b0 \ubcf8 \ud398\uc774\uc9c0 \uc0c1\ub2e8\uc758 \"\ucd5c\uc885 \uc218\uc815\uc77c\"\uc744 \uc5c5\ub370\uc774\ud2b8\ud558\uace0, \ud544\uc694\ud55c \uacbd\uc6b0 \uc774\uba54\uc77c \ub610\ub294 \uc6f9\uc0ac\uc774\ud2b8\uc758 \ub208\uc5d0 \ub744\ub294 \uacf5\uc9c0\ub97c \ud1b5\ud574 \uc54c\ub824\ub4dc\ub9bd\ub2c8\ub2e4. \ubcf8 \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68\uc744 \uc815\uae30\uc801\uc73c\ub85c \uac80\ud1a0\ud558\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4."
     },
     "contact": {
-      "title": "10. 연락처 정보",
-      "intro": "본 개인정보 처리방침 또는 당사의 데이터 관행에 대한 질문, 우려 사항 또는 요청이 있는 경우 아래로 연락해 주시기 바랍니다:",
+      "title": "10. \uc5f0\ub77d\ucc98 \uc815\ubcf4",
+      "intro": "\ubcf8 \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68 \ub610\ub294 \ub2f9\uc0ac\uc758 \ub370\uc774\ud130 \uad00\ud589\uc5d0 \ub300\ud55c \uc9c8\ubb38, \uc6b0\ub824 \uc0ac\ud56d \ub610\ub294 \uc694\uccad\uc774 \uc788\ub294 \uacbd\uc6b0 \uc544\ub798\ub85c \uc5f0\ub77d\ud574 \uc8fc\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4:",
       "company": "HicareNet, Inc.",
-      "subsidiary": "Hicare Co., Ltd. 미국 자회사",
-      "location": "미국 캘리포니아",
-      "emailLabel": "이메일: ",
-      "hipaa": "HIPAA 관련 문의 또는 개인정보 불만 접수를 위해 미국 보건복지부 시민권리국에 연락하실 수도 있습니다."
+      "subsidiary": "Hicare Co., Ltd. \ubbf8\uad6d \uc790\ud68c\uc0ac",
+      "location": "\ubbf8\uad6d \uce98\ub9ac\ud3ec\ub2c8\uc544",
+      "emailLabel": "\uc774\uba54\uc77c: ",
+      "hipaa": "HIPAA \uad00\ub828 \ubb38\uc758 \ub610\ub294 \uac1c\uc778\uc815\ubcf4 \ubd88\ub9cc \uc811\uc218\ub97c \uc704\ud574 \ubbf8\uad6d \ubcf4\uac74\ubcf5\uc9c0\ubd80 \uc2dc\ubbfc\uad8c\ub9ac\uad6d\uc5d0 \uc5f0\ub77d\ud558\uc2e4 \uc218\ub3c4 \uc788\uc2b5\ub2c8\ub2e4."
     }
   },
   "terms": {
     "hero": {
-      "title": "이용약관",
-      "effective": "시행일: 2026년 1월 1일",
-      "updated": "최종 수정일: 2026년 3월 15일"
+      "title": "\uc774\uc6a9\uc57d\uad00",
+      "effective": "\uc2dc\ud589\uc77c: 2026\ub144 1\uc6d4 1\uc77c",
+      "updated": "\ucd5c\uc885 \uc218\uc815\uc77c: 2026\ub144 3\uc6d4 15\uc77c"
     },
     "intro": {
-      "text": "하이케어넷에 오신 것을 환영합니다. 본 이용약관(이하 \"약관\")은 HicareNet, Inc.(이하 \"하이케어넷\", \"당사\")가 제공하는 서비스, 웹사이트 및 플랫폼에 대한 귀하의 접근 및 사용을 규율합니다. 당사는 Hicare Co., Ltd.의 캘리포니아 소재 자회사입니다. 당사 서비스에 접근하거나 사용함으로써 귀하는 본 약관에 구속되는 것에 동의합니다. 동의하지 않는 경우 당사 서비스를 사용할 수 없습니다."
+      "text": "\ud558\uc774\ucf00\uc5b4\ub137\uc5d0 \uc624\uc2e0 \uac83\uc744 \ud658\uc601\ud569\ub2c8\ub2e4. \ubcf8 \uc774\uc6a9\uc57d\uad00(\uc774\ud558 \"\uc57d\uad00\")\uc740 HicareNet, Inc.(\uc774\ud558 \"\ud558\uc774\ucf00\uc5b4\ub137\", \"\ub2f9\uc0ac\")\uac00 \uc81c\uacf5\ud558\ub294 \uc11c\ube44\uc2a4, \uc6f9\uc0ac\uc774\ud2b8 \ubc0f \ud50c\ub7ab\ud3fc\uc5d0 \ub300\ud55c \uadc0\ud558\uc758 \uc811\uadfc \ubc0f \uc0ac\uc6a9\uc744 \uaddc\uc728\ud569\ub2c8\ub2e4. \ub2f9\uc0ac\ub294 Hicare Co., Ltd.\uc758 \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc18c\uc7ac \uc790\ud68c\uc0ac\uc785\ub2c8\ub2e4. \ub2f9\uc0ac \uc11c\ube44\uc2a4\uc5d0 \uc811\uadfc\ud558\uac70\ub098 \uc0ac\uc6a9\ud568\uc73c\ub85c\uc368 \uadc0\ud558\ub294 \ubcf8 \uc57d\uad00\uc5d0 \uad6c\uc18d\ub418\ub294 \uac83\uc5d0 \ub3d9\uc758\ud569\ub2c8\ub2e4. \ub3d9\uc758\ud558\uc9c0 \uc54a\ub294 \uacbd\uc6b0 \ub2f9\uc0ac \uc11c\ube44\uc2a4\ub97c \uc0ac\uc6a9\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4."
     },
     "acceptance": {
-      "title": "1. 약관의 동의",
-      "text1": "계정을 생성하거나 당사 플랫폼에 접근하거나 당사 서비스를 사용함으로써, 귀하는 본 약관과 본문에 참조로 포함된 당사 개인정보 처리방침을 읽고 이해하였으며 이에 구속되는 것에 동의함을 인정합니다.",
-      "text2": "의료 기관, 클리닉 또는 기타 단체를 대리하여 당사 서비스를 사용하는 경우, 귀하는 해당 단체를 본 약관에 구속할 권한이 있음을 진술하고 보증합니다. 이 경우 \"귀하\" 및 \"귀하의\"는 해당 단체를 지칭합니다."
+      "title": "1. \uc57d\uad00\uc758 \ub3d9\uc758",
+      "text1": "\uacc4\uc815\uc744 \uc0dd\uc131\ud558\uac70\ub098 \ub2f9\uc0ac \ud50c\ub7ab\ud3fc\uc5d0 \uc811\uadfc\ud558\uac70\ub098 \ub2f9\uc0ac \uc11c\ube44\uc2a4\ub97c \uc0ac\uc6a9\ud568\uc73c\ub85c\uc368, \uadc0\ud558\ub294 \ubcf8 \uc57d\uad00\uacfc \ubcf8\ubb38\uc5d0 \ucc38\uc870\ub85c \ud3ec\ud568\ub41c \ub2f9\uc0ac \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68\uc744 \uc77d\uace0 \uc774\ud574\ud558\uc600\uc73c\uba70 \uc774\uc5d0 \uad6c\uc18d\ub418\ub294 \uac83\uc5d0 \ub3d9\uc758\ud568\uc744 \uc778\uc815\ud569\ub2c8\ub2e4.",
+      "text2": "\uc758\ub8cc \uae30\uad00, \ud074\ub9ac\ub2c9 \ub610\ub294 \uae30\ud0c0 \ub2e8\uccb4\ub97c \ub300\ub9ac\ud558\uc5ec \ub2f9\uc0ac \uc11c\ube44\uc2a4\ub97c \uc0ac\uc6a9\ud558\ub294 \uacbd\uc6b0, \uadc0\ud558\ub294 \ud574\ub2f9 \ub2e8\uccb4\ub97c \ubcf8 \uc57d\uad00\uc5d0 \uad6c\uc18d\ud560 \uad8c\ud55c\uc774 \uc788\uc74c\uc744 \uc9c4\uc220\ud558\uace0 \ubcf4\uc99d\ud569\ub2c8\ub2e4. \uc774 \uacbd\uc6b0 \"\uadc0\ud558\" \ubc0f \"\uadc0\ud558\uc758\"\ub294 \ud574\ub2f9 \ub2e8\uccb4\ub97c \uc9c0\uce6d\ud569\ub2c8\ub2e4."
     },
     "services": {
-      "title": "2. 서비스 설명",
-      "intro": "하이케어넷은 다음을 포함하되 이에 국한되지 않는 의료 정보 기술 서비스를 제공합니다:",
-      "item1": "원격 환자 모니터링(RPM): 지속적 환자 모니터링, 활력 징후 수집 및 임상 경고 관리를 위한 클라우드 기반 플랫폼 및 FDA 승인 의료기기",
-      "item2": "만성질환 관리(CCM): 케어 플랜 개발 및 환자 커뮤니케이션 도구를 포함하여 다수의 만성질환이 있는 환자를 관리하기 위한 종합 케어 코디네이션 플랫폼",
-      "item3": "연례 건강검진(AWV): 예방 진료, 건강 위험 평가 및 개인 맞춤 건강 계획을 지원하는 디지털 도구",
-      "item4": "가치 기반 케어(VBC): 품질 측정, 인구 건강 관리 및 가치 기반 상환 모델을 지원하는 분석 및 보고 플랫폼",
-      "note": "당사 서비스는 미국 내에서 운영되는 면허를 가진 의료 서비스 제공자, 클리닉, 병원, 책임의료기구(ACO) 및 전문간호시설(SNF)을 대상으로 설계되었습니다."
+      "title": "2. \uc11c\ube44\uc2a4 \uc124\uba85",
+      "intro": "\ud558\uc774\ucf00\uc5b4\ub137\uc740 \ub2e4\uc74c\uc744 \ud3ec\ud568\ud558\ub418 \uc774\uc5d0 \uad6d\ud55c\ub418\uc9c0 \uc54a\ub294 \uc758\ub8cc \uc815\ubcf4 \uae30\uc220 \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4:",
+      "item1": "\uc6d0\uaca9 \ud658\uc790 \ubaa8\ub2c8\ud130\ub9c1(RPM): \uc9c0\uc18d\uc801 \ud658\uc790 \ubaa8\ub2c8\ud130\ub9c1, \ud65c\ub825 \uc9d5\ud6c4 \uc218\uc9d1 \ubc0f \uc784\uc0c1 \uacbd\uace0 \uad00\ub9ac\ub97c \uc704\ud55c \ud074\ub77c\uc6b0\ub4dc \uae30\ubc18 \ud50c\ub7ab\ud3fc \ubc0f FDA \uc2b9\uc778 \uc758\ub8cc\uae30\uae30",
+      "item2": "\ub9cc\uc131\uc9c8\ud658 \uad00\ub9ac(CCM): \ucf00\uc5b4 \ud50c\ub79c \uac1c\ubc1c \ubc0f \ud658\uc790 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158 \ub3c4\uad6c\ub97c \ud3ec\ud568\ud558\uc5ec \ub2e4\uc218\uc758 \ub9cc\uc131\uc9c8\ud658\uc774 \uc788\ub294 \ud658\uc790\ub97c \uad00\ub9ac\ud558\uae30 \uc704\ud55c \uc885\ud569 \ucf00\uc5b4 \ucf54\ub514\ub124\uc774\uc158 \ud50c\ub7ab\ud3fc",
+      "item3": "\uc5f0\ub840 \uac74\uac15\uac80\uc9c4(AWV): \uc608\ubc29 \uc9c4\ub8cc, \uac74\uac15 \uc704\ud5d8 \ud3c9\uac00 \ubc0f \uac1c\uc778 \ub9de\ucda4 \uac74\uac15 \uacc4\ud68d\uc744 \uc9c0\uc6d0\ud558\ub294 \ub514\uc9c0\ud138 \ub3c4\uad6c",
+      "item4": "\uac00\uce58 \uae30\ubc18 \ucf00\uc5b4(VBC): \ud488\uc9c8 \uce21\uc815, \uc778\uad6c \uac74\uac15 \uad00\ub9ac \ubc0f \uac00\uce58 \uae30\ubc18 \uc0c1\ud658 \ubaa8\ub378\uc744 \uc9c0\uc6d0\ud558\ub294 \ubd84\uc11d \ubc0f \ubcf4\uace0 \ud50c\ub7ab\ud3fc",
+      "note": "\ub2f9\uc0ac \uc11c\ube44\uc2a4\ub294 \ubbf8\uad6d \ub0b4\uc5d0\uc11c \uc6b4\uc601\ub418\ub294 \uba74\ud5c8\ub97c \uac00\uc9c4 \uc758\ub8cc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc790, \ud074\ub9ac\ub2c9, \ubcd1\uc6d0, \ucc45\uc784\uc758\ub8cc\uae30\uad6c(ACO) \ubc0f \uc804\ubb38\uac04\ud638\uc2dc\uc124(SNF)\uc744 \ub300\uc0c1\uc73c\ub85c \uc124\uacc4\ub418\uc5c8\uc2b5\ub2c8\ub2e4."
     },
     "accounts": {
-      "title": "3. 사용자 계정 및 책임",
-      "intro": "하이케어넷에 계정을 생성할 때 귀하는 다음에 동의합니다:",
-      "item1": "정확하고 최신의 완전한 등록 정보 제공",
-      "item2": "로그인 자격 증명의 보안 및 기밀 유지",
-      "item3": "무단 접근 또는 보안 위반 발생 시 즉시 당사에 통보",
-      "item4": "귀하의 계정에서 수행되는 모든 활동에 대한 책임 수락",
-      "item5": "조직 내 모든 사용자가 플랫폼 사용 및 데이터 프라이버시에 대한 적절한 교육을 받도록 보장",
-      "liability": "귀하는 HIPAA 및 주 의료 규정을 포함하여 모든 관련 법률, 규정 및 전문 표준을 준수하여 플랫폼을 사용할 전적인 책임이 있습니다."
+      "title": "3. \uc0ac\uc6a9\uc790 \uacc4\uc815 \ubc0f \ucc45\uc784",
+      "intro": "\ud558\uc774\ucf00\uc5b4\ub137\uc5d0 \uacc4\uc815\uc744 \uc0dd\uc131\ud560 \ub54c \uadc0\ud558\ub294 \ub2e4\uc74c\uc5d0 \ub3d9\uc758\ud569\ub2c8\ub2e4:",
+      "item1": "\uc815\ud655\ud558\uace0 \ucd5c\uc2e0\uc758 \uc644\uc804\ud55c \ub4f1\ub85d \uc815\ubcf4 \uc81c\uacf5",
+      "item2": "\ub85c\uadf8\uc778 \uc790\uaca9 \uc99d\uba85\uc758 \ubcf4\uc548 \ubc0f \uae30\ubc00 \uc720\uc9c0",
+      "item3": "\ubb34\ub2e8 \uc811\uadfc \ub610\ub294 \ubcf4\uc548 \uc704\ubc18 \ubc1c\uc0dd \uc2dc \uc989\uc2dc \ub2f9\uc0ac\uc5d0 \ud1b5\ubcf4",
+      "item4": "\uadc0\ud558\uc758 \uacc4\uc815\uc5d0\uc11c \uc218\ud589\ub418\ub294 \ubaa8\ub4e0 \ud65c\ub3d9\uc5d0 \ub300\ud55c \ucc45\uc784 \uc218\ub77d",
+      "item5": "\uc870\uc9c1 \ub0b4 \ubaa8\ub4e0 \uc0ac\uc6a9\uc790\uac00 \ud50c\ub7ab\ud3fc \uc0ac\uc6a9 \ubc0f \ub370\uc774\ud130 \ud504\ub77c\uc774\ubc84\uc2dc\uc5d0 \ub300\ud55c \uc801\uc808\ud55c \uad50\uc721\uc744 \ubc1b\ub3c4\ub85d \ubcf4\uc7a5",
+      "liability": "\uadc0\ud558\ub294 HIPAA \ubc0f \uc8fc \uc758\ub8cc \uaddc\uc815\uc744 \ud3ec\ud568\ud558\uc5ec \ubaa8\ub4e0 \uad00\ub828 \ubc95\ub960, \uaddc\uc815 \ubc0f \uc804\ubb38 \ud45c\uc900\uc744 \uc900\uc218\ud558\uc5ec \ud50c\ub7ab\ud3fc\uc744 \uc0ac\uc6a9\ud560 \uc804\uc801\uc778 \ucc45\uc784\uc774 \uc788\uc2b5\ub2c8\ub2e4."
     },
     "acceptable": {
-      "title": "4. 허용 가능한 사용 정책",
-      "intro": "귀하는 당사 서비스를 다음 목적으로 사용하지 않는 데 동의합니다:",
-      "item1": "관련 연방, 주 또는 지방 법률 또는 규정 위반",
-      "item2": "HIPAA를 위반하여 보호대상 건강정보(PHI)에 접근, 사용 또는 공개",
-      "item3": "당사 시스템, 네트워크 또는 다른 사용자의 계정에 대한 무단 접근 시도",
-      "item4": "플랫폼에 맬웨어, 바이러스 또는 기타 유해 코드 도입",
-      "item5": "플랫폼의 일부를 역설계, 디컴파일 또는 역어셈블",
-      "item6": "의도된 의료 관련 기능 이외의 목적으로 플랫폼 사용",
-      "item7": "서면 승인 없이 플랫폼 접근 권한을 재판매, 재라이선스 또는 재배포"
+      "title": "4. \ud5c8\uc6a9 \uac00\ub2a5\ud55c \uc0ac\uc6a9 \uc815\ucc45",
+      "intro": "\uadc0\ud558\ub294 \ub2f9\uc0ac \uc11c\ube44\uc2a4\ub97c \ub2e4\uc74c \ubaa9\uc801\uc73c\ub85c \uc0ac\uc6a9\ud558\uc9c0 \uc54a\ub294 \ub370 \ub3d9\uc758\ud569\ub2c8\ub2e4:",
+      "item1": "\uad00\ub828 \uc5f0\ubc29, \uc8fc \ub610\ub294 \uc9c0\ubc29 \ubc95\ub960 \ub610\ub294 \uaddc\uc815 \uc704\ubc18",
+      "item2": "HIPAA\ub97c \uc704\ubc18\ud558\uc5ec \ubcf4\ud638\ub300\uc0c1 \uac74\uac15\uc815\ubcf4(PHI)\uc5d0 \uc811\uadfc, \uc0ac\uc6a9 \ub610\ub294 \uacf5\uac1c",
+      "item3": "\ub2f9\uc0ac \uc2dc\uc2a4\ud15c, \ub124\ud2b8\uc6cc\ud06c \ub610\ub294 \ub2e4\ub978 \uc0ac\uc6a9\uc790\uc758 \uacc4\uc815\uc5d0 \ub300\ud55c \ubb34\ub2e8 \uc811\uadfc \uc2dc\ub3c4",
+      "item4": "\ud50c\ub7ab\ud3fc\uc5d0 \ub9ec\uc6e8\uc5b4, \ubc14\uc774\ub7ec\uc2a4 \ub610\ub294 \uae30\ud0c0 \uc720\ud574 \ucf54\ub4dc \ub3c4\uc785",
+      "item5": "\ud50c\ub7ab\ud3fc\uc758 \uc77c\ubd80\ub97c \uc5ed\uc124\uacc4, \ub514\ucef4\ud30c\uc77c \ub610\ub294 \uc5ed\uc5b4\uc148\ube14",
+      "item6": "\uc758\ub3c4\ub41c \uc758\ub8cc \uad00\ub828 \uae30\ub2a5 \uc774\uc678\uc758 \ubaa9\uc801\uc73c\ub85c \ud50c\ub7ab\ud3fc \uc0ac\uc6a9",
+      "item7": "\uc11c\uba74 \uc2b9\uc778 \uc5c6\uc774 \ud50c\ub7ab\ud3fc \uc811\uadfc \uad8c\ud55c\uc744 \uc7ac\ud310\ub9e4, \uc7ac\ub77c\uc774\uc120\uc2a4 \ub610\ub294 \uc7ac\ubc30\ud3ec"
     },
     "ip": {
-      "title": "5. 지적 재산권",
-      "text1": "하이케어넷의 플랫폼 및 서비스와 관련된 모든 콘텐츠, 소프트웨어, 기술, 디자인, 상표 및 기타 지적 재산은 HicareNet, Inc. 또는 그 모회사 Hicare Co., Ltd.가 소유하며 관련 지적 재산권법에 의해 보호됩니다.",
-      "text2": "당사 서비스의 사용은 당사 지적 재산에 대한 소유권을 부여하지 않습니다. 귀하에게는 본 약관에 따라 의도된 목적으로만 플랫폼에 접근하고 사용할 수 있는 제한적, 비독점적, 양도 불가, 취소 가능한 라이선스가 부여됩니다.",
-      "text3": "귀하는 플랫폼에 입력한 모든 데이터의 소유권을 유지합니다. 당사 서비스를 사용함으로써 귀하는 서비스 제공 및 개선 목적으로만 귀하의 데이터를 처리, 저장 및 전송할 수 있는 제한적 라이선스를 하이케어넷에 부여합니다."
+      "title": "5. \uc9c0\uc801 \uc7ac\uc0b0\uad8c",
+      "text1": "\ud558\uc774\ucf00\uc5b4\ub137\uc758 \ud50c\ub7ab\ud3fc \ubc0f \uc11c\ube44\uc2a4\uc640 \uad00\ub828\ub41c \ubaa8\ub4e0 \ucf58\ud150\uce20, \uc18c\ud504\ud2b8\uc6e8\uc5b4, \uae30\uc220, \ub514\uc790\uc778, \uc0c1\ud45c \ubc0f \uae30\ud0c0 \uc9c0\uc801 \uc7ac\uc0b0\uc740 HicareNet, Inc. \ub610\ub294 \uadf8 \ubaa8\ud68c\uc0ac Hicare Co., Ltd.\uac00 \uc18c\uc720\ud558\uba70 \uad00\ub828 \uc9c0\uc801 \uc7ac\uc0b0\uad8c\ubc95\uc5d0 \uc758\ud574 \ubcf4\ud638\ub429\ub2c8\ub2e4.",
+      "text2": "\ub2f9\uc0ac \uc11c\ube44\uc2a4\uc758 \uc0ac\uc6a9\uc740 \ub2f9\uc0ac \uc9c0\uc801 \uc7ac\uc0b0\uc5d0 \ub300\ud55c \uc18c\uc720\uad8c\uc744 \ubd80\uc5ec\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \uadc0\ud558\uc5d0\uac8c\ub294 \ubcf8 \uc57d\uad00\uc5d0 \ub530\ub77c \uc758\ub3c4\ub41c \ubaa9\uc801\uc73c\ub85c\ub9cc \ud50c\ub7ab\ud3fc\uc5d0 \uc811\uadfc\ud558\uace0 \uc0ac\uc6a9\ud560 \uc218 \uc788\ub294 \uc81c\ud55c\uc801, \ube44\ub3c5\uc810\uc801, \uc591\ub3c4 \ubd88\uac00, \ucde8\uc18c \uac00\ub2a5\ud55c \ub77c\uc774\uc120\uc2a4\uac00 \ubd80\uc5ec\ub429\ub2c8\ub2e4.",
+      "text3": "\uadc0\ud558\ub294 \ud50c\ub7ab\ud3fc\uc5d0 \uc785\ub825\ud55c \ubaa8\ub4e0 \ub370\uc774\ud130\uc758 \uc18c\uc720\uad8c\uc744 \uc720\uc9c0\ud569\ub2c8\ub2e4. \ub2f9\uc0ac \uc11c\ube44\uc2a4\ub97c \uc0ac\uc6a9\ud568\uc73c\ub85c\uc368 \uadc0\ud558\ub294 \uc11c\ube44\uc2a4 \uc81c\uacf5 \ubc0f \uac1c\uc120 \ubaa9\uc801\uc73c\ub85c\ub9cc \uadc0\ud558\uc758 \ub370\uc774\ud130\ub97c \ucc98\ub9ac, \uc800\uc7a5 \ubc0f \uc804\uc1a1\ud560 \uc218 \uc788\ub294 \uc81c\ud55c\uc801 \ub77c\uc774\uc120\uc2a4\ub97c \ud558\uc774\ucf00\uc5b4\ub137\uc5d0 \ubd80\uc5ec\ud569\ub2c8\ub2e4."
     },
     "compliance": {
-      "title": "6. HIPAA 및 의료 규정 준수",
-      "text1": "하이케어넷은 HIPAA에 따라 업무 제휴자로 운영됩니다. 당사는 PHI가 관련된 서비스를 사용하는 각 적용 대상 기관과 업무 제휴 계약(BAA)을 체결합니다. BAA는 PHI의 사용, 공개 및 보호에 관한 당사의 의무를 규율합니다.",
-      "text2": "당사 플랫폼은 다음을 준수하도록 설계 및 유지됩니다:",
-      "item1": "HIPAA 프라이버시 규칙 및 보안 규칙 요건",
-      "item2": "HITECH법 위반 통지 규정",
-      "item3": "ISO 27001 정보보안관리 표준",
-      "item4": "ISO 27701 개인정보관리 표준",
-      "item5": "관련 주 의료 프라이버시 및 데이터 보호법",
-      "text3": "귀하는 플랫폼 사용이 귀하 자신의 HIPAA 의무를 준수하는지, 그리고 필요한 모든 환자 동의 및 승인을 획득했는지 확인할 책임이 있습니다."
+      "title": "6. HIPAA \ubc0f \uc758\ub8cc \uaddc\uc815 \uc900\uc218",
+      "text1": "\ud558\uc774\ucf00\uc5b4\ub137\uc740 HIPAA\uc5d0 \ub530\ub77c \uc5c5\ubb34 \uc81c\ud734\uc790\ub85c \uc6b4\uc601\ub429\ub2c8\ub2e4. \ub2f9\uc0ac\ub294 PHI\uac00 \uad00\ub828\ub41c \uc11c\ube44\uc2a4\ub97c \uc0ac\uc6a9\ud558\ub294 \uac01 \uc801\uc6a9 \ub300\uc0c1 \uae30\uad00\uacfc \uc5c5\ubb34 \uc81c\ud734 \uacc4\uc57d(BAA)\uc744 \uccb4\uacb0\ud569\ub2c8\ub2e4. BAA\ub294 PHI\uc758 \uc0ac\uc6a9, \uacf5\uac1c \ubc0f \ubcf4\ud638\uc5d0 \uad00\ud55c \ub2f9\uc0ac\uc758 \uc758\ubb34\ub97c \uaddc\uc728\ud569\ub2c8\ub2e4.",
+      "text2": "\ub2f9\uc0ac \ud50c\ub7ab\ud3fc\uc740 \ub2e4\uc74c\uc744 \uc900\uc218\ud558\ub3c4\ub85d \uc124\uacc4 \ubc0f \uc720\uc9c0\ub429\ub2c8\ub2e4:",
+      "item1": "HIPAA \ud504\ub77c\uc774\ubc84\uc2dc \uaddc\uce59 \ubc0f \ubcf4\uc548 \uaddc\uce59 \uc694\uac74",
+      "item2": "HITECH\ubc95 \uc704\ubc18 \ud1b5\uc9c0 \uaddc\uc815",
+      "item3": "ISO 27001 \uc815\ubcf4\ubcf4\uc548\uad00\ub9ac \ud45c\uc900",
+      "item4": "ISO 27701 \uac1c\uc778\uc815\ubcf4\uad00\ub9ac \ud45c\uc900",
+      "item5": "\uad00\ub828 \uc8fc \uc758\ub8cc \ud504\ub77c\uc774\ubc84\uc2dc \ubc0f \ub370\uc774\ud130 \ubcf4\ud638\ubc95",
+      "text3": "\uadc0\ud558\ub294 \ud50c\ub7ab\ud3fc \uc0ac\uc6a9\uc774 \uadc0\ud558 \uc790\uc2e0\uc758 HIPAA \uc758\ubb34\ub97c \uc900\uc218\ud558\ub294\uc9c0, \uadf8\ub9ac\uace0 \ud544\uc694\ud55c \ubaa8\ub4e0 \ud658\uc790 \ub3d9\uc758 \ubc0f \uc2b9\uc778\uc744 \ud68d\ub4dd\ud588\ub294\uc9c0 \ud655\uc778\ud560 \ucc45\uc784\uc774 \uc788\uc2b5\ub2c8\ub2e4."
     },
     "liability": {
-      "title": "7. 책임의 제한",
-      "text1": "관련 법률이 허용하는 최대 범위 내에서, 하이케어넷은 당사 서비스의 사용과 관련하여 발생하는 이익, 데이터, 사업 기회 또는 영업권의 손실을 포함하되 이에 국한되지 않는 간접적, 부수적, 특별, 결과적 또는 징벌적 손해에 대해 책임을 지지 않습니다.",
-      "text2": "본 약관 또는 당사 서비스 사용과 관련하여 발생하는 모든 청구에 대한 당사의 총 누적 책임은 청구 직전 12개월 동안 귀하가 하이케어넷에 지불한 총 수수료를 초과하지 않습니다.",
-      "text3": "본 약관의 어떠한 조항도 중대한 과실, 고의적 위법 행위 또는 관련 법률에 따라 배제하거나 제한할 수 없는 책임을 제한하지 않습니다."
+      "title": "7. \ucc45\uc784\uc758 \uc81c\ud55c",
+      "text1": "\uad00\ub828 \ubc95\ub960\uc774 \ud5c8\uc6a9\ud558\ub294 \ucd5c\ub300 \ubc94\uc704 \ub0b4\uc5d0\uc11c, \ud558\uc774\ucf00\uc5b4\ub137\uc740 \ub2f9\uc0ac \uc11c\ube44\uc2a4\uc758 \uc0ac\uc6a9\uacfc \uad00\ub828\ud558\uc5ec \ubc1c\uc0dd\ud558\ub294 \uc774\uc775, \ub370\uc774\ud130, \uc0ac\uc5c5 \uae30\ud68c \ub610\ub294 \uc601\uc5c5\uad8c\uc758 \uc190\uc2e4\uc744 \ud3ec\ud568\ud558\ub418 \uc774\uc5d0 \uad6d\ud55c\ub418\uc9c0 \uc54a\ub294 \uac04\uc811\uc801, \ubd80\uc218\uc801, \ud2b9\ubcc4, \uacb0\uacfc\uc801 \ub610\ub294 \uc9d5\ubc8c\uc801 \uc190\ud574\uc5d0 \ub300\ud574 \ucc45\uc784\uc744 \uc9c0\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+      "text2": "\ubcf8 \uc57d\uad00 \ub610\ub294 \ub2f9\uc0ac \uc11c\ube44\uc2a4 \uc0ac\uc6a9\uacfc \uad00\ub828\ud558\uc5ec \ubc1c\uc0dd\ud558\ub294 \ubaa8\ub4e0 \uccad\uad6c\uc5d0 \ub300\ud55c \ub2f9\uc0ac\uc758 \ucd1d \ub204\uc801 \ucc45\uc784\uc740 \uccad\uad6c \uc9c1\uc804 12\uac1c\uc6d4 \ub3d9\uc548 \uadc0\ud558\uac00 \ud558\uc774\ucf00\uc5b4\ub137\uc5d0 \uc9c0\ubd88\ud55c \ucd1d \uc218\uc218\ub8cc\ub97c \ucd08\uacfc\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+      "text3": "\ubcf8 \uc57d\uad00\uc758 \uc5b4\ub5a0\ud55c \uc870\ud56d\ub3c4 \uc911\ub300\ud55c \uacfc\uc2e4, \uace0\uc758\uc801 \uc704\ubc95 \ud589\uc704 \ub610\ub294 \uad00\ub828 \ubc95\ub960\uc5d0 \ub530\ub77c \ubc30\uc81c\ud558\uac70\ub098 \uc81c\ud55c\ud560 \uc218 \uc5c6\ub294 \ucc45\uc784\uc744 \uc81c\ud55c\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
     },
     "disclaimers": {
-      "title": "8. 면책 조항",
-      "text1": "당사 서비스는 \"있는 그대로\" 및 \"이용 가능한 상태\"로 제공됩니다. 하이케어넷은 플랫폼의 안정성, 정확성, 완전성 또는 특정 목적에의 적합성에 관해 명시적이든 묵시적이든 어떠한 보증도 하지 않습니다.",
-      "text2": "하이케어넷은 의료 기술 제공업체이며 의료 서비스 제공업체가 아닙니다. 당사 플랫폼과 디바이스는 면허를 가진 의료 전문가가 환자 케어에 활용할 수 있도록 설계된 도구입니다. 당사는 의학적 조언, 진단 또는 치료 권고를 제공하지 않습니다. 모든 임상적 결정은 전적으로 면허를 가진 의료 서비스 제공자의 책임입니다.",
-      "text3": "당사는 중단 없는 서비스를 위해 노력하지만 플랫폼이 항상 이용 가능할 것을 보장하지 않습니다. 예정된 유지보수, 업데이트 또는 예기치 않은 기술적 문제로 인해 일시적으로 가용성이 영향을 받을 수 있습니다."
+      "title": "8. \uba74\ucc45 \uc870\ud56d",
+      "text1": "\ub2f9\uc0ac \uc11c\ube44\uc2a4\ub294 \"\uc788\ub294 \uadf8\ub300\ub85c\" \ubc0f \"\uc774\uc6a9 \uac00\ub2a5\ud55c \uc0c1\ud0dc\"\ub85c \uc81c\uacf5\ub429\ub2c8\ub2e4. \ud558\uc774\ucf00\uc5b4\ub137\uc740 \ud50c\ub7ab\ud3fc\uc758 \uc548\uc815\uc131, \uc815\ud655\uc131, \uc644\uc804\uc131 \ub610\ub294 \ud2b9\uc815 \ubaa9\uc801\uc5d0\uc758 \uc801\ud569\uc131\uc5d0 \uad00\ud574 \uba85\uc2dc\uc801\uc774\ub4e0 \ubb35\uc2dc\uc801\uc774\ub4e0 \uc5b4\ub5a0\ud55c \ubcf4\uc99d\ub3c4 \ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+      "text2": "\ud558\uc774\ucf00\uc5b4\ub137\uc740 \uc758\ub8cc \uae30\uc220 \uc81c\uacf5\uc5c5\uccb4\uc774\uba70 \uc758\ub8cc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc5c5\uccb4\uac00 \uc544\ub2d9\ub2c8\ub2e4. \ub2f9\uc0ac \ud50c\ub7ab\ud3fc\uacfc \ub514\ubc14\uc774\uc2a4\ub294 \uba74\ud5c8\ub97c \uac00\uc9c4 \uc758\ub8cc \uc804\ubb38\uac00\uac00 \ud658\uc790 \ucf00\uc5b4\uc5d0 \ud65c\uc6a9\ud560 \uc218 \uc788\ub3c4\ub85d \uc124\uacc4\ub41c \ub3c4\uad6c\uc785\ub2c8\ub2e4. \ub2f9\uc0ac\ub294 \uc758\ud559\uc801 \uc870\uc5b8, \uc9c4\ub2e8 \ub610\ub294 \uce58\ub8cc \uad8c\uace0\ub97c \uc81c\uacf5\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ubaa8\ub4e0 \uc784\uc0c1\uc801 \uacb0\uc815\uc740 \uc804\uc801\uc73c\ub85c \uba74\ud5c8\ub97c \uac00\uc9c4 \uc758\ub8cc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc790\uc758 \ucc45\uc784\uc785\ub2c8\ub2e4.",
+      "text3": "\ub2f9\uc0ac\ub294 \uc911\ub2e8 \uc5c6\ub294 \uc11c\ube44\uc2a4\ub97c \uc704\ud574 \ub178\ub825\ud558\uc9c0\ub9cc \ud50c\ub7ab\ud3fc\uc774 \ud56d\uc0c1 \uc774\uc6a9 \uac00\ub2a5\ud560 \uac83\uc744 \ubcf4\uc7a5\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \uc608\uc815\ub41c \uc720\uc9c0\ubcf4\uc218, \uc5c5\ub370\uc774\ud2b8 \ub610\ub294 \uc608\uae30\uce58 \uc54a\uc740 \uae30\uc220\uc801 \ubb38\uc81c\ub85c \uc778\ud574 \uc77c\uc2dc\uc801\uc73c\ub85c \uac00\uc6a9\uc131\uc774 \uc601\ud5a5\uc744 \ubc1b\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4."
     },
     "termination": {
-      "title": "9. 해지",
-      "text1": "양 당사자는 해당 서비스 계약에 따라 서면 통지를 제공하여 서비스 관계를 해지할 수 있습니다. 다음과 같은 경우 당사는 플랫폼에 대한 귀하의 접근을 즉시 정지 또는 해지할 수 있습니다:",
-      "item1": "귀하가 본 약관의 조항을 위반하는 경우",
-      "item2": "귀하의 사용이 플랫폼 또는 다른 사용자에게 보안 위험을 초래하는 경우",
-      "item3": "법률 또는 규제 조치에 의해 요구되는 경우",
-      "item4": "귀하의 계정이 장기간 비활성 상태인 경우",
-      "text2": "해지 시 당사는 관련 규정에 따라 귀하의 데이터 내보내기에 합리적인 지원을 제공합니다. HIPAA 및 해당 BAA에서 요구하는 바에 따라 PHI를 보호할 당사의 의무는 해지 후에도 유효합니다."
+      "title": "9. \ud574\uc9c0",
+      "text1": "\uc591 \ub2f9\uc0ac\uc790\ub294 \ud574\ub2f9 \uc11c\ube44\uc2a4 \uacc4\uc57d\uc5d0 \ub530\ub77c \uc11c\uba74 \ud1b5\uc9c0\ub97c \uc81c\uacf5\ud558\uc5ec \uc11c\ube44\uc2a4 \uad00\uacc4\ub97c \ud574\uc9c0\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub2e4\uc74c\uacfc \uac19\uc740 \uacbd\uc6b0 \ub2f9\uc0ac\ub294 \ud50c\ub7ab\ud3fc\uc5d0 \ub300\ud55c \uadc0\ud558\uc758 \uc811\uadfc\uc744 \uc989\uc2dc \uc815\uc9c0 \ub610\ub294 \ud574\uc9c0\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4:",
+      "item1": "\uadc0\ud558\uac00 \ubcf8 \uc57d\uad00\uc758 \uc870\ud56d\uc744 \uc704\ubc18\ud558\ub294 \uacbd\uc6b0",
+      "item2": "\uadc0\ud558\uc758 \uc0ac\uc6a9\uc774 \ud50c\ub7ab\ud3fc \ub610\ub294 \ub2e4\ub978 \uc0ac\uc6a9\uc790\uc5d0\uac8c \ubcf4\uc548 \uc704\ud5d8\uc744 \ucd08\ub798\ud558\ub294 \uacbd\uc6b0",
+      "item3": "\ubc95\ub960 \ub610\ub294 \uaddc\uc81c \uc870\uce58\uc5d0 \uc758\ud574 \uc694\uad6c\ub418\ub294 \uacbd\uc6b0",
+      "item4": "\uadc0\ud558\uc758 \uacc4\uc815\uc774 \uc7a5\uae30\uac04 \ube44\ud65c\uc131 \uc0c1\ud0dc\uc778 \uacbd\uc6b0",
+      "text2": "\ud574\uc9c0 \uc2dc \ub2f9\uc0ac\ub294 \uad00\ub828 \uaddc\uc815\uc5d0 \ub530\ub77c \uadc0\ud558\uc758 \ub370\uc774\ud130 \ub0b4\ubcf4\ub0b4\uae30\uc5d0 \ud569\ub9ac\uc801\uc778 \uc9c0\uc6d0\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4. HIPAA \ubc0f \ud574\ub2f9 BAA\uc5d0\uc11c \uc694\uad6c\ud558\ub294 \ubc14\uc5d0 \ub530\ub77c PHI\ub97c \ubcf4\ud638\ud560 \ub2f9\uc0ac\uc758 \uc758\ubb34\ub294 \ud574\uc9c0 \ud6c4\uc5d0\ub3c4 \uc720\ud6a8\ud569\ub2c8\ub2e4."
     },
     "indemnification": {
-      "title": "10. 면책",
-      "text": "귀하는 서비스 사용, 본 약관 위반, 또는 관련 법률 또는 제3자 권리 침해와 관련하여 발생하는 모든 청구, 책임, 손해, 손실 및 비용(합리적인 변호사 비용 포함)으로부터 하이케어넷, 그 모회사 Hicare Co., Ltd. 및 각각의 임원, 이사, 직원 및 대리인을 면책하고 방어하며 피해가 없도록 할 것에 동의합니다."
+      "title": "10. \uba74\ucc45",
+      "text": "\uadc0\ud558\ub294 \uc11c\ube44\uc2a4 \uc0ac\uc6a9, \ubcf8 \uc57d\uad00 \uc704\ubc18, \ub610\ub294 \uad00\ub828 \ubc95\ub960 \ub610\ub294 \uc81c3\uc790 \uad8c\ub9ac \uce68\ud574\uc640 \uad00\ub828\ud558\uc5ec \ubc1c\uc0dd\ud558\ub294 \ubaa8\ub4e0 \uccad\uad6c, \ucc45\uc784, \uc190\ud574, \uc190\uc2e4 \ubc0f \ube44\uc6a9(\ud569\ub9ac\uc801\uc778 \ubcc0\ud638\uc0ac \ube44\uc6a9 \ud3ec\ud568)\uc73c\ub85c\ubd80\ud130 \ud558\uc774\ucf00\uc5b4\ub137, \uadf8 \ubaa8\ud68c\uc0ac Hicare Co., Ltd. \ubc0f \uac01\uac01\uc758 \uc784\uc6d0, \uc774\uc0ac, \uc9c1\uc6d0 \ubc0f \ub300\ub9ac\uc778\uc744 \uba74\ucc45\ud558\uace0 \ubc29\uc5b4\ud558\uba70 \ud53c\ud574\uac00 \uc5c6\ub3c4\ub85d \ud560 \uac83\uc5d0 \ub3d9\uc758\ud569\ub2c8\ub2e4."
     },
     "governing": {
-      "title": "11. 준거법",
-      "text1": "본 약관은 법률 충돌 규정에 관계없이 미국 캘리포니아주 법률에 의해 규율되고 해석됩니다.",
-      "text2": "본 약관 또는 당사 서비스 사용과 관련하여 발생하는 모든 분쟁은 캘리포니아주에 소재한 주 법원 또는 연방 법원에서 독점적으로 해결됩니다. 귀하는 해당 법원의 대인 관할권 및 재판지에 동의합니다."
+      "title": "11. \uc900\uac70\ubc95",
+      "text1": "\ubcf8 \uc57d\uad00\uc740 \ubc95\ub960 \ucda9\ub3cc \uaddc\uc815\uc5d0 \uad00\uacc4\uc5c6\uc774 \ubbf8\uad6d \uce98\ub9ac\ud3ec\ub2c8\uc544\uc8fc \ubc95\ub960\uc5d0 \uc758\ud574 \uaddc\uc728\ub418\uace0 \ud574\uc11d\ub429\ub2c8\ub2e4.",
+      "text2": "\ubcf8 \uc57d\uad00 \ub610\ub294 \ub2f9\uc0ac \uc11c\ube44\uc2a4 \uc0ac\uc6a9\uacfc \uad00\ub828\ud558\uc5ec \ubc1c\uc0dd\ud558\ub294 \ubaa8\ub4e0 \ubd84\uc7c1\uc740 \uce98\ub9ac\ud3ec\ub2c8\uc544\uc8fc\uc5d0 \uc18c\uc7ac\ud55c \uc8fc \ubc95\uc6d0 \ub610\ub294 \uc5f0\ubc29 \ubc95\uc6d0\uc5d0\uc11c \ub3c5\uc810\uc801\uc73c\ub85c \ud574\uacb0\ub429\ub2c8\ub2e4. \uadc0\ud558\ub294 \ud574\ub2f9 \ubc95\uc6d0\uc758 \ub300\uc778 \uad00\ud560\uad8c \ubc0f \uc7ac\ud310\uc9c0\uc5d0 \ub3d9\uc758\ud569\ub2c8\ub2e4."
     },
     "changes": {
-      "title": "12. 약관의 변경",
-      "text": "당사는 언제든지 본 약관을 수정할 권리를 보유합니다. 중대한 변경이 있는 경우 \"최종 수정일\"을 업데이트하고 플랫폼 또는 이메일을 통해 알려드립니다. 변경 사항의 발효일 이후에도 서비스를 계속 사용하는 것은 업데이트된 약관에 대한 수락으로 간주됩니다. 수정된 약관에 동의하지 않는 경우 당사 서비스 사용을 중단해야 합니다."
+      "title": "12. \uc57d\uad00\uc758 \ubcc0\uacbd",
+      "text": "\ub2f9\uc0ac\ub294 \uc5b8\uc81c\ub4e0\uc9c0 \ubcf8 \uc57d\uad00\uc744 \uc218\uc815\ud560 \uad8c\ub9ac\ub97c \ubcf4\uc720\ud569\ub2c8\ub2e4. \uc911\ub300\ud55c \ubcc0\uacbd\uc774 \uc788\ub294 \uacbd\uc6b0 \"\ucd5c\uc885 \uc218\uc815\uc77c\"\uc744 \uc5c5\ub370\uc774\ud2b8\ud558\uace0 \ud50c\ub7ab\ud3fc \ub610\ub294 \uc774\uba54\uc77c\uc744 \ud1b5\ud574 \uc54c\ub824\ub4dc\ub9bd\ub2c8\ub2e4. \ubcc0\uacbd \uc0ac\ud56d\uc758 \ubc1c\ud6a8\uc77c \uc774\ud6c4\uc5d0\ub3c4 \uc11c\ube44\uc2a4\ub97c \uacc4\uc18d \uc0ac\uc6a9\ud558\ub294 \uac83\uc740 \uc5c5\ub370\uc774\ud2b8\ub41c \uc57d\uad00\uc5d0 \ub300\ud55c \uc218\ub77d\uc73c\ub85c \uac04\uc8fc\ub429\ub2c8\ub2e4. \uc218\uc815\ub41c \uc57d\uad00\uc5d0 \ub3d9\uc758\ud558\uc9c0 \uc54a\ub294 \uacbd\uc6b0 \ub2f9\uc0ac \uc11c\ube44\uc2a4 \uc0ac\uc6a9\uc744 \uc911\ub2e8\ud574\uc57c \ud569\ub2c8\ub2e4."
     },
     "contact": {
-      "title": "13. 연락처 정보",
-      "intro": "본 이용약관에 대한 질문이나 우려 사항이 있는 경우 아래로 연락해 주시기 바랍니다:",
+      "title": "13. \uc5f0\ub77d\ucc98 \uc815\ubcf4",
+      "intro": "\ubcf8 \uc774\uc6a9\uc57d\uad00\uc5d0 \ub300\ud55c \uc9c8\ubb38\uc774\ub098 \uc6b0\ub824 \uc0ac\ud56d\uc774 \uc788\ub294 \uacbd\uc6b0 \uc544\ub798\ub85c \uc5f0\ub77d\ud574 \uc8fc\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4:",
       "company": "HicareNet, Inc.",
-      "subsidiary": "Hicare Co., Ltd. 미국 자회사",
-      "location": "미국 캘리포니아",
-      "emailLabel": "이메일: "
+      "subsidiary": "Hicare Co., Ltd. \ubbf8\uad6d \uc790\ud68c\uc0ac",
+      "location": "\ubbf8\uad6d \uce98\ub9ac\ud3ec\ub2c8\uc544",
+      "emailLabel": "\uc774\uba54\uc77c: "
     }
   },
+  "article": {
+    "back": "\u2190 \ub274\uc2a4\ub85c \ub3cc\uc544\uac00\uae30",
+    "comingSoon": "\uc804\uccb4 \uae30\uc0ac \ub0b4\uc6a9\uc774 \uace7 \uc5c5\ub370\uc774\ud2b8\ub420 \uc608\uc815\uc785\ub2c8\ub2e4."
+  },
   "error404": {
-    "title": "페이지를 찾을 수 없습니다",
-    "description": "찾으시는 페이지가 존재하지 않거나 이동되었습니다.",
-    "goHome": "홈으로",
-    "solutions": "솔루션 보기"
+    "title": "\ud398\uc774\uc9c0\ub97c \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4",
+    "description": "\ucc3e\uc73c\uc2dc\ub294 \ud398\uc774\uc9c0\uac00 \uc874\uc7ac\ud558\uc9c0 \uc54a\uac70\ub098 \uc774\ub3d9\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+    "goHome": "\ud648\uc73c\ub85c",
+    "solutions": "\uc194\ub8e8\uc158 \ubcf4\uae30"
   },
   "footer": {
-    "desc": "의료 IT 융합의 글로벌 선구자. 캘리포니아 자회사 Hicare.net Inc가 세계적 수준의 RPM 솔루션을 미국 시장에 제공합니다.",
+    "desc": "\uc758\ub8cc IT \uc735\ud569\uc758 \uae00\ub85c\ubc8c \uc120\uad6c\uc790. \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc790\ud68c\uc0ac Hicare.net Inc\uac00 \uc138\uacc4\uc801 \uc218\uc900\uc758 RPM \uc194\ub8e8\uc158\uc744 \ubbf8\uad6d \uc2dc\uc7a5\uc5d0 \uc81c\uacf5\ud569\ub2c8\ub2e4.",
     "col1": {
-      "title": "미국 운영",
-      "link1": "RPM 서비스",
-      "link2": "CCM 관리",
-      "link3": "HIPAA 준수"
+      "title": "\ubbf8\uad6d \uc6b4\uc601",
+      "link1": "RPM \uc11c\ube44\uc2a4",
+      "link2": "CCM \uad00\ub9ac",
+      "link3": "HIPAA \uc900\uc218"
     },
     "col2": {
-      "title": "R&D & 기술",
-      "link1": "HL7 FHIR 표준",
-      "link2": "ISO 인증",
-      "link3": "독자 하드웨어"
+      "title": "R&D & \uae30\uc220",
+      "link1": "HL7 FHIR \ud45c\uc900",
+      "link2": "ISO \uc778\uc99d",
+      "link3": "\ub3c5\uc790 \ud558\ub4dc\uc6e8\uc5b4"
     },
     "col3": {
-      "title": "글로벌 오피스",
-      "hq": "글로벌 R&D 본사",
-      "address": "서울 디지털 지구"
+      "title": "\uae00\ub85c\ubc8c \uc624\ud53c\uc2a4",
+      "hq": "\uae00\ub85c\ubc8c R&D \ubcf8\uc0ac",
+      "address": "\uc11c\uc6b8 \ub514\uc9c0\ud138 \uc9c0\uad6c"
     },
-    "copyright": "\u00a9 2026 HicareNet. ISO 27001, ISO 27701 인증. HIPAA 준수. All rights reserved.",
-    "terms": "이용약관",
-    "privacy": "개인정보 처리방침",
-    "certs": "인증"
+    "copyright": "\u00a9 2026 HicareNet. ISO 27001, ISO 27701 \uc778\uc99d. HIPAA \uc900\uc218. All rights reserved.",
+    "terms": "\uc774\uc6a9\uc57d\uad00",
+    "privacy": "\uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68",
+    "certs": "\uc778\uc99d"
   }
 }

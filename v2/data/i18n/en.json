@@ -537,6 +537,10 @@
       "emailLabel": "Email: "
     }
   },
+  "article": {
+    "back": "\u2190 Back to News",
+    "comingSoon": "Full article content coming soon."
+  },
   "error404": {
     "title": "Page Not Found",
     "description": "The page you're looking for doesn't exist or has been moved.",

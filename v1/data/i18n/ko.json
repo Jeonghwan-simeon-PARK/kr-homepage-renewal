@@ -849,6 +849,12 @@
     "goHome": "홈으로",
     "contact": "문의하기"
   },
+  "article": {
+    "backToResources": "\u2190 리소스로 돌아가기",
+    "relatedTitle": "관련 기사",
+    "comingSoon": "전체 기사 내용이 곧 업데이트될 예정입니다.",
+    "readTime": "분 소요"
+  },
   "footer": {
     "description": "FDA 510(K) 인증 의료기기에서 클라우드 기반 RPM/CCM 솔루션까지 — 20년 이상의 헬스케어 기술 혁신, 글로벌 시장에서 검증되었습니다.",
     "solutions": "솔루션",
