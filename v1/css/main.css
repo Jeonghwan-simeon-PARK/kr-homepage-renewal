@@ -23,6 +23,7 @@
 @import 'pages/resources.css';
 @import 'pages/contact.css';
 @import 'pages/compliance.css';
+@import 'pages/legal.css';
 
 /* Animations */
 @import 'animations/scroll-reveal.css';

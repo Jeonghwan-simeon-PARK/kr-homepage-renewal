@@ -313,6 +313,230 @@
       "privacy": "By subscribing, you agree to our Privacy Policy"
     }
   },
+  "privacy": {
+    "hero": {
+      "title": "Privacy Policy",
+      "effective": "Effective Date: January 1, 2026",
+      "updated": "Last Updated: March 15, 2026"
+    },
+    "intro": {
+      "text": "HicareNet, Inc. (\"HicareNet,\" \"we,\" \"us,\" or \"our\"), a California-based subsidiary of Hicare Co., Ltd., is committed to protecting the privacy and security of your personal information. This Privacy Policy describes how we collect, use, disclose, and safeguard your information when you use our Remote Patient Monitoring (RPM), Chronic Care Management (CCM), Annual Wellness Visit (AWV), and Value-Based Care (VBC) services, or visit our website."
+    },
+    "collect": {
+      "title": "1. Information We Collect",
+      "personal": {
+        "title": "Personal Information",
+        "text": "We may collect the following personal information when you interact with our services:",
+        "item1": "Name, address, email address, and phone number",
+        "item2": "Date of birth, gender, and other demographic information",
+        "item3": "Insurance and billing information",
+        "item4": "Professional credentials and organizational affiliations (for healthcare providers)"
+      },
+      "health": {
+        "title": "Protected Health Information (PHI)",
+        "text": "In the course of providing our healthcare IT services, we may process:",
+        "item1": "Vital signs and biometric data collected through RPM devices (blood pressure, glucose levels, weight, pulse oximetry, temperature)",
+        "item2": "Chronic condition management records and care plans",
+        "item3": "Clinical notes, diagnoses, and treatment information",
+        "item4": "Medication and prescription data"
+      },
+      "usage": {
+        "title": "Usage and Technical Data",
+        "text": "We automatically collect certain information when you visit our website or use our platform:",
+        "item1": "IP address, browser type, operating system, and device identifiers",
+        "item2": "Pages visited, time spent, and navigation patterns",
+        "item3": "Referring URLs and search terms",
+        "item4": "Log data and error reports for service improvement"
+      }
+    },
+    "use": {
+      "title": "2. How We Use Your Information",
+      "intro": "We use the information we collect for the following purposes:",
+      "item1": "Providing and managing Remote Patient Monitoring and Chronic Care Management services",
+      "item2": "Facilitating communication between patients and healthcare providers",
+      "item3": "Processing billing, insurance claims, and payment transactions",
+      "item4": "Improving our platform, services, and user experience through analytics",
+      "item5": "Complying with legal obligations, including HIPAA and state healthcare regulations",
+      "item6": "Sending service-related notifications and updates",
+      "item7": "Conducting quality assurance and clinical outcome analysis",
+      "item8": "Responding to inquiries, support requests, and feedback"
+    },
+    "hipaa": {
+      "title": "3. HIPAA Compliance",
+      "intro": "As a healthcare technology provider, HicareNet is committed to full compliance with the Health Insurance Portability and Accountability Act (HIPAA) and the HITECH Act.",
+      "phi": {
+        "title": "PHI Handling",
+        "text": "All Protected Health Information processed through our platform is handled in strict accordance with HIPAA Privacy and Security Rules. We implement administrative, technical, and physical safeguards to protect the confidentiality, integrity, and availability of PHI."
+      },
+      "baa": {
+        "title": "Business Associate Agreements",
+        "text": "We enter into Business Associate Agreements (BAAs) with all covered entities and subcontractors who handle PHI through our platform. These agreements define the permitted uses and disclosures of PHI and establish obligations for safeguarding health information."
+      },
+      "minimum": {
+        "title": "Minimum Necessary Standard",
+        "text": "We apply the minimum necessary standard to all uses, disclosures, and requests for PHI. Access to PHI is limited to authorized personnel who require it to perform their designated functions, and is controlled through role-based access controls."
+      }
+    },
+    "sharing": {
+      "title": "4. Data Sharing and Disclosure",
+      "intro": "We do not sell your personal information. We may share your information only in the following circumstances:",
+      "item1": "Healthcare Providers: To facilitate treatment, care coordination, and clinical operations as authorized",
+      "item2": "Service Providers: With trusted third-party vendors who assist in operating our platform, subject to confidentiality obligations and BAAs where applicable",
+      "item3": "Legal Requirements: When required by law, regulation, legal process, or governmental request",
+      "item4": "Business Transfers: In connection with a merger, acquisition, or sale of assets, with appropriate safeguards",
+      "item5": "With Consent: When you have provided explicit authorization for a specific disclosure"
+    },
+    "security": {
+      "title": "5. Data Security",
+      "intro": "We employ comprehensive security measures to protect your information:",
+      "item1": "Encryption: All data in transit is protected with TLS 1.2 or higher. Data at rest is encrypted using AES-256 encryption",
+      "item2": "ISO 27001 Certification: Our information security management system is certified to the ISO 27001 international standard",
+      "item3": "ISO 27701 Certification: Our privacy information management system meets the ISO 27701 standard for data privacy",
+      "item4": "Access Controls: Multi-factor authentication, role-based access, and regular access reviews",
+      "item5": "Monitoring: Continuous security monitoring, vulnerability assessments, and regular penetration testing",
+      "item6": "Incident Response: Documented breach notification procedures in compliance with HIPAA and applicable state laws"
+    },
+    "rights": {
+      "title": "6. Your Rights",
+      "intro": "You have the following rights regarding your personal information and PHI:",
+      "item1": "Right to Access: You may request a copy of the personal information we hold about you",
+      "item2": "Right to Correction: You may request correction of inaccurate or incomplete information",
+      "item3": "Right to Deletion: You may request deletion of your personal information, subject to legal retention requirements",
+      "item4": "Right to Restriction: You may request that we restrict certain processing of your information",
+      "item5": "Right to an Accounting of Disclosures: You may request a record of certain disclosures of your PHI",
+      "item6": "Right to Opt-Out: You may opt out of non-essential communications at any time",
+      "exercise": "To exercise any of these rights, please contact us at info@hicare.net. We will respond to your request within 30 days as required by applicable law."
+    },
+    "cookies": {
+      "title": "7. Cookie Policy",
+      "intro": "Our website uses cookies and similar tracking technologies to enhance your experience:",
+      "item1": "Essential Cookies: Required for basic website functionality, including authentication and security",
+      "item2": "Analytics Cookies: Help us understand how visitors interact with our website to improve performance",
+      "item3": "Preference Cookies: Remember your language selection and other display preferences",
+      "manage": "You can manage cookie preferences through your browser settings. Disabling certain cookies may limit your ability to use some features of our website."
+    },
+    "retention": {
+      "title": "8. Data Retention",
+      "text": "We retain personal information and PHI for as long as necessary to fulfill the purposes described in this Privacy Policy, comply with legal obligations, resolve disputes, and enforce our agreements. Healthcare records are retained in accordance with HIPAA requirements and applicable state medical record retention laws. When data is no longer needed, it is securely deleted or de-identified."
+    },
+    "changes": {
+      "title": "9. Changes to This Policy",
+      "text": "We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make material changes, we will update the \"Last Updated\" date at the top of this page and, where required, notify you by email or through a prominent notice on our website. We encourage you to review this Privacy Policy periodically."
+    },
+    "contact": {
+      "title": "10. Contact Information",
+      "intro": "If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:",
+      "company": "HicareNet, Inc.",
+      "subsidiary": "US Subsidiary of Hicare Co., Ltd.",
+      "location": "California, United States",
+      "emailLabel": "Email: ",
+      "hipaa": "For HIPAA-related inquiries or to file a privacy complaint, you may also contact the U.S. Department of Health and Human Services Office for Civil Rights."
+    }
+  },
+  "terms": {
+    "hero": {
+      "title": "Terms of Service",
+      "effective": "Effective Date: January 1, 2026",
+      "updated": "Last Updated: March 15, 2026"
+    },
+    "intro": {
+      "text": "Welcome to HicareNet. These Terms of Service (\"Terms\") govern your access to and use of the services, website, and platform provided by HicareNet, Inc. (\"HicareNet,\" \"we,\" \"us,\" or \"our\"), a California-based subsidiary of Hicare Co., Ltd. By accessing or using our services, you agree to be bound by these Terms. If you do not agree, you may not use our services."
+    },
+    "acceptance": {
+      "title": "1. Acceptance of Terms",
+      "text1": "By creating an account, accessing our platform, or using any of our services, you acknowledge that you have read, understood, and agree to be bound by these Terms, as well as our Privacy Policy, which is incorporated herein by reference.",
+      "text2": "If you are using our services on behalf of a healthcare organization, clinic, or other entity, you represent and warrant that you have the authority to bind that entity to these Terms. In such cases, \"you\" and \"your\" refer to that entity."
+    },
+    "services": {
+      "title": "2. Description of Services",
+      "intro": "HicareNet provides healthcare information technology services, including but not limited to:",
+      "item1": "Remote Patient Monitoring (RPM): Cloud-based platform and FDA-cleared medical devices for continuous patient monitoring, vital sign collection, and clinical alert management",
+      "item2": "Chronic Care Management (CCM): Comprehensive care coordination platform for managing patients with multiple chronic conditions, including care plan development and patient communication tools",
+      "item3": "Annual Wellness Visit (AWV): Digital tools supporting preventive care visits, health risk assessments, and personalized wellness plans",
+      "item4": "Value-Based Care (VBC): Analytics and reporting platform supporting quality measurement, population health management, and value-based reimbursement models",
+      "note": "Our services are designed for use by licensed healthcare providers, clinics, hospitals, Accountable Care Organizations (ACOs), and Skilled Nursing Facilities (SNFs) operating within the United States."
+    },
+    "accounts": {
+      "title": "3. User Accounts and Responsibilities",
+      "intro": "When you create an account with HicareNet, you agree to:",
+      "item1": "Provide accurate, current, and complete registration information",
+      "item2": "Maintain the security and confidentiality of your login credentials",
+      "item3": "Promptly notify us of any unauthorized access or security breach",
+      "item4": "Accept responsibility for all activities conducted under your account",
+      "item5": "Ensure that all users within your organization receive appropriate training on platform usage and data privacy",
+      "liability": "You are solely responsible for ensuring that your use of the platform complies with all applicable laws, regulations, and professional standards, including HIPAA and state healthcare regulations."
+    },
+    "acceptable": {
+      "title": "4. Acceptable Use Policy",
+      "intro": "You agree not to use our services to:",
+      "item1": "Violate any applicable federal, state, or local laws or regulations",
+      "item2": "Access, use, or disclose Protected Health Information (PHI) in violation of HIPAA",
+      "item3": "Attempt to gain unauthorized access to our systems, networks, or other users' accounts",
+      "item4": "Introduce malware, viruses, or any other harmful code into the platform",
+      "item5": "Reverse engineer, decompile, or disassemble any portion of the platform",
+      "item6": "Use the platform for any purpose other than its intended healthcare-related functions",
+      "item7": "Resell, sublicense, or redistribute access to the platform without written authorization"
+    },
+    "ip": {
+      "title": "5. Intellectual Property",
+      "text1": "All content, software, technology, designs, trademarks, and other intellectual property associated with HicareNet's platform and services are owned by HicareNet, Inc. or its parent company Hicare Co., Ltd. and are protected by applicable intellectual property laws.",
+      "text2": "Your use of our services does not grant you any ownership rights to our intellectual property. You are granted a limited, non-exclusive, non-transferable, revocable license to access and use the platform solely for its intended purpose and in accordance with these Terms.",
+      "text3": "You retain ownership of all data you input into the platform. By using our services, you grant HicareNet a limited license to process, store, and transmit your data solely for the purpose of providing and improving our services."
+    },
+    "compliance": {
+      "title": "6. HIPAA and Healthcare Compliance",
+      "text1": "HicareNet operates as a Business Associate under HIPAA. We will enter into a Business Associate Agreement (BAA) with each covered entity that uses our services involving PHI. The BAA will govern our obligations regarding the use, disclosure, and safeguarding of PHI.",
+      "text2": "Our platform is designed and maintained to comply with:",
+      "item1": "HIPAA Privacy Rule and Security Rule requirements",
+      "item2": "HITECH Act breach notification provisions",
+      "item3": "ISO 27001 Information Security Management standards",
+      "item4": "ISO 27701 Privacy Information Management standards",
+      "item5": "Applicable state healthcare privacy and data protection laws",
+      "text3": "You are responsible for ensuring that your use of our platform complies with your own HIPAA obligations and that you have obtained all necessary patient consents and authorizations."
+    },
+    "liability": {
+      "title": "7. Limitation of Liability",
+      "text1": "To the maximum extent permitted by applicable law, HicareNet shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, business opportunities, or goodwill, arising out of or in connection with your use of our services.",
+      "text2": "Our total aggregate liability for any claims arising from or related to these Terms or your use of our services shall not exceed the total fees paid by you to HicareNet during the twelve (12) months preceding the claim.",
+      "text3": "Nothing in these Terms shall limit our liability for gross negligence, willful misconduct, or any liability that cannot be excluded or limited under applicable law."
+    },
+    "disclaimers": {
+      "title": "8. Disclaimers",
+      "text1": "Our services are provided on an \"as is\" and \"as available\" basis. HicareNet makes no warranties, express or implied, regarding the platform's reliability, accuracy, completeness, or fitness for a particular purpose.",
+      "text2": "HicareNet is a healthcare technology provider, not a healthcare provider. Our platform and devices are tools designed to assist licensed healthcare professionals in patient care. We do not provide medical advice, diagnoses, or treatment recommendations. All clinical decisions remain the sole responsibility of the licensed healthcare provider.",
+      "text3": "While we strive for uninterrupted service, we do not guarantee that the platform will be available at all times. Scheduled maintenance, updates, or unforeseen technical issues may temporarily affect availability."
+    },
+    "termination": {
+      "title": "9. Termination",
+      "text1": "Either party may terminate the service relationship by providing written notice in accordance with the applicable service agreement. We may suspend or terminate your access to the platform immediately if:",
+      "item1": "You breach any provision of these Terms",
+      "item2": "Your use poses a security risk to the platform or other users",
+      "item3": "Required by law or regulatory action",
+      "item4": "Your account has been inactive for an extended period",
+      "text2": "Upon termination, we will provide reasonable assistance in exporting your data in accordance with applicable regulations. Our obligation to safeguard PHI will survive termination as required by HIPAA and the applicable BAA."
+    },
+    "indemnification": {
+      "title": "10. Indemnification",
+      "text": "You agree to indemnify, defend, and hold harmless HicareNet, its parent company Hicare Co., Ltd., and their respective officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or in connection with your use of the services, your violation of these Terms, or your violation of any applicable law or third-party rights."
+    },
+    "governing": {
+      "title": "11. Governing Law",
+      "text1": "These Terms shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions.",
+      "text2": "Any disputes arising out of or relating to these Terms or your use of our services shall be resolved exclusively in the state or federal courts located in the State of California. You consent to the personal jurisdiction and venue of such courts."
+    },
+    "changes": {
+      "title": "12. Changes to Terms",
+      "text": "We reserve the right to modify these Terms at any time. When we make material changes, we will update the \"Last Updated\" date and notify you through the platform or by email. Your continued use of the services after the effective date of any changes constitutes your acceptance of the updated Terms. If you do not agree with the revised Terms, you must discontinue using our services."
+    },
+    "contact": {
+      "title": "13. Contact Information",
+      "intro": "If you have questions or concerns about these Terms of Service, please contact us:",
+      "company": "HicareNet, Inc.",
+      "subsidiary": "US Subsidiary of Hicare Co., Ltd.",
+      "location": "California, United States",
+      "emailLabel": "Email: "
+    }
+  },
   "footer": {
     "desc": "A global pioneer in medical IT convergence. Our California subsidiary, Hicare.net Inc, brings world-class RPM solutions to the US market.",
     "col1": {
