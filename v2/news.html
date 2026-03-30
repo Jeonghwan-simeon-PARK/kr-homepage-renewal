@@ -92,10 +92,10 @@
           <div>
             <h2 class="headline-lg text-primary" style="margin-bottom: var(--space-4);" data-i18n="news.newsroom.title">Newsroom</h2>
             <div class="filter-pills">
-              <button class="filter-pill filter-pill--active" data-i18n="news.filter.all">All News</button>
-              <button class="filter-pill filter-pill--inactive" data-i18n="news.filter.press">Press Release</button>
-              <button class="filter-pill filter-pill--inactive" data-i18n="news.filter.business">Business News</button>
-              <button class="filter-pill filter-pill--inactive" data-i18n="news.filter.notices">Notices</button>
+              <button class="filter-pill filter-pill--active" data-filter="all" data-i18n="news.filter.all">All News</button>
+              <button class="filter-pill filter-pill--inactive" data-filter="press" data-i18n="news.filter.press">Press Release</button>
+              <button class="filter-pill filter-pill--inactive" data-filter="business" data-i18n="news.filter.business">Business News</button>
+              <button class="filter-pill filter-pill--inactive" data-filter="notices" data-i18n="news.filter.notices">Notices</button>
             </div>
           </div>
           <div class="label-md text-on-surface-variant" data-i18n="news.newsroom.count">Showing 6 of 52 articles</div>
@@ -104,7 +104,7 @@
         <!-- Bento News Grid -->
         <div class="bento" data-animate="stagger">
           <!-- Card 1: Wide -->
-          <div class="bento__item--8">
+          <div class="bento__item--8" data-category="business">
             <div class="card" style="height: 100%;">
               <div style="display: flex; flex-wrap: wrap; height: 100%;">
                 <div style="flex: 1; min-width: 260px; overflow: hidden; position: relative;">
@@ -129,7 +129,7 @@
           </div>
 
           <!-- Card 2: Text-only -->
-          <div class="bento__item--4">
+          <div class="bento__item--4" data-category="press">
             <a href="article.html?slug=iso-hipaa-certifications" class="card" style="height: 100%; padding: var(--space-8); display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; color: inherit;">
               <div>
                 <div style="padding: var(--space-1) var(--space-3); background: var(--surface-container-high); border-radius: var(--radius-lg); font-size: 0.625rem; font-weight: 700; color: var(--on-surface-variant); text-transform: uppercase; letter-spacing: 0.15em; display: inline-block; margin-bottom: var(--space-6);" data-i18n="news.cards.c2.tag">Press Release</div>
@@ -143,7 +143,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="bento__item--4">
+          <div class="bento__item--4" data-category="rd">
             <a href="article.html?slug=fhir-integration-rd" class="card" style="text-decoration: none; color: inherit;">
               <div class="card__image" style="height: 12rem;">
                 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnwYN2yo9bf6SPhoqXl1pjIZezPTw761bX9CAbDFDNxbOVUVgtAaEd8M9L5beiIEuNAT2onf5DfteABZ_4NquhlsNwFJVUBCU3UtrIqLOm_gsVz7PrQkLh0DFHtIT5rPoMMipbsj1mcGd-V3_a09FThiF-OBGU0ip3er_YYxcJSuPn0i-Xg6QQzdcYCW05lckMioHsqSktYrnfY-Ww9Hck4IFj3w0OBWuFSfNb8od4LNEXdAbHj1EyUDqewyrJ5mdjZLf0b6osrsM" alt="FHIR Integration" loading="lazy">
@@ -157,7 +157,7 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="bento__item--4">
+          <div class="bento__item--4" data-category="business">
             <a href="article.html?slug=iot-care-partnership" class="card" style="text-decoration: none; color: inherit;">
               <div class="card__image" style="height: 12rem;">
                 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWciwGRM7qvD6kGQKre3lk8xIeQ35e50YzZNSFfzFnxZ0KuA0CUJMAsVIZboS0F8nq5Ig0lBMhTGdza_ppwRMQQLU-8o1neUjhp2KwmiCpt7v1rwFqnoW1bLGDyfrt81P1BtOMWmLZzYqKMkviWLqrVpz_lOkfEDK1QxT1OlhrTDTeu77piDfHDK7PbvnGYmZn4TwKJx5OsKKKZP9XK_BouZsQZ2moE_K_dw6nHXa1HKjKVZiUJz6NnKhPlAnNm0s0YL-B0XGprX8" alt="IoT Care" loading="lazy">
@@ -171,7 +171,7 @@
           </div>
 
           <!-- Card 5 -->
-          <div class="bento__item--4">
+          <div class="bento__item--4" data-category="press">
             <a href="article.html?slug=sustainable-healthcare" class="card" style="text-decoration: none; color: inherit;">
               <div class="card__image" style="height: 12rem;">
                 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBscJAM7rDkpXQcc8Tdsi7VpwQTUKRytjoqJ4VtRl1L3BmpT5D9mK2acAp7nXXihmHBkph20hRMtvA0oPmUwwVfRCa6FYfL1qFaY1stWPNAtcijh3RLjAmQ6qDGPw7UIGptRvsHOCmwmTNAlBVOMEG1Yk-H2LbS1f1p5So4UNtobBXdwqsqLgTt6qt_0SOQ18GHETcS4Vpzv9MMHhYGLNXB9H1-Sc7BaOVFpGnSjaFTiyyvuNTH8BX28zCxx0nDfSLyXSZJcJAW0Yw" alt="Sustainable Healthcare" loading="lazy">
@@ -295,6 +295,10 @@
       </div>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

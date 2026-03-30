@@ -121,10 +121,29 @@
     setLanguage(lang);
   }
 
+  // ── Back to Top ──
+  function initBackToTop() {
+    const btn = document.getElementById('backToTop');
+    if (!btn) return;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        btn.classList.add('is-visible');
+      } else {
+        btn.classList.remove('is-visible');
+      }
+    });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // ── Filter Pills (News page) ──
   function initFilters() {
     const pills = document.querySelectorAll('.filter-pill');
-    if (!pills.length) return;
+    const cards = document.querySelectorAll('[data-category]');
+    if (!pills.length || !cards.length) return;
 
     pills.forEach(pill => {
       pill.addEventListener('click', () => {
@@ -134,6 +153,23 @@
         });
         pill.classList.remove('filter-pill--inactive');
         pill.classList.add('filter-pill--active');
+
+        const filter = pill.getAttribute('data-filter');
+        let visibleCount = 0;
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Update count text
+        const countEl = document.querySelector('[data-i18n="news.newsroom.count"]');
+        if (countEl) {
+          countEl.textContent = `Showing ${visibleCount} of 52 articles`;
+        }
       });
     });
   }
@@ -157,6 +193,16 @@
     const forms = document.querySelectorAll('.newsletter-form');
     forms.forEach(form => {
       form.removeAttribute('onsubmit');
+
+      // Create error span if it doesn't exist
+      let errorSpan = form.querySelector('.form-error');
+      if (!errorSpan) {
+        errorSpan = document.createElement('span');
+        errorSpan.className = 'form-error';
+        errorSpan.textContent = 'Please enter a valid email address';
+        form.appendChild(errorSpan);
+      }
+
       form.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -165,6 +211,9 @@
 
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
           emailInput.style.borderColor = 'var(--error, #dc2626)';
+          errorSpan.classList.add('is-visible');
+          emailInput.classList.add('shake');
+          setTimeout(() => emailInput.classList.remove('shake'), 400);
           return;
         }
 
@@ -197,6 +246,7 @@
       if (emailInput) {
         emailInput.addEventListener('input', () => {
           emailInput.style.borderColor = '';
+          errorSpan.classList.remove('is-visible');
         });
       }
     });
@@ -267,5 +317,6 @@
     initGallery();
     initForms();
     initArticle();
+    initBackToTop();
   });
 })();
