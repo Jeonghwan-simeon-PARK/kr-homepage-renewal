@@ -552,8 +552,11 @@
       "link3": "독자 하드웨어"
     },
     "col3": {
-      "title": "글로벌 오피스"
+      "title": "글로벌 오피스",
+      "hq": "글로벌 R&D 본사",
+      "address": "서울 디지털 지구"
     },
+    "copyright": "\u00a9 2026 HicareNet. ISO 27001, ISO 27701 인증. HIPAA 준수. All rights reserved.",
     "terms": "이용약관",
     "privacy": "개인정보 처리방침",
     "certs": "인증"
