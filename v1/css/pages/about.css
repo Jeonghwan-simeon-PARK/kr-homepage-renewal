@@ -219,6 +219,132 @@
   line-height: var(--leading-normal);
 }
 
+/* ---------- Org Chart ---------- */
+
+.org-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-top: var(--space-6);
+}
+
+.org-chart__ceo-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.org-chart__ceo {
+  background: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-400) 100%);
+  color: var(--color-neutral-0);
+  border-radius: var(--card-radius);
+  padding: var(--space-4) var(--space-8);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  min-width: 200px;
+}
+
+.org-chart__ceo-name {
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+}
+
+/* Vertical connector from CEO down */
+.org-chart__connector {
+  width: 2px;
+  height: 36px;
+  background-color: var(--color-primary-200);
+}
+
+/* Horizontal bar spanning divisions */
+.org-chart__h-bar {
+  width: 75%;
+  height: 2px;
+  background-color: var(--color-primary-200);
+  position: relative;
+}
+
+/* Vertical lines dropping from horizontal bar */
+.org-chart__divisions-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.org-chart__div-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 200px;
+}
+
+.org-chart__div-connector {
+  width: 2px;
+  height: 28px;
+  background-color: var(--color-primary-200);
+}
+
+.org-chart__div-card {
+  background-color: var(--color-neutral-0);
+  border: 2px solid var(--color-primary-100);
+  border-radius: var(--card-radius);
+  padding: var(--space-4) var(--space-3);
+  text-align: center;
+  width: 100%;
+  box-shadow: var(--shadow-base);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.org-chart__div-card:hover {
+  border-color: var(--color-primary-400);
+  box-shadow: var(--shadow-md);
+}
+
+.org-chart__div-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-2);
+}
+
+.org-chart__div-name {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-neutral-800);
+  line-height: var(--leading-snug);
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 767px) {
+  .org-chart__h-bar {
+    width: 2px;
+    height: 0;
+  }
+  .org-chart__divisions-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    width: 100%;
+  }
+  .org-chart__div-col {
+    max-width: 280px;
+    width: 100%;
+  }
+  .org-chart__div-connector {
+    height: 16px;
+  }
+}
+
 /* ---------- Certification Cards ---------- */
 
 .cert-card {

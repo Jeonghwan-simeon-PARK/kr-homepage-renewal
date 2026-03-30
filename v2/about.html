@@ -77,7 +77,7 @@
             Empowering US <br><span class="highlight-secondary">RPM & CCM Services.</span>
           </h1>
           <p class="hero__desc hero__desc--on-light" data-i18n="about.hero.desc">
-            Based in California, Hicare.net Inc. is the United States subsidiary of HicareNet, dedicated to delivering advanced Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) solutions.
+            Founded in Seoul, HicareNet Inc. is a global healthcare IT company delivering advanced RPM, CCM, and FHIR-based solutions to healthcare providers worldwide.
           </p>
         </div>
       </div>
@@ -130,7 +130,7 @@
             </h2>
             <div style="display: flex; flex-direction: column; gap: var(--space-6); color: var(--on-surface-variant); font-size: 1.125rem; line-height: 1.7;">
               <p data-i18n="about.rd.desc1">Our R&D organization is the backbone of HicareNet, driving full-stack service development from embedded hardware systems to cloud-native healthcare software. We don't just build apps; we architect entire care ecosystems.</p>
-              <p data-i18n="about.rd.desc2">Based strategically to provide 24/7 technical support for our US partners, our engineering teams ensure that the Hicare platform remains the most reliable and interoperable solution in the market, natively supporting HL7 FHIR protocols.</p>
+              <p data-i18n="about.rd.desc2">Headquartered in Seoul, our engineering teams ensure the Hicare platform remains the most reliable and interoperable solution globally, natively supporting HL7 FHIR protocols and international healthcare data standards.</p>
             </div>
             <div style="margin-top: var(--space-12); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); padding-top: var(--space-8); border-top: 1px solid rgba(199,197,212,0.3);">
               <div>
@@ -140,6 +140,63 @@
               <div>
                 <h4 style="font-weight: 700; color: var(--primary); margin-bottom: var(--space-1);" data-i18n="about.rd.feature2.title">US Support</h4>
                 <p style="font-size: 0.875rem;" data-i18n="about.rd.feature2.desc">Dedicated technical organization for North American operations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organization Chart -->
+    <section class="section-lg bg-white" aria-label="Organization" id="organization">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-16);" data-animate="fade-up">
+          <span class="label-md" style="color: var(--secondary-container); letter-spacing: 0.2em; margin-bottom: var(--space-4); display: block;" data-i18n="about.org.label">ORGANIZATION</span>
+          <h2 class="display-lg text-primary" style="margin-bottom: var(--space-4);" data-i18n="about.org.title">Organizational Structure</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto" data-i18n="about.org.desc">HicareNet Inc. is organized into specialized groups dedicated to healthcare IT innovation.</p>
+        </div>
+
+        <!-- CEO Node -->
+        <div data-animate="fade-up" style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+          <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%); border-radius: var(--radius-xl); padding: var(--space-6) var(--space-16); text-align: center; box-shadow: 0 8px 32px rgba(21,21,125,0.18); min-width: 220px;">
+            <p style="font-family: var(--font-headline); font-weight: 900; font-size: 1.375rem; color: #fff;" data-i18n="about.org.ceo">Representative Director</p>
+          </div>
+          <!-- Vertical connector -->
+          <div aria-hidden="true" style="width: 2px; height: 40px; background: rgba(21,21,125,0.2);"></div>
+          <!-- Horizontal bar -->
+          <div aria-hidden="true" style="width: min(80%, 640px); height: 2px; background: rgba(21,21,125,0.2);"></div>
+          <!-- 4 Division columns -->
+          <div class="grid grid-4" style="width: min(80%, 640px); gap: var(--space-6);" role="list" aria-label="Organizational divisions" data-animate="stagger">
+            <!-- R&D Group -->
+            <div role="listitem" style="display: flex; flex-direction: column; align-items: center;">
+              <div aria-hidden="true" style="width: 2px; height: 28px; background: rgba(21,21,125,0.2);"></div>
+              <div class="expertise-card" style="width: 100%; text-align: center; padding: var(--space-6) var(--space-4);">
+                <span class="material-symbols-outlined expertise-card__icon" style="font-size: 2rem; font-variation-settings: 'FILL' 1;">science</span>
+                <p class="expertise-card__title" style="font-size: 0.9375rem;" data-i18n="about.org.div1">R&amp;D Group</p>
+              </div>
+            </div>
+            <!-- BI Group -->
+            <div role="listitem" style="display: flex; flex-direction: column; align-items: center;">
+              <div aria-hidden="true" style="width: 2px; height: 28px; background: rgba(21,21,125,0.2);"></div>
+              <div class="expertise-card" style="width: 100%; text-align: center; padding: var(--space-6) var(--space-4);">
+                <span class="material-symbols-outlined expertise-card__icon" style="font-size: 2rem; font-variation-settings: 'FILL' 1;">bar_chart</span>
+                <p class="expertise-card__title" style="font-size: 0.9375rem;" data-i18n="about.org.div2">BI Group</p>
+              </div>
+            </div>
+            <!-- 운영관리팀 -->
+            <div role="listitem" style="display: flex; flex-direction: column; align-items: center;">
+              <div aria-hidden="true" style="width: 2px; height: 28px; background: rgba(21,21,125,0.2);"></div>
+              <div class="expertise-card" style="width: 100%; text-align: center; padding: var(--space-6) var(--space-4);">
+                <span class="material-symbols-outlined expertise-card__icon" style="font-size: 2rem; font-variation-settings: 'FILL' 1;">settings</span>
+                <p class="expertise-card__title" style="font-size: 0.9375rem;" data-i18n="about.org.div3">운영관리팀</p>
+              </div>
+            </div>
+            <!-- 경영지원팀 -->
+            <div role="listitem" style="display: flex; flex-direction: column; align-items: center;">
+              <div aria-hidden="true" style="width: 2px; height: 28px; background: rgba(21,21,125,0.2);"></div>
+              <div class="expertise-card" style="width: 100%; text-align: center; padding: var(--space-6) var(--space-4);">
+                <span class="material-symbols-outlined expertise-card__icon" style="font-size: 2rem; font-variation-settings: 'FILL' 1;">corporate_fare</span>
+                <p class="expertise-card__title" style="font-size: 0.9375rem;" data-i18n="about.org.div4">경영지원팀</p>
               </div>
             </div>
           </div>
@@ -173,8 +230,8 @@
             <div class="timeline__year">2022</div>
             <div class="timeline__dot timeline__dot--teal"></div>
             <div class="timeline__content">
-              <h3 data-i18n="about.timeline.y2022.title">Hicare.net Inc. California</h3>
-              <p data-i18n="about.timeline.y2022.desc">Established our dedicated US headquarters in California to spearhead RPM and CCM operations.</p>
+              <h3 data-i18n="about.timeline.y2022.title">ISO 27001 Certification</h3>
+              <p data-i18n="about.timeline.y2022.desc">Achieved ISO 27001 information security management certification, validating our commitment to data security.</p>
             </div>
           </div>
 
@@ -243,9 +300,9 @@
         <div class="cta-banner">
           <div style="display: flex; flex-wrap: wrap; gap: var(--space-12); align-items: center;">
             <div style="flex: 1; min-width: 300px;">
-              <h2 class="headline-lg" style="color: var(--on-primary); margin-bottom: var(--space-6);" data-i18n="about.cta.title">A Trusted Partner in US Healthcare</h2>
+              <h2 class="headline-lg" style="color: var(--on-primary); margin-bottom: var(--space-6);" data-i18n="about.cta.title">A Trusted Partner in Global Healthcare</h2>
               <p style="color: var(--on-primary-container); font-size: 1.125rem; margin-bottom: var(--space-8); line-height: 1.7;" data-i18n="about.cta.desc">
-                From our global R&D headquarters, we provide the technology that powers clinical care for thousands of patients across the United States.
+                From our Seoul headquarters, HicareNet brings world-class healthcare IT innovation to providers worldwide — backed by 20+ years of device R&D, FDA certification, and ISO-certified security.
               </p>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);">
                 <div>

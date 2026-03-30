@@ -80,9 +80,9 @@
   },
   "about": {
     "hero": {
-      "tag": "HICARE.NET INC",
-      "title": "\ubbf8\uad6d RPM & CCM \uc11c\ube44\uc2a4 \uac15\ud654.",
-      "desc": "\uce98\ub9ac\ud3ec\ub2c8\uc544\uc5d0 \ubcf8\uc0ac\ub97c \ub454 Hicare.net Inc.\ub294 \ud558\uc774\ucf00\uc5b4\ub137\uc758 \ubbf8\uad6d \uc790\ud68c\uc0ac\ub85c, \ucca8\ub2e8 \uc6d0\uaca9 \ud658\uc790 \ubaa8\ub2c8\ud130\ub9c1(RPM) \ubc0f \ub9cc\uc131\uc9c8\ud658 \uad00\ub9ac(CCM) \uc194\ub8e8\uc158 \uc81c\uacf5\uc5d0 \uc804\ub150\ud569\ub2c8\ub2e4."
+      "tag": "하이케어넷 주식회사",
+      "title": "서울에서 시작하는 커넥티드 헬스케어.",
+      "desc": "서울에 본사를 둔 하이케어넷 주식회사는 ISO 27001/27701 인증과 HIPAA 준수를 기반으로 첨단 원격환자모니터링(RPM) 및 만성질환관리(CCM) 솔루션을 글로벌 시장에 제공하는 헬스케어 IT 기업입니다."
     },
     "focus": {
       "title": "\uc6b0\ub9ac\uc758 \ucd08\uc810",
@@ -95,7 +95,7 @@
     "rd": {
       "title": "\uae00\ub85c\ubc8c R&D \uc870\uc9c1: \ud480\uc2a4\ud0dd \ud601\uc2e0.",
       "desc1": "R&D \uc870\uc9c1\uc740 \ud558\uc774\ucf00\uc5b4\ub137\uc758 \uadfc\uac04\uc73c\ub85c, \uc784\ubca0\ub514\ub4dc \ud558\ub4dc\uc6e8\uc5b4 \uc2dc\uc2a4\ud15c\ubd80\ud130 \ud074\ub77c\uc6b0\ub4dc \ub124\uc774\ud2f0\ube0c \uc758\ub8cc \uc18c\ud504\ud2b8\uc6e8\uc5b4\uae4c\uc9c0 \ud480\uc2a4\ud0dd \uc11c\ube44\uc2a4 \uac1c\ubc1c\uc744 \uc8fc\ub3c4\ud569\ub2c8\ub2e4. \ub2e8\uc21c\ud55c \uc571 \uac1c\ubc1c\uc774 \uc544\ub2cc \uc804\uccb4 \ucf00\uc5b4 \uc0dd\ud0dc\uacc4\ub97c \uc124\uacc4\ud569\ub2c8\ub2e4.",
-      "desc2": "\ubbf8\uad6d \ud30c\ud2b8\ub108\uc5d0\uac8c 24/7 \uae30\uc220 \uc9c0\uc6d0\uc744 \uc81c\uacf5\ud558\uae30 \uc704\ud574 \uc804\ub7b5\uc801\uc73c\ub85c \ubc30\uce58\ub41c \uc5d4\uc9c0\ub2c8\uc5b4\ub9c1 \ud300\uc740 Hicare \ud50c\ub7ab\ud3fc\uc774 \uc2dc\uc7a5\uc5d0\uc11c \uac00\uc7a5 \uc548\uc815\uc801\uc774\uace0 \uc0c1\ud638\uc6b4\uc6a9 \uac00\ub2a5\ud55c \uc194\ub8e8\uc158\uc73c\ub85c \uc720\uc9c0\ub418\ub3c4\ub85d HL7 FHIR \ud504\ub85c\ud1a0\ucf5c\uc744 \uae30\ubcf8 \uc9c0\uc6d0\ud569\ub2c8\ub2e4.",
+      "desc2": "서울 본사를 중심으로 글로벌 헬스케어 파트너에게 24/7 기술 지원을 제공하며, Hicare 플랫폼이 시장에서 가장 안정적이고 상호운용 가능한 솔루션으로 유지되도록 HL7 FHIR 프로토콜을 기본 지원합니다.",
       "feature1": {
         "title": "\ud480\uc2a4\ud0dd \uac1c\ubc1c",
         "desc": "\ub514\ubc14\uc774\uc2a4\uc5d0\uc11c \ud074\ub77c\uc6b0\ub4dc\uae4c\uc9c0 \uc5d4\ub4dc\ud22c\uc5d4\ub4dc \uc11c\ube44\uc2a4 \uc544\ud0a4\ud14d\ucc98."
@@ -113,8 +113,8 @@
         "desc": "\uac1c\uc778\uc815\ubcf4 \uad00\ub9ac\uc5d0 \ub300\ud55c \uc758\uc9c0\ub97c \ub354\uc6b1 \uacf5\uace0\ud788 \ud558\uba70 \uae00\ub85c\ubc8c ISO 27701 \ud45c\uc900 \ub2ec\uc131."
       },
       "y2022": {
-        "title": "Hicare.net Inc. \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc124\ub9bd",
-        "desc": "RPM \ubc0f CCM \uc6b4\uc601\uc744 \uc120\ub3c4\ud558\uae30 \uc704\ud574 \uce98\ub9ac\ud3ec\ub2c8\uc544\uc5d0 \uc804\uc6a9 \ubbf8\uad6d \ubcf8\ubd80 \uc124\ub9bd."
+        "title": "ISO 27001 인증 획득",
+        "desc": "정보보안관리체계(ISMS) ISO 27001 인증을 획득하여 모든 헬스케어 운영에서 최고 수준의 데이터 보호 기준을 확립."
       },
       "y2018": {
         "title": "FHIR \ubc0f \uc0c1\ud638\uc6b4\uc6a9\uc131",
@@ -146,11 +146,21 @@
         "desc": "\ubbf8\uad6d RPM/CCM \uc2dc\uc7a5\uc758 \uace0\uc720\ud55c \uc694\uad6c\uc5d0 \ud2b9\ud654\ub41c 24/7 \uae30\uc220 \uc6b4\uc601."
       }
     },
+    "org": {
+      "label": "조직",
+      "title": "조직도",
+      "desc": "하이케어넷 주식회사는 헬스케어 IT 혁신을 이끄는 전문 조직으로 구성되어 있습니다.",
+      "ceo": "대표이사",
+      "div1": "R&D Group",
+      "div2": "BI Group",
+      "div3": "운영관리팀",
+      "div4": "경영지원팀"
+    },
     "cta": {
-      "title": "\ubbf8\uad6d \ud5ec\uc2a4\ucf00\uc5b4\uc758 \uc2e0\ub8b0\ubc1b\ub294 \ud30c\ud2b8\ub108",
-      "desc": "\uae00\ub85c\ubc8c R&D \ubcf8\ubd80\uc5d0\uc11c \ubbf8\uad6d \uc804\uc5ed \uc218\ucc9c \uba85\uc758 \ud658\uc790\ub97c \uc704\ud55c \uc784\uc0c1 \ucf00\uc5b4\ub97c \uad6c\ub3d9\ud558\ub294 \uae30\uc220\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.",
-      "stat1": "\uaddc\uc815 \uc900\uc218",
-      "badge": "\ud1b5\ud569 RPM/CCM \uc778\ud504\ub77c"
+      "title": "글로벌 헬스케어의 신뢰받는 파트너",
+      "desc": "서울 본사에서 전 세계 수천 명의 환자를 위한 임상 케어를 구동하는 기술을 제공합니다.",
+      "stat1": "규정 준수",
+      "badge": "통합 RPM/CCM 인프라"
     }
   },
   "solutions": {
@@ -562,19 +572,22 @@
       "f1": "역할 기반 접근 제어를 통한 PHI 엔드투엔드 암호화",
       "f2": "모든 적용 대상 기관에 비즈니스 제휴 계약(BAA) 제공",
       "f3": "필수 직원 교육 및 연간 HIPAA 재인증",
-      "f4": "문서화된 침해 통지 절차 및 사고 대응 계획"
+      "f4": "문서화된 침해 통지 절차 및 사고 대응 계획",
+      "download": "확인서 다운로드"
     },
     "iso27001": {
       "tag": "정보 보안",
       "title": "ISO 27001 인증",
       "desc": "당사 ISMS는 ISO 27001로 인증되어 민감한 정보의 체계적인 관리를 입증합니다. 인정 인증 기관의 연간 독립 감사.",
-      "audit": "최종 감사: 2025년 12월"
+      "audit": "인증번호 C844628 · 발급일: 2026년 1월 23일 · 2029년 1월까지 유효",
+      "download": "인증서 다운로드"
     },
     "iso27701": {
       "tag": "개인정보 관리",
       "title": "ISO 27701 인증",
       "desc": "당사 PIMS는 특정 개인정보 관리 통제로 ISO 27001을 확장하여 GDPR, CCPA 및 글로벌 개인정보 보호 규정을 지원합니다.",
-      "audit": "최종 감사: 2025년 12월"
+      "audit": "인증번호 C844629 · 발급일: 2026년 1월 23일 · 2029년 1월까지 유효",
+      "download": "인증서 다운로드"
     },
     "security": {
       "label": "기술적 보호 장치",
@@ -645,14 +658,13 @@
       "phoneLabel": "전화",
       "emailLabel": "이메일",
       "hoursLabel": "업무 시간",
-      "hoursValue": "월–금, 오전 8시 – 오후 6시 (태평양 시간)",
+      "hoursValue": "월–금, 오전 9시 – 오후 6시 (한국 표준시)",
       "supportLabel": "긴급 지원",
       "supportNote": "온콜 팀이 2시간 이내 응답"
     },
     "offices": {
-      "title": "사무소",
-      "us": { "name": "미국 운영", "address": "미국 캘리포니아\nHicare.net Inc." },
-      "hq": { "name": "글로벌 R&D 본사", "address": "서울 디지털 지구\n대한민국" }
+      "title": "본사",
+      "hq": { "name": "하이케어넷 주식회사", "address": "서울특별시 송파구 위례성대로22길 28 5층(오금동)\n05656, 대한민국" }
     },
     "cta": {
       "title": "30분 발견 통화로 시작하세요",
@@ -723,9 +735,9 @@
     "solutions": "\uc194\ub8e8\uc158 \ubcf4\uae30"
   },
   "footer": {
-    "desc": "\uc758\ub8cc IT \uc735\ud569\uc758 \uae00\ub85c\ubc8c \uc120\uad6c\uc790. \uce98\ub9ac\ud3ec\ub2c8\uc544 \uc790\ud68c\uc0ac Hicare.net Inc\uac00 \uc138\uacc4\uc801 \uc218\uc900\uc758 RPM \uc194\ub8e8\uc158\uc744 \ubbf8\uad6d \uc2dc\uc7a5\uc5d0 \uc81c\uacf5\ud569\ub2c8\ub2e4.",
+    "desc": "서울에서 글로벌 헬스케어 IT 혁신을 이끄는 하이케어넷 주식회사. 첨단 RPM, CCM, FHIR 기반 솔루션으로 전 세계 의료 기관의 환자 케어를 혁신합니다.",
     "col1": {
-      "title": "\ubbf8\uad6d \uc6b4\uc601",
+      "title": "솔루션",
       "link1": "RPM \uc11c\ube44\uc2a4",
       "link2": "CCM \uad00\ub9ac",
       "link3": "HIPAA \uc900\uc218"
@@ -737,9 +749,9 @@
       "link3": "\ub3c5\uc790 \ud558\ub4dc\uc6e8\uc5b4"
     },
     "col3": {
-      "title": "\uae00\ub85c\ubc8c \uc624\ud53c\uc2a4",
-      "hq": "\uae00\ub85c\ubc8c R&D \ubcf8\uc0ac",
-      "address": "\uc11c\uc6b8 \ub514\uc9c0\ud138 \uc9c0\uad6c"
+      "title": "본사 정보",
+      "hq": "하이케어넷 주식회사",
+      "address": "서울특별시 송파구 위례성대로22길 28 5층(오금동), 05656, 대한민국"
     },
     "copyright": "\u00a9 2026 HicareNet. ISO 27001, ISO 27701 \uc778\uc99d. HIPAA \uc900\uc218. All rights reserved.",
     "terms": "\uc774\uc6a9\uc57d\uad00",

@@ -24,11 +24,11 @@
     },
     "services": {
       "title": "Our Operations & Technology",
-      "desc": "Providing seamless RPM/CCM solutions backed by global R&D excellence and direct US market operations through Hicare.net Inc in California.",
+      "desc": "Providing seamless RPM/CCM solutions backed by global R&D excellence and our Seoul-headquartered engineering and operations teams.",
       "us": {
-        "tag": "Hicare.net Inc (California)",
-        "title": "Direct US Market Operation",
-        "desc": "Our California subsidiary directly manages Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) services, ensuring localized expertise with global scale."
+        "tag": "Global Healthcare IT",
+        "title": "Direct Market Operation",
+        "desc": "HicareNet Inc., headquartered in Seoul, directly manages Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) services, ensuring global expertise with localized delivery."
       },
       "fhir": {
         "tag": "Interoperability",
@@ -80,9 +80,9 @@
   },
   "about": {
     "hero": {
-      "tag": "HICARE.NET INC",
-      "title": "Empowering US RPM & CCM Services.",
-      "desc": "Based in California, Hicare.net Inc. is the United States subsidiary of HicareNet, dedicated to delivering advanced Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) solutions."
+      "tag": "HICARENET INC.",
+      "title": "Connected Healthcare, Powered from Seoul.",
+      "desc": "Founded in Seoul, HicareNet Inc. is a global healthcare IT company delivering advanced Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) solutions — backed by ISO 27001/27701 certification and HIPAA compliance."
     },
     "focus": {
       "title": "Our Focus",
@@ -95,7 +95,7 @@
     "rd": {
       "title": "Global R&D Organization: Full-Stack Innovation.",
       "desc1": "Our R&D organization is the backbone of HicareNet, driving full-stack service development from embedded hardware systems to cloud-native healthcare software. We don't just build apps; we architect entire care ecosystems.",
-      "desc2": "Based strategically to provide 24/7 technical support for our US partners, our engineering teams ensure that the Hicare platform remains the most reliable and interoperable solution in the market, natively supporting HL7 FHIR protocols.",
+      "desc2": "Headquartered in Seoul, our engineering teams provide 24/7 technical support for global healthcare partners, ensuring the Hicare platform remains the most reliable and interoperable solution in the market, natively supporting HL7 FHIR protocols.",
       "feature1": {
         "title": "Full-Stack Dev",
         "desc": "End-to-end service architecture from device to cloud."
@@ -113,8 +113,8 @@
         "desc": "Further solidified our commitment to privacy information management, achieving global ISO 27701 standards."
       },
       "y2022": {
-        "title": "Hicare.net Inc. California",
-        "desc": "Established our dedicated US headquarters in California to spearhead RPM and CCM operations."
+        "title": "ISO 27001 Certification",
+        "desc": "Achieved ISO 27001 Information Security Management System certification, establishing the highest standard of data protection for all healthcare operations."
       },
       "y2018": {
         "title": "FHIR & Interoperability",
@@ -146,9 +146,19 @@
         "desc": "24/7 technical operations focused specifically on the unique needs of the US RPM/CCM market."
       }
     },
+    "org": {
+      "label": "ORGANIZATION",
+      "title": "Organizational Structure",
+      "desc": "HicareNet Inc. is structured around specialized divisions that drive innovation in healthcare IT.",
+      "ceo": "Representative Director",
+      "div1": "R&D Group",
+      "div2": "BI Group",
+      "div3": "Operations Management",
+      "div4": "Business Administration"
+    },
     "cta": {
-      "title": "A Trusted Partner in US Healthcare",
-      "desc": "From our global R&D headquarters, we provide the technology that powers clinical care for thousands of patients across the United States.",
+      "title": "A Trusted Partner in Global Healthcare",
+      "desc": "From our headquarters in Seoul, we provide the technology that powers clinical care for thousands of patients worldwide.",
       "stat1": "Compliance",
       "badge": "Integrated RPM/CCM Infrastructure"
     }
@@ -562,20 +572,24 @@
       "f1": "End-to-end PHI encryption with strict role-based access controls",
       "f2": "Business Associate Agreements (BAA) available for all covered entities",
       "f3": "Mandatory staff training and annual HIPAA recertification",
-      "f4": "Documented breach notification procedures and incident response plan"
+      "f4": "Documented breach notification procedures and incident response plan",
+      "download": "Download Verification Statement"
     },
     "iso27001": {
       "tag": "INFORMATION SECURITY",
       "title": "ISO 27001 Certified",
       "desc": "Our ISMS is certified to ISO 27001, demonstrating systematic management of sensitive information. Annual independent audit by accredited certification body.",
-      "audit": "Last audit: December 2025"
+      "audit": "Certificate No. C844628 · Issued: January 23, 2026 · Valid through January 2029",
+      "download": "Download Certificate"
     },
     "iso27701": {
       "tag": "PRIVACY MANAGEMENT",
       "title": "ISO 27701 Certified",
       "desc": "Our PIMS extends ISO 27001 with specific privacy controls, supporting GDPR, CCPA and global privacy regulations. Data subject rights fully supported.",
-      "audit": "Last audit: December 2025"
+      "audit": "Certificate No. C844629 · Issued: January 23, 2026 · Valid through January 2029",
+      "download": "Download Certificate"
     },
+    "hipaa_download": "Download HIPAA Verification",
     "security": {
       "label": "TECHNICAL SAFEGUARDS",
       "title": "Data Security Practices",
@@ -650,9 +664,8 @@
       "supportNote": "On-call team responds within 2 hours"
     },
     "offices": {
-      "title": "Offices",
-      "us": { "name": "US Operations", "address": "California, United States\nHicare.net Inc." },
-      "hq": { "name": "Global R&D HQ", "address": "Digital District, Seoul\nRepublic of Korea" }
+      "title": "Headquarters",
+      "hq": { "name": "HicareNet Inc.", "address": "5F, 28, Wiryeseong-daero 22gil\nSongpagu, Seoul 05656, Korea" }
     },
     "cta": {
       "title": "Start with a 30-Min Discovery Call",
@@ -723,9 +736,9 @@
     "solutions": "View Solutions"
   },
   "footer": {
-    "desc": "A global pioneer in medical IT convergence. Our California subsidiary, Hicare.net Inc, brings world-class RPM solutions to the US market.",
+    "desc": "A global pioneer in medical IT convergence. HicareNet Inc., headquartered in Seoul, delivers world-class RPM and CCM solutions to global healthcare markets.",
     "col1": {
-      "title": "US Operations",
+      "title": "Solutions",
       "link1": "RPM Services",
       "link2": "CCM Management",
       "link3": "HIPAA Compliance"
@@ -737,9 +750,9 @@
       "link3": "Proprietary Hardware"
     },
     "col3": {
-      "title": "Global Offices",
-      "hq": "Global R&D HQ",
-      "address": "Digital District, Seoul, Korea"
+      "title": "Headquarters",
+      "hq": "HicareNet Inc.",
+      "address": "5F, 28, Wiryeseong-daero 22gil,\nSongpagu, Seoul 05656, Korea"
     },
     "copyright": "\u00a9 2026 HicareNet. ISO 27001, ISO 27701 Certified. HIPAA Compliant. All rights reserved.",
     "terms": "Terms of Service",

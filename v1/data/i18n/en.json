@@ -216,17 +216,13 @@
       "feature4": "Deep understanding of US healthcare regulations and billing"
     },
     "offices": {
-      "eyebrow": "Our Offices",
-      "title": "US Operations",
-      "description": "Two strategically located offices to serve our growing network of healthcare partners.",
-      "irvine_title": "Irvine, CA (Headquarters)",
-      "irvine_address": "7545 Irvine Center Drive, Suite 200, Irvine, CA 92618",
-      "irvine_phone": "(949) 777-7000",
-      "irvine_email": "info@hicarenet.com",
-      "sanjose_title": "San Jose, CA (Engineering)",
-      "sanjose_address": "2025 Gateway Place, Suite 400, San Jose, CA 95110",
-      "sanjose_phone": "(408) 777-8000",
-      "sanjose_email": "engineering@hicarenet.com"
+      "eyebrow": "Our Office",
+      "title": "Headquarters",
+      "description": "HicareNet Inc., headquartered in Seoul, Korea, delivers advanced healthcare IT solutions to global markets.",
+      "hq_title": "Seoul (Headquarters)",
+      "hq_address": "5F, 28, Wiryeseong-daero 22gil, Songpagu, Seoul (05656)",
+      "hq_phone": "+82-2-1234-5678",
+      "hq_email": "info@hicare.net"
     },
     "stats": {
       "eyebrow": "By the Numbers",
@@ -238,44 +234,15 @@
       "devices": "Device Types Integrated",
       "uptime": "Platform Uptime"
     },
-    "team": {
-      "eyebrow": "Leadership",
-      "title": "Meet Our Team",
-      "description": "Experienced leaders combining deep healthcare IT expertise with a passion for improving patient outcomes.",
-      "member1_name": "David Kim",
-      "member1_title": "Chief Executive Officer",
-      "member1_bio": "20+ years leading healthcare IT companies, with a vision of making connected care accessible to every clinic in America.",
-      "member2_name": "Sarah Chen",
-      "member2_title": "Chief Technology Officer",
-      "member2_bio": "Former enterprise architect with experience at leading health tech companies, now driving HicareNet's platform innovation.",
-      "member3_name": "James Park",
-      "member3_title": "Chief Medical Officer",
-      "member3_bio": "Board-certified physician specializing in preventive care, ensuring clinical excellence guides every product decision.",
-      "member4_name": "Michelle Lee",
-      "member4_title": "VP of Operations",
-      "member4_bio": "Expert in healthcare operations and compliance, overseeing client implementation and care management delivery.",
-      "member5_name": "Robert Chang",
-      "member5_title": "VP of Engineering",
-      "member5_bio": "Leading our San Jose engineering team to build HIPAA-compliant, scalable infrastructure for the next generation of connected care.",
-      "member6_name": "Jennifer Yoon",
-      "member6_title": "VP of Business Development",
-      "member6_bio": "Driving strategic partnerships and clinic network expansion, with deep expertise in healthcare reimbursement models.",
-      "ceo": {
-        "title": "Chief Executive Officer",
-        "bio": "Over 25 years of experience in healthcare IT leadership. Previously led digital health initiatives at major health systems in the US and South Korea."
-      },
-      "cto": {
-        "title": "Chief Technology Officer",
-        "bio": "Former engineering director with expertise in FHIR interoperability, cloud architecture, and FDA-regulated software development."
-      },
-      "vp_clinical": {
-        "title": "VP of Clinical Operations",
-        "bio": "Registered Nurse with 18 years of clinical experience. Leads our care coordination team and ensures clinical excellence across all programs."
-      },
-      "vp_business": {
-        "title": "VP of Business Development",
-        "bio": "Extensive background in healthcare B2B sales and partnerships. Specializes in value-based care contracting and provider network development."
-      }
+    "org": {
+      "eyebrow": "Organization",
+      "title": "Organizational Structure",
+      "description": "HicareNet Inc. is structured around specialized divisions that drive innovation in healthcare IT.",
+      "ceo": "Representative Director",
+      "div1": "R&D Group",
+      "div2": "BI Group",
+      "div3": "Operations Management",
+      "div4": "Business Administration"
     },
     "certifications": {
       "eyebrow": "Trust & Security",
@@ -288,13 +255,13 @@
       "description": "We maintain the highest standards of data security and privacy compliance to protect patient information.",
       "hipaa_title": "HIPAA Compliant",
       "hipaa_desc": "Full compliance with the Health Insurance Portability and Accountability Act, including administrative, physical, and technical safeguards.",
-      "hipaa_renewal": "Annual audit renewal",
+      "hipaa_renewal": "Verification Statement 2025",
       "iso27001_title": "ISO 27001",
       "iso27001_desc": "Internationally recognized information security management system standard ensuring systematic protection of sensitive data.",
-      "iso27001_renewal": "Certified through 2027",
+      "iso27001_renewal": "Certificate No. C844628 · Valid through Jan 2029",
       "iso27701_title": "ISO 27701",
       "iso27701_desc": "Privacy information management system extension providing a framework for managing and protecting personally identifiable information.",
-      "iso27701_renewal": "Certified through 2027"
+      "iso27701_renewal": "Certificate No. C844629 · Valid through Jan 2029"
     },
     "cta": {
       "headline": "Want to Learn More About HicareNet?",
@@ -450,23 +417,13 @@
       "hoursValue": "Mon-Fri 8:00 AM - 6:00 PM PT"
     },
     "offices": {
-      "eyebrow": "Our Offices",
-      "title": "Office Locations",
+      "eyebrow": "Our Office",
+      "title": "Headquarters",
       "hqBadge": "Headquarters",
-      "engBadge": "Engineering",
-      "irvineTitle": "Irvine, CA",
-      "irvineAddress": "123 Innovation Drive, Suite 400\nIrvine, CA 92618",
-      "sanjoseTitle": "San Jose, CA",
-      "sanjoseAddress": "456 Tech Park Way, Suite 200\nSan Jose, CA 95134",
-      "us": {
-        "name": "US Headquarters",
-        "address": "123 Healthcare Blvd, Suite 400",
-        "city": "Los Angeles, CA 90001"
-      },
-      "kr": {
-        "name": "Korea Office (Hicare)",
-        "address": "456 Gangnam-daero, Gangnam-gu",
-        "city": "Seoul, South Korea 06123"
+      "hq": {
+        "name": "HicareNet Inc.",
+        "address": "5F, 28, Wiryeseong-daero 22gil, Songpagu, Seoul",
+        "city": "Seoul, Korea 05656"
       }
     },
     "support": {
@@ -498,6 +455,7 @@
       "name": "HIPAA Compliant",
       "title": "HIPAA Compliance",
       "description": "Our platform is fully compliant with the Health Insurance Portability and Accountability Act, ensuring the privacy and security of all protected health information (PHI).",
+      "download": "Download Verification Statement",
       "feature1": "End-to-end encryption for all PHI data in transit and at rest",
       "feature2": "Role-based access controls with multi-factor authentication",
       "feature3": "Comprehensive audit logging and monitoring",
@@ -510,7 +468,8 @@
       "name": "ISO 27001",
       "title": "ISO 27001 Certified",
       "description": "Our Information Security Management System (ISMS) is certified to ISO 27001, the international standard for information security management.",
-      "auditDate": "Last audit: December 2025",
+      "auditDate": "Certificate No. C844628 · Issued: January 23, 2026 · Valid through January 2029",
+      "download": "Download Certificate",
       "feature1": "Systematic approach to managing sensitive information",
       "feature2": "Continuous risk assessment and treatment processes",
       "feature3": "Regular internal and external audits",
@@ -521,7 +480,8 @@
       "name": "ISO 27701",
       "title": "ISO 27701 Certified",
       "description": "Our Privacy Information Management System (PIMS) extends our ISO 27001 certification with privacy-specific controls under ISO 27701.",
-      "auditDate": "Last audit: December 2025",
+      "auditDate": "Certificate No. C844629 · Issued: January 23, 2026 · Valid through January 2029",
+      "download": "Download Certificate",
       "feature1": "Privacy-by-design principles in all data processing",
       "feature2": "Comprehensive data subject rights management",
       "feature3": "Privacy impact assessments for new processing activities",

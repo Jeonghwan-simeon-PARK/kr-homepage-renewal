@@ -203,56 +203,61 @@
       </div>
     </section>
 
-    <!-- ===== LEADERSHIP TEAM ===== -->
+    <!-- ===== ORGANIZATION CHART ===== -->
     <section class="section section--alt" id="team">
       <div class="container">
         <div class="section__header" data-animate="fade-up">
-          <span class="section__eyebrow" data-i18n="about.team.eyebrow">Leadership</span>
-          <h2 class="section__title" data-i18n="about.team.title">Meet Our Team</h2>
-          <p class="section__desc" data-i18n="about.team.description">Experienced leaders combining deep healthcare IT expertise with a passion for improving patient outcomes.</p>
+          <span class="section__eyebrow" data-i18n="about.org.eyebrow">Organization</span>
+          <h2 class="section__title" data-i18n="about.org.title">Our Organization</h2>
+          <p class="section__desc" data-i18n="about.org.description">HicareNet Inc. is structured around specialized divisions that drive innovation in healthcare IT.</p>
         </div>
-        <div class="card-grid card-grid--3col" data-animate="stagger">
-          <!-- Team Member 1 -->
-          <div class="team-card">
-            <div class="team-card__photo" aria-hidden="true"></div>
-            <h3 class="team-card__name" data-i18n="about.team.member1_name">David Kim</h3>
-            <span class="team-card__title" data-i18n="about.team.member1_title">Chief Executive Officer</span>
-            <p class="team-card__bio" data-i18n="about.team.member1_bio">20+ years leading healthcare IT companies, with a vision of making connected care accessible to every clinic in America.</p>
+        <div class="org-chart" data-animate="fade-up">
+          <!-- CEO -->
+          <div class="org-chart__ceo-wrap">
+            <div class="org-chart__ceo">
+              <p class="org-chart__ceo-name" data-i18n="about.org.ceo">Representative Director</p>
+            </div>
+            <div class="org-chart__connector" aria-hidden="true"></div>
+            <div class="org-chart__h-bar" aria-hidden="true"></div>
           </div>
-          <!-- Team Member 2 -->
-          <div class="team-card">
-            <div class="team-card__photo" aria-hidden="true"></div>
-            <h3 class="team-card__name" data-i18n="about.team.member2_name">Sarah Chen</h3>
-            <span class="team-card__title" data-i18n="about.team.member2_title">Chief Technology Officer</span>
-            <p class="team-card__bio" data-i18n="about.team.member2_bio">Former enterprise architect with experience at leading health tech companies, now driving HicareNet's platform innovation.</p>
-          </div>
-          <!-- Team Member 3 -->
-          <div class="team-card">
-            <div class="team-card__photo" aria-hidden="true"></div>
-            <h3 class="team-card__name" data-i18n="about.team.member3_name">James Park</h3>
-            <span class="team-card__title" data-i18n="about.team.member3_title">Chief Medical Officer</span>
-            <p class="team-card__bio" data-i18n="about.team.member3_bio">Board-certified physician specializing in preventive care, ensuring clinical excellence guides every product decision.</p>
-          </div>
-          <!-- Team Member 4 -->
-          <div class="team-card">
-            <div class="team-card__photo" aria-hidden="true"></div>
-            <h3 class="team-card__name" data-i18n="about.team.member4_name">Michelle Lee</h3>
-            <span class="team-card__title" data-i18n="about.team.member4_title">VP of Operations</span>
-            <p class="team-card__bio" data-i18n="about.team.member4_bio">Expert in healthcare operations and compliance, overseeing client implementation and care management delivery.</p>
-          </div>
-          <!-- Team Member 5 -->
-          <div class="team-card">
-            <div class="team-card__photo" aria-hidden="true"></div>
-            <h3 class="team-card__name" data-i18n="about.team.member5_name">Robert Chang</h3>
-            <span class="team-card__title" data-i18n="about.team.member5_title">VP of Engineering</span>
-            <p class="team-card__bio" data-i18n="about.team.member5_bio">Leading our San Jose engineering team to build HIPAA-compliant, scalable infrastructure for the next generation of connected care.</p>
-          </div>
-          <!-- Team Member 6 -->
-          <div class="team-card">
-            <div class="team-card__photo" aria-hidden="true"></div>
-            <h3 class="team-card__name" data-i18n="about.team.member6_name">Jennifer Yoon</h3>
-            <span class="team-card__title" data-i18n="about.team.member6_title">VP of Business Development</span>
-            <p class="team-card__bio" data-i18n="about.team.member6_bio">Driving strategic partnerships and clinic network expansion, with deep expertise in healthcare reimbursement models.</p>
+          <!-- 4 Division columns -->
+          <div class="org-chart__divisions-wrap" role="list" aria-label="Organizational divisions">
+            <div class="org-chart__div-col" role="listitem">
+              <div class="org-chart__div-connector" aria-hidden="true"></div>
+              <div class="org-chart__div-card">
+                <div class="org-chart__div-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+                </div>
+                <p class="org-chart__div-name" data-i18n="about.org.div1">R&amp;D Group</p>
+              </div>
+            </div>
+            <div class="org-chart__div-col" role="listitem">
+              <div class="org-chart__div-connector" aria-hidden="true"></div>
+              <div class="org-chart__div-card">
+                <div class="org-chart__div-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <p class="org-chart__div-name" data-i18n="about.org.div2">BI Group</p>
+              </div>
+            </div>
+            <div class="org-chart__div-col" role="listitem">
+              <div class="org-chart__div-connector" aria-hidden="true"></div>
+              <div class="org-chart__div-card">
+                <div class="org-chart__div-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <p class="org-chart__div-name" data-i18n="about.org.div3">운영관리팀</p>
+              </div>
+            </div>
+            <div class="org-chart__div-col" role="listitem">
+              <div class="org-chart__div-connector" aria-hidden="true"></div>
+              <div class="org-chart__div-card">
+                <div class="org-chart__div-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <p class="org-chart__div-name" data-i18n="about.org.div4">경영지원팀</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
