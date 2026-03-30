@@ -1,0 +1,647 @@
+{
+  "common": {
+    "skipToContent": "Skip to main content",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "loadMore": "Load More",
+    "subscribe": "Subscribe",
+    "sendMessage": "Send Message",
+    "viewAll": "View All",
+    "backToHome": "Back to Home",
+    "minuteRead": "min read",
+    "required": "Required",
+    "optional": "Optional",
+    "success": "Success",
+    "error": "Error"
+  },
+  "nav": {
+    "solutions": {
+      "_label": "Solutions",
+      "rpm": "RPM",
+      "ccm": "CCM",
+      "awv": "AWV",
+      "vbc": "Value-Based Care",
+      "fhir": "FHIR Integration"
+    },
+    "about": "About",
+    "resources": "Resources",
+    "compliance": "Compliance",
+    "contact": "Contact Us",
+    "team": "Team",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "story": "Our Story",
+    "us_operations": "US Operations"
+  },
+  "home": {
+    "hero": {
+      "headline": "Healthcare Technology, Proven Globally",
+      "subtext": "FDA 510K certification with HX-461. 100+ device integrations through Hicare Hub. US VA project deployment. RPM/CCM solutions in active use — HicareNet's technology is proven across global healthcare markets.",
+      "cta_primary": "Explore Our Technology",
+      "cta_secondary": "Schedule a Demo"
+    },
+    "solutions": {
+      "eyebrow": "Our Technology",
+      "title": "From Medical Devices to Connected Care Solutions",
+      "description": "FDA certification experience from HX-461 combined with Hicare Hub's 100+ device integration capability — delivering RPM, CCM, AWV, and Value-Based Care solutions to global healthcare markets.",
+      "rpm_title": "Remote Patient Monitoring",
+      "rpm_desc": "Powered by Hicare Hub's 100+ device integrations and the FDA-certified technology expertise from HX-461, our RPM solution delivers reliable continuous vital sign monitoring",
+      "ccm_title": "Chronic Care Management",
+      "ccm_desc": "Powered by the Hicare platform's real-time data connectivity, our CCM solution coordinates chronic condition care with multilingual engagement in 7 languages",
+      "awv_title": "Annual Wellness Visits",
+      "awv_desc": "Leverage the Hicare platform's proven infrastructure for automated Health Risk Assessments, streamlined preventive care delivery, and Medicare compliance support",
+      "vbc_title": "Value-Based Care",
+      "vbc_desc": "Backed by 100+ device integrations and continuous monitoring data, our VBC solution provides quality measure dashboards and outcomes-based reporting"
+    },
+    "technology": {
+      "eyebrow": "Technology Platform",
+      "title": "Built on 20+ Years of Medical Device Innovation",
+      "description": "From FDA-certified devices to cloud-based care management — our technology stack is proven across global healthcare markets.",
+      "hx461_title": "HX-461",
+      "hx461_desc": "FDA 510(K) Class 2 certified medical device — the same regulatory category as patient monitors and diagnostic equipment. Our direct experience with the FDA submission process, from predicate device selection to clinical evaluation, gives us proven regulatory expertise that few Korean healthcare IT companies can match.",
+      "hub_title": "Hicare Hub",
+      "hub_desc": "IoT gateway supporting 100+ medical devices across USB, Bluetooth Classic, and BLE protocols. Built on IEEE 11073 personal health device standards and Continua Design Guidelines (ITU-T H.810), ensuring plug-and-play interoperability. Deployed in US VA (Veterans Affairs) healthcare projects.",
+      "mobile_title": "Hicare M",
+      "mobile_desc": "Mobile health monitoring app connecting patients to their care team. Supports Bluetooth Low Energy (BLE) medical device pairing, real-time vital sign tracking, and secure data transmission following ISO/IEEE 11073 health device communication standards.",
+      "devices_title": "100+ Device Integrations",
+      "devices_desc": "Comprehensive medical device connectivity across three communication protocols — USB for legacy devices, Bluetooth Classic for continuous data streaming, and BLE for battery-powered wearables. Our platform follows IEEE 11073 standards, similar to global leaders like MedM, supporting blood pressure monitors, pulse oximeters, glucose meters, weight scales, thermometers, and ECG devices.",
+      "story_arc_title": "Our Technology Journey",
+      "story_arc_desc": "Medical devices (HX-461) to FDA certification to VA project export (Hicare Hub) to developing and supplying RPM/CCM solutions for the US market — a proven technology evolution."
+    },
+    "stats": {
+      "eyebrow": "Technology at Scale",
+      "title": "Proven Across Global Healthcare Markets"
+    },
+    "fhir": {
+      "headline": "From HL7v2 to FHIR: Our Interoperability Journey",
+      "subtext": "Building on proven HL7 Version 2 interoperability testing, we're bringing FHIR R4 standard APIs to connect your EHR with our platform seamlessly.",
+      "cta": "Learn More"
+    },
+    "compliance": {
+      "eyebrow": "Security & Compliance",
+      "title": "FDA 510K Certified. HIPAA Compliant. ISO Certified."
+    },
+    "cta": {
+      "headline": "Ready to Experience Proven Healthcare Technology?",
+      "subtext": "From FDA 510K-certified devices to 100+ device integrations — discover the technology platform trusted by US VA projects and 200+ clinics.",
+      "cta_primary": "Schedule a Demo",
+      "cta_secondary": "Contact Sales"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "headline": "Technology-Driven Healthcare Solutions",
+      "subtext": "Built on our FDA 510K-certified device heritage and 100+ medical device integrations, we deliver RPM, CCM, AWV, and Value-Based Care solutions proven in global markets.",
+      "cta": "Contact Us"
+    },
+    "cptCodes": "CPT Codes:",
+    "rpm": {
+      "eyebrow": "Solution",
+      "title": "Remote Patient Monitoring (RPM)",
+      "description": "Built on the proven Hicare platform with 100+ device integrations and our FDA 510K-certified HX-461 heritage, our RPM solution enables proactive care with continuous vital sign monitoring and automated clinical alerts.",
+      "feature1": "100+ medical device types supported via Hicare Hub IoT gateway",
+      "feature2": "Real-time vital sign tracking powered by proven device connectivity",
+      "feature3": "Automated alerts and clinical thresholds",
+      "feature4": "Seamless data integration through our MedM-class device platform",
+      "outcome1": "Reduce hospital readmissions by up to 38%",
+      "outcome2": "Improve medication adherence rates",
+      "outcome3": "Generate new revenue streams with CPT 99453-99458",
+      "cta": "Get Started with RPM"
+    },
+    "ccm": {
+      "eyebrow": "Solution",
+      "title": "Chronic Care Management (CCM)",
+      "description": "Powered by the Hicare platform's real-time device connectivity and data infrastructure, our CCM solution coordinates care for patients with chronic conditions through multilingual engagement and personalized care plans.",
+      "feature1": "Multilingual care coordination (7 languages)",
+      "feature2": "Personalized care plans",
+      "feature3": "Monthly patient engagement",
+      "feature4": "Care gap identification",
+      "outcome1": "Improve chronic condition management outcomes",
+      "outcome2": "Increase patient engagement and satisfaction",
+      "outcome3": "Optimize reimbursement with CPT 99490-99491",
+      "cta": "Get Started with CCM"
+    },
+    "awv": {
+      "eyebrow": "Solution",
+      "title": "Annual Wellness Visits (AWV)",
+      "description": "Leveraging the Hicare platform's proven healthcare data infrastructure, our AWV solution streamlines preventive care delivery with automated Health Risk Assessments and Medicare compliance support.",
+      "feature1": "Automated Health Risk Assessments (HRA)",
+      "feature2": "Personalized prevention plans",
+      "feature3": "Medicare compliance support",
+      "feature4": "Digital patient intake",
+      "outcome1": "Increase AWV completion rates by up to 45%",
+      "outcome2": "Reduce administrative burden on clinical staff",
+      "outcome3": "Capture missed preventive care revenue with G0438/G0439",
+      "cta": "Get Started with AWV"
+    },
+    "vbc": {
+      "eyebrow": "Solution",
+      "title": "Value-Based Care",
+      "description": "Backed by 100+ device integrations and continuous monitoring data from the Hicare platform, our VBC solution helps you succeed in value-based payment models with quality measure dashboards and outcomes-based reporting.",
+      "feature1": "Quality measure dashboards",
+      "feature2": "HEDIS/Stars rating optimization",
+      "feature3": "Care gap identification",
+      "feature4": "Outcomes-based reporting",
+      "outcome1": "Improve quality scores across HEDIS and Stars measures",
+      "outcome2": "Reduce total cost of care per patient",
+      "outcome3": "Maximize shared savings and incentive payments",
+      "cta": "Get Started with VBC"
+    },
+    "fhir": {
+      "eyebrow": "Coming Soon",
+      "title": "FHIR-Based EMR Integration",
+      "description": "Building on our proven HL7 Version 2 interoperability testing experience — the standard used by 95% of US healthcare organizations — we are extending our platform to support HL7 FHIR R4 APIs for modern cloud-based and mobile EHR integrations.",
+      "q1_date": "Q1 2026",
+      "q1_title": "Development & Certification",
+      "q1_desc": "Building and certifying FHIR R4 endpoints with comprehensive testing and compliance validation.",
+      "q2_date": "Q2 2026",
+      "q2_title": "Pilot Program Launch",
+      "q2_desc": "Rolling out integration with select partner clinics for real-world validation and feedback.",
+      "h2_date": "H2 2026",
+      "h2_title": "General Availability",
+      "h2_desc": "Full production release with support for all major EHR systems and seamless data exchange."
+    },
+    "implementation": {
+      "eyebrow": "Onboarding",
+      "title": "Get Started in as Little as 8 Weeks",
+      "description": "Our streamlined implementation process gets your practice up and running quickly with full support at every step.",
+      "step1_title": "Discovery",
+      "step1_duration": "Week 1-2",
+      "step1_desc": "Assess your practice needs, current workflows, and integration requirements.",
+      "step2_title": "Configuration",
+      "step2_duration": "Week 3-4",
+      "step2_desc": "Set up your platform, configure clinical thresholds, and connect devices.",
+      "step3_title": "Training",
+      "step3_duration": "Week 5-6",
+      "step3_desc": "Comprehensive staff training on platform usage, workflows, and best practices.",
+      "step4_title": "Go-Live",
+      "step4_duration": "Week 7-8",
+      "step4_desc": "Launch with dedicated support, monitor performance, and optimize outcomes."
+    },
+    "cta": {
+      "headline": "Ready to Get Started?",
+      "subtext": "Let us show you how HicareNet's proven technology — from FDA 510K-certified devices to our 100+ device integration platform — can transform your practice.",
+      "cta_primary": "Schedule a Consultation",
+      "cta_secondary": "Contact Sales"
+    }
+  },
+  "about": {
+    "hero": {
+      "headline": "About HicareNet",
+      "subtext": "From medical device R&D to FDA 510K certification to US VA deployment — a healthcare technology company with a proven track record of global innovation.",
+      "cta": "Meet Our Team"
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "title": "From Device Maker to Global Healthcare Platform",
+      "p1": "HicareNet began as a medical device R&D company, building deep expertise in healthcare hardware and regulatory processes. Our HX-461 device achieved US FDA 510K Class 2 certification — giving us firsthand experience with one of the world's most rigorous regulatory frameworks.",
+      "p2": "That device expertise evolved into the Hicare Hub, an IoT gateway capable of connecting 100+ medical device types. The Hicare Hub was exported to the United States and deployed in US VA (Veterans Affairs) projects — proving our technology on an international stage.",
+      "p3": "Today, HicareNet applies this proven technology stack to develop and supply RPM, CCM, AWV, and Value-Based Care solutions. We serve 200+ clinics across the United States, combining 20+ years of medical device innovation with modern cloud-based care management.",
+      "milestone1_title": "Medical Device R&D Foundation",
+      "milestone1_desc": "Founded with core expertise in medical device engineering and healthcare IT systems. Developed deep capabilities in device connectivity protocols including USB, Bluetooth Classic, and IEEE 11073 personal health device standards.",
+      "milestone2_title": "HX-461 Achieves US FDA 510(K) Class 2 Certification",
+      "milestone2_desc": "Our HX-461 medical device achieved US FDA 510(K) Class 2 clearance, demonstrating our capability to meet the world's most rigorous medical device regulatory standards. This experience with FDA's regulatory framework — from predicate device selection to clinical evaluation — became a foundational competitive advantage.",
+      "milestone3_title": "Hicare Hub Deployed in US VA Projects",
+      "milestone3_desc": "Hicare Hub, our IoT gateway supporting 100+ medical devices via USB, Bluetooth Classic, and BLE, was selected for US VA (Veterans Affairs) healthcare projects. This marked our first major technology export and validated our device connectivity platform on the international stage. Completed HL7 Version 2 interoperability testing for hospital system integration.",
+      "milestone4_title": "RPM/CCM Solution for the US Market",
+      "milestone4_desc": "Leveraging 20+ years of medical device innovation, FDA regulatory experience, and VA deployment credentials, we now develop and supply comprehensive RPM, CCM, AWV, and Value-Based Care solutions actively used in the US healthcare market. Planning FHIR R4 integration building on our HL7v2 interoperability foundation."
+    },
+    "operations": {
+      "eyebrow": "US Operations",
+      "title": "Serving Healthcare Providers Nationwide",
+      "description": "Our US team provides localized support, regulatory expertise, and culturally competent care coordination across the country.",
+      "feature1": "Headquarters in the United States with dedicated local staff",
+      "feature2": "Multilingual care coordinators fluent in 7 languages",
+      "feature3": "24/7 clinical monitoring and technical support",
+      "feature4": "Deep understanding of US healthcare regulations and billing"
+    },
+    "offices": {
+      "eyebrow": "Our Offices",
+      "title": "US Operations",
+      "description": "Two strategically located offices to serve our growing network of healthcare partners.",
+      "irvine_title": "Irvine, CA (Headquarters)",
+      "irvine_address": "7545 Irvine Center Drive, Suite 200, Irvine, CA 92618",
+      "irvine_phone": "(949) 777-7000",
+      "irvine_email": "info@hicarenet.com",
+      "sanjose_title": "San Jose, CA (Engineering)",
+      "sanjose_address": "2025 Gateway Place, Suite 400, San Jose, CA 95110",
+      "sanjose_phone": "(408) 777-8000",
+      "sanjose_email": "engineering@hicarenet.com"
+    },
+    "stats": {
+      "eyebrow": "By the Numbers",
+      "title": "Technology Leadership at a Glance",
+      "clinics": "Contracted Clinics",
+      "patients": "Active Patients",
+      "years": "Years of Device Innovation",
+      "languages": "Languages",
+      "devices": "Device Types Integrated",
+      "uptime": "Platform Uptime"
+    },
+    "team": {
+      "eyebrow": "Leadership",
+      "title": "Meet Our Team",
+      "description": "Experienced leaders combining deep healthcare IT expertise with a passion for improving patient outcomes.",
+      "member1_name": "David Kim",
+      "member1_title": "Chief Executive Officer",
+      "member1_bio": "20+ years leading healthcare IT companies, with a vision of making connected care accessible to every clinic in America.",
+      "member2_name": "Sarah Chen",
+      "member2_title": "Chief Technology Officer",
+      "member2_bio": "Former enterprise architect with experience at leading health tech companies, now driving HicareNet's platform innovation.",
+      "member3_name": "James Park",
+      "member3_title": "Chief Medical Officer",
+      "member3_bio": "Board-certified physician specializing in preventive care, ensuring clinical excellence guides every product decision.",
+      "member4_name": "Michelle Lee",
+      "member4_title": "VP of Operations",
+      "member4_bio": "Expert in healthcare operations and compliance, overseeing client implementation and care management delivery.",
+      "member5_name": "Robert Chang",
+      "member5_title": "VP of Engineering",
+      "member5_bio": "Leading our San Jose engineering team to build HIPAA-compliant, scalable infrastructure for the next generation of connected care.",
+      "member6_name": "Jennifer Yoon",
+      "member6_title": "VP of Business Development",
+      "member6_bio": "Driving strategic partnerships and clinic network expansion, with deep expertise in healthcare reimbursement models.",
+      "ceo": {
+        "title": "Chief Executive Officer",
+        "bio": "Over 25 years of experience in healthcare IT leadership. Previously led digital health initiatives at major health systems in the US and South Korea."
+      },
+      "cto": {
+        "title": "Chief Technology Officer",
+        "bio": "Former engineering director with expertise in FHIR interoperability, cloud architecture, and FDA-regulated software development."
+      },
+      "vp_clinical": {
+        "title": "VP of Clinical Operations",
+        "bio": "Registered Nurse with 18 years of clinical experience. Leads our care coordination team and ensures clinical excellence across all programs."
+      },
+      "vp_business": {
+        "title": "VP of Business Development",
+        "bio": "Extensive background in healthcare B2B sales and partnerships. Specializes in value-based care contracting and provider network development."
+      }
+    },
+    "certifications": {
+      "eyebrow": "Trust & Security",
+      "title": "Industry-Leading Certifications",
+      "description": "We maintain the highest standards of data security and regulatory compliance to protect our partners and their patients."
+    },
+    "certs": {
+      "eyebrow": "Trust & Compliance",
+      "title": "Certifications & Standards",
+      "description": "We maintain the highest standards of data security and privacy compliance to protect patient information.",
+      "hipaa_title": "HIPAA Compliant",
+      "hipaa_desc": "Full compliance with the Health Insurance Portability and Accountability Act, including administrative, physical, and technical safeguards.",
+      "hipaa_renewal": "Annual audit renewal",
+      "iso27001_title": "ISO 27001",
+      "iso27001_desc": "Internationally recognized information security management system standard ensuring systematic protection of sensitive data.",
+      "iso27001_renewal": "Certified through 2027",
+      "iso27701_title": "ISO 27701",
+      "iso27701_desc": "Privacy information management system extension providing a framework for managing and protecting personally identifiable information.",
+      "iso27701_renewal": "Certified through 2027"
+    },
+    "cta": {
+      "headline": "Want to Learn More About HicareNet?",
+      "subtext": "Discover how our FDA 510K-certified device heritage and 100+ device integration platform can support your practice goals.",
+      "cta_primary": "Contact Us",
+      "cta_secondary": "Explore Our Technology"
+    }
+  },
+  "resources": {
+    "hero": {
+      "headline": "Resources & Insights",
+      "subtext": "Stay informed with the latest in healthcare technology, compliance updates, and best practices",
+      "cta": "Browse Articles"
+    },
+    "featured": {
+      "eyebrow": "Featured Article",
+      "readTime": "min read",
+      "category": "RPM",
+      "title": "The Future of Remote Patient Monitoring: 2026 Trends and Predictions",
+      "excerpt": "Explore how AI-driven analytics, wearable devices, and evolving CMS regulations are reshaping the RPM landscape. Learn what healthcare providers need to prepare for in the coming year.",
+      "date": "March 15, 2026"
+    },
+    "blog": {
+      "eyebrow": "Latest Articles",
+      "title": "From Our Blog",
+      "filter_all": "All",
+      "filter_rpm": "RPM",
+      "filter_ccm": "CCM",
+      "filter_awv": "AWV",
+      "filter_vbc": "VBC",
+      "filter_fhir": "FHIR",
+      "filter_compliance": "Compliance",
+      "filter_industry": "Industry News",
+      "loadMore": "Load More Articles",
+      "post1": {
+        "category": "RPM",
+        "title": "5 FDA-Cleared RPM Devices That Are Changing Patient Outcomes",
+        "excerpt": "A comprehensive review of the latest remote monitoring devices and their clinical impact on chronic disease management.",
+        "date": "March 10, 2026"
+      },
+      "post2": {
+        "category": "CCM",
+        "title": "Multilingual Patient Engagement: Breaking Language Barriers in CCM",
+        "excerpt": "How supporting 7+ languages in chronic care management improves patient adherence and health outcomes.",
+        "date": "March 5, 2026"
+      },
+      "post3": {
+        "category": "VBC",
+        "title": "Navigating CMS Value-Based Care Models in 2026",
+        "excerpt": "An overview of the latest CMS payment models and how to position your practice for success in value-based arrangements.",
+        "date": "February 28, 2026"
+      },
+      "post4": {
+        "category": "AWV",
+        "title": "Maximizing Annual Wellness Visit Completion Rates",
+        "excerpt": "Proven strategies to increase AWV scheduling, reduce no-shows, and streamline Health Risk Assessment workflows.",
+        "date": "February 20, 2026"
+      },
+      "post5": {
+        "category": "Industry News",
+        "title": "FHIR R4 Interoperability: What Providers Need to Know",
+        "excerpt": "Understanding the HL7 FHIR standard and how it enables seamless data exchange between healthcare systems.",
+        "date": "February 14, 2026"
+      },
+      "post6": {
+        "category": "RPM",
+        "title": "RPM Billing Guide: CPT Codes and Reimbursement Best Practices",
+        "excerpt": "A detailed walkthrough of RPM-related CPT codes, documentation requirements, and strategies to maximize reimbursement.",
+        "date": "February 7, 2026"
+      }
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter for the latest healthcare technology insights and product updates.",
+      "emailLabel": "Email address",
+      "placeholder": "Enter your email address",
+      "cta": "Subscribe",
+      "disclaimer": "We respect your privacy. Unsubscribe at any time."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our services, billing, and technology."
+    }
+  },
+  "contact": {
+    "hero": {
+      "headline": "Get in Touch",
+      "subtext": "Ready to transform your patient care? Our team is here to help you find the right solution.",
+      "cta": "Fill Out the Form Below"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Full Name",
+      "namePlaceholder": "John Smith",
+      "firstName": "First Name",
+      "firstName_placeholder": "Enter your first name",
+      "lastName": "Last Name",
+      "lastName_placeholder": "Enter your last name",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "email_placeholder": "you@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(555) 123-4567",
+      "phone_placeholder": "(555) 123-4567",
+      "organization": "Organization",
+      "orgPlaceholder": "Your organization name",
+      "organization_placeholder": "Your clinic or health system",
+      "providerType": "Provider Type",
+      "providerSelect": "Select provider type",
+      "providerHospital": "Hospital",
+      "providerClinic": "Clinic",
+      "providerACO": "ACO",
+      "providerSNF": "SNF",
+      "providerOther": "Other",
+      "interest": "Areas of Interest",
+      "interestRPM": "RPM",
+      "interestCCM": "CCM",
+      "interestAWV": "AWV",
+      "interestVBC": "VBC",
+      "interestFHIR": "FHIR Integration",
+      "interestOther": "Other",
+      "interest_placeholder": "Select an area of interest",
+      "interest_rpm": "Remote Patient Monitoring (RPM)",
+      "interest_ccm": "Chronic Care Management (CCM)",
+      "interest_awv": "Annual Wellness Visits (AWV)",
+      "interest_vbc": "Value-Based Care",
+      "interest_fhir": "FHIR Integration",
+      "interest_general": "General Inquiry",
+      "role": "Your Role",
+      "role_placeholder": "Select your role",
+      "role_physician": "Physician",
+      "role_administrator": "Practice Administrator",
+      "role_nurse": "Nurse / Clinical Staff",
+      "role_it": "IT / Technical Staff",
+      "role_other": "Other",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your needs...",
+      "message_placeholder": "Tell us about your needs and how we can help...",
+      "submit": "Send Message",
+      "success_title": "Message Sent!",
+      "success_message": "Thank you for reaching out. Our team will respond within 1 business day.",
+      "error_required": "This field is required",
+      "error_email": "Please enter a valid email address"
+    },
+    "quickInfo": {
+      "title": "Quick Contact",
+      "email": "info@hicarenet.com",
+      "phone": "(800) 555-0123",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "hoursLabel": "Business Hours",
+      "hoursValue": "Mon-Fri 8:00 AM - 6:00 PM PT"
+    },
+    "offices": {
+      "eyebrow": "Our Offices",
+      "title": "Office Locations",
+      "hqBadge": "Headquarters",
+      "engBadge": "Engineering",
+      "irvineTitle": "Irvine, CA",
+      "irvineAddress": "123 Innovation Drive, Suite 400\nIrvine, CA 92618",
+      "sanjoseTitle": "San Jose, CA",
+      "sanjoseAddress": "456 Tech Park Way, Suite 200\nSan Jose, CA 95134",
+      "us": {
+        "name": "US Headquarters",
+        "address": "123 Healthcare Blvd, Suite 400",
+        "city": "Los Angeles, CA 90001"
+      },
+      "kr": {
+        "name": "Korea Office (Hicare)",
+        "address": "456 Gangnam-daero, Gangnam-gu",
+        "city": "Seoul, South Korea 06123"
+      }
+    },
+    "support": {
+      "title": "Support Hours",
+      "text": "Our clinical support team is available Monday through Friday, 8:00 AM to 6:00 PM Pacific Time. For urgent technical issues outside business hours, please email support@hicare.net and our on-call team will respond within 2 hours.",
+      "clinical": "Clinical Support: 24/7",
+      "technical": "Technical Support: Mon-Fri, 8AM-8PM EST",
+      "sales": "Sales Inquiries: Mon-Fri, 9AM-6PM EST"
+    }
+  },
+  "compliance": {
+    "hero": {
+      "headline": "Security, Compliance & FDA Certification",
+      "subtext": "From US FDA 510K Class 2 device certification to HIPAA compliance and ISO standards — HicareNet's regulatory expertise is built into our DNA.",
+      "cta": "View Our Certifications"
+    },
+    "fda510k": {
+      "eyebrow": "FDA Certification",
+      "name": "FDA 510K Class 2",
+      "title": "US FDA 510K Certification",
+      "description": "Our HX-461 medical device holds US FDA 510K Class 2 certification, demonstrating our direct experience with the FDA regulatory process. This firsthand expertise in navigating FDA requirements sets HicareNet apart from software-only healthcare companies.",
+      "feature1": "Direct experience with US FDA 510(K) regulatory submission — from predicate device identification under 21 CFR § 870 to clinical evaluation and eSTAR electronic submission",
+      "feature2": "Class 2 medical device certification — the same regulatory category as patient monitors, cardiac monitors, and clinical diagnostic equipment",
+      "feature3": "Regulatory expertise transferable to international certifications — FDA clearance accelerates approval processes in EU (CE/MDR), Japan (PMDA), and other markets",
+      "feature4": "Foundation technology powering Hicare Hub, now deployed in US VA (Veterans Affairs) healthcare projects serving 72,000+ patients nationwide"
+    },
+    "hipaa": {
+      "eyebrow": "Healthcare Standard",
+      "name": "HIPAA Compliant",
+      "title": "HIPAA Compliance",
+      "description": "Our platform is fully compliant with the Health Insurance Portability and Accountability Act, ensuring the privacy and security of all protected health information (PHI).",
+      "feature1": "End-to-end encryption for all PHI data in transit and at rest",
+      "feature2": "Role-based access controls with multi-factor authentication",
+      "feature3": "Comprehensive audit logging and monitoring",
+      "feature4": "Regular risk assessments and vulnerability scanning",
+      "feature5": "Business Associate Agreements (BAA) with all partners",
+      "feature6": "Incident response plan with 24-hour breach notification"
+    },
+    "iso27001": {
+      "eyebrow": "Information Security",
+      "name": "ISO 27001",
+      "title": "ISO 27001 Certified",
+      "description": "Our Information Security Management System (ISMS) is certified to ISO 27001, the international standard for information security management.",
+      "auditDate": "Last audit: December 2025",
+      "feature1": "Systematic approach to managing sensitive information",
+      "feature2": "Continuous risk assessment and treatment processes",
+      "feature3": "Regular internal and external audits",
+      "feature4": "Defined information security policies and procedures"
+    },
+    "iso27701": {
+      "eyebrow": "Privacy Management",
+      "name": "ISO 27701",
+      "title": "ISO 27701 Certified",
+      "description": "Our Privacy Information Management System (PIMS) extends our ISO 27001 certification with privacy-specific controls under ISO 27701.",
+      "auditDate": "Last audit: December 2025",
+      "feature1": "Privacy-by-design principles in all data processing",
+      "feature2": "Comprehensive data subject rights management",
+      "feature3": "Privacy impact assessments for new processing activities",
+      "feature4": "Transparent data processing documentation"
+    },
+    "security": {
+      "eyebrow": "Security Practices",
+      "title": "How We Protect Your Data",
+      "description": "Our multi-layered security approach ensures your data is protected at every level.",
+      "encryption_title": "Encryption",
+      "encryption_desc": "AES-256 encryption at rest and TLS 1.3 in transit for all data",
+      "access_title": "Access Control",
+      "access_desc": "Role-based permissions with MFA and principle of least privilege",
+      "monitoring_title": "Monitoring",
+      "monitoring_desc": "24/7 security monitoring with automated threat detection and response",
+      "backup_title": "Disaster Recovery",
+      "backup_desc": "Geo-redundant backups with 99.9% uptime SLA and rapid recovery procedures",
+      "infra_title": "Infrastructure",
+      "infra_desc": "Hosted on HIPAA-eligible cloud infrastructure with SOC 2 Type II compliance. Physically secure data centers with 99.99% uptime SLA.",
+      "incident_title": "Incident Response",
+      "incident_desc": "Documented incident response plan with defined escalation paths. 24-hour breach notification commitment and regular tabletop exercises."
+    },
+    "faq": {
+      "eyebrow": "Compliance FAQ",
+      "title": "Common Compliance Questions",
+      "q1": {
+        "question": "Do you sign Business Associate Agreements (BAA)?",
+        "answer": "Yes. We execute BAAs with all covered entities and business associates before any PHI is shared. Our standard BAA covers all services and can be customized to meet your organization's requirements."
+      },
+      "q2": {
+        "question": "How often are your security certifications audited?",
+        "answer": "Our ISO 27001 and ISO 27701 certifications undergo annual surveillance audits and full recertification every three years by an accredited third-party auditor. HIPAA compliance assessments are conducted annually."
+      },
+      "q3": {
+        "question": "Where is patient data stored?",
+        "answer": "All patient data is stored in HIPAA-compliant, SOC 2 Type II certified data centers located within the United States. We use geo-redundant storage to ensure data availability and disaster recovery."
+      },
+      "q4": {
+        "question": "How does HicareNet handle data breach notification?",
+        "answer": "We maintain a comprehensive incident response plan that includes immediate containment, forensic investigation, and notification procedures. In compliance with HIPAA and state regulations, we notify affected covered entities within 24 hours of discovering a confirmed breach, and provide full support throughout the remediation process."
+      }
+    },
+    "cta": {
+      "headline": "Have Compliance Questions?",
+      "subtext": "Our security team is available to discuss your compliance requirements and answer any questions about our certifications.",
+      "cta_primary": "Contact Our Security Team",
+      "cta_secondary": "Download Security Whitepaper"
+    }
+  },
+  "faq": {
+    "categories": {
+      "general": "General",
+      "billing": "Billing & Reimbursement",
+      "technical": "Technical"
+    },
+    "general": {
+      "q1": {
+        "question": "What services does HicareNet provide?",
+        "answer": "HicareNet provides comprehensive healthcare technology solutions built on 20+ years of medical device innovation. Our offerings include Remote Patient Monitoring (RPM), Chronic Care Management (CCM), Annual Wellness Visits (AWV), and Value-Based Care support. Powered by our FDA 510K-certified device heritage, Hicare Hub IoT gateway with 100+ device integrations, and Hicare M mobile monitoring, our platform delivers multilingual care coordination in 7 languages, automated Health Risk Assessments, and quality measure tracking."
+      },
+      "q2": {
+        "question": "Which types of healthcare practices do you work with?",
+        "answer": "We work with a wide range of healthcare providers including primary care clinics, specialty practices, Federally Qualified Health Centers (FQHCs), Accountable Care Organizations (ACOs), Skilled Nursing Facilities (SNFs), and health systems of all sizes. Our solutions are designed to scale from solo practices to large multi-site organizations."
+      },
+      "q3": {
+        "question": "How long does it take to implement your solutions?",
+        "answer": "Our streamlined onboarding process typically takes 8 weeks from initial discovery to go-live. This includes practice assessment, platform configuration, staff training, and dedicated launch support. Complex multi-site implementations may require additional time, which we plan during the discovery phase."
+      }
+    },
+    "billing": {
+      "q1": {
+        "question": "What CPT codes can I bill with HicareNet services?",
+        "answer": "Our RPM program supports CPT codes 99453, 99454, 99457, and 99458. CCM services use CPT codes 99490, 99491, 99487, and 99489. Annual Wellness Visits are billed under G0438 (initial) and G0439 (subsequent). Our billing support team helps ensure you capture all eligible reimbursement."
+      },
+      "q2": {
+        "question": "Do you provide billing and coding support?",
+        "answer": "Yes. Our team includes certified medical coders who provide documentation guidance, coding support, and claims assistance. We also offer real-time billing dashboards so you can track reimbursement across all programs and identify revenue optimization opportunities."
+      }
+    },
+    "technical": {
+      "q1": {
+        "question": "What monitoring devices do you support?",
+        "answer": "Through our Hicare Hub IoT gateway, we support 100+ medical device types including blood pressure monitors, pulse oximeters, glucose meters, weight scales, thermometers, and more. Our device connectivity platform — built on the same technology heritage as our FDA 510K-certified HX-461 — uses cellular or Bluetooth connectivity for automatic data transmission. We ship devices directly to patients with simple setup instructions in their preferred language."
+      },
+      "q2": {
+        "question": "Can your platform integrate with our EHR system?",
+        "answer": "We currently offer integration capabilities with major EHR systems through standard interfaces. Our upcoming FHIR R4 integration (launching H2 2026) will provide seamless bidirectional data exchange with all ONC-certified EHR systems, enabling real-time clinical data synchronization."
+      }
+    }
+  },
+  "testimonials": {
+    "1": {
+      "quote": "HicareNet's RPM solution has transformed how we manage our chronic disease patients. Hospital readmissions dropped 35% in the first year, and our patients feel more connected to their care team.",
+      "role": "Family Medicine Physician"
+    },
+    "2": {
+      "quote": "The multilingual care coordination is a game-changer for our diverse patient population. Our CCM enrollment increased by 60% once patients could communicate in their preferred language.",
+      "role": "Clinical Operations Director"
+    },
+    "3": {
+      "quote": "We went from completing 40 AWVs per month to over 120 with HicareNet's automated HRA system. The efficiency gains have been remarkable, and our Medicare wellness revenue doubled.",
+      "role": "Internal Medicine Physician & Practice Owner"
+    }
+  },
+  "stats": {
+    "clinics": { "label": "Contracted Clinics" },
+    "patients": { "label": "Active Patients" },
+    "years": { "label": "Years of Medical Device Innovation" },
+    "languages": { "label": "Languages Supported" },
+    "devices": { "label": "Device Types Integrated" },
+    "uptime": { "label": "Platform Uptime" },
+    "fda": { "label": "FDA 510K Certified Device" },
+    "va_projects": { "label": "US VA Project Deployed" }
+  },
+  "footer": {
+    "description": "From FDA 510(K) certified medical devices to cloud-based RPM/CCM solutions — 20+ years of healthcare technology innovation, proven across global markets.",
+    "solutions": "Solutions",
+    "company": "Company",
+    "resources": "Resources",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

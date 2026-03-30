@@ -1,0 +1,22 @@
+{
+  "partners": [
+    {
+      "id": "partner-medtech",
+      "name": "MedTech Devices Inc.",
+      "logo": "/assets/images/partners/medtech-devices.png",
+      "url": "https://example.com/medtech"
+    },
+    {
+      "id": "partner-healthbridge",
+      "name": "HealthBridge EHR",
+      "logo": "/assets/images/partners/healthbridge-ehr.png",
+      "url": "https://example.com/healthbridge"
+    },
+    {
+      "id": "partner-carelink",
+      "name": "CareLink Solutions",
+      "logo": "/assets/images/partners/carelink-solutions.png",
+      "url": "https://example.com/carelink"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+/* ============================================
+   Solutions Page Specific Styles
+   ============================================ */
+
+/* ---------- Split Layout ---------- */
+
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .split {
+    flex-direction: row;
+    gap: var(--space-6);
+  }
+}
+
+.split__media,
+.split__content {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .split__media,
+  .split__content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+}
+
+/* Image placeholder */
+.split__placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, var(--color-primary-100), var(--color-primary-200));
+  border-radius: var(--card-radius);
+}
+
+/* Color variants for about page story blocks */
+.split__placeholder--warm {
+  background: linear-gradient(135deg, #FDE8D0, #F5C89A);
+}
+
+.split__placeholder--cool {
+  background: linear-gradient(135deg, var(--color-primary-50), var(--color-primary-200));
+}
+
+.split__placeholder--accent {
+  background: linear-gradient(135deg, var(--color-secondary-50), var(--color-secondary-200));
+}
+
+/* Description text in split layouts */
+.split__desc {
+  font-size: var(--text-base);
+  color: var(--color-neutral-500);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+@media (min-width: 1024px) {
+  .split__desc {
+    font-size: var(--text-lg);
+  }
+}
+
+/* Image ordering variants */
+@media (min-width: 768px) {
+  .split--image-left .split__media {
+    order: 0;
+  }
+
+  .split--image-left .split__content {
+    order: 1;
+  }
+
+  .split--image-right .split__content {
+    order: 0;
+  }
+
+  .split--image-right .split__media {
+    order: 1;
+  }
+}
+
+/* Section title left-aligned within split */
+.split .section__title {
+  text-align: left;
+}
+
+.split .section__eyebrow {
+  text-align: left;
+}
+
+/* ---------- Feature List ---------- */
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.feature-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--text-base);
+  color: var(--color-neutral-700);
+  line-height: var(--leading-normal);
+}
+
+.feature-list__icon {
+  flex-shrink: 0;
+  color: var(--color-secondary-500);
+  margin-top: 2px;
+}
+
+/* ---------- CPT Codes ---------- */
+
+.cpt-codes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.cpt-codes__label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-neutral-600);
+}
+
+.cpt-code {
+  display: inline-block;
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-700);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 4px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  font-family: var(--font-mono);
+}
+
+/* ---------- Timeline (Vertical - FHIR) ---------- */
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-5);
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-primary-200);
+}
+
+.timeline__item {
+  position: relative;
+  display: flex;
+  gap: var(--space-4);
+  padding-bottom: var(--space-6);
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+/* Circle marker */
+.timeline__marker {
+  position: absolute;
+  left: calc(-1 * var(--space-5));
+  top: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-primary-500);
+  border: 3px solid var(--color-neutral-0);
+  box-shadow: 0 0 0 2px var(--color-primary-200);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline__content {
+  flex: 1;
+}
+
+.timeline__date {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary-500);
+  margin-bottom: var(--space-1);
+}
+
+.timeline__title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--color-neutral-800);
+  margin-bottom: var(--space-2);
+}
+
+.timeline__desc {
+  font-size: var(--text-base);
+  color: var(--color-neutral-500);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---------- Timeline Horizontal (Implementation) ---------- */
+
+.timeline--horizontal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .timeline--horizontal {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .timeline--horizontal {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-5);
+  }
+}
+
+/* Implementation step card */
+.impl-step {
+  text-align: center;
+  background-color: var(--color-neutral-0);
+  border-radius: var(--card-radius);
+  padding: var(--space-5) var(--space-4);
+  box-shadow: var(--shadow-base);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  position: relative;
+}
+
+.impl-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Numbered circle */
+.impl-step__number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-primary-500);
+  color: var(--text-on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  margin: 0 auto var(--space-3);
+}
+
+.impl-step__title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--color-neutral-800);
+  margin-bottom: var(--space-1);
+}
+
+.impl-step__duration {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary-500);
+  margin-bottom: var(--space-2);
+}
+
+.impl-step__desc {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-500);
+  line-height: var(--leading-normal);
+}
+
+/* Arrow connectors between steps (desktop only) */
+@media (min-width: 1024px) {
+  .impl-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: calc(-1 * var(--space-5) / 2 - 8px);
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid var(--color-primary-300);
+  }
+}
+
+/* ---------- Solutions Hero Height Override ---------- */
+
+.hero--solutions {
+  min-height: 50vh;
+}
+
+@media (min-width: 1024px) {
+  .hero--solutions {
+    min-height: 55vh;
+  }
+}
+
+.hero--solutions .hero__content {
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero--solutions .hero__headline {
+  max-width: 100%;
+}
+
+.hero--solutions .hero__subtext {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero--solutions .hero__cta {
+  justify-content: center;
+}
+
+/* ---------- Section spacing for split layouts ---------- */
+
+.split + .split {
+  margin-top: var(--space-7);
+}
+
+@media (min-width: 1024px) {
+  .split + .split {
+    margin-top: var(--space-8);
+  }
+}

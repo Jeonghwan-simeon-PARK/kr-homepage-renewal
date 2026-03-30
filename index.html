@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HicareNet Homepage Renewal - UX Comparison</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #F7F9FC;
+      color: #1D2433;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #062F4C;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: #667085;
+      margin-bottom: 48px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .card--active {
+      border: 2px solid #1A8FD8;
+    }
+    .card--soon {
+      opacity: 0.5;
+      pointer-events: none;
+      border: 2px dashed #D9DEE7;
+    }
+    .card__version {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #1A8FD8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .card__title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .card__desc {
+      font-size: 0.875rem;
+      color: #667085;
+      line-height: 1.6;
+    }
+    .card__badge {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .badge--live { background: #E6F9EF; color: #1E8751; }
+    .badge--soon { background: #EEF1F6; color: #8D97A5; }
+    .footer {
+      font-size: 0.75rem;
+      color: #8D97A5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HicareNet Homepage Renewal</h1>
+    <p class="subtitle">하이케어넷 홈페이지 리뉴얼 UX 비교</p>
+
+    <div class="grid">
+      <a href="v1/index.html" class="card card--active">
+        <div class="card__version">Version 1</div>
+        <div class="card__title">Technology Leadership</div>
+        <p class="card__desc">기술 리더십 중심 — HX-461 FDA 인증, Hicare Hub 100+ 의료기기 연동, Hanwha Ocean ESG 스타일 UX</p>
+        <span class="card__badge badge--live">Live</span>
+      </a>
+
+      <div class="card card--soon">
+        <div class="card__version">Version 2</div>
+        <div class="card__title">Coming Soon</div>
+        <p class="card__desc">두 번째 UX 디자인 방향</p>
+        <span class="card__badge badge--soon">Upcoming</span>
+      </div>
+
+      <div class="card card--soon">
+        <div class="card__version">Version 3</div>
+        <div class="card__title">Coming Soon</div>
+        <p class="card__desc">세 번째 UX 디자인 방향</p>
+        <span class="card__badge badge--soon">Upcoming</span>
+      </div>
+    </div>
+
+    <p class="footer">&copy; 2026 HicareNet, Inc.</p>
+  </div>
+</body>
+</html>

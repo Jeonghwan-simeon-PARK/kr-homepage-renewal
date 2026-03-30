@@ -1,0 +1,57 @@
+{
+  "categories": [
+    {
+      "id": "general",
+      "name_key": "faq.categories.general",
+      "questions": [
+        {
+          "id": "general-1",
+          "question_key": "faq.general.q1.question",
+          "answer_key": "faq.general.q1.answer"
+        },
+        {
+          "id": "general-2",
+          "question_key": "faq.general.q2.question",
+          "answer_key": "faq.general.q2.answer"
+        },
+        {
+          "id": "general-3",
+          "question_key": "faq.general.q3.question",
+          "answer_key": "faq.general.q3.answer"
+        }
+      ]
+    },
+    {
+      "id": "billing",
+      "name_key": "faq.categories.billing",
+      "questions": [
+        {
+          "id": "billing-1",
+          "question_key": "faq.billing.q1.question",
+          "answer_key": "faq.billing.q1.answer"
+        },
+        {
+          "id": "billing-2",
+          "question_key": "faq.billing.q2.question",
+          "answer_key": "faq.billing.q2.answer"
+        }
+      ]
+    },
+    {
+      "id": "technical",
+      "name_key": "faq.categories.technical",
+      "questions": [
+        {
+          "id": "technical-1",
+          "question_key": "faq.technical.q1.question",
+          "answer_key": "faq.technical.q1.answer"
+        },
+        {
+          "id": "technical-2",
+          "question_key": "faq.technical.q2.question",
+          "answer_key": "faq.technical.q2.answer"
+        }
+      ]
+    }
+  ]
+}

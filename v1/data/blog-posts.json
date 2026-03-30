@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": "rpm-benefits-2026",
+      "slug": "top-benefits-of-remote-patient-monitoring",
+      "title_key": "resources.blog.post1.title",
+      "excerpt_key": "resources.blog.post1.excerpt",
+      "category": "rpm",
+      "date": "2026-03-15",
+      "read_time": 6,
+      "featured": true,
+      "image": "/assets/images/blog/rpm-benefits.jpg"
+    },
+    {
+      "id": "ccm-best-practices",
+      "slug": "ccm-best-practices-for-chronic-care",
+      "title_key": "resources.blog.post2.title",
+      "excerpt_key": "resources.blog.post2.excerpt",
+      "category": "ccm",
+      "date": "2026-03-01",
+      "read_time": 8,
+      "featured": false,
+      "image": "/assets/images/blog/ccm-best-practices.jpg"
+    },
+    {
+      "id": "awv-automation",
+      "slug": "automating-annual-wellness-visits",
+      "title_key": "resources.blog.post3.title",
+      "excerpt_key": "resources.blog.post3.excerpt",
+      "category": "awv",
+      "date": "2026-02-18",
+      "read_time": 5,
+      "featured": false,
+      "image": "/assets/images/blog/awv-automation.jpg"
+    },
+    {
+      "id": "vbc-quality-measures",
+      "slug": "quality-measures-that-matter-in-vbc",
+      "title_key": "resources.blog.post4.title",
+      "excerpt_key": "resources.blog.post4.excerpt",
+      "category": "vbc",
+      "date": "2026-02-05",
+      "read_time": 7,
+      "featured": false,
+      "image": "/assets/images/blog/vbc-quality-measures.jpg"
+    },
+    {
+      "id": "fhir-interoperability",
+      "slug": "fhir-r4-and-the-future-of-healthcare-interoperability",
+      "title_key": "resources.blog.post5.title",
+      "excerpt_key": "resources.blog.post5.excerpt",
+      "category": "fhir",
+      "date": "2026-01-22",
+      "read_time": 9,
+      "featured": true,
+      "image": "/assets/images/blog/fhir-interoperability.jpg"
+    },
+    {
+      "id": "hipaa-compliance-tips",
+      "slug": "hipaa-compliance-tips-for-digital-health",
+      "title_key": "resources.blog.post6.title",
+      "excerpt_key": "resources.blog.post6.excerpt",
+      "category": "compliance",
+      "date": "2026-01-10",
+      "read_time": 6,
+      "featured": false,
+      "image": "/assets/images/blog/hipaa-compliance.jpg"
+    }
+  ]
+}

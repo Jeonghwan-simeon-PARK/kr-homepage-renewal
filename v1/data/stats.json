@@ -1,0 +1,46 @@
+{
+  "stats": [
+    {
+      "id": "clinics",
+      "value": 200,
+      "suffix": "+",
+      "label_key": "stats.clinics.label",
+      "icon": "building"
+    },
+    {
+      "id": "patients",
+      "value": 15000,
+      "suffix": "+",
+      "label_key": "stats.patients.label",
+      "icon": "heart"
+    },
+    {
+      "id": "years",
+      "value": 20,
+      "suffix": "+",
+      "label_key": "stats.years.label",
+      "icon": "calendar"
+    },
+    {
+      "id": "languages",
+      "value": 7,
+      "suffix": "",
+      "label_key": "stats.languages.label",
+      "icon": "globe"
+    },
+    {
+      "id": "devices",
+      "value": 50,
+      "suffix": "+",
+      "label_key": "stats.devices.label",
+      "icon": "smartphone"
+    },
+    {
+      "id": "uptime",
+      "value": 99.9,
+      "suffix": "%",
+      "label_key": "stats.uptime.label",
+      "icon": "shield"
+    }
+  ]
+}
