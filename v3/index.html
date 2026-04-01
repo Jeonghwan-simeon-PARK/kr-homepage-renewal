@@ -28,7 +28,7 @@
         <span class="material-symbols-outlined icon-sm">call</span>
         <span>855.844.8300</span>
       </div>
-      <a href="/src/v3/contact.html">Contact</a>
+      <a href="contact.html">Contact</a>
       <a href="#" class="topbar__utility-login">
         <span class="material-symbols-outlined icon-sm">login</span>
         Provider Login
@@ -37,17 +37,19 @@
 
     <!-- Main Navigation -->
     <header class="topbar__header">
-      <a href="/src/v3/index.html" class="topbar__logo">HicareNet</a>
+      <a href="index.html" class="topbar__logo">HicareNet</a>
 
       <nav class="topbar__nav" aria-label="Main navigation">
-        <a href="/src/v3/index.html" class="topbar__nav-link is-active">Home</a>
-        <a href="/src/v3/solutions.html" class="topbar__nav-link">Solutions</a>
-        <a href="/src/v3/resources.html" class="topbar__nav-link">Resources</a>
-        <a href="/src/v3/about.html" class="topbar__nav-link">About Us</a>
+        <a href="index.html" class="topbar__nav-link is-active" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="topbar__nav-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="about.html" class="topbar__nav-link" data-i18n="nav.about">About Us</a>
+        <a href="compliance.html" class="topbar__nav-link" data-i18n="nav.compliance">Compliance</a>
+        <a href="resources.html" class="topbar__nav-link" data-i18n="nav.resources">Resources</a>
       </nav>
 
       <div class="flex items-center gap-4">
-        <a href="/src/v3/contact.html" class="btn btn--primary topbar__cta-desktop">Book a Demo Now!</a>
+        <button class="topbar__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
+        <a href="contact.html" class="btn btn--primary topbar__cta-desktop" data-i18n="nav.contact">Book a Demo Now!</a>
         <!-- Mobile Hamburger -->
         <button class="topbar__hamburger" aria-label="Open menu" aria-expanded="false">
           <span class="material-symbols-outlined">menu</span>
@@ -58,11 +60,12 @@
     <!-- Mobile Menu Overlay -->
     <nav class="topbar__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
       <div class="topbar__mobile-menu-inner">
-        <a href="/src/v3/index.html" class="topbar__mobile-link is-active">Home</a>
-        <a href="/src/v3/solutions.html" class="topbar__mobile-link">Solutions</a>
-        <a href="/src/v3/resources.html" class="topbar__mobile-link">Resources</a>
-        <a href="/src/v3/about.html" class="topbar__mobile-link">About Us</a>
-        <a href="/src/v3/contact.html" class="btn btn--primary" style="margin-top: var(--space-4); text-align: center;">Book a Demo Now!</a>
+        <a href="index.html" class="topbar__mobile-link is-active" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="topbar__mobile-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="about.html" class="topbar__mobile-link" data-i18n="nav.about">About Us</a>
+        <a href="compliance.html" class="topbar__mobile-link" data-i18n="nav.compliance">Compliance</a>
+        <a href="resources.html" class="topbar__mobile-link" data-i18n="nav.resources">Resources</a>
+        <a href="contact.html" class="btn btn--primary" style="margin-top: var(--space-4); text-align: center;" data-i18n="nav.contact">Book a Demo Now!</a>
       </div>
     </nav>
   </div>
@@ -85,17 +88,17 @@
 
       <div class="hero__content">
         <div class="hero__inner">
-          <span class="hero__badge">Reimagining Patient Care</span>
-          <h1 class="hero__title">
-            Hicare — Innovative<br>Connected Care Management Service
+          <span class="hero__badge" data-i18n="home.hero.badge">Reimagining Patient Care</span>
+          <h1 class="hero__title" data-i18n="home.hero.title">
+            Hicare — Innovative Connected Care Management Service
           </h1>
-          <p class="hero__subtitle">
+          <p class="hero__subtitle" data-i18n="home.hero.subtitle">
             Connecting providers and patients through intelligent monitoring,
             seamless logistics, and human-centric technology.
           </p>
           <div class="hero__actions">
-            <a href="/src/v3/solutions.html" class="btn btn--hero-primary rounded-full">View Solutions</a>
-            <a href="/src/v3/about.html" class="btn btn--hero-outline rounded-full">Our Story</a>
+            <a href="solutions.html" class="btn btn--hero-primary rounded-full" data-i18n="home.hero.cta1">View Solutions</a>
+            <a href="about.html" class="btn btn--hero-outline rounded-full" data-i18n="home.hero.cta2">Our Story</a>
           </div>
         </div>
       </div>
@@ -108,7 +111,7 @@
     <section class="section bg-surface">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-header__title">What Hicare Does</h2>
+          <h2 class="section-header__title" data-i18n="home.does.title">What Hicare Does</h2>
           <div class="section-header__accent"></div>
         </div>
 
@@ -116,16 +119,16 @@
           <!-- Bridging the Gap (large card) -->
           <div class="card card--white card--feature md:col-span-8">
             <div class="relative z-10">
-              <h3 class="card__title card__title--lg">Bridging the Gap</h3>
-              <p class="card__text max-w-md">
+              <h3 class="card__title card__title--lg" data-i18n="home.does.bridge.title">Bridging the Gap</h3>
+              <p class="card__text max-w-md" data-i18n="home.does.bridge.desc">
                 We simplify complex RPM workflows into a single, intuitive platform that monitors,
                 alerts, and manages patient data in real-time with 120+ compatible medical devices.
               </p>
             </div>
             <div class="flex gap-4 mt-12 relative z-10">
-              <span class="tag">Real-time Data</span>
-              <span class="tag">Automated Alerts</span>
-              <span class="tag">120+ Devices</span>
+              <span class="tag" data-i18n="home.does.bridge.tag1">Real-time Data</span>
+              <span class="tag" data-i18n="home.does.bridge.tag2">Automated Alerts</span>
+              <span class="tag" data-i18n="home.does.bridge.tag3">120+ Devices</span>
             </div>
             <div class="card__glow"></div>
           </div>
@@ -133,8 +136,8 @@
           <!-- Actionable Insights -->
           <div class="card card--primary md:col-span-4">
             <span class="material-symbols-outlined card__icon">analytics</span>
-            <h3 class="card__title">Actionable Insights</h3>
-            <p class="card__text">
+            <h3 class="card__title" data-i18n="home.does.insights.title">Actionable Insights</h3>
+            <p class="card__text" data-i18n="home.does.insights.desc">
               Transform raw data into clinical decisions with AI-powered automated reporting
               and Medicare billing integration.
             </p>
@@ -143,8 +146,8 @@
           <!-- Clinical Support -->
           <div class="card card--secondary md:col-span-4">
             <span class="material-symbols-outlined card__icon">clinical_notes</span>
-            <h3 class="card__title">Clinical Support</h3>
-            <p class="card__text">
+            <h3 class="card__title" data-i18n="home.does.clinical.title">Clinical Support</h3>
+            <p class="card__text" data-i18n="home.does.clinical.desc">
               Dedicated specialists ready to assist your team in patient onboarding,
               device logistics, and 24/7 technical support.
             </p>
@@ -154,8 +157,8 @@
           <div class="card card--low md:col-span-8" style="display: flex; flex-direction: column; gap: var(--space-8);">
             <div style="display: flex; flex-direction: column; gap: var(--space-8);" class="solutions-row">
               <div class="flex-1">
-                <h3 class="card__title card__title--lg">Global Reach, Local Touch</h3>
-                <p class="card__text" style="font-size: var(--text-lg);">
+                <h3 class="card__title card__title--lg" data-i18n="home.does.global.title">Global Reach, Local Touch</h3>
+                <p class="card__text" style="font-size: var(--text-lg);" data-i18n="home.does.global.desc">
                   Serving 40+ hospitals across California with device logistics, patient education,
                   and localized support. Expanding to the East Coast, Italy, and France.
                 </p>
@@ -187,10 +190,10 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi9JEXETAAYEDj1zyhb08ZEWKFPXAHlJ5qSScA4I2BNneOtewVGVhqeVoEvtqmFXjodcCxEjLqSORQTT8A_9OjPhCFDVqwC92JRckGF2iN7mD4sIVlUxnWXb8YahF21goc9yg95E4eyrfXGg10K5oFTO6_pnxGWc65sAxMexoE2wRJ3Itn9UBNjJci1U-L0hr6EZGV2ohI56Wpx39xz9xRil-nvf4ULD0WbROwhIn5fF2QL-xztl6NWFO5t64ps7bcjnUaITv0vIeF"
                 alt="Professional healthcare provider having a warm, caring conversation with an elderly patient"
               >
-              <span class="solution-col__label">For Providers</span>
+              <span class="solution-col__label" data-i18n="home.provides.providers.label">For Providers</span>
             </div>
-            <h3 class="solution-col__title">Scale Your Practice Efficiency</h3>
-            <p class="solution-col__text">
+            <h3 class="solution-col__title" data-i18n="home.provides.providers.title">Scale Your Practice Efficiency</h3>
+            <p class="solution-col__text" data-i18n="home.provides.providers.desc">
               Reduce administrative burden with automated CPT coding, AI-generated reports,
               and seamless Medicare RPM/CCM reimbursement tracking. Monitor thousands of
               patients with the same overhead as a dozen.
@@ -198,18 +201,18 @@
             <ul class="checklist mb-10">
               <li class="checklist__item">
                 <span class="material-symbols-outlined">check_circle</span>
-                Automated CPT Coding &amp; Billing
+                <span data-i18n="home.provides.providers.check1">Automated CPT Coding &amp; Billing</span>
               </li>
               <li class="checklist__item">
                 <span class="material-symbols-outlined">check_circle</span>
-                AI-Powered Report Generation
+                <span data-i18n="home.provides.providers.check2">AI-Powered Report Generation</span>
               </li>
               <li class="checklist__item">
                 <span class="material-symbols-outlined">check_circle</span>
-                Seamless API &amp; EHR Integration
+                <span data-i18n="home.provides.providers.check3">Seamless API &amp; EHR Integration</span>
               </li>
             </ul>
-            <a href="/src/v3/solutions.html" class="link-arrow">
+            <a href="solutions.html" class="link-arrow" data-i18n="home.provides.providers.cta">
               Explore Provider Solutions
               <span class="material-symbols-outlined">arrow_forward</span>
             </a>
@@ -222,10 +225,10 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeGjKHSgWBqcTTOt_WzltjQOuVpglghlh7g4W0x2LenYjUbiyaQqnxJaJS6LVSkO6b7Gkv35QMLFkzD2vrukFo0fcrpuMo_NRZtKNan-M-dGXItjPehVv-HemL1WfVGDSDeNWZSXf2_-25RD_Sf1u86tG1WtkmCY4jKKFEc3ZEeZgEq1k5EUYytURWOB2hMHvStuYWUkU-a-CjbHBIqNnC2dwCrpmUkzgfHqZ4AYJqAbOoUHYub636KD8hZ2JCd7p6DF6k54HKnWvP"
                 alt="Professional doctor conducting a remote consultation on laptop"
               >
-              <span class="solution-col__label">For Patients</span>
+              <span class="solution-col__label" data-i18n="home.provides.patients.label">For Patients</span>
             </div>
-            <h3 class="solution-col__title">Care That Follows You Home</h3>
-            <p class="solution-col__text">
+            <h3 class="solution-col__title" data-i18n="home.provides.patients.title">Care That Follows You Home</h3>
+            <p class="solution-col__text" data-i18n="home.provides.patients.desc">
               Receive FDA-approved, Bluetooth-enabled devices that work right out of the box.
               Stay connected to your clinical team with voice-guided measurements and
               an elder-friendly mobile app.
@@ -233,18 +236,18 @@
             <ul class="checklist mb-10">
               <li class="checklist__item">
                 <span class="material-symbols-outlined">check_circle</span>
-                Plug-and-Play FDA Devices
+                <span data-i18n="home.provides.patients.check1">Plug-and-Play FDA Devices</span>
               </li>
               <li class="checklist__item">
                 <span class="material-symbols-outlined">check_circle</span>
-                Voice-Guided, Elder-Friendly App
+                <span data-i18n="home.provides.patients.check2">Voice-Guided, Elder-Friendly App</span>
               </li>
               <li class="checklist__item">
                 <span class="material-symbols-outlined">check_circle</span>
-                Multi-Language Support
+                <span data-i18n="home.provides.patients.check3">Multi-Language Support</span>
               </li>
             </ul>
-            <a href="/src/v3/solutions.html" class="link-arrow">
+            <a href="solutions.html" class="link-arrow" data-i18n="home.provides.patients.cta">
               Explore Patient Benefits
               <span class="material-symbols-outlined">arrow_forward</span>
             </a>
@@ -260,8 +263,8 @@
     <section class="section section--spacious bg-surface">
       <div class="container">
         <div class="section-header text-center" style="margin-bottom: var(--space-20);">
-          <h2 class="section-header__title">How It Works</h2>
-          <p class="section-header__subtitle">
+          <h2 class="section-header__title" data-i18n="home.steps.title">How It Works</h2>
+          <p class="section-header__subtitle" data-i18n="home.steps.subtitle">
             Five simple steps to transform your remote patient monitoring workflow.
           </p>
         </div>
@@ -273,8 +276,8 @@
             <div class="step-card__icon">
               <span class="material-symbols-outlined">person_add</span>
             </div>
-            <h4 class="step-card__title">Sign Up</h4>
-            <p class="step-card__text">Onboard your clinic and staff in minutes via our web portal.</p>
+            <h4 class="step-card__title" data-i18n="home.steps.s1.title">Sign Up</h4>
+            <p class="step-card__text" data-i18n="home.steps.s1.desc">Onboard your clinic and staff in minutes via our web portal.</p>
           </div>
 
           <!-- Step 02 -->
@@ -283,8 +286,8 @@
             <div class="step-card__icon">
               <span class="material-symbols-outlined">groups</span>
             </div>
-            <h4 class="step-card__title">Enroll Patients</h4>
-            <p class="step-card__text">Select eligible patients and assign monitoring protocols.</p>
+            <h4 class="step-card__title" data-i18n="home.steps.s2.title">Enroll Patients</h4>
+            <p class="step-card__text" data-i18n="home.steps.s2.desc">Select eligible patients and assign monitoring protocols.</p>
           </div>
 
           <!-- Step 03 -->
@@ -293,8 +296,8 @@
             <div class="step-card__icon">
               <span class="material-symbols-outlined">local_shipping</span>
             </div>
-            <h4 class="step-card__title">Ship Devices</h4>
-            <p class="step-card__text">We handle logistics, device setup, and initial patient education.</p>
+            <h4 class="step-card__title" data-i18n="home.steps.s3.title">Ship Devices</h4>
+            <p class="step-card__text" data-i18n="home.steps.s3.desc">We handle logistics, device setup, and initial patient education.</p>
           </div>
 
           <!-- Step 04 -->
@@ -303,8 +306,8 @@
             <div class="step-card__icon">
               <span class="material-symbols-outlined">monitor_heart</span>
             </div>
-            <h4 class="step-card__title">Monitor Patients</h4>
-            <p class="step-card__text">Receive real-time data and smart alerts on your dashboard.</p>
+            <h4 class="step-card__title" data-i18n="home.steps.s4.title">Monitor Patients</h4>
+            <p class="step-card__text" data-i18n="home.steps.s4.desc">Receive real-time data and smart alerts on your dashboard.</p>
           </div>
 
           <!-- Step 05 -->
@@ -313,8 +316,8 @@
             <div class="step-card__icon">
               <span class="material-symbols-outlined">payments</span>
             </div>
-            <h4 class="step-card__title">Get Reimbursed</h4>
-            <p class="step-card__text">Generate monthly Medicare billing reports with one click.</p>
+            <h4 class="step-card__title" data-i18n="home.steps.s5.title">Get Reimbursed</h4>
+            <p class="step-card__text" data-i18n="home.steps.s5.desc">Generate monthly Medicare billing reports with one click.</p>
           </div>
         </div>
       </div>
@@ -329,12 +332,12 @@
       <div class="footer__grid">
         <!-- Brand Column -->
         <div>
-          <a href="/src/v3/index.html" class="topbar__logo" style="display: block; margin-bottom: var(--space-6);">HicareNet</a>
-          <p class="footer__brand-text">
+          <a href="index.html" class="topbar__logo" style="display: block; margin-bottom: var(--space-6);">HicareNet</a>
+          <p class="footer__brand-text" data-i18n="footer.desc">
             Elevating the standard of remote care through innovation and empathy.
           </p>
           <div>
-            <p class="footer__contact-label">Contact Info</p>
+            <p class="footer__contact-label" data-i18n="footer.contactLabel">Contact Info</p>
             <ul class="footer__contact-list">
               <li class="footer__contact-item">
                 <span class="material-symbols-outlined icon-sm">call</span>
@@ -350,61 +353,55 @@
 
         <!-- Home Column -->
         <div>
-          <h4 class="footer__col-title">Home</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col1.title">Home</h4>
           <ul class="footer__links">
-            <li><a href="#">What Hicare Does</a></li>
-            <li><a href="#">What Hicare Provides</a></li>
-            <li><a href="#">Who We Serve</a></li>
-            <li><a href="#">Why Choose Hicare</a></li>
-            <li><a href="#">Conditions Monitored</a></li>
-            <li><a href="#">RPM/CCM Reimbursement</a></li>
-            <li><a href="#">How It Works</a></li>
+            <li><a href="#" data-i18n="footer.col1.link1">What Hicare Does</a></li>
+            <li><a href="#" data-i18n="footer.col1.link2">What Hicare Provides</a></li>
+            <li><a href="#" data-i18n="footer.col1.link3">Who We Serve</a></li>
+            <li><a href="#" data-i18n="footer.col1.link4">Why Choose Hicare</a></li>
+            <li><a href="#" data-i18n="footer.col1.link5">Conditions Monitored</a></li>
+            <li><a href="#" data-i18n="footer.col1.link6">RPM/CCM Reimbursement</a></li>
+            <li><a href="#" data-i18n="footer.col1.link7">How It Works</a></li>
           </ul>
         </div>
 
         <!-- Solutions Column -->
         <div>
-          <h4 class="footer__col-title">Solutions</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col2.title">Solutions</h4>
           <ul class="footer__links">
-            <li><a href="/src/v3/solutions.html">Overview</a></li>
-            <li><a href="#">RPM</a></li>
-            <li><a href="#">CCM</a></li>
-            <li><a href="#">Connected Platforms</a></li>
+            <li><a href="solutions.html" data-i18n="footer.col2.link1">Overview</a></li>
+            <li><a href="solutions.html#rpm" data-i18n="footer.col2.link2">RPM</a></li>
+            <li><a href="solutions.html#ccm" data-i18n="footer.col2.link3">CCM</a></li>
+            <li><a href="solutions.html#platform" data-i18n="footer.col2.link4">Connected Platforms</a></li>
           </ul>
         </div>
 
         <!-- Resources / About Column -->
         <div>
-          <h4 class="footer__col-title">Resources</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col3.title">Resources</h4>
           <ul class="footer__links">
-            <li><a href="#">FAQs</a></li>
-            <li><a href="/src/v3/resources.html">Resource Center</a></li>
+            <li><a href="resources.html#faq" data-i18n="footer.col3.link1">FAQs</a></li>
+            <li><a href="resources.html" data-i18n="footer.col3.link2">Resource Center</a></li>
           </ul>
-          <h4 class="footer__col-title" style="margin-top: var(--space-10);">About Us</h4>
+          <h4 class="footer__col-title" style="margin-top: var(--space-10);" data-i18n="footer.col4.title">About Us</h4>
           <ul class="footer__links">
-            <li><a href="/src/v3/about.html">Our Mission</a></li>
-            <li><a href="#">Our History</a></li>
-            <li><a href="/src/v3/contact.html">Contact Us</a></li>
+            <li><a href="about.html" data-i18n="footer.col4.link1">Our Mission</a></li>
+            <li><a href="about.html#history" data-i18n="footer.col4.link2">Our History</a></li>
+            <li><a href="contact.html" data-i18n="footer.col4.link3">Contact Us</a></li>
           </ul>
         </div>
 
         <!-- Office Locations Column -->
         <div>
-          <h4 class="footer__col-title">Office Locations</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col5.title">Office Locations</h4>
           <div style="display: flex; flex-direction: column; gap: var(--space-8);">
             <div>
-              <p class="footer__office-name">Irvine Office</p>
-              <p class="footer__office-address">
-                9272 Jeronimo Rd, Suite 107<br>
-                Irvine, CA 92618
-              </p>
+              <p class="footer__office-name" data-i18n="footer.col5.office1.name">Irvine Office</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office1.address">9272 Jeronimo Rd, Suite 107, Irvine, CA 92618</p>
             </div>
             <div>
-              <p class="footer__office-name">Silicon Valley Office</p>
-              <p class="footer__office-address">
-                3003 North First St, Suite 225<br>
-                San Jose, CA 95134
-              </p>
+              <p class="footer__office-name" data-i18n="footer.col5.office2.name">Silicon Valley Office</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office2.address">3003 North First St, Suite 225, San Jose, CA 95134</p>
             </div>
           </div>
         </div>
@@ -412,41 +409,23 @@
 
       <!-- Bottom Bar -->
       <div class="footer__bottom">
-        <div class="footer__copyright">
+        <div class="footer__copyright" data-i18n="footer.copyright">
           &copy; 2025. Hicare.net Inc. All Rights Reserved.
         </div>
         <div class="footer__legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">SMS Terms and Conditions</a>
-          <a href="#">Arbitration</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">SMS Terms and Conditions</a>
+          <a href="#" data-i18n="footer.arbitration">Arbitration</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Mobile Menu Toggle -->
-  <script>
-    (function() {
-      const hamburger = document.querySelector('.topbar__hamburger');
-      const menu = document.getElementById('mobile-menu');
-      if (!hamburger || !menu) return;
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
 
-      hamburger.addEventListener('click', function() {
-        const isOpen = menu.classList.toggle('is-open');
-        hamburger.setAttribute('aria-expanded', isOpen);
-        hamburger.querySelector('.material-symbols-outlined').textContent =
-          isOpen ? 'close' : 'menu';
-      });
-
-      // Close on link click
-      menu.querySelectorAll('a').forEach(function(link) {
-        link.addEventListener('click', function() {
-          menu.classList.remove('is-open');
-          hamburger.setAttribute('aria-expanded', 'false');
-          hamburger.querySelector('.material-symbols-outlined').textContent = 'menu';
-        });
-      });
-    })();
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

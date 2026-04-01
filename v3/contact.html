@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact HicareNet for RPM, CCM, AWV, and Value Based Care solutions. Schedule a demo or speak with our team.">
+  <title>HicareNet | Contact Us</title>
+
+  <!-- Fonts: Manrope + Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- ========== SKIP LINK ========== -->
+  <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">Skip to main content</a>
+
+  <!-- ========== TOP BAR (Utility + Nav) ========== -->
+  <div class="topbar">
+    <!-- Utility Strip -->
+    <div class="topbar__utility">
+      <div class="topbar__utility-link">
+        <span class="material-symbols-outlined icon-sm">call</span>
+        <span>855.844.8300</span>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="topbar__utility-login">
+        <span class="material-symbols-outlined icon-sm">login</span>
+        Provider Login
+      </a>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="topbar__header">
+      <a href="index.html" class="topbar__logo">HicareNet</a>
+
+      <nav class="topbar__nav" aria-label="Main navigation">
+        <a href="index.html" class="topbar__nav-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="topbar__nav-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="about.html" class="topbar__nav-link" data-i18n="nav.about">About Us</a>
+        <a href="compliance.html" class="topbar__nav-link" data-i18n="nav.compliance">Compliance</a>
+        <a href="resources.html" class="topbar__nav-link" data-i18n="nav.resources">Resources</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="topbar__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
+        <a href="contact.html" class="btn btn--primary topbar__cta-desktop" data-i18n="nav.contact">Book a Demo Now!</a>
+        <!-- Mobile Hamburger -->
+        <button class="topbar__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <nav class="topbar__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <div class="topbar__mobile-menu-inner">
+        <a href="index.html" class="topbar__mobile-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="topbar__mobile-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="about.html" class="topbar__mobile-link" data-i18n="nav.about">About Us</a>
+        <a href="compliance.html" class="topbar__mobile-link" data-i18n="nav.compliance">Compliance</a>
+        <a href="resources.html" class="topbar__mobile-link" data-i18n="nav.resources">Resources</a>
+        <a href="contact.html" class="btn btn--primary" style="margin-top: var(--space-4); text-align: center;" data-i18n="nav.contact">Book a Demo Now!</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+         Compact hero with gradient background
+         ══════════════════════════════════════ -->
+    <section class="contact-hero bg-primary">
+      <div class="container">
+        <div class="contact-hero__inner">
+          <span class="hero__badge" data-i18n="contact.hero.tag">Get in Touch</span>
+          <h1 class="contact-hero__title" data-i18n="contact.hero.title">Let's Talk About Your Needs</h1>
+          <p class="contact-hero__desc" data-i18n="contact.hero.desc">
+            Whether you're exploring RPM for the first time or looking to scale an existing program,
+            our team is here to help you find the right solution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT FORM + SIDEBAR
+         2-column layout: form left, info right
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h2 class="contact-form__title" data-i18n="contact.form.title">Send Us a Message</h2>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <!-- Name -->
+              <div class="form-group">
+                <label for="contact-name" data-i18n="contact.form.name">Full Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  required
+                  placeholder="John Smith"
+                  data-i18n-placeholder="contact.form.namePlaceholder"
+                >
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="contact-email" data-i18n="contact.form.email">Email Address</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  required
+                  placeholder="john@hospital.org"
+                  data-i18n-placeholder="contact.form.emailPlaceholder"
+                >
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="contact-phone" data-i18n="contact.form.phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  placeholder="(555) 123-4567"
+                  data-i18n-placeholder="contact.form.phonePlaceholder"
+                >
+              </div>
+
+              <!-- Organization -->
+              <div class="form-group">
+                <label for="contact-org" data-i18n="contact.form.org">Organization</label>
+                <input
+                  type="text"
+                  id="contact-org"
+                  name="organization"
+                  placeholder="General Hospital"
+                  data-i18n-placeholder="contact.form.orgPlaceholder"
+                >
+              </div>
+
+              <!-- Provider Type -->
+              <div class="form-group">
+                <label for="contact-type" data-i18n="contact.form.type">Provider Type</label>
+                <select id="contact-type" name="providerType">
+                  <option value="" data-i18n="contact.form.typeOptions.select">Select provider type...</option>
+                  <option value="hospital" data-i18n="contact.form.typeOptions.hospital">Hospital / Health System</option>
+                  <option value="clinic" data-i18n="contact.form.typeOptions.clinic">Clinic / Physician Practice</option>
+                  <option value="aco" data-i18n="contact.form.typeOptions.aco">ACO / Managed Care</option>
+                  <option value="snf" data-i18n="contact.form.typeOptions.snf">SNF / Long-term Care</option>
+                  <option value="other" data-i18n="contact.form.typeOptions.other">Other</option>
+                </select>
+              </div>
+
+              <!-- Areas of Interest -->
+              <div class="form-group form-group--full">
+                <label data-i18n="contact.form.interest">Areas of Interest</label>
+                <div class="checkbox-grid">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="rpm">
+                    <span data-i18n="contact.form.interestOptions.rpm">Remote Patient Monitoring (RPM)</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="ccm">
+                    <span data-i18n="contact.form.interestOptions.ccm">Chronic Care Management (CCM)</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="awv">
+                    <span data-i18n="contact.form.interestOptions.awv">Annual Wellness Visits (AWV)</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="vbc">
+                    <span data-i18n="contact.form.interestOptions.vbc">Value Based Care (VBC)</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="fhir">
+                    <span data-i18n="contact.form.interestOptions.fhir">FHIR / EMR Integration</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="compliance">
+                    <span data-i18n="contact.form.interestOptions.compliance">Compliance &amp; Security</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group form-group--full">
+                <label for="contact-message" data-i18n="contact.form.message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your needs, patient volume, or any questions you have..."
+                  data-i18n-placeholder="contact.form.messagePlaceholder"
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <div class="form-group form-group--full">
+                <button type="submit" class="btn btn--primary btn--lg w-full" data-i18n="contact.form.submit">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Quick Contact Sidebar -->
+          <aside class="contact-sidebar">
+            <!-- Quick Contact Info -->
+            <div class="contact-info-card">
+              <h3 class="contact-info-card__title" data-i18n="contact.info.title">Quick Contact</h3>
+
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined contact-info-item__icon">call</span>
+                <div>
+                  <p class="contact-info-item__label" data-i18n="contact.info.phoneLabel">Phone</p>
+                  <a href="tel:8558448300" class="contact-info-item__value" data-i18n="contact.info.phone">855.844.8300</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined contact-info-item__icon">mail</span>
+                <div>
+                  <p class="contact-info-item__label" data-i18n="contact.info.emailLabel">Email</p>
+                  <a href="mailto:help@hicare.net" class="contact-info-item__value" data-i18n="contact.info.email">help@hicare.net</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined contact-info-item__icon">schedule</span>
+                <div>
+                  <p class="contact-info-item__label" data-i18n="contact.info.hoursLabel">Business Hours</p>
+                  <p class="contact-info-item__value" data-i18n="contact.info.hours">Mon - Fri, 9:00 AM - 6:00 PM PST</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined contact-info-item__icon">support_agent</span>
+                <div>
+                  <p class="contact-info-item__label" data-i18n="contact.info.supportLabel">Technical Support</p>
+                  <p class="contact-info-item__value" data-i18n="contact.info.support">24/7 for existing clients</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Office Locations -->
+            <div class="contact-info-card">
+              <h3 class="contact-info-card__title" data-i18n="contact.offices.title">Our Offices</h3>
+
+              <div class="contact-office">
+                <span class="material-symbols-outlined contact-office__icon">location_on</span>
+                <div>
+                  <p class="contact-office__name" data-i18n="contact.offices.irvine.name">Irvine Office (HQ)</p>
+                  <p class="contact-office__address" data-i18n="contact.offices.irvine.address">9272 Jeronimo Rd, Suite 107, Irvine, CA 92618</p>
+                </div>
+              </div>
+
+              <div class="contact-office">
+                <span class="material-symbols-outlined contact-office__icon">location_on</span>
+                <div>
+                  <p class="contact-office__name" data-i18n="contact.offices.siliconValley.name">Silicon Valley Office</p>
+                  <p class="contact-office__address" data-i18n="contact.offices.siliconValley.address">3003 North First St, Suite 225, San Jose, CA 95134</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CTA SECTION
+         Prefer to Schedule Directly?
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface-low">
+      <div class="container">
+        <div class="contact-cta">
+          <h2 class="contact-cta__title" data-i18n="contact.cta.title">Prefer to Schedule Directly?</h2>
+          <p class="contact-cta__desc" data-i18n="contact.cta.desc">
+            Book a 30-minute discovery call with our solutions team.
+            We'll walk you through a personalized demo and answer all your questions.
+          </p>
+          <a href="https://calendly.com/hicarenet" class="btn btn--primary btn--lg" data-i18n="contact.cta.btn">
+            Schedule a Demo Call
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Grid -->
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div>
+          <a href="index.html" class="topbar__logo" style="display: block; margin-bottom: var(--space-6);">HicareNet</a>
+          <p class="footer__brand-text" data-i18n="footer.desc">
+            Elevating the standard of remote care through innovation and empathy.
+          </p>
+          <div>
+            <p class="footer__contact-label" data-i18n="footer.contactLabel">Contact Info</p>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">call</span>
+                <a href="tel:8558448300">855.844.8300</a>
+              </li>
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">mail</span>
+                <a href="mailto:help@hicare.net">help@hicare.net</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Home Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col1.title">Home</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-i18n="footer.col1.link1">What Hicare Does</a></li>
+            <li><a href="#" data-i18n="footer.col1.link2">What Hicare Provides</a></li>
+            <li><a href="#" data-i18n="footer.col1.link3">Who We Serve</a></li>
+            <li><a href="#" data-i18n="footer.col1.link4">Why Choose Hicare</a></li>
+            <li><a href="#" data-i18n="footer.col1.link5">Conditions Monitored</a></li>
+            <li><a href="#" data-i18n="footer.col1.link6">RPM/CCM Reimbursement</a></li>
+            <li><a href="#" data-i18n="footer.col1.link7">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col2.title">Solutions</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" data-i18n="footer.col2.link1">Overview</a></li>
+            <li><a href="solutions.html#rpm" data-i18n="footer.col2.link2">RPM</a></li>
+            <li><a href="solutions.html#ccm" data-i18n="footer.col2.link3">CCM</a></li>
+            <li><a href="solutions.html#platform" data-i18n="footer.col2.link4">Connected Platforms</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources / About Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col3.title">Resources</h4>
+          <ul class="footer__links">
+            <li><a href="resources.html#faq" data-i18n="footer.col3.link1">FAQs</a></li>
+            <li><a href="resources.html" data-i18n="footer.col3.link2">Resource Center</a></li>
+          </ul>
+          <h4 class="footer__col-title" style="margin-top: var(--space-10);" data-i18n="footer.col4.title">About Us</h4>
+          <ul class="footer__links">
+            <li><a href="about.html" data-i18n="footer.col4.link1">Our Mission</a></li>
+            <li><a href="about.html#history" data-i18n="footer.col4.link2">Our History</a></li>
+            <li><a href="contact.html" data-i18n="footer.col4.link3">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Office Locations Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col5.title">Office Locations</h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office1.name">Irvine Office</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office1.address">9272 Jeronimo Rd, Suite 107, Irvine, CA 92618</p>
+            </div>
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office2.name">Silicon Valley Office</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office2.address">3003 North First St, Suite 225, San Jose, CA 95134</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <div class="footer__copyright" data-i18n="footer.copyright">
+          &copy; 2025. Hicare.net Inc. All Rights Reserved.
+        </div>
+        <div class="footer__legal">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">SMS Terms and Conditions</a>
+          <a href="#" data-i18n="footer.arbitration">Arbitration</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

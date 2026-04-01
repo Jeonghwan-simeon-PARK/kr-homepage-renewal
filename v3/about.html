@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HicareNet — 20+ years of healthcare innovation. Learn about our mission, vision, and the team behind connected care management.">
+  <title>About Us | HicareNet</title>
+
+  <!-- Fonts: Manrope + Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- ========== SKIP LINK ========== -->
+  <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">Skip to main content</a>
+
+  <!-- ========== TOP BAR (Utility + Nav) ========== -->
+  <div class="topbar">
+    <!-- Utility Strip -->
+    <div class="topbar__utility">
+      <div class="topbar__utility-link">
+        <span class="material-symbols-outlined icon-sm">call</span>
+        <span>855.844.8300</span>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="topbar__utility-login">
+        <span class="material-symbols-outlined icon-sm">login</span>
+        Provider Login
+      </a>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="topbar__header">
+      <a href="index.html" class="topbar__logo">HicareNet</a>
+
+      <nav class="topbar__nav" aria-label="Main navigation">
+        <a href="index.html" class="topbar__nav-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="topbar__nav-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="about.html" class="topbar__nav-link is-active" data-i18n="nav.about">About Us</a>
+        <a href="compliance.html" class="topbar__nav-link" data-i18n="nav.compliance">Compliance</a>
+        <a href="resources.html" class="topbar__nav-link" data-i18n="nav.resources">Resources</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="topbar__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
+        <a href="contact.html" class="btn btn--primary topbar__cta-desktop" data-i18n="nav.contact">Book a Demo Now!</a>
+        <!-- Mobile Hamburger -->
+        <button class="topbar__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <nav class="topbar__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <div class="topbar__mobile-menu-inner">
+        <a href="index.html" class="topbar__mobile-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="topbar__mobile-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="about.html" class="topbar__mobile-link is-active" data-i18n="nav.about">About Us</a>
+        <a href="compliance.html" class="topbar__mobile-link" data-i18n="nav.compliance">Compliance</a>
+        <a href="resources.html" class="topbar__mobile-link" data-i18n="nav.resources">Resources</a>
+        <a href="contact.html" class="btn btn--primary" style="margin-top: var(--space-4); text-align: center;" data-i18n="nav.contact">Book a Demo Now!</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+         ══════════════════════════════════════ -->
+    <section class="hero bg-surface-low">
+      <div class="hero__bg">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxhXKR-6B-Hldzozez6W-4PQvFVJtUYigXkZOhjM4aKT8jxkh27tnF8dZp-Lc8zlzEOxSZ9XM_M-aSQfhY6VdjsHM7PSBvsYjBwSE2zbpNAY_4WFOG_4WR9Jd14VzUUoFydlcfKlbpHLqDzbZCUbAm3JeivQfjwz5kV07dB7szWn8bsPH7XZ1plZN7h7lu2Eogk-J9J8n3UVqBZlpnudt0h-jaemgZT_EvV1HUC-LTrUoDPoV9mKCBKDnBFbE0Wr0Upg0zekujN9-X"
+          alt="Healthcare professionals collaborating in a modern medical facility"
+        >
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__inner">
+          <span class="hero__badge" data-i18n="about.hero.tag">About HicareNet</span>
+          <h1 class="hero__title" data-i18n="about.hero.title">
+            20+ Years of Healthcare Innovation
+          </h1>
+          <p class="hero__subtitle" data-i18n="about.hero.desc">
+            From Seoul to California, we have been pioneering connected care technology
+            that bridges the gap between patients and providers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         MISSION & VISION
+         Two-column cards
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface">
+      <div class="container">
+        <div class="grid grid--2" style="gap: var(--space-8);">
+          <!-- Mission Card -->
+          <div class="card card--primary">
+            <span class="material-symbols-outlined card__icon">flag</span>
+            <h3 class="card__title card__title--lg" data-i18n="about.mission.title">Our Mission</h3>
+            <p class="card__text" style="font-size: var(--text-lg);" data-i18n="about.mission.desc">
+              To make remote patient monitoring accessible, affordable, and effective for every
+              healthcare provider in the United States. We believe that continuous, connected care
+              reduces hospital readmissions and improves patient outcomes.
+            </p>
+          </div>
+
+          <!-- Vision Card -->
+          <div class="card card--secondary">
+            <span class="material-symbols-outlined card__icon">visibility</span>
+            <h3 class="card__title card__title--lg" data-i18n="about.vision.title">Our Vision</h3>
+            <p class="card__text" style="font-size: var(--text-lg);" data-i18n="about.vision.desc">
+              A world where every patient with a chronic condition is continuously monitored,
+              intelligently alerted, and proactively cared for, regardless of language, location,
+              or technical literacy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         STATS SECTION
+         4 stat cards
+         ══════════════════════════════════════ -->
+    <section class="section section--spacious bg-surface-low">
+      <div class="container">
+        <div class="section-header text-center" style="margin-bottom: var(--space-20);">
+          <h2 class="section-header__title" data-i18n="about.stats.title">HicareNet by the Numbers</h2>
+          <div class="section-header__accent" style="margin-inline: auto;"></div>
+        </div>
+
+        <div class="grid grid--4" style="gap: var(--space-8);">
+          <!-- Stat 1: Hospitals -->
+          <div class="card card--white text-center" style="padding: var(--space-12) var(--space-8);">
+            <span class="material-symbols-outlined card__icon" style="font-size: 2.5rem; margin-inline: auto;">local_hospital</span>
+            <p style="font-size: var(--text-6xl); font-weight: 900; color: var(--primary); letter-spacing: var(--tracking-tighter); line-height: 1;" data-i18n="about.stats.hospitals.value">40+</p>
+            <p style="font-size: var(--text-lg); font-weight: 700; margin-top: var(--space-2);" data-i18n="about.stats.hospitals.label">Hospitals &amp; Clinics</p>
+            <p class="card__text" style="margin-top: var(--space-2); font-size: var(--text-sm);" data-i18n="about.stats.hospitals.desc">Partner facilities across California and beyond</p>
+          </div>
+
+          <!-- Stat 2: Patients -->
+          <div class="card card--white text-center" style="padding: var(--space-12) var(--space-8);">
+            <span class="material-symbols-outlined card__icon" style="font-size: 2.5rem; margin-inline: auto;">groups</span>
+            <p style="font-size: var(--text-6xl); font-weight: 900; color: var(--primary); letter-spacing: var(--tracking-tighter); line-height: 1;" data-i18n="about.stats.patients.value">3,000+</p>
+            <p style="font-size: var(--text-lg); font-weight: 700; margin-top: var(--space-2);" data-i18n="about.stats.patients.label">Patients Monitored</p>
+            <p class="card__text" style="margin-top: var(--space-2); font-size: var(--text-sm);" data-i18n="about.stats.patients.desc">Actively enrolled in RPM and CCM programs</p>
+          </div>
+
+          <!-- Stat 3: Devices -->
+          <div class="card card--white text-center" style="padding: var(--space-12) var(--space-8);">
+            <span class="material-symbols-outlined card__icon" style="font-size: 2.5rem; margin-inline: auto;">devices</span>
+            <p style="font-size: var(--text-6xl); font-weight: 900; color: var(--primary); letter-spacing: var(--tracking-tighter); line-height: 1;" data-i18n="about.stats.devices.value">120+</p>
+            <p style="font-size: var(--text-lg); font-weight: 700; margin-top: var(--space-2);" data-i18n="about.stats.devices.label">Compatible Devices</p>
+            <p class="card__text" style="margin-top: var(--space-2); font-size: var(--text-sm);" data-i18n="about.stats.devices.desc">FDA-approved Bluetooth-enabled medical devices</p>
+          </div>
+
+          <!-- Stat 4: Years -->
+          <div class="card card--white text-center" style="padding: var(--space-12) var(--space-8);">
+            <span class="material-symbols-outlined card__icon" style="font-size: 2.5rem; margin-inline: auto;">calendar_month</span>
+            <p style="font-size: var(--text-6xl); font-weight: 900; color: var(--primary); letter-spacing: var(--tracking-tighter); line-height: 1;" data-i18n="about.stats.years.value">20+</p>
+            <p style="font-size: var(--text-lg); font-weight: 700; margin-top: var(--space-2);" data-i18n="about.stats.years.label">Years of Innovation</p>
+            <p class="card__text" style="margin-top: var(--space-2); font-size: var(--text-sm);" data-i18n="about.stats.years.desc">Pioneering healthcare IT since 2002</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         COMPANY TIMELINE
+         History milestones
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface" id="history">
+      <div class="container">
+        <div class="section-header text-center" style="margin-bottom: var(--space-20);">
+          <h2 class="section-header__title" data-i18n="about.timeline.title">Our Journey</h2>
+          <div class="section-header__accent" style="margin-inline: auto;"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- 2002 -->
+          <div class="timeline__item" data-animate="fade-up">
+            <div class="timeline__marker">
+              <span class="timeline__year" data-i18n="about.timeline.y2002.year">2002</span>
+            </div>
+            <div class="card card--white timeline__content">
+              <h4 class="card__title" data-i18n="about.timeline.y2002.title">Hicare Founded in Seoul</h4>
+              <p class="card__text" data-i18n="about.timeline.y2002.desc">
+                Established as a healthcare IT company in South Korea, pioneering telehealth
+                solutions and remote patient monitoring technology for the Asian market.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2016 -->
+          <div class="timeline__item" data-animate="fade-up">
+            <div class="timeline__marker">
+              <span class="timeline__year" data-i18n="about.timeline.y2016.year">2016</span>
+            </div>
+            <div class="card card--white timeline__content">
+              <h4 class="card__title" data-i18n="about.timeline.y2016.title">US Market Entry</h4>
+              <p class="card__text" data-i18n="about.timeline.y2016.desc">
+                Launched Hicare.net Inc. in California, bringing 14 years of healthcare IT expertise
+                to serve US hospitals and clinics with RPM and CCM solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2018 -->
+          <div class="timeline__item" data-animate="fade-up">
+            <div class="timeline__marker">
+              <span class="timeline__year" data-i18n="about.timeline.y2018.year">2018</span>
+            </div>
+            <div class="card card--white timeline__content">
+              <h4 class="card__title" data-i18n="about.timeline.y2018.title">Medicare RPM Expansion</h4>
+              <p class="card__text" data-i18n="about.timeline.y2018.desc">
+                Aligned platform with CMS reimbursement codes (CPT 99453-99458), enabling
+                healthcare providers to generate sustainable revenue through remote monitoring.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2022 -->
+          <div class="timeline__item" data-animate="fade-up">
+            <div class="timeline__marker">
+              <span class="timeline__year" data-i18n="about.timeline.y2022.year">2022</span>
+            </div>
+            <div class="card card--white timeline__content">
+              <h4 class="card__title" data-i18n="about.timeline.y2022.title">ISO &amp; HIPAA Certifications</h4>
+              <p class="card__text" data-i18n="about.timeline.y2022.desc">
+                Achieved ISO 27001, ISO 27701, and HIPAA compliance certifications, establishing
+                the highest standards of data security and patient privacy protection.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2024 -->
+          <div class="timeline__item" data-animate="fade-up">
+            <div class="timeline__marker">
+              <span class="timeline__year" data-i18n="about.timeline.y2024.year">2024</span>
+            </div>
+            <div class="card card--white timeline__content">
+              <h4 class="card__title" data-i18n="about.timeline.y2024.title">AI-Powered Platform &amp; Global Expansion</h4>
+              <p class="card__text" data-i18n="about.timeline.y2024.desc">
+                Integrated AI-powered clinical reporting, expanded to 40+ hospitals,
+                and began international expansion to Italy and France with multilingual support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         LEADERSHIP SECTION
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface-low">
+      <div class="container">
+        <div class="section-header text-center" style="margin-bottom: var(--space-20);">
+          <h2 class="section-header__title" data-i18n="about.team.title">Leadership Team</h2>
+          <p class="section-header__subtitle" data-i18n="about.team.desc">
+            Experienced professionals in healthcare IT, clinical operations, and technology innovation
+            driving the future of connected care.
+          </p>
+        </div>
+
+        <div class="grid grid--3" style="gap: var(--space-8);">
+          <!-- Leader 1 -->
+          <div class="card card--white text-center" style="padding: var(--space-10);">
+            <div style="width: 6rem; height: 6rem; border-radius: var(--radius-full); background: var(--surface-container-low); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6);">
+              <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--primary);">person</span>
+            </div>
+            <h4 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-1);">James Park</h4>
+            <p style="font-size: var(--text-sm); color: var(--primary); font-weight: 600; margin-bottom: var(--space-4);">CEO &amp; Founder</p>
+            <p class="card__text" style="font-size: var(--text-sm);">
+              20+ years in healthcare IT. Leads strategic vision and partnerships across the US and Asia.
+            </p>
+          </div>
+
+          <!-- Leader 2 -->
+          <div class="card card--white text-center" style="padding: var(--space-10);">
+            <div style="width: 6rem; height: 6rem; border-radius: var(--radius-full); background: var(--surface-container-low); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6);">
+              <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--primary);">person</span>
+            </div>
+            <h4 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-1);">Dr. Sarah Kim</h4>
+            <p style="font-size: var(--text-sm); color: var(--primary); font-weight: 600; margin-bottom: var(--space-4);">Chief Medical Officer</p>
+            <p class="card__text" style="font-size: var(--text-sm);">
+              Board-certified physician ensuring clinical excellence and patient safety in all programs.
+            </p>
+          </div>
+
+          <!-- Leader 3 -->
+          <div class="card card--white text-center" style="padding: var(--space-10);">
+            <div style="width: 6rem; height: 6rem; border-radius: var(--radius-full); background: var(--surface-container-low); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6);">
+              <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--primary);">person</span>
+            </div>
+            <h4 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-1);">David Lee</h4>
+            <p style="font-size: var(--text-sm); color: var(--primary); font-weight: 600; margin-bottom: var(--space-4);">CTO</p>
+            <p class="card__text" style="font-size: var(--text-sm);">
+              Architect of the HicareNet platform with expertise in FHIR integration and AI-powered analytics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CTA BANNER
+         ══════════════════════════════════════ -->
+    <section class="section section--spacious" style="background: var(--gradient-editorial);">
+      <div class="container text-center">
+        <h2 style="font-size: var(--text-5xl); font-weight: 900; color: #fff; letter-spacing: var(--tracking-tighter); margin-bottom: var(--space-6);" data-i18n="about.cta.title">
+          Ready to Transform Your Practice?
+        </h2>
+        <p style="font-size: var(--text-xl); color: rgba(255, 255, 255, 0.9); max-width: 36rem; margin-inline: auto; margin-bottom: var(--space-10); line-height: var(--leading-relaxed);" data-i18n="about.cta.desc">
+          Join 40+ hospitals that trust HicareNet for connected care management.
+          Schedule a personalized demo today.
+        </p>
+        <a href="contact.html" class="btn btn--white rounded-full" data-i18n="about.cta.btn">Book a Demo Now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Grid -->
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div>
+          <a href="index.html" class="topbar__logo" style="display: block; margin-bottom: var(--space-6);">HicareNet</a>
+          <p class="footer__brand-text" data-i18n="footer.desc">
+            Elevating the standard of remote care through innovation and empathy.
+          </p>
+          <div>
+            <p class="footer__contact-label" data-i18n="footer.contactLabel">Contact Info</p>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">call</span>
+                <a href="tel:8558448300">855.844.8300</a>
+              </li>
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">mail</span>
+                <a href="mailto:help@hicare.net">help@hicare.net</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Home Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col1.title">Home</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-i18n="footer.col1.link1">What Hicare Does</a></li>
+            <li><a href="#" data-i18n="footer.col1.link2">What Hicare Provides</a></li>
+            <li><a href="#" data-i18n="footer.col1.link3">Who We Serve</a></li>
+            <li><a href="#" data-i18n="footer.col1.link4">Why Choose Hicare</a></li>
+            <li><a href="#" data-i18n="footer.col1.link5">Conditions Monitored</a></li>
+            <li><a href="#" data-i18n="footer.col1.link6">RPM/CCM Reimbursement</a></li>
+            <li><a href="#" data-i18n="footer.col1.link7">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col2.title">Solutions</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" data-i18n="footer.col2.link1">Overview</a></li>
+            <li><a href="solutions.html#rpm" data-i18n="footer.col2.link2">RPM</a></li>
+            <li><a href="solutions.html#ccm" data-i18n="footer.col2.link3">CCM</a></li>
+            <li><a href="solutions.html#platform" data-i18n="footer.col2.link4">Connected Platforms</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources / About Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col3.title">Resources</h4>
+          <ul class="footer__links">
+            <li><a href="resources.html#faq" data-i18n="footer.col3.link1">FAQs</a></li>
+            <li><a href="resources.html" data-i18n="footer.col3.link2">Resource Center</a></li>
+          </ul>
+          <h4 class="footer__col-title" style="margin-top: var(--space-10);" data-i18n="footer.col4.title">About Us</h4>
+          <ul class="footer__links">
+            <li><a href="about.html" data-i18n="footer.col4.link1">Our Mission</a></li>
+            <li><a href="about.html#history" data-i18n="footer.col4.link2">Our History</a></li>
+            <li><a href="contact.html" data-i18n="footer.col4.link3">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Office Locations Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col5.title">Office Locations</h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office1.name">Irvine Office</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office1.address">9272 Jeronimo Rd, Suite 107, Irvine, CA 92618</p>
+            </div>
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office2.name">Silicon Valley Office</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office2.address">3003 North First St, Suite 225, San Jose, CA 95134</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <div class="footer__copyright" data-i18n="footer.copyright">
+          &copy; 2025. Hicare.net Inc. All Rights Reserved.
+        </div>
+        <div class="footer__legal">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">SMS Terms and Conditions</a>
+          <a href="#" data-i18n="footer.arbitration">Arbitration</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

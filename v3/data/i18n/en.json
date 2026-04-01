@@ -1,0 +1,355 @@
+{
+  "common": {
+    "skipToContent": "Skip to main content"
+  },
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "compliance": "Compliance",
+    "resources": "Resources",
+    "contact": "Book a Demo Now!"
+  },
+  "home": {
+    "hero": {
+      "badge": "Reimagining Patient Care",
+      "title": "Hicare — Innovative Connected Care Management Service",
+      "subtitle": "Connecting providers and patients through intelligent monitoring, seamless logistics, and human-centric technology.",
+      "cta1": "View Solutions",
+      "cta2": "Our Story"
+    },
+    "does": {
+      "title": "What Hicare Does",
+      "bridge": {
+        "title": "Bridging the Gap",
+        "desc": "We simplify complex RPM workflows into a single, intuitive platform that monitors, alerts, and manages patient data in real-time with 120+ compatible medical devices.",
+        "tag1": "Real-time Data",
+        "tag2": "Automated Alerts",
+        "tag3": "120+ Devices"
+      },
+      "insights": {
+        "title": "Actionable Insights",
+        "desc": "Transform raw data into clinical decisions with AI-powered automated reporting and Medicare billing integration."
+      },
+      "clinical": {
+        "title": "Clinical Support",
+        "desc": "Dedicated specialists ready to assist your team in patient onboarding, device logistics, and 24/7 technical support."
+      },
+      "global": {
+        "title": "Global Reach, Local Touch",
+        "desc": "Serving 40+ hospitals across California with device logistics, patient education, and localized support. Expanding to the East Coast, Italy, and France."
+      }
+    },
+    "provides": {
+      "providers": {
+        "label": "For Providers",
+        "title": "Scale Your Practice Efficiency",
+        "desc": "Reduce administrative burden with automated CPT coding, AI-generated reports, and seamless Medicare RPM/CCM reimbursement tracking. Monitor thousands of patients with the same overhead as a dozen.",
+        "check1": "Automated CPT Coding & Billing",
+        "check2": "AI-Powered Report Generation",
+        "check3": "Seamless API & EHR Integration",
+        "cta": "Explore Provider Solutions"
+      },
+      "patients": {
+        "label": "For Patients",
+        "title": "Care That Follows You Home",
+        "desc": "Receive FDA-approved, Bluetooth-enabled devices that work right out of the box. Stay connected to your clinical team with voice-guided measurements and an elder-friendly mobile app.",
+        "check1": "Plug-and-Play FDA Devices",
+        "check2": "Voice-Guided, Elder-Friendly App",
+        "check3": "Multi-Language Support",
+        "cta": "Explore Patient Benefits"
+      }
+    },
+    "steps": {
+      "title": "How It Works",
+      "subtitle": "Five simple steps to transform your remote patient monitoring workflow.",
+      "s1": { "title": "Sign Up", "desc": "Onboard your clinic and staff in minutes via our web portal." },
+      "s2": { "title": "Enroll Patients", "desc": "Select eligible patients and assign monitoring protocols." },
+      "s3": { "title": "Ship Devices", "desc": "We handle logistics, device setup, and initial patient education." },
+      "s4": { "title": "Monitor Patients", "desc": "Receive real-time data and smart alerts on your dashboard." },
+      "s5": { "title": "Get Reimbursed", "desc": "Generate monthly Medicare billing reports with one click." }
+    }
+  },
+  "solutions": {
+    "hero": {
+      "tag": "US Market RPM & CCM Solutions",
+      "title": "Empowering US Value-Based Care.",
+      "desc": "HicareNet delivers end-to-end RPM and CCM solutions designed for the US healthcare market, supporting Medicare reimbursement, HIPAA compliance, and seamless EHR integration.",
+      "cta1": "Our Solutions",
+      "cta2": "Contact Us"
+    },
+    "hub": {
+      "title": "Hicare Hub",
+      "label": "Central Gateway for RPM",
+      "desc": "A unified cloud platform connecting 120+ FDA-approved medical devices to clinical workflows with real-time data, automated alerts, and intelligent reporting.",
+      "f1": { "title": "HL7 & FHIR Ready", "desc": "Seamless interoperability with major EHR systems through standardized healthcare data exchange protocols." },
+      "f2": { "title": "AI-Powered Reports", "desc": "Automated clinical documentation and CPT code generation for streamlined Medicare billing." },
+      "f3": { "title": "Real-Time Alerts", "desc": "Configurable threshold-based alerts for proactive patient monitoring and timely interventions." }
+    },
+    "mobile": {
+      "title": "Hicare M",
+      "label": "Patient Mobile App",
+      "desc": "An elder-friendly mobile application with voice-guided measurements, multi-language support, and automatic data sync to the clinical dashboard.",
+      "f1": { "title": "Voice-Guided Measurements", "desc": "Step-by-step audio instructions in multiple languages for easy device usage." },
+      "f2": { "title": "Automatic Data Sync", "desc": "Bluetooth-connected devices automatically transmit readings to the Hicare Hub." },
+      "f3": { "title": "7 Language Support", "desc": "Available in English, Korean, Spanish, Chinese, Vietnamese, Tagalog, and Russian." }
+    },
+    "compliance": {
+      "title": "Built for Compliance",
+      "desc": "Every layer of HicareNet is designed with security and regulatory compliance at its core.",
+      "hipaa": "HIPAA Compliant",
+      "iso27001": "ISO 27001 Certified",
+      "iso27701": "ISO 27701 Certified",
+      "fda": "FDA-Approved Devices"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Practice?",
+      "desc": "Schedule a personalized demo to see how HicareNet can streamline your RPM and CCM workflows.",
+      "btn": "Schedule a Demo"
+    }
+  },
+  "about": {
+    "hero": {
+      "tag": "About HicareNet",
+      "title": "20+ Years of Healthcare Innovation",
+      "desc": "From Seoul to California, Hicare has been pioneering connected care technology since 2002."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "desc": "To bridge the gap between clinical expertise and patient daily life through innovative connected care technology, making quality healthcare accessible to everyone, everywhere."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "A world where every patient receives personalized, data-driven care regardless of location, and every provider has the tools to deliver it efficiently."
+    },
+    "stats": {
+      "hospitals": "40+",
+      "hospitalsLabel": "Partner Hospitals",
+      "patients": "3,000+",
+      "patientsLabel": "Active Patients",
+      "devices": "120+",
+      "devicesLabel": "Compatible Devices",
+      "years": "20+",
+      "yearsLabel": "Years Experience"
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "y2002": { "year": "2002", "title": "Hicare Founded", "desc": "Established in Seoul, Korea as a healthcare IT company." },
+      "y2016": { "year": "2016", "title": "US Expansion", "desc": "Opened Silicon Valley office, entered the US RPM market." },
+      "y2018": { "year": "2018", "title": "Hicare Hub Launch", "desc": "Released cloud-based RPM platform with 50+ device integrations." },
+      "y2022": { "year": "2022", "title": "ISO Certifications", "desc": "Achieved ISO 27001 and ISO 27701 certifications for data security." },
+      "y2024": { "year": "2024", "title": "3,000+ Patients", "desc": "Reached milestone of 3,000+ active monitored patients across California." }
+    },
+    "team": {
+      "title": "Leadership",
+      "desc": "Our executive team brings decades of combined experience in healthcare IT, clinical operations, and enterprise software."
+    },
+    "cta": {
+      "title": "Join Us in Transforming Healthcare",
+      "desc": "Partner with HicareNet to bring connected care to your patients.",
+      "btn": "Get in Touch"
+    }
+  },
+  "compliance": {
+    "hero": {
+      "tag": "Security & Compliance",
+      "title": "Enterprise-Grade Security for Healthcare",
+      "desc": "HicareNet meets the highest standards of data protection and regulatory compliance."
+    },
+    "certs": {
+      "title": "Our Certifications",
+      "hipaa": {
+        "title": "HIPAA Compliance",
+        "desc": "Full compliance with the Health Insurance Portability and Accountability Act, including administrative, physical, and technical safeguards for Protected Health Information (PHI)."
+      },
+      "iso27001": {
+        "title": "ISO 27001",
+        "desc": "Information Security Management System (ISMS) certified, demonstrating our commitment to systematic security management.",
+        "cert": "Certificate No: IS 807100",
+        "date": "Valid through: 2027-03-15"
+      },
+      "iso27701": {
+        "title": "ISO 27701",
+        "desc": "Privacy Information Management System (PIMS) certified, extending our ISMS to include privacy-specific controls.",
+        "cert": "Certificate No: PI 807101",
+        "date": "Valid through: 2027-03-15"
+      },
+      "fda": {
+        "title": "FDA-Approved Devices",
+        "desc": "All connected medical devices in the HicareNet ecosystem are FDA 510(k) cleared for remote patient monitoring."
+      }
+    },
+    "security": {
+      "title": "Security Practices",
+      "items": {
+        "encryption": { "title": "End-to-End Encryption", "desc": "AES-256 encryption for data at rest and TLS 1.3 for data in transit." },
+        "access": { "title": "Access Control", "desc": "Role-based access control (RBAC) with multi-factor authentication." },
+        "audit": { "title": "Audit Logging", "desc": "Comprehensive audit trails for all data access and system events." },
+        "backup": { "title": "Data Backup", "desc": "Automated daily backups with geographic redundancy and disaster recovery." },
+        "pen": { "title": "Penetration Testing", "desc": "Regular third-party penetration testing and vulnerability assessments." },
+        "training": { "title": "Staff Training", "desc": "Mandatory annual security and HIPAA compliance training for all employees." }
+      }
+    },
+    "faq": {
+      "title": "Compliance FAQ",
+      "q1": { "q": "How does HicareNet protect patient data?", "a": "We employ end-to-end encryption, role-based access controls, regular security audits, and comply with HIPAA, ISO 27001, and ISO 27701 standards." },
+      "q2": { "q": "Is HicareNet HIPAA compliant?", "a": "Yes. HicareNet maintains full HIPAA compliance with administrative, physical, and technical safeguards. We sign Business Associate Agreements (BAAs) with all covered entities." },
+      "q3": { "q": "What certifications does HicareNet hold?", "a": "HicareNet holds ISO 27001 (Information Security), ISO 27701 (Privacy Management), and all devices are FDA 510(k) cleared." },
+      "q4": { "q": "How often are security assessments conducted?", "a": "We conduct quarterly internal audits, annual third-party penetration testing, and continuous automated vulnerability scanning." }
+    },
+    "cta": {
+      "title": "Questions About Our Security?",
+      "desc": "Our compliance team is ready to discuss your security requirements.",
+      "btn": "Contact Compliance Team"
+    }
+  },
+  "resources": {
+    "hero": {
+      "tag": "Knowledge Center",
+      "title": "Resources & Insights",
+      "desc": "Expert guides, case studies, and industry insights to help you navigate remote patient monitoring."
+    },
+    "articles": {
+      "title": "Featured Articles",
+      "filter": {
+        "all": "All",
+        "rpm": "RPM",
+        "ccm": "CCM",
+        "awv": "AWV",
+        "vbc": "Value-Based Care"
+      },
+      "c1": { "tag": "RPM Guide", "title": "Getting Started with Remote Patient Monitoring", "desc": "A comprehensive guide to implementing RPM in your practice, from patient enrollment to Medicare reimbursement." },
+      "c2": { "tag": "CCM", "title": "Chronic Care Management: Best Practices", "desc": "Learn how to optimize your CCM program for better patient outcomes and practice revenue." },
+      "c3": { "tag": "Compliance", "title": "HIPAA Compliance in Telehealth", "desc": "Essential considerations for maintaining HIPAA compliance in your remote care programs." },
+      "c4": { "tag": "Industry", "title": "The Future of Value-Based Care", "desc": "How RPM and CCM are driving the transition from fee-for-service to value-based payment models." },
+      "c5": { "tag": "Case Study", "title": "40+ Hospitals Trust HicareNet", "desc": "How California healthcare providers improved patient outcomes with HicareNet RPM solutions." },
+      "c6": { "tag": "Technology", "title": "FHIR Integration for Seamless Data Exchange", "desc": "Understanding how FHIR standards enable interoperability between HicareNet and EHR systems." }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": { "q": "What is Remote Patient Monitoring (RPM)?", "a": "RPM uses connected medical devices to collect patient health data outside traditional clinical settings, enabling real-time monitoring and proactive care management." },
+      "q2": { "q": "How does HicareNet support Medicare reimbursement?", "a": "HicareNet automatically tracks qualifying patient interactions, generates CPT-coded billing reports, and provides documentation for RPM (99453-99458) and CCM (99490-99491) codes." },
+      "q3": { "q": "What devices are compatible with HicareNet?", "a": "HicareNet supports 120+ FDA-approved Bluetooth-enabled devices including blood pressure monitors, glucose meters, pulse oximeters, weight scales, and thermometers." },
+      "q4": { "q": "How long does implementation take?", "a": "Most practices are fully onboarded within 2-4 weeks, including staff training, device logistics setup, and patient enrollment." }
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "desc": "Subscribe to our newsletter for the latest RPM insights and industry updates.",
+      "placeholder": "Enter your email",
+      "btn": "Subscribe"
+    }
+  },
+  "contact": {
+    "hero": {
+      "tag": "Get in Touch",
+      "title": "Let's Talk About Your Needs",
+      "desc": "Schedule a demo, ask questions, or learn how HicareNet can transform your practice."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Full Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email Address",
+      "emailPlaceholder": "john@clinic.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "(555) 123-4567",
+      "org": "Organization",
+      "orgPlaceholder": "Your clinic or hospital name",
+      "type": "Provider Type",
+      "typeOptions": {
+        "select": "Select provider type",
+        "hospital": "Hospital / Health System",
+        "clinic": "Clinic / Practice",
+        "aco": "ACO / IPA",
+        "snf": "SNF / Long-Term Care",
+        "other": "Other"
+      },
+      "interest": "Areas of Interest",
+      "interestOptions": {
+        "rpm": "Remote Patient Monitoring (RPM)",
+        "ccm": "Chronic Care Management (CCM)",
+        "awv": "Annual Wellness Visit (AWV)",
+        "vbc": "Value-Based Care",
+        "fhir": "FHIR Integration",
+        "compliance": "Compliance & Security"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your needs...",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Quick Contact",
+      "phone": "855.844.8300",
+      "phoneLabel": "Phone",
+      "email": "help@hicare.net",
+      "emailLabel": "Email",
+      "hours": "Mon-Fri, 8 AM - 6 PM PST",
+      "hoursLabel": "Business Hours",
+      "support": "24/7 Technical Support",
+      "supportLabel": "Support"
+    },
+    "offices": {
+      "title": "Our Offices",
+      "irvine": {
+        "name": "Irvine Office",
+        "address": "9272 Jeronimo Rd, Suite 107, Irvine, CA 92618"
+      },
+      "siliconValley": {
+        "name": "Silicon Valley Office",
+        "address": "3003 North First St, Suite 225, San Jose, CA 95134"
+      }
+    },
+    "cta": {
+      "title": "Prefer to Schedule Directly?",
+      "desc": "Book a 30-minute demo with our solutions team.",
+      "btn": "Schedule a Demo"
+    }
+  },
+  "footer": {
+    "desc": "Elevating the standard of remote care through innovation and empathy.",
+    "contactLabel": "Contact Info",
+    "col1": {
+      "title": "Home",
+      "link1": "What Hicare Does",
+      "link2": "What Hicare Provides",
+      "link3": "Who We Serve",
+      "link4": "Why Choose Hicare",
+      "link5": "Conditions Monitored",
+      "link6": "RPM/CCM Reimbursement",
+      "link7": "How It Works"
+    },
+    "col2": {
+      "title": "Solutions",
+      "link1": "Overview",
+      "link2": "RPM",
+      "link3": "CCM",
+      "link4": "Connected Platforms"
+    },
+    "col3": {
+      "title": "Resources",
+      "link1": "FAQs",
+      "link2": "Resource Center"
+    },
+    "col4": {
+      "title": "About Us",
+      "link1": "Our Mission",
+      "link2": "Our History",
+      "link3": "Contact Us"
+    },
+    "col5": {
+      "title": "Office Locations",
+      "office1": {
+        "name": "Irvine Office",
+        "address": "9272 Jeronimo Rd, Suite 107, Irvine, CA 92618"
+      },
+      "office2": {
+        "name": "Silicon Valley Office",
+        "address": "3003 North First St, Suite 225, San Jose, CA 95134"
+      }
+    },
+    "copyright": "\u00a9 2025. Hicare.net Inc. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "SMS Terms and Conditions",
+    "arbitration": "Arbitration"
+  }
+}

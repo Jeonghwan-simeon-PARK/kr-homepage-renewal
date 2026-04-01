@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HicareNet — Enterprise-grade security and compliance. HIPAA compliant, ISO 27001 & ISO 27701 certified healthcare IT solutions.">
+  <title>HicareNet | Compliance & Security</title>
+
+  <!-- Fonts: Manrope + Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- ========== SKIP LINK ========== -->
+  <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">Skip to main content</a>
+
+  <!-- ========== TOP BAR (Utility + Nav) ========== -->
+  <div class="topbar">
+    <!-- Utility Strip -->
+    <div class="topbar__utility">
+      <div class="topbar__utility-link">
+        <span class="material-symbols-outlined icon-sm">call</span>
+        <span>855.844.8300</span>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="topbar__utility-login">
+        <span class="material-symbols-outlined icon-sm">login</span>
+        Provider Login
+      </a>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="topbar__header">
+      <a href="index.html" class="topbar__logo">HicareNet</a>
+
+      <nav class="topbar__nav" aria-label="Main navigation">
+        <a href="index.html" class="topbar__nav-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="topbar__nav-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="about.html" class="topbar__nav-link" data-i18n="nav.about">About Us</a>
+        <a href="compliance.html" class="topbar__nav-link is-active" data-i18n="nav.compliance">Compliance</a>
+        <a href="resources.html" class="topbar__nav-link" data-i18n="nav.resources">Resources</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="topbar__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
+        <a href="contact.html" class="btn btn--primary topbar__cta-desktop" data-i18n="nav.contact">Book a Demo Now!</a>
+        <!-- Mobile Hamburger -->
+        <button class="topbar__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <nav class="topbar__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <div class="topbar__mobile-menu-inner">
+        <a href="index.html" class="topbar__mobile-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="topbar__mobile-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="about.html" class="topbar__mobile-link" data-i18n="nav.about">About Us</a>
+        <a href="compliance.html" class="topbar__mobile-link is-active" data-i18n="nav.compliance">Compliance</a>
+        <a href="resources.html" class="topbar__mobile-link" data-i18n="nav.resources">Resources</a>
+        <a href="contact.html" class="btn btn--primary" style="margin-top: var(--space-4); text-align: center;" data-i18n="nav.contact">Book a Demo Now!</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+         ══════════════════════════════════════ -->
+    <section class="hero bg-surface-low">
+      <div class="hero__bg">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__inner">
+          <span class="hero__badge" data-i18n="compliance.hero.tag">Security & Compliance</span>
+          <h1 class="hero__title" data-i18n="compliance.hero.title">
+            Enterprise-Grade Security for Healthcare
+          </h1>
+          <p class="hero__subtitle" data-i18n="compliance.hero.desc">
+            Protecting patient data with industry-leading certifications,
+            rigorous security practices, and full regulatory compliance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CERTIFICATIONS
+         4 cards: HIPAA, ISO 27001, ISO 27701, FDA
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-header__title" data-i18n="compliance.certs.title">Our Certifications</h2>
+          <div class="section-header__accent"></div>
+        </div>
+
+        <div class="grid grid--12" style="gap: var(--space-8);">
+          <!-- HIPAA -->
+          <div class="card card--white md:col-span-6" data-animate="fade-up">
+            <span class="material-symbols-outlined card__icon">verified_user</span>
+            <h3 class="card__title" data-i18n="compliance.certs.hipaa.title">HIPAA Compliance</h3>
+            <p class="card__text" data-i18n="compliance.certs.hipaa.desc">
+              Fully compliant with the Health Insurance Portability and Accountability Act.
+              All patient data is handled in strict accordance with HIPAA Privacy and Security Rules.
+            </p>
+          </div>
+
+          <!-- ISO 27001 -->
+          <div class="card card--white md:col-span-6" data-animate="fade-up" data-animate-delay="100">
+            <span class="material-symbols-outlined card__icon">security</span>
+            <h3 class="card__title" data-i18n="compliance.certs.iso27001.title">ISO 27001</h3>
+            <p class="card__text" data-i18n="compliance.certs.iso27001.desc">
+              Internationally recognized standard for information security management systems (ISMS).
+              Demonstrates our commitment to systematic risk management.
+            </p>
+            <p class="card__meta" data-i18n="compliance.certs.iso27001.cert">Certificate No. IS 796059</p>
+            <p class="card__meta" data-i18n="compliance.certs.iso27001.date">Valid through 2027</p>
+          </div>
+
+          <!-- ISO 27701 -->
+          <div class="card card--white md:col-span-6" data-animate="fade-up" data-animate-delay="200">
+            <span class="material-symbols-outlined card__icon">privacy_tip</span>
+            <h3 class="card__title" data-i18n="compliance.certs.iso27701.title">ISO 27701</h3>
+            <p class="card__text" data-i18n="compliance.certs.iso27701.desc">
+              Privacy Information Management System (PIMS) certification extending ISO 27001
+              to cover personal data protection and privacy requirements.
+            </p>
+            <p class="card__meta" data-i18n="compliance.certs.iso27701.cert">Certificate No. PI 796060</p>
+            <p class="card__meta" data-i18n="compliance.certs.iso27701.date">Valid through 2027</p>
+          </div>
+
+          <!-- FDA -->
+          <div class="card card--white md:col-span-6" data-animate="fade-up" data-animate-delay="300">
+            <span class="material-symbols-outlined card__icon">medical_services</span>
+            <h3 class="card__title" data-i18n="compliance.certs.fda.title">FDA-Cleared Devices</h3>
+            <p class="card__text" data-i18n="compliance.certs.fda.desc">
+              All monitoring devices in our ecosystem are FDA-cleared, ensuring clinical accuracy
+              and patient safety for remote health measurements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SECURITY PRACTICES
+         6-card grid
+         ══════════════════════════════════════ -->
+    <section class="section section--spacious bg-surface-low">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-header__title" data-i18n="compliance.security.title">Security Practices</h2>
+          <div class="section-header__accent"></div>
+        </div>
+
+        <div class="grid grid--12" style="gap: var(--space-8);">
+          <!-- Encryption -->
+          <div class="card card--white md:col-span-4" data-animate="fade-up">
+            <span class="material-symbols-outlined card__icon">lock</span>
+            <h3 class="card__title" data-i18n="compliance.security.items.encryption.title">End-to-End Encryption</h3>
+            <p class="card__text" data-i18n="compliance.security.items.encryption.desc">
+              AES-256 encryption at rest and TLS 1.3 in transit. All patient health data
+              is encrypted throughout its entire lifecycle.
+            </p>
+          </div>
+
+          <!-- Access Control -->
+          <div class="card card--white md:col-span-4" data-animate="fade-up" data-animate-delay="100">
+            <span class="material-symbols-outlined card__icon">admin_panel_settings</span>
+            <h3 class="card__title" data-i18n="compliance.security.items.access.title">Access Control</h3>
+            <p class="card__text" data-i18n="compliance.security.items.access.desc">
+              Role-based access control (RBAC) with multi-factor authentication.
+              Principle of least privilege enforced across all systems.
+            </p>
+          </div>
+
+          <!-- Audit Logging -->
+          <div class="card card--white md:col-span-4" data-animate="fade-up" data-animate-delay="200">
+            <span class="material-symbols-outlined card__icon">receipt_long</span>
+            <h3 class="card__title" data-i18n="compliance.security.items.audit.title">Audit Logging</h3>
+            <p class="card__text" data-i18n="compliance.security.items.audit.desc">
+              Comprehensive audit trails for all data access and system changes.
+              Immutable logs retained for compliance reporting and forensic analysis.
+            </p>
+          </div>
+
+          <!-- Data Backup -->
+          <div class="card card--white md:col-span-4" data-animate="fade-up" data-animate-delay="300">
+            <span class="material-symbols-outlined card__icon">backup</span>
+            <h3 class="card__title" data-i18n="compliance.security.items.backup.title">Data Backup & Recovery</h3>
+            <p class="card__text" data-i18n="compliance.security.items.backup.desc">
+              Automated daily backups with geo-redundant storage. Disaster recovery plans
+              tested quarterly with documented recovery time objectives.
+            </p>
+          </div>
+
+          <!-- Penetration Testing -->
+          <div class="card card--white md:col-span-4" data-animate="fade-up" data-animate-delay="400">
+            <span class="material-symbols-outlined card__icon">bug_report</span>
+            <h3 class="card__title" data-i18n="compliance.security.items.pen.title">Penetration Testing</h3>
+            <p class="card__text" data-i18n="compliance.security.items.pen.desc">
+              Annual third-party penetration testing and continuous vulnerability scanning.
+              All findings remediated within defined SLA timelines.
+            </p>
+          </div>
+
+          <!-- Staff Training -->
+          <div class="card card--white md:col-span-4" data-animate="fade-up" data-animate-delay="500">
+            <span class="material-symbols-outlined card__icon">school</span>
+            <h3 class="card__title" data-i18n="compliance.security.items.training.title">Staff Training</h3>
+            <p class="card__text" data-i18n="compliance.security.items.training.desc">
+              Mandatory security awareness training for all employees. Annual HIPAA
+              compliance certification and ongoing phishing simulation exercises.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         COMPLIANCE FAQ
+         4 questions with <details>
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-header__title" data-i18n="compliance.faq.title">Compliance FAQ</h2>
+          <div class="section-header__accent"></div>
+        </div>
+
+        <div class="faq-list" style="max-width: 48rem; margin: 0 auto;">
+          <details class="faq" data-animate="fade-up">
+            <summary class="faq__question" data-i18n="compliance.faq.q1.q">
+              How does HicareNet ensure HIPAA compliance?
+            </summary>
+            <div class="faq__answer" data-i18n="compliance.faq.q1.a">
+              We implement comprehensive administrative, physical, and technical safeguards as required by HIPAA.
+              This includes encrypted data storage and transmission, role-based access controls, regular risk assessments,
+              Business Associate Agreements (BAAs) with all partners, and mandatory staff training on privacy practices.
+            </div>
+          </details>
+
+          <details class="faq" data-animate="fade-up" data-animate-delay="100">
+            <summary class="faq__question" data-i18n="compliance.faq.q2.q">
+              What data is collected from patients?
+            </summary>
+            <div class="faq__answer" data-i18n="compliance.faq.q2.a">
+              We collect vital signs data transmitted by FDA-cleared monitoring devices, including blood pressure,
+              blood glucose, pulse oximetry, weight, and temperature. All data is collected with patient consent
+              and handled in accordance with our privacy policy and applicable regulations.
+            </div>
+          </details>
+
+          <details class="faq" data-animate="fade-up" data-animate-delay="200">
+            <summary class="faq__question" data-i18n="compliance.faq.q3.q">
+              Where is patient data stored?
+            </summary>
+            <div class="faq__answer" data-i18n="compliance.faq.q3.a">
+              All patient data is stored in HIPAA-compliant, SOC 2 Type II certified cloud infrastructure
+              within the United States. We use geo-redundant storage with automatic failover to ensure
+              99.99% uptime and data durability.
+            </div>
+          </details>
+
+          <details class="faq" data-animate="fade-up" data-animate-delay="300">
+            <summary class="faq__question" data-i18n="compliance.faq.q4.q">
+              How can I request a security audit or BAA?
+            </summary>
+            <div class="faq__answer" data-i18n="compliance.faq.q4.a">
+              Contact our compliance team at compliance@hicare.net or call 855.844.8300.
+              We provide Business Associate Agreements to all covered entities, and our security
+              documentation is available upon request under NDA.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CTA SECTION
+         ══════════════════════════════════════ -->
+    <section class="section section--spacious bg-surface-low">
+      <div class="container text-center">
+        <div class="section-header">
+          <h2 class="section-header__title" data-i18n="compliance.cta.title">Ready to Learn More?</h2>
+          <p class="section-header__subtitle" data-i18n="compliance.cta.desc">
+            Speak with our compliance team to discuss how HicareNet meets
+            your organization's security and regulatory requirements.
+          </p>
+        </div>
+        <a href="contact.html" class="btn btn--primary" data-i18n="compliance.cta.btn">Contact Compliance Team</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Grid -->
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div>
+          <a href="index.html" class="topbar__logo" style="display: block; margin-bottom: var(--space-6);">HicareNet</a>
+          <p class="footer__brand-text" data-i18n="footer.desc">
+            Elevating the standard of remote care through innovation and empathy.
+          </p>
+          <div>
+            <p class="footer__contact-label" data-i18n="footer.contactLabel">Contact Info</p>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">call</span>
+                <a href="tel:8558448300">855.844.8300</a>
+              </li>
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">mail</span>
+                <a href="mailto:help@hicare.net">help@hicare.net</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Home Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col1.title">Home</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-i18n="footer.col1.link1">What Hicare Does</a></li>
+            <li><a href="#" data-i18n="footer.col1.link2">What Hicare Provides</a></li>
+            <li><a href="#" data-i18n="footer.col1.link3">Who We Serve</a></li>
+            <li><a href="#" data-i18n="footer.col1.link4">Why Choose Hicare</a></li>
+            <li><a href="#" data-i18n="footer.col1.link5">Conditions Monitored</a></li>
+            <li><a href="#" data-i18n="footer.col1.link6">RPM/CCM Reimbursement</a></li>
+            <li><a href="#" data-i18n="footer.col1.link7">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col2.title">Solutions</h4>
+          <ul class="footer__links">
+            <li><a href="solutions.html" data-i18n="footer.col2.link1">Overview</a></li>
+            <li><a href="solutions.html#rpm" data-i18n="footer.col2.link2">RPM</a></li>
+            <li><a href="solutions.html#ccm" data-i18n="footer.col2.link3">CCM</a></li>
+            <li><a href="solutions.html#platform" data-i18n="footer.col2.link4">Connected Platforms</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources / About Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col3.title">Resources</h4>
+          <ul class="footer__links">
+            <li><a href="resources.html#faq" data-i18n="footer.col3.link1">FAQs</a></li>
+            <li><a href="resources.html" data-i18n="footer.col3.link2">Resource Center</a></li>
+          </ul>
+          <h4 class="footer__col-title" style="margin-top: var(--space-10);" data-i18n="footer.col4.title">About Us</h4>
+          <ul class="footer__links">
+            <li><a href="about.html" data-i18n="footer.col4.link1">Our Mission</a></li>
+            <li><a href="about.html#history" data-i18n="footer.col4.link2">Our History</a></li>
+            <li><a href="contact.html" data-i18n="footer.col4.link3">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Office Locations Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col5.title">Office Locations</h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office1.name">Irvine Office</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office1.address">9272 Jeronimo Rd, Suite 107, Irvine, CA 92618</p>
+            </div>
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office2.name">Silicon Valley Office</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office2.address">3003 North First St, Suite 225, San Jose, CA 95134</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <div class="footer__copyright" data-i18n="footer.copyright">
+          &copy; 2025. Hicare.net Inc. All Rights Reserved.
+        </div>
+        <div class="footer__legal">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">SMS Terms and Conditions</a>
+          <a href="#" data-i18n="footer.arbitration">Arbitration</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
