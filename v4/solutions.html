@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="HicareNet Solution Overview - Comprehensive smart healthcare solutions including RPM, CCM, AWV, and Value-Based Care."/>
+<title>Solutions | HicareNet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "inverse-surface": "#2d3038", "outline-variant": "#c1c6d7", "on-tertiary": "#ffffff",
+            "surface-dim": "#d8d9e4", "surface-tint": "#1676F3", "on-secondary-container": "#385284",
+            "surface-container-high": "#e6e8f2", "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#2b4677", "on-secondary-fixed": "#001a41",
+            "on-primary-fixed-variant": "#004494", "on-surface-variant": "#414754",
+            "inverse-on-surface": "#eff0fb", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdbcb",
+            "surface-container": "#ecedf8", "on-background": "#181b23", "inverse-primary": "#adc6ff",
+            "tertiary-container": "#c35200", "surface-container-lowest": "#ffffff",
+            "surface": "#f9f9ff", "on-primary": "#ffffff", "primary-fixed": "#d8e2ff",
+            "secondary-fixed": "#d8e2ff", "primary": "#1676F3", "surface-container-low": "#f2f3fe",
+            "primary-fixed-dim": "#adc6ff", "on-tertiary-fixed-variant": "#793000",
+            "surface-container-highest": "#e0e2ed", "tertiary-fixed-dim": "#ffb692",
+            "outline": "#727786", "primary-container": "#1676F3", "on-error-container": "#93000a",
+            "tertiary": "#9b4000", "surface-variant": "#e0e2ed", "on-primary-fixed": "#001a41",
+            "on-error": "#ffffff", "surface-bright": "#f9f9ff", "secondary-container": "#adc6ff",
+            "secondary": "#445e91", "on-tertiary-container": "#fffbff",
+            "secondary-fixed-dim": "#adc6ff", "on-surface": "#181b23", "background": "#f9f9ff",
+            "on-tertiary-fixed": "#341100", "on-primary-container": "#ffffff", "error": "#ba1a1a"
+          },
+          fontFamily: { "headline": ["Manrope"], "body": ["Inter"], "label": ["Inter"] },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/20">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+  <a href="index.html" class="flex items-center gap-2">
+    <span class="font-['Manrope'] font-extrabold text-xl tracking-tight text-on-background">HicareNet</span>
+  </a>
+  <div class="hidden md:flex items-center gap-8 font-['Manrope'] font-bold tracking-tight">
+    <a class="text-[#43474f] hover:text-[#1676F3] transition-colors" href="about.html" data-i18n="nav.about">About</a>
+    <a class="text-[#1676F3]" href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+    <a class="text-[#43474f] hover:text-[#1676F3] transition-colors" href="resources.html" data-i18n="nav.resources">Resources</a>
+    <a class="text-[#43474f] hover:text-[#1676F3] transition-colors" href="contact.html" data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center gap-2 text-sm font-bold">
+      <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 hover:text-[#1676F3] transition-colors">EN</button>
+      <span class="text-gray-400">|</span>
+      <button id="lang-ko" onclick="setLanguage('ko')" class="px-2 py-1 hover:text-[#1676F3] transition-colors">KO</button>
+    </div>
+    <a href="contact.html" class="bg-[#1676F3] text-white px-6 py-2.5 rounded-sm font-bold tracking-tight text-sm uppercase transition-all active:scale-[0.98] hover:shadow-lg hidden md:inline-block" data-i18n="nav.cta">Contact Us</a>
+    <button id="menuBtn" class="md:hidden p-2"><span class="material-symbols-outlined text-[#43474f]">menu</span></button>
+  </div>
+</div>
+<div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-4 space-y-4">
+  <a class="block text-[#43474f] font-['Manrope'] font-bold py-2" href="about.html" data-i18n="nav.about">About</a>
+  <a class="block text-[#43474f] font-['Manrope'] font-bold py-2" href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+  <a class="block text-[#43474f] font-['Manrope'] font-bold py-2" href="resources.html" data-i18n="nav.resources">Resources</a>
+  <a class="block text-[#43474f] font-['Manrope'] font-bold py-2" href="contact.html" data-i18n="nav.contact">Contact</a>
+</div>
+<div class="bg-[#eff4ff] h-[1px] w-full absolute bottom-0"></div>
+</nav>
+
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden bg-gradient-to-br from-on-background to-primary-container">
+  <div class="absolute inset-0 opacity-40 mix-blend-overlay">
+    <img class="w-full h-full object-cover" alt="High-tech medical monitoring tablet showing vital signs" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop"/>
+  </div>
+  <div class="container mx-auto px-8 relative z-10">
+    <div class="max-w-4xl">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant text-xs font-bold tracking-widest uppercase mb-6" data-i18n="solutions.hero.tag">Industrial Precision</span>
+      <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white tracking-tighter mb-8 leading-[1.1]" data-i18n="solutions.hero.title">
+        Hicare Solution Overview
+      </h1>
+      <p class="text-xl md:text-2xl text-primary-fixed max-w-2xl font-light leading-relaxed" data-i18n="solutions.hero.subtitle">
+        Providing a comprehensive range of smart healthcare solutions to optimize patient care and management.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Introduction Section -->
+<section class="py-24 bg-surface">
+  <div class="max-w-[1440px] mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7">
+        <h2 class="text-3xl md:text-4xl font-headline font-bold text-on-surface tracking-tight mb-8" data-i18n="solutions.intro.title">
+          Modern digital management for the next generation of healthcare.
+        </h2>
+        <p class="text-lg text-on-surface-variant leading-relaxed mb-8" data-i18n="solutions.intro.desc">
+          Hicare solutions are designed to bridge the gap between traditional healthcare and modern digital management. By integrating advanced sensors, real-time data processing, and intuitive user interfaces, we create an ecosystem where precision meets compassion.
+        </p>
+        <div class="flex gap-4">
+          <div class="p-6 bg-surface-container-low rounded-sm">
+            <span class="material-symbols-outlined text-primary mb-4" style="font-size: 32px;">query_stats</span>
+            <h4 class="font-headline font-bold mb-2" data-i18n="solutions.intro.precision_title">Precision Care</h4>
+            <p class="text-sm text-on-surface-variant" data-i18n="solutions.intro.precision_desc">Real-time diagnostics and patient tracking.</p>
+          </div>
+          <div class="p-6 bg-surface-container-low rounded-sm">
+            <span class="material-symbols-outlined text-primary mb-4" style="font-size: 32px;">hub</span>
+            <h4 class="font-headline font-bold mb-2" data-i18n="solutions.intro.connected_title">Connected Hub</h4>
+            <p class="text-sm text-on-surface-variant" data-i18n="solutions.intro.connected_desc">Seamless integration across all platforms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-5 relative">
+        <div class="aspect-[4/5] bg-surface-container-highest rounded-sm overflow-hidden">
+          <img class="w-full h-full object-cover" alt="Medical staff using a digital interface to monitor patient data" src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format&fit=crop"/>
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-[#1676F3] p-8 text-white max-w-[240px] hidden md:block">
+          <p class="text-4xl font-headline font-black mb-2" data-i18n="solutions.intro.compliance_value">100%</p>
+          <p class="text-xs uppercase tracking-widest font-bold opacity-80" data-i18n="solutions.intro.compliance_label">Compliant &amp; Secure Data Architecture</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Solution Grid (Bento Style) -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-[1440px] mx-auto px-8">
+    <div class="mb-16">
+      <h2 class="text-4xl font-headline font-extrabold tracking-tighter text-on-surface mb-4" data-i18n="solutions.ecosystem.title">Our Ecosystem</h2>
+      <div class="h-1 w-20 bg-primary"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Hicare Hub -->
+      <div class="md:col-span-2 md:row-span-2 group bg-surface-container-lowest p-10 rounded-sm relative overflow-hidden transition-all duration-500 hover:bg-on-background hover:text-white">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="mb-auto">
+            <span class="material-symbols-outlined text-primary group-hover:text-primary-fixed mb-6" style="font-size: 48px;">grid_view</span>
+            <h3 class="text-3xl font-headline font-bold mb-4" data-i18n="solutions.ecosystem.hub_title">Hicare Hub</h3>
+            <p class="text-lg opacity-80 leading-relaxed max-w-sm" data-i18n="solutions.ecosystem.hub_desc">A central management system for connected care programs, enabling seamless data flow between devices and practitioners.</p>
+          </div>
+          <div class="mt-8">
+            <a class="inline-flex items-center gap-2 font-bold text-primary group-hover:text-primary-fixed group-hover:underline underline-offset-8" href="contact.html" data-i18n="solutions.ecosystem.hub_link">Explore Architecture <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+        </div>
+        <div class="absolute -right-20 -bottom-20 opacity-5 group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined" style="font-size: 300px;">settings_suggest</span>
+        </div>
+      </div>
+      <!-- Hicare M -->
+      <div class="bg-surface-container-lowest p-8 rounded-sm hover:shadow-2xl transition-all duration-500 group">
+        <span class="material-symbols-outlined text-primary mb-6" style="font-size: 32px;">smartphone</span>
+        <h3 class="text-xl font-headline font-bold mb-3" data-i18n="solutions.ecosystem.mobile_title">Hicare M</h3>
+        <p class="text-on-surface-variant text-sm group-hover:text-on-surface transition-colors" data-i18n="solutions.ecosystem.mobile_desc">Mobile health solution for real-time patient monitoring and data collection directly from mobile devices.</p>
+      </div>
+      <!-- Hicare Home -->
+      <div class="bg-surface-container-lowest p-8 rounded-sm hover:shadow-2xl transition-all duration-500 group border-t-4 border-transparent hover:border-primary">
+        <span class="material-symbols-outlined text-primary mb-6" style="font-size: 32px;">home_health</span>
+        <h3 class="text-xl font-headline font-bold mb-3" data-i18n="solutions.ecosystem.home_title">Hicare Home</h3>
+        <p class="text-on-surface-variant text-sm group-hover:text-on-surface transition-colors" data-i18n="solutions.ecosystem.home_desc">Extending healthcare to patients at home with easy-to-use devices and remote consultation platforms.</p>
+      </div>
+      <!-- Hicare Enterprise -->
+      <div class="md:col-span-2 bg-primary p-10 rounded-sm text-white flex flex-col md:flex-row gap-8 items-center">
+        <div class="flex-1">
+          <h3 class="text-2xl font-headline font-bold mb-3" data-i18n="solutions.ecosystem.enterprise_title">Hicare Enterprise</h3>
+          <p class="opacity-80 text-sm leading-relaxed mb-6" data-i18n="solutions.ecosystem.enterprise_desc">Scalable solutions for hospitals, health systems, and large organizations requiring robust infrastructure and high-volume data handling.</p>
+          <a href="contact.html" class="bg-white text-primary px-6 py-2 rounded-sm font-bold text-sm tracking-tight hover:bg-primary-fixed transition-colors inline-block" data-i18n="solutions.ecosystem.enterprise_btn">Request Enterprise Briefing</a>
+        </div>
+        <div class="w-full md:w-1/3 aspect-video bg-white/10 rounded-sm flex items-center justify-center">
+          <span class="material-symbols-outlined" style="font-size: 64px;">corporate_fare</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features & Benefits -->
+<section class="py-24 bg-surface">
+  <div class="max-w-[1440px] mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+      <div class="md:col-span-4">
+        <h2 class="text-4xl font-headline font-extrabold tracking-tighter text-on-surface mb-6" data-i18n="solutions.features.title">Technical Foundation</h2>
+        <p class="text-on-surface-variant leading-relaxed" data-i18n="solutions.features.subtitle">Our platform is built on three pillars of excellence, ensuring that technology serves the caregiver and the patient with equal efficiency.</p>
+        <img class="mt-8 rounded-sm w-full grayscale contrast-125" alt="Digital data visualization with glowing blue and orange points" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&auto=format&fit=crop"/>
+      </div>
+      <div class="md:col-span-8 grid grid-cols-1 gap-4">
+        <!-- Interoperability -->
+        <div class="flex flex-col md:flex-row gap-8 p-8 bg-surface-container hover:bg-surface-container-highest transition-colors rounded-sm group">
+          <div class="w-12 h-12 flex-shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary">sync_alt</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-headline font-bold mb-2" data-i18n="solutions.features.interop_title">Interoperability</h3>
+            <p class="text-on-surface-variant leading-relaxed" data-i18n="solutions.features.interop_desc">Seamlessly integrate with existing EHR and LIS systems. Our HL7 and FHIR-compliant interfaces ensure that data flows securely and accurately across your entire healthcare network without friction.</p>
+          </div>
+        </div>
+        <!-- Data Analytics -->
+        <div class="flex flex-col md:flex-row gap-8 p-8 bg-surface-container hover:bg-surface-container-highest transition-colors rounded-sm">
+          <div class="w-12 h-12 flex-shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary">analytics</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-headline font-bold mb-2" data-i18n="solutions.features.analytics_title">Data Analytics</h3>
+            <p class="text-on-surface-variant leading-relaxed" data-i18n="solutions.features.analytics_desc">Transform raw patient data into actionable insights. Our AI-driven analytics engine helps identify trends, predict potential health risks, and optimize facility resource allocation for better outcomes.</p>
+          </div>
+        </div>
+        <!-- Security -->
+        <div class="flex flex-col md:flex-row gap-8 p-8 bg-surface-container hover:bg-surface-container-highest transition-colors rounded-sm">
+          <div class="w-12 h-12 flex-shrink-0 bg-secondary-container/50 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-tertiary">verified_user</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 mb-2">
+              <h3 class="text-xl font-headline font-bold" data-i18n="solutions.features.security_title">Security &amp; Compliance</h3>
+              <span class="px-2 py-1 bg-tertiary-container/10 text-tertiary text-[10px] font-bold rounded-full border border-tertiary/20">HIPAA CERTIFIED</span>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed" data-i18n="solutions.features.security_desc">Enterprise-grade encryption and strict access controls. We maintain full HIPAA compliance and adhere to international data protection standards, ensuring patient privacy is never compromised.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-on-background text-white overflow-hidden relative">
+  <div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+    <svg fill="none" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="200" cy="200" r="180" stroke="white" stroke-dasharray="10 20" stroke-width="40"></circle>
+    </svg>
+  </div>
+  <div class="max-w-[1440px] mx-auto px-8 flex flex-col items-center text-center relative z-10">
+    <h2 class="text-4xl md:text-5xl font-headline font-black mb-8 tracking-tighter" data-i18n="solutions.cta.title">Ready to evolve your practice?</h2>
+    <p class="text-primary-fixed max-w-xl text-lg mb-10 opacity-80 leading-relaxed" data-i18n="solutions.cta.subtitle">Join the global network of healthcare providers who are redefining precision care with Hicare Solutions.</p>
+    <div class="flex flex-col md:flex-row gap-4">
+      <a href="contact.html" class="bg-[#1676F3] text-white px-10 py-4 rounded-sm font-headline font-bold text-lg hover:bg-primary-container transition-all active:scale-95 inline-block" data-i18n="solutions.cta.btn_primary">Request a Demo</a>
+      <a href="contact.html" class="border-2 border-white/20 text-white px-10 py-4 rounded-sm font-headline font-bold text-lg hover:bg-white hover:text-on-background transition-all active:scale-95 inline-block" data-i18n="solutions.cta.btn_secondary">Contact Our Sales Team</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#001430] border-t border-white/10 text-white font-['Inter'] text-sm uppercase tracking-widest">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+  <div class="space-y-6">
+    <div class="mb-6"><a href="index.html" class="font-['Manrope'] font-extrabold text-xl tracking-tight text-white">HicareNet</a></div>
+    <p class="text-[#c4c6d0] normal-case tracking-normal text-base leading-relaxed" data-i18n="footer.desc">Providing compassionate, technology-enabled care management solutions for a healthier world.</p>
+    <div class="text-[#c4c6d0] normal-case tracking-normal text-sm space-y-2">
+      <p data-i18n="footer.ceo">CEO: Chris Seung-Hee Han</p>
+      <p data-i18n="footer.phone">Tel: 02-3400-7247</p>
+      <p data-i18n="footer.email">Email: info@hicare.net</p>
+    </div>
+  </div>
+  <div class="space-y-4">
+    <div class="text-white font-bold mb-6" data-i18n="footer.company">Company</div>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="about.html" data-i18n="footer.about">About Us</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="solutions.html" data-i18n="footer.solutions">Solutions</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="resources.html" data-i18n="footer.resources">Resources</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="contact.html" data-i18n="footer.contact">Contact</a>
+  </div>
+  <div class="space-y-4">
+    <div class="text-white font-bold mb-6" data-i18n="footer.governance">Governance</div>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="#" data-i18n="footer.privacy">Privacy Policy</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="#" data-i18n="footer.terms">Terms of Service</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="#" data-i18n="footer.compliance">Compliance</a>
+  </div>
+  <div class="space-y-6">
+    <div class="text-white font-bold mb-6" data-i18n="footer.newsletter">Newsletter</div>
+    <p class="text-[#c4c6d0] normal-case tracking-normal text-xs" data-i18n="footer.newsletter_desc">Stay informed with our updates on healthcare innovation and care management.</p>
+    <div class="flex">
+      <input class="bg-white/5 border-none focus:ring-1 focus:ring-primary text-white text-xs w-full py-3 px-4 uppercase tracking-widest" placeholder="Email Address" type="email" data-i18n-placeholder="footer.email_placeholder"/>
+      <button class="bg-primary px-4 hover:bg-primary-container transition-colors" aria-label="Subscribe"><span class="material-symbols-outlined text-white">chevron_right</span></button>
+    </div>
+  </div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-10 border-t border-white/5">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="text-[#c4c6d0] text-[10px]" data-i18n="footer.copyright">&copy; 2025 HicareNet Co., Ltd. All rights reserved.</p>
+    <div class="flex gap-8 text-[10px]"><span class="text-white/30" data-i18n="footer.address">Seoul, South Korea (Est. 2004)</span></div>
+  </div>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

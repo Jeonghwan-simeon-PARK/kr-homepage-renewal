@@ -1,0 +1,359 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "회사소개",
+    "solutions": "솔루션",
+    "resources": "리소스",
+    "contact": "문의",
+    "cta": "문의하기"
+  },
+  "home": {
+    "hero": {
+      "badge": "인간 중심 케어",
+      "title": "하이케어넷 — 혁신적인 커넥티드 케어 관리 서비스",
+      "subtitle": "공감을 기반으로, 결과를 위해 구축된 솔루션. 의료 전문성과 지능형 디지털 관리의 간격을 연결하여 더 나은 미래를 만들어갑니다.",
+      "cta_primary": "서비스 살펴보기",
+      "cta_secondary": "자세히 알아보기",
+      "excellence_label": "케어 우수성",
+      "excellence_title": "20년 이상"
+    },
+    "what": {
+      "title": "하이케어넷이 하는 일",
+      "subtitle": "저희의 커넥티드 케어 프로그램은 환자와 의료기관 모두에게 다양한 혜택을 제공합니다.",
+      "card1_title": "맞춤형 케어를 통한 환자 만족도 및 치료 결과 향상",
+      "card1_hover": "개인의 필요에 맞는 치료 계획을 수립하여 최고의 삶의 질을 보장합니다.",
+      "card2_title": "지속적인 모니터링을 통한 재입원 감소",
+      "card2_hover": "응급 상황이 되기 전에 잠재적인 문제를 감지하는 선제적 건강 추적",
+      "card3_title": "실시간 환자-의사 연결로 케어 품질 향상",
+      "card3_hover": "안전하고 즉각적인 디지털 커뮤니케이션 채널로 거리의 장벽을 극복합니다.",
+      "card4_title": "지속 가능하고 의미 있는 수익 성장 지원",
+      "card4_hover": "기술을 통해 의료 기관의 효율성과 가치 기반 상환을 극대화합니다.",
+      "learn_more": "더 알아보기"
+    },
+    "provides": {
+      "title": "하이케어넷이 제공하는 것",
+      "patients": "환자를 위한 서비스",
+      "providers": "의료기관을 위한 서비스",
+      "p1": "건강 개선과 안심",
+      "p2": "병원 방문 감소, 가정에서 더 많은 시간",
+      "p3": "개인 건강 여정에 대한 주도적 관리",
+      "p4": "부드럽고 맞춤화된 교육 및 지원",
+      "pr1": "환자-의료진 관계의 심화",
+      "pr2": "스트레스 감소와 함께 임상 워크플로우 향상",
+      "pr3": "가치 기반 케어를 통한 지속 가능한 성장",
+      "pr4": "보다 공감적인 케어를 위한 인사이트 데이터",
+      "patients_title": "환자를 위한",
+      "patients_item1": "건강 증진 및 마음의 평화",
+      "patients_item2": "병원 방문 감소, 집에서 보내는 시간 증가",
+      "patients_item3": "개인 건강 여정에 대한 주도권 강화",
+      "patients_item4": "부드럽고 개인화된 교육 및 지원",
+      "providers_title": "의료기관을 위한",
+      "providers_item1": "더욱 깊어진 환자-의료진 관계",
+      "providers_item2": "스트레스를 줄인 향상된 임상 워크플로우",
+      "providers_item3": "가치 기반 케어를 통한 지속 가능한 성장",
+      "providers_item4": "더욱 공감적인 케어를 위한 심층 데이터"
+    },
+    "serve": {
+      "title": "서비스 대상",
+      "subtitle": "하이케어넷은 환자의 더 나은 결과를 가능하게 하고 의료 기관을 위한 보다 지원적인 환경을 조성합니다.",
+      "physician_title": "의원 및 클리닉",
+      "physician_desc": "CMS 상환 코드를 활용하여 의료 기관 워크플로우를 최적화하면서 환자의 일상 건강 관리를 지원합니다.",
+      "hospital_title": "병원 및 의료 시스템",
+      "hospital_desc": "재입원을 줄이고 전체 시스템에서 환자 신뢰를 높여 더 회복력 있는 커뮤니티를 구축합니다.",
+      "aco_title": "책임 케어 조직",
+      "aco_desc": "환자 복지를 재정적 지속 가능성의 중심에 두는 가치 기반 케어 이니셔티브를 추진합니다.",
+      "fqhc_title": "지역사회 보건 센터",
+      "fqhc_desc": "소외된 커뮤니티의 접근성과 편안함을 보장하면서 환자의 가정으로 양질의 케어를 제공합니다.",
+      "practices_tag": "의원 및 클리닉",
+      "practices_title": "의원 및 클리닉",
+      "practices_desc": "CMS 환급 코드와 함께 의료기관 워크플로우를 최적화하면서 환자의 일상 건강 필요를 지원하세요.",
+      "hospitals_tag": "병원",
+      "hospitals_title": "병원 및 의료 시스템",
+      "hospitals_desc": "재입원을 줄이고 전체 시스템 전반의 환자 신뢰를 높여 더욱 탄력적인 커뮤니티를 구축하세요.",
+      "acos_tag": "ACO",
+      "acos_title": "책임 케어 기관",
+      "acos_desc": "재정적 지속 가능성의 핵심에 환자 건강을 두는 가치 기반 케어 이니셔티브를 추진하세요.",
+      "fqhcs_tag": "지역사회 센터",
+      "fqhcs_title": "지역사회 센터",
+      "fqhcs_desc": "환자 가정에 양질의 케어를 제공하여 소외 계층 지역사회의 접근성과 편의성을 보장하세요."
+    },
+    "does": {
+      "title": "하이케어넷이 하는 일",
+      "subtitle": "저희 커넥티드 케어 프로그램은 환자와 의료기관 모두에게 다양한 잠재적 이점을 제공합니다.",
+      "card1_title": "개인화된 케어를 통한 환자 만족도 및 치료 결과 향상",
+      "card1_desc": "개인의 필요에 맞춘 치료 계획으로 최고의 삶의 질을 보장합니다.",
+      "card2_title": "지속적인 공감 모니터링을 통한 재입원 감소",
+      "card2_desc": "잠재적 문제가 응급 상황이 되기 전에 파악하는 사전 건강 추적입니다.",
+      "card3_title": "실시간 환자-의사 연결을 통한 치료 품질 향상",
+      "card3_desc": "안전하고 즉각적인 디지털 커뮤니케이션 채널로 거리를 극복합니다.",
+      "card4_title": "지속 가능하고 배려 있는 수익 성장으로 의료기관 역량 강화",
+      "card4_desc": "기술을 통해 의료기관 효율성과 가치 기반 환급을 극대화합니다.",
+      "learn_more": "자세히 보기"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "우리의 역사",
+      "title": "정밀 기술과 공감적 케어로 의료를 강화합니다.",
+      "tag": "우리의 유산"
+    },
+    "vision": {
+      "title": "비전 & 미션",
+      "subtitle": "기술과 환자 사이의 간격을 연결하는 고품질의 혁신적인 케어 솔루션을 제공합니다.",
+      "research_title": "연구 우선",
+      "research_desc": "AI와 임상 진단의 교차점에서 지속적인 R&D를 수행합니다.",
+      "global_title": "글로벌 접근성",
+      "global_desc": "프리미엄 헬스케어 기술이 전 세계 구석구석에 닿도록 보장합니다.",
+      "years": "20년 이상의 탁월함",
+      "desc": "기술과 환자 사이의 격차를 해소하기 위해 고품질의 혁신적인 케어 솔루션을 제공합니다.",
+      "years_label": "년의 우수성",
+      "years_value": "20+"
+    },
+    "values": {
+      "title": "핵심 가치",
+      "subtitle": "글로벌 의료에 대한 운영적 정밀성과 인간 중심적 접근 방식을 정의하는 기둥입니다.",
+      "innovation": "혁신",
+      "innovation_desc": "적응형 AI와 안전한 데이터 에코시스템을 통해 커넥티드 케어의 미래를 이끕니다.",
+      "precision": "정밀성",
+      "precision_desc": "모니터링과 진단의 정확성. 모호함을 제거하여 임상적 탁월함을 보장합니다.",
+      "compassion": "공감",
+      "compassion_desc": "우리가 하는 모든 일의 중심에 환자 중심 케어가 있습니다. 기술은 도구이고, 인류가 목표입니다.",
+      "integrity": "행동하는 무결성",
+      "integrity_desc": "우리는 의료 파트너와 환자가 우리의 데이터와 기기에 절대적인 신뢰를 가질 수 있도록 완전한 투명성으로 운영됩니다.",
+      "compliance_link": "컴플라이언스 보기",
+      "innovation_title": "혁신",
+      "precision_title": "정밀성",
+      "compassion_title": "공감",
+      "integrity_title": "성실한 행동"
+    },
+    "global": {
+      "title": "글로벌 현황",
+      "subtitle": "하이케어넷은 전 세계 환자와 의료 제공자에게 서비스를 제공하며, 보편적인 건강 문제에 맞는 현지화된 솔루션을 제공합니다.",
+      "hub1": "다수의 국제 연구 허브",
+      "hub2": "24/7 글로벌 지원 인프라",
+      "hub3": "HIPAA & ISO 27001/27701 인증",
+      "desc": "하이케어넷은 전 세계 환자와 의료 제공자에게 서비스를 제공합니다.",
+      "item1": "다수의 국제 연구 허브",
+      "item2": "24/7 글로벌 지원 인프라",
+      "item3": "HIPAA 및 ISO 27001/27701 인증"
+    },
+    "cta": {
+      "title": "의료 서비스를 혁신할 준비가 되셨나요?",
+      "subtitle": "하이케어넷의 정밀 기술을 활용하는 클리닉 및 병원 네트워크에 합류하세요.",
+      "btn_start": "지금 시작하기",
+      "btn_solutions": "솔루션 보기",
+      "btn_primary": "지금 시작하기",
+      "btn_secondary": "솔루션 보기"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "badge": "스마트 헬스케어",
+      "title": "하이케어넷 솔루션 개요",
+      "subtitle": "환자 케어와 관리를 최적화하는 포괄적인 스마트 헬스케어 솔루션을 제공합니다.",
+      "tag": "스마트 헬스케어"
+    },
+    "intro": {
+      "title": "차세대 의료를 위한 현대적 디지털 관리",
+      "subtitle": "하이케어넷 솔루션은 고급 센서, 실시간 데이터 처리, 직관적인 사용자 인터페이스를 통합하여 정밀성과 공감이 만나는 에코시스템을 만듭니다.",
+      "precision_title": "정밀 케어",
+      "precision_desc": "실시간 진단 및 환자 추적",
+      "hub_title": "커넥티드 허브",
+      "hub_desc": "모든 플랫폼에 걸친 원활한 통합",
+      "badge": "100% 규정 준수 & 안전한 데이터 아키텍처",
+      "desc": "하이케어넷 솔루션은 전통적인 의료와 현대 디지털 관리 사이의 격차를 해소합니다.",
+      "connected_title": "커넥티드 허브",
+      "connected_desc": "모든 플랫폼에서 원활한 통합.",
+      "compliance_label": "컴플라이언스",
+      "compliance_value": "100% 준수 및 보안 데이터 아키텍처"
+    },
+    "ecosystem": {
+      "title": "우리의 에코시스템",
+      "hub_title": "하이케어 허브",
+      "hub_desc": "기기와 의료진 사이의 원활한 데이터 흐름을 가능하게 하는 커넥티드 케어 프로그램의 중앙 관리 시스템",
+      "hub_link": "아키텍처 살펴보기",
+      "m_title": "하이케어 M",
+      "m_desc": "모바일 기기에서 직접 실시간 환자 모니터링과 데이터 수집을 위한 모바일 헬스 솔루션",
+      "home_title": "하이케어 홈",
+      "home_desc": "사용하기 쉬운 기기와 원격 상담 플랫폼으로 가정의 환자에게 의료 서비스를 확대합니다.",
+      "enterprise_title": "하이케어 엔터프라이즈",
+      "enterprise_desc": "강력한 인프라와 대용량 데이터 처리가 필요한 병원, 의료 시스템, 대형 조직을 위한 확장 가능한 솔루션",
+      "enterprise_btn": "엔터프라이즈 브리핑 요청",
+      "mobile_title": "하이케어 M",
+      "mobile_desc": "모바일 기기에서 직접 실시간 환자 모니터링 및 데이터 수집을 위한 모바일 헬스 솔루션입니다."
+    },
+    "technical": {
+      "title": "기술적 기반",
+      "subtitle": "우리 플랫폼은 세 가지 탁월함의 기둥 위에 구축되어 기술이 케어 제공자와 환자 모두에게 동등한 효율성으로 서비스하도록 보장합니다.",
+      "interop_title": "상호운용성",
+      "interop_desc": "기존 EHR 및 LIS 시스템과 원활하게 통합됩니다. HL7 및 FHIR 호환 인터페이스를 통해 데이터가 전체 의료 네트워크에서 안전하고 정확하게 흐릅니다.",
+      "analytics_title": "데이터 분석",
+      "analytics_desc": "원시 환자 데이터를 실행 가능한 인사이트로 변환합니다. AI 기반 분석 엔진이 트렌드를 파악하고, 잠재적 건강 위험을 예측하며, 더 나은 결과를 위해 자원 배분을 최적화합니다.",
+      "security_title": "보안 & 컴플라이언스",
+      "security_badge": "HIPAA 인증",
+      "security_desc": "엔터프라이즈급 암호화와 엄격한 접근 제어. 완전한 HIPAA 규정 준수를 유지하고 국제 데이터 보호 표준을 준수하여 환자 개인 정보를 보호합니다."
+    },
+    "cta": {
+      "title": "진료 환경을 혁신할 준비가 되셨나요?",
+      "subtitle": "하이케어넷 솔루션으로 정밀 케어를 재정의하는 글로벌 의료 서비스 제공자 네트워크에 합류하세요.",
+      "btn_demo": "데모 요청",
+      "btn_contact": "영업팀 문의",
+      "btn_primary": "데모 요청",
+      "btn_secondary": "영업팀 문의"
+    },
+    "features": {
+      "title": "기술적 기반",
+      "subtitle": "저희 플랫폼은 탁월성의 세 가지 기둥 위에 구축되어 있습니다.",
+      "interop_title": "상호운용성",
+      "interop_desc": "기존 EHR 및 LIS 시스템과 원활하게 통합됩니다. HL7 및 FHIR 준수 인터페이스.",
+      "analytics_title": "데이터 분석",
+      "analytics_desc": "원시 환자 데이터를 실행 가능한 인사이트로 변환합니다. AI 기반 분석.",
+      "security_title": "보안 및 컴플라이언스",
+      "security_desc": "엔터프라이즈급 암호화 및 엄격한 접근 통제. HIPAA 완전 준수."
+    }
+  },
+  "resources": {
+    "hero": {
+      "badge": "지식 허브",
+      "title": "리소스",
+      "subtitle": "정밀 케어를 제공하는 데 필요한 기술적 인사이트, 임상 데이터, 운영 도구로 의료 제공자를 지원합니다.",
+      "tag": "지식 허브"
+    },
+    "brochures": {
+      "title": "브로슈어",
+      "subtitle": "의료 제품 라인에 대한 포괄적인 제품 사양 및 솔루션 개요",
+      "item1_name": "하이케어넷 제품 카탈로그",
+      "item1_size": "PDF • 4.2 MB",
+      "item2_name": "운영 탁월성 가이드",
+      "item2_size": "PDF • 2.8 MB",
+      "download": "다운로드",
+      "desc": "당사 의료 제품군에 대한 종합적인 제품 사양 및 솔루션 개요입니다.",
+      "item1_title": "하이케어넷 제품 카탈로그",
+      "item2_title": "운영 우수성 가이드"
+    },
+    "whitepapers": {
+      "title": "백서",
+      "subtitle": "우리 혁신의 이면에 있는 임상 연구 및 엔지니어링에 대한 심층 분석",
+      "paper1_type": "임상 연구",
+      "paper1_title": "중환자 케어에서의 디지털 헬스 통합",
+      "paper2_type": "기술",
+      "paper2_title": "FHIR 기반 EMR 통합 표준",
+      "download": "보고서 다운로드",
+      "desc": "당사 혁신의 임상 연구 및 엔지니어링에 대한 심층 분석입니다.",
+      "item1_tag": "임상 연구",
+      "item1_title": "중환자 케어에서의 디지털 헬스 통합",
+      "item2_tag": "엔지니어링",
+      "item2_title": "FHIR 기반 EMR 통합 표준",
+      "download_report": "보고서 다운로드"
+    },
+    "videos": {
+      "title": "동영상",
+      "video_title": "플랫폼 구현 투어",
+      "video_desc": "하이케어넷 에코시스템과 기존 병원 워크플로우와의 통합 방법을 시각적으로 안내합니다.",
+      "btn": "전체 동영상 보기",
+      "item_title": "플랫폼 구현 투어",
+      "item_desc": "하이케어넷 생태계와 기존 병원 워크플로우에 통합되는 방식을 시각적으로 안내합니다.",
+      "watch_all": "모든 동영상 보기"
+    },
+    "webinars": {
+      "title": "웨비나",
+      "live_badge": "라이브 세션",
+      "webinar1_title": "차세대 환자 모니터링",
+      "webinar1_speaker": "하이케어넷 임상 혁신팀",
+      "webinar2_title": "AI와 진단 이미징",
+      "webinar2_speaker": "하이케어넷 글로벌 엔지니어링팀",
+      "btn": "녹화 영상 보기",
+      "badge": "라이브 세션",
+      "event1_title": "차세대 환자 모니터링",
+      "event1_speaker": "하이케어넷 임상 혁신팀",
+      "event2_title": "진단 영상에서의 AI",
+      "event2_speaker": "하이케어넷 글로벌 엔지니어링팀",
+      "watch_recorded": "녹화 시청",
+      "archive_desc": "온디맨드로 녹화된 웨비나를 시청하세요"
+    },
+    "newsletter": {
+      "title": "헬스케어 기술 트렌드를 놓치지 마세요.",
+      "subtitle": "최신 백서와 기술 업데이트를 매월 이메일로 받아보세요.",
+      "placeholder": "전문가 이메일 주소",
+      "btn": "구독하기",
+      "desc": "최신 백서 및 기술 업데이트를 매월 받아보세요."
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "문의",
+      "title": "문의하기",
+      "subtitle": "하이케어넷의 커넥티드 케어 솔루션에 대해 더 알아보려면 팀에 연락하세요.",
+      "tag": "문의하기"
+    },
+    "info": {
+      "title": "연락처 정보",
+      "phone_label": "전화",
+      "phone": "02-3400-7247",
+      "email_label": "이메일",
+      "email": "info@hicare.net",
+      "address_label": "주소",
+      "address": "서울특별시 송파구 위례성대로22길 28 5층(오금동) (05656)",
+      "address_value": "서울특별시 송파구 위례성대로22길 28 5층(오금동) (05656)",
+      "phone_value": "02-3400-7247",
+      "hours_label": "업무 시간",
+      "hours_value": "월 - 금: 오전 9:00 - 오후 6:00 (KST)"
+    },
+    "form": {
+      "title": "메시지 보내기",
+      "name_label": "이름",
+      "name_placeholder": "홍길동",
+      "email_label": "이메일",
+      "email_placeholder": "hong@example.com",
+      "org_label": "소속기관",
+      "org_placeholder": "소속 기관명",
+      "message_label": "메시지",
+      "message_placeholder": "어떻게 도와드릴까요?",
+      "submit": "메시지 전송",
+      "name": "성명",
+      "email": "이메일",
+      "org": "기관명",
+      "phone": "전화번호",
+      "phone_placeholder": "+82 (0)2-0000-0000",
+      "message": "메시지"
+    },
+    "ceo": {
+      "title": "대표이사 소개",
+      "name": "한승희 (Chris Seung-Hee Han)",
+      "role": "최고경영자 (CEO)",
+      "desc": "혁신적인 기술을 통해 양질의 의료 서비스에 대한 접근을 민주화합니다."
+    },
+    "cta": {
+      "title": "의료 서비스를 혁신할 준비가 되셨나요?",
+      "subtitle": "오늘 하이케어넷의 정밀 기술을 활용하는 네트워크에 합류하세요.",
+      "btn": "메시지 보내기"
+    }
+  },
+  "footer": {
+    "description": "더 건강한 세상을 위한 공감적이고 기술 기반의 케어 관리 솔루션을 제공합니다.",
+    "col_company": "회사",
+    "col_governance": "거버넌스",
+    "col_newsletter": "뉴스레터",
+    "newsletter_desc": "헬스케어 혁신 및 케어 관리에 대한 최신 업데이트를 받아보세요.",
+    "email_placeholder": "이메일 주소",
+    "about": "회사소개",
+    "solutions": "솔루션",
+    "resources": "리소스",
+    "contact": "문의하기",
+    "privacy": "개인정보 보호정책",
+    "terms": "서비스 이용약관",
+    "compliance": "컴플라이언스",
+    "copyright": "© 2026 (주)하이케어넷. All rights reserved.",
+    "desc": "더 건강한 세상을 위한 공감적이고 기술 기반의 케어 관리 솔루션을 제공합니다.",
+    "company": "(주)하이케어넷",
+    "ceo": "대표이사: 한승희",
+    "address": "서울특별시 송파구 위례성대로22길 28 5층(오금동) (05656)",
+    "phone": "02-3400-7247",
+    "email": "info@hicare.net",
+    "governance": "거버넌스",
+    "newsletter": "뉴스레터"
+  },
+  "common": {
+    "skip_to_content": "본문으로 이동"
+  }
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="HicareNet - Innovative Connected Care Management Service. RPM, CCM, AWV, and Value-Based Care solutions for healthcare providers."/>
+<title>HicareNet | Innovative Connected Care Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-error-container": "#93000a",
+            "on-secondary-fixed-variant": "#2b4677",
+            "on-tertiary-fixed": "#341100",
+            "on-tertiary-fixed-variant": "#793000",
+            "on-primary-fixed-variant": "#004494",
+            "tertiary-container": "#c35200",
+            "outline": "#727786",
+            "secondary-container": "#adc6ff",
+            "inverse-on-surface": "#eff0fb",
+            "background": "#f9f9ff",
+            "surface-container-highest": "#e0e2ed",
+            "surface-tint": "#1676F3",
+            "on-background": "#181b23",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#ffdbcb",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#d8d9e4",
+            "surface-container": "#ecedf8",
+            "outline-variant": "#c1c6d7",
+            "tertiary-fixed-dim": "#ffb692",
+            "surface-variant": "#e0e2ed",
+            "on-tertiary-container": "#fffbff",
+            "secondary": "#445e91",
+            "on-surface-variant": "#414754",
+            "primary-fixed": "#d8e2ff",
+            "on-secondary-container": "#385284",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#f2f3fe",
+            "surface-bright": "#f9f9ff",
+            "primary-fixed-dim": "#adc6ff",
+            "on-secondary": "#ffffff",
+            "secondary-fixed": "#d8e2ff",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#adc6ff",
+            "inverse-primary": "#adc6ff",
+            "surface-container-high": "#e6e8f2",
+            "inverse-surface": "#2d3038",
+            "tertiary": "#9b4000",
+            "on-primary-fixed": "#001a41",
+            "primary-container": "#1676F3",
+            "primary": "#1676F3",
+            "on-secondary-fixed": "#001a41",
+            "error": "#ba1a1a",
+            "surface": "#f9f9ff",
+            "on-surface": "#181b23",
+            "on-primary-container": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .text-shadow-sm {
+        text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .blueprint-grid {
+        background-size: 40px 40px;
+        background-image: radial-gradient(circle, #c1c6d7 1px, transparent 1px);
+    }
+</style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+  <a href="index.html" class="flex items-center gap-2">
+    <span class="font-['Manrope'] font-extrabold text-xl tracking-tight text-on-background">HicareNet</span>
+  </a>
+  <div class="hidden md:flex items-center gap-8 font-['Manrope'] font-bold tracking-tight">
+    <a class="text-[#43474f] hover:text-[#1676F3] transition-colors" href="about.html" data-i18n="nav.about">About</a>
+    <a class="text-[#43474f] hover:text-[#1676F3] transition-colors" href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+    <a class="text-[#43474f] hover:text-[#1676F3] transition-colors" href="resources.html" data-i18n="nav.resources">Resources</a>
+    <a class="text-[#43474f] hover:text-[#1676F3] transition-colors" href="contact.html" data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center gap-2 text-sm font-bold">
+      <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 hover:text-[#1676F3] transition-colors">EN</button>
+      <span class="text-gray-400">|</span>
+      <button id="lang-ko" onclick="setLanguage('ko')" class="px-2 py-1 hover:text-[#1676F3] transition-colors">KO</button>
+    </div>
+    <a href="contact.html" class="bg-[#1676F3] text-white px-6 py-2.5 rounded-sm font-bold tracking-tight text-sm uppercase transition-all active:scale-[0.98] hover:shadow-lg hidden md:inline-block" data-i18n="nav.cta">Contact Us</a>
+    <!-- Mobile menu button -->
+    <button id="menuBtn" class="md:hidden p-2">
+      <span class="material-symbols-outlined text-[#43474f]">menu</span>
+    </button>
+  </div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-4 space-y-4">
+  <a class="block text-[#43474f] font-['Manrope'] font-bold py-2" href="about.html" data-i18n="nav.about">About</a>
+  <a class="block text-[#43474f] font-['Manrope'] font-bold py-2" href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+  <a class="block text-[#43474f] font-['Manrope'] font-bold py-2" href="resources.html" data-i18n="nav.resources">Resources</a>
+  <a class="block text-[#43474f] font-['Manrope'] font-bold py-2" href="contact.html" data-i18n="nav.contact">Contact</a>
+</div>
+<div class="bg-[#eff4ff] h-[1px] w-full absolute bottom-0"></div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative min-h-[800px] flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-br from-[#001430] to-[#002855]">
+  <div class="absolute inset-0 opacity-20 blueprint-grid"></div>
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 w-full relative z-10 grid grid-cols-12 gap-8">
+  <div class="col-span-12 lg:col-span-8">
+    <div class="mb-6">
+      <span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase rounded-full" data-i18n="home.hero.badge">Human-Centric Care 2024</span>
+    </div>
+    <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.1] tracking-tighter mb-8" data-i18n="home.hero.title">
+      Hicare &mdash; Innovative Connected <br/> Care Management Service
+    </h1>
+    <p class="text-primary-fixed font-light text-xl md:text-2xl max-w-2xl leading-relaxed mb-12 opacity-90" data-i18n="home.hero.subtitle">
+      Driven by empathy. Built for results. We bridge the gap between healthcare expertise and intelligent digital management for a more caring future.
+    </p>
+    <div class="flex flex-wrap gap-4">
+      <a href="solutions.html" class="bg-white text-primary px-8 py-4 font-bold text-base uppercase tracking-wider rounded-sm hover:bg-surface-container-low transition-all inline-block" data-i18n="home.hero.cta_primary">
+        Our Capabilities
+      </a>
+      <a href="about.html" class="border border-white/30 text-white px-8 py-4 font-bold text-base uppercase tracking-wider rounded-sm backdrop-blur-sm hover:bg-white/10 transition-all inline-block" data-i18n="home.hero.cta_secondary">
+        Learn More
+      </a>
+    </div>
+  </div>
+  <div class="hidden lg:flex col-span-4 flex-col justify-end items-end">
+    <div class="bg-white/10 backdrop-blur-xl p-8 border-l-4 border-primary w-full">
+      <div class="text-white/60 text-sm font-bold uppercase tracking-widest mb-2" data-i18n="home.hero.excellence_label">Service Excellence</div>
+      <div class="text-3xl font-headline font-bold text-white mb-4" data-i18n="home.hero.excellence_title">Patient-First Focus</div>
+      <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+        <div class="h-full bg-primary w-[95%]"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- What Hicare Does Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+  <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+    <div class="max-w-2xl">
+      <h2 class="font-headline text-4xl font-extrabold tracking-tight text-on-background mb-4" data-i18n="home.does.title">What Hicare Does</h2>
+      <p class="text-on-surface-variant text-lg" data-i18n="home.does.subtitle">Our Connected Care Programs Allow for Numerous Potential Benefits for Both Your Patients and Your Practice.</p>
+    </div>
+    <div class="flex gap-2">
+      <span class="w-12 h-1 bg-primary"></span>
+      <span class="w-4 h-1 bg-outline-variant"></span>
+      <span class="w-4 h-1 bg-outline-variant"></span>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Card 1 -->
+    <div class="group relative flex flex-col items-start p-8 bg-white border border-outline-variant/30 rounded-sm hover:shadow-xl transition-all duration-300">
+      <div class="w-16 h-16 bg-[#eff4ff] rounded-sm flex items-center justify-center mb-8 transition-colors group-hover:bg-primary/10">
+        <span class="material-symbols-outlined text-[#1676F3] text-4xl">favorite</span>
+      </div>
+      <h3 class="font-headline text-xl font-bold text-on-background leading-tight mb-4" data-i18n="home.does.card1_title">Increase patient satisfaction and outcomes through personalized care</h3>
+      <p class="text-on-surface-variant text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity" data-i18n="home.does.card1_desc">Tailoring treatment plans to individual needs to ensure the highest quality of life.</p>
+      <div class="mt-auto pt-4 w-full border-t border-outline-variant/10">
+        <a href="solutions.html" class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 cursor-pointer" data-i18n="home.does.learn_more">
+          Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="group relative flex flex-col items-start p-8 bg-white border border-outline-variant/30 rounded-sm hover:shadow-xl transition-all duration-300">
+      <div class="w-16 h-16 bg-[#eff4ff] rounded-sm flex items-center justify-center mb-8 transition-colors group-hover:bg-primary/10">
+        <span class="material-symbols-outlined text-[#1676F3] text-4xl">home_health</span>
+      </div>
+      <h3 class="font-headline text-xl font-bold text-on-background leading-tight mb-4" data-i18n="home.does.card2_title">Reduce readmissions through continuous empathetic monitoring</h3>
+      <p class="text-on-surface-variant text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity" data-i18n="home.does.card2_desc">Proactive health tracking that identifies potential issues before they become emergencies.</p>
+      <div class="mt-auto pt-4 w-full border-t border-outline-variant/10">
+        <a href="solutions.html" class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 cursor-pointer" data-i18n="home.does.learn_more">
+          Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="group relative flex flex-col items-start p-8 bg-white border border-outline-variant/30 rounded-sm hover:shadow-xl transition-all duration-300">
+      <div class="w-16 h-16 bg-[#eff4ff] rounded-sm flex items-center justify-center mb-8 transition-colors group-hover:bg-primary/10">
+        <span class="material-symbols-outlined text-[#1676F3] text-4xl">psychology</span>
+      </div>
+      <h3 class="font-headline text-xl font-bold text-on-background leading-tight mb-4" data-i18n="home.does.card3_title">Improve quality of care with real-time patient-doctor connections</h3>
+      <p class="text-on-surface-variant text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity" data-i18n="home.does.card3_desc">Bridging the distance with secure, immediate digital communication channels.</p>
+      <div class="mt-auto pt-4 w-full border-t border-outline-variant/10">
+        <a href="solutions.html" class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 cursor-pointer" data-i18n="home.does.learn_more">
+          Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="group relative flex flex-col items-start p-8 bg-white border border-outline-variant/30 rounded-sm hover:shadow-xl transition-all duration-300">
+      <div class="w-16 h-16 bg-[#eff4ff] rounded-sm flex items-center justify-center mb-8 transition-colors group-hover:bg-primary/10">
+        <span class="material-symbols-outlined text-[#1676F3] text-4xl">volunteer_activism</span>
+      </div>
+      <h3 class="font-headline text-xl font-bold text-on-background leading-tight mb-4" data-i18n="home.does.card4_title">Empower practices with sustainable and caring revenue growth</h3>
+      <p class="text-on-surface-variant text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity" data-i18n="home.does.card4_desc">Maximizing practice efficiency and value-based reimbursements through technology.</p>
+      <div class="mt-auto pt-4 w-full border-t border-outline-variant/10">
+        <a href="solutions.html" class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 cursor-pointer" data-i18n="home.does.learn_more">
+          Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- What Hicare Provides Section -->
+<section class="py-24 bg-surface-container-low relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+  <div class="text-center mb-16">
+    <h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-on-background mb-4" data-i18n="home.provides.title">What Hicare Provides</h2>
+    <div class="w-24 h-1 bg-primary mx-auto"></div>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <!-- For Patients -->
+    <div class="bg-white rounded-sm shadow-sm overflow-hidden flex flex-col h-full border border-outline-variant/20">
+      <div class="h-64 overflow-hidden relative">
+        <img alt="Smiling senior woman holding a tablet in a bright living room" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
+      </div>
+      <div class="p-10 flex-grow">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-primary text-3xl">sentiment_very_satisfied</span>
+          <h3 class="font-headline text-3xl font-bold text-on-background" data-i18n="home.provides.patients_title">For Patients</h3>
+        </div>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant font-medium" data-i18n="home.provides.patients_item1">Improved health and peace of mind</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant font-medium" data-i18n="home.provides.patients_item2">Fewer hospital visits, more time at home</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant font-medium" data-i18n="home.provides.patients_item3">Empowered control over personal health journeys</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant font-medium" data-i18n="home.provides.patients_item4">Gentle, personalized education and support</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- For Providers -->
+    <div class="bg-white rounded-sm shadow-sm overflow-hidden flex flex-col h-full border border-outline-variant/20">
+      <div class="h-64 overflow-hidden relative">
+        <img alt="Healthcare professional having a friendly video call with a patient" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format&fit=crop"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
+      </div>
+      <div class="p-10 flex-grow">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+          <h3 class="font-headline text-3xl font-bold text-on-background" data-i18n="home.provides.providers_title">For Providers</h3>
+        </div>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant font-medium" data-i18n="home.provides.providers_item1">Deeper patient-provider relationships</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant font-medium" data-i18n="home.provides.providers_item2">Enhanced clinical workflow with less stress</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant font-medium" data-i18n="home.provides.providers_item3">Sustainable growth through value-based care</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant font-medium" data-i18n="home.provides.providers_item4">Insightful data for more compassionate care</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Who We Serve Section -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-8">
+  <div class="flex flex-col md:flex-row md:items-center gap-6 mb-16">
+    <div class="flex-shrink-0">
+      <h2 class="font-headline text-4xl font-extrabold tracking-tight text-on-background" data-i18n="home.serve.title">Who We Serve</h2>
+    </div>
+    <div class="h-px hidden md:block flex-grow bg-outline-variant/30"></div>
+  </div>
+  <div class="mb-12">
+    <p class="text-on-surface-variant text-xl max-w-3xl font-medium leading-relaxed" data-i18n="home.serve.subtitle">
+      Hicare enables better outcomes for your patients and creates a more supportive environment for your practice.
+    </p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Physician Practices -->
+    <article class="flex flex-col h-full bg-white group shadow-sm hover:shadow-lg transition-all border border-outline-variant/10 rounded-sm overflow-hidden">
+      <div class="overflow-hidden aspect-video relative">
+        <img alt="Friendly physician practice lobby with staff greeting patients" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&auto=format&fit=crop"/>
+        <div class="absolute top-4 left-4">
+          <span class="bg-primary text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest" data-i18n="home.serve.practices_tag">Practices</span>
+        </div>
+      </div>
+      <div class="p-6 flex-grow flex flex-col">
+        <h3 class="font-headline text-lg font-bold text-on-background mb-4 group-hover:text-primary transition-colors" data-i18n="home.serve.practices_title">Physician Practices</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-6" data-i18n="home.serve.practices_desc">Support your patients' daily health needs while optimizing your practice workflow with CMS reimbursement codes.</p>
+        <div class="mt-auto">
+          <span class="w-8 h-[2px] bg-primary block"></span>
+        </div>
+      </div>
+    </article>
+    <!-- Hospitals -->
+    <article class="flex flex-col h-full bg-white group shadow-sm hover:shadow-lg transition-all border border-outline-variant/10 rounded-sm overflow-hidden">
+      <div class="overflow-hidden aspect-video relative">
+        <img alt="Comfortable, sunlit hospital atrium designed for patient wellness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop"/>
+        <div class="absolute top-4 left-4">
+          <span class="bg-primary text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest" data-i18n="home.serve.hospitals_tag">Health Systems</span>
+        </div>
+      </div>
+      <div class="p-6 flex-grow flex flex-col">
+        <h3 class="font-headline text-lg font-bold text-on-background mb-4 group-hover:text-primary transition-colors" data-i18n="home.serve.hospitals_title">Hospitals and Health Systems</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-6" data-i18n="home.serve.hospitals_desc">Build a more resilient community by reducing readmissions and increasing patient trust across your entire system.</p>
+        <div class="mt-auto">
+          <span class="w-8 h-[2px] bg-primary block"></span>
+        </div>
+      </div>
+    </article>
+    <!-- ACOs -->
+    <article class="flex flex-col h-full bg-white group shadow-sm hover:shadow-lg transition-all border border-outline-variant/10 rounded-sm overflow-hidden">
+      <div class="overflow-hidden aspect-video relative">
+        <img alt="Healthcare leaders in a collaborative, open meeting space" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format&fit=crop"/>
+        <div class="absolute top-4 left-4">
+          <span class="bg-primary text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest" data-i18n="home.serve.acos_tag">ACOs</span>
+        </div>
+      </div>
+      <div class="p-6 flex-grow flex flex-col">
+        <h3 class="font-headline text-lg font-bold text-on-background mb-4 group-hover:text-primary transition-colors" data-i18n="home.serve.acos_title">Accountable Care Organizations</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-6" data-i18n="home.serve.acos_desc">Drive value-based care initiatives that put patient well-being at the heart of financial sustainability.</p>
+        <div class="mt-auto">
+          <span class="w-8 h-[2px] bg-primary block"></span>
+        </div>
+      </div>
+    </article>
+    <!-- FQHCs -->
+    <article class="flex flex-col h-full bg-white group shadow-sm hover:shadow-lg transition-all border border-outline-variant/10 rounded-sm overflow-hidden">
+      <div class="overflow-hidden aspect-video relative">
+        <img alt="Community healthcare worker assisting a patient in a neighborhood clinic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&auto=format&fit=crop"/>
+        <div class="absolute top-4 left-4">
+          <span class="bg-primary text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest" data-i18n="home.serve.fqhcs_tag">FQHCs &amp; RHCs</span>
+        </div>
+      </div>
+      <div class="p-6 flex-grow flex flex-col">
+        <h3 class="font-headline text-lg font-bold text-on-background mb-4 group-hover:text-primary transition-colors" data-i18n="home.serve.fqhcs_title">Community Centers</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-6" data-i18n="home.serve.fqhcs_desc">Bring quality care into patients' homes, ensuring accessibility and comfort for underserved communities.</p>
+        <div class="mt-auto">
+          <span class="w-8 h-[2px] bg-primary block"></span>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#001430] border-t border-white/10 text-white font-['Inter'] text-sm uppercase tracking-widest">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+  <div class="space-y-6">
+    <div class="mb-6">
+      <a href="index.html" class="font-['Manrope'] font-extrabold text-xl tracking-tight text-white">HicareNet</a>
+    </div>
+    <p class="text-[#c4c6d0] normal-case tracking-normal text-base leading-relaxed" data-i18n="footer.desc">Providing compassionate, technology-enabled care management solutions for a healthier world.</p>
+    <div class="text-[#c4c6d0] normal-case tracking-normal text-sm space-y-2">
+      <p data-i18n="footer.ceo">CEO: Chris Seung-Hee Han</p>
+      <p data-i18n="footer.phone">Tel: 02-3400-7247</p>
+      <p data-i18n="footer.email">Email: info@hicare.net</p>
+    </div>
+  </div>
+  <div class="space-y-4">
+    <div class="text-white font-bold mb-6" data-i18n="footer.company">Company</div>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="about.html" data-i18n="footer.about">About Us</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="solutions.html" data-i18n="footer.solutions">Solutions</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="resources.html" data-i18n="footer.resources">Resources</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="contact.html" data-i18n="footer.contact">Contact</a>
+  </div>
+  <div class="space-y-4">
+    <div class="text-white font-bold mb-6" data-i18n="footer.governance">Governance</div>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="#" data-i18n="footer.privacy">Privacy Policy</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="#" data-i18n="footer.terms">Terms of Service</a>
+    <a class="block text-[#c4c6d0] hover:text-white hover:underline decoration-2 underline-offset-4 transition-colors" href="#" data-i18n="footer.compliance">Compliance</a>
+  </div>
+  <div class="space-y-6">
+    <div class="text-white font-bold mb-6" data-i18n="footer.newsletter">Newsletter</div>
+    <p class="text-[#c4c6d0] normal-case tracking-normal text-xs" data-i18n="footer.newsletter_desc">Stay informed with our updates on healthcare innovation and care management.</p>
+    <div class="flex">
+      <input class="bg-white/5 border-none focus:ring-1 focus:ring-primary text-white text-xs w-full py-3 px-4 uppercase tracking-widest" placeholder="Email Address" type="email" data-i18n-placeholder="footer.email_placeholder"/>
+      <button class="bg-primary px-4 hover:bg-primary-container transition-colors" aria-label="Subscribe">
+        <span class="material-symbols-outlined text-white">chevron_right</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-10 border-t border-white/5">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="text-[#c4c6d0] text-[10px]" data-i18n="footer.copyright">&copy; 2025 HicareNet Co., Ltd. All rights reserved.</p>
+    <div class="flex gap-8 text-[10px]">
+      <span class="text-white/30" data-i18n="footer.address">Seoul, South Korea (Est. 2004)</span>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

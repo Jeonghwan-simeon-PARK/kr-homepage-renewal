@@ -1,0 +1,345 @@
+{
+  "common": {
+    "book_demo": "Book A Demo",
+    "get_started": "Get Started",
+    "learn_more": "Learn More",
+    "contact_us": "Contact Us",
+    "explore_platform": "Explore Platform",
+    "read_more": "Read More",
+    "skip_to_content": "Skip to content"
+  },
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Care Without Borders",
+      "title": "Healing Reimagined.",
+      "subtitle": "Precision health solutions that bridge the gap between clinical excellence and the sanctuary of home. Softly integrated technology for human-centric care.",
+      "cta_primary": "Explore Platform",
+      "cta_secondary": "View Devices"
+    },
+    "hero_badge": {
+      "label": "Active Care",
+      "value": "98.4% Accuracy",
+      "desc": "Real-time clinical monitoring with AI-driven insights."
+    },
+    "what_does": {
+      "title": "What Hicare Does",
+      "subtitle": "Architecting the future of healthcare through three symbiotic pillars of clinical excellence.",
+      "rpm_title": "Remote Patient Monitoring",
+      "rpm_desc": "Our RPM platform transforms passive data into active health management. We provide clinical-grade cellular devices that sync instantly.",
+      "rpm_link": "Explore RPM",
+      "ccm_title": "Chronic Care Management",
+      "ccm_desc": "We extend the reach of your practice through dedicated CCM services. Our team manages complex conditions with empathy.",
+      "ccm_link": "Learn about CCM",
+      "ecosystem_title": "The Health Ecosystem",
+      "ecosystem_desc": "HicareNet is a unified health ecosystem. By integrating hardware, software, and human services, we remove medical friction.",
+      "ecosystem_link": "Our Philosophy"
+    },
+    "provides": {
+      "eyebrow": "Comprehensive Impact",
+      "title": "What Hicare Provides",
+      "patients_title": "For Patients",
+      "patients_1": "Improved health conditions",
+      "patients_2": "Reduced hospital admissions, hospitalizations, and readmissions",
+      "patients_3": "Have more control over personal health",
+      "patients_4": "Personalized patient education and support",
+      "patients_5": "Reduced healthcare costs",
+      "providers_title": "For Providers",
+      "providers_1": "Improved patient outcomes",
+      "providers_2": "Increased patient satisfaction",
+      "providers_3": "A significant source of revenue",
+      "providers_4": "Better information for patient evaluation and management",
+      "providers_5": "Improved quality of patient care"
+    },
+    "how_it_works": {
+      "eyebrow": "Implementation Path",
+      "title": "How It Works",
+      "subtitle": "A seamless 5-step journey to clinical-grade remote care and optimized reimbursement.",
+      "step1_title": "Sign Up",
+      "step1_desc": "Hicare provides seamless implementation including turnkey onboarding, technical support, and billing supports.",
+      "step1_label": "Step One",
+      "step2_title": "Enroll Patients",
+      "step2_desc": "Hicare platform identifies candidates through EHR integration and enrolls your patients for Hicare program.",
+      "step2_label": "Step Two",
+      "step3_title": "Ship Device / Education",
+      "step3_desc": "Hicare devices will be delivered to patients' home and Hicare Care Team conducts a personalized education session with each patient.",
+      "step3_label": "Step Three",
+      "step4_title": "Monitor Patient",
+      "step4_desc": "Hicare Care Team monitors patients' vital sign data in real-time and actively responds to the alerts if a patient's readings enter a specified caution or critical range.",
+      "step4_label": "Step Four",
+      "step5_title": "Get Reimbursed",
+      "step5_desc": "Hicare provides billing reports every month for each patient and concise patient data for you to easily submit claims for reimbursement.",
+      "step5_label": "Step Five"
+    },
+    "ecosystem": {
+      "title": "Unified Health Ecosystem",
+      "subtitle": "Three pillars designed to bring clinical-grade intelligence to every patient journey.",
+      "rpm_title": "RPM",
+      "rpm_desc": "Remote Patient Monitoring that feels seamless. Automated vitals collection with proactive alerts.",
+      "rpm_feat1": "Real-time Vitals Sync",
+      "rpm_feat2": "AI Trend Analysis",
+      "rpm_link": "Learn more",
+      "ccm_title": "CCM",
+      "ccm_desc": "Chronic Care Management that prioritizes the patient experience. Compassionate coordination.",
+      "ccm_feat1": "Care Plan Orchestration",
+      "ccm_feat2": "24/7 Clinical Support",
+      "ccm_link": "Explore CCM",
+      "compliance_title": "Compliance",
+      "compliance_desc": "Automated billing, HIPAA-secure workflows, and effortless documentation.",
+      "compliance_feat1": "Automated Billing Codes",
+      "compliance_feat2": "Audit-Ready Reports",
+      "compliance_link": "Security Details"
+    },
+    "devices": {
+      "eyebrow": "Hardware Excellence",
+      "title": "The Care Instruments",
+      "device1_name": "VitalSync BP Monitor",
+      "device1_desc": "Clinical accuracy, consumer ease.",
+      "device1_price": "$129",
+      "device2_name": "Precision Scale Plus",
+      "device2_desc": "Instant cellular connectivity.",
+      "device2_price": "$89",
+      "device3_name": "OxyCloud Sensor",
+      "device3_desc": "Continuous saturation tracking.",
+      "device3_price": "$149"
+    },
+    "lifeorb": {
+      "title": "Technology that feels like home.",
+      "subtitle": "We believe the best medical technology is the one that disappears into the background.",
+      "feat1_num": "01",
+      "feat1_title": "Non-Intrusive Care",
+      "feat1_desc": "Devices that set up in seconds.",
+      "feat2_num": "02",
+      "feat2_title": "Empathetic Insights",
+      "feat2_desc": "Data interpreted with clinical empathy."
+    }
+  },
+  "solutions": {
+    "hero": {
+      "eyebrow": "REDEFINING CONTINUITY",
+      "title": "Care Without Borders.",
+      "subtitle": "Seamlessly connecting patients and providers through a Living Sanctuary of medical technology. We bridge the gap between clinical excellence and home comfort.",
+      "cta_primary": "Get Started",
+      "cta_secondary": "Explore Platform"
+    },
+    "hero_badge": {
+      "label": "Real-time Vitals",
+      "desc": "Continuous monitoring of SpO2, Heart Rate, and Blood Pressure with AI validation."
+    },
+    "rpm": {
+      "title": "RPM: Intelligence in Every Beat",
+      "subtitle": "Our Remote Patient Monitoring system isn't just data collection. It's an intelligent alert ecosystem that predicts risks before they become emergencies.",
+      "badge": "24/7 Clinical Connectivity",
+      "feature1_title": "Integrated Device Sync",
+      "feature1_desc": "One-touch synchronization with FDA-cleared glucometers, scales, and blood pressure cuffs.",
+      "feature2_title": "AI-Driven Alerts",
+      "feature2_desc": "Sophisticated algorithms filter noise to deliver actionable clinical insights to care teams.",
+      "feature3_title": "Global Cloud Network",
+      "feature3_desc": "Secure, HIPAA-compliant data storage ensuring patient privacy and provider accessibility."
+    },
+    "ccm": {
+      "title": "CCM: Personalized Path to Wellness",
+      "step1_title": "Bespoke Care Plans",
+      "step1_desc": "Each patient receives a digitally-tailored roadmap addressing their specific chronic conditions and lifestyle goals.",
+      "step2_title": "Clinical Decision Support",
+      "step2_desc": "Empowering nurses and physicians with real-time data visualizations to make informed therapeutic adjustments.",
+      "step3_title": "Patient Engagement Hub",
+      "step3_desc": "Interactive modules that educate patients, fostering self-management and improving overall health literacy."
+    },
+    "why": {
+      "title": "Why HicareNet?",
+      "subtitle": "Beyond the technology, we deliver measurable outcomes for healthcare systems and life-changing comfort for patients.",
+      "efficiency_eyebrow": "Efficiency",
+      "stat_readmission": "45% Reduction in Hospital Readmissions",
+      "stat_desc": "Our proactive monitoring identifies physiological changes up to 72 hours before a critical event occurs.",
+      "verified": "Verified Clinical Data",
+      "patient_first": "Patient-First Experience",
+      "patient_first_desc": "92% patient satisfaction rate due to our intuitive, non-intrusive interface and 24/7 support availability.",
+      "hipaa": "HIPAA Secure",
+      "hipaa_desc": "Bank-grade encryption for all medical data.",
+      "ehr": "EHR Integrated",
+      "ehr_desc": "Seamless data flow into Epic, Cerner, and more."
+    },
+    "cta": {
+      "title": "Ready to evolve your practice?",
+      "subtitle": "Join the 500+ clinics worldwide already using HicareNet to deliver the sanctuary of home-based medical care.",
+      "btn_demo": "Schedule a Demo",
+      "btn_brochure": "Download Brochure"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Pioneering Digital Health",
+      "title_line1": "Leading the Future of",
+      "title_line2": "Digital Healthcare",
+      "subtitle": "Redefining Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) through clinical precision and human-centric technology.",
+      "cta_story": "Explore Our Story",
+      "cta_global": "View Global Presence"
+    },
+    "hero_badge": {
+      "label": "Global Impact",
+      "value": "2.4M+ Metrics",
+      "desc": "Daily health data tracked through HicareNet's secure RPM ecosystem."
+    },
+    "vision_mission": {
+      "heading": "Connecting Healthcare to Everyone, Everywhere",
+      "heading_desc": "We strive to bridge the gap between patients and providers, ensuring that high-quality medical accessibility is never limited by distance or infrastructure.",
+      "mission_eyebrow": "Our Mission",
+      "mission_title": "Empowering Lives Through Seamless Data",
+      "mission_desc": "To provide the most reliable digital health platform that enables real-time monitoring and proactive care for a healthier global community.",
+      "vision_eyebrow": "Our Vision",
+      "vision_title": "A World Where Care is Constant",
+      "vision_desc": "Becoming the global standard for remote healthcare, where every individual has a digital guardian for their physical well-being."
+    },
+    "values": {
+      "eyebrow": "The Sanctuary Ethos",
+      "title": "Human Intelligence meets Clinical Precision",
+      "subtitle": "Our values aren't just posters on walls; they are the architectural pillars of clinical excellence.",
+      "innovation": "Innovation",
+      "innovation_desc": "Leading the tech frontier with AI-driven analytics and interoperable data ecosystems that evolve with patient needs.",
+      "reliability": "Reliability",
+      "reliability_desc": "Clinical accuracy is our baseline. We maintain the highest global standards for medical device security and data integrity.",
+      "patient": "Patient-Centric",
+      "patient_desc": "Technology is the tool, but humanity is the goal. We design with empathy, ensuring our tools feel like a soft touch."
+    },
+    "company": {
+      "title": "Corporate Identity",
+      "name_label": "Company Name",
+      "name": "HicareNet Co., Ltd.",
+      "ceo_label": "CEO",
+      "ceo": "Chris Seung-Hee Han",
+      "hq_label": "Headquarters",
+      "hq": "5F, 28, Wiryeseong-daero 22-gil, Songpa-gu, Seoul, Korea (05656)",
+      "hubs_label": "Global Hubs",
+      "hub_korea": "Korea",
+      "hub_usa": "USA",
+      "hub_sea": "Southeast Asia",
+      "established": "Established",
+      "established_year": "2004"
+    },
+    "timeline": {
+      "title": "Two Decades of Excellence",
+      "y2004": "2004",
+      "y2004_title": "Founding of HicareNet",
+      "y2004_desc": "Establishing the foundational vision for integrated digital healthcare systems.",
+      "y2012": "2012",
+      "y2012_title": "Platform Launch",
+      "y2012_desc": "Launched the first generation of Hicare Hub, revolutionizing home-based remote monitoring.",
+      "y2018": "2018",
+      "y2018_title": "Global Expansion",
+      "y2018_desc": "Entered the US market with FDA-certified solutions and expanded into Southeast Asia.",
+      "y2024": "2024",
+      "y2024_title": "Next-Gen AI Care",
+      "y2024_desc": "Integrating predictive analytics and deep learning to move from monitoring to preventive care."
+    },
+    "cta": {
+      "title": "Ready to define the next chapter of healthcare?",
+      "btn": "Contact Our Solution Experts"
+    }
+  },
+  "resources": {
+    "hero": {
+      "eyebrow": "Knowledge Hub",
+      "title_line1": "Empowering",
+      "title_line2": "Through Knowledge",
+      "subtitle": "Access our comprehensive library of clinical whitepapers, digital health case studies, and the latest medical technology breakthroughs."
+    },
+    "featured": {
+      "badge": "Latest News",
+      "title": "The Evolution of Telehealth in Post-Pandemic Healthcare",
+      "desc": "A deep dive into how remote patient monitoring is bridging the gap between clinical efficiency and patient comfort in the modern sanctuary of care.",
+      "read_more": "Read Full Article"
+    },
+    "library": {
+      "title": "Resource Library",
+      "subtitle": "Curated insights for medical professionals and researchers.",
+      "filter_all": "All",
+      "filter_whitepapers": "Whitepapers",
+      "filter_case_studies": "Case Studies",
+      "card1_badge": "Case Study",
+      "card1_title": "Optimizing ICU Workflows with Real-time Data Analytics",
+      "card1_desc": "How a major urban hospital reduced response times by 22% using HicareNet's integrated monitoring suite.",
+      "card1_link": "Download PDF",
+      "card2_title": "The Future of AI in Diagnostics",
+      "card2_desc": "A technical exploration of machine learning algorithms in early cancer detection.",
+      "card2_badge": "Whitepaper - 18 Pages",
+      "card3_title": "Digital Health Equity",
+      "card3_desc": "Implementing telemedicine platforms in rural communities with limited connectivity.",
+      "card3_link": "Read Case",
+      "card4_eyebrow": "Global Support",
+      "card4_title": "Expanding our Global Medical Network",
+      "card4_desc": "HicareNet partners with European healthcare providers to streamline patient data interoperability across borders.",
+      "card4_link": "Learn More"
+    },
+    "newsletter": {
+      "title": "Stay Informed on the Future of Care",
+      "subtitle": "Join over 10,000 healthcare professionals receiving our monthly digest of insights, studies, and technology updates.",
+      "placeholder": "Your professional email",
+      "btn": "Subscribe"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Get In Touch",
+      "title": "Let's Build the Future of Care Together",
+      "subtitle": "Whether you're a healthcare provider looking to implement RPM/CCM solutions or have questions about our platform, we'd love to hear from you."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address_label": "Headquarters",
+      "address": "5F, 28, Wiryeseong-daero 22-gil, Songpa-gu, Seoul, Korea (05656)",
+      "phone_label": "Phone",
+      "phone": "02-3400-7247",
+      "email_label": "Email",
+      "email": "info@hicare.net",
+      "hours_label": "Business Hours",
+      "hours": "Mon - Fri: 9:00 AM - 6:00 PM (KST)"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name_label": "Full Name",
+      "name_placeholder": "Enter your full name",
+      "email_label": "Email Address",
+      "email_placeholder": "Enter your email address",
+      "org_label": "Organization",
+      "org_placeholder": "Enter your organization name",
+      "subject_label": "Subject",
+      "subject_placeholder": "Select a subject",
+      "subject_demo": "Request a Demo",
+      "subject_partnership": "Partnership Inquiry",
+      "subject_support": "Technical Support",
+      "subject_general": "General Inquiry",
+      "message_label": "Message",
+      "message_placeholder": "Tell us about your needs...",
+      "submit": "Send Message",
+      "privacy_note": "By submitting this form, you agree to our Privacy Policy."
+    }
+  },
+  "footer": {
+    "description": "Empowering healthcare providers and patients with intelligent remote monitoring and clinical care management solutions.",
+    "resources": "Resources",
+    "legal": "Legal",
+    "company": "Company",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookie": "Cookie Policy",
+    "about": "About Us",
+    "careers": "Careers",
+    "contact": "Contact",
+    "success_stories": "Success Stories",
+    "clinical_evidence": "Clinical Evidence",
+    "whitepapers": "Whitepapers",
+    "webinars": "Webinars",
+    "copyright": "© 2026 HicareNet. All rights reserved.",
+    "status": "All Systems Operational",
+    "phone": "02-3400-7247",
+    "email": "info@hicare.net",
+    "address": "5F, 28, Wiryeseong-daero 22-gil, Songpa-gu, Seoul (05656)"
+  }
+}

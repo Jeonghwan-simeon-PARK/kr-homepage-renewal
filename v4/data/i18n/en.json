@@ -1,0 +1,359 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "contact": "Contact",
+    "cta": "Contact Us"
+  },
+  "home": {
+    "hero": {
+      "badge": "Human-Centric Care",
+      "title": "HicareNet — Innovative Connected Care Management Service",
+      "subtitle": "Driven by empathy. Built for results. We bridge the gap between healthcare expertise and intelligent digital management for a more caring future.",
+      "cta_primary": "Our Capabilities",
+      "cta_secondary": "Learn More",
+      "excellence_label": "Excellence in Care",
+      "excellence_title": "20+ Years"
+    },
+    "what": {
+      "title": "What HicareNet Does",
+      "subtitle": "Our Connected Care Programs Allow for Numerous Potential Benefits for Both Your Patients and Your Practice.",
+      "card1_title": "Increase patient satisfaction and outcomes through personalized care",
+      "card1_hover": "Tailoring treatment plans to individual needs to ensure the highest quality of life.",
+      "card2_title": "Reduce readmissions through continuous empathetic monitoring",
+      "card2_hover": "Proactive health tracking that identifies potential issues before they become emergencies.",
+      "card3_title": "Improve quality of care with real-time patient-doctor connections",
+      "card3_hover": "Bridging the distance with secure, immediate digital communication channels.",
+      "card4_title": "Empower practices with sustainable and caring revenue growth",
+      "card4_hover": "Maximizing practice efficiency and value-based reimbursements through technology.",
+      "learn_more": "Learn More"
+    },
+    "provides": {
+      "title": "What HicareNet Provides",
+      "patients": "For Patients",
+      "providers": "For Providers",
+      "p1": "Improved health and peace of mind",
+      "p2": "Fewer hospital visits, more time at home",
+      "p3": "Empowered control over personal health journeys",
+      "p4": "Gentle, personalized education and support",
+      "pr1": "Deeper patient-provider relationships",
+      "pr2": "Enhanced clinical workflow with less stress",
+      "pr3": "Sustainable growth through value-based care",
+      "pr4": "Insightful data for more compassionate care",
+      "patients_title": "For Patients",
+      "patients_item1": "Improved health and peace of mind",
+      "patients_item2": "Fewer hospital visits, more time at home",
+      "patients_item3": "Empowered control over personal health journeys",
+      "patients_item4": "Gentle, personalized education and support",
+      "providers_title": "For Providers",
+      "providers_item1": "Deeper patient-provider relationships",
+      "providers_item2": "Enhanced clinical workflow with less stress",
+      "providers_item3": "Sustainable growth through value-based care",
+      "providers_item4": "Insightful data for more compassionate care"
+    },
+    "serve": {
+      "title": "Who We Serve",
+      "subtitle": "HicareNet enables better outcomes for your patients and creates a more supportive environment for your practice.",
+      "physician_title": "Physician Practices",
+      "physician_desc": "Support your patients' daily health needs while optimizing your practice workflow with CMS reimbursement codes.",
+      "hospital_title": "Hospitals and Health Systems",
+      "hospital_desc": "Build a more resilient community by reducing readmissions and increasing patient trust across your entire system.",
+      "aco_title": "Accountable Care Organizations",
+      "aco_desc": "Drive value-based care initiatives that put patient well-being at the heart of financial sustainability.",
+      "fqhc_title": "Community Centers",
+      "fqhc_desc": "Bring quality care into patients' homes, ensuring accessibility and comfort for underserved communities.",
+      "practices_tag": "Physician Practices",
+      "practices_title": "Physician Practices",
+      "practices_desc": "Support your patients' daily health needs while optimizing your practice workflow with CMS reimbursement codes.",
+      "hospitals_tag": "Hospitals",
+      "hospitals_title": "Hospitals and Health Systems",
+      "hospitals_desc": "Build a more resilient community by reducing readmissions and increasing patient trust across your entire system.",
+      "acos_tag": "ACOs",
+      "acos_title": "Accountable Care Organizations",
+      "acos_desc": "Drive value-based care initiatives that put patient well-being at the heart of financial sustainability.",
+      "fqhcs_tag": "Community Centers",
+      "fqhcs_title": "Community Centers",
+      "fqhcs_desc": "Bring quality care into patients' homes, ensuring accessibility and comfort for underserved communities."
+    },
+    "does": {
+      "title": "What HicareNet Does",
+      "subtitle": "Our Connected Care Programs Allow for Numerous Potential Benefits for Both Your Patients and Your Practice.",
+      "card1_title": "Increase patient satisfaction and outcomes through personalized care",
+      "card1_desc": "Tailoring treatment plans to individual needs to ensure the highest quality of life.",
+      "card2_title": "Reduce readmissions through continuous empathetic monitoring",
+      "card2_desc": "Proactive health tracking that identifies potential issues before they become emergencies.",
+      "card3_title": "Improve quality of care with real-time patient-doctor connections",
+      "card3_desc": "Bridging the distance with secure, immediate digital communication channels.",
+      "card4_title": "Empower practices with sustainable and caring revenue growth",
+      "card4_desc": "Maximizing practice efficiency and value-based reimbursements through technology.",
+      "learn_more": "Learn More"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Our Legacy",
+      "title": "Empowering healthcare with precision technology and compassionate care.",
+      "tag": "Our Legacy"
+    },
+    "vision": {
+      "title": "Vision & Mission",
+      "subtitle": "Delivering high-quality, innovative care solutions to bridge the gap between technology and patients.",
+      "research_title": "Research First",
+      "research_desc": "Continuous R&D at the intersection of AI and clinical diagnostics.",
+      "global_title": "Global Access",
+      "global_desc": "Ensuring premium healthcare technology reaches every corner of the globe.",
+      "years": "20+ Years of Excellence",
+      "desc": "Delivering high-quality, innovative care solutions to bridge the gap between technology and patients.",
+      "years_label": "Years of Excellence",
+      "years_value": "20+"
+    },
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "The pillars that define our operational precision and human-centric approach to global health.",
+      "innovation": "Innovation",
+      "innovation_desc": "Driving the future of connected care through adaptive AI and secure data ecosystems.",
+      "precision": "Precision",
+      "precision_desc": "Accuracy in monitoring and diagnostics. We eliminate ambiguity to ensure clinical excellence.",
+      "compassion": "Compassion",
+      "compassion_desc": "Patient-centered care at the heart of everything we do. Technology is the tool, humanity is the goal.",
+      "integrity": "Integrity in Action",
+      "integrity_desc": "We operate with radical transparency, ensuring our medical partners and patients have absolute trust.",
+      "compliance_link": "View Our Compliance",
+      "innovation_title": "Innovation",
+      "precision_title": "Precision",
+      "compassion_title": "Compassion",
+      "integrity_title": "Integrity in Action"
+    },
+    "global": {
+      "title": "Global Presence",
+      "subtitle": "HicareNet serves patients and providers globally, delivering localized solutions for universal health challenges.",
+      "hub1": "Multiple International Research Hubs",
+      "hub2": "24/7 Global Support Infrastructure",
+      "hub3": "HIPAA & ISO 27001/27701 Certified",
+      "desc": "HicareNet serves patients and providers globally, delivering localized solutions for universal health challenges.",
+      "item1": "Multiple International Research Hubs",
+      "item2": "24/7 Global Support Infrastructure",
+      "item3": "HIPAA & ISO 27001/27701 Certified"
+    },
+    "cta": {
+      "title": "Ready to transform your healthcare delivery?",
+      "subtitle": "Join the network of clinics and hospitals leveraging HicareNet's precision technology today.",
+      "btn_start": "Get Started Now",
+      "btn_solutions": "View Solutions",
+      "btn_primary": "Get Started Now",
+      "btn_secondary": "View Solutions"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "badge": "Smart Healthcare",
+      "title": "HicareNet Solution Overview",
+      "subtitle": "Providing a comprehensive range of smart healthcare solutions to optimize patient care and management.",
+      "tag": "Smart Healthcare"
+    },
+    "intro": {
+      "title": "Modern digital management for the next generation of healthcare.",
+      "subtitle": "HicareNet solutions bridge the gap between traditional healthcare and modern digital management through advanced sensors, real-time data processing, and intuitive interfaces.",
+      "precision_title": "Precision Care",
+      "precision_desc": "Real-time diagnostics and patient tracking.",
+      "hub_title": "Connected Hub",
+      "hub_desc": "Seamless integration across all platforms.",
+      "badge": "100% Compliant & Secure Data Architecture",
+      "desc": "HicareNet solutions bridge the gap between traditional healthcare and modern digital management.",
+      "connected_title": "Connected Hub",
+      "connected_desc": "Seamless integration across all platforms.",
+      "compliance_label": "Compliance",
+      "compliance_value": "100% Compliant & Secure Data Architecture"
+    },
+    "ecosystem": {
+      "title": "Our Ecosystem",
+      "hub_title": "Hicare Hub",
+      "hub_desc": "A central management system for connected care programs, enabling seamless data flow between devices and practitioners.",
+      "hub_link": "Explore Architecture",
+      "m_title": "Hicare M",
+      "m_desc": "Mobile health solution for real-time patient monitoring and data collection directly from mobile devices.",
+      "home_title": "Hicare Home",
+      "home_desc": "Extending healthcare to patients at home with easy-to-use devices and remote consultation platforms.",
+      "enterprise_title": "Hicare Enterprise",
+      "enterprise_desc": "Scalable solutions for hospitals and health systems requiring robust infrastructure and high-volume data handling.",
+      "enterprise_btn": "Request Enterprise Briefing",
+      "mobile_title": "Hicare M",
+      "mobile_desc": "Mobile health solution for real-time patient monitoring and data collection directly from mobile devices."
+    },
+    "technical": {
+      "title": "Technical Foundation",
+      "subtitle": "Our platform is built on three pillars of excellence, ensuring technology serves the caregiver and patient with equal efficiency.",
+      "interop_title": "Interoperability",
+      "interop_desc": "Seamlessly integrate with existing EHR and LIS systems. Our HL7 and FHIR-compliant interfaces ensure data flows securely across your entire healthcare network.",
+      "analytics_title": "Data Analytics",
+      "analytics_desc": "Transform raw patient data into actionable insights. Our AI-driven analytics engine helps identify trends, predict health risks, and optimize resource allocation.",
+      "security_title": "Security & Compliance",
+      "security_badge": "HIPAA CERTIFIED",
+      "security_desc": "Enterprise-grade encryption and strict access controls. We maintain full HIPAA compliance and adhere to international data protection standards."
+    },
+    "cta": {
+      "title": "Ready to evolve your practice?",
+      "subtitle": "Join the global network of healthcare providers who are redefining precision care with HicareNet Solutions.",
+      "btn_demo": "Request a Demo",
+      "btn_contact": "Contact Our Sales Team",
+      "btn_primary": "Request a Demo",
+      "btn_secondary": "Contact Our Sales Team"
+    },
+    "features": {
+      "title": "Technical Foundation",
+      "subtitle": "Our platform is built on three pillars of excellence, ensuring technology serves the caregiver and patient with equal efficiency.",
+      "interop_title": "Interoperability",
+      "interop_desc": "Seamlessly integrate with existing EHR and LIS systems. Our HL7 and FHIR-compliant interfaces ensure data flows securely.",
+      "analytics_title": "Data Analytics",
+      "analytics_desc": "Transform raw patient data into actionable insights. Our AI-driven analytics engine identifies trends and predicts health risks.",
+      "security_title": "Security & Compliance",
+      "security_desc": "Enterprise-grade encryption and strict access controls. Full HIPAA compliance and international data protection standards."
+    }
+  },
+  "resources": {
+    "hero": {
+      "badge": "Knowledge Hub",
+      "title": "Resources",
+      "subtitle": "Empowering healthcare providers with technical insights, clinical data, and operational tools needed to deliver precision care.",
+      "tag": "Knowledge Hub"
+    },
+    "brochures": {
+      "title": "Brochures",
+      "subtitle": "Comprehensive product specifications and solution overviews for our healthcare range.",
+      "item1_name": "HicareNet Product Catalog",
+      "item1_size": "PDF • 4.2 MB",
+      "item2_name": "Operational Excellence Guide",
+      "item2_size": "PDF • 2.8 MB",
+      "download": "Download",
+      "desc": "Comprehensive product specifications and solution overviews for our healthcare range.",
+      "item1_title": "HicareNet Product Catalog",
+      "item2_title": "Operational Excellence Guide"
+    },
+    "whitepapers": {
+      "title": "White Papers",
+      "subtitle": "Deep dives into the clinical research and engineering behind our innovations.",
+      "paper1_type": "Clinical Study",
+      "paper1_title": "Digital Health Integration in Critical Care",
+      "paper2_type": "Engineering",
+      "paper2_title": "FHIR-Based EMR Integration Standards",
+      "download": "Download Report",
+      "desc": "Deep dives into the clinical research and engineering behind our innovations.",
+      "item1_tag": "Clinical Study",
+      "item1_title": "Digital Health Integration in Critical Care",
+      "item2_tag": "Engineering",
+      "item2_title": "FHIR-Based EMR Integration Standards",
+      "download_report": "Download Report"
+    },
+    "videos": {
+      "title": "Videos",
+      "video_title": "Platform Implementation Tour",
+      "video_desc": "A visual walkthrough of the HicareNet ecosystem and how it integrates into existing hospital workflows.",
+      "btn": "Watch All Videos",
+      "item_title": "Platform Implementation Tour",
+      "item_desc": "A visual walkthrough of the HicareNet ecosystem and how it integrates into existing hospital workflows.",
+      "watch_all": "Watch All Videos"
+    },
+    "webinars": {
+      "title": "Webinars",
+      "live_badge": "Live Sessions",
+      "webinar1_title": "Next-Gen Patient Monitoring",
+      "webinar1_speaker": "HicareNet Clinical Innovation Team",
+      "webinar2_title": "AI in Diagnostic Imaging",
+      "webinar2_speaker": "HicareNet Global Engineering Team",
+      "btn": "Watch Recorded",
+      "badge": "Live Sessions",
+      "event1_title": "Next-Gen Patient Monitoring",
+      "event1_speaker": "HicareNet Clinical Innovation Team",
+      "event2_title": "AI in Diagnostic Imaging",
+      "event2_speaker": "HicareNet Global Engineering Team",
+      "watch_recorded": "Watch Recorded",
+      "archive_desc": "Watch our recorded webinars on-demand"
+    },
+    "newsletter": {
+      "title": "Stay informed on healthcare technology trends.",
+      "subtitle": "Get the latest white papers and technical updates delivered directly to your inbox monthly.",
+      "placeholder": "Your professional email",
+      "btn": "Subscribe",
+      "desc": "Get the latest white papers and technical updates delivered directly to your inbox monthly."
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Contact",
+      "title": "Get in Touch",
+      "subtitle": "Reach out to our team to learn more about HicareNet's connected care solutions.",
+      "tag": "Contact"
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone_label": "Phone",
+      "phone": "02-3400-7247",
+      "email_label": "Email",
+      "email": "info@hicare.net",
+      "address_label": "Address",
+      "address": "5F, 28, Wiryeseong-daero 22-gil, Songpa-gu, Seoul (05656)",
+      "address_value": "5F, 28, Wiryeseong-daero 22-gil, Songpa-gu, Seoul (05656)",
+      "phone_value": "02-3400-7247",
+      "hours_label": "Business Hours",
+      "hours_value": "Mon - Fri: 9:00 AM - 6:00 PM (KST)"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name_label": "Full Name",
+      "name_placeholder": "John Doe",
+      "email_label": "Email",
+      "email_placeholder": "john@example.com",
+      "org_label": "Organization",
+      "org_placeholder": "Your organization",
+      "message_label": "Message",
+      "message_placeholder": "How can we help you?",
+      "submit": "Send Message",
+      "name": "Full Name",
+      "email": "Email",
+      "org": "Organization",
+      "phone": "Phone Number",
+      "phone_placeholder": "+1 (555) 000-0000",
+      "message": "Message"
+    },
+    "ceo": {
+      "title": "Meet Our CEO",
+      "name": "Chris Seung-Hee Han",
+      "role": "Chief Executive Officer",
+      "desc": "Leading HicareNet's mission to democratize access to quality healthcare through innovative technology."
+    },
+    "cta": {
+      "title": "Ready to Transform Your Healthcare Delivery?",
+      "subtitle": "Join the network of clinics and hospitals leveraging HicareNet's precision technology today.",
+      "btn": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Providing compassionate, technology-enabled care management solutions for a healthier world.",
+    "col_company": "Company",
+    "col_governance": "Governance",
+    "col_newsletter": "Newsletter",
+    "newsletter_desc": "Stay informed with our updates on healthcare innovation and care management.",
+    "email_placeholder": "Email Address",
+    "about": "About Us",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "compliance": "Compliance",
+    "copyright": "© 2026 HicareNet Co., Ltd. All rights reserved.",
+    "desc": "Providing compassionate, technology-enabled care management solutions for a healthier world.",
+    "company": "HicareNet Co., Ltd.",
+    "ceo": "CEO: Chris Seung-Hee Han",
+    "address": "5F, 28, Wiryeseong-daero 22-gil, Songpa-gu, Seoul (05656)",
+    "phone": "02-3400-7247",
+    "email": "info@hicare.net",
+    "governance": "Governance",
+    "newsletter": "Newsletter"
+  },
+  "common": {
+    "skip_to_content": "Skip to content"
+  }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resources | HicareNet</title>
+<meta name="description" content="Access HicareNet's comprehensive library of clinical whitepapers, case studies, and the latest digital health insights."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "background": "#ffffff",
+          "surface-dim": "#f1f5f9",
+          "surface-variant": "#f8fafc",
+          "outline": "#64748b",
+          "on-primary-container": "#1e3a8a",
+          "surface-container-low": "#f8fafc",
+          "secondary": "#334155",
+          "surface-container-high": "#f1f5f9",
+          "primary-fixed": "#bfdbfe",
+          "surface": "#ffffff",
+          "secondary-container": "#e2e8f0",
+          "on-secondary-container": "#1e293b",
+          "primary": "#2563eb",
+          "on-secondary": "#ffffff",
+          "on-surface": "#0f172a",
+          "on-background": "#0f172a",
+          "primary-dim": "#1d4ed8",
+          "primary-fixed-dim": "#60a5fa",
+          "on-primary": "#ffffff",
+          "secondary-fixed": "#e2e8f0",
+          "outline-variant": "#cbd5e1",
+          "inverse-surface": "#0f172a",
+          "inverse-primary": "#60a5fa",
+          "primary-container": "#dbeafe",
+          "inverse-on-surface": "#f1f5f9",
+          "on-surface-variant": "#475569",
+          "tertiary-container": "#f1f5f9"
+        },
+        fontFamily: {
+          "headline": ["Manrope"],
+          "body": ["Manrope"],
+          "label": ["Manrope"]
+        },
+        borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .primary-gradient {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Skip to content -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded focus:shadow-lg" data-i18n="common.skip_to_content">Skip to content</a>
+
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm font-['Manrope'] antialiased text-sm font-medium tracking-tight">
+<div class="bg-gradient-to-b from-white to-transparent">
+<nav class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+  <a href="index.html" class="text-2xl font-bold tracking-tighter text-slate-900">HicareNet</a>
+  <div class="hidden md:flex items-center gap-8">
+    <a class="text-slate-600 hover:text-[#1676F3] transition-colors" href="index.html" data-i18n="nav.home">Home</a>
+    <a class="text-slate-600 hover:text-[#1676F3] transition-colors" href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+    <a class="text-[#1676F3] font-semibold border-b-2 border-[#1676F3] pb-1" href="resources.html" data-i18n="nav.resources">Resources</a>
+    <a class="text-slate-600 hover:text-[#1676F3] transition-colors" href="about.html" data-i18n="nav.about">About Us</a>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="hidden sm:flex items-center gap-1 text-sm font-semibold">
+      <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 rounded hover:bg-gray-100 transition-colors">EN</button>
+      <span class="text-gray-400">|</span>
+      <button id="lang-ko" onclick="setLanguage('ko')" class="px-2 py-1 rounded hover:bg-gray-100 transition-colors">KO</button>
+    </div>
+    <a href="contact.html" class="bg-[#1676F3] text-white px-6 py-2.5 rounded-full font-semibold scale-95 active:scale-90 transition-transform shadow-md hover:opacity-80 transition-all duration-300" data-i18n="common.book_demo">Book A Demo</a>
+    <button id="menuBtn" class="md:hidden text-slate-600" aria-label="Toggle menu">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden px-8 pb-4 space-y-2">
+  <a class="block py-2 text-slate-600" href="index.html" data-i18n="nav.home">Home</a>
+  <a class="block py-2 text-slate-600" href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+  <a class="block py-2 text-[#1676F3] font-semibold" href="resources.html" data-i18n="nav.resources">Resources</a>
+  <a class="block py-2 text-slate-600" href="about.html" data-i18n="nav.about">About Us</a>
+  <div class="flex items-center gap-1 text-sm font-semibold py-2">
+    <button id="lang-en-mobile" onclick="setLanguage('en')" class="px-2 py-1 rounded hover:bg-gray-100 transition-colors">EN</button>
+    <span class="text-gray-400">|</span>
+    <button id="lang-ko-mobile" onclick="setLanguage('ko')" class="px-2 py-1 rounded hover:bg-gray-100 transition-colors">KO</button>
+  </div>
+</div>
+</div>
+</header>
+
+<main id="main-content" class="pt-20">
+
+<!-- Hero Section -->
+<section class="relative pt-28 pb-20 bg-white overflow-hidden">
+<div class="absolute inset-0">
+  <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-50 rounded-l-[4rem]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+  <div class="max-w-2xl">
+    <span class="text-primary font-label tracking-[0.2em] text-sm uppercase mb-6 block font-bold" data-i18n="resources.hero.eyebrow">Knowledge Hub</span>
+    <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-blue-950 leading-[1.1] tracking-tighter mb-8">
+      <span data-i18n="resources.hero.title_line1">Empowering</span><br/>
+      <span class="text-primary" data-i18n="resources.hero.title_line2">Through Knowledge</span>
+    </h1>
+    <p class="text-xl text-slate-600 leading-relaxed" data-i18n="resources.hero.subtitle">Access our comprehensive library of clinical whitepapers, digital health case studies, and the latest medical technology breakthroughs.</p>
+  </div>
+</div>
+</section>
+
+<!-- Featured Article -->
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-8">
+  <div class="primary-gradient rounded-2xl overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-stretch">
+      <div class="p-12 lg:p-16 flex flex-col justify-center">
+        <span class="inline-block bg-white/20 text-white font-bold px-4 py-1.5 rounded-full text-xs uppercase tracking-widest mb-6" data-i18n="resources.featured.badge">Latest News</span>
+        <h2 class="text-3xl md:text-4xl font-headline font-bold text-white mb-6 leading-tight" data-i18n="resources.featured.title">The Evolution of Telehealth in Post-Pandemic Healthcare</h2>
+        <p class="text-blue-100 leading-relaxed mb-8" data-i18n="resources.featured.desc">A deep dive into how remote patient monitoring is bridging the gap between clinical efficiency and patient comfort in the modern sanctuary of care.</p>
+        <a href="#" class="inline-flex items-center gap-2 bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-blue-50 transition-all w-fit">
+          <span data-i18n="resources.featured.read_more">Read Full Article</span>
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+      <div class="relative hidden lg:block">
+        <div class="absolute inset-0 m-8 rounded-xl overflow-hidden">
+          <img alt="Telehealth consultation" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Resource Library -->
+<section class="py-20 bg-slate-50">
+<div class="max-w-7xl mx-auto px-8">
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+    <div>
+      <h2 class="text-4xl font-headline font-bold text-blue-950 mb-3" data-i18n="resources.library.title">Resource Library</h2>
+      <p class="text-slate-600" data-i18n="resources.library.subtitle">Curated insights for medical professionals and researchers.</p>
+    </div>
+    <div class="flex gap-3 flex-wrap">
+      <button class="px-5 py-2.5 rounded-full bg-primary text-white font-semibold text-sm" data-i18n="resources.library.filter_all">All</button>
+      <button class="px-5 py-2.5 rounded-full bg-white border border-slate-200 text-slate-600 font-semibold text-sm hover:border-primary hover:text-primary transition-colors" data-i18n="resources.library.filter_whitepapers">Whitepapers</button>
+      <button class="px-5 py-2.5 rounded-full bg-white border border-slate-200 text-slate-600 font-semibold text-sm hover:border-primary hover:text-primary transition-colors" data-i18n="resources.library.filter_case_studies">Case Studies</button>
+    </div>
+  </div>
+
+  <!-- Bento Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Card 1 - Large -->
+    <div class="lg:col-span-2 bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all group">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img alt="Hospital ICU workflow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&auto=format&fit=crop"/>
+      </div>
+      <div class="p-8">
+        <span class="inline-block bg-blue-50 text-primary font-bold px-3 py-1 rounded-full text-xs mb-4" data-i18n="resources.library.card1_badge">Case Study</span>
+        <h3 class="text-xl font-bold text-blue-950 mb-3" data-i18n="resources.library.card1_title">Optimizing ICU Workflows with Real-time Data Analytics</h3>
+        <p class="text-slate-600 leading-relaxed mb-4" data-i18n="resources.library.card1_desc">How a major urban hospital reduced response times by 22% using HicareNet's integrated monitoring suite.</p>
+        <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">
+          <span data-i18n="resources.library.card1_link">Download PDF</span>
+          <span class="material-symbols-outlined text-sm">download</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 hover:shadow-xl hover:-translate-y-1 transition-all">
+      <div class="w-14 h-14 primary-gradient rounded-xl flex items-center justify-center mb-6">
+        <span class="material-symbols-outlined text-white text-2xl" style="font-variation-settings: 'FILL' 1;">article</span>
+      </div>
+      <h3 class="text-xl font-bold text-blue-950 mb-3" data-i18n="resources.library.card2_title">The Future of AI in Diagnostics</h3>
+      <p class="text-slate-600 leading-relaxed mb-4" data-i18n="resources.library.card2_desc">A technical exploration of machine learning algorithms in early cancer detection.</p>
+      <span class="inline-block bg-slate-100 text-slate-600 text-xs font-semibold px-3 py-1 rounded-full" data-i18n="resources.library.card2_badge">Whitepaper - 18 Pages</span>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 hover:shadow-xl hover:-translate-y-1 transition-all">
+      <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mb-6">
+        <span class="material-symbols-outlined text-green-600 text-2xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+      </div>
+      <h3 class="text-xl font-bold text-blue-950 mb-3" data-i18n="resources.library.card3_title">Digital Health Equity</h3>
+      <p class="text-slate-600 leading-relaxed mb-4" data-i18n="resources.library.card3_desc">Implementing telemedicine platforms in rural communities with limited connectivity.</p>
+      <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">
+        <span data-i18n="resources.library.card3_link">Read Case</span>
+        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="lg:col-span-2 primary-gradient rounded-2xl p-8 hover:-translate-y-1 transition-all">
+      <span class="text-blue-200 text-xs font-bold uppercase tracking-widest mb-4 block" data-i18n="resources.library.card4_eyebrow">Global Support</span>
+      <h3 class="text-2xl font-bold text-white mb-3" data-i18n="resources.library.card4_title">Expanding our Global Medical Network</h3>
+      <p class="text-blue-100 leading-relaxed mb-6" data-i18n="resources.library.card4_desc">HicareNet partners with European healthcare providers to streamline patient data interoperability across borders.</p>
+      <a class="inline-flex items-center gap-2 bg-white text-blue-900 font-bold px-6 py-3 rounded-full hover:bg-blue-50 transition-all" href="#">
+        <span data-i18n="resources.library.card4_link">Learn More</span>
+        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Newsletter -->
+<section class="py-24 bg-white">
+<div class="max-w-3xl mx-auto px-8 text-center">
+  <h2 class="text-4xl font-headline font-bold text-blue-950 mb-4" data-i18n="resources.newsletter.title">Stay Informed on the Future of Care</h2>
+  <p class="text-lg text-slate-600 mb-10" data-i18n="resources.newsletter.subtitle">Join over 10,000 healthcare professionals receiving our monthly digest of insights, studies, and technology updates.</p>
+  <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" onsubmit="return false;">
+    <input type="email" class="flex-grow px-6 py-4 rounded-full border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary text-sm" data-i18n-placeholder="resources.newsletter.placeholder" placeholder="Your professional email"/>
+    <button type="submit" class="primary-gradient text-white px-8 py-4 rounded-full font-bold text-sm hover:opacity-90 transition-all shadow-lg" data-i18n="resources.newsletter.btn">Subscribe</button>
+  </form>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-0 bg-[#f0f5f2] font-['Manrope'] text-sm leading-relaxed text-slate-600">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+  <div class="col-span-1">
+    <a class="text-xl font-bold text-slate-900 mb-4 block" href="index.html">HicareNet</a>
+    <p class="mb-6" data-i18n="footer.description">Empowering healthcare providers and patients with intelligent remote monitoring and clinical care management solutions.</p>
+    <div class="flex gap-4">
+      <a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-[#1676F3] transition-all duration-200" href="#" aria-label="Website"><span class="material-symbols-outlined text-lg">public</span></a>
+      <a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-[#1676F3] transition-all duration-200" href="mailto:info@hicare.net" aria-label="Email"><span class="material-symbols-outlined text-lg">mail</span></a>
+    </div>
+  </div>
+  <div>
+    <h6 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-xs" data-i18n="footer.resources">Resources</h6>
+    <ul class="space-y-4">
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="resources.html" data-i18n="footer.success_stories">Success Stories</a></li>
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="resources.html" data-i18n="footer.clinical_evidence">Clinical Evidence</a></li>
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="resources.html" data-i18n="footer.whitepapers">Whitepapers</a></li>
+    </ul>
+  </div>
+  <div>
+    <h6 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-xs" data-i18n="footer.legal">Legal</h6>
+    <ul class="space-y-4">
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="#" data-i18n="footer.terms">Terms of Service</a></li>
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="#" data-i18n="footer.cookie">Cookie Policy</a></li>
+    </ul>
+  </div>
+  <div>
+    <h6 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-xs" data-i18n="footer.company">Company</h6>
+    <ul class="space-y-4">
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="about.html" data-i18n="footer.about">About Us</a></li>
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="#" data-i18n="footer.careers">Careers</a></li>
+      <li><a class="text-slate-500 hover:text-[#1676F3] hover:underline decoration-2 underline-offset-4 transition-all duration-200" href="contact.html" data-i18n="footer.contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-12 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="text-xs" data-i18n="footer.copyright">&copy; 2026 HicareNet. All rights reserved.</p>
+    <div class="flex items-center gap-2 text-[#1676F3] font-medium text-xs">
+      <span class="w-2 h-2 rounded-full bg-green-500"></span>
+      <span data-i18n="footer.status">All Systems Operational</span>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+{
+  "common": {
+    "book_demo": "데모 예약",
+    "get_started": "시작하기",
+    "learn_more": "자세히 알아보기",
+    "contact_us": "문의하기",
+    "explore_platform": "플랫폼 살펴보기",
+    "read_more": "더 보기",
+    "skip_to_content": "본문으로 이동"
+  },
+  "nav": {
+    "home": "홈",
+    "solutions": "솔루션",
+    "resources": "리소스",
+    "about": "회사소개",
+    "contact": "문의"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "경계 없는 케어",
+      "title": "치유를 재구상하다.",
+      "subtitle": "임상 우수성과 가정의 편안함 사이의 격차를 좌혀주는 정밀 건강 솔루션. 인간 중심의 케어를 위한 부드러운 통합 기술.",
+      "cta_primary": "플랫폼 살펴보기",
+      "cta_secondary": "기기 보기"
+    },
+    "hero_badge": {
+      "label": "활성 케어",
+      "value": "98.4% 정확도",
+      "desc": "AI 기반 인사이트로 실시간 임상 모니터링."
+    },
+    "what_does": {
+      "title": "하이케어는 무엇을 하는가",
+      "subtitle": "임상 우수성의 세 가지 공생 축을 통해 헬스케어의 미래를 설계합니다.",
+      "rpm_title": "원격 환자 모니터링",
+      "rpm_desc": "우리의 RPM 플랫폼은 수동적 데이터를 능동적 건강 관리로 전환합니다. 즉시 동기화되는 임상 등급 셀룰러 기기를 제공합니다.",
+      "rpm_link": "RPM 살펴보기",
+      "ccm_title": "만성질환 관리",
+      "ccm_desc": "전담 CCM 서비스를 통해 진료의 범위를 확장합니다. 우리 팀은 공감으로 복잡한 상태를 관리합니다.",
+      "ccm_link": "CCM 알아보기",
+      "ecosystem_title": "헬스 에코시스템",
+      "ecosystem_desc": "하이케어넷은 통합 헬스 에코시스템입니다. 하드웨어, 소프트웨어, 휴먼 서비스를 통합하여 의료 마찰을 제거합니다.",
+      "ecosystem_link": "우리의 철학"
+    },
+    "provides": {
+      "eyebrow": "포괄적 임팩트",
+      "title": "하이케어가 제공하는 것",
+      "patients_title": "환자를 위한",
+      "patients_1": "건강 상태 개선",
+      "patients_2": "입원, 재입원 감소",
+      "patients_3": "개인 건강에 대한 더 많은 통제력",
+      "patients_4": "개인화된 환자 교육 및 지원",
+      "patients_5": "의료비 절감",
+      "providers_title": "의료 제공자를 위한",
+      "providers_1": "환자 결과 개선",
+      "providers_2": "환자 만족도 향상",
+      "providers_3": "중요한 수익원",
+      "providers_4": "환자 평가 및 관리를 위한 더 나은 정보",
+      "providers_5": "환자 케어 품질 향상"
+    },
+    "how_it_works": {
+      "eyebrow": "도입 경로",
+      "title": "이렇게 진행됩니다",
+      "subtitle": "임상 등급 원격 케어와 최적화된 수가 청구를 위한 5단계 여정.",
+      "step1_title": "가입하기",
+      "step1_desc": "하이케어는 턴키 온보딩, 기술 지원, 청구 지원을 포함한 원활한 도입을 제공합니다.",
+      "step1_label": "1단계",
+      "step2_title": "환자 등록",
+      "step2_desc": "하이케어 플랫폼이 EHR 통합을 통해 후보자를 식별하고 하이케어 프로그램에 환자를 등록합니다.",
+      "step2_label": "2단계",
+      "step3_title": "기기 배송 / 교육",
+      "step3_desc": "하이케어 기기가 환자 가정으로 배송되고, 하이케어 케어팀이 각 환자와 맞춤형 교육 세션을 진행합니다.",
+      "step3_label": "3단계",
+      "step4_title": "환자 모니터링",
+      "step4_desc": "하이케어 케어팀이 환자의 활력징후 데이터를 실시간으로 모니터링하고, 환자의 측정값이 지정된 주의 또는 위험 범위에 들어오면 적극적으로 대응합니다.",
+      "step4_label": "4단계",
+      "step5_title": "수가 청구",
+      "step5_desc": "하이케어는 매월 각 환자에 대한 청구 보고서와 간결한 환자 데이터를 제공하여 수가 청구를 쉽게 제출할 수 있도록 합니다.",
+      "step5_label": "5단계"
+    },
+    "ecosystem": {
+      "title": "통합 헬스 에코시스템",
+      "subtitle": "모든 환자 여정에 임상 등급 지능을 제공하는 세 가지 축.",
+      "rpm_title": "RPM",
+      "rpm_desc": "원활한 원격 환자 모니터링. 자동 활력징후 수집과 선제적 알림.",
+      "rpm_feat1": "실시간 활력징후 동기화",
+      "rpm_feat2": "AI 트렌드 분석",
+      "rpm_link": "자세히 보기",
+      "ccm_title": "CCM",
+      "ccm_desc": "환자 경험을 우선시하는 만성질환 관리. 따뜻한 케어 조정.",
+      "ccm_feat1": "케어 플랜 오케스트레이션",
+      "ccm_feat2": "24/7 임상 지원",
+      "ccm_link": "CCM 살펴보기",
+      "compliance_title": "컴플라이언스",
+      "compliance_desc": "자동 청구, HIPAA 보안 워크플로우, 손쉬운 문서화.",
+      "compliance_feat1": "자동 청구 코드",
+      "compliance_feat2": "감사 대비 보고서",
+      "compliance_link": "보안 상세"
+    },
+    "devices": {
+      "eyebrow": "하드웨어 우수성",
+      "title": "케어 인스트루먼트",
+      "device1_name": "VitalSync 혈압계",
+      "device1_desc": "임상 정확도, 소비자 편의성.",
+      "device1_price": "$129",
+      "device2_name": "Precision Scale Plus",
+      "device2_desc": "즉시 셀룰러 연결.",
+      "device2_price": "$89",
+      "device3_name": "OxyCloud 센서",
+      "device3_desc": "연속 산소포화도 추적.",
+      "device3_price": "$149"
+    },
+    "lifeorb": {
+      "title": "집처럼 편안한 기술.",
+      "subtitle": "최고의 의료 기술은 배경으로 사라지는 기술이라고 믿습니다.",
+      "feat1_num": "01",
+      "feat1_title": "비침습적 케어",
+      "feat1_desc": "초 단위로 설치되는 기기.",
+      "feat2_num": "02",
+      "feat2_title": "공감적 인사이트",
+      "feat2_desc": "임상적 공감으로 해석된 데이터."
+    }
+  },
+  "solutions": {
+    "hero": {
+      "eyebrow": "연속성을 재정의하다",
+      "title": "경계 없는 케어.",
+      "subtitle": "의료 기술의 리빙 생투어리를 통해 환자와 의료 제공자를 원활하게 연결합니다. 임상 우수성과 가정의 편안함 사이의 격차를 좊혀줍니다.",
+      "cta_primary": "시작하기",
+      "cta_secondary": "플랫폼 살펴보기"
+    },
+    "hero_badge": {
+      "label": "실시간 활력징후",
+      "desc": "AI 검증을 통한 SpO2, 심박수, 혈압의 연속 모니터링."
+    },
+    "rpm": {
+      "title": "RPM: 모든 박동에 담긴 지능",
+      "subtitle": "우리의 원격 환자 모니터링 시스템은 단순한 데이터 수집이 아닙니다. 위험이 긴급 상황이 되기 전에 예측하는 지능형 알림 에코시스템입니다.",
+      "badge": "24/7 임상 연결",
+      "feature1_title": "기기 통합 동기화",
+      "feature1_desc": "FDA 승인 혈당측정기, 체중계, 혈압측정기와 원터치 동기화.",
+      "feature2_title": "AI 기반 알림",
+      "feature2_desc": "정교한 알고리즘이 노이즈를 필터링하여 케어팀에 실행 가능한 임상 인사이트를 제공합니다.",
+      "feature3_title": "글로벌 클라우드 네트워크",
+      "feature3_desc": "환자 개인정보와 제공자 접근성을 보장하는 HIPAA 준수 보안 데이터 저장소."
+    },
+    "ccm": {
+      "title": "CCM: 웰니스를 향한 맞춤형 경로",
+      "step1_title": "맞춤형 케어 플랜",
+      "step1_desc": "각 환자는 특정 만성 질환과 라이프스타일 목표에 맞는 디지털 맞춤형 로드맵을 받습니다.",
+      "step2_title": "임상 의사결정 지원",
+      "step2_desc": "실시간 데이터 시각화로 간호사와 의사가 정보에 입각한 치료적 조정을 할 수 있도록 지원합니다.",
+      "step3_title": "환자 참여 허브",
+      "step3_desc": "환자를 교육하고 자기 관리를 촉진하며 전반적인 건강 리터러시를 향상시키는 인터랙티브 모듈."
+    },
+    "why": {
+      "title": "왜 하이케어넷인가?",
+      "subtitle": "기술을 넘어, 의료 시스템에 측정 가능한 성과를, 환자에게는 삶을 변화시키는 편안함을 제공합니다.",
+      "efficiency_eyebrow": "효율성",
+      "stat_readmission": "병원 재입원율 45% 감소",
+      "stat_desc": "우리의 선제적 모니터링은 위급 상황이 발생하기 최대 72시간 전에 생리적 변화를 감지합니다.",
+      "verified": "검증된 임상 데이터",
+      "patient_first": "환자 우선 경험",
+      "patient_first_desc": "직관적이고 비침습적인 인터페이스와 24/7 지원으로 92% 환자 만족도.",
+      "hipaa": "HIPAA 보안",
+      "hipaa_desc": "모든 의료 데이터에 은행급 암호화.",
+      "ehr": "EHR 통합",
+      "ehr_desc": "Epic, Cerner 등으로의 원활한 데이터 흐름."
+    },
+    "cta": {
+      "title": "진료 환경을 혁신할 준비가 되셨나요?",
+      "subtitle": "가정 기반 의료 케어의 성역을 제공하는 전 세계 500개 이상의 클리닉과 함께하세요.",
+      "btn_demo": "데모 예약하기",
+      "btn_brochure": "브로슈어 다운로드"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "디지털 헬스 선도",
+      "title_line1": "디지털 헬스케어의",
+      "title_line2": "미래를 선도합니다",
+      "subtitle": "임상 정밀도와 인간 중심 기술을 통해 원격 환자 모니터링(RPM)과 만성질환 관리(CCM)를 재정의합니다.",
+      "cta_story": "우리의 이야기",
+      "cta_global": "글로벌 현황 보기"
+    },
+    "hero_badge": {
+      "label": "글로벌 임팩트",
+      "value": "240만+ 데이터",
+      "desc": "하이케어넷의 보안 RPM 에코시스템을 통해 추적되는 일일 건강 데이터."
+    },
+    "vision_mission": {
+      "heading": "모든 곳의 모든 사람에게 헬스케어를 연결합니다",
+      "heading_desc": "거리나 인프라에 의해 고품질 의료 접근성이 제한되지 않도록 환자와 제공자 간의 격차를 좊혀나가고 있습니다.",
+      "mission_eyebrow": "우리의 미션",
+      "mission_title": "원활한 데이터를 통한 삶의 역량 강화",
+      "mission_desc": "더 건강한 글로벌 커뮤니티를 위해 실시간 모니터링과 선제적 케어를 가능하게 하는 가장 신뢰할 수 있는 디지털 헬스 플랫폼을 제공합니다.",
+      "vision_eyebrow": "우리의 비전",
+      "vision_title": "케어가 끊임없이 이어지는 세상",
+      "vision_desc": "모든 개인이 신체적 건강을 위한 디지털 수호자를 가지는, 원격 헬스케어의 글로벌 표준이 됩니다."
+    },
+    "values": {
+      "eyebrow": "생투어리 정신",
+      "title": "인간 지능과 임상 정밀성의 만남",
+      "subtitle": "우리의 가치는 벽에 붙은 포스터가 아니라 임상 우수성의 건축적 기둥입니다.",
+      "innovation": "혁신",
+      "innovation_desc": "AI 기반 분석과 환자 니즈에 따라 진화하는 상호운용 데이터 에코시스템으로 기술 최전선을 선도합니다.",
+      "reliability": "신뢰성",
+      "reliability_desc": "임상 정확도가 기본입니다. 의료기기 보안과 데이터 무결성에 대해 최고의 글로벌 표준을 유지합니다.",
+      "patient": "환자 중심",
+      "patient_desc": "기술은 도구이지만 인간성이 목표입니다. 공감으로 설계하여 우리의 도구가 부드러운 손길처럼 느껴지도록 합니다."
+    },
+    "company": {
+      "title": "회사 정보",
+      "name_label": "회사명",
+      "name": "(주)하이케어넷",
+      "ceo_label": "대표이사",
+      "ceo": "한승희",
+      "hq_label": "본사 주소",
+      "hq": "서울특별시 송파구 위례성대로22길 28 5층(오금동) (05656)",
+      "hubs_label": "글로벌 거점",
+      "hub_korea": "한국",
+      "hub_usa": "미국",
+      "hub_sea": "동남아시아",
+      "established": "설립",
+      "established_year": "2004"
+    },
+    "timeline": {
+      "title": "20년의 우수성",
+      "y2004": "2004",
+      "y2004_title": "하이케어넷 설립",
+      "y2004_desc": "통합 디지털 헬스케어 시스템의 기초 비전을 수립하였습니다.",
+      "y2012": "2012",
+      "y2012_title": "플랫폼 출시",
+      "y2012_desc": "가정 기반 원격 모니터링을 혁신한 하이케어 허브 1세대를 출시했습니다.",
+      "y2018": "2018",
+      "y2018_title": "글로벌 확장",
+      "y2018_desc": "FDA 인증 솔루션으로 미국 시장에 진출하고 동남아시아로 확장했습니다.",
+      "y2024": "2024",
+      "y2024_title": "차세대 AI 케어",
+      "y2024_desc": "예측 분석과 딥러닝을 통합하여 모니터링에서 예방 케어로 전환합니다."
+    },
+    "cta": {
+      "title": "헬스케어의 다음 장을 정의할 준비가 되셨나요?",
+      "btn": "솔루션 전문가에게 문의하기"
+    }
+  },
+  "resources": {
+    "hero": {
+      "eyebrow": "지식 허브",
+      "title_line1": "지식으로",
+      "title_line2": "역량을 강화합니다",
+      "subtitle": "임상 백서, 디지털 헬스 사례 연구, 최신 의료 기술 혁신에 대한 포괄적인 라이브러리에 접근하세요."
+    },
+    "featured": {
+      "badge": "최신 뉴스",
+      "title": "팬데믹 이후 원격의료의 발전",
+      "desc": "원격 환자 모니터링이 현대 케어의 성역에서 임상 효율성과 환자 편안함 사이의 격차를 어떻게 좊혀가고 있는지에 대한 심층 분석.",
+      "read_more": "전체 아티클 읽기"
+    },
+    "library": {
+      "title": "리소스 라이브러리",
+      "subtitle": "의료 전문가와 연구자를 위한 큐레이트된 인사이트.",
+      "filter_all": "전체",
+      "filter_whitepapers": "백서",
+      "filter_case_studies": "사례 연구",
+      "card1_badge": "사례 연구",
+      "card1_title": "실시간 데이터 분석으로 ICU 워크플로우 최적화",
+      "card1_desc": "대형 도시 병원이 하이케어넷의 통합 모니터링 스위트를 사용하여 대응 시간을 22% 단축한 방법.",
+      "card1_link": "PDF 다운로드",
+      "card2_title": "AI 진단의 미래",
+      "card2_desc": "조기 암 발견에서 머신러닝 알고리즘에 대한 기술적 탐구.",
+      "card2_badge": "백서 - 18페이지",
+      "card3_title": "디지털 건강 형평성",
+      "card3_desc": "제한된 연결성을 가진 농촌 지역사회에 원격 의료 플랫폼 구현.",
+      "card3_link": "사례 읽기",
+      "card4_eyebrow": "글로벌 지원",
+      "card4_title": "글로벌 의료 네트워크 확장",
+      "card4_desc": "하이케어넷이 유럽 의료 제공자와 협력하여 국경 간 환자 데이터 상호운용성을 간소화합니다.",
+      "card4_link": "자세히 보기"
+    },
+    "newsletter": {
+      "title": "케어의 미래에 대한 정보를 받아보세요",
+      "subtitle": "인사이트, 연구, 기술 업데이트에 대한 월간 다이제스트를 받는 10,000명 이상의 의료 전문가와 함께하세요.",
+      "placeholder": "이메일 주소 입력",
+      "btn": "구독하기"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "연락하기",
+      "title": "함께 케어의 미래를 만들어 갑시다",
+      "subtitle": "RPM/CCM 솔루션 도입을 고려하는 의료 제공자나 플랫폼에 대한 문의가 있으시면 언제든 연락해 주세요."
+    },
+    "info": {
+      "title": "연락처 정보",
+      "address_label": "본사",
+      "address": "서울특별시 송파구 위례성대로22길 28 5층(오금동) (05656)",
+      "phone_label": "전화",
+      "phone": "02-3400-7247",
+      "email_label": "이메일",
+      "email": "info@hicare.net",
+      "hours_label": "영업 시간",
+      "hours": "월 - 금: 오전 9:00 - 오후 6:00 (KST)"
+    },
+    "form": {
+      "title": "메시지 보내기",
+      "name_label": "성명",
+      "name_placeholder": "성명을 입력하세요",
+      "email_label": "이메일 주소",
+      "email_placeholder": "이메일 주소를 입력하세요",
+      "org_label": "소속 기관",
+      "org_placeholder": "기관명을 입력하세요",
+      "subject_label": "문의 유형",
+      "subject_placeholder": "문의 유형을 선택하세요",
+      "subject_demo": "데모 요청",
+      "subject_partnership": "파트너십 문의",
+      "subject_support": "기술 지원",
+      "subject_general": "일반 문의",
+      "message_label": "메시지",
+      "message_placeholder": "필요한 내용을 작성해 주세요...",
+      "submit": "메시지 보내기",
+      "privacy_note": "이 양식을 제출하면 개인정보 보호정책에 동의하는 것으로 간주됩니다."
+    }
+  },
+  "footer": {
+    "description": "지능형 원격 모니터링 및 임상 케어 관리 솔루션으로 의료 제공자와 환자에게 힘을 실어줍니다.",
+    "resources": "리소스",
+    "legal": "법적 정보",
+    "company": "회사",
+    "privacy": "개인정보 보호정책",
+    "terms": "서비스 이용약관",
+    "cookie": "쿠키 정책",
+    "about": "회사소개",
+    "careers": "채용",
+    "contact": "문의하기",
+    "success_stories": "성공 사례",
+    "clinical_evidence": "임상 근거",
+    "whitepapers": "백서",
+    "webinars": "웨비나",
+    "copyright": "© 2026 HicareNet. All rights reserved.",
+    "status": "모든 시스템 정상 운영 중",
+    "phone": "02-3400-7247",
+    "email": "info@hicare.net",
+    "address": "서울특별시 송파구 위례성대로22길 28 5층 (05656)"
+  }
+}
