@@ -2,14 +2,14 @@
   "stats": [
     {
       "id": "clinics",
-      "value": 200,
+      "value": 40,
       "suffix": "+",
       "label_key": "stats.clinics.label",
       "icon": "building"
     },
     {
       "id": "patients",
-      "value": 15000,
+      "value": 3000,
       "suffix": "+",
       "label_key": "stats.patients.label",
       "icon": "heart"
@@ -23,14 +23,14 @@
     },
     {
       "id": "languages",
-      "value": 7,
+      "value": 3,
       "suffix": "",
       "label_key": "stats.languages.label",
       "icon": "globe"
     },
     {
       "id": "devices",
-      "value": 50,
+      "value": 120,
       "suffix": "+",
       "label_key": "stats.devices.label",
       "icon": "smartphone"

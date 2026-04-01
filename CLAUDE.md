@@ -62,7 +62,7 @@ design/        .pen design files (Pencil MCP only)
 - Outcome-focused language ("Reduce readmissions" not "Real-time dashboards")
 - Audience-first navigation ("Who we help" before products)
 - Compliance woven into value propositions, not separate features
-- Concrete numbers (200+ clinics, 15K+ patients, 20+ years, 7 languages)
+- Concrete numbers (40+ hospitals, 3,000+ patients, 20+ years, 120+ devices)
 - CTA segmented by user type (provider/patient/current client)
 
 ## Agent Team

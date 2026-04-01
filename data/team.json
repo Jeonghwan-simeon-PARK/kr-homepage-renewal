@@ -1,32 +1,32 @@
 {
   "members": [
     {
-      "id": "ceo",
-      "name": "James K. Park",
-      "title_key": "about.team.ceo.title",
-      "bio_key": "about.team.ceo.bio",
+      "id": "co-ceo-1",
+      "name": "Hong-jin Kim",
+      "title_key": "about.team.ceo1.title",
+      "bio_key": "about.team.ceo1.bio",
       "photo": "/assets/images/team/ceo.jpg"
     },
     {
-      "id": "cto",
-      "name": "David S. Kim",
-      "title_key": "about.team.cto.title",
-      "bio_key": "about.team.cto.bio",
-      "photo": "/assets/images/team/cto.jpg"
+      "id": "co-ceo-2",
+      "name": "Jong-yoon Won",
+      "title_key": "about.team.ceo2.title",
+      "bio_key": "about.team.ceo2.bio",
+      "photo": "/assets/images/team/ceo2.jpg"
     },
     {
-      "id": "vp-clinical",
-      "name": "Sarah M. Johnson",
-      "title_key": "about.team.vp_clinical.title",
-      "bio_key": "about.team.vp_clinical.bio",
-      "photo": "/assets/images/team/vp-clinical.jpg"
+      "id": "dev-lead",
+      "name": "Jung-hwan Park",
+      "title_key": "about.team.dev_lead.title",
+      "bio_key": "about.team.dev_lead.bio",
+      "photo": "/assets/images/team/dev-lead.jpg"
     },
     {
-      "id": "vp-business",
-      "name": "Michael R. Chen",
-      "title_key": "about.team.vp_business.title",
-      "bio_key": "about.team.vp_business.bio",
-      "photo": "/assets/images/team/vp-business.jpg"
+      "id": "bi-lead",
+      "name": "Kwon-il Park",
+      "title_key": "about.team.bi_lead.title",
+      "bio_key": "about.team.bi_lead.bio",
+      "photo": "/assets/images/team/bi-lead.jpg"
     }
   ]
 }

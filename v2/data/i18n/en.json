@@ -121,8 +121,8 @@
         "desc": "Integrated native FHIR protocol support across all Hicare Hub solutions for seamless US EMR integration."
       },
       "y2016": {
-        "title": "FDA 510(k) Clearance",
-        "desc": "Successfully obtained US FDA certification for our remote monitoring hardware ecosystem."
+        "title": "Hicare Hub Gateway Development",
+        "desc": "Launched the first-generation Hicare Hub (HH-800A) gateway, establishing our proprietary remote monitoring hardware ecosystem."
       }
     },
     "expertise": {
@@ -240,10 +240,10 @@
         "status": "Certified",
         "desc": "Privacy Information Management System (PIMS) certification for global data privacy compliance."
       },
-      "fda": {
-        "title": "Medical Device",
-        "status": "Class-Certified",
-        "desc": "Regulatory clearance for clinical use in RPM and diagnostic monitoring environments."
+      "devices": {
+        "title": "120+ Devices",
+        "status": "Compatible",
+        "desc": "Integrated compatibility with over 120 medical peripheral devices for comprehensive remote patient monitoring."
       },
       "encryption": {
         "title": "End-to-End Encryption",
@@ -564,7 +564,7 @@
     "cert1": { "title": "HIPAA Compliant", "desc": "Full compliance with HIPAA Privacy, Security, and Breach Notification Rules. BAA available for all covered entities." },
     "cert2": { "title": "ISO 27001", "desc": "Information Security Management System certified to international ISO 27001 standards. Last audited December 2025." },
     "cert3": { "title": "ISO 27701", "desc": "Privacy Information Management System certified, extending ISO 27001 with GDPR and CCPA-aligned privacy controls." },
-    "cert4": { "title": "FDA 510(k)", "desc": "US FDA Class 2 medical device clearance (HX-461) demonstrating rigorous regulatory compliance and product safety." },
+    "cert4": { "title": "120+ Devices", "desc": "Compatible with over 120 medical peripheral devices, powering comprehensive remote patient monitoring across clinical environments." },
     "hipaa": {
       "tag": "HEALTHCARE STANDARD",
       "title": "HIPAA Compliance",
@@ -697,7 +697,7 @@
     },
     "read_article": "Read Article",
     "cards": {
-      "c1": { "tag": "RPM", "title": "5 FDA-Cleared RPM Devices That Are Changing Patient Outcomes", "desc": "A comprehensive review of the latest remote monitoring devices and their clinical impact on chronic disease management programs." },
+      "c1": { "tag": "RPM", "title": "5 RPM Devices That Are Changing Patient Outcomes", "desc": "A comprehensive review of the latest remote monitoring devices and their clinical impact on chronic disease management programs." },
       "c2": { "tag": "CCM", "title": "Multilingual Patient Engagement: Breaking Language Barriers in CCM", "desc": "How supporting 7+ languages in chronic care management improves patient adherence and health outcomes." },
       "c3": { "tag": "VBC", "title": "Navigating CMS Value-Based Care Models in 2026" },
       "c4": { "tag": "AWV", "title": "Maximizing Annual Wellness Visit Completion Rates" },
@@ -709,7 +709,7 @@
       "title": "FAQ",
       "desc": "Quick answers to the most common questions about our RPM and CCM platform.",
       "q1": "What devices are compatible with the Hicare Hub platform?",
-      "a1": "Hicare Hub supports 100+ FDA-cleared device models including blood pressure monitors, pulse oximeters, weight scales, and glucometers via Bluetooth and cellular connections.",
+      "a1": "Hicare Hub supports 120+ compatible device models including blood pressure monitors, pulse oximeters, weight scales, and glucometers via Bluetooth and cellular connections.",
       "q2": "How quickly can we onboard a new practice?",
       "a2": "Most practices are fully onboarded within 2–4 weeks, including device provisioning, EHR integration, staff training, and patient enrollment.",
       "q3": "Does HicareNet support HL7 FHIR integration?",
