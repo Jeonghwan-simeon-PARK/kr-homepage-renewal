@@ -279,11 +279,11 @@
     },
     "info": {
       "title": "Quick Contact",
-      "phone": "855.844.8300",
+      "phone": "02-3400-7247",
       "phoneLabel": "Phone",
       "email": "help@hicare.net",
       "emailLabel": "Email",
-      "hours": "Mon-Fri, 8 AM - 6 PM PST",
+      "hours": "Mon-Fri, 9 AM - 6 PM KST",
       "hoursLabel": "Business Hours",
       "support": "24/7 Technical Support",
       "supportLabel": "Support"
@@ -291,12 +291,12 @@
     "offices": {
       "title": "Our Offices",
       "irvine": {
-        "name": "Irvine Office",
-        "address": "9272 Jeronimo Rd, Suite 107, Irvine, CA 92618"
+        "name": "Seoul Headquarters",
+        "address": "5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul 05656"
       },
       "siliconValley": {
-        "name": "Silicon Valley Office",
-        "address": "3003 North First St, Suite 225, San Jose, CA 95134"
+        "name": "US Operations",
+        "address": "California, United States"
       }
     },
     "cta": {
@@ -339,12 +339,12 @@
     "col5": {
       "title": "Office Locations",
       "office1": {
-        "name": "Irvine Office",
-        "address": "9272 Jeronimo Rd, Suite 107, Irvine, CA 92618"
+        "name": "Seoul Headquarters",
+        "address": "5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul 05656"
       },
       "office2": {
-        "name": "Silicon Valley Office",
-        "address": "3003 North First St, Suite 225, San Jose, CA 95134"
+        "name": "US Operations",
+        "address": "California, United States"
       }
     },
     "copyright": "\u00a9 2025. Hicare.net Inc. All Rights Reserved.",

@@ -279,7 +279,7 @@
     },
     "info": {
       "title": "빠른 연락",
-      "phone": "855.844.8300",
+      "phone": "02-3400-7247",
       "phoneLabel": "전화",
       "email": "help@hicare.net",
       "emailLabel": "이메일",
@@ -291,12 +291,12 @@
     "offices": {
       "title": "오피스",
       "irvine": {
-        "name": "어바인 오피스",
-        "address": "9272 Jeronimo Rd, Suite 107, Irvine, CA 92618"
+        "name": "서울 본사",
+        "address": "서울특별시 송파구 위례성대로22길 28, 5층 (05656)"
       },
       "siliconValley": {
-        "name": "실리콘밸리 오피스",
-        "address": "3003 North First St, Suite 225, San Jose, CA 95134"
+        "name": "미국 법인",
+        "address": "California, United States"
       }
     },
     "cta": {
@@ -339,12 +339,12 @@
     "col5": {
       "title": "오피스 위치",
       "office1": {
-        "name": "어바인 오피스",
-        "address": "9272 Jeronimo Rd, Suite 107, Irvine, CA 92618"
+        "name": "서울 본사",
+        "address": "서울특별시 송파구 위례성대로22길 28, 5층 (05656)"
       },
       "office2": {
-        "name": "실리콘밸리 오피스",
-        "address": "3003 North First St, Suite 225, San Jose, CA 95134"
+        "name": "미국 법인",
+        "address": "California, United States"
       }
     },
     "copyright": "\u00a9 2025. Hicare.net Inc. All Rights Reserved.",
