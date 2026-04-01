@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HicareNet — Innovative Connected Care Management. RPM & CCM solutions trusted by 40+ hospitals, 3,000+ patients across the US.">
+  <title>HicareNet | Innovative Connected Care Management Service</title>
+
+  <!-- Fonts: Manrope + Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/v3/main.css">
+</head>
+<body>
+
+  <!-- ========== SKIP LINK ========== -->
+  <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">Skip to main content</a>
+
+  <!-- ========== TOP BAR (Utility + Nav) ========== -->
+  <div class="topbar">
+    <!-- Utility Strip -->
+    <div class="topbar__utility">
+      <div class="topbar__utility-link">
+        <span class="material-symbols-outlined icon-sm">call</span>
+        <span>855.844.8300</span>
+      </div>
+      <a href="/src/v3/contact.html">Contact</a>
+      <a href="#" class="topbar__utility-login">
+        <span class="material-symbols-outlined icon-sm">login</span>
+        Provider Login
+      </a>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="topbar__header">
+      <a href="/src/v3/index.html" class="topbar__logo">HicareNet</a>
+
+      <nav class="topbar__nav" aria-label="Main navigation">
+        <a href="/src/v3/index.html" class="topbar__nav-link is-active">Home</a>
+        <a href="/src/v3/solutions.html" class="topbar__nav-link">Solutions</a>
+        <a href="/src/v3/resources.html" class="topbar__nav-link">Resources</a>
+        <a href="/src/v3/about.html" class="topbar__nav-link">About Us</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="/src/v3/contact.html" class="btn btn--primary topbar__cta-desktop">Book a Demo Now!</a>
+        <!-- Mobile Hamburger -->
+        <button class="topbar__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <nav class="topbar__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <div class="topbar__mobile-menu-inner">
+        <a href="/src/v3/index.html" class="topbar__mobile-link is-active">Home</a>
+        <a href="/src/v3/solutions.html" class="topbar__mobile-link">Solutions</a>
+        <a href="/src/v3/resources.html" class="topbar__mobile-link">Resources</a>
+        <a href="/src/v3/about.html" class="topbar__mobile-link">About Us</a>
+        <a href="/src/v3/contact.html" class="btn btn--primary" style="margin-top: var(--space-4); text-align: center;">Book a Demo Now!</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+         Full-bleed image + gradient overlay
+         ══════════════════════════════════════ -->
+    <section class="hero bg-surface-low">
+      <div class="hero__bg">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW2G0wPctPZFrHeKeEGTNGgvbhpAwBmeKfSrQMjR7OciwS0JEY0flzZkAiJ74zSlIw66_zB0FmhRpM1-O3A21jVyyjIY_OS9yORJcvl0eVb5juA0kUwBvgo7d937ZQt9g2IEs_8IEUIgMWAAnSw7S3FbxwB1dntSu7dBNrox5rB3s3vXY9HQ3TxQ_M9J2sFxSW8hQQqHVEbqD8fTCz2zK2BYc9jzX3STCDl9dP_Oqa6mRIz-na17lVc_7ZLB4rROs9lvVufyFKFnW2"
+          alt="Elderly couple happily looking at a tablet together during a remote healthcare session"
+        >
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__inner">
+          <span class="hero__badge">Reimagining Patient Care</span>
+          <h1 class="hero__title">
+            Hicare — Innovative<br>Connected Care Management Service
+          </h1>
+          <p class="hero__subtitle">
+            Connecting providers and patients through intelligent monitoring,
+            seamless logistics, and human-centric technology.
+          </p>
+          <div class="hero__actions">
+            <a href="/src/v3/solutions.html" class="btn btn--hero-primary rounded-full">View Solutions</a>
+            <a href="/src/v3/about.html" class="btn btn--hero-outline rounded-full">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         WHAT HICARE DOES
+         Bento grid layout
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">What Hicare Does</h2>
+          <div class="section-header__accent"></div>
+        </div>
+
+        <div class="grid grid--12" style="gap: var(--space-8);">
+          <!-- Bridging the Gap (large card) -->
+          <div class="card card--white card--feature md:col-span-8">
+            <div class="relative z-10">
+              <h3 class="card__title card__title--lg">Bridging the Gap</h3>
+              <p class="card__text max-w-md">
+                We simplify complex RPM workflows into a single, intuitive platform that monitors,
+                alerts, and manages patient data in real-time with 120+ compatible medical devices.
+              </p>
+            </div>
+            <div class="flex gap-4 mt-12 relative z-10">
+              <span class="tag">Real-time Data</span>
+              <span class="tag">Automated Alerts</span>
+              <span class="tag">120+ Devices</span>
+            </div>
+            <div class="card__glow"></div>
+          </div>
+
+          <!-- Actionable Insights -->
+          <div class="card card--primary md:col-span-4">
+            <span class="material-symbols-outlined card__icon">analytics</span>
+            <h3 class="card__title">Actionable Insights</h3>
+            <p class="card__text">
+              Transform raw data into clinical decisions with AI-powered automated reporting
+              and Medicare billing integration.
+            </p>
+          </div>
+
+          <!-- Clinical Support -->
+          <div class="card card--secondary md:col-span-4">
+            <span class="material-symbols-outlined card__icon">clinical_notes</span>
+            <h3 class="card__title">Clinical Support</h3>
+            <p class="card__text">
+              Dedicated specialists ready to assist your team in patient onboarding,
+              device logistics, and 24/7 technical support.
+            </p>
+          </div>
+
+          <!-- Global Reach (wide card with image) -->
+          <div class="card card--low md:col-span-8" style="display: flex; flex-direction: column; gap: var(--space-8);">
+            <div style="display: flex; flex-direction: column; gap: var(--space-8);" class="solutions-row">
+              <div class="flex-1">
+                <h3 class="card__title card__title--lg">Global Reach, Local Touch</h3>
+                <p class="card__text" style="font-size: var(--text-lg);">
+                  Serving 40+ hospitals across California with device logistics, patient education,
+                  and localized support. Expanding to the East Coast, Italy, and France.
+                </p>
+              </div>
+              <div style="width: 100%; max-width: 16rem; height: 12rem; background: #fff; border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxhXKR-6B-Hldzozez6W-4PQvFVJtUYigXkZOhjM4aKT8jxkh27tnF8dZp-Lc8zlzEOxSZ9XM_M-aSQfhY6VdjsHM7PSBvsYjBwSE2zbpNAY_4WFOG_4WR9Jd14VzUUoFydlcfKlbpHLqDzbZCUbAm3JeivQfjwz5kV07dB7szWn8bsPH7XZ1plZN7h7lu2Eogk-J9J8n3UVqBZlpnudt0h-jaemgZT_EvV1HUC-LTrUoDPoV9mKCBKDnBFbE0Wr0Upg0zekujN9-X"
+                  alt="Logistics and device distribution center"
+                  class="object-cover"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         WHAT HICARE PROVIDES
+         Provider / Patient split
+         ══════════════════════════════════════ -->
+    <section class="section bg-surface-low">
+      <div class="container">
+        <div class="solutions-split">
+          <!-- For Providers -->
+          <div class="solution-col">
+            <div class="solution-col__image">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi9JEXETAAYEDj1zyhb08ZEWKFPXAHlJ5qSScA4I2BNneOtewVGVhqeVoEvtqmFXjodcCxEjLqSORQTT8A_9OjPhCFDVqwC92JRckGF2iN7mD4sIVlUxnWXb8YahF21goc9yg95E4eyrfXGg10K5oFTO6_pnxGWc65sAxMexoE2wRJ3Itn9UBNjJci1U-L0hr6EZGV2ohI56Wpx39xz9xRil-nvf4ULD0WbROwhIn5fF2QL-xztl6NWFO5t64ps7bcjnUaITv0vIeF"
+                alt="Professional healthcare provider having a warm, caring conversation with an elderly patient"
+              >
+              <span class="solution-col__label">For Providers</span>
+            </div>
+            <h3 class="solution-col__title">Scale Your Practice Efficiency</h3>
+            <p class="solution-col__text">
+              Reduce administrative burden with automated CPT coding, AI-generated reports,
+              and seamless Medicare RPM/CCM reimbursement tracking. Monitor thousands of
+              patients with the same overhead as a dozen.
+            </p>
+            <ul class="checklist mb-10">
+              <li class="checklist__item">
+                <span class="material-symbols-outlined">check_circle</span>
+                Automated CPT Coding &amp; Billing
+              </li>
+              <li class="checklist__item">
+                <span class="material-symbols-outlined">check_circle</span>
+                AI-Powered Report Generation
+              </li>
+              <li class="checklist__item">
+                <span class="material-symbols-outlined">check_circle</span>
+                Seamless API &amp; EHR Integration
+              </li>
+            </ul>
+            <a href="/src/v3/solutions.html" class="link-arrow">
+              Explore Provider Solutions
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- For Patients -->
+          <div class="solution-col">
+            <div class="solution-col__image">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeGjKHSgWBqcTTOt_WzltjQOuVpglghlh7g4W0x2LenYjUbiyaQqnxJaJS6LVSkO6b7Gkv35QMLFkzD2vrukFo0fcrpuMo_NRZtKNan-M-dGXItjPehVv-HemL1WfVGDSDeNWZSXf2_-25RD_Sf1u86tG1WtkmCY4jKKFEc3ZEeZgEq1k5EUYytURWOB2hMHvStuYWUkU-a-CjbHBIqNnC2dwCrpmUkzgfHqZ4AYJqAbOoUHYub636KD8hZ2JCd7p6DF6k54HKnWvP"
+                alt="Professional doctor conducting a remote consultation on laptop"
+              >
+              <span class="solution-col__label">For Patients</span>
+            </div>
+            <h3 class="solution-col__title">Care That Follows You Home</h3>
+            <p class="solution-col__text">
+              Receive FDA-approved, Bluetooth-enabled devices that work right out of the box.
+              Stay connected to your clinical team with voice-guided measurements and
+              an elder-friendly mobile app.
+            </p>
+            <ul class="checklist mb-10">
+              <li class="checklist__item">
+                <span class="material-symbols-outlined">check_circle</span>
+                Plug-and-Play FDA Devices
+              </li>
+              <li class="checklist__item">
+                <span class="material-symbols-outlined">check_circle</span>
+                Voice-Guided, Elder-Friendly App
+              </li>
+              <li class="checklist__item">
+                <span class="material-symbols-outlined">check_circle</span>
+                Multi-Language Support
+              </li>
+            </ul>
+            <a href="/src/v3/solutions.html" class="link-arrow">
+              Explore Patient Benefits
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         HOW IT WORKS
+         5-step staggered cards
+         ══════════════════════════════════════ -->
+    <section class="section section--spacious bg-surface">
+      <div class="container">
+        <div class="section-header text-center" style="margin-bottom: var(--space-20);">
+          <h2 class="section-header__title">How It Works</h2>
+          <p class="section-header__subtitle">
+            Five simple steps to transform your remote patient monitoring workflow.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 01 -->
+          <div class="step-card">
+            <span class="step-card__number">01</span>
+            <div class="step-card__icon">
+              <span class="material-symbols-outlined">person_add</span>
+            </div>
+            <h4 class="step-card__title">Sign Up</h4>
+            <p class="step-card__text">Onboard your clinic and staff in minutes via our web portal.</p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="step-card">
+            <span class="step-card__number">02</span>
+            <div class="step-card__icon">
+              <span class="material-symbols-outlined">groups</span>
+            </div>
+            <h4 class="step-card__title">Enroll Patients</h4>
+            <p class="step-card__text">Select eligible patients and assign monitoring protocols.</p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="step-card">
+            <span class="step-card__number">03</span>
+            <div class="step-card__icon">
+              <span class="material-symbols-outlined">local_shipping</span>
+            </div>
+            <h4 class="step-card__title">Ship Devices</h4>
+            <p class="step-card__text">We handle logistics, device setup, and initial patient education.</p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="step-card">
+            <span class="step-card__number">04</span>
+            <div class="step-card__icon">
+              <span class="material-symbols-outlined">monitor_heart</span>
+            </div>
+            <h4 class="step-card__title">Monitor Patients</h4>
+            <p class="step-card__text">Receive real-time data and smart alerts on your dashboard.</p>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="step-card">
+            <span class="step-card__number">05</span>
+            <div class="step-card__icon">
+              <span class="material-symbols-outlined">payments</span>
+            </div>
+            <h4 class="step-card__title">Get Reimbursed</h4>
+            <p class="step-card__text">Generate monthly Medicare billing reports with one click.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Grid -->
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div>
+          <a href="/src/v3/index.html" class="topbar__logo" style="display: block; margin-bottom: var(--space-6);">HicareNet</a>
+          <p class="footer__brand-text">
+            Elevating the standard of remote care through innovation and empathy.
+          </p>
+          <div>
+            <p class="footer__contact-label">Contact Info</p>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">call</span>
+                <a href="tel:8558448300">855.844.8300</a>
+              </li>
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">mail</span>
+                <a href="mailto:help@hicare.net">help@hicare.net</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Home Column -->
+        <div>
+          <h4 class="footer__col-title">Home</h4>
+          <ul class="footer__links">
+            <li><a href="#">What Hicare Does</a></li>
+            <li><a href="#">What Hicare Provides</a></li>
+            <li><a href="#">Who We Serve</a></li>
+            <li><a href="#">Why Choose Hicare</a></li>
+            <li><a href="#">Conditions Monitored</a></li>
+            <li><a href="#">RPM/CCM Reimbursement</a></li>
+            <li><a href="#">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions Column -->
+        <div>
+          <h4 class="footer__col-title">Solutions</h4>
+          <ul class="footer__links">
+            <li><a href="/src/v3/solutions.html">Overview</a></li>
+            <li><a href="#">RPM</a></li>
+            <li><a href="#">CCM</a></li>
+            <li><a href="#">Connected Platforms</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources / About Column -->
+        <div>
+          <h4 class="footer__col-title">Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="/src/v3/resources.html">Resource Center</a></li>
+          </ul>
+          <h4 class="footer__col-title" style="margin-top: var(--space-10);">About Us</h4>
+          <ul class="footer__links">
+            <li><a href="/src/v3/about.html">Our Mission</a></li>
+            <li><a href="#">Our History</a></li>
+            <li><a href="/src/v3/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Office Locations Column -->
+        <div>
+          <h4 class="footer__col-title">Office Locations</h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+            <div>
+              <p class="footer__office-name">Irvine Office</p>
+              <p class="footer__office-address">
+                9272 Jeronimo Rd, Suite 107<br>
+                Irvine, CA 92618
+              </p>
+            </div>
+            <div>
+              <p class="footer__office-name">Silicon Valley Office</p>
+              <p class="footer__office-address">
+                3003 North First St, Suite 225<br>
+                San Jose, CA 95134
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          &copy; 2025. Hicare.net Inc. All Rights Reserved.
+        </div>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">SMS Terms and Conditions</a>
+          <a href="#">Arbitration</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle -->
+  <script>
+    (function() {
+      const hamburger = document.querySelector('.topbar__hamburger');
+      const menu = document.getElementById('mobile-menu');
+      if (!hamburger || !menu) return;
+
+      hamburger.addEventListener('click', function() {
+        const isOpen = menu.classList.toggle('is-open');
+        hamburger.setAttribute('aria-expanded', isOpen);
+        hamburger.querySelector('.material-symbols-outlined').textContent =
+          isOpen ? 'close' : 'menu';
+      });
+
+      // Close on link click
+      menu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          menu.classList.remove('is-open');
+          hamburger.setAttribute('aria-expanded', 'false');
+          hamburger.querySelector('.material-symbols-outlined').textContent = 'menu';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

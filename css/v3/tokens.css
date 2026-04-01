@@ -1,0 +1,142 @@
+/* ============================================================
+   HicareNet V3 Design Tokens
+   Material Design 3 inspired color system + editorial typography
+   ============================================================ */
+
+:root {
+  /* ─── Primary ─── */
+  --primary: #11629f;
+  --primary-dim: #00568e;
+  --primary-container: #73b2f4;
+  --primary-fixed: #73b2f4;
+  --primary-fixed-dim: #65a5e5;
+  --on-primary: #f7f9ff;
+  --on-primary-container: #003053;
+  --on-primary-fixed: #001529;
+  --on-primary-fixed-variant: #003961;
+  --inverse-primary: #73b2f4;
+
+  /* ─── Secondary ─── */
+  --secondary: #3f6475;
+  --secondary-dim: #335869;
+  --secondary-container: #c2e8fd;
+  --secondary-fixed: #c2e8fd;
+  --secondary-fixed-dim: #b4daee;
+  --on-secondary: #f3faff;
+  --on-secondary-container: #315667;
+  --on-secondary-fixed: #1d4454;
+  --on-secondary-fixed-variant: #3b6072;
+
+  /* ─── Tertiary ─── */
+  --tertiary: #815443;
+  --tertiary-dim: #734838;
+  --tertiary-container: #fabfa9;
+  --tertiary-fixed: #fabfa9;
+  --tertiary-fixed-dim: #ebb19c;
+  --on-tertiary: #fff7f5;
+  --on-tertiary-container: #623a2a;
+  --on-tertiary-fixed: #4b2718;
+
+  /* ─── Error ─── */
+  --error: #a83836;
+  --error-dim: #67040d;
+  --error-container: #fa746f;
+  --on-error: #fff7f6;
+  --on-error-container: #6e0a12;
+
+  /* ─── Surface (Tonal Layering System) ─── */
+  --surface: #f7faf8;
+  --surface-dim: #d3dcd9;
+  --surface-bright: #f7faf8;
+  --surface-tint: #11629f;
+  --surface-variant: #dbe4e2;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f0f5f2;
+  --surface-container: #e9efed;
+  --surface-container-high: #e2eae7;
+  --surface-container-highest: #dbe4e2;
+  --on-surface: #2c3432;
+  --on-surface-variant: #58615f;
+  --on-background: #2c3432;
+  --background: #f7faf8;
+  --inverse-surface: #0b0f0e;
+  --inverse-on-surface: #9a9e9c;
+
+  /* ─── Outline ─── */
+  --outline: #747d7a;
+  --outline-variant: #abb4b1;
+
+  /* ─── Typography ─── */
+  --font-headline: 'Manrope', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-label: 'Manrope', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* ─── Border Radius ─── */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+  --radius-full: 9999px;
+
+  /* ─── Spacing ─── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ─── Container ─── */
+  --container-max: 1536px;
+  --container-padding: 2rem;
+
+  /* ─── Shadows (Tinted Navy, No Grey) ─── */
+  --shadow-sm: 0 1px 3px rgba(17, 98, 159, 0.04);
+  --shadow-md: 0 4px 12px rgba(17, 98, 159, 0.06);
+  --shadow-lg: 0 12px 40px rgba(63, 100, 117, 0.08);
+  --shadow-xl: 0 24px 48px rgba(0, 13, 51, 0.06);
+  --shadow-2xl: 0 32px 64px rgba(0, 13, 51, 0.1);
+
+  /* ─── Transitions ─── */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-slower: 700ms ease;
+
+  /* ─── Gradients ─── */
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-container));
+  --gradient-hero: linear-gradient(135deg, rgba(17, 98, 159, 0.9) 0%, rgba(115, 178, 244, 0.4) 100%);
+  --gradient-editorial: linear-gradient(135deg, #11629f 0%, #73b2f4 100%);
+}
