@@ -1,6 +1,8 @@
 {
   "common": {
-    "skipToContent": "본문 바로가기"
+    "skipToContent": "본문 바로가기",
+    "contact": "문의",
+    "providerLogin": "의료진 로그인"
   },
   "nav": {
     "home": "홈",
