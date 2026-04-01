@@ -125,14 +125,27 @@
       "desc": "모든 환자가 위치에 관계없이 개인화된 데이터 기반 케어를 받고, 모든 의료 제공자가 효율적으로 케어를 제공할 수 있는 세상을 만듭니다."
     },
     "stats": {
-      "hospitals": "40+",
-      "hospitalsLabel": "파트너 병원",
-      "patients": "3,000+",
-      "patientsLabel": "활성 환자",
-      "devices": "120+",
-      "devicesLabel": "호환 기기",
-      "years": "20+",
-      "yearsLabel": "경력"
+      "title": "숫자로 보는 HicareNet",
+      "hospitals": {
+        "value": "40+",
+        "label": "파트너 병원",
+        "desc": "캘리포니아 및 해외 파트너 의료기관"
+      },
+      "patients": {
+        "value": "3,000+",
+        "label": "모니터링 환자",
+        "desc": "RPM 및 CCM 프로그램 등록 환자"
+      },
+      "devices": {
+        "value": "120+",
+        "label": "호환 기기",
+        "desc": "블루투스 연동 호환 의료기기"
+      },
+      "years": {
+        "value": "20+",
+        "label": "기술 혁신 연수",
+        "desc": "인성정보 헬스케어 기술 유산"
+      }
     },
     "timeline": {
       "title": "연혁",

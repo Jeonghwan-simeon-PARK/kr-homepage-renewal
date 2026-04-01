@@ -125,14 +125,27 @@
       "desc": "A world where every patient receives personalized, data-driven care regardless of location, and every provider has the tools to deliver it efficiently."
     },
     "stats": {
-      "hospitals": "40+",
-      "hospitalsLabel": "Partner Hospitals",
-      "patients": "3,000+",
-      "patientsLabel": "Active Patients",
-      "devices": "120+",
-      "devicesLabel": "Compatible Devices",
-      "years": "20+",
-      "yearsLabel": "Years Experience"
+      "title": "HicareNet by the Numbers",
+      "hospitals": {
+        "value": "40+",
+        "label": "Hospitals & Clinics",
+        "desc": "Partner facilities across California and beyond"
+      },
+      "patients": {
+        "value": "3,000+",
+        "label": "Patients Monitored",
+        "desc": "Actively enrolled in RPM and CCM programs"
+      },
+      "devices": {
+        "value": "120+",
+        "label": "Compatible Devices",
+        "desc": "Bluetooth-enabled compatible medical devices"
+      },
+      "years": {
+        "value": "20+",
+        "label": "Years of Innovation",
+        "desc": "Technology heritage from InSung Info"
+      }
     },
     "timeline": {
       "title": "Our Journey",
