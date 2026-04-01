@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="HicareNet Terms of Service — Terms governing the use of our healthcare technology platform.">
+  <meta name="description" content="HicareNet Terms of Service — Terms and conditions governing the use of our healthcare technology platform, including RPM, CCM, AWV, and Value-Based Care services.">
   <title>Terms of Service | HicareNet</title>
 
+  <!-- Fonts: Manrope + Material Symbols -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
+  <!-- ========== SKIP LINK ========== -->
   <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">Skip to main content</a>
 
+  <!-- ========== TOP BAR (Utility + Nav) ========== -->
   <div class="topbar">
+    <!-- Utility Strip -->
     <div class="topbar__utility">
       <div class="topbar__utility-link">
         <span class="material-symbols-outlined icon-sm">call</span>
@@ -30,8 +35,10 @@
       </a>
     </div>
 
+    <!-- Main Navigation -->
     <header class="topbar__header">
       <a href="index.html" class="topbar__logo"><img src="../assets/images/hicare-logo.png" alt="HicareNet" class="topbar__logo-img"></a>
+
       <nav class="topbar__nav" aria-label="Main navigation">
         <a href="index.html" class="topbar__nav-link" data-i18n="nav.home">Home</a>
         <a href="solutions.html" class="topbar__nav-link" data-i18n="nav.solutions">Solutions</a>
@@ -39,15 +46,18 @@
         <a href="compliance.html" class="topbar__nav-link" data-i18n="nav.compliance">Compliance</a>
         <a href="resources.html" class="topbar__nav-link" data-i18n="nav.resources">Resources</a>
       </nav>
+
       <div class="flex items-center gap-4">
         <button class="topbar__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
         <a href="contact.html" class="btn btn--primary topbar__cta-desktop" data-i18n="nav.contact">Book a Demo Now!</a>
+        <!-- Mobile Hamburger -->
         <button class="topbar__hamburger" aria-label="Open menu" aria-expanded="false">
           <span class="material-symbols-outlined">menu</span>
         </button>
       </div>
     </header>
 
+    <!-- Mobile Menu Overlay -->
     <nav class="topbar__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
       <div class="topbar__mobile-menu-inner">
         <a href="index.html" class="topbar__mobile-link" data-i18n="nav.home">Home</a>
@@ -60,6 +70,7 @@
     </nav>
   </div>
 
+  <!-- ========== MAIN CONTENT ========== -->
   <main id="main-content">
     <section class="hero hero--compact bg-surface-low">
       <div class="hero__content">
@@ -73,73 +84,234 @@
     <section class="section bg-surface">
       <div class="container" style="max-width: 800px;">
         <article class="legal-content">
-          <h2>1. Acceptance of Terms</h2>
-          <p>By accessing or using the HicareNet platform, website, and related services (collectively, the "Services") provided by HicareNet, Inc. ("HicareNet," "we," "us," or "our"), you agree to be bound by these Terms of Service. If you do not agree to these Terms, you may not access or use the Services.</p>
 
-          <h2>2. Description of Services</h2>
-          <p>HicareNet provides a comprehensive healthcare technology platform including:</p>
-          <ul>
-            <li><strong>Remote Patient Monitoring (RPM):</strong> Technology-enabled collection and transmission of patient health data from connected devices</li>
-            <li><strong>Chronic Care Management (CCM):</strong> Care coordination services for managing patients with chronic conditions</li>
-            <li><strong>FHIR Integration:</strong> Interoperability services enabling health data exchange through HL7 FHIR standards</li>
-          </ul>
-          <p>The Services are designed to support healthcare providers and are not intended to replace professional medical judgment.</p>
+          <!-- Section 1: Acceptance of Terms -->
+          <div class="legal-section">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using the HicareNet platform, website, and related services (collectively, the "Services") provided by HicareNet, Inc. ("HicareNet," "we," "us," or "our"), a US subsidiary of Hicare Co., Ltd., you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Services.</p>
+            <p>If you are accessing or using the Services on behalf of a healthcare organization, you represent and warrant that you have the authority to bind that organization to these Terms, and "you" will refer to both you individually and the organization.</p>
+          </div>
 
-          <h2>3. User Accounts</h2>
-          <p>You are responsible for maintaining the confidentiality of your account credentials, all activities under your account, and promptly notifying HicareNet of any unauthorized use.</p>
+          <!-- Section 2: Description of Services -->
+          <div class="legal-section">
+            <h2>2. Description of Services</h2>
+            <p>HicareNet provides a comprehensive healthcare technology platform that includes the following services:</p>
+            <ul>
+              <li><strong>Remote Patient Monitoring (RPM):</strong> Technology-enabled collection and transmission of patient health data from connected devices, with clinical monitoring and alert management</li>
+              <li><strong>Chronic Care Management (CCM):</strong> Care coordination services and tools for managing patients with two or more chronic conditions, including care plan development and patient engagement</li>
+              <li><strong>Annual Wellness Visits (AWV):</strong> Digital assessment tools and workflow automation for Medicare Annual Wellness Visits, including health risk assessments and personalized prevention plans</li>
+              <li><strong>Value-Based Care (VBC):</strong> Analytics, reporting, and population health management tools to support value-based care models and quality measure optimization</li>
+              <li><strong>FHIR Integration:</strong> Interoperability services enabling health data exchange through HL7 FHIR standards for seamless EMR connectivity (available H1 2026)</li>
+            </ul>
+            <p>The Services are designed to support healthcare providers in delivering care and are not intended to replace professional medical judgment. All clinical decisions remain the responsibility of licensed healthcare professionals.</p>
+          </div>
 
-          <h2>4. HIPAA Compliance</h2>
-          <p>HicareNet operates as a Business Associate under HIPAA. A valid Business Associate Agreement (BAA) must be in place before any PHI is transmitted through the Services. HicareNet maintains ISO 27001 and ISO 27701 certifications.</p>
+          <!-- Section 3: User Accounts and Responsibilities -->
+          <div class="legal-section">
+            <h2>3. User Accounts and Responsibilities</h2>
+            <p>To access the Services, you must create an account and provide accurate, complete, and current information. You are responsible for:</p>
+            <ul>
+              <li>Maintaining the confidentiality and security of your account credentials, including passwords and multi-factor authentication tokens</li>
+              <li>All activities that occur under your account, whether authorized by you or not</li>
+              <li>Promptly notifying HicareNet of any unauthorized use of your account or any other security breach</li>
+              <li>Ensuring that all users within your organization are properly trained on platform usage and data handling protocols</li>
+              <li>Maintaining appropriate professional licenses and credentials required to use clinical features of the Services</li>
+            </ul>
+          </div>
 
-          <h2>5. Intellectual Property</h2>
-          <p>The Services, including all software, algorithms, and documentation, are owned by HicareNet, Inc. and Hicare Co., Ltd. You retain ownership of all data you input into the Services.</p>
+          <!-- Section 4: Acceptable Use Policy -->
+          <div class="legal-section">
+            <h2>4. Acceptable Use Policy</h2>
+            <p>You agree not to use the Services to:</p>
+            <ul>
+              <li>Violate any applicable federal, state, or local law or regulation, including HIPAA, HITECH, and state privacy laws</li>
+              <li>Access, use, or disclose Protected Health Information (PHI) in any manner not permitted by HIPAA or your applicable Business Associate Agreement</li>
+              <li>Attempt to gain unauthorized access to any systems, networks, or data, or interfere with the security of the Services</li>
+              <li>Transmit malicious software, viruses, or any code designed to disrupt, damage, or limit the functionality of the Services</li>
+              <li>Reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the Services</li>
+              <li>Share account credentials or allow unauthorized individuals to access the Services through your account</li>
+              <li>Use the Services for any purpose other than legitimate healthcare operations as defined under HIPAA</li>
+            </ul>
+          </div>
 
-          <h2>6. Limitation of Liability</h2>
-          <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, HICARENET SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM USE OF THE SERVICES.</p>
+          <!-- Section 5: Intellectual Property -->
+          <div class="legal-section">
+            <h2>5. Intellectual Property</h2>
+            <p>The Services, including all software, algorithms, user interfaces, designs, documentation, and related intellectual property, are owned by HicareNet, Inc. and Hicare Co., Ltd. and are protected by United States and international copyright, trademark, patent, and trade secret laws.</p>
+            <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to access and use the Services solely for your internal healthcare operations. This license does not include the right to sublicense, modify, adapt, translate, or create derivative works based on the Services.</p>
+            <p>You retain ownership of all data you input into the Services. By using the Services, you grant HicareNet a limited license to process, store, and transmit your data solely as necessary to provide the Services and as permitted by applicable law and your Business Associate Agreement.</p>
+          </div>
 
-          <h2>7. Governing Law</h2>
-          <p>These Terms shall be governed by the laws of the Republic of Korea. Any disputes shall be submitted to the jurisdiction of the Seoul Central District Court.</p>
+          <!-- Section 6: HIPAA and Healthcare Compliance -->
+          <div class="legal-section">
+            <h2>6. HIPAA and Healthcare Compliance</h2>
+            <p>HicareNet operates as a Business Associate under HIPAA when processing PHI on behalf of Covered Entities. Our obligations regarding PHI are governed by the Business Associate Agreement ("BAA") executed between HicareNet and each Covered Entity.</p>
+            <p>You acknowledge and agree that:</p>
+            <ul>
+              <li>A valid BAA must be in place before any PHI is transmitted through the Services</li>
+              <li>You are responsible for obtaining all necessary patient consents and authorizations as required by HIPAA and applicable state laws</li>
+              <li>You will use the Services only for permitted purposes under HIPAA, including treatment, payment, and healthcare operations</li>
+              <li>You will promptly report to HicareNet any suspected or confirmed security incidents involving PHI processed through the Services</li>
+              <li>HicareNet maintains ISO 27001 and ISO 27701 certifications and implements security controls consistent with the HIPAA Security Rule</li>
+            </ul>
+          </div>
 
-          <h2>8. Contact Information</h2>
-          <p>HicareNet, Inc.<br>Email: <a href="mailto:info@hicare.net">info@hicare.net</a><br>Phone: 02-3400-7247<br>Address: 5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul 05656</p>
+          <!-- Section 7: Limitation of Liability -->
+          <div class="legal-section">
+            <h2>7. Limitation of Liability</h2>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL HICARENET, ITS AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR THE USE OF THE SERVICES.</p>
+            <p>HICARENET'S TOTAL CUMULATIVE LIABILITY ARISING OUT OF OR RELATED TO THESE TERMS SHALL NOT EXCEED THE TOTAL FEES PAID BY YOU TO HICARENET DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM.</p>
+            <p>Nothing in these Terms shall limit liability for gross negligence, willful misconduct, fraud, or any liability that cannot be excluded or limited under applicable law, including obligations under HIPAA.</p>
+          </div>
+
+          <!-- Section 8: Disclaimers -->
+          <div class="legal-section">
+            <h2>8. Disclaimers</h2>
+            <p>THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+            <p>HicareNet does not warrant that the Services will be uninterrupted, error-free, or completely secure. While we implement industry-standard security measures, no system can guarantee absolute security against all threats.</p>
+            <p>The Services do not provide medical advice, diagnosis, or treatment. The Services are tools designed to assist licensed healthcare professionals in their clinical practice. HicareNet is not responsible for clinical decisions made using data processed through the Services.</p>
+          </div>
+
+          <!-- Section 9: Indemnification -->
+          <div class="legal-section">
+            <h2>9. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless HicareNet, its affiliates, and their respective directors, officers, employees, and agents from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) your use of the Services; (b) your violation of these Terms; (c) your violation of any applicable law or regulation; or (d) your negligent or wrongful acts or omissions in connection with your use of the Services.</p>
+          </div>
+
+          <!-- Section 10: Termination -->
+          <div class="legal-section">
+            <h2>10. Termination</h2>
+            <p>Either party may terminate these Terms and your access to the Services upon thirty (30) days written notice. HicareNet may suspend or terminate your access immediately if you breach these Terms, engage in prohibited conduct, or pose a security risk to the platform or other users.</p>
+            <p>Upon termination, we will provide a reasonable period (not less than 30 days) for you to export your data from the Services. After this period, we may delete your data in accordance with our data retention policy, subject to any legal retention requirements. Provisions regarding intellectual property, limitation of liability, indemnification, and governing law survive termination.</p>
+          </div>
+
+          <!-- Section 11: Governing Law -->
+          <div class="legal-section">
+            <h2>11. Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions. Any legal action or proceeding arising out of or relating to these Terms shall be brought exclusively in the state or federal courts located in the State of California.</p>
+            <p>To the extent that any provision of these Terms conflicts with applicable federal healthcare regulations, including HIPAA, the federal regulations shall take precedence. Nothing in these Terms is intended to modify or waive any rights or obligations under HIPAA or the HITECH Act.</p>
+          </div>
+
+          <!-- Section 12: Changes to Terms -->
+          <div class="legal-section">
+            <h2>12. Changes to Terms</h2>
+            <p>We reserve the right to modify these Terms at any time. Material changes will be communicated at least thirty (30) days prior to taking effect through email notification and prominent notice on our website. Your continued use of the Services after the effective date of any changes constitutes acceptance of the updated Terms. If you do not agree to the modified Terms, you must discontinue use of the Services before the changes take effect.</p>
+          </div>
+
+          <!-- Section 13: Contact Information -->
+          <div class="legal-section">
+            <h2>13. Contact Information</h2>
+            <p>If you have questions about these Terms of Service or need to provide legal notices, please contact us:</p>
+            <p>
+              HicareNet, Inc.<br>
+              Legal Department<br>
+              Email: <a href="mailto:info@hicare.net">info@hicare.net</a><br>
+              <a href="contact.html">Contact Form</a>
+            </p>
+          </div>
+
         </article>
       </div>
     </section>
   </main>
 
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
+      <!-- Footer Grid -->
       <div class="footer__grid">
+        <!-- Brand Column -->
         <div>
           <a href="index.html" style="display: block; margin-bottom: var(--space-6);"><img src="../assets/images/hicare-logo.png" alt="HicareNet" style="height: 32px; width: auto;"></a>
-          <p class="footer__brand-text" data-i18n="footer.desc">Elevating the standard of remote care through innovation and empathy.</p>
+          <p class="footer__brand-text" data-i18n="footer.desc">
+            Elevating the standard of remote care through innovation and empathy.
+          </p>
+          <div>
+            <p class="footer__contact-label" data-i18n="footer.contactLabel">Contact Info</p>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">call</span>
+                <a href="tel:+82234007247">02-3400-7247</a>
+              </li>
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">mail</span>
+                <a href="mailto:help@hicare.net">help@hicare.net</a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Home Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col1.title">Home</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-i18n="footer.col1.link1">What Hicare Does</a></li>
+            <li><a href="#" data-i18n="footer.col1.link2">What Hicare Provides</a></li>
+            <li><a href="#" data-i18n="footer.col1.link3">Who We Serve</a></li>
+            <li><a href="#" data-i18n="footer.col1.link4">Why Choose Hicare</a></li>
+            <li><a href="#" data-i18n="footer.col1.link5">Conditions Monitored</a></li>
+            <li><a href="#" data-i18n="footer.col1.link6">RPM/CCM Reimbursement</a></li>
+            <li><a href="#" data-i18n="footer.col1.link7">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions Column -->
         <div>
           <h4 class="footer__col-title" data-i18n="footer.col2.title">Solutions</h4>
           <ul class="footer__links">
             <li><a href="solutions.html" data-i18n="footer.col2.link1">Overview</a></li>
-            <li><a href="solutions.html#hub">RPM</a></li>
-            <li><a href="solutions.html#mobile">CCM</a></li>
+            <li><a href="solutions.html#hub" data-i18n="footer.col2.link2">RPM</a></li>
+            <li><a href="solutions.html#mobile" data-i18n="footer.col2.link3">CCM</a></li>
+            <li><a href="solutions.html#compliance" data-i18n="footer.col2.link4">Connected Platforms</a></li>
           </ul>
         </div>
+
+        <!-- Resources / About Column -->
         <div>
-          <h4 class="footer__col-title" data-i18n="footer.col4.title">About Us</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col3.title">Resources</h4>
+          <ul class="footer__links">
+            <li><a href="resources.html#faq" data-i18n="footer.col3.link1">FAQs</a></li>
+            <li><a href="resources.html" data-i18n="footer.col3.link2">Resource Center</a></li>
+          </ul>
+          <h4 class="footer__col-title" style="margin-top: var(--space-10);" data-i18n="footer.col4.title">About Us</h4>
           <ul class="footer__links">
             <li><a href="about.html" data-i18n="footer.col4.link1">Our Mission</a></li>
+            <li><a href="about.html#history" data-i18n="footer.col4.link2">Our History</a></li>
             <li><a href="contact.html" data-i18n="footer.col4.link3">Contact Us</a></li>
           </ul>
         </div>
+
+        <!-- Office Locations Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col5.title">Office Locations</h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office1.name">Seoul Headquarters</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office1.address">5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul 05656</p>
+            </div>
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office2.name">US Operations</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office2.address">California, United States</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Bottom Bar -->
       <div class="footer__bottom">
-        <div class="footer__copyright" data-i18n="footer.copyright">&copy; 2025. Hicare.net Inc. All Rights Reserved.</div>
+        <div class="footer__copyright" data-i18n="footer.copyright">
+          &copy; 2025. Hicare.net Inc. All Rights Reserved.
+        </div>
         <div class="footer__legal">
           <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="terms.html" data-i18n="footer.terms">SMS Terms and Conditions</a>
+          <a href="#" data-i18n="footer.arbitration">Arbitration</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Back-to-top button -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <span class="material-symbols-outlined">arrow_upward</span>
   </button>

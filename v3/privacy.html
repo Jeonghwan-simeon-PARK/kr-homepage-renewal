@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="HicareNet Privacy Policy — How we collect, use, and protect your personal and health information.">
+  <meta name="description" content="HicareNet Privacy Policy — How we collect, use, and protect your personal and health information in compliance with HIPAA, CCPA, and ISO standards.">
   <title>Privacy Policy | HicareNet</title>
 
+  <!-- Fonts: Manrope + Material Symbols -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
+  <!-- ========== SKIP LINK ========== -->
   <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">Skip to main content</a>
 
+  <!-- ========== TOP BAR (Utility + Nav) ========== -->
   <div class="topbar">
+    <!-- Utility Strip -->
     <div class="topbar__utility">
       <div class="topbar__utility-link">
         <span class="material-symbols-outlined icon-sm">call</span>
@@ -30,8 +35,10 @@
       </a>
     </div>
 
+    <!-- Main Navigation -->
     <header class="topbar__header">
       <a href="index.html" class="topbar__logo"><img src="../assets/images/hicare-logo.png" alt="HicareNet" class="topbar__logo-img"></a>
+
       <nav class="topbar__nav" aria-label="Main navigation">
         <a href="index.html" class="topbar__nav-link" data-i18n="nav.home">Home</a>
         <a href="solutions.html" class="topbar__nav-link" data-i18n="nav.solutions">Solutions</a>
@@ -39,15 +46,18 @@
         <a href="compliance.html" class="topbar__nav-link" data-i18n="nav.compliance">Compliance</a>
         <a href="resources.html" class="topbar__nav-link" data-i18n="nav.resources">Resources</a>
       </nav>
+
       <div class="flex items-center gap-4">
         <button class="topbar__lang-toggle" id="langToggle" aria-label="Toggle language">EN/KR</button>
         <a href="contact.html" class="btn btn--primary topbar__cta-desktop" data-i18n="nav.contact">Book a Demo Now!</a>
+        <!-- Mobile Hamburger -->
         <button class="topbar__hamburger" aria-label="Open menu" aria-expanded="false">
           <span class="material-symbols-outlined">menu</span>
         </button>
       </div>
     </header>
 
+    <!-- Mobile Menu Overlay -->
     <nav class="topbar__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
       <div class="topbar__mobile-menu-inner">
         <a href="index.html" class="topbar__mobile-link" data-i18n="nav.home">Home</a>
@@ -60,6 +70,7 @@
     </nav>
   </div>
 
+  <!-- ========== MAIN CONTENT ========== -->
   <main id="main-content">
     <section class="hero hero--compact bg-surface-low">
       <div class="hero__content">
@@ -73,82 +84,264 @@
     <section class="section bg-surface">
       <div class="container" style="max-width: 800px;">
         <article class="legal-content">
-          <h2>1. Information We Collect</h2>
-          <p>HicareNet, Inc. ("HicareNet," "we," "us," or "our"), a subsidiary of Hicare Co., Ltd., collects information necessary to deliver our healthcare technology services, including:</p>
-          <ul>
-            <li><strong>Personal Information:</strong> Name, email address, phone number, professional credentials, and organizational affiliation.</li>
-            <li><strong>Protected Health Information (PHI):</strong> Patient demographic information, clinical data including vital signs and biometric readings, as required for RPM and CCM services.</li>
-            <li><strong>Usage Data:</strong> Device information, browser type, IP address, platform usage patterns, and session data.</li>
-          </ul>
 
-          <h2>2. How We Use Your Information</h2>
-          <p>We use collected information for:</p>
-          <ul>
-            <li>Providing and maintaining our RPM, CCM, and care management platform services</li>
-            <li>Processing and transmitting clinical data between healthcare providers and patients</li>
-            <li>Generating care plans, clinical reports, and compliance documentation</li>
-            <li>Improving platform performance and developing new features</li>
-            <li>Sending service-related notifications and responding to support requests</li>
-          </ul>
+          <!-- Section 1: Information We Collect -->
+          <div class="legal-section">
+            <h2>1. Information We Collect</h2>
+            <p>HicareNet, Inc. ("HicareNet," "we," "us," or "our"), a US subsidiary of Hicare Co., Ltd., collects information necessary to deliver our healthcare technology services. The types of information we collect include:</p>
 
-          <h2>3. HIPAA Compliance</h2>
-          <p>As a healthcare technology provider, HicareNet operates in full compliance with the Health Insurance Portability and Accountability Act (HIPAA) and the HITECH Act. All PHI is handled in accordance with HIPAA Privacy, Security, and Breach Notification Rules. We execute Business Associate Agreements (BAAs) with all covered entities before processing any PHI.</p>
+            <h3>Personal Information</h3>
+            <ul>
+              <li>Name, email address, phone number, and mailing address</li>
+              <li>Professional credentials and organizational affiliation</li>
+              <li>Account login credentials and authentication data</li>
+              <li>Billing and payment information</li>
+            </ul>
 
-          <h2>4. Data Security</h2>
-          <p>We implement comprehensive security measures backed by ISO 27001 and ISO 27701 certifications:</p>
-          <ul>
-            <li>AES-256 encryption for data at rest and TLS 1.3 for data in transit</li>
-            <li>Role-based access control with mandatory multi-factor authentication</li>
-            <li>24/7 security monitoring with intrusion detection</li>
-            <li>Regular third-party penetration testing and vulnerability assessments</li>
-          </ul>
+            <h3>Protected Health Information (PHI)</h3>
+            <ul>
+              <li>Patient demographic information as required for Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) services</li>
+              <li>Clinical data including vital signs, biometric readings, and health assessments</li>
+              <li>Annual Wellness Visit (AWV) assessment data and care plan information</li>
+              <li>Treatment records and care coordination communications</li>
+            </ul>
 
-          <h2>5. Data Sharing</h2>
-          <p>We do not sell your personal information or PHI. Information may be shared with authorized healthcare providers, vetted third-party service providers bound by BAAs, or as required by applicable law.</p>
+            <h3>Usage and Technical Data</h3>
+            <ul>
+              <li>Device information, browser type, and operating system</li>
+              <li>IP address and approximate geographic location</li>
+              <li>Platform usage patterns, feature interactions, and session duration</li>
+              <li>Error logs and performance diagnostics</li>
+            </ul>
+          </div>
 
-          <h2>6. Your Rights</h2>
-          <p>You may request access to, correction of, or deletion of your personal information. To exercise these rights, contact us at <a href="mailto:info@hicare.net">info@hicare.net</a>.</p>
+          <!-- Section 2: How We Use Your Information -->
+          <div class="legal-section">
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the information we collect for the following purposes:</p>
 
-          <h2>7. Contact Information</h2>
-          <p>HicareNet, Inc.<br>Privacy and Compliance Team<br>Email: <a href="mailto:info@hicare.net">info@hicare.net</a><br>Phone: 02-3400-7247</p>
+            <h3>Service Delivery</h3>
+            <ul>
+              <li>Providing and maintaining our RPM, CCM, AWV, and Value-Based Care platform services</li>
+              <li>Processing and transmitting clinical data between healthcare providers and patients</li>
+              <li>Generating care plans, clinical reports, and compliance documentation</li>
+              <li>Facilitating FHIR-based EMR integrations and health information exchange</li>
+            </ul>
+
+            <h3>Service Improvement</h3>
+            <ul>
+              <li>Analyzing aggregated, de-identified data to improve platform performance and reliability</li>
+              <li>Developing new features and enhancing existing clinical workflows</li>
+              <li>Conducting quality assurance testing and security audits</li>
+            </ul>
+
+            <h3>Communication</h3>
+            <ul>
+              <li>Sending service-related notifications, system alerts, and account updates</li>
+              <li>Responding to support requests and inquiries</li>
+              <li>Providing regulatory updates and compliance notifications relevant to your organization</li>
+            </ul>
+          </div>
+
+          <!-- Section 3: HIPAA Compliance -->
+          <div class="legal-section">
+            <h2>3. HIPAA Compliance</h2>
+            <p>As a healthcare technology provider, HicareNet operates in full compliance with the Health Insurance Portability and Accountability Act (HIPAA) and the HITECH Act.</p>
+
+            <h3>PHI Handling</h3>
+            <p>All Protected Health Information processed through our platform is handled in accordance with HIPAA Privacy, Security, and Breach Notification Rules. We implement administrative, physical, and technical safeguards to protect the confidentiality, integrity, and availability of PHI.</p>
+
+            <h3>Business Associate Agreements</h3>
+            <p>HicareNet enters into Business Associate Agreements (BAAs) with all covered entities and their business associates before accessing or processing any PHI. Our BAA is based on the U.S. Department of Health and Human Services model agreement and is reviewed annually.</p>
+
+            <h3>Minimum Necessary Standard</h3>
+            <p>We adhere to the HIPAA Minimum Necessary Standard, limiting the use and disclosure of PHI to the minimum amount reasonably necessary to accomplish the intended purpose. Role-based access controls enforce this principle across all systems and personnel.</p>
+          </div>
+
+          <!-- Section 4: Data Sharing and Disclosure -->
+          <div class="legal-section">
+            <h2>4. Data Sharing and Disclosure</h2>
+            <p>We do not sell your personal information or PHI. We may share information in the following circumstances:</p>
+            <ul>
+              <li><strong>Healthcare Providers:</strong> With authorized healthcare providers and care team members as necessary for treatment, payment, and healthcare operations</li>
+              <li><strong>Service Providers:</strong> With vetted third-party service providers who are bound by BAAs and confidentiality obligations and who assist in operating our platform</li>
+              <li><strong>Legal Requirements:</strong> When required by applicable law, court order, subpoena, or government regulation</li>
+              <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets, with appropriate privacy protections maintained</li>
+              <li><strong>With Consent:</strong> With your explicit written authorization for any purpose not described in this policy</li>
+            </ul>
+          </div>
+
+          <!-- Section 5: Data Security -->
+          <div class="legal-section">
+            <h2>5. Data Security</h2>
+            <p>HicareNet implements comprehensive security measures to protect your information, backed by internationally recognized certifications:</p>
+            <ul>
+              <li><strong>Encryption:</strong> AES-256 encryption for data at rest and TLS 1.3 for data in transit, with regularly rotated encryption keys</li>
+              <li><strong>Access Controls:</strong> Role-based access control (RBAC) with mandatory multi-factor authentication for all system access</li>
+              <li><strong>ISO 27001 Certification:</strong> Our Information Security Management System is independently audited and certified to ISO 27001 standards</li>
+              <li><strong>ISO 27701 Certification:</strong> Our Privacy Information Management System extends ISO 27001 with specific privacy controls for PII protection</li>
+              <li><strong>Monitoring:</strong> 24/7 security monitoring with intrusion detection systems, SIEM integration, and automated alerting</li>
+              <li><strong>Incident Response:</strong> Documented incident response plan with 24-hour breach notification commitment to affected parties</li>
+            </ul>
+          </div>
+
+          <!-- Section 6: Your Rights -->
+          <div class="legal-section">
+            <h2>6. Your Rights</h2>
+            <p>Depending on your jurisdiction and applicable law (including HIPAA and the California Consumer Privacy Act), you may have the following rights regarding your information:</p>
+            <ul>
+              <li><strong>Access:</strong> Request a copy of the personal information and PHI we hold about you</li>
+              <li><strong>Correction:</strong> Request correction of inaccurate or incomplete personal information</li>
+              <li><strong>Deletion:</strong> Request deletion of your personal information, subject to legal retention requirements and exceptions</li>
+              <li><strong>Data Portability:</strong> Receive your data in a structured, commonly used, and machine-readable format</li>
+              <li><strong>Restriction:</strong> Request restriction of processing of your personal information under certain circumstances</li>
+              <li><strong>Accounting of Disclosures:</strong> Request an accounting of certain disclosures of your PHI as provided under HIPAA</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us using the information provided in the Contact Information section below. We will respond to verified requests within 30 days, or as required by applicable law.</p>
+          </div>
+
+          <!-- Section 7: Cookie Policy -->
+          <div class="legal-section">
+            <h2>7. Cookie Policy</h2>
+            <p>Our website and platform use cookies and similar technologies to enhance your experience and collect usage data.</p>
+
+            <h3>Types of Cookies We Use</h3>
+            <ul>
+              <li><strong>Essential Cookies:</strong> Required for core platform functionality, authentication, and security. These cannot be disabled.</li>
+              <li><strong>Performance Cookies:</strong> Collect anonymized data about how visitors use our website, helping us improve site performance and user experience.</li>
+              <li><strong>Functional Cookies:</strong> Remember your preferences such as language selection and display settings.</li>
+            </ul>
+
+            <h3>Managing Cookies</h3>
+            <p>You can manage cookie preferences through your browser settings. Please note that disabling essential cookies may affect platform functionality. We do not use advertising or tracking cookies.</p>
+          </div>
+
+          <!-- Section 8: Data Retention -->
+          <div class="legal-section">
+            <h2>8. Data Retention</h2>
+            <p>We retain personal information and PHI for as long as necessary to fulfill the purposes described in this policy, comply with legal obligations, resolve disputes, and enforce our agreements. Healthcare records are retained in accordance with applicable federal and state retention requirements. When data is no longer required, it is securely destroyed using methods appropriate to the sensitivity of the information.</p>
+          </div>
+
+          <!-- Section 9: Changes to This Policy -->
+          <div class="legal-section">
+            <h2>9. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy periodically to reflect changes in our practices, technologies, legal requirements, or other factors. When we make material changes, we will notify you by posting the updated policy on our website with a revised "Last Updated" date and, where required, provide additional notice through email or in-platform notification. We encourage you to review this policy regularly.</p>
+          </div>
+
+          <!-- Section 10: Contact Information -->
+          <div class="legal-section">
+            <h2>10. Contact Information</h2>
+            <p>If you have questions about this Privacy Policy, wish to exercise your rights, or have concerns about our data practices, please contact us:</p>
+            <p>
+              HicareNet, Inc.<br>
+              Privacy and Compliance Team<br>
+              Email: <a href="mailto:info@hicare.net">info@hicare.net</a><br>
+              <a href="contact.html">Contact Form</a>
+            </p>
+          </div>
+
         </article>
       </div>
     </section>
   </main>
 
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
+      <!-- Footer Grid -->
       <div class="footer__grid">
+        <!-- Brand Column -->
         <div>
           <a href="index.html" style="display: block; margin-bottom: var(--space-6);"><img src="../assets/images/hicare-logo.png" alt="HicareNet" style="height: 32px; width: auto;"></a>
-          <p class="footer__brand-text" data-i18n="footer.desc">Elevating the standard of remote care through innovation and empathy.</p>
+          <p class="footer__brand-text" data-i18n="footer.desc">
+            Elevating the standard of remote care through innovation and empathy.
+          </p>
+          <div>
+            <p class="footer__contact-label" data-i18n="footer.contactLabel">Contact Info</p>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">call</span>
+                <a href="tel:+82234007247">02-3400-7247</a>
+              </li>
+              <li class="footer__contact-item">
+                <span class="material-symbols-outlined icon-sm">mail</span>
+                <a href="mailto:help@hicare.net">help@hicare.net</a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Home Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col1.title">Home</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-i18n="footer.col1.link1">What Hicare Does</a></li>
+            <li><a href="#" data-i18n="footer.col1.link2">What Hicare Provides</a></li>
+            <li><a href="#" data-i18n="footer.col1.link3">Who We Serve</a></li>
+            <li><a href="#" data-i18n="footer.col1.link4">Why Choose Hicare</a></li>
+            <li><a href="#" data-i18n="footer.col1.link5">Conditions Monitored</a></li>
+            <li><a href="#" data-i18n="footer.col1.link6">RPM/CCM Reimbursement</a></li>
+            <li><a href="#" data-i18n="footer.col1.link7">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions Column -->
         <div>
           <h4 class="footer__col-title" data-i18n="footer.col2.title">Solutions</h4>
           <ul class="footer__links">
             <li><a href="solutions.html" data-i18n="footer.col2.link1">Overview</a></li>
-            <li><a href="solutions.html#hub">RPM</a></li>
-            <li><a href="solutions.html#mobile">CCM</a></li>
+            <li><a href="solutions.html#hub" data-i18n="footer.col2.link2">RPM</a></li>
+            <li><a href="solutions.html#mobile" data-i18n="footer.col2.link3">CCM</a></li>
+            <li><a href="solutions.html#compliance" data-i18n="footer.col2.link4">Connected Platforms</a></li>
           </ul>
         </div>
+
+        <!-- Resources / About Column -->
         <div>
-          <h4 class="footer__col-title" data-i18n="footer.col4.title">About Us</h4>
+          <h4 class="footer__col-title" data-i18n="footer.col3.title">Resources</h4>
+          <ul class="footer__links">
+            <li><a href="resources.html#faq" data-i18n="footer.col3.link1">FAQs</a></li>
+            <li><a href="resources.html" data-i18n="footer.col3.link2">Resource Center</a></li>
+          </ul>
+          <h4 class="footer__col-title" style="margin-top: var(--space-10);" data-i18n="footer.col4.title">About Us</h4>
           <ul class="footer__links">
             <li><a href="about.html" data-i18n="footer.col4.link1">Our Mission</a></li>
+            <li><a href="about.html#history" data-i18n="footer.col4.link2">Our History</a></li>
             <li><a href="contact.html" data-i18n="footer.col4.link3">Contact Us</a></li>
           </ul>
         </div>
+
+        <!-- Office Locations Column -->
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.col5.title">Office Locations</h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office1.name">Seoul Headquarters</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office1.address">5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul 05656</p>
+            </div>
+            <div>
+              <p class="footer__office-name" data-i18n="footer.col5.office2.name">US Operations</p>
+              <p class="footer__office-address" data-i18n="footer.col5.office2.address">California, United States</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Bottom Bar -->
       <div class="footer__bottom">
-        <div class="footer__copyright" data-i18n="footer.copyright">&copy; 2025. Hicare.net Inc. All Rights Reserved.</div>
+        <div class="footer__copyright" data-i18n="footer.copyright">
+          &copy; 2025. Hicare.net Inc. All Rights Reserved.
+        </div>
         <div class="footer__legal">
           <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="terms.html" data-i18n="footer.terms">SMS Terms and Conditions</a>
+          <a href="#" data-i18n="footer.arbitration">Arbitration</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Back-to-top button -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <span class="material-symbols-outlined">arrow_upward</span>
   </button>
