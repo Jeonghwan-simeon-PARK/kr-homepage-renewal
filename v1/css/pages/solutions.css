@@ -31,7 +31,7 @@
   }
 }
 
-/* Image placeholder */
+/* Image placeholder (fallback when no image) */
 .split__placeholder {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -50,6 +50,14 @@
 
 .split__placeholder--accent {
   background: linear-gradient(135deg, var(--color-secondary-50), var(--color-secondary-200));
+}
+
+/* Split section images */
+.split__media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--card-radius);
 }
 
 /* Description text in split layouts */

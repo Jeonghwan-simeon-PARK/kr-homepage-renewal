@@ -96,6 +96,10 @@
 
     <!-- Section A: Hero -->
     <section class="relative min-h-[480px] flex items-center bg-gradient-to-br from-primary-800 to-primary-900 overflow-hidden pt-20" aria-label="히어로">
+      <!-- Background image layer -->
+      <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80')" aria-hidden="true"></div>
+      <!-- Gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-800/90 to-primary-900/95" aria-hidden="true"></div>
       <div class="absolute inset-0 opacity-10">
         <div class="absolute top-20 right-10 w-96 h-96 bg-primary-400 rounded-full blur-3xl"></div>
         <div class="absolute bottom-10 left-10 w-72 h-72 bg-green-400 rounded-full blur-3xl"></div>
@@ -319,13 +323,9 @@
             <p class="text-sm text-neutral-500 leading-relaxed" data-i18n="technology.heritage.closing">이 의료 도메인 기술의 축적이 있었기에, 미국 Medicare 시장의 요구 사항을 깊이 이해하고 Care Portal을 설계할 수 있었습니다.</p>
           </div>
 
-          <!-- Placeholder Image -->
-          <div class="bg-neutral-200 rounded-2xl aspect-[4/3] flex items-center justify-center" data-animate="fade-up" data-animate-delay="100">
-            <div class="text-center p-8">
-              <span class="material-symbols-outlined text-5xl text-neutral-400 mb-3">medical_information</span>
-              <p class="text-sm text-neutral-400" data-i18n="technology.heritage.img_placeholder">의료기기 연동 기술 이미지</p>
-              <p class="text-xs text-neutral-300 mt-1">IMG-TECH-02</p>
-            </div>
+          <!-- Medical Device Technology Image -->
+          <div class="rounded-2xl aspect-[4/3] overflow-hidden" data-animate="fade-up" data-animate-delay="100">
+            <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=800&q=80" alt="원격 환자 모니터링을 위한 의료기기 연동 기술" class="w-full h-full object-cover">
           </div>
         </div>
       </div>

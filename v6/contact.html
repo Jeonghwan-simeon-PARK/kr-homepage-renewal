@@ -200,11 +200,13 @@ tailwind.config = {
       </div>
 
       <div class="max-w-4xl mx-auto" data-animate="fade-up" data-animate-delay="100">
-        <!-- Map placeholder -->
-        <div class="bg-neutral-100 rounded-2xl h-64 md:h-80 flex items-center justify-center mb-6">
-          <div class="text-center text-neutral-400">
-            <span class="material-symbols-outlined text-[48px] mb-2">map</span>
-            <p class="text-sm font-medium" data-i18n="contact.location.map_loading">지도 로딩 중</p>
+        <!-- Map / Office image -->
+        <div class="relative rounded-2xl h-64 md:h-80 overflow-hidden mb-6">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="하이케어넷 사무실 빌딩" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/40 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+            <span class="material-symbols-outlined text-[20px]">location_on</span>
+            <span class="text-sm font-medium" data-i18n="contact.location.label">서울특별시 송파구</span>
           </div>
         </div>
         <!-- Address text -->
