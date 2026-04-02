@@ -224,6 +224,89 @@ function initBackToTop() {
 }
 
 // ============================================================
+// 6. i18n (Internationalization) System
+// ============================================================
+let translations = {};
+let currentLang = 'ko';
+
+function detectLanguage() {
+  const saved = localStorage.getItem('hicarenet-lang');
+  if (saved && ['en', 'ko'].includes(saved)) return saved;
+  return 'ko';
+}
+
+async function loadTranslations(lang) {
+  try {
+    const res = await fetch('data/i18n/' + lang + '.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    translations = await res.json();
+  } catch (e) {
+    console.warn('Failed to load translations for', lang);
+    translations = {};
+  }
+}
+
+function getNestedValue(obj, path) {
+  return path.split('.').reduce(function (o, k) { return o && o[k]; }, obj);
+}
+
+function applyTranslations() {
+  document.querySelectorAll('[data-i18n]').forEach(function (el) {
+    var key = el.getAttribute('data-i18n');
+    var val = getNestedValue(translations, key);
+    if (val) el.textContent = val;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+    var key = el.getAttribute('data-i18n-placeholder');
+    var val = getNestedValue(translations, key);
+    if (val) el.placeholder = val;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+    var key = el.getAttribute('data-i18n-html');
+    var val = getNestedValue(translations, key);
+    if (val) el.innerHTML = val;
+  });
+  // Update language toggle button states
+  ['en', 'ko'].forEach(function (lang) {
+    var btn = document.getElementById('lang-' + lang);
+    if (btn) {
+      if (lang === currentLang) {
+        btn.classList.add('font-semibold', 'text-primary-600');
+        btn.classList.remove('text-neutral-500');
+      } else {
+        btn.classList.remove('font-semibold', 'text-primary-600');
+        btn.classList.add('text-neutral-500');
+      }
+    }
+    // Mobile language toggle buttons
+    var mobileBtn = document.getElementById('lang-' + lang + '-mobile');
+    if (mobileBtn) {
+      if (lang === currentLang) {
+        mobileBtn.classList.add('font-semibold', 'text-primary-600');
+        mobileBtn.classList.remove('text-neutral-500');
+      } else {
+        mobileBtn.classList.remove('font-semibold', 'text-primary-600');
+        mobileBtn.classList.add('text-neutral-500');
+      }
+    }
+  });
+  document.documentElement.lang = currentLang;
+}
+
+window.setLanguage = async function (lang) {
+  currentLang = lang;
+  localStorage.setItem('hicarenet-lang', lang);
+  await loadTranslations(lang);
+  applyTranslations();
+};
+
+async function initI18n() {
+  currentLang = detectLanguage();
+  await loadTranslations(currentLang);
+  applyTranslations();
+}
+
+// ============================================================
 // Initialize all modules on DOM ready
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -232,4 +315,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters();
   initScrollReveal();
   initBackToTop();
+  initI18n();
 });

@@ -46,14 +46,19 @@
         <ul class="hidden lg:flex items-center gap-1" role="menubar">
           <li role="none"><a role="menuitem" href="about.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.about">회사소개</a></li>
           <li role="none"><a role="menuitem" href="business.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.business">사업영역</a></li>
-          <li role="none"><span role="menuitem" class="px-3 py-2 rounded-lg text-sm font-medium text-neutral-400 opacity-50 cursor-not-allowed" aria-disabled="true" data-i18n="nav.technology">기술</span></li>
-          <li role="none"><span role="menuitem" class="px-3 py-2 rounded-lg text-sm font-medium text-neutral-400 opacity-50 cursor-not-allowed" aria-disabled="true" data-i18n="nav.global">글로벌 실적</span></li>
+          <li role="none"><a role="menuitem" href="technology.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.technology">기술</a></li>
+          <li role="none"><a role="menuitem" href="global.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
           <li role="none"><a role="menuitem" href="careers.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.careers">채용</a></li>
-          <li role="none"><span role="menuitem" class="px-3 py-2 rounded-lg text-sm font-medium text-neutral-400 opacity-50 cursor-not-allowed" aria-disabled="true" data-i18n="nav.ir">IR/뉴스</span></li>
+          <li role="none"><a role="menuitem" href="ir.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.ir">IR/뉴스</a></li>
         </ul>
 
         <!-- CTA + Mobile Toggle -->
         <div class="flex items-center gap-3">
+          <div class="hidden md:flex items-center gap-1 text-sm">
+            <button id="lang-ko" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
+          </div>
           <a href="contact.html" class="hidden md:inline-flex items-center gap-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors" data-i18n="nav.contact">
             <span class="material-symbols-outlined text-lg">mail</span>
             문의하기
@@ -69,14 +74,19 @@
         <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
           <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">회사소개</a>
           <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">사업영역</a>
-          <span role="menuitem" class="px-3 py-3 rounded-lg text-sm font-medium text-neutral-400 opacity-50 cursor-not-allowed" aria-disabled="true">기술 (준비 중)</span>
-          <span role="menuitem" class="px-3 py-3 rounded-lg text-sm font-medium text-neutral-400 opacity-50 cursor-not-allowed" aria-disabled="true">글로벌 실적 (준비 중)</span>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">글로벌 실적</a>
           <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">채용</a>
-          <span role="menuitem" class="px-3 py-3 rounded-lg text-sm font-medium text-neutral-400 opacity-50 cursor-not-allowed" aria-disabled="true">IR/뉴스 (준비 중)</span>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">IR/뉴스</a>
           <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
             <span class="material-symbols-outlined text-lg">mail</span>
             문의하기
           </a>
+          <div class="flex items-center justify-center gap-1 text-sm mt-2">
+            <button id="lang-ko-mobile" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en-mobile" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -109,9 +119,9 @@
             <a href="careers.html" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors" data-i18n="home.hero.cta_secondary">
               합류하기
             </a>
-            <span class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white/15 text-white/50 font-medium rounded-lg cursor-not-allowed" aria-disabled="true">
+            <a href="ir.html" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors" data-i18n="home.hero.cta_ir">
               IR 자료 보기
-            </span>
+            </a>
           </div>
         </div>
       </div>
@@ -175,16 +185,16 @@
           </div>
 
           <!-- Card 3: IR -->
-          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 opacity-75" data-animate="fade-up" data-animate-delay="200">
-            <div class="w-12 h-12 bg-neutral-100 rounded-xl flex items-center justify-center mb-5">
-              <span class="material-symbols-outlined text-2xl text-neutral-400">bar_chart</span>
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="200">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-primary-600">bar_chart</span>
             </div>
             <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="home.entry.ir.title">IR 자료 보기</h3>
             <p class="text-sm text-neutral-600 leading-relaxed mb-5" data-i18n="home.entry.ir.desc">매출 추이, 시장 기회, 사업 실적 데이터를 제공합니다.</p>
-            <span class="inline-flex items-center gap-1 text-sm font-medium text-neutral-400 cursor-not-allowed">
-              준비 중
-              <span class="material-symbols-outlined text-lg">lock</span>
-            </span>
+            <a href="ir.html" class="inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors">
+              IR 페이지 바로가기
+              <span class="material-symbols-outlined text-lg">arrow_forward</span>
+            </a>
           </div>
         </div>
       </div>
@@ -211,10 +221,10 @@
           </article>
         </div>
         <div class="mt-8">
-          <span class="inline-flex items-center gap-1 text-sm font-medium text-neutral-400 cursor-not-allowed">
-            전체 뉴스 보기 (준비 중)
+          <a href="ir.html" class="inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors" onclick="setTimeout(function(){document.getElementById('tab-newsroom') && document.getElementById('tab-newsroom').click()},100)">
+            전체 뉴스 보기
             <span class="material-symbols-outlined text-lg">arrow_forward</span>
-          </span>
+          </a>
         </div>
       </div>
     </section>
@@ -257,7 +267,11 @@
           <ul class="space-y-2 text-sm">
             <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors">회사소개</a></li>
             <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors">사업영역</a></li>
+            <li><a href="technology.html" class="text-neutral-400 hover:text-white transition-colors">기술</a></li>
+            <li><a href="global.html" class="text-neutral-400 hover:text-white transition-colors">글로벌 실적</a></li>
             <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors">채용</a></li>
+            <li><a href="ir.html" class="text-neutral-400 hover:text-white transition-colors">IR/뉴스</a></li>
+            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
 
