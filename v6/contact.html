@@ -39,7 +39,7 @@ tailwind.config = {
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
           <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 lg:h-10">
-          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline">하이케어넷</span>
+          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline" data-i18n="common.logo_text">하이케어넷</span>
         </a>
 
         <!-- Desktop Menu -->
@@ -72,15 +72,15 @@ tailwind.config = {
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
         <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
-          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">회사소개</a>
-          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">사업영역</a>
-          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">기술</a>
-          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">글로벌 실적</a>
-          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">채용</a>
-          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">IR/뉴스</a>
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스</a>
           <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700" aria-current="page">
             <span class="material-symbols-outlined text-lg">mail</span>
-            문의하기
+            <span data-i18n="nav.contact">문의하기</span>
           </a>
           <div class="flex items-center justify-center gap-1 text-sm mt-2">
             <button id="lang-ko-mobile" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
@@ -181,11 +181,11 @@ tailwind.config = {
         <!-- Success message (hidden by default) -->
         <div id="contact-form-success" class="hidden bg-white rounded-2xl shadow-sm border border-neutral-100 p-10 text-center">
           <span class="material-symbols-outlined text-green-500 text-[56px] mb-4">check_circle</span>
-          <p class="text-xl font-semibold text-neutral-900">문의가 접수되었습니다.</p>
+          <p class="text-xl font-semibold text-neutral-900" data-i18n="contact.form.success_title">문의가 접수되었습니다.</p>
           <p class="mt-3 text-neutral-500 leading-relaxed" data-i18n="kr.contact.form.success">담당자 확인 후 입력하신 이메일로 회신드리겠습니다.</p>
           <a href="index.html" class="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-neutral-100 text-neutral-700 text-sm font-semibold rounded-xl hover:bg-neutral-200 transition-colors">
             <span class="material-symbols-outlined text-[18px]">home</span>
-            홈으로 돌아가기
+            <span data-i18n="contact.form.back_home">홈으로 돌아가기</span>
           </a>
         </div>
       </div>
@@ -196,7 +196,7 @@ tailwind.config = {
   <section class="py-16 md:py-24 bg-neutral-50" aria-labelledby="location-title">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-10">
-        <h2 id="location-title" class="text-2xl md:text-3xl font-bold text-neutral-900" data-animate="fade-up">오시는 길</h2>
+        <h2 id="location-title" class="text-2xl md:text-3xl font-bold text-neutral-900" data-animate="fade-up" data-i18n="contact.location.title">오시는 길</h2>
       </div>
 
       <div class="max-w-4xl mx-auto" data-animate="fade-up" data-animate-delay="100">
@@ -204,7 +204,7 @@ tailwind.config = {
         <div class="bg-neutral-100 rounded-2xl h-64 md:h-80 flex items-center justify-center mb-6">
           <div class="text-center text-neutral-400">
             <span class="material-symbols-outlined text-[48px] mb-2">map</span>
-            <p class="text-sm font-medium">지도 로딩 중</p>
+            <p class="text-sm font-medium" data-i18n="contact.location.map_loading">지도 로딩 중</p>
           </div>
         </div>
         <!-- Address text -->
@@ -229,7 +229,7 @@ tailwind.config = {
           <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mx-auto mb-4">
             <span class="material-symbols-outlined text-primary-600 text-[24px]">call</span>
           </div>
-          <p class="text-xs text-neutral-400 font-medium uppercase tracking-wider mb-1">전화</p>
+          <p class="text-xs text-neutral-400 font-medium uppercase tracking-wider mb-1" data-i18n="contact.direct.phone_label">전화</p>
           <p class="text-base font-semibold text-neutral-900 font-display" data-i18n="kr.contact.direct.phone">02-3400-7247</p>
         </div>
 
@@ -238,7 +238,7 @@ tailwind.config = {
           <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mx-auto mb-4">
             <span class="material-symbols-outlined text-primary-600 text-[24px]">mail</span>
           </div>
-          <p class="text-xs text-neutral-400 font-medium uppercase tracking-wider mb-1">이메일</p>
+          <p class="text-xs text-neutral-400 font-medium uppercase tracking-wider mb-1" data-i18n="contact.direct.email_label">이메일</p>
           <p class="text-base font-semibold text-neutral-500" data-i18n="kr.contact.direct.email">확인 후 업데이트 예정</p>
         </div>
 
@@ -247,7 +247,7 @@ tailwind.config = {
           <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mx-auto mb-4">
             <span class="material-symbols-outlined text-primary-600 text-[24px]">location_on</span>
           </div>
-          <p class="text-xs text-neutral-400 font-medium uppercase tracking-wider mb-1">주소</p>
+          <p class="text-xs text-neutral-400 font-medium uppercase tracking-wider mb-1" data-i18n="contact.direct.address_label">주소</p>
           <p class="text-sm font-semibold text-neutral-900 leading-relaxed" data-i18n="kr.contact.direct.address">서울특별시 송파구<br>위례성대로22길 28, 5층</p>
         </div>
       </div>
@@ -276,34 +276,34 @@ tailwind.config = {
         <div class="lg:col-span-2">
           <div class="flex items-center gap-2 mb-4">
             <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 brightness-200">
-            <span class="text-lg font-bold text-white">하이케어넷 주식회사</span>
+            <span class="text-lg font-bold text-white" data-i18n="footer.company_name">하이케어넷 주식회사</span>
           </div>
           <address class="not-italic text-sm leading-loose text-neutral-400">
-            <p>대표이사: 김홍진, 원종윤</p>
-            <p>주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
-            <p>전화: 02-3400-7247</p>
-            <p>이메일: contact@hicare.co.kr</p>
+            <p data-i18n="footer.ceo">대표이사: 김홍진, 원종윤</p>
+            <p data-i18n="footer.address">주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
+            <p data-i18n="footer.phone">전화: 02-3400-7247</p>
+            <p data-i18n="footer.email">이메일: contact@hicare.co.kr</p>
           </address>
         </div>
 
         <!-- Quick Links -->
         <div>
-          <p class="text-sm font-semibold text-white mb-4">바로가기</p>
+          <p class="text-sm font-semibold text-white mb-4" data-i18n="footer.quicklinks_title">바로가기</p>
           <ul class="space-y-2 text-sm">
-            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors">회사소개</a></li>
-            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors">사업영역</a></li>
-            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors">채용</a></li>
+            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.about">회사소개</a></li>
+            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.business">사업영역</a></li>
+            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.careers">채용</a></li>
             <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
 
         <!-- Legal & Certs -->
         <div>
-          <p class="text-sm font-semibold text-white mb-4">법적 고지</p>
+          <p class="text-sm font-semibold text-white mb-4" data-i18n="footer.legal_title">법적 고지</p>
           <ul class="space-y-2 text-sm">
-            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors">개인정보처리방침</a></li>
-            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors">이용약관</a></li>
-            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
+            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.us_site">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
           </ul>
 
           <!-- Certification Badges -->

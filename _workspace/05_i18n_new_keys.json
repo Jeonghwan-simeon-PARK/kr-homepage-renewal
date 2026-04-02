@@ -1,0 +1,474 @@
+{
+  "common.logo_text": {
+    "ko": "하이케어넷",
+    "en": "HicareNet"
+  },
+
+  "careers.hero.badge": {
+    "ko": "채용",
+    "en": "Careers"
+  },
+  "careers.hero.cta": {
+    "ko": "채용 공고 보기",
+    "en": "View Open Positions"
+  },
+  "careers.why.2.stat_clinics": {
+    "ko": "클리닉",
+    "en": "Clinics"
+  },
+  "careers.why.2.stat_patients": {
+    "ko": "환자",
+    "en": "Patients"
+  },
+  "careers.why.2.stat_rnd": {
+    "ko": "R&D 인원",
+    "en": "R&D Staff"
+  },
+  "careers.why.4.stat_label": {
+    "ko": "해외 매출 비중 (2024)",
+    "en": "Overseas Revenue Ratio (2024)"
+  },
+  "careers.team.tab_rnd": {
+    "ko": "R&D Group",
+    "en": "R&D Group"
+  },
+  "careers.team.tab_rnd_count": {
+    "ko": "10명",
+    "en": "10"
+  },
+  "careers.team.tab_bi": {
+    "ko": "BI Group",
+    "en": "BI Group"
+  },
+  "careers.team.tab_bi_count": {
+    "ko": "7명",
+    "en": "7"
+  },
+  "careers.team.tab_mgmt": {
+    "ko": "경영지원실",
+    "en": "Management Support"
+  },
+  "careers.team.tab_mgmt_count": {
+    "ko": "4명",
+    "en": "4"
+  },
+  "careers.team.tab_overseas": {
+    "ko": "해외지원팀",
+    "en": "Overseas Support"
+  },
+  "careers.team.rnd.role1": {
+    "ko": "개발총괄 (그룹장)",
+    "en": "Dev Lead (Group Head)"
+  },
+  "careers.team.rnd.role2": {
+    "ko": "백엔드 (2명)",
+    "en": "Backend (2)"
+  },
+  "careers.team.rnd.role3": {
+    "ko": "프론트엔드",
+    "en": "Frontend"
+  },
+  "careers.team.rnd.role4": {
+    "ko": "모바일 (2명)",
+    "en": "Mobile (2)"
+  },
+  "careers.team.rnd.role5": {
+    "ko": "디자인",
+    "en": "Design"
+  },
+  "careers.team.rnd.role6": {
+    "ko": "클라우드 관리",
+    "en": "Cloud Management"
+  },
+  "careers.team.rnd.role8": {
+    "ko": "기획",
+    "en": "Planning"
+  },
+  "careers.team.bi.role1": {
+    "ko": "영업/기획총괄 (그룹장)",
+    "en": "Sales/Planning Lead (Group Head)"
+  },
+  "careers.team.bi.role2": {
+    "ko": "영업/사업지원 (2명)",
+    "en": "Sales/Biz Support (2)"
+  },
+  "careers.team.bi.role3": {
+    "ko": "과제개발 PL",
+    "en": "Project Dev PL"
+  },
+  "careers.team.bi.role4": {
+    "ko": "임상/제품화 기획",
+    "en": "Clinical/Product Planning"
+  },
+  "careers.team.bi.role5": {
+    "ko": "사업기획 (2명)",
+    "en": "Business Planning (2)"
+  },
+  "careers.team.mgmt.role1": {
+    "ko": "경영지원/감사",
+    "en": "Management Support/Audit"
+  },
+  "careers.team.mgmt.role2": {
+    "ko": "인사/자금",
+    "en": "HR/Finance"
+  },
+  "careers.team.mgmt.role3": {
+    "ko": "인사/총무",
+    "en": "HR/General Affairs"
+  },
+  "careers.team.mgmt.role4": {
+    "ko": "회계 (2명)",
+    "en": "Accounting (2)"
+  },
+  "careers.team.overseas.role1": {
+    "ko": "해외법인 관리",
+    "en": "Overseas Subsidiary Management"
+  },
+  "careers.team.overseas.role2": {
+    "ko": "경영지원",
+    "en": "Management Support"
+  },
+  "careers.team.overseas.role3": {
+    "ko": "인사/자금",
+    "en": "HR/Finance"
+  },
+  "careers.team.overseas.role4": {
+    "ko": "회계",
+    "en": "Accounting"
+  },
+  "careers.team.overseas.note": {
+    "ko": "* 경영지원실과 겸직 인원 포함",
+    "en": "* Includes staff with dual roles in Management Support"
+  },
+  "careers.workstyle.placeholder": {
+    "ko": "일하는 방식 정보가 준비 중입니다.",
+    "en": "Work style information is being prepared."
+  },
+  "careers.workstyle.placeholder_sub": {
+    "ko": "면접에서 자세히 안내드립니다.",
+    "en": "Details will be provided during the interview."
+  },
+  "careers.benefits.placeholder": {
+    "ko": "복리후생 정보가 준비 중입니다.",
+    "en": "Benefits information is being prepared."
+  },
+  "careers.benefits.placeholder_sub": {
+    "ko": "구체적인 내용은 확정 후 업데이트됩니다.",
+    "en": "Specific details will be updated once finalized."
+  },
+  "careers.positions.no_openings": {
+    "ko": "현재 공개 채용 공고가 준비 중입니다.",
+    "en": "Open positions are currently being prepared."
+  },
+  "careers.positions.no_openings_sub": {
+    "ko": "아래 상시 지원 폼이나 외부 플랫폼을 통해 지원할 수 있습니다.",
+    "en": "You can apply through the form below or via external platforms."
+  },
+  "careers.positions.always_open_title": {
+    "ko": "상시 지원",
+    "en": "Open Application"
+  },
+  "careers.form.name": {
+    "ko": "이름 <span class=\"text-red-500\">*</span>",
+    "en": "Name <span class=\"text-red-500\">*</span>"
+  },
+  "careers.form.email": {
+    "ko": "이메일 <span class=\"text-red-500\">*</span>",
+    "en": "Email <span class=\"text-red-500\">*</span>"
+  },
+  "careers.form.team": {
+    "ko": "관심 직군 <span class=\"text-red-500\">*</span>",
+    "en": "Position of Interest <span class=\"text-red-500\">*</span>"
+  },
+  "careers.form.team_placeholder": {
+    "ko": "직군을 선택하세요",
+    "en": "Select a position"
+  },
+  "careers.form.team_rnd": {
+    "ko": "R&D (개발/디자인/QC)",
+    "en": "R&D (Dev/Design/QC)"
+  },
+  "careers.form.team_bi": {
+    "ko": "BI (영업/사업기획/임상)",
+    "en": "BI (Sales/Biz Planning/Clinical)"
+  },
+  "careers.form.team_mgmt": {
+    "ko": "경영지원 (인사/회계/총무)",
+    "en": "Management Support (HR/Accounting/GA)"
+  },
+  "careers.form.team_overseas": {
+    "ko": "해외지원",
+    "en": "Overseas Support"
+  },
+  "careers.form.intro": {
+    "ko": "간단한 자기소개",
+    "en": "Brief Self-Introduction"
+  },
+  "careers.form.privacy_consent": {
+    "ko": "<a href=\"privacy.html\" class=\"text-primary-600 underline hover:text-primary-700\">개인정보 수집/이용</a>에 동의합니다. <span class=\"text-red-500\">*</span>",
+    "en": "I agree to the <a href=\"privacy.html\" class=\"text-primary-600 underline hover:text-primary-700\">Privacy Policy</a>. <span class=\"text-red-500\">*</span>"
+  },
+  "careers.form.submit": {
+    "ko": "지원서 제출하기",
+    "en": "Submit Application"
+  },
+  "careers.form.success_title": {
+    "ko": "지원이 접수되었습니다.",
+    "en": "Your application has been submitted."
+  },
+  "careers.form.success_msg": {
+    "ko": "적합한 포지션이 열릴 때 입력하신 이메일로 연락드리겠습니다.",
+    "en": "We will contact you at the email provided when a suitable position opens."
+  },
+  "careers.positions.wanted": {
+    "ko": "원티드에서 보기 (준비 중)",
+    "en": "View on Wanted (Coming Soon)"
+  },
+  "careers.positions.rocketpunch": {
+    "ko": "로켓펀치에서 보기 (준비 중)",
+    "en": "View on RocketPunch (Coming Soon)"
+  },
+
+  "contact.location.title": {
+    "ko": "오시는 길",
+    "en": "Location"
+  },
+  "contact.location.map_loading": {
+    "ko": "지도 로딩 중",
+    "en": "Loading map"
+  },
+  "contact.direct.phone_label": {
+    "ko": "전화",
+    "en": "Phone"
+  },
+  "contact.direct.email_label": {
+    "ko": "이메일",
+    "en": "Email"
+  },
+  "contact.direct.address_label": {
+    "ko": "주소",
+    "en": "Address"
+  },
+  "contact.form.success_title": {
+    "ko": "문의가 접수되었습니다.",
+    "en": "Your inquiry has been submitted."
+  },
+  "contact.form.back_home": {
+    "ko": "홈으로 돌아가기",
+    "en": "Back to Home"
+  },
+
+  "technology.ai.pneumonia.badge": {
+    "ko": "FDA 추진 중",
+    "en": "FDA Pending"
+  },
+  "technology.ai.dementia.badge": {
+    "ko": "준비 단계",
+    "en": "In Preparation"
+  },
+  "technology.heritage.img_placeholder": {
+    "ko": "의료기기 연동 기술 이미지",
+    "en": "Medical Device Integration Technology"
+  },
+
+  "global.map.placeholder": {
+    "ko": "세계 지도 인포그래픽",
+    "en": "World Map Infographic"
+  },
+  "global.portal.stat_claims_prefix": {
+    "ko": "월 ",
+    "en": "Monthly "
+  },
+  "global.portal.revenue_note": {
+    "ko": "2025년 상반기 매출이 2024년 연간 매출의 82%에 해당하는 고성장세",
+    "en": "H1 2025 revenue reached 82% of full-year 2024, indicating strong growth"
+  },
+
+  "ir.market.rpm.year": {
+    "ko": "2030년 전망",
+    "en": "2030 Forecast"
+  },
+  "ir.market.ccm.year": {
+    "ko": "2024년 규모",
+    "en": "2024 Market Size"
+  },
+  "ir.market.rpm_users.count": {
+    "ko": "7,100만 명",
+    "en": "71 Million"
+  },
+  "ir.market.rpm_users.year": {
+    "ko": "2025년 추산",
+    "en": "2025 Estimate"
+  },
+  "ir.revenue.2022_amount": {
+    "ko": "993 백만 원",
+    "en": "KRW 993M"
+  },
+  "ir.revenue.2022_ratio": {
+    "ko": "해외 매출 비중: 95.93%",
+    "en": "Overseas Revenue Ratio: 95.93%"
+  },
+  "ir.revenue.2023_amount": {
+    "ko": "21 백만 원",
+    "en": "KRW 21M"
+  },
+  "ir.revenue.2023_ratio": {
+    "ko": "해외 매출 비중: 3.05%",
+    "en": "Overseas Revenue Ratio: 3.05%"
+  },
+  "ir.revenue.2023_note": {
+    "ko": "사업 구조 전환기",
+    "en": "Business Structure Transition"
+  },
+  "ir.revenue.2024_amount": {
+    "ko": "169 백만 원",
+    "en": "KRW 169M"
+  },
+  "ir.revenue.2024_ratio": {
+    "ko": "해외 매출 비중: 96.68%",
+    "en": "Overseas Revenue Ratio: 96.68%"
+  },
+  "ir.revenue.2024_overseas": {
+    "ko": "해외 매출: $998,404",
+    "en": "Overseas Revenue: $998,404"
+  },
+  "ir.revenue.2025h1_label": {
+    "ko": "2025 (상반기)",
+    "en": "2025 (H1)"
+  },
+  "ir.revenue.2025h1_amount": {
+    "ko": "해외 매출 $816,668",
+    "en": "Overseas Revenue $816,668"
+  },
+  "ir.revenue.2025h1_note": {
+    "ko": "6개월 만에 전년 대비 82% 달성",
+    "en": "Reached 82% of prior year in just 6 months"
+  },
+  "ir.revenue.legend_overseas": {
+    "ko": "해외 매출",
+    "en": "Overseas Revenue"
+  },
+  "ir.revenue.legend_domestic": {
+    "ko": "국내 매출",
+    "en": "Domestic Revenue"
+  },
+  "ir.revenue.legend_2025h1": {
+    "ko": "2025년 상반기",
+    "en": "2025 H1"
+  },
+
+  "privacy.title": {
+    "ko": "개인정보처리방침",
+    "en": "Privacy Policy"
+  },
+  "privacy.subtitle": {
+    "ko": "Privacy Policy",
+    "en": "Privacy Policy"
+  },
+  "privacy.intro": {
+    "ko": "하이케어넷 주식회사(이하 \"회사\")는 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고, 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보처리방침을 수립하여 공개합니다.",
+    "en": "HicareNet Inc. (hereinafter \"the Company\") establishes and discloses this Privacy Policy to protect users' personal information in accordance with the Personal Information Protection Act and to handle related grievances promptly and smoothly."
+  },
+  "privacy.article1.title": {
+    "ko": "제1조 (개인정보의 처리 목적)",
+    "en": "Article 1 (Purpose of Processing Personal Information)"
+  },
+  "privacy.article2.title": {
+    "ko": "제2조 (처리하는 개인정보의 항목)",
+    "en": "Article 2 (Categories of Personal Information Processed)"
+  },
+  "privacy.article3.title": {
+    "ko": "제3조 (개인정보의 처리 및 보유 기간)",
+    "en": "Article 3 (Processing and Retention Period)"
+  },
+  "privacy.article4.title": {
+    "ko": "제4조 (개인정보의 제3자 제공)",
+    "en": "Article 4 (Provision of Personal Information to Third Parties)"
+  },
+  "privacy.article5.title": {
+    "ko": "제5조 (개인정보의 파기)",
+    "en": "Article 5 (Destruction of Personal Information)"
+  },
+  "privacy.article6.title": {
+    "ko": "제6조 (정보 주체의 권리 및 의무)",
+    "en": "Article 6 (Rights and Obligations of Data Subjects)"
+  },
+  "privacy.article7.title": {
+    "ko": "제7조 (개인정보의 안전성 확보 조치)",
+    "en": "Article 7 (Measures to Ensure Security of Personal Information)"
+  },
+  "privacy.article8.title": {
+    "ko": "제8조 (개인정보 보호 책임자)",
+    "en": "Article 8 (Privacy Officer)"
+  },
+  "privacy.article9.title": {
+    "ko": "제9조 (개인정보 처리방침의 변경)",
+    "en": "Article 9 (Changes to the Privacy Policy)"
+  },
+
+  "terms.title": {
+    "ko": "이용약관",
+    "en": "Terms of Service"
+  },
+  "terms.subtitle": {
+    "ko": "Terms of Service",
+    "en": "Terms of Service"
+  },
+  "terms.article1.title": {
+    "ko": "제1조 (목적)",
+    "en": "Article 1 (Purpose)"
+  },
+  "terms.article2.title": {
+    "ko": "제2조 (정의)",
+    "en": "Article 2 (Definitions)"
+  },
+  "terms.article3.title": {
+    "ko": "제3조 (약관의 게시 및 변경)",
+    "en": "Article 3 (Posting and Amendments)"
+  },
+  "terms.article4.title": {
+    "ko": "제4조 (서비스의 제공)",
+    "en": "Article 4 (Provision of Services)"
+  },
+  "terms.article5.title": {
+    "ko": "제5조 (이용자의 의무)",
+    "en": "Article 5 (User Obligations)"
+  },
+  "terms.article6.title": {
+    "ko": "제6조 (지식재산권)",
+    "en": "Article 6 (Intellectual Property Rights)"
+  },
+  "terms.article7.title": {
+    "ko": "제7조 (면책)",
+    "en": "Article 7 (Disclaimer)"
+  },
+  "terms.article8.title": {
+    "ko": "제8조 (분쟁 해결)",
+    "en": "Article 8 (Dispute Resolution)"
+  },
+  "terms.article9.title": {
+    "ko": "제9조 (관할 법원)",
+    "en": "Article 9 (Jurisdiction)"
+  },
+
+  "footer.ceo": {
+    "ko": "대표이사: 김홍진, 원종윤",
+    "en": "CEO: Hongjin Kim, Jongyoon Won"
+  },
+  "footer.address": {
+    "ko": "주소: 서울특별시 송파구 위례성대로22길 28, 5층",
+    "en": "Address: 5F, 28, Wirye Seongdae-ro 22-gil, Songpa-gu, Seoul"
+  },
+  "footer.phone": {
+    "ko": "전화: 02-3400-7247",
+    "en": "Phone: +82-2-3400-7247"
+  },
+  "footer.email": {
+    "ko": "이메일: contact@hicare.co.kr",
+    "en": "Email: contact@hicare.co.kr"
+  },
+  "footer.us_site": {
+    "ko": "미국 사이트 (hicare.net)",
+    "en": "US Site (hicare.net)"
+  }
+}

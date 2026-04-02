@@ -39,7 +39,7 @@
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
           <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 lg:h-10">
-          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline">하이케어넷</span>
+          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline" data-i18n="common.logo_text">하이케어넷</span>
         </a>
 
         <!-- Desktop Menu -->
@@ -72,11 +72,11 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
         <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
-          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">회사소개</a>
-          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">사업영역</a>
-          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">기술</a>
-          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">글로벌 실적</a>
-          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">채용</a>
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
           <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-semibold text-primary-600 bg-primary-50">IR/뉴스</a>
           <div class="flex items-center gap-1 text-sm px-3 py-2">
             <button onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600">KO</button>
@@ -85,7 +85,7 @@
           </div>
           <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
             <span class="material-symbols-outlined text-lg">mail</span>
-            문의하기
+            <span data-i18n="nav.contact">문의하기</span>
           </a>
         </div>
       </div>
@@ -184,66 +184,66 @@
               <div>
                 <div class="flex items-center justify-between mb-2">
                   <span class="text-sm font-medium text-neutral-700">2022</span>
-                  <span class="text-sm font-semibold text-neutral-800">993 백만 원</span>
+                  <span class="text-sm font-semibold text-neutral-800" data-i18n="ir.revenue.2022_amount">993 백만 원</span>
                 </div>
                 <div class="flex gap-1 h-6">
                   <div class="bg-neutral-300 h-6 rounded-l" style="width: 4%" title="국내 매출"></div>
                   <div class="bg-primary-500 h-6 rounded-r" style="width: 96%" title="해외 매출 (95.93%)"></div>
                 </div>
                 <div class="flex gap-4 mt-1 text-xs text-neutral-500">
-                  <span>해외 매출 비중: 95.93%</span>
+                  <span data-i18n="ir.revenue.2022_ratio">해외 매출 비중: 95.93%</span>
                 </div>
               </div>
               <!-- 2023 -->
               <div>
                 <div class="flex items-center justify-between mb-2">
                   <span class="text-sm font-medium text-neutral-700">2023</span>
-                  <span class="text-sm font-semibold text-neutral-800">21 백만 원</span>
+                  <span class="text-sm font-semibold text-neutral-800" data-i18n="ir.revenue.2023_amount">21 백만 원</span>
                 </div>
                 <div class="flex gap-1 h-6">
                   <div class="bg-neutral-300 h-6 rounded-l" style="width: 97%" title="국내 매출"></div>
                   <div class="bg-primary-500 h-6 rounded-r" style="width: 3%" title="해외 매출 (3.05%)"></div>
                 </div>
                 <div class="flex gap-4 mt-1 text-xs text-neutral-500">
-                  <span>해외 매출 비중: 3.05%</span>
-                  <span class="text-amber-600">사업 구조 전환기</span>
+                  <span data-i18n="ir.revenue.2023_ratio">해외 매출 비중: 3.05%</span>
+                  <span class="text-amber-600" data-i18n="ir.revenue.2023_note">사업 구조 전환기</span>
                 </div>
               </div>
               <!-- 2024 -->
               <div>
                 <div class="flex items-center justify-between mb-2">
                   <span class="text-sm font-medium text-neutral-700">2024</span>
-                  <span class="text-sm font-semibold text-neutral-800">169 백만 원</span>
+                  <span class="text-sm font-semibold text-neutral-800" data-i18n="ir.revenue.2024_amount">169 백만 원</span>
                 </div>
                 <div class="flex gap-1 h-6">
                   <div class="bg-neutral-300 h-6 rounded-l" style="width: 3.3%" title="국내 매출"></div>
                   <div class="bg-primary-500 h-6 rounded-r" style="width: 96.7%" title="해외 매출 (96.68%)"></div>
                 </div>
                 <div class="flex gap-4 mt-1 text-xs text-neutral-500">
-                  <span>해외 매출 비중: 96.68%</span>
-                  <span>해외 매출: $998,404</span>
+                  <span data-i18n="ir.revenue.2024_ratio">해외 매출 비중: 96.68%</span>
+                  <span data-i18n="ir.revenue.2024_overseas">해외 매출: $998,404</span>
                 </div>
               </div>
               <!-- 2025 H1 -->
               <div>
                 <div class="flex items-center justify-between mb-2">
-                  <span class="text-sm font-medium text-neutral-700">2025 (상반기)</span>
-                  <span class="text-sm font-semibold text-green-700">해외 매출 $816,668</span>
+                  <span class="text-sm font-medium text-neutral-700" data-i18n="ir.revenue.2025h1_label">2025 (상반기)</span>
+                  <span class="text-sm font-semibold text-green-700" data-i18n="ir.revenue.2025h1_amount">해외 매출 $816,668</span>
                 </div>
                 <div class="flex gap-1 h-6">
                   <div class="bg-green-500 h-6 rounded" style="width: 82%" title="2025 상반기 (2024 대비 82%)"></div>
                   <div class="bg-green-200 h-6 rounded border border-dashed border-green-400" style="width: 18%" title="하반기 전망"></div>
                 </div>
                 <div class="flex gap-4 mt-1 text-xs text-neutral-500">
-                  <span class="text-green-600">6개월 만에 전년 대비 82% 달성</span>
+                  <span class="text-green-600" data-i18n="ir.revenue.2025h1_note">6개월 만에 전년 대비 82% 달성</span>
                 </div>
               </div>
             </div>
             <!-- Legend -->
             <div class="flex flex-wrap gap-4 mt-6 pt-4 border-t border-neutral-100 text-xs text-neutral-500">
-              <div class="flex items-center gap-1.5"><div class="w-3 h-3 bg-primary-500 rounded-sm"></div><span>해외 매출</span></div>
-              <div class="flex items-center gap-1.5"><div class="w-3 h-3 bg-neutral-300 rounded-sm"></div><span>국내 매출</span></div>
-              <div class="flex items-center gap-1.5"><div class="w-3 h-3 bg-green-500 rounded-sm"></div><span>2025년 상반기</span></div>
+              <div class="flex items-center gap-1.5"><div class="w-3 h-3 bg-primary-500 rounded-sm"></div><span data-i18n="ir.revenue.legend_overseas">해외 매출</span></div>
+              <div class="flex items-center gap-1.5"><div class="w-3 h-3 bg-neutral-300 rounded-sm"></div><span data-i18n="ir.revenue.legend_domestic">국내 매출</span></div>
+              <div class="flex items-center gap-1.5"><div class="w-3 h-3 bg-green-500 rounded-sm"></div><span data-i18n="ir.revenue.legend_2025h1">2025년 상반기</span></div>
             </div>
           </div>
 
@@ -275,7 +275,7 @@
               </div>
               <div class="flex items-baseline gap-2 mb-3">
                 <span class="text-3xl font-display font-bold text-primary-600">$6.3B</span>
-                <span class="text-sm text-neutral-500">2030년 전망</span>
+                <span class="text-sm text-neutral-500" data-i18n="ir.market.rpm.year">2030년 전망</span>
               </div>
               <p class="text-sm text-neutral-600 leading-relaxed mb-3" data-i18n="ir.market.rpm.body">2023년 약 $1.7B 규모에서 2030년 약 $6.3B으로 성장할 전망입니다. 연평균 성장률(CAGR)은 18.4%입니다.</p>
               <p class="text-xs text-neutral-400" data-i18n="ir.market.rpm.source">출처: Grand View Research</p>
@@ -291,7 +291,7 @@
               </div>
               <div class="flex items-baseline gap-2 mb-3">
                 <span class="text-3xl font-display font-bold text-green-600">$2.2B</span>
-                <span class="text-sm text-neutral-500">2024년 규모</span>
+                <span class="text-sm text-neutral-500" data-i18n="ir.market.ccm.year">2024년 규모</span>
               </div>
               <p class="text-sm text-neutral-600 leading-relaxed mb-3" data-i18n="ir.market.ccm.body">2024년 약 $2.2B 규모이며, 연평균 성장률(CAGR) 11.7%로 성장하고 있습니다.</p>
               <p class="text-xs text-neutral-400" data-i18n="ir.market.ccm.source">출처: Precedence Research</p>
@@ -303,8 +303,8 @@
             <div class="bg-neutral-50 rounded-2xl border border-neutral-200 p-6 lg:p-8" data-animate="fade-up">
               <h3 class="text-base font-semibold text-neutral-900 mb-3" data-i18n="ir.market.rpm_users.title">RPM 이용 인구</h3>
               <div class="flex items-baseline gap-2 mb-3">
-                <span class="text-2xl font-display font-bold text-neutral-800">7,100만 명</span>
-                <span class="text-sm text-neutral-500">2025년 추산</span>
+                <span class="text-2xl font-display font-bold text-neutral-800" data-i18n="ir.market.rpm_users.count">7,100만 명</span>
+                <span class="text-sm text-neutral-500" data-i18n="ir.market.rpm_users.year">2025년 추산</span>
               </div>
               <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="ir.market.rpm_users.body">2025년 기준 미국 내 약 7,100만 명이 RPM 서비스를 이용하는 것으로 추산됩니다. 이 수치는 웨어러블/앱 기반 모니터링을 포함한 넓은 정의이며, Medicare CPT 코드 기반의 임상 RPM 이용자는 이보다 적습니다.</p>
             </div>
@@ -469,35 +469,35 @@
         <div class="lg:col-span-2">
           <div class="flex items-center gap-2 mb-4">
             <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 brightness-200">
-            <span class="text-lg font-bold text-white">하이케어넷 주식회사</span>
+            <span class="text-lg font-bold text-white" data-i18n="footer.company_name">하이케어넷 주식회사</span>
           </div>
           <address class="not-italic text-sm leading-loose text-neutral-400">
-            <p>대표이사: 김홍진, 원종윤</p>
-            <p>주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
-            <p>전화: 02-3400-7247</p>
-            <p>이메일: contact@hicare.co.kr</p>
+            <p data-i18n="footer.ceo">대표이사: 김홍진, 원종윤</p>
+            <p data-i18n="footer.address">주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
+            <p data-i18n="footer.phone">전화: 02-3400-7247</p>
+            <p data-i18n="footer.email">이메일: contact@hicare.co.kr</p>
           </address>
         </div>
 
         <div>
-          <h4 class="text-sm font-semibold text-white mb-4">바로가기</h4>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.quicklinks_title">바로가기</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors">회사소개</a></li>
-            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors">사업영역</a></li>
-            <li><a href="technology.html" class="text-neutral-400 hover:text-white transition-colors">기술</a></li>
-            <li><a href="global.html" class="text-neutral-400 hover:text-white transition-colors">글로벌 실적</a></li>
-            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors">채용</a></li>
-            <li><a href="ir.html" class="text-neutral-400 hover:text-white transition-colors">IR/뉴스</a></li>
-            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.about">회사소개</a></li>
+            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.business">사업영역</a></li>
+            <li><a href="technology.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.technology">기술</a></li>
+            <li><a href="global.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
+            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.careers">채용</a></li>
+            <li><a href="ir.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.ir">IR/뉴스</a></li>
+            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.faq">FAQ</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-sm font-semibold text-white mb-4">법적 고지</h4>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.legal_title">법적 고지</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors">개인정보처리방침</a></li>
-            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors">이용약관</a></li>
-            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
+            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.us_site">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
           </ul>
           <div class="flex flex-wrap gap-2 mt-5">
             <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">HIPAA</span>

@@ -38,7 +38,7 @@
       <div class="flex items-center justify-between h-16 lg:h-20">
         <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
           <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 lg:h-10">
-          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline">하이케어넷</span>
+          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline" data-i18n="common.logo_text">하이케어넷</span>
         </a>
         <ul class="hidden lg:flex items-center gap-1" role="menubar">
           <li role="none"><a role="menuitem" href="about.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.about">회사소개</a></li>
@@ -65,15 +65,15 @@
       </div>
       <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
         <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
-          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">회사소개</a>
-          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">사업영역</a>
-          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">기술</a>
-          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">글로벌 실적</a>
-          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">채용</a>
-          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">IR/뉴스</a>
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스</a>
           <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
             <span class="material-symbols-outlined text-lg">mail</span>
-            문의하기
+            <span data-i18n="nav.contact">문의하기</span>
           </a>
           <div class="flex items-center justify-center gap-1 text-sm mt-2">
             <button id="lang-ko-mobile" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
@@ -90,8 +90,8 @@
     <!-- Page Header -->
     <section class="pt-24 lg:pt-28 pb-12 bg-neutral-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl md:text-4xl font-bold text-neutral-900">개인정보처리방침</h1>
-        <p class="mt-3 text-neutral-500 text-base">Privacy Policy</p>
+        <h1 class="text-3xl md:text-4xl font-bold text-neutral-900" data-i18n="privacy.title">개인정보처리방침</h1>
+        <p class="mt-3 text-neutral-500 text-base" data-i18n="privacy.subtitle">Privacy Policy</p>
       </div>
     </section>
 
@@ -99,13 +99,13 @@
     <section class="py-16 md:py-24 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <article class="prose-neutral">
-          <p class="text-base text-neutral-700 leading-relaxed mb-10">
+          <p class="text-base text-neutral-700 leading-relaxed mb-10" data-i18n="privacy.intro">
             하이케어넷 주식회사(이하 "회사")는 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고, 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보처리방침을 수립하여 공개합니다.
           </p>
 
           <!-- 제1조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제1조 (개인정보의 처리 목적)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article1.title">제1조 (개인정보의 처리 목적)</h2>
             <p class="text-sm text-neutral-700 leading-relaxed mb-4">
               회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
             </p>
@@ -118,7 +118,7 @@
 
           <!-- 제2조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제2조 (처리하는 개인정보의 항목)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article2.title">제2조 (처리하는 개인정보의 항목)</h2>
             <ol class="list-decimal list-inside space-y-2 text-sm text-neutral-700">
               <li>문의 폼: 이름, 소속, 이메일, 전화번호, 문의 내용</li>
               <li>채용 상시 지원 폼: 이름, 이메일, 관심 직군, 이력서(첨부 파일), 자기소개</li>
@@ -128,7 +128,7 @@
 
           <!-- 제3조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제3조 (개인정보의 처리 및 보유 기간)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article3.title">제3조 (개인정보의 처리 및 보유 기간)</h2>
             <p class="text-sm text-neutral-700 leading-relaxed mb-4">
               회사는 법령에 따른 개인정보 보유 및 이용 기간 또는 정보 주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유 및 이용 기간 내에서 개인정보를 처리하고 보유합니다.
             </p>
@@ -141,7 +141,7 @@
 
           <!-- 제4조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제4조 (개인정보의 제3자 제공)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article4.title">제4조 (개인정보의 제3자 제공)</h2>
             <p class="text-sm text-neutral-700 leading-relaxed">
               회사는 정보 주체의 개인정보를 제1조에서 명시한 범위 내에서만 처리하며, 정보 주체의 동의, 법률의 특별한 규정 등 「개인정보 보호법」 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.
             </p>
@@ -149,7 +149,7 @@
 
           <!-- 제5조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제5조 (개인정보의 파기)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article5.title">제5조 (개인정보의 파기)</h2>
             <p class="text-sm text-neutral-700 leading-relaxed mb-4">
               회사는 개인정보 보유 기간의 경과, 처리 목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.
             </p>
@@ -161,7 +161,7 @@
 
           <!-- 제6조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제6조 (정보 주체의 권리 및 의무)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article6.title">제6조 (정보 주체의 권리 및 의무)</h2>
             <p class="text-sm text-neutral-700 leading-relaxed mb-4">
               정보 주체는 회사에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
             </p>
@@ -175,7 +175,7 @@
 
           <!-- 제7조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제7조 (개인정보의 안전성 확보 조치)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article7.title">제7조 (개인정보의 안전성 확보 조치)</h2>
             <p class="text-sm text-neutral-700 leading-relaxed mb-4">
               회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.
             </p>
@@ -189,7 +189,7 @@
 
           <!-- 제8조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제8조 (개인정보 보호 책임자)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article8.title">제8조 (개인정보 보호 책임자)</h2>
             <div class="bg-neutral-50 rounded-lg p-5 text-sm text-neutral-700">
               <p class="mb-2"><strong>개인정보 보호 책임자</strong></p>
               <ul class="space-y-1">
@@ -203,7 +203,7 @@
 
           <!-- 제9조 -->
           <div class="mb-10">
-            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200">제9조 (개인정보 처리방침의 변경)</h2>
+            <h2 class="text-lg font-semibold text-neutral-900 mb-4 pb-2 border-b border-neutral-200" data-i18n="privacy.article9.title">제9조 (개인정보 처리방침의 변경)</h2>
             <p class="text-sm text-neutral-700 leading-relaxed mb-4">
               이 개인정보처리방침은 2025년 [월] [일]부터 적용됩니다. 이전의 개인정보처리방침은 아래에서 확인할 수 있습니다.
             </p>
@@ -233,30 +233,30 @@
         <div class="lg:col-span-2">
           <div class="flex items-center gap-2 mb-4">
             <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 brightness-200">
-            <span class="text-lg font-bold text-white">하이케어넷 주식회사</span>
+            <span class="text-lg font-bold text-white" data-i18n="footer.company_name">하이케어넷 주식회사</span>
           </div>
           <address class="not-italic text-sm leading-loose text-neutral-400">
-            <p>대표이사: 김홍진, 원종윤</p>
-            <p>주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
-            <p>전화: 02-3400-7247</p>
-            <p>이메일: contact@hicare.co.kr</p>
+            <p data-i18n="footer.ceo">대표이사: 김홍진, 원종윤</p>
+            <p data-i18n="footer.address">주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
+            <p data-i18n="footer.phone">전화: 02-3400-7247</p>
+            <p data-i18n="footer.email">이메일: contact@hicare.co.kr</p>
           </address>
         </div>
         <div>
-          <h4 class="text-sm font-semibold text-white mb-4">바로가기</h4>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.quicklinks_title">바로가기</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors">회사소개</a></li>
-            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors">사업영역</a></li>
-            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors">채용</a></li>
+            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.about">회사소개</a></li>
+            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.business">사업영역</a></li>
+            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.careers">채용</a></li>
             <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="text-sm font-semibold text-white mb-4">법적 고지</h4>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.legal_title">법적 고지</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors">개인정보처리방침</a></li>
-            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors">이용약관</a></li>
-            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
+            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.us_site">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
           </ul>
           <div class="flex flex-wrap gap-2 mt-5">
             <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">HIPAA</span>

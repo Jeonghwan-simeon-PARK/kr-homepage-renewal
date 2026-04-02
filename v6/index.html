@@ -39,7 +39,7 @@
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
           <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 lg:h-10">
-          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline">하이케어넷</span>
+          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline" data-i18n="common.company_name">하이케어넷</span>
         </a>
 
         <!-- Desktop Menu -->
@@ -72,13 +72,13 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
         <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
-          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">회사소개</a>
-          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">사업영역</a>
-          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">기술</a>
-          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">글로벌 실적</a>
-          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">채용</a>
-          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">IR/뉴스</a>
-          <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스</a>
+          <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700" data-i18n="nav.contact">
             <span class="material-symbols-outlined text-lg">mail</span>
             문의하기
           </a>
@@ -166,7 +166,7 @@
             <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="home.entry.business.title">사업영역 알아보기</h3>
             <p class="text-sm text-neutral-600 leading-relaxed mb-5" data-i18n="home.entry.business.desc">미국 Medicare 기반 RPM/CCM 플랫폼 사업과 서비스 확장 로드맵을 확인할 수 있습니다.</p>
             <a href="business.html" class="inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors">
-              사업영역 바로가기
+              <span data-i18n="home.entry.business.cta">사업영역 바로가기</span>
               <span class="material-symbols-outlined text-lg">arrow_forward</span>
             </a>
           </div>
@@ -179,7 +179,7 @@
             <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="home.entry.careers.title">합류하기</h3>
             <p class="text-sm text-neutral-600 leading-relaxed mb-5" data-i18n="home.entry.careers.desc">22명이 만드는 글로벌 헬스케어 SaaS. 현재 채용 중인 포지션과 팀 소개를 확인하세요.</p>
             <a href="careers.html" class="inline-flex items-center gap-1 text-sm font-medium text-green-600 hover:text-green-700 transition-colors">
-              채용 페이지 바로가기
+              <span data-i18n="home.entry.careers.cta">채용 페이지 바로가기</span>
               <span class="material-symbols-outlined text-lg">arrow_forward</span>
             </a>
           </div>
@@ -192,7 +192,7 @@
             <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="home.entry.ir.title">IR 자료 보기</h3>
             <p class="text-sm text-neutral-600 leading-relaxed mb-5" data-i18n="home.entry.ir.desc">매출 추이, 시장 기회, 사업 실적 데이터를 제공합니다.</p>
             <a href="ir.html" class="inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors">
-              IR 페이지 바로가기
+              <span data-i18n="home.entry.ir.cta">IR 페이지 바로가기</span>
               <span class="material-symbols-outlined text-lg">arrow_forward</span>
             </a>
           </div>
@@ -208,21 +208,21 @@
         </h2>
         <div class="space-y-0 divide-y divide-neutral-100">
           <article class="py-5 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6" data-animate="fade-up">
-            <time class="text-sm text-neutral-400 font-medium shrink-0 w-24" datetime="2025">2025년</time>
-            <h3 class="text-base font-medium text-neutral-800 hover:text-primary-600 transition-colors">미국 40개 클리닉 계약 달성</h3>
+            <time class="text-sm text-neutral-400 font-medium shrink-0 w-24" datetime="2025" data-i18n="home.news.item1_year">2025년</time>
+            <h3 class="text-base font-medium text-neutral-800 hover:text-primary-600 transition-colors" data-i18n="home.news.item1_title">미국 40개 클리닉 계약 달성</h3>
           </article>
           <article class="py-5 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6" data-animate="fade-up" data-animate-delay="100">
-            <time class="text-sm text-neutral-400 font-medium shrink-0 w-24" datetime="2025">2025년</time>
-            <h3 class="text-base font-medium text-neutral-800 hover:text-primary-600 transition-colors">AMC Health MoU 체결</h3>
+            <time class="text-sm text-neutral-400 font-medium shrink-0 w-24" datetime="2025" data-i18n="home.news.item2_year">2025년</time>
+            <h3 class="text-base font-medium text-neutral-800 hover:text-primary-600 transition-colors" data-i18n="home.news.item2_title">AMC Health MoU 체결</h3>
           </article>
           <article class="py-5 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6" data-animate="fade-up" data-animate-delay="200">
-            <time class="text-sm text-neutral-400 font-medium shrink-0 w-24" datetime="2025">2025년</time>
-            <h3 class="text-base font-medium text-neutral-800 hover:text-primary-600 transition-colors">NIPA 미주 ICT 비즈니스 파트너십 참가</h3>
+            <time class="text-sm text-neutral-400 font-medium shrink-0 w-24" datetime="2025" data-i18n="home.news.item3_year">2025년</time>
+            <h3 class="text-base font-medium text-neutral-800 hover:text-primary-600 transition-colors" data-i18n="home.news.item3_title">NIPA 미주 ICT 비즈니스 파트너십 참가</h3>
           </article>
         </div>
         <div class="mt-8">
           <a href="ir.html" class="inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors" onclick="setTimeout(function(){document.getElementById('tab-newsroom') && document.getElementById('tab-newsroom').click()},100)">
-            전체 뉴스 보기
+            <span data-i18n="home.news.more">전체 뉴스 보기</span>
             <span class="material-symbols-outlined text-lg">arrow_forward</span>
           </a>
         </div>
@@ -251,11 +251,11 @@
         <div class="lg:col-span-2">
           <div class="flex items-center gap-2 mb-4">
             <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 brightness-200">
-            <span class="text-lg font-bold text-white">하이케어넷 주식회사</span>
+            <span class="text-lg font-bold text-white" data-i18n="footer.company_name">하이케어넷 주식회사</span>
           </div>
           <address class="not-italic text-sm leading-loose text-neutral-400">
-            <p>대표이사: 김홍진, 원종윤</p>
-            <p>주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
+            <p data-i18n="footer.ceo">대표이사: 김홍진, 원종윤</p>
+            <p data-i18n="footer.address">주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
             <p>전화: 02-3400-7247</p>
             <p>이메일: contact@hicare.co.kr</p>
           </address>
@@ -263,25 +263,25 @@
 
         <!-- Quick Links -->
         <div>
-          <h4 class="text-sm font-semibold text-white mb-4">바로가기</h4>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.quicklinks_title">바로가기</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors">회사소개</a></li>
-            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors">사업영역</a></li>
-            <li><a href="technology.html" class="text-neutral-400 hover:text-white transition-colors">기술</a></li>
-            <li><a href="global.html" class="text-neutral-400 hover:text-white transition-colors">글로벌 실적</a></li>
-            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors">채용</a></li>
-            <li><a href="ir.html" class="text-neutral-400 hover:text-white transition-colors">IR/뉴스</a></li>
-            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.about">회사소개</a></li>
+            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.business">사업영역</a></li>
+            <li><a href="technology.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.technology">기술</a></li>
+            <li><a href="global.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
+            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.careers">채용</a></li>
+            <li><a href="ir.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.ir">IR/뉴스</a></li>
+            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.faq">FAQ</a></li>
           </ul>
         </div>
 
         <!-- Legal & Certs -->
         <div>
-          <h4 class="text-sm font-semibold text-white mb-4">법적 고지</h4>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.legal_title">법적 고지</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors">개인정보처리방침</a></li>
-            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors">이용약관</a></li>
-            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
+            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.us_site">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
           </ul>
 
           <!-- Certification Badges -->

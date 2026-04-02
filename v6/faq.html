@@ -39,7 +39,7 @@
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
           <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 lg:h-10">
-          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline">하이케어넷</span>
+          <span class="text-lg lg:text-xl font-bold text-primary-700 hidden sm:inline" data-i18n="common.logo_text">하이케어넷</span>
         </a>
 
         <!-- Desktop Menu -->
@@ -72,12 +72,12 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
         <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
-          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">회사소개</a>
-          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">사업영역</a>
-          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">기술</a>
-          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">글로벌 실적</a>
-          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">채용</a>
-          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600">IR/뉴스</a>
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스</a>
           <div class="flex items-center gap-1 text-sm px-3 py-2">
             <button onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600">KO</button>
             <span class="text-neutral-300">|</span>
@@ -85,7 +85,7 @@
           </div>
           <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
             <span class="material-symbols-outlined text-lg">mail</span>
-            문의하기
+            <span data-i18n="nav.contact">문의하기</span>
           </a>
         </div>
       </div>
@@ -274,35 +274,35 @@
         <div class="lg:col-span-2">
           <div class="flex items-center gap-2 mb-4">
             <img src="../assets/hicare_pavicon2.png" alt="하이케어넷 로고" class="h-8 brightness-200">
-            <span class="text-lg font-bold text-white">하이케어넷 주식회사</span>
+            <span class="text-lg font-bold text-white" data-i18n="footer.company_name">하이케어넷 주식회사</span>
           </div>
           <address class="not-italic text-sm leading-loose text-neutral-400">
-            <p>대표이사: 김홍진, 원종윤</p>
-            <p>주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
-            <p>전화: 02-3400-7247</p>
-            <p>이메일: contact@hicare.co.kr</p>
+            <p data-i18n="footer.ceo">대표이사: 김홍진, 원종윤</p>
+            <p data-i18n="footer.address">주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
+            <p data-i18n="footer.phone">전화: 02-3400-7247</p>
+            <p data-i18n="footer.email">이메일: contact@hicare.co.kr</p>
           </address>
         </div>
 
         <div>
-          <h4 class="text-sm font-semibold text-white mb-4">바로가기</h4>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.quicklinks_title">바로가기</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors">회사소개</a></li>
-            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors">사업영역</a></li>
-            <li><a href="technology.html" class="text-neutral-400 hover:text-white transition-colors">기술</a></li>
-            <li><a href="global.html" class="text-neutral-400 hover:text-white transition-colors">글로벌 실적</a></li>
-            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors">채용</a></li>
-            <li><a href="ir.html" class="text-neutral-400 hover:text-white transition-colors">IR/뉴스</a></li>
-            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.about">회사소개</a></li>
+            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.business">사업영역</a></li>
+            <li><a href="technology.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.technology">기술</a></li>
+            <li><a href="global.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
+            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.careers">채용</a></li>
+            <li><a href="ir.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.ir">IR/뉴스</a></li>
+            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.faq">FAQ</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-sm font-semibold text-white mb-4">법적 고지</h4>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.legal_title">법적 고지</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors">개인정보처리방침</a></li>
-            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors">이용약관</a></li>
-            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
+            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.us_site">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
           </ul>
           <div class="flex flex-wrap gap-2 mt-5">
             <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">HIPAA</span>
