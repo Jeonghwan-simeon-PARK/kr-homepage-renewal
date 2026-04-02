@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "generated_by": "data-integrator",
+    "generated_date": "2026-04-02",
+    "purpose": "UPDATES to existing keys in en.json. Replace these values.",
+    "source": "copy-writer output (03_copy_home_hero.md, 03_copy_rpm.md, 03_copy_ccm.md, 03_copy_awv.md, 03_copy_vbc.md)",
+    "rationale": "Shift messaging from technology/feature-centric to outcome/revenue-centric per Vivify Health patterns"
+  },
+
+  "home": {
+    "hero": {
+      "headline": "Reduce Readmissions. Increase Revenue. Simplify Care Management.",
+      "subtext": "RPM, CCM, APCM, AWV, and Value-Based Care on one platform. 120+ device integrations. Multilingual support in English, Korean, and Spanish. Trusted by 40+ US hospitals.",
+      "cta_primary": "Book a Demo",
+      "cta_secondary": "Explore Solutions"
+    },
+    "solutions": {
+      "eyebrow": "Our Solutions",
+      "title": "Comprehensive Care Management, From Prevention to Performance",
+      "description": "From Remote Patient Monitoring to Value-Based Care -- a single platform with RPM, CCM, APCM, AWV, HRA, and VBC solutions serving 40+ US hospitals and 3,000+ enrolled patients.",
+      "rpm_title": "Remote Patient Monitoring",
+      "rpm_desc": "120+ devices, 3 languages, automated billing -- reduce readmissions while generating Medicare revenue",
+      "ccm_title": "Chronic Care Management",
+      "ccm_desc": "Multilingual care coordination with automated time tracking -- the only CCM platform serving diverse communities",
+      "awv_title": "Annual Wellness Visits & HRA",
+      "awv_desc": "Digital multilingual HRA and automated component tracking -- turn wellness visits into care management revenue",
+      "vbc_title": "Value-Based Care",
+      "vbc_desc": "Dual revenue strategy -- earn FFS reimbursement today while building quality scores for VBC incentives"
+    },
+    "cta": {
+      "headline": "Ready to Transform Your Practice?",
+      "subtext": "From remote monitoring to value-based care performance, HicareNet supports every step. See how 40+ US hospitals use our platform to improve outcomes and grow revenue.",
+      "cta_primary": "Book a Demo",
+      "cta_secondary": "Contact Sales"
+    }
+  },
+
+  "solutions": {
+    "hero": {
+      "headline": "Care Management Solutions That Pay for Themselves",
+      "subtext": "RPM, CCM, APCM, AWV, HRA, and Value-Based Care on a single multilingual platform. Proven across 40+ US hospitals with 120+ device integrations.",
+      "cta": "Book a Demo"
+    },
+    "rpm": {
+      "eyebrow": "Solution",
+      "title": "Remote Patient Monitoring (RPM)",
+      "description": "Remote Patient Monitoring helps you catch clinical changes before they become emergencies. With 120+ device integrations, multilingual patient engagement, and automated billing support, HicareNet's RPM turns continuous monitoring into better outcomes and new revenue.",
+      "feature1": "120+ FDA-approved medical devices -- no proprietary kits, no vendor lock-in",
+      "feature2": "Multilingual patient app in English, Korean, and Spanish (no competitor offers this)",
+      "feature3": "Automated alerts, clinical thresholds, and 16-day compliance tracking",
+      "feature4": "Start billing from day one -- automated CPT code mapping and time documentation",
+      "outcome1": "Reduce heart failure readmissions by up to 38% (Lancet 2018)",
+      "outcome2": "Generate $100-147 per patient per month in Medicare RPM revenue",
+      "outcome3": "Serve diverse patient populations with trilingual app support (EN/KR/ES)",
+      "cta": "Book a Free RPM Demo"
+    },
+    "ccm": {
+      "eyebrow": "Solution",
+      "title": "Chronic Care Management (CCM)",
+      "description": "Chronic Care Management coordinates non-face-to-face care for Medicare patients with two or more chronic conditions. HicareNet's CCM platform automates the most burdensome part -- time tracking -- while enabling care teams to engage patients in their preferred language.",
+      "feature1": "Multilingual care coordination (EN/KR/ES) -- the only platform that does this",
+      "feature2": "AI-powered time tracking automation reduces CCM's biggest administrative burden",
+      "feature3": "APCM transition-ready -- evaluate CCM vs APCM for each patient on a single platform",
+      "feature4": "RPM + CCM simultaneous billing for combined revenue on eligible patients",
+      "outcome1": "Serve Korean, Hispanic, and English-speaking patients with native-language care",
+      "outcome2": "Earn $64-194 per patient per month in Medicare CCM reimbursement",
+      "outcome3": "Reduce administrative burden with automated time capture and threshold alerts",
+      "cta": "Book a Free CCM Demo"
+    },
+    "awv": {
+      "eyebrow": "Solution",
+      "title": "Annual Wellness Visits & HRA",
+      "description": "Medicare Annual Wellness Visits provide direct reimbursement of $118-175 per visit -- but their real value lies in discovering patients who qualify for RPM, CCM, and APCM. HicareNet streamlines all 8 required AWV components with digital pre-visit HRA and automated checklist tracking.",
+      "feature1": "Digital pre-visit HRA -- patients complete assessments via mobile app before their visit",
+      "feature2": "All 8 required AWV components tracked with automated checklist",
+      "feature3": "AWV-to-RPM/CCM/APCM auto-linkage identifies enrollment opportunities",
+      "feature4": "Multilingual AWV support -- HRA, prevention plans, and screening in EN/KR/ES",
+      "outcome1": "Increase AWV completion rates with pre-visit digital HRA distribution",
+      "outcome2": "Unlock $2,500+ in annual per-patient revenue through downstream enrollment",
+      "outcome3": "Capture preventive care revenue with G0438/G0439/G0402 billing",
+      "cta": "Book a Free AWV Demo"
+    },
+    "vbc": {
+      "eyebrow": "Strategic Framework",
+      "title": "Value-Based Care",
+      "description": "Value-Based Care is not a separate service -- it is the outcome of everything your practice does with RPM, CCM, APCM, and AWV data. HicareNet connects the dots: every blood pressure reading, every care plan update, and every wellness visit feeds directly into your quality scores and financial performance.",
+      "feature1": "Dual revenue strategy: FFS billing today + VBC incentives tomorrow",
+      "feature2": "Automatic quality measure mapping across HEDIS, Stars, MIPS, and eCQM",
+      "feature3": "Real-time quality dashboards for MIPS scores, HEDIS gaps, and Stars performance",
+      "feature4": "Multilingual care drives health equity and CAHPS patient experience improvement",
+      "outcome1": "Improve quality scores across HEDIS, Stars, and MIPS measures",
+      "outcome2": "Maximize shared savings and incentive payments in ACO/MSSP programs",
+      "outcome3": "Support small practice VBC readiness with integrated population health tools",
+      "cta": "Book a Free VBC Demo"
+    },
+    "cta": {
+      "headline": "Ready to Get Started?",
+      "subtext": "See how HicareNet's care management platform can improve outcomes and increase revenue for your practice.",
+      "cta_primary": "Book a Demo",
+      "cta_secondary": "Contact Sales"
+    }
+  }
+}

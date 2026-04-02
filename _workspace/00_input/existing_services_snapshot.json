@@ -1,0 +1,52 @@
+{
+  "snapshot_date": "2026-04-02",
+  "current_services": [
+    {
+      "id": "rpm",
+      "slug": "remote-patient-monitoring",
+      "cpt_codes": ["99453", "99454", "99457", "99458"],
+      "features_count": 4,
+      "outcomes_count": 3,
+      "status": "exists_complete"
+    },
+    {
+      "id": "ccm",
+      "slug": "chronic-care-management",
+      "cpt_codes": ["99490", "99491", "99487", "99489"],
+      "features_count": 4,
+      "outcomes_count": 3,
+      "status": "exists_complete"
+    },
+    {
+      "id": "awv",
+      "slug": "annual-wellness-visits",
+      "cpt_codes": ["G0438", "G0439"],
+      "features_count": 4,
+      "outcomes_count": 3,
+      "status": "exists_complete"
+    },
+    {
+      "id": "vbc",
+      "slug": "value-based-care",
+      "cpt_codes": [],
+      "features_count": 4,
+      "outcomes_count": 3,
+      "status": "exists_complete"
+    }
+  ],
+  "missing_services": [
+    {
+      "id": "apcm",
+      "note": "APCM (Advanced Primary Care Management) - 완전 누락. G0556 코드 기반 CMS CY2025 신규 서비스",
+      "priority": "CRITICAL"
+    },
+    {
+      "id": "hra",
+      "note": "HRA (Health Risk Assessment) - AWV 하위 기능으로만 언급. 독립 서비스로 격상 필요",
+      "priority": "HIGH"
+    }
+  ],
+  "navigation_services": ["rpm", "ccm", "awv", "vbc", "fhir"],
+  "i18n_solution_keys": ["rpm", "ccm", "awv", "vbc"],
+  "i18n_missing_keys": ["apcm", "hra"]
+}

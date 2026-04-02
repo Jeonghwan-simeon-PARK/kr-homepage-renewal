@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "generated_by": "data-integrator",
+    "generated_date": "2026-04-02",
+    "purpose": "UPDATES to existing keys in ko.json. 1:1 parity with 03_i18n_en_updates.json.",
+    "source": "copy-writer output (03_copy_home_hero.md, 03_copy_rpm.md, 03_copy_ccm.md, 03_copy_awv.md, 03_copy_vbc.md)",
+    "rationale": "Shift messaging from technology/feature-centric to outcome/revenue-centric per Vivify Health patterns"
+  },
+
+  "home": {
+    "hero": {
+      "headline": "재입원 감소. 수익 증가. 케어 관리 간소화.",
+      "subtext": "RPM, CCM, APCM, AWV, 가치기반진료를 하나의 플랫폼에서. 120종 이상 의료기기 연동. 영어, 한국어, 스페인어 다국어 지원. 미국 40개 이상 병원이 신뢰합니다.",
+      "cta_primary": "데모 예약하기",
+      "cta_secondary": "솔루션 살펴보기"
+    },
+    "solutions": {
+      "eyebrow": "솔루션",
+      "title": "예방부터 성과까지, 종합 케어 관리",
+      "description": "원격환자모니터링에서 가치기반진료까지 -- RPM, CCM, APCM, AWV, HRA, VBC 솔루션을 단일 플랫폼에서 제공합니다. 미국 40개 이상 병원, 3,000명 이상 등록 환자에 서비스 중.",
+      "rpm_title": "원격환자모니터링 (RPM)",
+      "rpm_desc": "120종 이상 기기, 3개 언어, 자동 청구 -- 재입원 감소와 메디케어 수익 확보",
+      "ccm_title": "만성질환관리 (CCM)",
+      "ccm_desc": "자동 시간 추적과 다국어 케어 조율 -- 다양한 커뮤니티를 위한 유일한 CCM 플랫폼",
+      "awv_title": "연간건강검진 & HRA",
+      "awv_desc": "디지털 다국어 HRA와 자동 항목 추적 -- 건강검진을 케어 관리 수익으로 전환",
+      "vbc_title": "가치기반진료 (VBC)",
+      "vbc_desc": "이중 수익 전략 -- 행위별 수가 확보와 VBC 인센티브 품질 점수 동시 구축"
+    },
+    "cta": {
+      "headline": "의료기관의 변화를 시작할 준비가 되셨나요?",
+      "subtext": "원격 모니터링부터 가치기반진료 성과까지, 하이케어넷이 모든 단계를 지원합니다. 40개 이상 미국 병원이 당사 플랫폼으로 성과를 개선하고 수익을 증대하는 방법을 확인하세요.",
+      "cta_primary": "데모 예약하기",
+      "cta_secondary": "영업팀 문의"
+    }
+  },
+
+  "solutions": {
+    "hero": {
+      "headline": "스스로 비용을 충당하는 케어 관리 솔루션",
+      "subtext": "RPM, CCM, APCM, AWV, HRA, 가치기반진료를 단일 다국어 플랫폼에서 제공합니다. 미국 40개 이상 병원에서 검증, 120종 이상 의료기기 연동.",
+      "cta": "데모 예약"
+    },
+    "rpm": {
+      "eyebrow": "솔루션",
+      "title": "원격환자모니터링 (RPM)",
+      "description": "원격환자모니터링은 임상 변화를 응급 상황으로 진행되기 전에 감지합니다. 120종 이상 의료기기 연동, 다국어 환자 참여, 자동화된 청구 지원으로, 하이케어넷 RPM은 지속적 모니터링을 더 나은 성과와 새로운 수익으로 전환합니다.",
+      "feature1": "120종 이상 FDA 승인 의료기기 -- 독점 키트 없이, 벤더 종속 없이 연동",
+      "feature2": "영어, 한국어, 스페인어 다국어 환자 앱 (경쟁사 중 유일)",
+      "feature3": "자동화된 알림, 임상 기준치, 16일 규칙 준수 추적",
+      "feature4": "첫 날부터 청구 시작 -- 자동 CPT 코드 매핑과 시간 문서화",
+      "outcome1": "심부전 재입원율 최대 38% 감소 (Lancet 2018)",
+      "outcome2": "메디케어 RPM 수가로 환자당 월 $100-147 수익 창출",
+      "outcome3": "3개 국어 앱 지원(영어/한국어/스페인어)으로 다양한 환자 커뮤니티 서비스",
+      "cta": "RPM 무료 데모 예약"
+    },
+    "ccm": {
+      "eyebrow": "솔루션",
+      "title": "만성질환관리 (CCM)",
+      "description": "만성질환관리(CCM)는 2개 이상 만성질환을 가진 메디케어 환자를 위한 비대면 케어 조율 서비스입니다. 하이케어넷 CCM 플랫폼은 가장 부담이 큰 시간 추적을 자동화하고, 환자가 선호하는 언어로 소통할 수 있게 합니다.",
+      "feature1": "다국어 케어 조율 (영어/한국어/스페인어) -- 이를 지원하는 유일한 플랫폼",
+      "feature2": "AI 기반 시간 추적 자동화로 CCM 최대 행정 부담 해소",
+      "feature3": "APCM 전환 준비 완료 -- 각 환자별 CCM vs APCM을 단일 플랫폼에서 비교 평가",
+      "feature4": "RPM + CCM 동시 청구로 대상 환자에 대한 통합 수익 확보",
+      "outcome1": "한국어, 스페인어, 영어 환자에게 모국어 케어 서비스 제공",
+      "outcome2": "메디케어 CCM 수가로 환자당 월 $64-194 수익 창출",
+      "outcome3": "자동화된 시간 추적 및 기준치 알림으로 행정 부담 경감",
+      "cta": "CCM 무료 데모 예약"
+    },
+    "awv": {
+      "eyebrow": "솔루션",
+      "title": "연간건강검진 & HRA",
+      "description": "메디케어 연간건강검진(AWV)은 방문당 $118-175의 직접 수가를 제공하지만, 진정한 가치는 RPM, CCM, APCM 대상 환자를 발굴하는 데 있습니다. 하이케어넷은 디지털 사전 방문 HRA와 자동 체크리스트로 8가지 필수 AWV 항목을 간소화합니다.",
+      "feature1": "디지털 사전 방문 HRA -- 환자가 방문 전 모바일 앱으로 평가를 완료합니다",
+      "feature2": "8가지 필수 AWV 항목을 자동 체크리스트로 추적",
+      "feature3": "AWV에서 RPM/CCM/APCM 등록 기회를 자동 식별하는 연계 기능",
+      "feature4": "다국어 AWV 지원 -- HRA, 예방 계획, 검사를 영어/한국어/스페인어로 제공",
+      "outcome1": "방문 전 디지털 HRA 배포로 AWV 완료율 향상",
+      "outcome2": "후속 서비스 등록을 통해 연간 환자당 $2,500 이상 수익 기회 발굴",
+      "outcome3": "G0438/G0439/G0402 청구로 예방 케어 수익 확보",
+      "cta": "AWV 무료 데모 예약"
+    },
+    "vbc": {
+      "eyebrow": "전략 프레임워크",
+      "title": "가치기반진료 (VBC)",
+      "description": "가치기반진료(VBC)는 별도의 서비스가 아니라, RPM, CCM, APCM, AWV 데이터가 만들어내는 결과입니다. 하이케어넷이 점을 연결합니다: 모든 혈압 측정값, 모든 케어 플랜 업데이트, 모든 건강검진이 품질 점수와 재무 성과에 직접 반영됩니다.",
+      "feature1": "이중 수익 전략: 오늘 FFS 청구 + 내일 VBC 인센티브",
+      "feature2": "HEDIS, Stars, MIPS, eCQM 전반의 자동 품질 지표 매핑",
+      "feature3": "MIPS 점수, HEDIS 갭, Stars 성과를 실시간 품질 대시보드로 확인",
+      "feature4": "다국어 케어가 건강 형평성 및 CAHPS 환자 경험 개선을 이끕니다",
+      "outcome1": "HEDIS, Stars, MIPS 품질 점수 전반 개선",
+      "outcome2": "ACO/MSSP 프로그램의 공유절감액 및 인센티브 지급 극대화",
+      "outcome3": "통합 인구 건강 도구로 소규모 의원의 VBC 준비 지원",
+      "cta": "VBC 무료 데모 예약"
+    },
+    "cta": {
+      "headline": "시작할 준비가 되셨나요?",
+      "subtext": "하이케어넷의 케어 관리 플랫폼이 의료기관의 성과를 개선하고 수익을 증대하는 방법을 확인하세요.",
+      "cta_primary": "데모 예약하기",
+      "cta_secondary": "영업팀 문의"
+    }
+  }
+}

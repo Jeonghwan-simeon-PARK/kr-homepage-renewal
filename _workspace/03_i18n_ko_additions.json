@@ -1,0 +1,297 @@
+{
+  "_meta": {
+    "generated_by": "data-integrator",
+    "generated_date": "2026-04-02",
+    "purpose": "New keys to ADD to ko.json. 1:1 parity with 03_i18n_en_additions.json.",
+    "source": "copy-writer output (03_copy_*.md) + research briefs",
+    "total_keys": 95
+  },
+
+  "nav": {
+    "solutions": {
+      "apcm": "APCM",
+      "awv_hra": "AWV & HRA"
+    },
+    "audiences": {
+      "_label": "서비스 대상",
+      "small_clinics": "소규모 클리닉 & 의원",
+      "community_health": "커뮤니티 건강센터",
+      "fqhc": "FQHC (연방지정 건강센터)",
+      "va_government": "VA & 정부기관"
+    },
+    "resources": {
+      "case_studies": "사례 연구",
+      "billing_guides": "청구 가이드",
+      "device_catalog": "디바이스 카탈로그"
+    },
+    "cta_demo": "데모 예약"
+  },
+
+  "home": {
+    "solutions": {
+      "apcm_title": "차세대 케어 관리 (APCM)",
+      "apcm_desc": "CMS의 간소화 청구 체계, 시간 추적 불필요 -- 확대된 대상, 2개 코드, RPM 동시 청구",
+      "hra_title": "건강위험평가",
+      "hra_desc": "AI 기반 다국어 평가로 RPM, CCM, APCM 등록 대상 환자 발굴",
+      "fhir_title": "FHIR 연동",
+      "fhir_desc": "120종 이상 기기 데이터를 FHIR R4로 EHR에 전달 -- 2026년 상반기 출시 예정"
+    },
+    "apcm_spotlight": {
+      "badge": "신규",
+      "headline": "APCM 출시: CMS의 간소화된 케어 관리 수익 경로",
+      "body": "시간 추적 불필요. 확대된 환자 대상. 2개의 간단한 코드. APCM이 케어 관리 청구를 어떻게 바꾸는지 알아보세요.",
+      "cta": "APCM 알아보기"
+    }
+  },
+
+  "solutions": {
+    "apcm": {
+      "eyebrow": "2025년 신규 프로그램",
+      "title": "선진 1차진료 관리 (APCM)",
+      "description": "APCM(Advanced Primary Care Management)은 2025년 CMS가 도입한 차세대 케어 관리 청구 체계입니다. 2개 코드, 시간 추적 불필요, 확대된 환자 대상 -- 행정 부담은 줄이고 케어 관리 수익은 넓혀줍니다.",
+      "hero_headline": "APCM 시대가 열렸습니다: 더 간편한 청구, 더 넓은 환자 범위",
+      "hero_subtext": "CMS의 새로운 APCM 프로그램은 시간 추적을 폐지하고, 만성질환 1개 이상 환자로 대상을 확대하며, RPM과 동시 청구로 수익을 극대화합니다.",
+      "what_is": {
+        "title": "APCM이란?",
+        "desc": "APCM(Advanced Primary Care Management)은 CY2025 의사 수가표 최종 규칙에 따라 2025년 1월 1일부터 시행된 CMS의 새로운 케어 관리 프로그램입니다. 기존 CCM/PCM/BHI 코드 체계를 간소화된 2단계 구조로 대체합니다."
+      },
+      "tier1": {
+        "title": "Tier 1 (G0556)",
+        "desc": "3개월 이상 지속되는 만성질환 1개 이상 보유 환자 대상. CCM의 2개 이상 조건 요구 대비 자격 요건이 확대되었습니다.",
+        "rate": "[ESTIMATED] 월 ~$70-83"
+      },
+      "tier2": {
+        "title": "Tier 2 (G0557)",
+        "desc": "12개월 이상 지속되는 만성질환 2개 이상 보유 환자, 또는 포괄적 관리가 필요한 고위험 단일 만성질환 환자 대상.",
+        "rate": "[ESTIMATED] 월 ~$115-135"
+      },
+      "vs_ccm": {
+        "title": "CCM vs APCM: 무엇이 달라지나요?",
+        "desc": "APCM은 시간 추적을 제거하고, 청구 코드를 2개로 간소화하며, 만성질환 1개 이상 환자로 자격을 확대합니다. CCM을 유지하든 APCM으로 전환하든, 하이케어넷은 두 가지 모두 지원합니다."
+      },
+      "billing": {
+        "title": "APCM 청구 개요",
+        "no_time_tracking": "분 단위 시간 추적 불필요",
+        "simultaneous_rpm": "APCM + RPM 동시 청구로 수익 극대화",
+        "monthly_billing": "월 단위 간편 청구 (달력 기준 월)",
+        "consent_required": "환자 동의 필요 (구두 또는 서면)",
+        "note": "APCM은 시간 추적 없이 2개 코드로 월별 청구합니다. CCM(99490-99489)과 동시 청구는 불가하지만, RPM(99453-99458), AWV(G0438/G0439), E/M 코드와는 동시 청구가 가능합니다. 최신 수가는 CMS에서 확인하세요."
+      },
+      "feature1": "분 단위 시간 추적 완전 폐지 -- CCM 최대 행정 부담을 APCM이 해결합니다",
+      "feature2": "ICD-10 코드 분석으로 AI 자동 Tier 1/Tier 2 환자 분류",
+      "feature3": "단일 플랫폼에서 APCM + RPM 동시 청구",
+      "feature4": "다국어 APCM 동의서 및 케어 조율 -- 영어, 한국어, 스페인어 지��",
+      "outcome1": "Tier 1(만성질환 1개 이상)으로 대상 환자 풀 확대",
+      "outcome2": "간소화된 청구로 환자당 월 $70-135 수익 창출",
+      "outcome3": "분 단위 시간 추적 제거로 행정 ���담 대폭 경감",
+      "cta": "APCM 시작하기",
+      "cta_guide": "CCM vs APCM 비교 가이드 다운로드",
+      "cta_section": {
+        "heading": "케어 관리 청구를 간소화할 준비가 되셨나요?",
+        "body": "CCM에서 전환하거나 APCM을 새롭게 도입하든, 하이케어넷은 하나의 플랫폼에서 두 프로그램을 모두 지원합니다. APCM이 환자 범위를 넓히고 행정 부담을 줄이는 방법을 확인하��요."
+      },
+      "workflow": {
+        "title": "APCM 작동 방식",
+        "step1_title": "환자 식별",
+        "step1_desc": "ICD-10 검토, 메디케어 파트 B 자격 확인, Tier 1 vs Tier 2 분류",
+        "step2_title": "동의 및 등록",
+        "step2_desc": "APCM 서비스 설명, 구두 또는 서면 동의 획득, EHR에 기록",
+        "step3_title": "케어 플랜 수립",
+        "step3_desc": "건강 평가, 질환별 목표 설정, 약물 관리, 전문의 협진 조율",
+        "step4_title": "월별 케어 관리",
+        "step4_desc": "환자 모니터링, 케어 플랜 검토, 커뮤니케이션 -- 분 단위 시간 추적 불필요",
+        "step5_title": "문서화 및 청구",
+        "step5_desc": "서비스 요약, 티어 분류 문서화, 월별 G0556/G0557 청구서 제출"
+      },
+      "related": {
+        "ccm": "이미 CCM을 사용 중이신가요? 옵션을 비교하고 APCM 전환을 검토하세요",
+        "rpm": "RPM + APCM 동시 청구로 환자당 최대 수익 실현",
+        "hra": "HRA 결과가 APCM Tier 분류 및 케어 플랜 수립을 지원합니다",
+        "awv": "AWV에서 만성질환을 가진 APCM 대상 환자를 발견합니다",
+        "vbc": "APCM의 포괄적 케어 관리가 VBC 품질 지표를 직접 개선합니다"
+      }
+    },
+    "hra": {
+      "eyebrow": "환자 발굴",
+      "title": "건강위험평가 (HRA)",
+      "description": "건강위험평가는 메디케어 필수 항목 그 이상입니다. 하이케어넷의 디지털 HRA 플랫폼이 고위험 환자를 식별하고, 케어 경로를 추천하며, RPM, CCM, APCM 등록 파이프라인에 자동으로 연결합니다. 3개 언어로 제공됩니다.",
+      "hero_headline": "모든 건강위험평가를 케어 관리 기회로 전환하세요",
+      "hero_subtext": "디지털 다국어 건강위험평가(HRA)가 RPM, CCM, APCM 등록 대상 환자를 식별합니다. 한 번의 선별검사가 케어 관리 수익의 시작점이 됩니다.",
+      "pipeline": {
+        "title": "환자 발굴 엔진",
+        "desc": "HRA는 고수익 케어 관리 서비스 대상 환자를 식별하는 관문입니다. 모든 평가 결과가 등록 기회로 연결됩니다.",
+        "rpm_link": "고혈압/당뇨 위험 식별 -- RPM 등록 (월 ~$147)",
+        "ccm_link": "2개 이상 만성질환 발견 -- CCM/APCM 등록 (월 ~$64-135)",
+        "apcm_link": "HRA 결과가 APCM Tier 1/Tier 2 분류를 지원합니다"
+      },
+      "tools": {
+        "title": "평가 도구",
+        "phq9": "PHQ-9 우울증 선별검사",
+        "gad7": "GAD-7 불안장애 선별검사",
+        "falls": "낙상 위험 평가",
+        "sdoh": "건강의 사회적 결정 요인 선별검사 (AHC-HRSN)",
+        "nutrition": "영양 상태 평가",
+        "cognitive": "인지 기능 평가 (MMSE/MoCA)",
+        "adl": "일상생활 수행능력 평가 (ADL/IADL)"
+      },
+      "multilingual": {
+        "title": "다국어 디지털 평가",
+        "desc": "영어, 한국어, 스페인어로 제공되는 문화적으로 검증된 건강위험평가. PHQ-9 한국어 검증 버전을 포함한 표준화된 선별 도구."
+      },
+      "digital": {
+        "title": "디지털 우선 HRA",
+        "privisit": "방문 전 환자 앱을 통한 디지털 HRA 배포로 진료실 내 소요 시간 15-20분 단축",
+        "voice_guided": "읽기 능력이 제한된 고령 환자를 위한 음성 안내 평가"
+      },
+      "feature1": "고수익 서비스 대상 환자 식별 -- HRA 결과가 RPM, CCM, APCM 등록 후보를 자동으로 표시합니다",
+      "feature2": "다국어 디지털 평가 -- PHQ-9, GAD-7, 낙상 위험, SDOH 선별검사를 영어, 한국어, 스페인어로 제공합니다",
+      "feature3": "사전 방문 디지털 배포 -- 환자가 방문 전 모바일 앱으로 HRA를 완료하여 원내 소요 시간을 줄입니다",
+      "feature4": "AI 기반 위험도 평가 -- 자동 위험 계층화와 케어 경로 추천을 제공합니다",
+      "outcome1": "후속 RPM/CCM/APCM 등록을 통해 연간 환자당 $2,000 이상 수익 창출",
+      "outcome2": "방문 전 디지털 HRA 배포로 AWV 완료율 향상",
+      "outcome3": "고위험 환자를 자동 식별하여 즉시 케어 관리 등록",
+      "cta": "HRA 시작하기",
+      "cta_section": {
+        "heading": "지금 바로 고가치 환자를 발굴하세요",
+        "body": "하이케어넷의 디지털 HRA는 모든 평가를 실행 가능한 케어 플랜으로 전환합니다. 다국어, AI 기반 건강위험평가가 RPM과 CCM 등록 파이프라인을 채우는 방법을 확인하세요."
+      },
+      "billing": {
+        "code_96160": "96160 -- 환자 중심 건강위험평가 도구",
+        "code_96161": "96161 -- 보호자 중심 건강위험평가 도구",
+        "note": "독립 HRA 수가(96160/96161)는 소액이지만, HRA의 진정한 가치는 고수익 서비스의 관문에 있습니다. 한 번의 HRA가 연간 $1,700 이상 수익을 창출할 수 있는 RPM, CCM, APCM 대상 환자를 발굴합니다."
+      }
+    },
+    "rpm": {
+      "billing": {
+        "title": "RPM 청구 코드 및 수가",
+        "code_99453": "99453 -- 초기 디바이스 설정 및 환자 교육 (환자당 1회)",
+        "code_99454": "99454 -- 일일 기록이 포함된 디바이스 공급, 30일 기준 (16일 규칙)",
+        "code_99457": "99457 -- 치료 관리, 첫 20분 양방향 커뮤니케이션",
+        "code_99458": "99458 -- 치료 관리, 추가 20분 (99457 부가 코드)",
+        "monthly_revenue": "[ESTIMATED] 환자당 최대 월 ~$147 (99454 + 99457 + 99458)",
+        "note": "RPM은 30일 중 최소 16일 데이터 전송이 필요합니다(99454). 99457/99458은 실시간 양방향 소통이 필수입니다. RPM은 CCM, APCM, AWV 코드와 동시 청구 가능합니다. 같은 달에 99091과는 동시 청구할 수 없습니다."
+      },
+      "related": {
+        "ccm": "수익 극대화: RPM + CCM 동시 청구로 환자당 최대 ~$211/월",
+        "apcm": "RPM + APCM: 2025년 새로운 수익 조합",
+        "awv": "연간건강검진(AWV)에서 RPM 대상 환자를 발견하세요",
+        "hra": "건강위험평가(HRA)로 RPM 혜택이 가장 큰 환자를 식별합니다",
+        "vbc": "RPM 데이터가 HEDIS 혈압 및 당뇨 품질 지표를 직접 개선합니다",
+        "fhir": "2026년 상반기 출시 예정: FHIR R4를 통한 원활한 EHR 연동"
+      },
+      "cta_section": {
+        "heading": "RPM이 재입원을 줄이고 수익을 높이는 방법을 확인하세요",
+        "body": "기기 설정부터 청구까지 -- 하이케���넷 RPM은 하나의 플랫폼에서 전체 워크플로를 지원합니다. 120종 이상 기기를 연동하고, 환자 모국어로 참여를 유도하며, 메디케어 수가를 확보하세요."
+      }
+    },
+    "ccm": {
+      "billing": {
+        "title": "CCM 청구 코드 및 수가",
+        "code_99490": "99490 -- 기본 CCM, 임상 직원 (월 20분 이상)",
+        "code_99491": "99491 -- 의사/QHP 직접 CCM (월 30분 이상)",
+        "code_99487": "99487 -- 복합 CCM, 임상 직원 (월 60분 이상)",
+        "code_99489": "99489 -- 복합 CCM 부가 코드 (추가 30분 이상, 99487과 함께)",
+        "monthly_scenarios": "[ESTIMATED] 환자당 월 $64 (기본) ~ $194 (복합 + 부가)",
+        "note": "CCM은 분 단위 시간 추적과 24시간 환자 접근 보장이 필요합니다. 전자 케어 플랜을 EHR에 저장해야 합니다. APCM(G0556) 또는 PCM(99424-99427)과 동시 청구는 불가하지만, RPM(99453-99458)과는 동시 청구가 가능합니다."
+      },
+      "apcm_transition": {
+        "title": "APCM 전환을 고려하고 계신가요?",
+        "desc": "CMS는 2025년 CCM의 간소화된 대안으로 APCM을 출시했습니다. 시간 추적 불필요, 확대된 환자 대상, 2개의 간단한 코드. 하이케어넷은 CCM과 APCM을 모두 지원합니다. 환자 패널에 맞는 옵션을 비교하고 준비되면 전환하세요.",
+        "cta": "CCM vs APCM 비교하기"
+      },
+      "related": {
+        "rpm": "RPM + CCM 동시 청구로 환자당 최대 수익 달성",
+        "apcm": "APCM을 고려 중이신가요? 귀 의원에 적합한 CCM vs APCM 비교",
+        "awv": "AWV에서 만성질환 2개 이상 보유 CCM 대상 환자를 식별합니다",
+        "hra": "HRA 결과가 CCM 케어 플랜에 직접 반영됩니다",
+        "vbc": "CCM은 가치기반진료 품질 개선의 핵심입니다"
+      },
+      "cta_section": {
+        "heading": "환자의 모국어로 만성질환을 관리할 준비가 되셨나요?",
+        "body": "하이케어넷은 영어, 한국어, 스페인어 네이티브 케어 조율을 제공하는 유일한 CCM 플랫폼입니다. 자동화된 시간 추적과 다국어 지원이 부담을 줄이고 환자 참여를 높이는 방법을 확인하세요."
+      }
+    },
+    "awv": {
+      "billing": {
+        "title": "AWV 청구 코드 및 수가",
+        "code_g0438": "G0438 -- 초기 연간건강검진 (첫 번째 AWV)",
+        "code_g0439": "G0439 -- 후속 연간건강검진 (매년)",
+        "code_g0402": "G0402 -- 초기 예방 건강검사 / IPPE (평생 1회)",
+        "no_patient_cost": "환자 부담 없음 -- AWV는 건강보험개혁법(ACA)에 따라 무료입니다",
+        "note": "AWV는 ACA 예방 서비스로 환자 부담금이 없습니다. CCM/APCM 개시 방문으로 활용 가능합니다. 별도 임상 문제에 대해 Modifier 25로 같은 날 E/M 청구가 가능합니다. AWV 간 최소 12개월 간격이 필요합니다."
+      },
+      "components": {
+        "title": "AWV 필수 구성요소",
+        "hra": "건강위험평가 (HRA)",
+        "cognitive": "인지 기능 평가",
+        "depression": "우울증 선별검사 (PHQ-2/PHQ-9)",
+        "functional": "기능적 능력 및 안전 평가",
+        "ppps": "맞춤형 예방 서비스 계획 (PPPS)"
+      },
+      "pipeline": {
+        "title": "AWV: 케어 관리의 관문",
+        "rpm_link": "만성질환 환자를 발견하여 RPM 등록 (연간 ~$1,764)",
+        "ccm_link": "2개 이상 만성질환 환자를 식별하여 CCM/APCM 등록 (연간 ~$768-1,620)",
+        "apcm_link": "연간건강검진에서 APCM 대상 환자를 발견합니다",
+        "revenue_potential": "[ESTIMATED] 1회 AWV 방문($118-175)으로 연간 환자당 $2,500 이상의 수익 기회 발굴"
+      },
+      "recall": {
+        "title": "자동 AWV 리콜 관리",
+        "desc": "12개월 자동 리콜 알림으로 전체 환자 패널의 AWV 완료율을 극��화합니다"
+      },
+      "related": {
+        "hra": "디지털 HRA는 AWV 필수 구성요소 -- 방문 전 미리 완료하세요",
+        "rpm": "AWV에서 만성질환 보유 환자를 식별하여 RPM에 등록합니다",
+        "ccm": "AWV를 CCM 개시 방문으로 활용 (같은 날 청구 가능)",
+        "apcm": "연간건강검진에서 APCM 대상 환자를 발견합니다",
+        "vbc": "AWV 완료율이 Stars/HEDIS 예방 서비스 지표에 직접 영향을 줍니다"
+      },
+      "cta_section": {
+        "heading": "건강검진을 케어 관리 수익으로 전환하세요",
+        "body": "하이케어넷 AWV 솔루션은 모든 필수 항목을 자동화하고 환자를 RPM, CCM, APCM 서비스에 연결합니다. 디지털 다국어 AWV 워크플로가 완료율과 후속 수익을 높이는 방법을 확인하세요."
+      }
+    },
+    "vbc": {
+      "what_is": {
+        "title": "가치기반진료(VBC)란?",
+        "desc": "가치기반진료(VBC)는 별도의 서비스가 아니라, RPM, CCM, APCM, AWV 데이터가 만들어내는 결과입니다. 하이케어넷이 점을 연결합니다: 모든 혈압 측정값, 모든 케어 플랜 업데이트, 모든 건강검진이 품질 점수와 재무 성과에 직접 반영됩니다."
+      },
+      "dual_revenue": {
+        "title": "이중 수익 전략",
+        "ffs": "RPM/CCM/APCM 행위별수가(FFS) 청구로 즉각적 수익 확보",
+        "incentives": "동시에 VBC 공유절감액, MIPS 보너스, Stars 품질 인센티브 구축"
+      },
+      "models": {
+        "title": "지원 VBC 모델",
+        "mips": "MIPS -- 성과기반 인센티브 지불 시스템 (메디케어 수가 +/-9% 조정)",
+        "mssp": "MSSP -- 메디케어 공유절감 프로그램 (40-75% 공유절감)",
+        "aco_reach": "ACO REACH -- 건강 형평성 중심 총 의료비 모델",
+        "stars": "MA Stars -- 4성급 이상 메디케어 어드밴티지 플랜 품질 보너스"
+      },
+      "quality": {
+        "title": "하이케어넷이 개선하는 품질 지표",
+        "hedis_bp": "고혈압 관리 (HEDIS/Stars) -- RPM 모니터링으로 지원",
+        "hedis_diabetes": "당뇨 HbA1c 관리 (HEDIS/Stars) -- RPM 혈당 데이터로 지원",
+        "readmission": "전체 원인 재입원 (HEDIS/MIPS) -- RPM + CCM/APCM으로 감소",
+        "awv_rate": "AWV 완료율 (Stars) -- AWV/HRA 디지털 워크플로로 향상",
+        "medication": "약물 복용 순응도 (Stars) -- CCM/APCM 약물 관리로 지원"
+      },
+      "equity": {
+        "title": "건강 형평성 및 환자 경험",
+        "desc": "영어, 한국어, 스페인어 다국어 케어가 CAHPS 환자 경험 점수를 개선하고 ACO REACH 건강 형평성 요구사항을 충족합니다."
+      },
+      "related": {
+        "rpm": "RPM 혈압 및 혈당 데이터가 HEDIS 품질 지표를 직접 개선합니다",
+        "ccm": "체계적인 만성질환 관리가 ACO 비용 절감을 이끕니다",
+        "apcm": "APCM은 VBC 품질 기여를 유지하면서 케어 관리를 간소화합니다",
+        "awv": "AWV 완료율은 Stars/HEDIS 예방 서비스의 직접적 지표입니다",
+        "hra": "HRA는 인구 건강 관리의 기초인 위험 계층화를 가능하게 합니다",
+        "fhir": "FHIR 연동으로 ACO와의 원활한 품질 지표 데이터 교환 가능"
+      },
+      "cta_section": {
+        "heading": "지금 바로 가치기반진료 성과를 구축하세요",
+        "body": "모든 RPM 측정값, 모든 CCM 접촉, 모든 AWV 완료가 품질 점수를 향상시킵니다. 하이케어넷의 통합 플랫폼이 즉각적인 수가와 장기적 VBC 성공을 동시에 실현하는 방법을 확인하세요."
+      }
+    }
+  }
+}
