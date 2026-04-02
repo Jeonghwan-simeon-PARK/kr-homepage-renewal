@@ -247,6 +247,9 @@ async function loadTranslations(lang) {
 }
 
 function getNestedValue(obj, path) {
+  // Flat key lookup first (handles "kr.main.hero.headline" as literal key)
+  if (obj.hasOwnProperty(path)) return obj[path];
+  // Fallback to nested object traversal
   return path.split('.').reduce(function (o, k) { return o && o[k]; }, obj);
 }
 
