@@ -257,7 +257,22 @@ function applyTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(function (el) {
     var key = el.getAttribute('data-i18n');
     var val = getNestedValue(translations, key);
-    if (val) el.textContent = val;
+    if (!val) return;
+    // If element has child elements, only replace text nodes to preserve HTML structure
+    if (el.children.length > 0) {
+      var replaced = false;
+      for (var i = 0; i < el.childNodes.length; i++) {
+        var node = el.childNodes[i];
+        if (node.nodeType === 3 && node.textContent.trim()) {
+          node.textContent = val + ' ';
+          replaced = true;
+          break;
+        }
+      }
+      if (!replaced) el.textContent = val;
+    } else {
+      el.textContent = val;
+    }
   });
   document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
     var key = el.getAttribute('data-i18n-placeholder');

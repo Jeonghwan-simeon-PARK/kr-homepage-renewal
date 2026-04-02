@@ -53,9 +53,9 @@
             <span class="text-neutral-300">|</span>
             <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
           </div>
-          <a href="contact.html" class="hidden md:inline-flex items-center gap-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors" data-i18n="nav.contact">
+          <a href="contact.html" class="hidden md:inline-flex items-center gap-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
             <span class="material-symbols-outlined text-lg">mail</span>
-            문의하기
+            <span data-i18n="nav.contact">문의하기</span>
           </a>
           <button id="mobile-toggle" class="lg:hidden p-2 text-neutral-700 hover:text-primary-600" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">
             <span class="material-symbols-outlined text-2xl">menu</span>
@@ -70,9 +70,9 @@
           <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
           <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
           <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스</a>
-          <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700" data-i18n="nav.contact">
+          <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
             <span class="material-symbols-outlined text-lg">mail</span>
-            문의하기
+            <span data-i18n="nav.contact">문의하기</span>
           </a>
           <div class="flex items-center justify-center gap-1 text-sm mt-2">
             <button id="lang-ko-mobile" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
@@ -110,13 +110,13 @@
 
         <!-- A-1: Medicare Background -->
         <div class="bg-neutral-50 border-l-4 border-primary-500 rounded-r-lg p-6 md:p-8 mb-12" data-animate="fade-up">
-          <h3 class="text-lg font-semibold text-neutral-900 mb-4" data-i18n="business.careportal.medicare.title">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-4">
             <span class="material-symbols-outlined text-xl text-primary-600 align-middle mr-1">info</span>
-            Medicare와 원격환자관리
+            <span data-i18n="business.careportal.medicare.title">Medicare와 원격환자관리</span>
           </h3>
           <div class="space-y-3 text-sm md:text-base text-neutral-700 leading-relaxed">
             <p data-i18n="business.careportal.medicare.p1">미국에는 65세 이상 고령자와 특정 장애인을 대상으로 한 공공보험 제도 Medicare가 있습니다. Medicare는 만성질환자의 원격 건강 관리에 대해 보험 수가를 지급합니다.</p>
-            <p data-i18n="business.careportal.medicare.p2"><strong>RPM</strong>(Remote Patient Monitoring, 원격 환자 모니터링)은 환자의 혈압, 혈당 등 생체 데이터를 원격으로 수집하고 분석하는 서비스입니다. <strong>CCM</strong>(Chronic Care Management, 만성질환 관리)은 만성질환자에 대한 비대면 케어 매니지먼트 서비스입니다. 클리닉이 이 서비스를 제공하면, Medicare에 수가를 청구하여 수익을 확보할 수 있습니다.</p>
+            <p data-i18n-html="business.careportal.medicare.p2"><strong>RPM</strong>(Remote Patient Monitoring, 원격 환자 모니터링)은 환자의 혈압, 혈당 등 생체 데이터를 원격으로 수집하고 분석하는 서비스입니다. <strong>CCM</strong>(Chronic Care Management, 만성질환 관리)은 만성질환자에 대한 비대면 케어 매니지먼트 서비스입니다. 클리닉이 이 서비스를 제공하면, Medicare에 수가를 청구하여 수익을 확보할 수 있습니다.</p>
             <p data-i18n="business.careportal.medicare.p3">Care Portal은 이 수가 청구에 필요한 전 과정을 자동화하는 SaaS 플랫폼입니다.</p>
           </div>
         </div>
@@ -273,7 +273,7 @@
         <div class="mb-12">
           <h3 class="text-xl font-semibold text-neutral-900 mb-4" data-animate="fade-up" data-i18n="business.careportal.revenue.title">수익 모델</h3>
           <div class="bg-neutral-50 rounded-2xl p-6 md:p-8 max-w-4xl" data-animate="fade-up" data-animate-delay="100">
-            <p class="text-base text-neutral-700 leading-relaxed mb-4" data-i18n="business.careportal.revenue.desc1">
+            <p class="text-base text-neutral-700 leading-relaxed mb-4" data-i18n-html="business.careportal.revenue.desc1">
               <strong>SaaS 월 구독형 모델</strong>입니다. 클리닉이 하이케어넷에 플랫폼 이용료를 지급합니다. 클리닉은 Care Portal을 활용하여 환자를 관리하고, Medicare에 수가를 청구하여 수익을 확보합니다.
             </p>
             <p class="text-sm text-neutral-600" data-i18n="business.careportal.revenue.desc2">환자 1인당 월 약 $50 수준의 보험수익 창출이 가능합니다(질환별, 서비스별 상이).</p>
@@ -423,7 +423,7 @@
         <!-- Growth Summary -->
         <div class="flex items-center gap-4 bg-neutral-50 rounded-xl p-5 max-w-3xl" data-animate="fade-up">
           <span class="material-symbols-outlined text-2xl text-primary-600">trending_up</span>
-          <p class="text-sm text-neutral-700" data-i18n="business.devices.growth_summary">누적 기기 수출 <strong class="text-primary-700 font-display">14,000대</strong> 이상. 하드웨어와 기기 연동 기술에서 시작하여, 현재는 소프트웨어 플랫폼(Care Portal) 중심으로 사업을 전환했습니다.</p>
+          <p class="text-sm text-neutral-700" data-i18n-html="business.devices.growth_summary">누적 기기 수출 <strong class="text-primary-700 font-display">14,000대</strong> 이상. 하드웨어와 기기 연동 기술에서 시작하여, 현재는 소프트웨어 플랫폼(Care Portal) 중심으로 사업을 전환했습니다.</p>
         </div>
       </div>
     </section>
@@ -521,7 +521,7 @@
           <ul class="space-y-2 text-sm">
             <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
             <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
-            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.us_site">미국 사이트 (hicare.net) <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors"><span data-i18n="footer.us_site">미국 사이트 (hicare.net)</span> <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
           </ul>
           <div class="flex flex-wrap gap-2 mt-5">
             <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">HIPAA</span>
