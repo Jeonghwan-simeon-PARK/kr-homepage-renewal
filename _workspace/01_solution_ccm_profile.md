@@ -34,22 +34,34 @@ CCM은 만성 질환 2개 이상을 가진 Medicare 환자에게 비대면(non-f
 | 코드 | 공식 설명 | 적용 조건 | CY2025 수가 (NF) | CY2025 수가 (F) |
 |------|----------|----------|-----------------|----------------|
 | 99490 | Chronic care management services, at least 20 minutes of clinical staff time directed by a physician or other QHP, per calendar month | 월 20분+ 임상 스태프 시간, 만성질환 2개+ | [UNVERIFIED] ~$64.02 | [UNVERIFIED] ~$40.69 |
+| **99439** | Chronic care management services, each additional 20 minutes of clinical staff time directed by a physician or other QHP, per calendar month | 99490에 대한 **추가 20분** add-on. 월 최대 2회 청구 가능 | [VERIFIED] ~$50 | [VERIFIED] ~$38 |
 | 99491 | Chronic care management services provided personally by a physician or other QHP, at least 30 minutes per calendar month | 월 30분+ 의사/QHP 직접 제공 시간 | [UNVERIFIED] ~$87.67 | [UNVERIFIED] ~$67.26 |
 | 99487 | Complex chronic care management services, at least 60 minutes of clinical staff time directed by a physician or other QHP, per calendar month | 월 60분+ 복합 관리, 의학적 의사결정 포함 | [UNVERIFIED] ~$130.41 | [UNVERIFIED] ~$92.63 |
 | 99489 | Each additional 30 minutes of clinical staff time directed by a physician or other QHP, per calendar month (list separately in addition to code for primary procedure) | 99487에 추가, 30분+ 추가 시간 | [UNVERIFIED] ~$63.43 | [UNVERIFIED] ~$47.77 |
 
 - NF = Non-Facility, F = Facility
-- 수가 출처: CMS CY2025 PFS (추정치)
-- 적용 연도: CY2025
+- 수가 출처: CMS CY2025/CY2026 PFS
+- 적용 연도: CY2025 (99439 수가는 CY2026 검증)
 
 ### 코드별 시간 요건 상세
 
 | 코드 | 시간 요건 | 서비스 제공자 | 복잡도 |
 |------|----------|------------|--------|
 | 99490 | 20분+ / 월 | Clinical staff (QHP 감독) | 기본 |
+| **99439** | **추가 20분씩 / 월 (최대 2회)** | Clinical staff (QHP 감독) | 기본 add-on |
 | 99491 | 30분+ / 월 | QHP 직접 | 기본 (의사 직접) |
 | 99487 | 60분+ / 월 | Clinical staff (QHP 감독) | 복합 |
 | 99489 | 추가 30분+ / 월 | Clinical staff (QHP 감독) | 복합 추가 |
+
+### 99439 상세 — 비복합 CCM 추가 시간 코드
+
+- **99490의 add-on 코드**: 기본 CCM 20분 이후 추가 20분 단위로 청구
+- **월 최대 2회 청구 가능**: 40분 시 1회, 60분 시 2회
+- **수익 시나리오**:
+  - 99490만 (20분+): ~$64/월
+  - 99490 + 99439 x1 (40분+): ~$114/월
+  - 99490 + 99439 x2 (60분+): ~$164/월
+- **99487(복합 CCM)과의 관계**: 99439는 비복합 CCM(99490)의 add-on이므로, 99487(복합 CCM)과 동시 사용 불가. 60분+ 복합 관리는 99487 사용.
 
 ---
 

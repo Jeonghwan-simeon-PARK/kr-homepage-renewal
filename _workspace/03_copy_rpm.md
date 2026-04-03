@@ -43,15 +43,20 @@
 ## CPT Codes Display
 
 - **codes**:
-  | Code | Description | Billing Frequency |
-  |------|-------------|-------------------|
-  | 99453 | Initial device setup and patient education | Once per patient lifetime |
-  | 99454 | Device supply with daily recording, per 30 days | Monthly (16-day transmission rule) |
-  | 99457 | Treatment management, first 20 min interactive communication | Monthly |
-  | 99458 | Treatment management, each additional 20 min | Monthly (add-on to 99457) |
+  | Code | Description | Billing Frequency | Rate (NF) |
+  |------|-------------|-------------------|-----------|
+  | 99453 | Initial device setup and patient education | Once per patient lifetime | ~$19 |
+  | 99454 | Device supply with daily recording, **16-30 days** per 30-day period | Monthly | ~$56 |
+  | **99445** | Device supply with daily recording, **2-15 days** per 30-day period | Monthly (CY2026 NEW) | ~$47-52 |
+  | 99457 | Treatment management, first **20 min** interactive communication | Monthly | ~$50 |
+  | **99470** | Treatment management, first **10 min** interactive communication | Monthly (CY2026 NEW) | ~$26 |
+  | 99458 | Treatment management, each additional 20 min | Monthly (add-on) | ~$41 |
 
-- **billing_note_en**: "RPM requires data transmission on at least 16 of 30 days (99454). Interactive two-way communication is required for 99457/99458. RPM can be billed simultaneously with CCM, APCM, and AWV codes. Cannot bill with 99091 in the same month."
-- **billing_note_ko**: "RPM은 30일 중 최소 16일 데이터 전송이 필요합니다(99454). 99457/99458은 실시간 양방향 소통이 필수입니다. RPM은 CCM, APCM, AWV 코드와 동시 청구 가능합니다. 같은 달에 99091과는 동시 청구할 수 없습니다."
+- **billing_note_en**: "Starting January 2026, CMS introduced flexible RPM billing: 99445 covers 2-15 days of monitoring (vs 99454 for 16+ days), and 99470 covers 10+ minutes of management time (vs 99457 for 20+ minutes). Choose one device code and one management code per month — our platform automatically selects the optimal code based on actual data. RPM can be billed simultaneously with CCM, APCM, and AWV codes."
+- **billing_note_ko**: "2026년 1월부터 CMS가 유연한 RPM 청구를 도입했습니다: 99445는 2-15일 모니터링(기존 99454는 16일 이상), 99470은 10분 이상 관리 시간(기존 99457은 20분 이상)을 커버합니다. 월별로 디바이스 코드 1개와 관리 코드 1개를 선택 — 우리 플랫폼이 실제 데이터를 기반으로 최적 코드를 자동 선택합니다. RPM은 CCM, APCM, AWV 코드와 동시 청구 가능합니다."
+
+- **cy2026_highlight_en**: "NEW in 2026: No more all-or-nothing billing. Even patients who measure only a few days per month or require shorter management time now generate Medicare reimbursement — from $73 to $147 per patient per month."
+- **cy2026_highlight_ko**: "2026년 신규: 더 이상 전부 아니면 전무의 청구가 아닙니다. 월 며칠만 측정하거나 짧은 관리 시간이 필요한 환자도 이제 메디케어 수가를 생성합니다 — 환자당 월 $73에서 $147까지."
 
 ---
 
@@ -77,9 +82,9 @@
 
 - **meta_title_en**: "Remote Patient Monitoring Software | RPM Platform | HicareNet" (60 chars)
 - **meta_title_ko**: "원격환자모니터링 소프트웨어 | RPM 플랫폼 | 하이케어넷" (30 chars)
-- **meta_description_en**: "HicareNet RPM connects 120+ devices in 3 languages. Reduce readmissions by up to 38%, automate CPT billing, and serve diverse patients. Book a demo today." (155 chars)
-- **meta_description_ko**: "하이케어넷 RPM: 120종 이상 의료기기, 3개 언어 지원. 재입원율 최대 38% 감소, CPT 자동 청구, 다국어 환자 케어. 지금 데모를 예약하세요." (78 chars)
-- **keywords**: remote patient monitoring software, RPM platform for clinics, RPM billing codes 2025, multilingual RPM, 120+ device RPM platform, RPM for small clinics, Medicare RPM reimbursement, ISO 27001 RPM
+- **meta_description_en**: "HicareNet RPM connects 120+ devices in 3 languages. New 2026 CMS codes (99445/99470) supported. Reduce readmissions by up to 38%, automate CPT billing. Book a demo." (163 chars)
+- **meta_description_ko**: "하이케어넷 RPM: 120종 이상 의료기기, 3개 언어 지원. 2026 CMS 신규 코드(99445/99470) 지원. 재입원율 최대 38% 감소, CPT 자동 청구. 데모 예약." (88 chars)
+- **keywords**: remote patient monitoring software, RPM platform for clinics, RPM billing codes 2026, CPT 99445 99470 new codes, multilingual RPM, 120+ device RPM platform, RPM for small clinics, Medicare RPM reimbursement 2026, CMS 2026 RPM changes, ISO 27001 RPM
 
 ---
 
@@ -95,9 +100,13 @@ solutions.rpm.key_point_1 through key_point_5
 solutions.rpm.billing.title
 solutions.rpm.billing.code_99453
 solutions.rpm.billing.code_99454
+solutions.rpm.billing.code_99445
 solutions.rpm.billing.code_99457
+solutions.rpm.billing.code_99470
 solutions.rpm.billing.code_99458
 solutions.rpm.billing.note
+solutions.rpm.billing.cy2026_highlight
+solutions.rpm.billing.code_selection
 solutions.rpm.stat_1 through stat_4
 solutions.rpm.cta_section.heading
 solutions.rpm.cta_section.body

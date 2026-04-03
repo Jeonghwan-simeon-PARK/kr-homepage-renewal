@@ -149,7 +149,7 @@
                 <span class="material-symbols-outlined text-2xl text-primary-600">receipt_long</span>
               </div>
               <h4 class="text-base font-semibold text-neutral-900 mb-2" data-i18n="business.careportal.problem3.title">수가 청구 연계</h4>
-              <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.careportal.problem3.desc">RPM CPT 코드(99453, 99454, 99457, 99458)와 CCM CPT 코드(99490, 99487, 99489)에 맞는 리포트를 자동 생성하여 Medicare 보험 청구에 연결합니다.</p>
+              <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.careportal.problem3.desc">RPM CPT 코드(99453, 99454, 99445, 99457, 99470, 99458)와 CCM CPT 코드(99490, 99439, 99491, 99487, 99489)에 맞는 리포트를 자동 생성합니다. 2026년 CMS 신규 코드(99445/99470)를 자동 인식하여 최적 코드를 선택합니다.</p>
             </div>
           </div>
         </div>
@@ -217,6 +217,123 @@
           </p>
         </div>
 
+        <!-- A-3.5: CPT Billing Codes -->
+        <div class="mb-12">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-2" data-animate="fade-up" data-i18n="business.careportal.billing.section_title">자동 생성되는 빌링 리포트 코드</h3>
+          <p class="text-sm text-neutral-600 mb-6" data-animate="fade-up" data-i18n="business.careportal.billing.section_subtitle">Care Portal이 환자 데이터를 기반으로 최적 코드를 자동 선택합니다</p>
+
+          <!-- Tab Navigation -->
+          <div class="flex gap-2 mb-4" data-animate="fade-up">
+            <button id="tab-rpm" onclick="switchBillingTab('rpm')" class="px-4 py-2 text-sm font-semibold rounded-lg bg-primary-600 text-white transition-colors" data-i18n="business.careportal.billing.tab_rpm">RPM 코드</button>
+            <button id="tab-ccm" onclick="switchBillingTab('ccm')" class="px-4 py-2 text-sm font-semibold rounded-lg bg-neutral-100 text-neutral-700 hover:bg-neutral-200 transition-colors" data-i18n="business.careportal.billing.tab_ccm">CCM 코드</button>
+          </div>
+
+          <!-- RPM Table -->
+          <div id="panel-rpm" class="max-w-4xl" data-animate="fade-up" data-animate-delay="100">
+            <div class="overflow-x-auto rounded-2xl border border-neutral-200">
+              <table class="w-full text-sm">
+                <thead class="bg-neutral-50">
+                  <tr>
+                    <th class="px-4 py-3 text-left font-semibold text-neutral-700">CPT 코드</th>
+                    <th class="px-4 py-3 text-left font-semibold text-neutral-700" data-i18n="business.careportal.billing.th_desc">설명</th>
+                    <th class="px-4 py-3 text-right font-semibold text-neutral-700" data-i18n="business.careportal.billing.th_rate">수가</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-neutral-100">
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99453</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99453">초기 설정 및 환자 교육</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$19</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99454</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99454">디바이스 공급 (16-30일 전송)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$56</td>
+                  </tr>
+                  <tr class="hover:bg-primary-50/50 bg-primary-50/30">
+                    <td class="px-4 py-3 font-mono font-semibold text-primary-700">99445 <span class="inline-flex items-center px-1.5 py-0.5 bg-primary-100 text-primary-700 text-[10px] font-bold rounded ml-1" data-i18n="business.careportal.billing.cy2026_badge">2026 신규</span></td>
+                    <td class="px-4 py-3 text-primary-700" data-i18n="business.careportal.billing.code_99445">디바이스 공급 (2-15일 전송)</td>
+                    <td class="px-4 py-3 text-right font-semibold text-primary-700">~$47-52</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99457</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99457">치료 관리 (20분 이상)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$50</td>
+                  </tr>
+                  <tr class="hover:bg-primary-50/50 bg-primary-50/30">
+                    <td class="px-4 py-3 font-mono font-semibold text-primary-700">99470 <span class="inline-flex items-center px-1.5 py-0.5 bg-primary-100 text-primary-700 text-[10px] font-bold rounded ml-1" data-i18n="business.careportal.billing.cy2026_badge">2026 신규</span></td>
+                    <td class="px-4 py-3 text-primary-700" data-i18n="business.careportal.billing.code_99470">치료 관리 (10분 이상)</td>
+                    <td class="px-4 py-3 text-right font-semibold text-primary-700">~$26</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99458</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99458">추가 치료 관리 (20분)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$41</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-400">99091</td>
+                    <td class="px-4 py-3 text-neutral-400" data-i18n="business.careportal.billing.code_99091">데이터 수집/해석 (레거시)</td>
+                    <td class="px-4 py-3 text-right text-neutral-400">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- CCM Table -->
+          <div id="panel-ccm" class="max-w-4xl hidden" data-animate="fade-up" data-animate-delay="100">
+            <div class="overflow-x-auto rounded-2xl border border-neutral-200">
+              <table class="w-full text-sm">
+                <thead class="bg-neutral-50">
+                  <tr>
+                    <th class="px-4 py-3 text-left font-semibold text-neutral-700">CPT 코드</th>
+                    <th class="px-4 py-3 text-left font-semibold text-neutral-700" data-i18n="business.careportal.billing.th_desc">설명</th>
+                    <th class="px-4 py-3 text-right font-semibold text-neutral-700" data-i18n="business.careportal.billing.th_rate">수가</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-neutral-100">
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99490</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99490">기본 CCM (20분 이상/월)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$64</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99439</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99439">추가 20분 (최대 2회/월)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$50</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99491</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99491">의사 직접 제공 (30분 이상/월)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$88</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99487</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99487">복합 CCM (60분 이상/월)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$130</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99489</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99489">복합 추가 30분</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$63</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- CY2026 Highlight -->
+          <div class="mt-6 bg-primary-50 rounded-2xl p-5 md:p-6 max-w-4xl flex items-start gap-4" data-animate="fade-up" data-animate-delay="200">
+            <div class="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-xl text-primary-600">trending_up</span>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-primary-800" data-i18n="business.careportal.billing.highlight">2026년 CMS 변경: 환자가 월 2일만 측정해도, 관리 시간이 10분이어도 수익이 발생합니다</p>
+              <p class="text-xs text-primary-600 mt-1" data-i18n="business.careportal.billing.highlight_detail">기존 $0 → 최소 $73/월 | 최대 $147/월</p>
+            </div>
+          </div>
+        </div>
+
         <!-- A-4: Key Features -->
         <div class="mb-12">
           <h3 class="text-xl font-semibold text-neutral-900 mb-6" data-animate="fade-up" data-i18n="business.careportal.features.title">Care Portal 주요 기능</h3>
@@ -276,7 +393,7 @@
             <p class="text-base text-neutral-700 leading-relaxed mb-4" data-i18n-html="business.careportal.revenue.desc1">
               <strong>SaaS 월 구독형 모델</strong>입니다. 클리닉이 하이케어넷에 플랫폼 이용료를 지급합니다. 클리닉은 Care Portal을 활용하여 환자를 관리하고, Medicare에 수가를 청구하여 수익을 확보합니다.
             </p>
-            <p class="text-sm text-neutral-600" data-i18n="business.careportal.revenue.desc2">환자 1인당 월 약 $50 수준의 보험수익 창출이 가능합니다(질환별, 서비스별 상이).</p>
+            <p class="text-sm text-neutral-600" data-i18n="business.careportal.revenue.desc2">환자 1인당 월 <strong class="text-neutral-800">$73~$147</strong>의 보험수익 창출이 가능합니다 (2026년 CMS 신규 코드 포함, 부분 달성 시에도 수익 확보).</p>
           </div>
         </div>
 
@@ -541,5 +658,24 @@
   </button>
 
   <script type="module" src="js/main.js"></script>
+  <script>
+    function switchBillingTab(tab) {
+      const rpmPanel = document.getElementById('panel-rpm');
+      const ccmPanel = document.getElementById('panel-ccm');
+      const rpmTab = document.getElementById('tab-rpm');
+      const ccmTab = document.getElementById('tab-ccm');
+      if (tab === 'rpm') {
+        rpmPanel.classList.remove('hidden');
+        ccmPanel.classList.add('hidden');
+        rpmTab.className = 'px-4 py-2 text-sm font-semibold rounded-lg bg-primary-600 text-white transition-colors';
+        ccmTab.className = 'px-4 py-2 text-sm font-semibold rounded-lg bg-neutral-100 text-neutral-700 hover:bg-neutral-200 transition-colors';
+      } else {
+        rpmPanel.classList.add('hidden');
+        ccmPanel.classList.remove('hidden');
+        ccmTab.className = 'px-4 py-2 text-sm font-semibold rounded-lg bg-primary-600 text-white transition-colors';
+        rpmTab.className = 'px-4 py-2 text-sm font-semibold rounded-lg bg-neutral-100 text-neutral-700 hover:bg-neutral-200 transition-colors';
+      }
+    }
+  </script>
 </body>
 </html>

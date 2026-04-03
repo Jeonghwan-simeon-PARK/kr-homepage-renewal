@@ -30,21 +30,50 @@ RPM is HicareNet's flagship solution and the most mature revenue-generating serv
 
 ### CPT/HCPCS Codes and Reimbursement
 
+**Existing Codes (CY2025)**
+
 | Code | Description | Billing Frequency | CY2025 Rate (NF) |
 |------|------------|-------------------|-------------------|
 | 99453 | Initial device setup and patient education | Once per patient lifetime | [UNVERIFIED] ~$19.32 |
-| 99454 | Device supply with daily recording, per 30 days | Monthly (16-day transmission rule) | [UNVERIFIED] ~$55.72 |
-| 99457 | Treatment management, first 20 min interactive communication | Monthly | [UNVERIFIED] ~$50.18 |
+| 99454 | Device supply with daily recording, per 30 days | Monthly (16-30 day transmission) | [UNVERIFIED] ~$55.72 |
+| 99457 | Treatment management, first 20 min interactive communication | Monthly (20 min+) | [UNVERIFIED] ~$50.18 |
 | 99458 | Treatment management, each additional 20 min | Monthly (add-on to 99457) | [UNVERIFIED] ~$41.17 |
 
-**Monthly per-patient maximum (NF)**: ~$147.07 (99454 + 99457 + 99458)
-**Annual per-patient maximum**: ~$1,784.16 (including initial setup) [UNVERIFIED]
+**New Codes (CY2026, effective January 1, 2026)**
+
+| Code | Description | Billing Frequency | CY2026 Rate (NF) |
+|------|------------|-------------------|-------------------|
+| **99445** | Device supply, **2-15 days** data transmission in 30-day period | Monthly (2-15 day transmission) | [VERIFIED] ~$47-52 |
+| **99470** | Treatment management, **first 10 min** interactive communication | Monthly (10-19 min) | [VERIFIED] ~$26 |
+
+**Monthly per-patient scenarios (NF)**:
+
+| Scenario | Codes | Monthly Revenue |
+|----------|-------|----------------|
+| Full compliance (16+ days, 40+ min) | 99454 + 99457 + 99458 | ~$147 |
+| Standard (16+ days, 20+ min) | 99454 + 99457 | ~$106 |
+| Short monitoring (2-15 days, 20+ min) | **99445** + 99457 | ~$97-102 |
+| Minimum (2-15 days, 10+ min) | **99445** + **99470** | ~$73-78 |
+
+**Annual per-patient maximum**: ~$1,784 (including initial setup)
+**Annual per-patient minimum (CY2026)**: ~$895-955 (patients who previously generated $0)
 
 ### Key Billing Rules
-- **16-day rule**: 99454 requires data transmission on at least 16 of 30 days
-- **Interactive communication required**: 99457/99458 require real-time two-way communication
+
+- **Device supply (99445 vs 99454)**: Choose one based on transmission days. 2-15 days → 99445; 16-30 days → 99454. Cannot bill both in same month.
+- **Treatment management (99470 vs 99457)**: Choose one based on time spent. 10-19 min → 99470; 20+ min → 99457. Cannot bill both in same month.
+- **Interactive communication required**: 99457/99458/99470 all require real-time two-way communication (text/voicemail alone do not qualify)
 - **Can bill simultaneously with**: CCM (99490 etc.), APCM (G0556), AWV (G0438/G0439)
 - **Cannot bill simultaneously with**: 99091 (same month)
+- **FQHC/RHC**: CMS confirmed 99445 is covered for FQHCs and RHCs (retroactive to Jan 1, 2026)
+
+### CY2026 Code Impact — Why This Matters
+
+The new codes eliminate the "all-or-nothing" billing structure:
+- **Before CY2026**: If a patient transmitted data for only 10 days or management time was only 15 minutes → revenue was **$0**
+- **After CY2026**: Same patient generates **$73-102/month** via 99445 + 99470/99457
+- Expands RPM access to patients who cannot measure daily (elderly, rural, low digital literacy)
+- Supports short-term monitoring scenarios (medication titration, post-discharge transitions)
 
 ---
 
@@ -129,6 +158,9 @@ RPM is HicareNet's flagship solution and the most mature revenue-generating serv
 - **99454 + 99457** as the monthly revenue engine (~$106/patient/month)
 - **99458** as the revenue maximizer (additional 20 min = ~$41 more)
 - **99453** as the frictionless onboarding code (one-time setup)
+- **99445** (CY2026) as the access expander — bill even with 2-15 days of data (~$47-52)
+- **99470** (CY2026) as the flexibility code — bill with just 10 min of management (~$26)
+- **Key messaging**: "No more lost revenue from partial compliance — every monitored patient generates reimbursement"
 
 ---
 
@@ -158,11 +190,13 @@ RPM is HicareNet's flagship solution and the most mature revenue-generating serv
 |----------|---------|-------------|
 | Primary | remote patient monitoring software | High |
 | Primary | RPM platform for clinics | Medium |
-| Primary | RPM billing codes 2025 | Medium |
+| Primary | RPM billing codes 2026 | Medium |
+| Primary | CPT 99445 99470 new RPM codes 2026 | Low |
 | Secondary | multilingual RPM | Very Low |
 | Secondary | 120+ device RPM platform | Low |
 | Secondary | RPM for small clinics | Medium |
 | Secondary | RPM gateway device | Low |
+| Secondary | CMS 2026 RPM reimbursement changes | Low |
 | Tertiary | ISO 27001 RPM | Low |
 | Tertiary | VA RPM solutions | Medium |
 | Tertiary | Medicare RPM reimbursement rates | High |
@@ -182,9 +216,13 @@ solutions.rpm.hero_subtext
 solutions.rpm.billing.title
 solutions.rpm.billing.code_99453
 solutions.rpm.billing.code_99454
+solutions.rpm.billing.code_99445
 solutions.rpm.billing.code_99457
+solutions.rpm.billing.code_99470
 solutions.rpm.billing.code_99458
 solutions.rpm.billing.monthly_revenue
+solutions.rpm.billing.cy2026_note
+solutions.rpm.billing.code_selection_logic
 solutions.rpm.workflow.title
 solutions.rpm.workflow.step1_title
 solutions.rpm.workflow.step1_desc
@@ -238,7 +276,7 @@ solutions.rpm.cta_roi
 | Related Solution | Link Context |
 |-----------------|-------------|
 | CCM | "Maximize revenue: Bill RPM + CCM simultaneously for up to $211/patient/month" |
-| APCM | "RPM + APCM: The new revenue combination for 2025" |
+| APCM | "RPM + APCM: The new revenue combination for 2026" |
 | AWV | "Discover RPM-eligible patients during Annual Wellness Visits" |
 | HRA | "Health Risk Assessments identify patients who benefit most from RPM" |
 | VBC | "RPM data directly improves your HEDIS blood pressure and diabetes measures" |

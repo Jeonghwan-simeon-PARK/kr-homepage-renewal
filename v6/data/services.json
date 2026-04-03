@@ -13,13 +13,13 @@
         "name": "RPM (Remote Patient Monitoring)",
         "name_ko": "원격 환자 모니터링",
         "description": "환자의 생체 데이터를 원격으로 수집하고 분석하는 서비스",
-        "cpt_codes": ["99453", "99454", "99457", "99458"]
+        "cpt_codes": ["99453", "99454", "99445", "99457", "99470", "99458", "99091"]
       },
       "ccm": {
         "name": "CCM (Chronic Care Management)",
         "name_ko": "만성질환 관리",
         "description": "만성질환자에 대한 비대면 케어 매니지먼트 서비스",
-        "cpt_codes": ["99490", "99487", "99489"]
+        "cpt_codes": ["99490", "99439", "99491", "99487", "99489"]
       }
     },
     "problems_solved": [
@@ -39,7 +39,7 @@
         "id": "billing",
         "title_key": "kr.business.care_portal.problem3.title",
         "description_key": "kr.business.care_portal.problem3.desc",
-        "items": ["RPM CPT 코드(99453, 99454, 99457, 99458) 리포트 자동 생성", "CCM CPT 코드(99490, 99487, 99489) 리포트 자동 생성", "Medicare 보험 청구 연결"]
+        "items": ["RPM CPT 코드(99453, 99454, 99445, 99457, 99470, 99458, 99091) 리포트 자동 생성", "CCM CPT 코드(99490, 99439, 99491, 99487, 99489) 리포트 자동 생성", "CY2026 신규 코드(99445/99470) 자동 최적 선택", "Medicare 보험 청구 연결"]
       }
     ],
     "features": [
