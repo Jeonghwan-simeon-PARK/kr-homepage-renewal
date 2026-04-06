@@ -97,7 +97,10 @@ tailwind.config = {
 
   <!-- ===== (A) Hero ===== -->
   <section class="relative pt-32 pb-16 md:pt-44 md:pb-24 bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 overflow-hidden">
-    <!-- Background image + gradient overlay removed: image invisible under 90-95% gradient -->
+    <!-- Background image layer -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1920')" aria-hidden="true"></div>
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-700/70 via-primary-800/70 to-primary-900/80" aria-hidden="true"></div>
     <!-- Background decorative elements -->
     <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
       <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-600/20 rounded-full blur-3xl"></div>

@@ -96,7 +96,10 @@
 
     <!-- Section A: Hero -->
     <section class="relative min-h-[480px] flex items-center bg-gradient-to-br from-primary-800 to-primary-900 overflow-hidden pt-20" aria-label="히어로">
-      <!-- Background image + gradient overlay removed: image invisible under 90-95% gradient -->
+      <!-- Background image layer -->
+      <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.pexels.com/photos/41953/earth-blue-planet-globe-planet-41953.jpeg?auto=compress&cs=tinysrgb&w=1920')" aria-hidden="true"></div>
+      <!-- Gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-800/70 to-primary-900/80" aria-hidden="true"></div>
       <div class="absolute inset-0 opacity-10">
         <div class="absolute top-20 right-10 w-96 h-96 bg-primary-400 rounded-full blur-3xl"></div>
         <div class="absolute bottom-10 left-10 w-72 h-72 bg-green-400 rounded-full blur-3xl"></div>
