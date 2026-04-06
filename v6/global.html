@@ -124,95 +124,75 @@
           <p class="text-base md:text-lg text-neutral-600 max-w-2xl mx-auto" data-i18n="global.map.intro">하이케어넷은 미국을 중심으로 이탈리아, 프랑스, 태국 등 4개국에서 사업을 운영하고 있습니다.</p>
         </div>
 
-        <!-- Map Visual: SVG world map with continent outlines -->
-        <div class="relative rounded-2xl border border-neutral-200 bg-gradient-to-br from-primary-50 to-white mb-10 overflow-hidden" data-animate="fade-up">
-          <svg viewBox="0 0 1000 500" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="글로벌 사업 지역 지도">
-            <defs>
-              <radialGradient id="mapBg" cx="50%" cy="50%" r="60%">
-                <stop offset="0%" stop-color="#E8F4FD" stop-opacity="0.5"/>
-                <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-            <rect width="1000" height="500" fill="url(#mapBg)"/>
-            <!-- Simplified continent outlines -->
-            <g fill="#C5E4F9" stroke="#9DD0F4" stroke-width="0.5" opacity="0.6">
-              <!-- North America -->
-              <path d="M80,80 L130,60 L180,55 L220,70 L250,90 L260,120 L250,150 L230,180 L210,200 L190,230 L180,250 L160,240 L140,200 L120,170 L100,150 L80,130 Z"/>
-              <!-- Central America -->
-              <path d="M180,250 L200,260 L210,280 L200,295 L185,290 L175,275 Z"/>
-              <!-- South America -->
-              <path d="M220,300 L250,290 L280,310 L290,350 L280,400 L260,430 L240,440 L220,420 L210,380 L200,340 L210,310 Z"/>
-              <!-- Europe -->
-              <path d="M430,70 L460,60 L490,65 L510,75 L520,90 L515,110 L500,130 L490,145 L475,155 L460,150 L445,135 L435,115 L425,95 Z"/>
-              <!-- UK/Ireland -->
-              <path d="M415,80 L425,75 L428,90 L420,100 L412,95 Z"/>
-              <!-- Africa -->
-              <path d="M450,170 L480,165 L510,180 L530,210 L540,260 L530,310 L510,350 L490,370 L470,360 L455,330 L445,290 L440,240 L442,200 Z"/>
-              <!-- Middle East -->
-              <path d="M520,130 L560,120 L580,140 L570,160 L550,170 L530,165 L520,150 Z"/>
-              <!-- Russia/Asia -->
-              <path d="M510,75 L560,60 L620,50 L700,55 L760,70 L800,85 L820,100 L800,110 L760,105 L700,100 L640,95 L580,100 L540,95 L520,90 Z"/>
-              <!-- India -->
-              <path d="M600,150 L630,140 L650,160 L645,200 L630,230 L610,220 L595,190 L590,165 Z"/>
-              <!-- Southeast Asia -->
-              <path d="M680,160 L710,150 L740,160 L750,180 L740,200 L720,210 L700,205 L685,190 Z"/>
-              <!-- China/East Asia -->
-              <path d="M660,90 L710,80 L760,85 L790,100 L780,120 L760,140 L730,150 L700,145 L680,130 L665,110 Z"/>
-              <!-- Japan -->
-              <path d="M800,95 L810,90 L815,105 L810,120 L800,115 Z"/>
-              <!-- Indonesia -->
-              <path d="M700,230 L730,225 L760,230 L780,235 L770,245 L740,245 L710,240 Z"/>
-              <!-- Australia -->
-              <path d="M760,320 L810,300 L850,310 L870,340 L860,380 L830,400 L790,390 L760,370 L750,340 Z"/>
-            </g>
-            <!-- Grid dots -->
-            <g fill="#0B4369" opacity="0.04">
-              <pattern id="dots" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
-                <circle cx="12.5" cy="12.5" r="1"/>
-              </pattern>
-              <rect width="1000" height="500" fill="url(#dots)"/>
-            </g>
-            <!-- Connection lines -->
-            <g stroke="#1A8FD8" stroke-width="1.5" stroke-dasharray="8,5" opacity="0.4" fill="none">
-              <path d="M195,175 Q350,120 465,115"/>
-              <path d="M465,115 Q490,125 505,130"/>
-              <path d="M505,130 Q620,170 720,190"/>
-            </g>
-            <!-- USA marker -->
-            <g class="cursor-pointer">
-              <circle cx="195" cy="165" r="20" fill="#1578B8" stroke="#fff" stroke-width="3"/>
-              <text x="195" y="170" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">US</text>
-              <text x="195" y="205" text-anchor="middle" fill="#0B4369" font-size="11" font-weight="700">미국 (CA)</text>
-              <text x="195" y="220" text-anchor="middle" fill="#1578B8" font-size="10" font-weight="600">40 Clinics</text>
-            </g>
-            <!-- France marker -->
-            <g class="cursor-pointer">
-              <circle cx="465" cy="105" r="18" fill="#1A8FD8" stroke="#fff" stroke-width="3"/>
-              <text x="465" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">FR</text>
-              <text x="465" y="80" text-anchor="middle" fill="#0B4369" font-size="11" font-weight="700">프랑스</text>
-              <text x="465" y="93" text-anchor="middle" fill="#1A8FD8" font-size="10" font-weight="600">3,000 Units</text>
-            </g>
-            <!-- Italy marker -->
-            <g class="cursor-pointer">
-              <circle cx="505" cy="130" r="18" fill="#1A8FD8" stroke="#fff" stroke-width="3"/>
-              <text x="505" y="135" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">IT</text>
-              <text x="540" y="150" text-anchor="start" fill="#0B4369" font-size="11" font-weight="700">이탈리아</text>
-              <text x="540" y="163" text-anchor="start" fill="#1A8FD8" font-size="10" font-weight="600">1,000 Units</text>
-            </g>
-            <!-- Thailand marker -->
-            <g class="cursor-pointer">
-              <circle cx="720" cy="190" r="18" fill="#2EBE74" stroke="#fff" stroke-width="3"/>
-              <text x="720" y="195" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">TH</text>
-              <text x="720" y="225" text-anchor="middle" fill="#0E5232" font-size="11" font-weight="700">태국</text>
-              <text x="720" y="238" text-anchor="middle" fill="#2EBE74" font-size="10" font-weight="600">Partner</text>
-            </g>
-            <!-- Pulse animation on US marker -->
-            <circle cx="195" cy="165" r="20" fill="none" stroke="#1578B8" stroke-width="2" opacity="0.6">
-              <animate attributeName="r" from="20" to="35" dur="2s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite"/>
-            </circle>
-          </svg>
-        </div>
+        <!-- Leaflet Map -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+        <div id="global-map" class="rounded-2xl border border-neutral-200 overflow-hidden mb-10" style="height: 450px;" data-animate="fade-up"></div>
+        <script>
+        (function() {
+          const map = L.map('global-map', {
+            center: [25, 30],
+            zoom: 2,
+            minZoom: 2,
+            maxZoom: 6,
+            zoomControl: true,
+            scrollWheelZoom: false,
+            attributionControl: false
+          });
+
+          // CartoDB Positron - clean light tile style
+          L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            subdomains: 'abcd',
+            maxZoom: 19
+          }).addTo(map);
+
+          // Attribution (required by CartoDB)
+          L.control.attribution({ position: 'bottomright', prefix: false })
+            .addAttribution('&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>')
+            .addTo(map);
+
+          // Custom marker icons
+          function createIcon(color, label) {
+            return L.divIcon({
+              className: '',
+              html: '<div style="display:flex;flex-direction:column;align-items:center;">' +
+                '<div style="width:36px;height:36px;border-radius:50%;background:' + color + ';color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);">' + label + '</div></div>',
+              iconSize: [36, 36],
+              iconAnchor: [18, 18],
+              popupAnchor: [0, -22]
+            });
+          }
+
+          // Marker data
+          var locations = [
+            { coords: [34.05, -118.25], icon: createIcon('#1578B8', 'US'), title: '미국 (캘리포니아)', desc: 'Care Portal SaaS 서비스 운영', metric: '40개 클리닉 계약' },
+            { coords: [46.60, 2.35], icon: createIcon('#1A8FD8', 'FR'), title: '프랑스', desc: '약국 체인 게이트웨이 수출', metric: '3,000대' },
+            { coords: [41.12, 16.87], icon: createIcon('#1A8FD8', 'IT'), title: '이탈리아 (Puglia)', desc: '심장질환 퇴원환자 관리', metric: '1,000대' },
+            { coords: [13.75, 100.52], icon: createIcon('#2EBE74', 'TH'), title: '태국', desc: '의료기관 및 약국 체인 협력', metric: 'Partner' }
+          ];
+
+          // Add markers with popups
+          locations.forEach(function(loc) {
+            L.marker(loc.coords, { icon: loc.icon })
+              .addTo(map)
+              .bindPopup(
+                '<div style="font-family:Noto Sans KR,sans-serif;min-width:160px;">' +
+                '<strong style="font-size:14px;">' + loc.title + '</strong><br>' +
+                '<span style="color:#475569;font-size:12px;">' + loc.desc + '</span><br>' +
+                '<span style="color:#1578B8;font-weight:600;font-size:13px;">' + loc.metric + '</span></div>'
+              );
+          });
+
+          // Dashed connection line
+          var polyline = L.polyline(
+            [[34.05, -118.25], [46.60, 2.35], [41.12, 16.87], [13.75, 100.52]],
+            { color: '#1A8FD8', weight: 1.5, dashArray: '8, 6', opacity: 0.5 }
+          ).addTo(map);
+
+          // Open US popup by default
+          setTimeout(function() { locations[0].marker && locations[0].marker.openPopup(); }, 500);
+        })();
+        </script>
 
         <!-- Country Marker Cards -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6" data-animate="fade-up">
