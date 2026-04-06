@@ -124,32 +124,49 @@
           <p class="text-base md:text-lg text-neutral-600 max-w-2xl mx-auto" data-i18n="global.map.intro">하이케어넷은 미국을 중심으로 이탈리아, 프랑스, 태국 등 4개국에서 사업을 운영하고 있습니다.</p>
         </div>
 
-        <!-- Map Visual -->
-        <div class="relative rounded-2xl border border-neutral-200 aspect-[16/9] md:aspect-[2/1] mb-10 overflow-hidden" data-animate="fade-up">
-          <img src="https://images.pexels.com/photos/41953/earth-blue-planet-globe-planet-41953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="글로벌 사업 지역을 표시한 세계 지도" class="w-full h-full object-cover opacity-30">
-          <div class="absolute inset-0 bg-gradient-to-b from-primary-50/60 to-white/80"></div>
-          <!-- Country markers -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="relative w-full h-full max-w-4xl">
-              <!-- USA marker -->
-              <div class="absolute top-[35%] left-[18%] flex flex-col items-center">
-                <span class="inline-flex items-center justify-center w-8 h-8 bg-primary-600 text-white rounded-full text-xs font-bold shadow-lg ring-2 ring-white">US</span>
-                <span class="mt-1 text-xs font-semibold text-primary-800 bg-white/90 px-2 py-0.5 rounded shadow-sm hidden md:block">40 Clinics</span>
+        <!-- Map Visual: CSS-based flat world map layout -->
+        <div class="relative rounded-2xl border border-neutral-200 bg-gradient-to-br from-primary-50 to-white p-6 md:p-10 mb-10 overflow-hidden" data-animate="fade-up">
+          <!-- Subtle grid pattern -->
+          <div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(circle, #0B4369 1px, transparent 1px); background-size: 24px 24px;" aria-hidden="true"></div>
+          <!-- Connection lines (SVG) -->
+          <svg class="absolute inset-0 w-full h-full" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <!-- Dashed lines connecting countries -->
+            <line x1="175" y1="160" x2="420" y2="130" stroke="#9DD0F4" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+            <line x1="420" y1="130" x2="455" y2="145" stroke="#9DD0F4" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+            <line x1="455" y1="145" x2="640" y2="210" stroke="#9DD0F4" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+          </svg>
+          <!-- Country markers on approximate flat-map positions -->
+          <div class="relative" style="aspect-ratio: 2/1;">
+            <!-- USA (California) — left side, mid height -->
+            <div class="absolute top-[35%] left-[18%] flex flex-col items-center group">
+              <span class="inline-flex items-center justify-center w-10 h-10 bg-primary-600 text-white rounded-full text-sm font-bold shadow-lg ring-2 ring-white animate-pulse">US</span>
+              <div class="mt-2 text-center">
+                <span class="block text-xs font-bold text-primary-800">미국 (CA)</span>
+                <span class="block text-xs text-primary-600 font-semibold">40 Clinics</span>
               </div>
-              <!-- France marker -->
-              <div class="absolute top-[28%] left-[47%] flex flex-col items-center">
-                <span class="inline-flex items-center justify-center w-8 h-8 bg-primary-500 text-white rounded-full text-xs font-bold shadow-lg ring-2 ring-white">FR</span>
-                <span class="mt-1 text-xs font-semibold text-primary-800 bg-white/90 px-2 py-0.5 rounded shadow-sm hidden md:block">3,000 Units</span>
+            </div>
+            <!-- France — center-left Europe, higher latitude -->
+            <div class="absolute top-[25%] left-[49%] flex flex-col items-center group">
+              <span class="inline-flex items-center justify-center w-10 h-10 bg-primary-500 text-white rounded-full text-sm font-bold shadow-lg ring-2 ring-white">FR</span>
+              <div class="mt-2 text-center">
+                <span class="block text-xs font-bold text-primary-800">프랑스</span>
+                <span class="block text-xs text-primary-600 font-semibold">3,000 Units</span>
               </div>
-              <!-- Italy marker -->
-              <div class="absolute top-[33%] left-[52%] flex flex-col items-center">
-                <span class="inline-flex items-center justify-center w-8 h-8 bg-primary-500 text-white rounded-full text-xs font-bold shadow-lg ring-2 ring-white">IT</span>
-                <span class="mt-1 text-xs font-semibold text-primary-800 bg-white/90 px-2 py-0.5 rounded shadow-sm hidden md:block">1,000 Units</span>
+            </div>
+            <!-- Italy — just right and below France -->
+            <div class="absolute top-[30%] left-[53%] flex flex-col items-center group">
+              <span class="inline-flex items-center justify-center w-10 h-10 bg-primary-500 text-white rounded-full text-sm font-bold shadow-lg ring-2 ring-white">IT</span>
+              <div class="mt-2 text-center">
+                <span class="block text-xs font-bold text-primary-800">이탈리아</span>
+                <span class="block text-xs text-primary-600 font-semibold">1,000 Units</span>
               </div>
-              <!-- Thailand marker -->
-              <div class="absolute top-[48%] left-[72%] flex flex-col items-center">
-                <span class="inline-flex items-center justify-center w-8 h-8 bg-green-500 text-white rounded-full text-xs font-bold shadow-lg ring-2 ring-white">TH</span>
-                <span class="mt-1 text-xs font-semibold text-green-800 bg-white/90 px-2 py-0.5 rounded shadow-sm hidden md:block">Partner</span>
+            </div>
+            <!-- Thailand — far right, lower latitude (Southeast Asia) -->
+            <div class="absolute top-[48%] left-[76%] flex flex-col items-center group">
+              <span class="inline-flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-full text-sm font-bold shadow-lg ring-2 ring-white">TH</span>
+              <div class="mt-2 text-center">
+                <span class="block text-xs font-bold text-green-800">태국</span>
+                <span class="block text-xs text-green-600 font-semibold">Partner</span>
               </div>
             </div>
           </div>
