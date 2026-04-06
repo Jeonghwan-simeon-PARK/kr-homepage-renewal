@@ -62,7 +62,7 @@
     },
     {
       "id": "ir-news",
-      "label": "IR/뉴스",
+      "label": "IR/뉴스룸",
       "href": "/kr/ir.html",
       "phase": 2,
       "children": [
