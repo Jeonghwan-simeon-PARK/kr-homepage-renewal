@@ -321,6 +321,7 @@
     }
   },
   "footer": {
+    "company_name": "HicareNet Inc.",
     "desc": "Elevating the standard of remote care through innovation and empathy.",
     "contactLabel": "Contact Info",
     "col1": {

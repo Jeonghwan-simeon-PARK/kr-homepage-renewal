@@ -322,6 +322,7 @@
     }
   },
   "footer": {
+    "company_name": "HicareNet Inc.",
     "description": "Empowering healthcare providers and patients with intelligent remote monitoring and clinical care management solutions.",
     "resources": "Resources",
     "legal": "Legal",

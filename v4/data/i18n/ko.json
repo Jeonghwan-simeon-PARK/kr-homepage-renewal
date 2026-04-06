@@ -330,6 +330,7 @@
     }
   },
   "footer": {
+    "company_name": "하이케어넷 주식회사",
     "description": "더 건강한 세상을 위한 공감적이고 기술 기반의 케어 관리 솔루션을 제공합니다.",
     "col_company": "회사",
     "col_governance": "거버넌스",

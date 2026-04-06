@@ -736,6 +736,7 @@
     "solutions": "View Solutions"
   },
   "footer": {
+    "company_name": "HicareNet Inc.",
     "desc": "A global pioneer in medical IT convergence. HicareNet Inc., headquartered in Seoul, delivers world-class RPM and CCM solutions to global healthcare markets.",
     "col1": {
       "title": "Solutions",

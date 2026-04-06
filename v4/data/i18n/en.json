@@ -330,6 +330,7 @@
     }
   },
   "footer": {
+    "company_name": "HicareNet Inc.",
     "description": "Providing compassionate, technology-enabled care management solutions for a healthier world.",
     "col_company": "Company",
     "col_governance": "Governance",
