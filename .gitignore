@@ -24,3 +24,4 @@ _workspace/
 # Environment
 .env
 .env.local
+.claude/
