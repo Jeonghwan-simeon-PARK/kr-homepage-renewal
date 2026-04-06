@@ -35,10 +35,10 @@
   },
   "home": {
     "hero": {
-      "headline": "세계가 검증한 헬스케어 기술",
-      "subtext": "Hicare Hub로 120종 이상의 의료기기를 연동하고, 미국 VA 게이트웨이 10,000대 이상 수출, RPM/CCM 솔루션을 실제 운용 중 — 하이케어넷의 기술력이 글로벌 시장에서 증명되었습니다.",
-      "cta_primary": "기술 살펴보기",
-      "cta_secondary": "데모 신청하기"
+      "headline": "전 세계가 검증한<br>헬스케어 기술력",
+      "subtext": "120종 이상 의료기기 연동, VA 게이트웨이 10,000대 수출, 40개 이상 병원에서 RPM/CCM 솔루션 운용 중. 글로벌 시장이 증명한 기술력입니다.",
+      "cta_primary": "기술력 살펴보기",
+      "cta_secondary": "데모 신청"
     },
     "solutions": {
       "eyebrow": "핵심 기술",

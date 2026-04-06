@@ -11,10 +11,10 @@
   "home": {
     "hero": {
       "tag": "Global Healthcare IT Infrastructure",
-      "title": "The Standard in Remote Care.",
-      "desc": "HicareNet drives advanced RPM and CCM operations through cutting-edge medical IT convergence, powering Hicare.net Inc's US market leadership with HL7 FHIR standard integration.",
-      "cta1": "Explore RPM Services",
-      "cta2": "R&D Innovation"
+      "title": "Setting the Standard<br>in Remote Care.",
+      "desc": "End-to-end RPM and CCM platform with HL7 FHIR integration — powering US healthcare providers from enrollment to reimbursement.",
+      "cta1": "Explore RPM Solutions",
+      "cta2": "Our R&D Story"
     },
     "certs": {
       "iso27001": "ISO 27001 Certified",

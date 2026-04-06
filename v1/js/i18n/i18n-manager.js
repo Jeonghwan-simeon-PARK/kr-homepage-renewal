@@ -60,6 +60,13 @@ function applyTranslations() {
     if (value) el.placeholder = value;
   });
 
+  // HTML content (supports <br> and inline markup)
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    const value = getNestedValue(translations, key);
+    if (value) el.innerHTML = value;
+  });
+
   // Alt attributes
   document.querySelectorAll('[data-i18n-alt]').forEach(el => {
     const key = el.getAttribute('data-i18n-alt');

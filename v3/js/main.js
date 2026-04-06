@@ -84,6 +84,13 @@
       const val = getNestedValue(translations, key);
       if (val) el.placeholder = val;
     });
+
+    // HTML content (supports <br> and inline markup)
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      const val = getNestedValue(translations, key);
+      if (val) el.innerHTML = val;
+    });
   }
 
   function getNestedValue(obj, path) {

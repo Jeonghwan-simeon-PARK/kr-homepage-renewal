@@ -40,6 +40,12 @@
       var val = getNestedValue(translations, key);
       if (val) el.title = val;
     });
+    // HTML content (supports <br> and inline markup)
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-html');
+      var val = getNestedValue(translations, key);
+      if (val) el.innerHTML = val;
+    });
     // Update language toggle styles
     ['en', 'ko'].forEach(function (lang) {
       var btn = document.getElementById('lang-' + lang);
