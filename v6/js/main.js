@@ -13,15 +13,67 @@ function initGNB() {
   let lastScroll = 0;
   const threshold = 10;
 
+  // Detect if page has a dark hero section
+  const hasDarkHero = !!document.querySelector('section[aria-label="히어로"], section[aria-label="페이지 헤더"]');
+  const navLinks = gnb.querySelectorAll('.gnb-link');
+  const langBtns = gnb.querySelectorAll('#lang-ko, #lang-en');
+  const mobileToggle = gnb.querySelector('#mobile-toggle');
+  const logoImg = gnb.querySelector('img[alt*="로고"]');
+
+  function setNavColors(isDark) {
+    navLinks.forEach(link => {
+      if (isDark) {
+        link.style.color = '';
+        link.classList.remove('text-neutral-700');
+        link.classList.add('text-white/90');
+        link.classList.remove('hover:bg-primary-50');
+        link.classList.add('hover:bg-white/10');
+      } else {
+        link.style.color = '';
+        link.classList.add('text-neutral-700');
+        link.classList.remove('text-white/90');
+        link.classList.add('hover:bg-primary-50');
+        link.classList.remove('hover:bg-white/10');
+      }
+    });
+    if (mobileToggle) {
+      if (isDark) {
+        mobileToggle.classList.remove('text-neutral-700');
+        mobileToggle.classList.add('text-white');
+      } else {
+        mobileToggle.classList.add('text-neutral-700');
+        mobileToggle.classList.remove('text-white');
+      }
+    }
+    if (logoImg && hasDarkHero) {
+      logoImg.style.filter = isDark ? 'brightness(0) invert(1)' : '';
+    }
+    langBtns.forEach(btn => {
+      if (isDark) {
+        btn.classList.remove('text-neutral-500', 'text-primary-600');
+        btn.classList.add('text-white/80');
+      } else {
+        btn.classList.remove('text-white/80');
+        // Restore original colors
+        if (btn.id === 'lang-ko') btn.classList.add('text-primary-600');
+        else btn.classList.add('text-neutral-500');
+      }
+    });
+  }
+
   function updateGNB() {
     const scrollY = window.scrollY;
 
     if (scrollY > threshold) {
+      // Scrolled: white background, dark text
       gnb.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
       gnb.classList.remove('bg-transparent');
+      if (hasDarkHero) setNavColors(false);
     } else {
+      // Top: transparent background
       gnb.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
       gnb.classList.add('bg-transparent');
+      if (hasDarkHero) setNavColors(true);
     }
 
     lastScroll = scrollY;
