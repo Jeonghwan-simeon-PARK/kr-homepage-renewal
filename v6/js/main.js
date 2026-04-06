@@ -15,65 +15,37 @@ function initGNB() {
 
   // Detect if page has a dark hero section
   const hasDarkHero = !!document.querySelector('section[aria-label="히어로"], section[aria-label="페이지 헤더"]');
-  const navLinks = gnb.querySelectorAll('.gnb-link');
-  const langBtns = gnb.querySelectorAll('#lang-ko, #lang-en');
-  const mobileToggle = gnb.querySelector('#mobile-toggle');
-  const logoImg = gnb.querySelector('img[alt*="로고"]');
 
-  function setNavColors(isDark) {
-    navLinks.forEach(link => {
-      if (isDark) {
-        link.style.color = '';
-        link.classList.remove('text-neutral-700');
-        link.classList.add('text-white/90');
-        link.classList.remove('hover:bg-primary-50');
-        link.classList.add('hover:bg-white/10');
-      } else {
-        link.style.color = '';
-        link.classList.add('text-neutral-700');
-        link.classList.remove('text-white/90');
-        link.classList.add('hover:bg-primary-50');
-        link.classList.remove('hover:bg-white/10');
-      }
-    });
-    if (mobileToggle) {
-      if (isDark) {
-        mobileToggle.classList.remove('text-neutral-700');
-        mobileToggle.classList.add('text-white');
-      } else {
-        mobileToggle.classList.add('text-neutral-700');
-        mobileToggle.classList.remove('text-white');
-      }
-    }
-    if (logoImg && hasDarkHero) {
-      logoImg.style.filter = isDark ? 'brightness(0) invert(1)' : '';
-    }
-    langBtns.forEach(btn => {
-      if (isDark) {
-        btn.classList.remove('text-neutral-500', 'text-primary-600');
-        btn.classList.add('text-white/80');
-      } else {
-        btn.classList.remove('text-white/80');
-        // Restore original colors
-        if (btn.id === 'lang-ko') btn.classList.add('text-primary-600');
-        else btn.classList.add('text-neutral-500');
-      }
-    });
+  // Inject CSS for dark hero nav states (uses !important to override Tailwind utilities)
+  if (hasDarkHero) {
+    const style = document.createElement('style');
+    style.textContent = `
+      #gnb.gnb-at-top .gnb-link { color: rgba(255,255,255,0.9) !important; }
+      #gnb.gnb-at-top .gnb-link:hover { background: rgba(255,255,255,0.1) !important; color: #fff !important; }
+      #gnb.gnb-at-top .gnb-link.bg-primary-50 { background: rgba(255,255,255,0.15) !important; }
+      #gnb.gnb-at-top #mobile-toggle { color: #fff !important; }
+      #gnb.gnb-at-top img[alt*="로고"] { filter: brightness(0) invert(1); }
+      #gnb.gnb-at-top #lang-ko,
+      #gnb.gnb-at-top #lang-en { color: rgba(255,255,255,0.8) !important; }
+      #gnb.gnb-at-top .text-neutral-300 { color: rgba(255,255,255,0.4) !important; }
+      #gnb.gnb-at-top .bg-primary-600 { background: rgba(255,255,255,0.2) !important; }
+      #gnb.gnb-at-top .bg-primary-600 span { color: #fff !important; }
+    `;
+    document.head.appendChild(style);
   }
 
   function updateGNB() {
     const scrollY = window.scrollY;
 
     if (scrollY > threshold) {
-      // Scrolled: white background, dark text
+      // Scrolled: white background, dark text (Tailwind classes restored)
       gnb.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
-      gnb.classList.remove('bg-transparent');
-      if (hasDarkHero) setNavColors(false);
+      gnb.classList.remove('bg-transparent', 'gnb-at-top');
     } else {
-      // Top: transparent background
+      // Top: transparent background, white text on dark hero
       gnb.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
       gnb.classList.add('bg-transparent');
-      if (hasDarkHero) setNavColors(true);
+      if (hasDarkHero) gnb.classList.add('gnb-at-top');
     }
 
     lastScroll = scrollY;
