@@ -23,6 +23,18 @@ function doGet(e) {
   // ── 투표 저장 ──
   if (action === 'vote') {
     var data = JSON.parse(e.parameter.data);
+
+    // 재투표 시 기존 행 삭제
+    if (data.oldId) {
+      var rows = sheet.getDataRange().getValues();
+      for (var r = rows.length - 1; r >= 1; r--) {
+        if (String(rows[r][0]) === String(data.oldId)) {
+          sheet.deleteRow(r + 1);
+          break;
+        }
+      }
+    }
+
     sheet.appendRow([
       data.id || '',
       data.timestamp || new Date().toISOString(),

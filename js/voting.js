@@ -122,11 +122,13 @@ async function submitVote() {
   btn.disabled = true;
   btn.textContent = '제출 중...';
 
+  const oldVote = getStoredVote();
   const voteData = {
     id: 'vote_' + Date.now(),
     timestamp: new Date().toISOString(),
     votes: [...selectedVersions],
-    comment: document.getElementById('vote-comment').value.trim()
+    comment: document.getElementById('vote-comment').value.trim(),
+    oldId: oldVote ? oldVote.id : ''
   };
 
   if (GAS_URL) {
