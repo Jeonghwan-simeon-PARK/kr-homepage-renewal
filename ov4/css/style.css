@@ -122,7 +122,6 @@ ul { list-style: none; }
   position: relative; width: 100%; height: 100vh;
   overflow: hidden; display: flex; align-items: center; justify-content: center;
 }
-.photo--half { height: 70vh; }
 
 .photo__img {
   position: absolute; inset: 0; z-index: 0;
@@ -203,7 +202,9 @@ ul { list-style: none; }
    ============================================================ */
 .clean {
   background: #fff;
-  padding: 120px 8% 120px;
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 120px 8%;
 }
 .clean--gray { background: #f8f9fb; }
 
@@ -414,8 +415,7 @@ ul { list-style: none; }
 
 @media (max-width: 768px) {
   .nav { padding: 0 16px; height: 60px; }
-  .photo { height: 80vh; }
-  .photo--half { height: 60vh; }
+  .photo { height: 100vh; }
   .photo__headline { font-size: clamp(1.8rem, 6vw, 2.5rem); }
   .photo__headline--xl { font-size: clamp(2rem, 7vw, 3rem); }
   .photo__text { padding: 0 6% 56px; }
