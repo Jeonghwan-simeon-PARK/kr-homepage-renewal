@@ -113,7 +113,7 @@ function handleTileClick(tile) {
   document.getElementById('vote-submit-btn').disabled = selectedVersions.length === 0;
 }
 
-// ── Submit ─────────────────────────────────────────────────
+// ── Submit (GET 방식 - GAS CORS 이슈 해결) ──────────────
 
 async function submitVote() {
   if (selectedVersions.length === 0) return;
@@ -131,14 +131,13 @@ async function submitVote() {
 
   if (GAS_URL) {
     try {
-      await fetch(GAS_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(voteData)
+      const params = new URLSearchParams({
+        action: 'vote',
+        data: JSON.stringify(voteData)
       });
+      await fetch(`${GAS_URL}?${params}`);
     } catch {
-      // no-cors mode doesn't expose errors; vote is still saved locally
+      // vote is still saved locally
     }
   }
 
@@ -225,7 +224,6 @@ function renderResults(el, data) {
     return;
   }
 
-  // Sort versions by vote count descending
   const sorted = VERSIONS.map(v => ({
     ...v,
     count: totals[v.id] || 0

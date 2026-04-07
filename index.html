@@ -229,12 +229,31 @@
     }
     .footer a:hover { color: #94A3B8; }
 
-    /* Vote Section */
-    .vote-section {
-      max-width: 720px;
+    /* Vote Layout (side by side) */
+    .vote-layout {
+      max-width: 1280px;
       margin: 0 auto;
-      padding: 48px 24px;
+      padding: 32px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
     }
+    @media (max-width: 840px) {
+      .vote-layout { grid-template-columns: 1fr; }
+    }
+    .vote-layout__label {
+      font-size: 0.75rem;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    /* Vote Form */
     .vote-form {
       background: #151E2F;
       border: 1px solid rgba(255,255,255,0.06);
@@ -594,27 +613,24 @@
   <header class="header">
     <div class="header__badge">Internal Review</div>
     <h1>HicareNet Homepage Renewal</h1>
-    <p>6가지 디자인 버전을 비교하고 피드백을 남겨주세요. 각 카드를 클릭하면 해당 버전의 라이브 페이지로 이동합니다.</p>
+    <p>6가지 디자인 버전을 비교하고 피드백을 남겨주세요.<br>각 카드를 클릭하면 해당 버전의 라이브 페이지로 이동합니다.</p>
     <div class="header__instruction">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       각 버전을 열어보신 후, 가장 적합한 디자인을 선택해주세요
     </div>
   </header>
 
-  <!-- Vote Section -->
-  <div class="divider">
-    <div class="divider__line">
-      <span class="divider__label">Team Vote</span>
+  <!-- Vote + Results (side by side) -->
+  <div class="vote-layout">
+    <div class="vote-layout__col">
+      <div class="vote-layout__label">Team Vote</div>
+      <section id="vote-section"></section>
+    </div>
+    <div class="vote-layout__col">
+      <div class="vote-layout__label">Results</div>
+      <section id="vote-results"></section>
     </div>
   </div>
-  <section class="vote-section" id="vote-section"></section>
-
-  <div class="divider">
-    <div class="divider__line">
-      <span class="divider__label">Results</span>
-    </div>
-  </div>
-  <section class="vote-section" id="vote-results"></section>
 
   <div class="divider">
     <div class="divider__line">

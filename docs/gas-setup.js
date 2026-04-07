@@ -16,27 +16,27 @@
  * URL 형식: https://script.google.com/macros/s/XXXXXXX/exec
  */
 
-function doPost(e) {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Votes');
-  var data = JSON.parse(e.postData.contents);
-
-  sheet.appendRow([
-    data.id || '',
-    data.timestamp || new Date().toISOString(),
-    data.votes[0] || '',
-    data.votes[1] || '',
-    data.comment || ''
-  ]);
-
-  return ContentService
-    .createTextOutput(JSON.stringify({ success: true }))
-    .setMimeType(ContentService.MimeType.JSON);
-}
-
 function doGet(e) {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Votes');
-  var rows = sheet.getDataRange().getValues();
+  var action = (e.parameter && e.parameter.action) || 'results';
 
+  // ── 투표 저장 ──
+  if (action === 'vote') {
+    var data = JSON.parse(e.parameter.data);
+    sheet.appendRow([
+      data.id || '',
+      data.timestamp || new Date().toISOString(),
+      data.votes[0] || '',
+      data.votes[1] || '',
+      data.comment || ''
+    ]);
+    return ContentService
+      .createTextOutput(JSON.stringify({ success: true }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+
+  // ── 결과 조회 ──
+  var rows = sheet.getDataRange().getValues();
   var votes = [];
   var totals = { v1: 0, v2: 0, v3: 0, v4: 0, v5: 0, v6: 0 };
 
@@ -59,13 +59,11 @@ function doGet(e) {
     });
   }
 
-  var result = {
-    votes: votes.reverse(),
-    totals: totals,
-    totalVoters: votes.length
-  };
-
   return ContentService
-    .createTextOutput(JSON.stringify(result))
+    .createTextOutput(JSON.stringify({
+      votes: votes.reverse(),
+      totals: totals,
+      totalVoters: votes.length
+    }))
     .setMimeType(ContentService.MimeType.JSON);
 }
