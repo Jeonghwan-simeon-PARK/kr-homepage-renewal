@@ -5,608 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HicareNet Homepage Renewal - Version Comparison & Vote</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0B1120;
-      color: #E2E8F0;
-      min-height: 100vh;
-    }
-
-    /* Header */
-    .header {
-      text-align: center;
-      padding: 64px 24px 48px;
-      background: linear-gradient(135deg, #0B1120 0%, #1A2744 100%);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    .header__badge {
-      display: inline-block;
-      padding: 6px 16px;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: rgba(26,143,216,0.15);
-      color: #60B5F6;
-      margin-bottom: 20px;
-    }
-    .header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 12px;
-      line-height: 1.2;
-    }
-    .header p {
-      font-size: 1.1rem;
-      color: #94A3B8;
-      max-width: 600px;
-      margin: 0 auto 32px;
-      line-height: 1.6;
-    }
-    .header__instruction {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border-radius: 12px;
-      background: rgba(46,190,116,0.1);
-      border: 1px solid rgba(46,190,116,0.2);
-      color: #6EE7A0;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    /* Grid */
-    .versions {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 48px 24px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-      gap: 32px;
-    }
-    @media (max-width: 840px) {
-      .versions { grid-template-columns: 1fr; }
-    }
-
-    /* Cards */
-    .card {
-      background: #151E2F;
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 16px;
-      overflow: hidden;
-      transition: transform 0.3s ease, border-color 0.3s ease;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(26,143,216,0.4);
-    }
-    .card__preview {
-      position: relative;
-      width: 100%;
-      height: 220px;
-      overflow: hidden;
-      background: #0D1525;
-    }
-    .card__preview img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-      transition: transform 0.4s ease;
-    }
-    .card:hover .card__preview img {
-      transform: scale(1.05);
-    }
-    .card__overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 8px 16px;
-      background: linear-gradient(transparent, rgba(11,17,32,0.9));
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .card__tag {
-      font-size: 0.7rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #60B5F6;
-    }
-    .card__site {
-      font-size: 0.65rem;
-      color: #64748B;
-      padding: 3px 8px;
-      border-radius: 4px;
-      background: rgba(255,255,255,0.05);
-    }
-
-    .card__body {
-      padding: 24px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .card__version {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: #1A8FD8;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-    }
-    .card__title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #F1F5F9;
-      margin-bottom: 8px;
-    }
-    .card__desc {
-      font-size: 0.85rem;
-      color: #94A3B8;
-      line-height: 1.65;
-      margin-bottom: 16px;
-      flex: 1;
-    }
-    .card__features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 16px;
-    }
-    .feature {
-      font-size: 0.7rem;
-      font-weight: 500;
-      padding: 4px 10px;
-      border-radius: 6px;
-      background: rgba(26,143,216,0.1);
-      color: #7CC4F6;
-    }
-    .feature--green {
-      background: rgba(46,190,116,0.1);
-      color: #6EE7A0;
-    }
-    .feature--purple {
-      background: rgba(139,92,246,0.1);
-      color: #C4B5FD;
-    }
-    .card__cta {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 12px;
-      border-radius: 10px;
-      background: rgba(26,143,216,0.1);
-      color: #60B5F6;
-      font-size: 0.85rem;
-      font-weight: 600;
-      transition: background 0.2s;
-    }
-    .card:hover .card__cta {
-      background: rgba(26,143,216,0.2);
-    }
-
-    /* Divider */
-    .divider {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-    .divider__line {
-      border-top: 1px solid rgba(255,255,255,0.06);
-      padding-top: 24px;
-      text-align: center;
-    }
-    .divider__label {
-      font-size: 0.75rem;
-      color: #475569;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    /* Footer */
-    .footer {
-      text-align: center;
-      padding: 48px 24px;
-      color: #475569;
-      font-size: 0.8rem;
-    }
-    .footer a {
-      color: #64748B;
-      text-decoration: none;
-    }
-    .footer a:hover { color: #94A3B8; }
-
-    /* Vote Layout (side by side) */
-    .vote-layout {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 32px 24px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      align-items: start;
-    }
-    @media (max-width: 840px) {
-      .vote-layout { grid-template-columns: 1fr; }
-    }
-    .vote-layout__label {
-      font-size: 0.75rem;
-      color: #475569;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-align: center;
-      margin-bottom: 16px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    /* Vote Form */
-    .vote-form {
-      background: #151E2F;
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 16px;
-      padding: 32px;
-    }
-    .vote-form__hint {
-      font-size: 1rem;
-      color: #94A3B8;
-      margin-bottom: 24px;
-      text-align: center;
-      line-height: 1.6;
-    }
-    .vote-form__hint strong { color: #E2E8F0; }
-    .vote-form__warning {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #F59E0B;
-      margin-top: -8px;
-      margin-bottom: 12px;
-    }
-    .vote-tiles {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-    @media (max-width: 640px) {
-      .vote-tiles { grid-template-columns: repeat(2, 1fr); }
-    }
-    .vote-tile {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      padding: 20px 12px;
-      background: #0D1525;
-      border: 2px solid #1E293B;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: border-color 0.2s, box-shadow 0.2s, opacity 0.2s;
-      color: #94A3B8;
-      font-family: inherit;
-      font-size: inherit;
-    }
-    .vote-tile:hover { border-color: #334155; }
-    .vote-tile__check {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid #334155;
-      color: transparent;
-      transition: all 0.2s;
-      background: transparent;
-    }
-    .vote-tile__version {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      color: #64748B;
-      transition: color 0.2s;
-    }
-    .vote-tile__title {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #CBD5E1;
-      text-align: center;
-      line-height: 1.3;
-    }
-
-    /* Selected state */
-    .vote-tile--selected {
-      border-color: #1A8FD8;
-      box-shadow: 0 0 0 2px rgba(26,143,216,0.3);
-    }
-    .vote-tile--selected .vote-tile__check {
-      border-color: #1A8FD8;
-      background: #1A8FD8;
-      color: #fff;
-    }
-    .vote-tile--selected .vote-tile__version { color: #60B5F6; }
-    /* V6 green accent */
-    .vote-tile--selected[data-accent="green"] {
-      border-color: #2EBE74;
-      box-shadow: 0 0 0 2px rgba(46,190,116,0.3);
-    }
-    .vote-tile--selected[data-accent="green"] .vote-tile__check {
-      border-color: #2EBE74;
-      background: #2EBE74;
-    }
-    .vote-tile--selected[data-accent="green"] .vote-tile__version { color: #6EE7A0; }
-
-    /* Disabled & shake */
-    .vote-tile--disabled { opacity: 0.35; cursor: not-allowed; }
-    @keyframes vote-shake {
-      0%,100% { transform: translateX(0); }
-      20%,60% { transform: translateX(-4px); }
-      40%,80% { transform: translateX(4px); }
-    }
-    .vote-tile--shake { animation: vote-shake 0.4s ease; }
-
-    /* Textarea & submit */
-    .vote-textarea {
-      display: block;
-      width: 100%;
-      padding: 12px 16px;
-      background: #0D1525;
-      border: 1px solid #1E293B;
-      border-radius: 10px;
-      color: #E2E8F0;
-      font-family: inherit;
-      font-size: 0.85rem;
-      line-height: 1.6;
-      resize: vertical;
-      margin-bottom: 16px;
-      transition: border-color 0.2s;
-    }
-    .vote-textarea::placeholder { color: #475569; }
-    .vote-textarea:focus { outline: none; border-color: #1A8FD8; }
-    .vote-submit {
-      display: block;
-      width: 100%;
-      padding: 14px;
-      border: none;
-      border-radius: 10px;
-      background: #1A8FD8;
-      color: #fff;
-      font-family: inherit;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s, opacity 0.2s;
-    }
-    .vote-submit:hover:not(:disabled) { background: #1577B8; }
-    .vote-submit:disabled { opacity: 0.4; cursor: not-allowed; }
-
-    /* Confirmation */
-    .vote-confirm {
-      text-align: center;
-      background: #151E2F;
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 16px;
-      padding: 48px 32px;
-    }
-    .vote-confirm__icon { margin-bottom: 16px; }
-    .vote-confirm__title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #F1F5F9;
-      margin-bottom: 4px;
-    }
-    .vote-confirm__date {
-      font-size: 0.8rem;
-      color: #64748B;
-      margin-bottom: 20px;
-    }
-    .vote-confirm__badges {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
-    .vote-badge {
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 6px 14px;
-      border-radius: 8px;
-      background: rgba(26,143,216,0.12);
-      color: #60B5F6;
-    }
-    .vote-badge--green {
-      background: rgba(46,190,116,0.12);
-      color: #6EE7A0;
-    }
-    .vote-confirm__comment {
-      max-width: 480px;
-      margin: 0 auto 24px;
-      padding: 12px 20px;
-      border-left: 3px solid #334155;
-      background: rgba(13,21,37,0.5);
-      border-radius: 0 8px 8px 0;
-      color: #94A3B8;
-      font-size: 0.85rem;
-      line-height: 1.6;
-      text-align: left;
-    }
-    .vote-confirm__actions {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .vote-copy-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 10px 20px;
-      border: 1px solid #334155;
-      border-radius: 8px;
-      background: transparent;
-      color: #94A3B8;
-      font-family: inherit;
-      font-size: 0.8rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .vote-copy-btn:hover { border-color: #1A8FD8; color: #60B5F6; }
-    .vote-copy-btn--copied { border-color: #2EBE74; color: #6EE7A0; }
-    .vote-reset-btn {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      background: transparent;
-      color: #64748B;
-      font-family: inherit;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: color 0.2s;
-    }
-    .vote-reset-btn:hover { color: #94A3B8; }
-
-    /* Results */
-    .vote-results__loading,
-    .vote-results__empty {
-      text-align: center;
-      padding: 32px;
-      color: #64748B;
-      font-size: 0.85rem;
-      line-height: 1.8;
-    }
-    .vote-results__header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      margin-bottom: 24px;
-    }
-    .vote-results__title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #F1F5F9;
-    }
-    .vote-results__count {
-      font-size: 0.8rem;
-      color: #64748B;
-      padding: 4px 12px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.04);
-    }
-    .vote-results__bars { display: flex; flex-direction: column; gap: 14px; }
-    .vote-bar {
-      display: grid;
-      grid-template-columns: 200px 1fr 72px;
-      align-items: center;
-      gap: 12px;
-    }
-    @media (max-width: 640px) {
-      .vote-bar {
-        grid-template-columns: 1fr;
-        gap: 4px;
-      }
-      .vote-bar__label { display: flex; gap: 8px; }
-    }
-    .vote-bar__version {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: #60B5F6;
-      letter-spacing: 0.05em;
-    }
-    .vote-bar__title {
-      font-size: 0.8rem;
-      color: #94A3B8;
-      margin-left: 6px;
-    }
-    .vote-bar__track {
-      height: 28px;
-      background: #1E293B;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-    .vote-bar__fill {
-      height: 100%;
-      border-radius: 6px;
-      transition: width 0.8s ease-out;
-    }
-    .vote-bar__count {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #CBD5E1;
-      text-align: right;
-      white-space: nowrap;
-    }
-    .vote-bar__pct { color: #64748B; font-weight: 400; }
-
-    /* Comments */
-    .vote-results__comments-header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      margin-top: 32px;
-      margin-bottom: 16px;
-    }
-    .vote-results__comments-header h4 {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #E2E8F0;
-    }
-    .vote-results__comments-header span {
-      font-size: 0.75rem;
-      color: #64748B;
-    }
-    .vote-results__comments {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-height: 400px;
-      overflow-y: auto;
-    }
-    .vote-results__comments::-webkit-scrollbar { width: 4px; }
-    .vote-results__comments::-webkit-scrollbar-track { background: transparent; }
-    .vote-results__comments::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
-    .vote-comment-card {
-      background: #151E2F;
-      border: 1px solid rgba(255,255,255,0.04);
-      border-radius: 10px;
-      padding: 14px 18px;
-    }
-    .vote-comment-card__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
-    }
-    .vote-comment-card__badges { display: flex; gap: 6px; }
-    .vote-badge--sm { font-size: 0.65rem; padding: 3px 8px; }
-    .vote-comment-card__time {
-      font-size: 0.7rem;
-      color: #475569;
-    }
-    .vote-comment-card__text {
-      font-size: 0.82rem;
-      color: #94A3B8;
-      line-height: 1.6;
-    }
-  </style>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
@@ -643,7 +42,7 @@
     <!-- V1 -->
     <a href="v1/index.html" target="_blank" rel="noopener" class="card">
       <div class="card__preview">
-        <img src="https://images.pexels.com/photos/7089011/pexels-photo-7089011.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V1 Technology Leadership preview - Healthcare technology monitoring screen">
+        <img src="https://images.pexels.com/photos/7089011/pexels-photo-7089011.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V1 Technology Leadership preview">
         <div class="card__overlay">
           <span class="card__tag">US Site</span>
           <span class="card__site">hicare.net</span>
@@ -666,7 +65,7 @@
     <!-- V2 -->
     <a href="v2/index.html" target="_blank" rel="noopener" class="card">
       <div class="card__preview">
-        <img src="https://images.pexels.com/photos/5452300/pexels-photo-5452300.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V2 Clinical Curator preview - Doctor with digital tablet in clinical setting">
+        <img src="https://images.pexels.com/photos/5452300/pexels-photo-5452300.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V2 Clinical Curator preview">
         <div class="card__overlay">
           <span class="card__tag">US Site</span>
           <span class="card__site">hicare.net</span>
@@ -689,7 +88,7 @@
     <!-- V3 -->
     <a href="v3/index.html" target="_blank" rel="noopener" class="card">
       <div class="card__preview">
-        <img src="https://images.pexels.com/photos/7659573/pexels-photo-7659573.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V3 Clinical Editorial preview - Healthcare worker with patient">
+        <img src="https://images.pexels.com/photos/7659573/pexels-photo-7659573.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V3 Clinical Editorial preview">
         <div class="card__overlay">
           <span class="card__tag">US Site</span>
           <span class="card__site">hicare.net</span>
@@ -712,7 +111,7 @@
     <!-- V4 -->
     <a href="v4/index.html" target="_blank" rel="noopener" class="card">
       <div class="card__preview">
-        <img src="https://images.pexels.com/photos/8900018/pexels-photo-8900018.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V4 Dark Navy preview - Patient self-monitoring blood pressure at home">
+        <img src="https://images.pexels.com/photos/8900018/pexels-photo-8900018.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V4 Dark Navy preview">
         <div class="card__overlay">
           <span class="card__tag">US Site</span>
           <span class="card__site">hicare.net</span>
@@ -735,7 +134,7 @@
     <!-- V5 -->
     <a href="v5/index.html" target="_blank" rel="noopener" class="card">
       <div class="card__preview">
-        <img src="https://images.pexels.com/photos/6787960/pexels-photo-6787960.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V5 Clean Light preview - Senior couple using tablet for health management">
+        <img src="https://images.pexels.com/photos/6787960/pexels-photo-6787960.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V5 Clean Light preview">
         <div class="card__overlay">
           <span class="card__tag">US Site</span>
           <span class="card__site">hicare.net</span>
@@ -758,7 +157,7 @@
     <!-- V6 -->
     <a href="v6/index.html" target="_blank" rel="noopener" class="card" style="border-color: rgba(46,190,116,0.3);">
       <div class="card__preview">
-        <img src="https://images.pexels.com/photos/7824271/pexels-photo-7824271.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V6 Korean Corporate preview - Modern glass tech building at night">
+        <img src="https://images.pexels.com/photos/7824271/pexels-photo-7824271.jpeg?auto=compress&cs=tinysrgb&w=800" alt="V6 Korean Corporate preview">
         <div class="card__overlay">
           <span class="card__tag" style="color: #6EE7A0;">KR Site</span>
           <span class="card__site">hicare.co.kr</span>
@@ -786,73 +185,41 @@
     </div>
   </div>
 
-  <div style="max-width: 1280px; margin: 0 auto; padding: 32px 24px;">
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;">
+  <div class="comparison">
+    <table>
       <thead>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-          <th style="padding: 12px 8px; text-align: left; color: #64748B; font-weight: 600;">Feature</th>
-          <th style="padding: 12px 8px; text-align: center; color: #64748B;">V1</th>
-          <th style="padding: 12px 8px; text-align: center; color: #64748B;">V2</th>
-          <th style="padding: 12px 8px; text-align: center; color: #64748B;">V3</th>
-          <th style="padding: 12px 8px; text-align: center; color: #64748B;">V4</th>
-          <th style="padding: 12px 8px; text-align: center; color: #64748B;">V5</th>
-          <th style="padding: 12px 8px; text-align: center; color: #6EE7A0;">V6</th>
+        <tr>
+          <th>Feature</th>
+          <th>V1</th><th>V2</th><th>V3</th><th>V4</th><th>V5</th>
+          <th class="accent">V6</th>
         </tr>
       </thead>
-      <tbody style="color: #94A3B8;">
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
-          <td style="padding: 10px 8px;">Target</td>
-          <td style="padding: 10px 8px; text-align: center;">US Clinics</td>
-          <td style="padding: 10px 8px; text-align: center;">US Clinics</td>
-          <td style="padding: 10px 8px; text-align: center;">US Clinics</td>
-          <td style="padding: 10px 8px; text-align: center;">US Clinics</td>
-          <td style="padding: 10px 8px; text-align: center;">US Clinics</td>
-          <td style="padding: 10px 8px; text-align: center; color: #6EE7A0;">KR Recruit/IR</td>
-        </tr>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
-          <td style="padding: 10px 8px;">CSS Framework</td>
-          <td style="padding: 10px 8px; text-align: center;">Custom</td>
-          <td style="padding: 10px 8px; text-align: center;">Custom</td>
-          <td style="padding: 10px 8px; text-align: center;">Custom</td>
-          <td style="padding: 10px 8px; text-align: center;">Tailwind</td>
-          <td style="padding: 10px 8px; text-align: center;">Tailwind</td>
-          <td style="padding: 10px 8px; text-align: center;">Tailwind</td>
-        </tr>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
-          <td style="padding: 10px 8px;">Theme</td>
-          <td style="padding: 10px 8px; text-align: center;">Light</td>
-          <td style="padding: 10px 8px; text-align: center;">Indigo</td>
-          <td style="padding: 10px 8px; text-align: center;">Light</td>
-          <td style="padding: 10px 8px; text-align: center;">Dark Navy</td>
-          <td style="padding: 10px 8px; text-align: center;">Light</td>
-          <td style="padding: 10px 8px; text-align: center;">Light</td>
-        </tr>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
-          <td style="padding: 10px 8px;">Pages</td>
-          <td style="padding: 10px 8px; text-align: center;">10</td>
-          <td style="padding: 10px 8px; text-align: center;">11</td>
-          <td style="padding: 10px 8px; text-align: center;">8</td>
-          <td style="padding: 10px 8px; text-align: center;">8</td>
-          <td style="padding: 10px 8px; text-align: center;">7</td>
-          <td style="padding: 10px 8px; text-align: center;">11</td>
-        </tr>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
-          <td style="padding: 10px 8px;">i18n</td>
-          <td style="padding: 10px 8px; text-align: center;">EN/KO</td>
-          <td style="padding: 10px 8px; text-align: center;">EN/KO</td>
-          <td style="padding: 10px 8px; text-align: center;">EN/KO</td>
-          <td style="padding: 10px 8px; text-align: center;">EN/KO</td>
-          <td style="padding: 10px 8px; text-align: center;">EN/KO</td>
-          <td style="padding: 10px 8px; text-align: center; color: #6EE7A0;">KO/EN</td>
+      <tbody>
+        <tr>
+          <td>Target</td>
+          <td>US Clinics</td><td>US Clinics</td><td>US Clinics</td><td>US Clinics</td><td>US Clinics</td>
+          <td class="accent">KR Recruit/IR</td>
         </tr>
         <tr>
-          <td style="padding: 10px 8px;">Typography</td>
-          <td style="padding: 10px 8px; text-align: center;">Custom</td>
-          <td style="padding: 10px 8px; text-align: center;">Manrope</td>
-          <td style="padding: 10px 8px; text-align: center;">Manrope</td>
-          <td style="padding: 10px 8px; text-align: center;">Manrope</td>
-          <td style="padding: 10px 8px; text-align: center;">Manrope</td>
-          <td style="padding: 10px 8px; text-align: center;">Noto Sans KR</td>
+          <td>CSS Framework</td>
+          <td>Custom</td><td>Custom</td><td>Custom</td><td>Tailwind</td><td>Tailwind</td><td>Tailwind</td>
+        </tr>
+        <tr>
+          <td>Theme</td>
+          <td>Light</td><td>Indigo</td><td>Light</td><td>Dark Navy</td><td>Light</td><td>Light</td>
+        </tr>
+        <tr>
+          <td>Pages</td>
+          <td>10</td><td>11</td><td>8</td><td>8</td><td>7</td><td>11</td>
+        </tr>
+        <tr>
+          <td>i18n</td>
+          <td>EN/KO</td><td>EN/KO</td><td>EN/KO</td><td>EN/KO</td><td>EN/KO</td>
+          <td class="accent">KO/EN</td>
+        </tr>
+        <tr>
+          <td>Typography</td>
+          <td>Custom</td><td>Manrope</td><td>Manrope</td><td>Manrope</td><td>Manrope</td><td>Noto Sans KR</td>
         </tr>
       </tbody>
     </table>
