@@ -275,14 +275,24 @@ function renderResults(el, data) {
       <span class="vote-results__count">${totalVoters}명 참여</span>
     </div>
     <div class="vote-results__bars">${barsHtml}</div>
-    ${commentsHtml ? `
-      <div class="vote-results__comments-header">
-        <h4>의견</h4>
-        <span>${votes.filter(v => v.comment).length}건</span>
-      </div>
-      <div class="vote-results__comments">${commentsHtml}</div>
-    ` : ''}
   `;
+
+  // Render comments into separate section
+  const commentsEl = document.getElementById('vote-comments');
+  if (commentsEl) {
+    const commentCount = votes.filter(v => v.comment).length;
+    if (commentCount > 0) {
+      commentsEl.innerHTML = `
+        <div class="vote-results__comments-header">
+          <h4>의견</h4>
+          <span>${commentCount}건</span>
+        </div>
+        <div class="vote-results__comments">${commentsHtml}</div>
+      `;
+    } else {
+      commentsEl.innerHTML = '<div class="vote-results__empty">아직 의견이 없습니다.</div>';
+    }
+  }
 }
 
 function timeAgo(ts) {

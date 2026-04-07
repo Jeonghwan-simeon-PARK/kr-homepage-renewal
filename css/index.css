@@ -252,17 +252,27 @@ body {
 
 /* ── Vote Layout ─────────────────────────────────────────── */
 .vote-layout {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 32px 24px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
   align-items: start;
 }
-@media (max-width: 840px) {
+@media (max-width: 1024px) {
+  .vote-layout { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
   .vote-layout { grid-template-columns: 1fr; }
 }
+.vote-layout__scroll {
+  max-height: 480px;
+  overflow-y: auto;
+}
+.vote-layout__scroll::-webkit-scrollbar { width: 4px; }
+.vote-layout__scroll::-webkit-scrollbar-track { background: transparent; }
+.vote-layout__scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
 .vote-layout__label {
   font-size: 0.75rem;
   color: #475569;
@@ -580,12 +590,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-height: 400px;
-  overflow-y: auto;
 }
-.vote-results__comments::-webkit-scrollbar { width: 4px; }
-.vote-results__comments::-webkit-scrollbar-track { background: transparent; }
-.vote-results__comments::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
 .vote-comment-card {
   background: #151E2F;
   border: 1px solid rgba(255,255,255,0.04);
