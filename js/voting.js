@@ -2,7 +2,7 @@
 // Google Apps Script URL - 배포 후 아래에 URL 붙여넣기
 // 설정 방법: docs/gas-setup.js 참조
 // ============================================================
-const GAS_URL = '';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbwWbUrY5NkGLSFJ79Qkvm_WWlY2k0nS4VwmlpfjC0nATYm__Dnpj1MlNPULG1tLTr5j/exec';
 
 const STORAGE_KEY = 'hicarenet-design-vote';
 const MAX_SELECTIONS = 2;
