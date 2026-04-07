@@ -229,6 +229,8 @@ async function fetchAndRenderResults() {
   }
 
   resultsEl.innerHTML = '<div class="vote-results__loading">결과 불러오는 중...</div>';
+  const commentsEl = document.getElementById('vote-comments');
+  if (commentsEl) commentsEl.innerHTML = '<div class="vote-results__loading">의견 불러오는 중...</div>';
 
   try {
     const res = await fetch(GAS_URL);
