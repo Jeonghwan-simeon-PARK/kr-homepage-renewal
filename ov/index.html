@@ -23,13 +23,32 @@
       <a href="../v1/index.html" class="nav__logo" aria-label="HicareNet Home">
         <img src="../assets/images/hicare-logo.png" alt="HicareNet" height="28">
       </a>
+      <nav class="nav__menu" aria-label="Main navigation">
+        <a href="#hero" class="nav__link" data-i18n="nav.home">Home</a>
+        <a href="#solutions" class="nav__link" data-i18n="nav.solutions">Solutions</a>
+        <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="#compliance" class="nav__link" data-i18n="nav.compliance">Compliance</a>
+        <a href="#resources" class="nav__link" data-i18n="nav.resources">Resources</a>
+      </nav>
       <div class="nav__actions">
         <div class="lang-toggle" role="group" aria-label="Language selection">
           <button class="lang-toggle__btn is-active" data-lang="en" aria-label="English">EN</button>
           <button class="lang-toggle__btn" data-lang="ko" aria-label="Korean">KO</button>
         </div>
+        <!-- Mobile Hamburger -->
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+    <!-- Mobile Menu -->
+    <nav class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#hero" class="nav__mobile-link" data-i18n="nav.home">Home</a>
+      <a href="#solutions" class="nav__mobile-link" data-i18n="nav.solutions">Solutions</a>
+      <a href="#about" class="nav__mobile-link" data-i18n="nav.about">About</a>
+      <a href="#compliance" class="nav__mobile-link" data-i18n="nav.compliance">Compliance</a>
+      <a href="#resources" class="nav__mobile-link" data-i18n="nav.resources">Resources</a>
+    </nav>
   </header>
 
   <!-- ========== SCROLL INDICATOR ========== -->
@@ -42,21 +61,24 @@
 
   <!-- ========== SECTION NAV DOTS ========== -->
   <nav class="section-dots" id="section-dots" aria-label="Section navigation">
-    <button class="section-dots__dot is-active" data-index="0" aria-label="Hero"></button>
+    <button class="section-dots__dot is-active" data-index="0" aria-label="Home"></button>
     <button class="section-dots__dot" data-index="1" aria-label="RPM"></button>
     <button class="section-dots__dot" data-index="2" aria-label="CCM"></button>
     <button class="section-dots__dot" data-index="3" aria-label="AWV"></button>
     <button class="section-dots__dot" data-index="4" aria-label="VBC"></button>
     <button class="section-dots__dot" data-index="5" aria-label="Technology"></button>
     <button class="section-dots__dot" data-index="6" aria-label="Impact"></button>
-    <button class="section-dots__dot" data-index="7" aria-label="CTA"></button>
+    <button class="section-dots__dot" data-index="7" aria-label="Compliance"></button>
+    <button class="section-dots__dot" data-index="8" aria-label="Resources"></button>
   </nav>
 
   <!-- ========== MAIN CONTENT ========== -->
   <main class="fullpage" id="fullpage">
 
-    <!-- ===== SECTION 0: HERO ===== -->
-    <section class="fp-section fp-section--hero" data-section="0">
+    <!-- ============================================================
+         HOME
+         ============================================================ -->
+    <section class="fp-section fp-section--hero" data-section="0" id="hero">
       <div class="fp-section__bg">
         <img src="https://images.pexels.com/photos/7089011/pexels-photo-7089011.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Healthcare professional" loading="eager">
       </div>
@@ -68,8 +90,12 @@
       </div>
     </section>
 
-    <!-- ===== SECTION 1: RPM ===== -->
-    <section class="fp-section" data-section="1">
+    <!-- ============================================================
+         SOLUTIONS
+         ============================================================ -->
+
+    <!-- RPM -->
+    <section class="fp-section" data-section="1" id="solutions">
       <div class="fp-section__bg">
         <img src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Remote patient monitoring device" loading="lazy">
       </div>
@@ -90,7 +116,7 @@
       </div>
     </section>
 
-    <!-- ===== SECTION 2: CCM ===== -->
+    <!-- CCM -->
     <section class="fp-section" data-section="2">
       <div class="fp-section__bg">
         <img src="https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Care coordination" loading="lazy">
@@ -112,7 +138,7 @@
       </div>
     </section>
 
-    <!-- ===== SECTION 3: AWV ===== -->
+    <!-- AWV -->
     <section class="fp-section" data-section="3">
       <div class="fp-section__bg">
         <img src="https://images.pexels.com/photos/5214949/pexels-photo-5214949.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Annual wellness visit" loading="lazy">
@@ -134,7 +160,7 @@
       </div>
     </section>
 
-    <!-- ===== SECTION 4: VBC ===== -->
+    <!-- VBC -->
     <section class="fp-section" data-section="4">
       <div class="fp-section__bg">
         <img src="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Value based care analytics" loading="lazy">
@@ -156,8 +182,12 @@
       </div>
     </section>
 
-    <!-- ===== SECTION 5: TECHNOLOGY ===== -->
-    <section class="fp-section fp-section--dark" data-section="5">
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+
+    <!-- Technology Platform -->
+    <section class="fp-section fp-section--dark" data-section="5" id="about">
       <div class="fp-section__bg">
         <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Technology platform" loading="lazy">
       </div>
@@ -198,7 +228,7 @@
       </div>
     </section>
 
-    <!-- ===== SECTION 6: IMPACT NUMBERS ===== -->
+    <!-- Impact Numbers -->
     <section class="fp-section fp-section--stats" data-section="6">
       <div class="fp-section__bg">
         <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Team collaboration" loading="lazy">
@@ -232,41 +262,158 @@
       </div>
     </section>
 
-    <!-- ===== SECTION 7: COMPLIANCE + CTA ===== -->
-    <section class="fp-section fp-section--final" data-section="7">
+    <!-- ============================================================
+         COMPLIANCE
+         ============================================================ -->
+    <section class="fp-section" data-section="7" id="compliance">
+      <div class="fp-section__bg">
+        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Security and compliance" loading="lazy">
+      </div>
+      <div class="fp-section__overlay fp-section__overlay--heavy"></div>
+      <div class="fp-section__content fp-section__content--center">
+        <span class="fp-section__eyebrow" data-animate="fade-up" data-i18n="compliance.eyebrow">Security & Compliance</span>
+        <h2 class="fp-section__headline" data-animate="fade-up" data-animate-delay="150" data-i18n="compliance.title">HIPAA Compliant.<br>ISO 27001 & ISO 27701 Certified.</h2>
+        <p class="fp-section__desc fp-section__desc--light" data-animate="fade-up" data-animate-delay="300" data-i18n="compliance.desc">Your patient data is protected by industry-leading security standards and compliance certifications.</p>
+        <div class="compliance-grid" data-animate="fade-up" data-animate-delay="450">
+          <div class="compliance-card">
+            <div class="compliance-card__icon">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="compliance-card__title">HIPAA</h3>
+            <p class="compliance-card__desc" data-i18n="compliance.hipaa_desc">Full compliance with Health Insurance Portability and Accountability Act requirements for protected health information.</p>
+          </div>
+          <div class="compliance-card">
+            <div class="compliance-card__icon">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="compliance-card__title">ISO 27001</h3>
+            <p class="compliance-card__desc" data-i18n="compliance.iso27001_desc">International standard for information security management systems (ISMS) certification.</p>
+          </div>
+          <div class="compliance-card">
+            <div class="compliance-card__icon">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 class="compliance-card__title">ISO 27701</h3>
+            <p class="compliance-card__desc" data-i18n="compliance.iso27701_desc">Privacy information management extension to ISO 27001 for personal data protection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RESOURCES
+         ============================================================ -->
+    <section class="fp-section fp-section--resources" data-section="8" id="resources">
       <div class="fp-section__bg">
         <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Healthcare partnership" loading="lazy">
       </div>
       <div class="fp-section__overlay fp-section__overlay--dark"></div>
       <div class="fp-section__content fp-section__content--center">
-        <div class="compliance-row" data-animate="fade-up">
-          <div class="compliance-badge">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>HIPAA</span>
-          </div>
-          <div class="compliance-badge">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            <span>ISO 27001</span>
-          </div>
-          <div class="compliance-badge">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-            <span>ISO 27701</span>
-          </div>
+        <span class="fp-section__eyebrow" data-animate="fade-up" data-i18n="resources.eyebrow">Resources</span>
+        <h2 class="fp-section__headline" data-animate="fade-up" data-animate-delay="150" data-i18n="resources.title">Learn, Connect,<br>and Get Started</h2>
+        <div class="resource-grid" data-animate="fade-up" data-animate-delay="300">
+          <a href="../v1/solutions.html#fhir" class="resource-card">
+            <div class="resource-card__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h3 class="resource-card__title" data-i18n="resources.fhir_title">FHIR Integration</h3>
+            <p class="resource-card__desc" data-i18n="resources.fhir_desc">From HL7v2 to FHIR R4 — seamless EMR integration with industry-standard protocols.</p>
+          </a>
+          <a href="../v1/resources.html" class="resource-card">
+            <div class="resource-card__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3 class="resource-card__title" data-i18n="resources.blog_title">Blog & Insights</h3>
+            <p class="resource-card__desc" data-i18n="resources.blog_desc">Healthcare IT trends, product updates, and clinical best practices.</p>
+          </a>
+          <a href="../v1/resources.html#faq" class="resource-card">
+            <div class="resource-card__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3 class="resource-card__title" data-i18n="resources.faq_title">FAQ</h3>
+            <p class="resource-card__desc" data-i18n="resources.faq_desc">Frequently asked questions about our solutions, billing, and implementation.</p>
+          </a>
         </div>
-        <h2 class="fp-section__headline fp-section__headline--white fp-section__headline--cta" data-animate="fade-up" data-animate-delay="200" data-i18n="cta.headline">Ready to Experience<br>Proven Healthcare Technology?</h2>
-        <p class="fp-section__desc fp-section__desc--light" data-animate="fade-up" data-animate-delay="350" data-i18n="cta.desc">From HH-800A/HH-930 gateway devices to 120+ device integrations &mdash; discover the technology platform trusted by US VA projects and 40+ hospitals.</p>
         <div class="fp-section__cta-group" data-animate="fade-up" data-animate-delay="500">
           <a href="../v1/contact.html#demo" class="btn btn--primary btn--lg" data-i18n="cta.primary">Schedule a Demo</a>
           <a href="../v1/contact.html" class="btn btn--outline btn--lg" data-i18n="cta.secondary">Contact Sales</a>
         </div>
       </div>
-      <!-- Footer inside last section -->
-      <footer class="fp-footer">
-        <p>&copy; 2026 HicareNet, Inc. All rights reserved.</p>
-      </footer>
     </section>
 
   </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="footer__main">
+      <div class="footer__inner">
+        <!-- Company Info -->
+        <div class="footer__company">
+          <div class="footer__logo">
+            <img src="../assets/images/hicare-logo.png" alt="HicareNet" height="32">
+          </div>
+          <p class="footer__company-desc" data-i18n="footer.desc">Comprehensive healthcare technology solutions enabling better patient outcomes through innovation and clinical excellence.</p>
+          <div class="footer__contact-info">
+            <div class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="footer.address">3F InSung Info Bldg, 123 Teheran-ro, Gangnam-gu, Seoul, Korea</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+82-2-000-0000</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>info@hicarenet.com</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Columns -->
+        <div class="footer__menus">
+          <div class="footer__menu-col">
+            <h4 class="footer__menu-title" data-i18n="footer.solutions_title">Solutions</h4>
+            <ul class="footer__menu-list">
+              <li><a href="../v1/solutions.html#rpm" data-i18n="footer.rpm">Remote Patient Monitoring</a></li>
+              <li><a href="../v1/solutions.html#ccm" data-i18n="footer.ccm">Chronic Care Management</a></li>
+              <li><a href="../v1/solutions.html#awv" data-i18n="footer.awv">Annual Wellness Visits</a></li>
+              <li><a href="../v1/solutions.html#vbc" data-i18n="footer.vbc">Value-Based Care</a></li>
+              <li><a href="../v1/solutions.html#fhir" data-i18n="footer.fhir">FHIR Integration</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-col">
+            <h4 class="footer__menu-title" data-i18n="footer.company_title">Company</h4>
+            <ul class="footer__menu-list">
+              <li><a href="../v1/about.html" data-i18n="footer.about_link">About HicareNet</a></li>
+              <li><a href="../v1/about.html#team" data-i18n="footer.team">Leadership Team</a></li>
+              <li><a href="../v1/about.html#story" data-i18n="footer.story">Our Story</a></li>
+              <li><a href="../v1/compliance.html" data-i18n="footer.compliance_link">Compliance</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-col">
+            <h4 class="footer__menu-title" data-i18n="footer.resources_title">Resources</h4>
+            <ul class="footer__menu-list">
+              <li><a href="../v1/resources.html" data-i18n="footer.blog">Blog</a></li>
+              <li><a href="../v1/resources.html#faq" data-i18n="footer.faq">FAQ</a></li>
+              <li><a href="../v1/contact.html" data-i18n="footer.contact">Contact Us</a></li>
+              <li><a href="../v1/contact.html#demo" data-i18n="footer.demo">Schedule a Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom">
+      <div class="footer__inner">
+        <p class="footer__copyright">&copy; 2026 HicareNet, Inc. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="../v1/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="../v1/terms.html" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
