@@ -244,6 +244,77 @@ ul { list-style: none; }
 .solution-card:hover .solution-card__link { opacity: 1; }
 
 /* ============================
+   #1 KO — Service Flow Diagram
+   ============================ */
+.service-flow {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; margin-top: 40px; width: 100%; max-width: 900px;
+}
+
+.service-flow__step {
+  flex: 1; text-align: center; padding: 28px 16px;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px; transition: all 0.4s;
+  backdrop-filter: blur(8px);
+}
+.service-flow__step:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(26,143,216,0.4);
+  transform: translateY(-4px);
+}
+
+.service-flow__icon { color: #1A8FD8; margin-bottom: 12px; }
+
+.service-flow__title {
+  font-size: 1.1rem; font-weight: 800; color: #fff;
+  margin-bottom: 6px;
+}
+
+.service-flow__desc {
+  font-size: 0.8rem; color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+
+.service-flow__arrow {
+  flex: 0 0 40px; display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.25);
+}
+
+/* Service Tags */
+.service-tags {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  justify-content: center; margin-top: 32px;
+  width: 100%; max-width: 900px;
+}
+
+.service-tag {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 20px; border-radius: 40px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s;
+}
+.service-tag:hover {
+  border-color: rgba(26,143,216,0.3);
+  background: rgba(255,255,255,0.09);
+}
+
+.service-tag--highlight {
+  border-color: rgba(26,143,216,0.5);
+  background: rgba(26,143,216,0.1);
+}
+
+.service-tag__label {
+  font-size: 0.78rem; font-weight: 800; color: #1A8FD8;
+  letter-spacing: 0.05em; white-space: nowrap;
+}
+
+.service-tag__codes {
+  font-size: 0.75rem; color: rgba(255,255,255,0.5);
+  white-space: nowrap;
+}
+
+/* ============================
    #2 ABOUT — Tech Grid (EN)
    ============================ */
 .tech-grid {
@@ -446,6 +517,12 @@ ul { list-style: none; }
   .solution-card__desc { max-height: none; opacity: 1; }
   .solution-card__link { opacity: 1; }
 
+  .service-flow { flex-wrap: wrap; gap: 12px; }
+  .service-flow__step { flex: 0 0 calc(50% - 30px); }
+  .service-flow__arrow { flex: 0 0 24px; }
+  .service-flow__arrow:nth-of-type(2) { display: none; }
+  .service-tags { gap: 8px; }
+
   .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 600px; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; max-width: 500px; }
   .compliance-grid { gap: 16px; max-width: 700px; }
@@ -475,6 +552,13 @@ ul { list-style: none; }
 
   .solutions-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; height: auto; }
   .solution-card { min-height: 200px; }
+
+  .service-flow { gap: 8px; }
+  .service-flow__step { flex: 0 0 calc(50% - 20px); padding: 20px 12px; }
+  .service-flow__arrow { display: none; }
+  .service-flow__title { font-size: 0.95rem; }
+  .service-tags { flex-direction: column; align-items: center; }
+  .service-tag { width: 100%; max-width: 320px; justify-content: center; }
 
   .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 32px; }
   .tech-card { padding: 20px 16px; }
