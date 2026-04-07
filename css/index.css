@@ -291,6 +291,22 @@ body {
   border-radius: 16px;
   padding: 32px;
 }
+.vote-input {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  background: #0D1525;
+  border: 1px solid #1E293B;
+  border-radius: 10px;
+  color: #E2E8F0;
+  font-family: inherit;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  transition: border-color 0.2s;
+}
+.vote-input::placeholder { color: #475569; }
+.vote-input:focus { outline: none; border-color: #1A8FD8; }
+.vote-input--error { border-color: #EF4444; }
 .vote-form__hint {
   font-size: 1rem;
   color: #94A3B8;
@@ -602,6 +618,11 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
+}
+.vote-comment-card__name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #E2E8F0;
 }
 .vote-comment-card__badges { display: flex; gap: 6px; }
 .vote-badge--sm { font-size: 0.65rem; padding: 3px 8px; }

@@ -4,7 +4,7 @@
  * 설정 방법:
  * 1. Google Sheets에서 새 스프레드시트 생성
  * 2. 시트 이름을 "Votes"로 변경
- * 3. 첫 행(헤더)에 입력: id | timestamp | vote1 | vote2 | comment
+ * 3. 첫 행(헤더)에 입력: id | timestamp | name | vote1 | vote2 | comment
  * 4. 확장 프로그램 > Apps Script 클릭
  * 5. 아래 코드를 Code.gs에 붙여넣기
  * 6. 배포 > 새 배포 > 웹 앱 선택
@@ -20,17 +20,17 @@ function doGet(e) {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Votes');
   var action = (e.parameter && e.parameter.action) || 'results';
 
-  // ── 투표 저장 ──
+  // ── 투표 저장 (같은 이름 기존 투표 자동 교체) ──
   if (action === 'vote') {
     var data = JSON.parse(e.parameter.data);
+    var voterName = String(data.name || '').trim();
 
-    // 재투표 시 기존 행 삭제
-    if (data.oldId) {
+    // 같은 이름의 기존 투표 삭제
+    if (voterName) {
       var rows = sheet.getDataRange().getValues();
       for (var r = rows.length - 1; r >= 1; r--) {
-        if (String(rows[r][0]) === String(data.oldId)) {
+        if (String(rows[r][2]).trim() === voterName) {
           sheet.deleteRow(r + 1);
-          break;
         }
       }
     }
@@ -38,6 +38,7 @@ function doGet(e) {
     sheet.appendRow([
       data.id || '',
       data.timestamp || new Date().toISOString(),
+      voterName,
       data.votes[0] || '',
       data.votes[1] || '',
       data.comment || ''
@@ -54,15 +55,16 @@ function doGet(e) {
 
   for (var i = 1; i < rows.length; i++) {
     var row = rows[i];
-    var v1 = String(row[2]).trim().toLowerCase();
-    var v2 = String(row[3]).trim().toLowerCase();
+    var v1 = String(row[3]).trim().toLowerCase();
+    var v2 = String(row[4]).trim().toLowerCase();
     var selections = [v1, v2].filter(function(v) { return v && v !== ''; });
 
     var vote = {
       id: row[0],
       timestamp: row[1],
+      name: row[2] || '',
       votes: selections,
-      comment: row[4] || ''
+      comment: row[5] || ''
     };
     votes.push(vote);
 

@@ -67,8 +67,10 @@ function renderForm(container) {
     </button>
   `).join('');
 
+  const storedName = getStoredVote()?.name || '';
   container.innerHTML = `
     <div class="vote-form">
+      <input class="vote-input" id="vote-name" type="text" placeholder="이름을 입력하세요 (필수)" value="${escapeHtml(storedName)}" required>
       <p class="vote-form__hint">마음에 드는 디자인을 최대 <strong>${MAX_SELECTIONS}개</strong> 선택하세요</p>
       <div class="vote-tiles">${tiles}</div>
       <div class="vote-form__warning" id="vote-warning" hidden>최대 ${MAX_SELECTIONS}개까지 선택 가능합니다</div>
@@ -118,17 +120,23 @@ function handleTileClick(tile) {
 async function submitVote() {
   if (selectedVersions.length === 0) return;
 
+  const name = document.getElementById('vote-name').value.trim();
+  if (!name) {
+    document.getElementById('vote-name').focus();
+    document.getElementById('vote-name').classList.add('vote-input--error');
+    return;
+  }
+
   const btn = document.getElementById('vote-submit-btn');
   btn.disabled = true;
   btn.textContent = '제출 중...';
 
-  const oldVote = getStoredVote();
   const voteData = {
     id: 'vote_' + Date.now(),
     timestamp: new Date().toISOString(),
+    name: name,
     votes: [...selectedVersions],
-    comment: document.getElementById('vote-comment').value.trim(),
-    oldId: oldVote ? oldVote.id : ''
+    comment: document.getElementById('vote-comment').value.trim()
   };
 
   if (GAS_URL) {
@@ -174,7 +182,7 @@ function renderConfirmation(container, voteData) {
           <path d="M15 24l6 6 12-12" stroke="#2EBE74" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <h3 class="vote-confirm__title">투표가 완료되었습니다</h3>
+      <h3 class="vote-confirm__title">${escapeHtml(voteData.name)}님, 투표 완료!</h3>
       <p class="vote-confirm__date">${dateStr}</p>
       <div class="vote-confirm__badges">${badges}</div>
       ${commentHtml}
@@ -262,6 +270,7 @@ function renderResults(el, data) {
       return `
         <div class="vote-comment-card">
           <div class="vote-comment-card__header">
+            <span class="vote-comment-card__name">${escapeHtml(v.name || '익명')}</span>
             <div class="vote-comment-card__badges">${vBadges}</div>
             <span class="vote-comment-card__time">${ago}</span>
           </div>
