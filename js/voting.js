@@ -1,3 +1,9 @@
+// ============================================================
+// Google Apps Script URL - 배포 후 아래에 URL 붙여넣기
+// 설정 방법: docs/gas-setup.js 참조
+// ============================================================
+const GAS_URL = '';
+
 const STORAGE_KEY = 'hicarenet-design-vote';
 const MAX_SELECTIONS = 2;
 const VERSIONS = [
@@ -28,6 +34,8 @@ function escapeHtml(text) {
   return el.innerHTML;
 }
 
+// ── Init ──────────────────────────────────────────────────
+
 function initVoting() {
   const container = document.getElementById('vote-section');
   if (!container) return;
@@ -38,7 +46,11 @@ function initVoting() {
   } else {
     renderForm(container);
   }
+
+  fetchAndRenderResults();
 }
+
+// ── Vote Form ─────────────────────────────────────────────
 
 function renderForm(container) {
   selectedVersions = [];
@@ -101,18 +113,42 @@ function handleTileClick(tile) {
   document.getElementById('vote-submit-btn').disabled = selectedVersions.length === 0;
 }
 
-function submitVote() {
+// ── Submit ─────────────────────────────────────────────────
+
+async function submitVote() {
   if (selectedVersions.length === 0) return;
 
+  const btn = document.getElementById('vote-submit-btn');
+  btn.disabled = true;
+  btn.textContent = '제출 중...';
+
   const voteData = {
+    id: 'vote_' + Date.now(),
     timestamp: new Date().toISOString(),
     votes: [...selectedVersions],
     comment: document.getElementById('vote-comment').value.trim()
   };
 
+  if (GAS_URL) {
+    try {
+      await fetch(GAS_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(voteData)
+      });
+    } catch {
+      // no-cors mode doesn't expose errors; vote is still saved locally
+    }
+  }
+
   storeVote(voteData);
-  renderConfirmation(document.getElementById('vote-section'), voteData);
+  const container = document.getElementById('vote-section');
+  renderConfirmation(container, voteData);
+  fetchAndRenderResults();
 }
+
+// ── Confirmation ───────────────────────────────────────────
 
 function renderConfirmation(container, voteData) {
   const badges = voteData.votes.map(v => {
@@ -142,44 +178,125 @@ function renderConfirmation(container, voteData) {
       <div class="vote-confirm__badges">${badges}</div>
       ${commentHtml}
       <div class="vote-confirm__actions">
-        <button class="vote-copy-btn" id="vote-copy-btn">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M11 5V3.5A1.5 1.5 0 009.5 2h-6A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5" stroke="currentColor" stroke-width="1.5"/>
-          </svg>
-          <span>투표 JSON 복사</span>
-        </button>
         <button class="vote-reset-btn" id="vote-reset-btn">다시 투표하기</button>
       </div>
     </div>
   `;
 
-  document.getElementById('vote-copy-btn').addEventListener('click', () => copyVoteJson(voteData));
   document.getElementById('vote-reset-btn').addEventListener('click', resetVote);
-}
-
-function copyVoteJson(voteData) {
-  const json = JSON.stringify(voteData);
-  navigator.clipboard.writeText(json).then(() => {
-    const btn = document.getElementById('vote-copy-btn');
-    const orig = btn.innerHTML;
-    btn.innerHTML = `
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M4 8l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span>복사됨!</span>`;
-    btn.classList.add('vote-copy-btn--copied');
-    setTimeout(() => {
-      btn.innerHTML = orig;
-      btn.classList.remove('vote-copy-btn--copied');
-    }, 2000);
-  });
 }
 
 function resetVote() {
   localStorage.removeItem(STORAGE_KEY);
   renderForm(document.getElementById('vote-section'));
 }
+
+// ── Results ────────────────────────────────────────────────
+
+async function fetchAndRenderResults() {
+  const resultsEl = document.getElementById('vote-results');
+  if (!resultsEl) return;
+
+  if (!GAS_URL) {
+    resultsEl.innerHTML = `
+      <div class="vote-results__empty">
+        <p>GAS_URL이 설정되지 않았습니다.</p>
+        <p style="font-size:0.75rem; color:#475569;">docs/gas-setup.js를 참고하여 Google Apps Script를 배포한 뒤,<br>js/voting.js 상단의 GAS_URL에 배포 URL을 입력하세요.</p>
+      </div>`;
+    return;
+  }
+
+  resultsEl.innerHTML = '<div class="vote-results__loading">결과 불러오는 중...</div>';
+
+  try {
+    const res = await fetch(GAS_URL);
+    const data = await res.json();
+    renderResults(resultsEl, data);
+  } catch {
+    resultsEl.innerHTML = '<div class="vote-results__empty">결과를 불러올 수 없습니다. 잠시 후 새로고침 해주세요.</div>';
+  }
+}
+
+function renderResults(el, data) {
+  const { totals, totalVoters, votes } = data;
+
+  if (totalVoters === 0) {
+    el.innerHTML = '<div class="vote-results__empty">아직 투표가 없습니다. 첫 번째 투표자가 되어주세요!</div>';
+    return;
+  }
+
+  // Sort versions by vote count descending
+  const sorted = VERSIONS.map(v => ({
+    ...v,
+    count: totals[v.id] || 0
+  })).sort((a, b) => b.count - a.count);
+
+  const maxCount = Math.max(...sorted.map(s => s.count), 1);
+
+  const barsHtml = sorted.map(v => {
+    const pct = totalVoters > 0 ? Math.round((v.count / totalVoters) * 100) : 0;
+    const width = Math.round((v.count / maxCount) * 100);
+    const color = v.accent === 'green' ? '#2EBE74' : '#1A8FD8';
+    return `
+      <div class="vote-bar">
+        <div class="vote-bar__label">
+          <span class="vote-bar__version">${v.id.toUpperCase()}</span>
+          <span class="vote-bar__title">${v.title}</span>
+        </div>
+        <div class="vote-bar__track">
+          <div class="vote-bar__fill" style="width:${width}%;background:${color}"></div>
+        </div>
+        <div class="vote-bar__count">${v.count}표 <span class="vote-bar__pct">(${pct}%)</span></div>
+      </div>`;
+  }).join('');
+
+  const commentsHtml = votes
+    .filter(v => v.comment)
+    .map(v => {
+      const vBadges = v.votes.map(vid => {
+        const ver = VERSIONS.find(x => x.id === vid);
+        const cls = ver?.accent === 'green' ? ' vote-badge--green' : '';
+        return `<span class="vote-badge vote-badge--sm${cls}">${vid.toUpperCase()}</span>`;
+      }).join('');
+      const ago = timeAgo(v.timestamp);
+      return `
+        <div class="vote-comment-card">
+          <div class="vote-comment-card__header">
+            <div class="vote-comment-card__badges">${vBadges}</div>
+            <span class="vote-comment-card__time">${ago}</span>
+          </div>
+          <p class="vote-comment-card__text">${escapeHtml(v.comment)}</p>
+        </div>`;
+    }).join('');
+
+  el.innerHTML = `
+    <div class="vote-results__header">
+      <h3 class="vote-results__title">투표 현황</h3>
+      <span class="vote-results__count">${totalVoters}명 참여</span>
+    </div>
+    <div class="vote-results__bars">${barsHtml}</div>
+    ${commentsHtml ? `
+      <div class="vote-results__comments-header">
+        <h4>의견</h4>
+        <span>${votes.filter(v => v.comment).length}건</span>
+      </div>
+      <div class="vote-results__comments">${commentsHtml}</div>
+    ` : ''}
+  `;
+}
+
+function timeAgo(ts) {
+  const diff = Date.now() - new Date(ts).getTime();
+  const min = Math.floor(diff / 60000);
+  if (min < 1) return '방금 전';
+  if (min < 60) return `${min}분 전`;
+  const hr = Math.floor(min / 60);
+  if (hr < 24) return `${hr}시간 전`;
+  const day = Math.floor(hr / 24);
+  return `${day}일 전`;
+}
+
+// ── Boot ───────────────────────────────────────────────────
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initVoting);

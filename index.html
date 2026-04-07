@@ -464,6 +464,129 @@
       transition: color 0.2s;
     }
     .vote-reset-btn:hover { color: #94A3B8; }
+
+    /* Results */
+    .vote-results__loading,
+    .vote-results__empty {
+      text-align: center;
+      padding: 32px;
+      color: #64748B;
+      font-size: 0.85rem;
+      line-height: 1.8;
+    }
+    .vote-results__header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    .vote-results__title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #F1F5F9;
+    }
+    .vote-results__count {
+      font-size: 0.8rem;
+      color: #64748B;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.04);
+    }
+    .vote-results__bars { display: flex; flex-direction: column; gap: 14px; }
+    .vote-bar {
+      display: grid;
+      grid-template-columns: 200px 1fr 72px;
+      align-items: center;
+      gap: 12px;
+    }
+    @media (max-width: 640px) {
+      .vote-bar {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+      .vote-bar__label { display: flex; gap: 8px; }
+    }
+    .vote-bar__version {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #60B5F6;
+      letter-spacing: 0.05em;
+    }
+    .vote-bar__title {
+      font-size: 0.8rem;
+      color: #94A3B8;
+      margin-left: 6px;
+    }
+    .vote-bar__track {
+      height: 28px;
+      background: #1E293B;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .vote-bar__fill {
+      height: 100%;
+      border-radius: 6px;
+      transition: width 0.8s ease-out;
+    }
+    .vote-bar__count {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #CBD5E1;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .vote-bar__pct { color: #64748B; font-weight: 400; }
+
+    /* Comments */
+    .vote-results__comments-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+    .vote-results__comments-header h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #E2E8F0;
+    }
+    .vote-results__comments-header span {
+      font-size: 0.75rem;
+      color: #64748B;
+    }
+    .vote-results__comments {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .vote-results__comments::-webkit-scrollbar { width: 4px; }
+    .vote-results__comments::-webkit-scrollbar-track { background: transparent; }
+    .vote-results__comments::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    .vote-comment-card {
+      background: #151E2F;
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 10px;
+      padding: 14px 18px;
+    }
+    .vote-comment-card__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .vote-comment-card__badges { display: flex; gap: 6px; }
+    .vote-badge--sm { font-size: 0.65rem; padding: 3px 8px; }
+    .vote-comment-card__time {
+      font-size: 0.7rem;
+      color: #475569;
+    }
+    .vote-comment-card__text {
+      font-size: 0.82rem;
+      color: #94A3B8;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -705,6 +828,13 @@
     </div>
   </div>
   <section class="vote-section" id="vote-section"></section>
+
+  <div class="divider">
+    <div class="divider__line">
+      <span class="divider__label">Results</span>
+    </div>
+  </div>
+  <section class="vote-section" id="vote-results"></section>
 
   <footer class="footer">
     <p>&copy; 2026 HicareNet, Inc. &middot; <a href="v6/index.html">한국법인</a> &middot; <a href="v5/index.html">US Site</a></p>
