@@ -12,7 +12,7 @@ const VERSIONS = [
   { id: 'v3', title: 'Clinical Editorial', accent: 'blue' },
   { id: 'v4', title: 'Dark Navy Leadership', accent: 'blue' },
   { id: 'v5', title: 'Clean Light RPM/CCM', accent: 'blue' },
-  { id: 'v6', title: 'Korean Corporate Site', accent: 'green' }
+  { id: 'v6', title: 'Corporate Branding', accent: 'blue' }
 ];
 
 let selectedVersions = [];
