@@ -420,10 +420,15 @@ body {
   font-family: inherit;
   font-size: 0.85rem;
   line-height: 1.6;
-  resize: vertical;
+  resize: none;
+  max-height: 100px;
+  overflow-y: auto;
   margin-bottom: 16px;
   transition: border-color 0.2s;
 }
+.vote-textarea::-webkit-scrollbar { width: 3px; }
+.vote-textarea::-webkit-scrollbar-track { background: transparent; }
+.vote-textarea::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
 .vote-textarea::placeholder { color: #475569; }
 .vote-textarea:focus { outline: none; border-color: #1A8FD8; }
 .vote-submit {
