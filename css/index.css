@@ -252,15 +252,21 @@ body {
 
 /* ── Vote Layout ─────────────────────────────────────────── */
 .vote-layout {
-  max-width: 1400px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 32px 24px;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 290px 290px 580px;
   gap: 24px;
+  justify-content: center;
   align-items: start;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1260px) {
+  .vote-layout {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+@media (max-width: 840px) {
   .vote-layout { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
@@ -270,6 +276,9 @@ body {
   min-width: 0;
   width: 100%;
   overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 16px;
 }
 .vote-layout__scroll {
   max-height: 480px;

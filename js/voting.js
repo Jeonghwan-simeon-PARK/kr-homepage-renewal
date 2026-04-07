@@ -228,16 +228,17 @@ async function fetchAndRenderResults() {
     return;
   }
 
-  resultsEl.innerHTML = '<div class="vote-results__loading">결과 불러오는 중...</div>';
+  resultsEl.innerHTML = '<div class="vote-results__loading">조회 중...</div>';
   const commentsEl = document.getElementById('vote-comments');
-  if (commentsEl) commentsEl.innerHTML = '<div class="vote-results__loading">의견 불러오는 중...</div>';
+  if (commentsEl) commentsEl.innerHTML = '<div class="vote-results__loading">조회 중...</div>';
 
   try {
     const res = await fetch(GAS_URL);
     const data = await res.json();
     renderResults(resultsEl, data);
   } catch {
-    resultsEl.innerHTML = '<div class="vote-results__empty">결과를 불러올 수 없습니다. 잠시 후 새로고침 해주세요.</div>';
+    resultsEl.innerHTML = '<div class="vote-results__empty">조회 실패. 새로고침 해주세요.</div>';
+    if (commentsEl) commentsEl.innerHTML = '<div class="vote-results__empty">조회 실패.</div>';
   }
 }
 
@@ -245,7 +246,9 @@ function renderResults(el, data) {
   const { totals, totalVoters, votes } = data;
 
   if (totalVoters === 0) {
-    el.innerHTML = '<div class="vote-results__empty">아직 투표가 없습니다. 첫 번째 투표자가 되어주세요!</div>';
+    el.innerHTML = '<div class="vote-results__empty">아직 투표가 없습니다.</div>';
+    const commentsEl0 = document.getElementById('vote-comments');
+    if (commentsEl0) commentsEl0.innerHTML = '<div class="vote-results__empty">아직 의견이 없습니다.</div>';
     return;
   }
 
