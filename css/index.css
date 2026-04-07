@@ -266,6 +266,10 @@ body {
 @media (max-width: 640px) {
   .vote-layout { grid-template-columns: 1fr; }
 }
+.vote-layout__col {
+  min-width: 0;
+  overflow: hidden;
+}
 .vote-layout__scroll {
   max-height: 480px;
   overflow-y: auto;
@@ -488,8 +492,7 @@ body {
   color: #6EE7A0;
 }
 .vote-confirm__comment {
-  max-width: 480px;
-  margin: 0 auto 24px;
+  margin: 0 0 24px;
   padding: 12px 20px;
   border-left: 3px solid #334155;
   background: rgba(13,21,37,0.5);
@@ -498,7 +501,14 @@ body {
   font-size: 0.85rem;
   line-height: 1.6;
   text-align: left;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  max-height: 100px;
+  overflow-y: auto;
 }
+.vote-confirm__comment::-webkit-scrollbar { width: 3px; }
+.vote-confirm__comment::-webkit-scrollbar-track { background: transparent; }
+.vote-confirm__comment::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
 .vote-confirm__actions {
   display: flex;
   justify-content: center;
@@ -622,6 +632,8 @@ body {
   border: 1px solid rgba(255,255,255,0.04);
   border-radius: 10px;
   padding: 14px 18px;
+  min-width: 0;
+  overflow: hidden;
 }
 .vote-comment-card__header {
   display: flex;
