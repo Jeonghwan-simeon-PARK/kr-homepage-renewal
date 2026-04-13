@@ -1,0 +1,210 @@
+{
+  "care_portal": {
+    "id": "care-portal",
+    "name": "Hicare Care Portal",
+    "type": "SaaS Platform",
+    "status": "active",
+    "page_weight": "70%",
+    "description_key": "kr.business.care_portal.description",
+    "medicare_context": {
+      "title_key": "kr.business.medicare.title",
+      "description_key": "kr.business.medicare.description",
+      "rpm": {
+        "name": "RPM (Remote Patient Monitoring)",
+        "name_ko": "원격 환자 모니터링",
+        "description": "환자의 생체 데이터를 원격으로 수집하고 분석하는 서비스",
+        "cpt_codes": ["99453", "99454", "99445", "99457", "99470", "99458", "99091"]
+      },
+      "ccm": {
+        "name": "CCM (Chronic Care Management)",
+        "name_ko": "만성질환 관리",
+        "description": "만성질환자에 대한 비대면 케어 매니지먼트 서비스",
+        "cpt_codes": ["99490", "99439", "99491", "99487", "99489"]
+      }
+    },
+    "problems_solved": [
+      {
+        "id": "workflow",
+        "title_key": "kr.business.care_portal.problem1.title",
+        "description_key": "kr.business.care_portal.problem1.desc",
+        "items": ["환자 등록", "생체 데이터 모니터링", "이상 징후 알림", "상담 기록", "케어 플랜 관리"]
+      },
+      {
+        "id": "documentation",
+        "title_key": "kr.business.care_portal.problem2.title",
+        "description_key": "kr.business.care_portal.problem2.desc",
+        "items": ["관리 시간 자동 기록", "상담 내역 자동 생성", "모니터링 기록 자동화", "청구 누락 방지"]
+      },
+      {
+        "id": "billing",
+        "title_key": "kr.business.care_portal.problem3.title",
+        "description_key": "kr.business.care_portal.problem3.desc",
+        "items": ["RPM CPT 코드(99453, 99454, 99445, 99457, 99470, 99458, 99091) 리포트 자동 생성", "CCM CPT 코드(99490, 99439, 99491, 99487, 99489) 리포트 자동 생성", "CY2026 신규 코드(99445/99470) 자동 최적 선택", "Medicare 보험 청구 연결"]
+      }
+    ],
+    "features": [
+      {"id": "dashboard", "title_key": "kr.business.care_portal.feat1", "description": "환자 목록, 이상 징후 알림, 우선순위 정렬"},
+      {"id": "ai-report", "title_key": "kr.business.care_portal.feat2", "description": "CPT 코드별 요건에 맞는 문서 자동 생성"},
+      {"id": "time-tracking", "title_key": "kr.business.care_portal.feat3", "description": "통화 기록, 케어 플랜, 관리 시간 자동 기록"},
+      {"id": "multilang", "title_key": "kr.business.care_portal.feat4", "description": "영어, 스페인어, 한국어 UI"},
+      {"id": "patient-app", "title_key": "kr.business.care_portal.feat5", "description": "고령층 친화 UI, 음성 안내 측정 유도"}
+    ],
+    "service_flow": {
+      "description": "하이케어넷(Care Portal 제공) -> 클리닉(환자 관리/모니터링) -> 환자 -> CMS(보험 수가 지급)",
+      "note": "기기 연동은 하이케어넷의 역할이 아님"
+    },
+    "revenue_model": {
+      "type": "SaaS 월 구독형",
+      "pricing": [
+        {"item": "기기 1대당 임대료", "price": "$15/월", "contract": "1년"},
+        {"item": "환자당 플랫폼 대여비", "price": "$500/월", "contract": "1년, 300명까지"},
+        {"item": "총 월 수익 예시", "price": "$5,000", "formula": "$15 x 300명 + $500"}
+      ],
+      "medicare_revenue": {
+        "per_patient_monthly": "$50 수준",
+        "cpt_basic": "$40~$60",
+        "cpt_additional": "$90~$130"
+      }
+    },
+    "performance": {
+      "clinics": 40,
+      "patients": "3,000+",
+      "monthly_claims": "300+",
+      "revenue_2024": "$998,404",
+      "revenue_2025_h1": "$816,668",
+      "target_2025": {
+        "clinics": 49,
+        "patients": "5,000+",
+        "expansion_target": "미국 동부 100개 클리닉 추가",
+        "contract_target": "$6,000,000"
+      }
+    }
+  },
+  "expansion_roadmap": [
+    {
+      "id": "apcm",
+      "name": "APCM",
+      "full_name": "Advanced Primary Care Management",
+      "name_ko": "1차 진료 기반 만성질환 관리",
+      "status": "planned",
+      "description": "CMS가 2025년 신설한 1차 진료 기반 만성질환 관리 수가 체계. 기존 CCM을 대체/확장.",
+      "cpt_codes": ["G0556", "G0557", "G0558"],
+      "title_key": "kr.business.expansion.apcm.title",
+      "description_key": "kr.business.expansion.apcm.description"
+    },
+    {
+      "id": "awv",
+      "name": "AWV",
+      "full_name": "Annual Wellness Visit",
+      "name_ko": "연간 건강검진",
+      "status": "planned",
+      "description": "Medicare 수혜자 대상 연간 건강검진 프로그램. HRA 양식 작성 및 개인별 예방 계획 수립 필수.",
+      "cpt_codes": ["G0438", "G0439"],
+      "title_key": "kr.business.expansion.awv.title",
+      "description_key": "kr.business.expansion.awv.description"
+    },
+    {
+      "id": "hra",
+      "name": "HRA",
+      "full_name": "Health Risk Assessment",
+      "name_ko": "건강 위험 평가",
+      "status": "planned",
+      "description": "AWV의 필수 구성요소인 건강 위험 평가. 양식 자동화, 결과 분석 기능 개발 예정.",
+      "title_key": "kr.business.expansion.hra.title",
+      "description_key": "kr.business.expansion.hra.description"
+    },
+    {
+      "id": "vbc",
+      "name": "VBC",
+      "full_name": "Value-Based Care",
+      "name_ko": "성과 기반 보상",
+      "status": "planned",
+      "description": "행위별 수가에서 성과 기반 보상으로의 전환. RPM/CCM/APCM 데이터 축적 후 환자 아웃컴 기반 계약 지원 플랫폼으로 진화.",
+      "title_key": "kr.business.expansion.vbc.title",
+      "description_key": "kr.business.expansion.vbc.description"
+    }
+  ],
+  "medical_devices": {
+    "page_weight": "30%",
+    "positioning": "과거부터 축적된 기술 역량과 글로벌 사업 실적",
+    "growth_story": "하드웨어와 기기 연동 기술에서 시작하여, 현재는 소프트웨어 플랫폼(Care Portal) 중심으로 사업을 진화",
+    "hicare_hub": {
+      "name": "Hicare Hub (게이트웨이)",
+      "device_compatibility": "120종 이상 의료기기 연동",
+      "models": [
+        {"id": "hh-800a", "name": "HH-800A", "year": 2015, "description": "기존 Hub 모델. 환자 원격진료 필수기능 통합 제공."},
+        {"id": "hh-930", "name": "HH-930", "year": 2021, "description": "New Hub 모델. 가격/물량 경쟁력. 120여종 센서 연동."}
+      ]
+    },
+    "export_records": [
+      {
+        "id": "us-va",
+        "country": "미국",
+        "client": "VA 보훈부",
+        "description": "퇴역군인 대상 원격 홈케어 솔루션 공급",
+        "quantity": "10,000대+",
+        "product": "게이트웨이",
+        "significance": "미국 시장 진출 기반"
+      },
+      {
+        "id": "italy",
+        "country": "이탈리아",
+        "client": "CEGLIE MESSAPICA 병원",
+        "description": "심장질환 퇴원환자 관리 플랫폼 및 기기 공급. Puglia 지역 300명+ 환자.",
+        "quantity": "1,000대",
+        "product": "게이트웨이 + 측정기기"
+      },
+      {
+        "id": "france",
+        "country": "프랑스",
+        "client": "약국 체인",
+        "description": "약국 체인 내 Small Healthcare Center 설립. 방문자 대상 건강관리 서비스.",
+        "quantity": "3,000대",
+        "product": "게이트웨이 + 측정기기"
+      }
+    ],
+    "total_exports": "14,000대+"
+  },
+  "competitors": [
+    {
+      "id": "100plus",
+      "name": "100Plus",
+      "url": "100plus.com",
+      "parent": "ConnectAmerica",
+      "strength": "AI 기반 RPM/CCM, Care Management 서비스(인력 대행) 강점. 고객 testimonial 중심 마케팅."
+    },
+    {
+      "id": "prevounce",
+      "name": "Prevounce",
+      "url": "prevounce.com",
+      "strength": "RPM, CCM, APCM, AWV 네 가지 서비스 이미 제공. 자체 셀룰러 기기 + SaaS 플랫폼. Billing & compliance 서비스 별도."
+    },
+    {
+      "id": "vivify",
+      "name": "Vivify Health",
+      "url": "vivifyhealth.com",
+      "parent": "Optum",
+      "strength": "Care Team Portal(FDA 510k). 대형 병원/헬스시스템 대상 엔터프라이즈 솔루션. 자체 키트(+Home, +Go)."
+    }
+  ],
+  "competitive_advantages": [
+    {"id": "documentation", "title_key": "kr.business.advantage1.title", "description": "AI 기반 리포트 자동 생성, CPT 코드별 산출물 자동화"},
+    {"id": "multilingual", "title_key": "kr.business.advantage2.title", "description": "영어, 스페인어, 한국어 UI. 미국 내 다문화 환자 커뮤니티 대응"},
+    {"id": "elderly-ux", "title_key": "kr.business.advantage3.title", "description": "음성 안내, 직관적 인터페이스의 고령층 친화 환자 앱"}
+  ],
+  "market_data": {
+    "rpm": {
+      "market_2023": "$1.7B",
+      "market_2030": "$6.3B",
+      "cagr": "18.4%",
+      "source": "Grand View Research"
+    },
+    "ccm": {
+      "market_2024": "$2.2B",
+      "market_2034": "$18.8B",
+      "cagr": "11.7%",
+      "source": "Precedence Research"
+    },
+    "rpm_users_2025": "약 7,100만 명"
+  }
+}

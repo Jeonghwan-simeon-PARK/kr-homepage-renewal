@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="하이케어넷 사업영역 - Hicare Care Portal RPM/CCM 수가 청구 자동화 SaaS 플랫폼, 서비스 확장 로드맵, 의료기기 수출 실적.">
+  <title>사업영역 | 하이케어넷</title>
+  <link rel="icon" href="../assets/hicare_pavicon2.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { 50:'#E8F4FD', 100:'#C5E4F9', 200:'#9DD0F4', 300:'#6BB8ED', 400:'#44A5E7', 500:'#1A8FD8', 600:'#1578B8', 700:'#105D91', 800:'#0B4369', 900:'#062F4C' },
+            green: { 50:'#EAFAF2', 100:'#C9F2DD', 200:'#A3E9C6', 300:'#7AE0AE', 400:'#56D893', 500:'#2EBE74', 600:'#26A564', 700:'#1E8A53', 800:'#166E42', 900:'#0E5232' },
+            neutral: { 50:'#F8FAFC', 100:'#F1F5F9', 200:'#E2E8F0', 300:'#CBD5E1', 400:'#94A3B8', 500:'#64748B', 600:'#475569', 700:'#334155', 800:'#1E293B', 900:'#0F172A' }
+          },
+          fontFamily: {
+            sans: ['Pretendard Variable', 'Pretendard', 'Inter', 'Apple SD Gothic Neo', 'Noto Sans KR', 'sans-serif'],
+            display: ['Inter', 'Pretendard Variable', 'Pretendard', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-neutral-800 bg-white">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg" data-i18n="common.skipToContent">본문 바로가기</a>
+
+  <!-- GNB -->
+  <header id="gnb" class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="주요 네비게이션">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
+          <img src="../assets/images/hicare-logo.png" alt="하이케어넷 로고" class="h-8 lg:h-10 w-auto">
+        </a>
+        <ul class="hidden lg:flex items-center gap-1" role="menubar">
+          <li role="none"><a role="menuitem" href="about.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.about">회사소개</a></li>
+          <li role="none"><a role="menuitem" href="business.html" class="gnb-link active px-3 py-2 rounded-lg text-sm font-medium text-primary-600 bg-primary-50" data-i18n="nav.business">사업영역</a></li>
+          <li role="none"><a role="menuitem" href="technology.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.technology">기술</a></li>
+          <li role="none"><a role="menuitem" href="global.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
+          <li role="none"><a role="menuitem" href="careers.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.careers">채용</a></li>
+          <li role="none"><a role="menuitem" href="ir.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.ir">IR/뉴스룸</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <div class="hidden md:flex items-center gap-1 text-sm">
+            <button id="lang-ko" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
+          </div>
+          <a href="contact.html" class="hidden md:inline-flex items-center gap-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+            <span class="material-symbols-outlined text-lg">mail</span>
+            <span data-i18n="nav.contact">문의하기</span>
+          </a>
+          <button id="mobile-toggle" class="lg:hidden p-2 text-neutral-700 hover:text-primary-600" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
+        <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-primary-600 bg-primary-50" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스룸</a>
+          <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
+            <span class="material-symbols-outlined text-lg">mail</span>
+            <span data-i18n="nav.contact">문의하기</span>
+          </a>
+          <div class="flex items-center justify-center gap-1 text-sm mt-2">
+            <button id="lang-ko-mobile" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en-mobile" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="relative min-h-[520px] flex items-center bg-gradient-to-br from-primary-800 to-primary-900 overflow-hidden pt-20" aria-label="히어로">
+      <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('images/hero-business.jpg')" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-800/70 to-primary-900/80" aria-hidden="true"></div>
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 right-10 w-96 h-96 bg-primary-400 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-green-400 rounded-full blur-3xl"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="max-w-3xl">
+          <p class="text-primary-200 text-sm md:text-base font-medium tracking-widest mb-4 uppercase" data-i18n="business.hero.tag" data-animate="fade-up">Business Areas</p>
+          <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6" data-animate="fade-up" data-animate-delay="100" data-i18n-html="business.hero.headline">
+            클리닉의 수가 청구,<br>기술이 해결합니다
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl text-white/80 leading-normal max-w-2xl" data-i18n-html="business.hero.subtext" data-animate="fade-up" data-animate-delay="200">
+            RPM·CCM 수가 청구 자동화부터 환자 모니터링까지,<br>클리닉 운영의 복잡함을 줄이는 서비스를 제공합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- Section A: Hicare Care Portal (70%) -->
+    <!-- ========================================== -->
+    <section class="py-16 md:py-24 bg-white" aria-label="Hicare Care Portal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Title -->
+        <div class="mb-12" data-animate="fade-up">
+          <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-3" data-i18n="business.careportal.title">Hicare Care Portal</h2>
+          <p class="text-lg text-neutral-600" data-i18n="business.careportal.intro">미국 클리닉의 RPM/CCM 수가 청구를 자동화하는 SaaS 플랫폼입니다.</p>
+        </div>
+
+        <!-- A-1: Medicare Background -->
+        <div class="bg-neutral-50 border-l-4 border-primary-500 rounded-r-lg p-6 md:p-8 mb-12" data-animate="fade-up">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-4">
+            <span class="material-symbols-outlined text-xl text-primary-600 align-middle mr-1">info</span>
+            <span data-i18n="business.careportal.medicare.title">Medicare와 원격환자관리</span>
+          </h3>
+          <div class="space-y-3 text-sm md:text-base text-neutral-700 leading-relaxed">
+            <p data-i18n="business.careportal.medicare.p1">미국에는 65세 이상 고령자와 특정 장애인을 대상으로 한 공공보험 제도 Medicare가 있습니다. Medicare는 만성질환자의 원격 건강 관리에 대해 보험 수가를 지급합니다.</p>
+            <p data-i18n-html="business.careportal.medicare.p2"><strong>RPM</strong>(Remote Patient Monitoring, 원격 환자 모니터링)은 환자의 혈압, 혈당 등 생체 데이터를 원격으로 수집하고 분석하는 서비스입니다. <strong>CCM</strong>(Chronic Care Management, 만성질환 관리)은 만성질환자에 대한 비대면 케어 매니지먼트 서비스입니다. 클리닉이 이 서비스를 제공하면, Medicare에 수가를 청구하여 수익을 확보할 수 있습니다.</p>
+            <p data-i18n="business.careportal.medicare.p3">Care Portal은 이 수가 청구에 필요한 전 과정을 자동화하는 SaaS 플랫폼입니다.</p>
+          </div>
+        </div>
+
+        <!-- A-2: Problems & Solutions -->
+        <div class="mb-12">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-6" data-animate="fade-up" data-i18n="business.careportal.problem.title">클리닉이 겪는 문제</h3>
+          <p class="text-base text-neutral-700 leading-relaxed mb-8 max-w-4xl" data-animate="fade-up" data-i18n="business.careportal.problem.description">
+            RPM/CCM 수가를 청구하려면 환자 관리 기록, 모니터링 데이터, 상담 내역, 관리 시간 등 상세한 산출물을 문서화해야 합니다. 이 행정 업무는 의료진에게 상당한 부담이며, 문서화가 미흡하면 청구가 누락됩니다.
+          </p>
+
+          <h3 class="text-xl font-semibold text-neutral-900 mb-6" data-animate="fade-up" data-i18n="business.careportal.solution.title">Care Portal의 해결 방식</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up">
+              <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl text-primary-600">assignment</span>
+              </div>
+              <h4 class="text-base font-semibold text-neutral-900 mb-2" data-i18n="business.careportal.problem1.title">환자 관리 워크플로우</h4>
+              <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.careportal.problem1.desc">환자 등록, 생체 데이터 모니터링, 이상 징후 알림, 상담 기록, 케어 플랜 관리를 하나의 플랫폼에서 처리합니다.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="100">
+              <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl text-primary-600">auto_fix_high</span>
+              </div>
+              <h4 class="text-base font-semibold text-neutral-900 mb-2" data-i18n="business.careportal.problem2.title">문서화 자동화</h4>
+              <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.careportal.problem2.desc">RPM/CCM 수가 청구에 필요한 산출물(관리 시간, 상담 내역, 모니터링 기록)을 자동으로 생성합니다. 의료진의 행정 부담을 줄이고 청구 누락을 방지합니다.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="200">
+              <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl text-primary-600">receipt_long</span>
+              </div>
+              <h4 class="text-base font-semibold text-neutral-900 mb-2" data-i18n="business.careportal.problem3.title">수가 청구 연계</h4>
+              <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.careportal.problem3.desc">RPM CPT 코드(99453, 99454, 99445, 99457, 99470, 99458)와 CCM CPT 코드(99490, 99439, 99491, 99487, 99489)에 맞는 리포트를 자동 생성합니다. 2026년 CMS 신규 코드(99445/99470)를 자동 인식하여 최적 코드를 선택합니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- A-3: Service Flow -->
+        <div class="mb-12">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-8" data-animate="fade-up" data-i18n="business.careportal.flow.title">서비스 플로우</h3>
+          <div class="flex flex-col md:flex-row items-center gap-4 md:gap-0" data-animate="fade-up" data-animate-delay="100">
+            <!-- Step 1 -->
+            <div class="flex-1 bg-primary-50 rounded-2xl p-6 text-center">
+              <div class="w-14 h-14 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span class="material-symbols-outlined text-2xl text-white">cloud</span>
+              </div>
+              <p class="text-sm font-semibold text-primary-800" data-i18n="business.careportal.flow.step1_title">하이케어넷</p>
+              <p class="text-xs text-primary-600 mt-1" data-i18n="business.careportal.flow.step1_desc">Care Portal 제공</p>
+            </div>
+            <!-- Arrow -->
+            <div class="text-primary-300 hidden md:block px-2">
+              <span class="material-symbols-outlined text-3xl">arrow_forward</span>
+            </div>
+            <div class="text-primary-300 md:hidden">
+              <span class="material-symbols-outlined text-3xl">arrow_downward</span>
+            </div>
+            <!-- Step 2 -->
+            <div class="flex-1 bg-green-50 rounded-2xl p-6 text-center">
+              <div class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span class="material-symbols-outlined text-2xl text-white">local_hospital</span>
+              </div>
+              <p class="text-sm font-semibold text-green-800" data-i18n="business.careportal.flow.step2_title">클리닉</p>
+              <p class="text-xs text-green-600 mt-1" data-i18n="business.careportal.flow.step2_desc">환자 관리, 모니터링 수행</p>
+            </div>
+            <!-- Arrow -->
+            <div class="text-green-300 hidden md:block px-2">
+              <span class="material-symbols-outlined text-3xl">arrow_forward</span>
+            </div>
+            <div class="text-green-300 md:hidden">
+              <span class="material-symbols-outlined text-3xl">arrow_downward</span>
+            </div>
+            <!-- Step 3 -->
+            <div class="flex-1 bg-blue-50 rounded-2xl p-6 text-center">
+              <div class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span class="material-symbols-outlined text-2xl text-white">person</span>
+              </div>
+              <p class="text-sm font-semibold text-blue-800" data-i18n="business.careportal.flow.step3_title">환자</p>
+              <p class="text-xs text-blue-600 mt-1" data-i18n="business.careportal.flow.step3_desc">생체 데이터 전송</p>
+            </div>
+            <!-- Arrow -->
+            <div class="text-blue-300 hidden md:block px-2">
+              <span class="material-symbols-outlined text-3xl">arrow_forward</span>
+            </div>
+            <div class="text-blue-300 md:hidden">
+              <span class="material-symbols-outlined text-3xl">arrow_downward</span>
+            </div>
+            <!-- Step 4 -->
+            <div class="flex-1 bg-neutral-100 rounded-2xl p-6 text-center">
+              <div class="w-14 h-14 bg-neutral-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span class="material-symbols-outlined text-2xl text-white">account_balance</span>
+              </div>
+              <p class="text-sm font-semibold text-neutral-800">CMS</p>
+              <p class="text-xs text-neutral-600 mt-1" data-i18n="business.careportal.flow.step4_desc">보험 수가 지급</p>
+            </div>
+          </div>
+          <p class="text-xs text-neutral-500 mt-4 text-center" data-animate="fade-up" data-animate-delay="200" data-i18n="business.careportal.flow.cms_note">
+            CMS(Centers for Medicare &amp; Medicaid Services)는 미국의 공공보험 관리 기관입니다.
+          </p>
+        </div>
+
+        <!-- A-3.5: CPT Billing Codes -->
+        <div class="mb-12">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-2" data-animate="fade-up" data-i18n="business.careportal.billing.section_title">자동 생성되는 빌링 리포트 코드</h3>
+          <p class="text-sm text-neutral-600 mb-6" data-animate="fade-up" data-i18n="business.careportal.billing.section_subtitle">Care Portal이 환자 데이터를 기반으로 최적 코드를 자동 선택합니다</p>
+
+          <!-- Tab Navigation -->
+          <div class="flex gap-2 mb-4" data-animate="fade-up">
+            <button id="tab-rpm" onclick="switchBillingTab('rpm')" class="px-4 py-2 text-sm font-semibold rounded-lg bg-primary-600 text-white transition-colors" data-i18n="business.careportal.billing.tab_rpm">RPM 코드</button>
+            <button id="tab-ccm" onclick="switchBillingTab('ccm')" class="px-4 py-2 text-sm font-semibold rounded-lg bg-neutral-100 text-neutral-700 hover:bg-neutral-200 transition-colors" data-i18n="business.careportal.billing.tab_ccm">CCM 코드</button>
+          </div>
+
+          <!-- RPM Table -->
+          <div id="panel-rpm" class="max-w-4xl" data-animate="fade-up" data-animate-delay="100">
+            <div class="overflow-x-auto rounded-2xl border border-neutral-200">
+              <table class="w-full text-sm">
+                <thead class="bg-neutral-50">
+                  <tr>
+                    <th class="px-4 py-3 text-left font-semibold text-neutral-700">CPT 코드</th>
+                    <th class="px-4 py-3 text-left font-semibold text-neutral-700" data-i18n="business.careportal.billing.th_desc">설명</th>
+                    <th class="px-4 py-3 text-right font-semibold text-neutral-700" data-i18n="business.careportal.billing.th_rate">수가</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-neutral-100">
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99453</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99453">초기 설정 및 환자 교육</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$19</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99454</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99454">디바이스 공급 (16-30일 전송)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$56</td>
+                  </tr>
+                  <tr class="hover:bg-primary-50/50 bg-primary-50/30">
+                    <td class="px-4 py-3 font-mono font-semibold text-primary-700">99445 <span class="inline-flex items-center px-1.5 py-0.5 bg-primary-100 text-primary-700 text-[10px] font-bold rounded ml-1" data-i18n="business.careportal.billing.cy2026_badge">2026 신규</span></td>
+                    <td class="px-4 py-3 text-primary-700" data-i18n="business.careportal.billing.code_99445">디바이스 공급 (2-15일 전송)</td>
+                    <td class="px-4 py-3 text-right font-semibold text-primary-700">~$47-52</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99457</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99457">치료 관리 (20분 이상)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$50</td>
+                  </tr>
+                  <tr class="hover:bg-primary-50/50 bg-primary-50/30">
+                    <td class="px-4 py-3 font-mono font-semibold text-primary-700">99470 <span class="inline-flex items-center px-1.5 py-0.5 bg-primary-100 text-primary-700 text-[10px] font-bold rounded ml-1" data-i18n="business.careportal.billing.cy2026_badge">2026 신규</span></td>
+                    <td class="px-4 py-3 text-primary-700" data-i18n="business.careportal.billing.code_99470">치료 관리 (10분 이상)</td>
+                    <td class="px-4 py-3 text-right font-semibold text-primary-700">~$26</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99458</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99458">추가 치료 관리 (20분)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$41</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-400">99091</td>
+                    <td class="px-4 py-3 text-neutral-400" data-i18n="business.careportal.billing.code_99091">데이터 수집/해석 (레거시)</td>
+                    <td class="px-4 py-3 text-right text-neutral-400">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- CCM Table -->
+          <div id="panel-ccm" class="max-w-4xl hidden" data-animate="fade-up" data-animate-delay="100">
+            <div class="overflow-x-auto rounded-2xl border border-neutral-200">
+              <table class="w-full text-sm">
+                <thead class="bg-neutral-50">
+                  <tr>
+                    <th class="px-4 py-3 text-left font-semibold text-neutral-700">CPT 코드</th>
+                    <th class="px-4 py-3 text-left font-semibold text-neutral-700" data-i18n="business.careportal.billing.th_desc">설명</th>
+                    <th class="px-4 py-3 text-right font-semibold text-neutral-700" data-i18n="business.careportal.billing.th_rate">수가</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-neutral-100">
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99490</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99490">기본 CCM (20분 이상/월)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$64</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99439</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99439">추가 20분 (최대 2회/월)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$50</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99491</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99491">의사 직접 제공 (30분 이상/월)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$88</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99487</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99487">복합 CCM (60분 이상/월)</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$130</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-50">
+                    <td class="px-4 py-3 font-mono font-semibold text-neutral-900">99489</td>
+                    <td class="px-4 py-3 text-neutral-600" data-i18n="business.careportal.billing.code_99489">복합 추가 30분</td>
+                    <td class="px-4 py-3 text-right text-neutral-700">~$63</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- CY2026 Highlight -->
+          <div class="mt-6 bg-primary-50 rounded-2xl p-5 md:p-6 max-w-4xl flex items-start gap-4" data-animate="fade-up" data-animate-delay="200">
+            <div class="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-xl text-primary-600">trending_up</span>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-primary-800" data-i18n="business.careportal.billing.highlight">2026년 CMS 변경: 환자가 월 2일만 측정해도, 관리 시간이 10분이어도 수익이 발생합니다</p>
+              <p class="text-xs text-primary-600 mt-1" data-i18n="business.careportal.billing.highlight_detail">기존 $0 → 최소 $73/월 | 최대 $147/월</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- A-4: Key Features -->
+        <div class="mb-12">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-6" data-animate="fade-up" data-i18n="business.careportal.features.title">Care Portal 주요 기능</h3>
+          <div class="space-y-4 max-w-4xl">
+            <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-neutral-50 transition-colors" data-animate="fade-up">
+              <div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-xl text-primary-600">dashboard</span>
+              </div>
+              <div>
+                <h4 class="text-base font-semibold text-neutral-900 mb-1" data-i18n="business.careportal.feat1.title">의료진용 대시보드</h4>
+                <p class="text-sm text-neutral-600" data-i18n="business.careportal.feat1.desc">환자 목록, 이상 징후 알림, 우선순위 기반 정렬</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-neutral-50 transition-colors" data-animate="fade-up" data-animate-delay="80">
+              <div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-xl text-primary-600">smart_toy</span>
+              </div>
+              <div>
+                <h4 class="text-base font-semibold text-neutral-900 mb-1" data-i18n="business.careportal.feat2.title">AI 기반 리포트 자동 생성</h4>
+                <p class="text-sm text-neutral-600" data-i18n="business.careportal.feat2.desc">CPT 코드별 요건에 맞는 문서를 자동으로 생성</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-neutral-50 transition-colors" data-animate="fade-up" data-animate-delay="160">
+              <div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-xl text-primary-600">timer</span>
+              </div>
+              <div>
+                <h4 class="text-base font-semibold text-neutral-900 mb-1" data-i18n="business.careportal.feat3.title">시간 추적 및 문서화 자동화</h4>
+                <p class="text-sm text-neutral-600" data-i18n="business.careportal.feat3.desc">통화 기록, 케어 플랜, 관리 시간을 자동 기록</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-neutral-50 transition-colors" data-animate="fade-up" data-animate-delay="240">
+              <div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-xl text-primary-600">translate</span>
+              </div>
+              <div>
+                <h4 class="text-base font-semibold text-neutral-900 mb-1" data-i18n="business.careportal.feat4.title">다국어 UI</h4>
+                <p class="text-sm text-neutral-600" data-i18n="business.careportal.feat4.desc">영어, 스페인어, 한국어 지원</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-neutral-50 transition-colors" data-animate="fade-up" data-animate-delay="320">
+              <div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-xl text-primary-600">phone_android</span>
+              </div>
+              <div>
+                <h4 class="text-base font-semibold text-neutral-900 mb-1" data-i18n="business.careportal.feat5.title">환자용 앱(Hicare App)</h4>
+                <p class="text-sm text-neutral-600" data-i18n="business.careportal.feat5.desc">고령층 친화적 인터페이스, 음성 안내 기반 측정 유도</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- A-5: Revenue Model -->
+        <div class="mb-12">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4" data-animate="fade-up" data-i18n="business.careportal.revenue.title">수익 모델</h3>
+          <div class="bg-neutral-50 rounded-2xl p-6 md:p-8 max-w-4xl" data-animate="fade-up" data-animate-delay="100">
+            <p class="text-base text-neutral-700 leading-relaxed mb-4" data-i18n-html="business.careportal.revenue.desc1">
+              <strong>SaaS 월 구독형 모델</strong>입니다. 클리닉이 하이케어넷에 플랫폼 이용료를 지급합니다. 클리닉은 Care Portal을 활용하여 환자를 관리하고, Medicare에 수가를 청구하여 수익을 확보합니다.
+            </p>
+            <p class="text-sm text-neutral-600" data-i18n="business.careportal.revenue.desc2">환자 1인당 월 <strong class="text-neutral-800">$73~$147</strong>의 보험수익 창출이 가능합니다 (2026년 CMS 신규 코드 포함, 부분 달성 시에도 수익 확보).</p>
+          </div>
+        </div>
+
+        <!-- A-6: Performance -->
+        <div>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-6" data-animate="fade-up" data-i18n="business.careportal.performance.title">실적</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4" data-animate="fade-up" data-animate-delay="100">
+            <div class="bg-primary-50 rounded-xl p-5 text-center">
+              <p class="text-2xl md:text-3xl font-display font-bold text-primary-700" data-animate="counter" data-count="40">0</p>
+              <p class="text-xs text-primary-600 mt-1" data-i18n="business.careportal.performance.clinics_label">클리닉 계약</p>
+            </div>
+            <div class="bg-primary-50 rounded-xl p-5 text-center">
+              <p class="text-2xl md:text-3xl font-display font-bold text-primary-700"><span data-animate="counter" data-count="3000">0</span>+</p>
+              <p class="text-xs text-primary-600 mt-1" data-i18n="business.careportal.performance.patients_label">환자 등록</p>
+            </div>
+            <div class="bg-primary-50 rounded-xl p-5 text-center">
+              <p class="text-2xl md:text-3xl font-display font-bold text-primary-700"><span data-animate="counter" data-count="300">0</span>+</p>
+              <p class="text-xs text-primary-600 mt-1" data-i18n="business.careportal.performance.claims_label">월 보험 청구</p>
+            </div>
+            <div class="bg-green-50 rounded-xl p-5 text-center">
+              <p class="text-xl md:text-2xl font-display font-bold text-green-700">$998K</p>
+              <p class="text-xs text-green-600 mt-1" data-i18n="business.careportal.performance.revenue_2024_label">2024년 해외 매출</p>
+            </div>
+            <div class="bg-green-50 rounded-xl p-5 text-center">
+              <p class="text-xl md:text-2xl font-display font-bold text-green-700">$817K</p>
+              <p class="text-xs text-green-600 mt-1" data-i18n="business.careportal.performance.revenue_2025h1_label">2025 상반기 매출</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- Section B: Service Expansion Roadmap -->
+    <!-- ========================================== -->
+    <section class="py-16 md:py-24 bg-neutral-50" aria-label="서비스 확장 로드맵">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-3" data-animate="fade-up" data-i18n="business.expansion.title">서비스 확장 로드맵</h2>
+        <p class="text-base text-neutral-600 mb-12" data-animate="fade-up" data-animate-delay="100" data-i18n="business.expansion.intro">Care Portal을 기초 플랫폼으로, 아래 영역으로 서비스를 확장합니다.</p>
+
+        <!-- Concentric Circles Visualization -->
+        <div class="flex justify-center mb-12" data-animate="fade-up" data-animate-delay="200">
+          <div class="relative w-72 h-72 md:w-96 md:h-96">
+            <!-- Outer ring: Expansion -->
+            <div class="absolute inset-0 rounded-full border-2 border-dashed border-primary-300 bg-primary-50/30 flex items-center justify-center">
+              <!-- Labels on outer ring -->
+              <span class="absolute top-3 left-1/2 -translate-x-1/2 text-xs font-medium text-primary-500 bg-white px-2 py-0.5 rounded">APCM</span>
+              <span class="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs font-medium text-primary-500 bg-white px-2 py-0.5 rounded">VBC</span>
+              <span class="absolute left-2 top-1/2 -translate-y-1/2 text-xs font-medium text-primary-500 bg-white px-2 py-0.5 rounded">AWV</span>
+              <span class="absolute right-2 top-1/2 -translate-y-1/2 text-xs font-medium text-primary-500 bg-white px-2 py-0.5 rounded">HRA</span>
+            </div>
+            <!-- Inner ring: Current -->
+            <div class="absolute inset-12 md:inset-16 rounded-full border-2 border-primary-400 bg-primary-100/50 flex items-center justify-center">
+              <span class="absolute top-2 md:top-3 left-1/2 -translate-x-1/2 text-xs font-semibold text-primary-700 bg-white px-2 py-0.5 rounded shadow-sm">RPM</span>
+              <span class="absolute bottom-2 md:bottom-3 left-1/2 -translate-x-1/2 text-xs font-semibold text-primary-700 bg-white px-2 py-0.5 rounded shadow-sm">CCM</span>
+            </div>
+            <!-- Center: Care Portal -->
+            <div class="absolute inset-24 md:inset-32 rounded-full bg-primary-600 flex items-center justify-center shadow-lg">
+              <span class="text-white text-xs md:text-sm font-bold text-center leading-tight">Care<br>Portal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expansion Items -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="inline-flex items-center px-2 py-0.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded" data-i18n="business.expansion.badge_planned">확장 예정</span>
+              <h4 class="text-base font-semibold text-neutral-900">APCM</h4>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.expansion.apcm.desc">CMS가 2025년 신설한 1차 진료 기반 만성질환 관리 수가 체계입니다. 기존 CCM을 확장하는 모델로, CPT 코드 G0556, G0557, G0558이 적용됩니다.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="100">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="inline-flex items-center px-2 py-0.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded" data-i18n="business.expansion.badge_planned">확장 예정</span>
+              <h4 class="text-base font-semibold text-neutral-900">AWV</h4>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.expansion.awv.desc">Medicare 수혜자 대상 연간 건강검진 프로그램입니다. HRA 양식 작성과 개인별 예방 계획 수립이 필수입니다. 워크플로우 자동화를 준비하고 있습니다.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="200">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="inline-flex items-center px-2 py-0.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded" data-i18n="business.expansion.badge_planned">확장 예정</span>
+              <h4 class="text-base font-semibold text-neutral-900">HRA</h4>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.expansion.hra.desc">AWV의 필수 구성요소인 건강 위험 평가입니다. 양식 자동화와 결과 분석 기능을 개발할 예정입니다.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="300">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="inline-flex items-center px-2 py-0.5 bg-green-100 text-green-700 text-xs font-semibold rounded" data-i18n="business.expansion.badge_longterm">장기 목표</span>
+              <h4 class="text-base font-semibold text-neutral-900">VBC</h4>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.expansion.vbc.desc">행위별 수가에서 성과 기반 보상으로의 전환입니다. RPM/CCM/APCM 데이터 축적 후, 환자 건강 결과 기반 계약을 지원하는 플랫폼으로 진화할 계획입니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- Section C: Medical Device / Gateway (30%) -->
+    <!-- ========================================== -->
+    <section class="py-16 md:py-24 bg-white" aria-label="의료 도메인 기술 축적">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-3" data-animate="fade-up" data-i18n="business.devices.title">의료 도메인 기술 축적</h2>
+        <p class="text-base text-neutral-600 mb-6 max-w-4xl" data-animate="fade-up" data-animate-delay="100" data-i18n="business.devices.intro">
+          하이케어넷은 모기업 인성정보 시절부터 20년간 의료기기 연동 기술을 축적해왔습니다. 이 하드웨어와 의료 도메인 경험이 현재 Care Portal 소프트웨어 사업의 기반이 되었습니다.
+        </p>
+
+        <!-- Hicare Hub -->
+        <div class="bg-neutral-50 rounded-2xl p-6 md:p-8 mb-10" data-animate="fade-up" data-animate-delay="150">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="business.devices.hub.title">Hicare Hub (게이트웨이)</h3>
+          <p class="text-sm text-neutral-700 leading-relaxed" data-i18n="business.devices.hub.description">120종 이상의 의료기기와 연동 가능한 게이트웨이 제품입니다. 의료기기 인증을 보유하고 있으며, 15년 이상 상용화되어 해외에 수출하고 있습니다.</p>
+        </div>
+
+        <!-- Export Records -->
+        <h3 class="text-xl font-semibold text-neutral-900 mb-6" data-animate="fade-up" data-i18n="business.devices.export.title">주요 수출 실적</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-2xl">🇺🇸</span>
+              <h4 class="text-base font-semibold text-neutral-900" data-i18n="business.devices.export.va_title">미국 VA(보훈부)</h4>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed mb-3" data-i18n="business.devices.export.va_desc">퇴역군인 대상 원격 홈케어 솔루션. 미국 연방 정부 사업 실적이며, 미국 시장 진출의 기반이 되었습니다.</p>
+            <p class="text-sm font-semibold text-primary-600" data-i18n="business.devices.export.va_count">게이트웨이 10,000대+ 수출</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="100">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-2xl">🇮🇹</span>
+              <h4 class="text-base font-semibold text-neutral-900" data-i18n="business.devices.export.italy_title">이탈리아</h4>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed mb-3" data-i18n="business.devices.export.italy_desc">CEGLIE MESSAPICA 병원. 심장질환 퇴원환자 관리 플랫폼. Puglia 지역 300명 이상 환자 대상 서비스 제공 중.</p>
+            <p class="text-sm font-semibold text-primary-600" data-i18n="business.devices.export.italy_count">게이트웨이 1,000대 수출</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="200">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-2xl">🇫🇷</span>
+              <h4 class="text-base font-semibold text-neutral-900" data-i18n="business.devices.export.france_title">프랑스</h4>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed mb-3" data-i18n="business.devices.export.france_desc">약국 체인 내 건강관리 서비스 센터.</p>
+            <p class="text-sm font-semibold text-primary-600" data-i18n="business.devices.export.france_count">게이트웨이 3,000대 수출</p>
+          </div>
+        </div>
+
+        <!-- Growth Summary -->
+        <div class="flex items-center gap-4 bg-neutral-50 rounded-xl p-5 max-w-3xl" data-animate="fade-up">
+          <span class="material-symbols-outlined text-2xl text-primary-600">trending_up</span>
+          <p class="text-sm text-neutral-700" data-i18n-html="business.devices.growth_summary">누적 기기 수출 <strong class="text-primary-700 font-display">14,000대</strong> 이상. 하드웨어와 기기 연동 기술에서 시작하여, 현재는 소프트웨어 플랫폼(Care Portal) 중심으로 사업을 전환했습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- Section D: Competitive Landscape -->
+    <!-- ========================================== -->
+    <section class="py-16 md:py-24 bg-neutral-50" aria-label="경쟁 환경">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-3" data-animate="fade-up" data-i18n="business.competition.title">경쟁 환경</h2>
+        <p class="text-base text-neutral-600 mb-10" data-animate="fade-up" data-animate-delay="100" data-i18n="business.competition.intro">미국 RPM/CCM SaaS 시장에는 다양한 규모의 사업자가 활동하고 있습니다.</p>
+
+        <!-- Differentiators -->
+        <h3 class="text-xl font-semibold text-neutral-900 mb-6" data-animate="fade-up" data-i18n="business.advantage.title">하이케어넷의 차별점</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div class="bg-white rounded-2xl shadow-sm border border-primary-100 p-6" data-animate="fade-up">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-4">
+              <span class="material-symbols-outlined text-2xl text-primary-600">auto_fix_high</span>
+            </div>
+            <h4 class="text-base font-semibold text-neutral-900 mb-2" data-i18n="business.advantage1.title">수가 청구 문서화 자동화</h4>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.advantage1.description">AI 기반 리포트 자동 생성으로 CPT 코드별 산출물을 자동화합니다. 의료진의 행정 부담 경감과 청구 누락 방지에 집중합니다.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-primary-100 p-6" data-animate="fade-up" data-animate-delay="100">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-4">
+              <span class="material-symbols-outlined text-2xl text-primary-600">translate</span>
+            </div>
+            <h4 class="text-base font-semibold text-neutral-900 mb-2" data-i18n="business.advantage2.title">다국어, 다문화 지원</h4>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.advantage2.description">영어, 스페인어, 한국어 UI를 지원합니다. 미국 내 다문화 환자 커뮤니티(한인, 히스패닉 등)에 대응할 수 있습니다.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-primary-100 p-6" data-animate="fade-up" data-animate-delay="200">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-4">
+              <span class="material-symbols-outlined text-2xl text-primary-600">elderly</span>
+            </div>
+            <h4 class="text-base font-semibold text-neutral-900 mb-2" data-i18n="business.advantage3.title">고령층 친화 환자 앱</h4>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="business.advantage3.description">음성 안내 기반 측정 유도와 직관적인 인터페이스로, 디지털 기기에 익숙하지 않은 고령 환자도 사용할 수 있도록 설계했습니다.</p>
+          </div>
+        </div>
+
+        <!-- Market Size -->
+        <h3 class="text-xl font-semibold text-neutral-900 mb-6" data-animate="fade-up" data-i18n="business.market.title">시장 규모</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up">
+            <p class="text-sm text-neutral-500 mb-1" data-i18n="business.market.rpm_label">미국 RPM 시장</p>
+            <p class="text-lg font-display font-bold text-neutral-900 mb-1">$1.7B <span class="text-neutral-400 font-normal text-sm">(2023)</span> &rarr; <span class="text-primary-600">$6.3B</span> <span class="text-neutral-400 font-normal text-sm">(2030)</span></p>
+            <p class="text-xs text-neutral-500">CAGR 18.4% (Grand View Research)</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="100">
+            <p class="text-sm text-neutral-500 mb-1" data-i18n="business.market.ccm_label">미국 CCM 시장</p>
+            <p class="text-lg font-display font-bold text-neutral-900 mb-1"><span class="text-primary-600">$2.2B</span> <span class="text-neutral-400 font-normal text-sm">(2024)</span></p>
+            <p class="text-xs text-neutral-500">CAGR 11.7% (Precedence Research)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-neutral-300">
+    <div class="border-b border-neutral-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex items-start gap-3">
+          <span class="material-symbols-outlined text-xl text-neutral-500 mt-0.5 shrink-0">info</span>
+          <p class="text-xs leading-relaxed text-neutral-500" data-i18n="footer.disclaimer">
+            하이케어넷은 의료 서비스를 직접 제공하는 기관이 아닙니다. 소프트웨어 플랫폼을 통해 의료기관의 환자 관리를 지원합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-lg font-bold text-white" data-i18n="footer.company_name">하이케어넷 주식회사</span>
+          </div>
+          <address class="not-italic text-sm leading-loose text-neutral-400">
+            <p data-i18n="footer.ceo">대표이사: 김홍진, 원종윤</p>
+            <p data-i18n="footer.address">주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
+            <p>전화: 02-3400-7247</p>
+            <p>이메일: contact@hicare.co.kr</p>
+          </address>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.quicklinks_title">바로가기</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.about">회사소개</a></li>
+            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.business">사업영역</a></li>
+            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.careers">채용</a></li>
+            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.legal_title">법적 고지</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
+            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors"><span data-i18n="footer.us_site">미국 사이트 (hicare.net)</span> <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+          </ul>
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">HIPAA</span>
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">ISO 27001</span>
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">ISO 27701</span>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-neutral-800 text-center">
+        <p class="text-xs text-neutral-500">&copy; 2025 HicareNet Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-30 w-12 h-12 bg-primary-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2" aria-label="맨 위로 이동">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+  </button>
+
+  <script type="module" src="js/main.js"></script>
+  <script>
+    function switchBillingTab(tab) {
+      const rpmPanel = document.getElementById('panel-rpm');
+      const ccmPanel = document.getElementById('panel-ccm');
+      const rpmTab = document.getElementById('tab-rpm');
+      const ccmTab = document.getElementById('tab-ccm');
+      if (tab === 'rpm') {
+        rpmPanel.classList.remove('hidden');
+        ccmPanel.classList.add('hidden');
+        rpmTab.className = 'px-4 py-2 text-sm font-semibold rounded-lg bg-primary-600 text-white transition-colors';
+        ccmTab.className = 'px-4 py-2 text-sm font-semibold rounded-lg bg-neutral-100 text-neutral-700 hover:bg-neutral-200 transition-colors';
+      } else {
+        rpmPanel.classList.add('hidden');
+        ccmPanel.classList.remove('hidden');
+        ccmTab.className = 'px-4 py-2 text-sm font-semibold rounded-lg bg-primary-600 text-white transition-colors';
+        rpmTab.className = 'px-4 py-2 text-sm font-semibold rounded-lg bg-neutral-100 text-neutral-700 hover:bg-neutral-200 transition-colors';
+      }
+    }
+  </script>
+</body>
+</html>

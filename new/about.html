@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="하이케어넷 회사소개 - 인성정보 20년 헬스케어 기술을 기반으로 미국 Medicare RPM/CCM 시장에서 성장하는 디지털 헬스케어 기업.">
+  <title>회사소개 | 하이케어넷</title>
+  <link rel="icon" href="../assets/hicare_pavicon2.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { 50:'#E8F4FD', 100:'#C5E4F9', 200:'#9DD0F4', 300:'#6BB8ED', 400:'#44A5E7', 500:'#1A8FD8', 600:'#1578B8', 700:'#105D91', 800:'#0B4369', 900:'#062F4C' },
+            green: { 50:'#EAFAF2', 100:'#C9F2DD', 200:'#A3E9C6', 300:'#7AE0AE', 400:'#56D893', 500:'#2EBE74', 600:'#26A564', 700:'#1E8A53', 800:'#166E42', 900:'#0E5232' },
+            neutral: { 50:'#F8FAFC', 100:'#F1F5F9', 200:'#E2E8F0', 300:'#CBD5E1', 400:'#94A3B8', 500:'#64748B', 600:'#475569', 700:'#334155', 800:'#1E293B', 900:'#0F172A' }
+          },
+          fontFamily: {
+            sans: ['Pretendard Variable', 'Pretendard', 'Inter', 'Apple SD Gothic Neo', 'Noto Sans KR', 'sans-serif'],
+            display: ['Inter', 'Pretendard Variable', 'Pretendard', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-neutral-800 bg-white">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg" data-i18n="common.skipToContent">본문 바로가기</a>
+
+  <!-- GNB -->
+  <header id="gnb" class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="주요 네비게이션">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
+          <img src="../assets/images/hicare-logo.png" alt="하이케어넷 로고" class="h-8 lg:h-10 w-auto">
+        </a>
+        <ul class="hidden lg:flex items-center gap-1" role="menubar">
+          <li role="none"><a role="menuitem" href="about.html" class="gnb-link active px-3 py-2 rounded-lg text-sm font-medium text-primary-600 bg-primary-50" data-i18n="nav.about">회사소개</a></li>
+          <li role="none"><a role="menuitem" href="business.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.business">사업영역</a></li>
+          <li role="none"><a role="menuitem" href="technology.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.technology">기술</a></li>
+          <li role="none"><a role="menuitem" href="global.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
+          <li role="none"><a role="menuitem" href="careers.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.careers">채용</a></li>
+          <li role="none"><a role="menuitem" href="ir.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.ir">IR/뉴스룸</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <div class="hidden md:flex items-center gap-1 text-sm">
+            <button id="lang-ko" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
+          </div>
+          <a href="contact.html" class="hidden md:inline-flex items-center gap-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+            <span class="material-symbols-outlined text-lg">mail</span>
+            <span data-i18n="nav.contact">문의하기</span>
+          </a>
+          <button id="mobile-toggle" class="lg:hidden p-2 text-neutral-700 hover:text-primary-600" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
+        <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-primary-600 bg-primary-50" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스룸</a>
+          <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
+            <span class="material-symbols-outlined text-lg">mail</span>
+            <span data-i18n="nav.contact">문의하기</span>
+          </a>
+          <div class="flex items-center justify-center gap-1 text-sm mt-2">
+            <button id="lang-ko-mobile" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en-mobile" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="relative min-h-[520px] flex items-center bg-gradient-to-br from-primary-800 to-primary-900 overflow-hidden pt-20" aria-label="히어로">
+      <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('images/hero-about.jpg')" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-800/70 to-primary-900/80" aria-hidden="true"></div>
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 right-10 w-96 h-96 bg-primary-400 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-green-400 rounded-full blur-3xl"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="max-w-3xl">
+          <p class="text-primary-200 text-sm md:text-base font-medium tracking-widest mb-4 uppercase" data-i18n="about.hero.tag" data-animate="fade-up">About Us</p>
+          <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6" data-i18n-html="about.hero.headline" data-animate="fade-up" data-animate-delay="100">
+            20년 헬스케어 기술,<br>미국 시장의 신뢰로 증명합니다
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl text-white/80 leading-normal max-w-2xl" data-i18n-html="about.hero.subtext" data-animate="fade-up" data-animate-delay="200">
+            인성정보에서 축적한 의료 도메인 역량을 바탕으로,<br>미국 Medicare 클리닉의 기술 파트너로 성장하고 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section A: Company Overview -->
+    <section class="py-16 md:py-24 bg-white" aria-label="회사 개요">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-8" data-i18n="about.overview.title" data-animate="fade-up">회사 개요</h2>
+        <div class="max-w-4xl space-y-5 text-base leading-relaxed text-neutral-700">
+          <p data-animate="fade-up" data-i18n="about.overview.p1">
+            하이케어넷은 미국 Medicare 기반 원격환자관리 SaaS 플랫폼을 개발하는 디지털 헬스케어 기업입니다.
+          </p>
+          <p data-animate="fade-up" data-animate-delay="100" data-i18n="about.overview.p2">
+            모기업 인성정보의 헬스케어 사업부에서 20년간 축적한 원격 환자 모니터링 기술을 기반으로, 2020년 물적분할을 통해 독립 법인으로 설립되었습니다. 2021년 미국 캘리포니아에 현지 법인을 설립하고, 미국 클리닉을 대상으로 RPM(원격 환자 모니터링)과 CCM(만성질환 관리) 수가 청구를 지원하는 SaaS 플랫폼 'Hicare Care Portal'을 운영하고 있습니다.
+          </p>
+          <p data-animate="fade-up" data-animate-delay="200" data-i18n="about.overview.p3">
+            2026년 현재 미국 40개 클리닉과 계약하고, 3,000명 이상의 환자에게 서비스를 제공하며, 월 300건 이상의 보험 수가 청구를 처리하고 있습니다. 해외 매출 비중은 96%로, 미국 시장 중심의 글로벌 사업 구조를 갖추고 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Mission -->
+    <section class="py-16 md:py-24 bg-neutral-50" aria-label="미션">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-primary-50 rounded-2xl p-8 md:p-12" data-animate="fade-up">
+          <h2 class="text-2xl md:text-3xl font-bold text-primary-900 mb-6" data-i18n="about.mission.title">미션</h2>
+          <p class="text-base md:text-lg leading-relaxed text-primary-800" data-i18n="about.mission.text">
+            미국 Medicare 만성질환 관리 시장에서, 기술 기반의 수가 청구 자동화를 통해 클리닉의 수익성과 환자의 건강 관리 결과를 동시에 개선합니다. 의료진이 행정 업무 대신 환자 돌봄에 집중할 수 있는 환경을 만드는 것이 목표입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: History Timeline -->
+    <section class="py-16 md:py-24 bg-white" aria-label="연혁">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-12" data-i18n="about.history.title" data-animate="fade-up">연혁</h2>
+        <div class="relative max-w-3xl ml-4 md:ml-8">
+          <!-- Timeline line -->
+          <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-primary-200" aria-hidden="true"></div>
+
+          <!-- Timeline items -->
+          <div class="relative pl-8 pb-10" data-animate="fade-up">
+            <div class="absolute left-0 top-1 w-3 h-3 bg-primary-500 rounded-full -translate-x-[5px]" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_2000s">2000년대</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.2000s">인성정보 헬스케어 사업부, 원격 환자 모니터링 기술 연구개발 시작</p>
+          </div>
+
+          <div class="relative pl-8 pb-10" data-animate="fade-up" data-animate-delay="100">
+            <div class="absolute left-0 top-1 w-3 h-3 bg-primary-400 rounded-full -translate-x-[5px]" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_va">VA 보훈부 사업</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.va">미국 퇴역군인 대상 원격 홈케어 솔루션 공급. 게이트웨이(Hicare Hub) 10,000대 이상 수출</p>
+          </div>
+
+          <div class="relative pl-8 pb-10" data-animate="fade-up" data-animate-delay="150">
+            <div class="absolute left-0 top-1 w-3 h-3 bg-primary-400 rounded-full -translate-x-[5px]" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_italy">이탈리아 수출</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.italy">CEGLIE MESSAPICA 병원 대상 심장질환 퇴원환자 관리 플랫폼 및 게이트웨이 1,000대 수출</p>
+          </div>
+
+          <div class="relative pl-8 pb-10" data-animate="fade-up" data-animate-delay="200">
+            <div class="absolute left-0 top-1 w-3 h-3 bg-primary-400 rounded-full -translate-x-[5px]" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_france">프랑스 수출</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.france">약국 체인 내 건강관리 서비스 센터에 게이트웨이 3,000대 수출</p>
+          </div>
+
+          <div class="relative pl-8 pb-10" data-animate="fade-up" data-animate-delay="250">
+            <div class="absolute left-0 top-1 w-3 h-3 bg-primary-500 rounded-full -translate-x-[5px]" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_2020">2020년</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.2020">인성정보 헬스케어 사업부 물적분할, 하이케어넷 주식회사 설립</p>
+          </div>
+
+          <div class="relative pl-8 pb-10" data-animate="fade-up" data-animate-delay="300">
+            <div class="absolute left-0 top-1 w-3 h-3 bg-primary-500 rounded-full -translate-x-[5px]" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_2021">2021년</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.2021">미국 현지 법인 설립 (캘리포니아)</p>
+          </div>
+
+          <div class="relative pl-8 pb-10" data-animate="fade-up" data-animate-delay="350">
+            <div class="absolute left-0 top-1 w-3 h-3 bg-primary-500 rounded-full -translate-x-[5px]" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_2023">2023년 4월</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.2023">미국 RPM/CCM Care Portal 서비스 상용화 개시. 서부 15개 병원, 환자 1,000명으로 시작</p>
+          </div>
+
+          <div class="relative pl-8 pb-10" data-animate="fade-up" data-animate-delay="400">
+            <div class="absolute left-0 top-1 w-3 h-3 bg-primary-500 rounded-full -translate-x-[5px]" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_2024">2024년</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.2024">37개 병원, 2,000명 이상 환자 확보. 해외 매출 $998,404 달성</p>
+          </div>
+
+          <div class="relative pl-8" data-animate="fade-up" data-animate-delay="450">
+            <div class="absolute left-0 top-1 w-4 h-4 bg-primary-600 rounded-full -translate-x-[7px] ring-4 ring-primary-100" aria-hidden="true"></div>
+            <p class="text-sm font-semibold text-primary-600 mb-1" data-i18n="about.history.year_2025">2025년</p>
+            <p class="text-base text-neutral-700" data-i18n="about.history.2025">40개 병원, 3,000명 이상 환자. 상반기 해외 매출 $816,668. AMC Health MoU 체결</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section D: Organization -->
+    <section class="py-16 md:py-24 bg-neutral-50" aria-label="조직 구성">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-4" data-i18n="about.organization.title" data-animate="fade-up">조직 구성</h2>
+        <p class="text-neutral-600 mb-10" data-animate="fade-up" data-animate-delay="100" data-i18n="about.organization.subtitle">총 22명, R&D 인력 비중 45%</p>
+
+        <!-- R&D Progress Bar -->
+        <div class="max-w-lg mb-12" data-animate="fade-up" data-animate-delay="150">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-sm font-medium text-neutral-700" data-i18n="about.organization.rd_label">R&D 인력 비중</span>
+            <span class="text-sm font-bold text-primary-600 font-display">45%</span>
+          </div>
+          <div class="w-full h-3 bg-neutral-200 rounded-full overflow-hidden">
+            <div class="h-full bg-primary-500 rounded-full transition-all duration-1000" style="width: 45%"></div>
+          </div>
+        </div>
+
+        <!-- Department Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center">
+                <span class="material-symbols-outlined text-xl text-primary-600">code</span>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-neutral-900" data-i18n="about.organization.rnd.title">R&D Group</h3>
+                <p class="text-sm text-primary-600 font-display font-semibold" data-i18n="about.organization.rnd.count">10명</p>
+              </div>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="about.organization.rnd.description">Care Portal과 환자용 앱의 설계, 개발, 운영 전 과정을 담당합니다.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="250">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center">
+                <span class="material-symbols-outlined text-xl text-green-600">trending_up</span>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-neutral-900" data-i18n="about.organization.bi.title">BI Group</h3>
+                <p class="text-sm text-green-600 font-display font-semibold" data-i18n="about.organization.bi.count">7명</p>
+              </div>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="about.organization.bi.description">미국 시장 영업, 서비스 확장 기획, 파트너십 발굴을 수행합니다.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="300">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
+                <span class="material-symbols-outlined text-xl text-neutral-600">corporate_fare</span>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-neutral-900" data-i18n="about.organization.mgmt.title">경영지원실</h3>
+                <p class="text-sm text-neutral-600 font-display font-semibold" data-i18n="about.organization.mgmt.count">4명</p>
+              </div>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="about.organization.mgmt.description">조직 운영 전반을 지원합니다.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6" data-animate="fade-up" data-animate-delay="350">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center">
+                <span class="material-symbols-outlined text-xl text-primary-600">public</span>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-neutral-900" data-i18n="about.organization.overseas.name">해외지원팀</h3>
+                <p class="text-sm text-primary-600 font-display font-semibold">CA</p>
+              </div>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="about.organization.overseas.description">미국 현지 법인(캘리포니아) 경영관리, 인사, 회계를 지원합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section E: Leadership -->
+    <section class="py-16 md:py-24 bg-white" aria-label="경영진">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-10" data-i18n="about.leadership.title" data-animate="fade-up">경영진</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
+          <!-- Profile 1 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 overflow-hidden" data-animate="fade-up" data-animate-delay="100">
+            <div class="bg-neutral-50 border-2 border-dashed border-neutral-300 flex items-center justify-center min-h-[200px]">
+              <div class="text-center">
+                <span class="material-symbols-outlined text-4xl text-neutral-300">person</span>
+                <p class="text-sm text-neutral-400 mt-2" data-i18n="about.leadership.photo_placeholder">프로필 사진 준비 중</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-neutral-900" data-i18n="about.leadership.kim.name">김홍진</h3>
+              <p class="text-sm text-primary-600 font-medium mb-3" data-i18n="about.leadership.kim.title">각자대표</p>
+              <p class="text-sm text-neutral-500" data-i18n="about.leadership.kim.bio">[PLACEHOLDER: 약력 상세 필요]</p>
+            </div>
+          </div>
+
+          <!-- Profile 2 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 overflow-hidden" data-animate="fade-up" data-animate-delay="200">
+            <div class="bg-neutral-50 border-2 border-dashed border-neutral-300 flex items-center justify-center min-h-[200px]">
+              <div class="text-center">
+                <span class="material-symbols-outlined text-4xl text-neutral-300">person</span>
+                <p class="text-sm text-neutral-400 mt-2" data-i18n="about.leadership.photo_placeholder">프로필 사진 준비 중</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-neutral-900" data-i18n="about.leadership.won.name">원종윤</h3>
+              <p class="text-sm text-primary-600 font-medium mb-3" data-i18n="about.leadership.won.title">각자대표</p>
+              <p class="text-sm text-neutral-500" data-i18n="about.leadership.won.bio">[PLACEHOLDER: 약력 상세 필요]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-neutral-300">
+    <div class="border-b border-neutral-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex items-start gap-3">
+          <span class="material-symbols-outlined text-xl text-neutral-500 mt-0.5 shrink-0">info</span>
+          <p class="text-xs leading-relaxed text-neutral-500" data-i18n="footer.disclaimer">
+            하이케어넷은 의료 서비스를 직접 제공하는 기관이 아닙니다. 소프트웨어 플랫폼을 통해 의료기관의 환자 관리를 지원합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-lg font-bold text-white" data-i18n="footer.company_name">하이케어넷 주식회사</span>
+          </div>
+          <address class="not-italic text-sm leading-loose text-neutral-400">
+            <p data-i18n="footer.ceo">대표이사: 김홍진, 원종윤</p>
+            <p data-i18n="footer.address">주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
+            <p>전화: 02-3400-7247</p>
+            <p>이메일: contact@hicare.co.kr</p>
+          </address>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.quicklinks_title">바로가기</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.about">회사소개</a></li>
+            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.business">사업영역</a></li>
+            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.careers">채용</a></li>
+            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.legal_title">법적 고지</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
+            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors"><span data-i18n="footer.us_site">미국 사이트 (hicare.net)</span> <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+          </ul>
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">HIPAA</span>
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">ISO 27001</span>
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">ISO 27701</span>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-neutral-800 text-center">
+        <p class="text-xs text-neutral-500">&copy; 2025 HicareNet Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-30 w-12 h-12 bg-primary-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2" aria-label="맨 위로 이동">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+  </button>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

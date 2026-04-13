@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="하이케어넷 기술 - Care Portal을 만드는 클라우드 SaaS 플랫폼 아키텍처, AI 기반 의료 데이터 분석, 보안 인증, 20년간 축적한 의료 도메인 기술.">
+  <title>기술 | 하이케어넷</title>
+  <link rel="icon" href="../assets/hicare_pavicon2.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { 50:'#E8F4FD', 100:'#C5E4F9', 200:'#9DD0F4', 300:'#6BB8ED', 400:'#44A5E7', 500:'#1A8FD8', 600:'#1578B8', 700:'#105D91', 800:'#0B4369', 900:'#062F4C' },
+            green: { 50:'#EAFAF2', 100:'#C9F2DD', 200:'#A3E9C6', 300:'#7AE0AE', 400:'#56D893', 500:'#2EBE74', 600:'#26A564', 700:'#1E8A53', 800:'#166E42', 900:'#0E5232' },
+            neutral: { 50:'#F8FAFC', 100:'#F1F5F9', 200:'#E2E8F0', 300:'#CBD5E1', 400:'#94A3B8', 500:'#64748B', 600:'#475569', 700:'#334155', 800:'#1E293B', 900:'#0F172A' }
+          },
+          fontFamily: {
+            sans: ['Pretendard Variable', 'Pretendard', 'Inter', 'Apple SD Gothic Neo', 'Noto Sans KR', 'sans-serif'],
+            display: ['Inter', 'Pretendard Variable', 'Pretendard', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-neutral-800 bg-white">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg" data-i18n="common.skipToContent">본문 바로가기</a>
+
+  <!-- GNB -->
+  <header id="gnb" class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="주요 네비게이션">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
+          <img src="../assets/images/hicare-logo.png" alt="하이케어넷 로고" class="h-8 lg:h-10 w-auto">
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center gap-1" role="menubar">
+          <li role="none"><a role="menuitem" href="about.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.about">회사소개</a></li>
+          <li role="none"><a role="menuitem" href="business.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.business">사업영역</a></li>
+          <li role="none"><a role="menuitem" href="technology.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-semibold text-primary-600 bg-primary-50 transition-colors" data-i18n="nav.technology">기술</a></li>
+          <li role="none"><a role="menuitem" href="global.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
+          <li role="none"><a role="menuitem" href="careers.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.careers">채용</a></li>
+          <li role="none"><a role="menuitem" href="ir.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.ir">IR/뉴스룸</a></li>
+        </ul>
+
+        <!-- Language Toggle + CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <div class="hidden md:flex items-center gap-1 text-sm">
+            <button id="lang-ko" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500">EN</button>
+          </div>
+          <a href="contact.html" class="hidden md:inline-flex items-center gap-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+            <span class="material-symbols-outlined text-lg">mail</span>
+            <span data-i18n="nav.contact">문의하기</span>
+          </a>
+          <button id="mobile-toggle" class="lg:hidden p-2 text-neutral-700 hover:text-primary-600" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
+        <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-semibold text-primary-600 bg-primary-50" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스룸</a>
+          <div class="flex items-center gap-1 text-sm px-3 py-2">
+            <button onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500">EN</button>
+          </div>
+          <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
+            <span class="material-symbols-outlined text-lg">mail</span>
+            <span data-i18n="nav.contact">문의하기</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Section A: Hero -->
+    <section class="relative min-h-[520px] flex items-center bg-gradient-to-br from-primary-800 to-primary-900 overflow-hidden pt-20" aria-label="히어로">
+      <!-- Background image layer -->
+      <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('images/hero-technology.png')" aria-hidden="true"></div>
+      <!-- Gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-800/70 to-primary-900/80" aria-hidden="true"></div>
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 right-10 w-96 h-96 bg-primary-400 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-green-400 rounded-full blur-3xl"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="max-w-3xl">
+          <p class="text-primary-200 text-sm md:text-base font-medium tracking-widest mb-4 uppercase" data-i18n="technology.hero.tag">Technology</p>
+          <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6" data-i18n-html="technology.hero.headline">
+            신뢰할 수 있는 플랫폼을 만드는<br>기술적 기반
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl text-white/80 leading-normal max-w-2xl" data-i18n-html="technology.hero.subtext">
+            클라우드 인프라, AI 의료 데이터 분석, 20년간 축적한 도메인 기술.<br>정확한 청구와 안정적 운영을 가능하게 하는 기술입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Platform Architecture -->
+    <section class="py-16 md:py-24 bg-white" aria-label="플랫폼 아키텍처">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-animate="fade-up">
+          <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-4" data-i18n="technology.architecture.title">Care Portal 기술 구조</h2>
+          <p class="text-base md:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed" data-i18n="technology.architecture.body">
+            Care Portal은 클라우드 기반 SaaS 플랫폼입니다. 미국 클리닉의 RPM/CCM 환자 관리 워크플로우와 Medicare 수가 청구 과정을 하나의 시스템에서 처리합니다.
+          </p>
+        </div>
+
+        <!-- 3-Layer Architecture Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+          <!-- Layer 1: Data Collection -->
+          <div class="relative bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-primary-50 rounded-xl flex items-center justify-center">
+                <span class="material-symbols-outlined text-xl text-primary-600">sensors</span>
+              </div>
+              <span class="text-xs font-semibold text-primary-600 bg-primary-50 px-2 py-0.5 rounded">Layer 1</span>
+            </div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="technology.architecture.layer_1_title">데이터 수집 계층</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.architecture.layer_1_desc">환자 앱과 연동 기기에서 생체 데이터를 실시간으로 수집하고 전송합니다.</p>
+          </div>
+
+          <!-- Layer 2: AI/ML -->
+          <div class="relative bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="100">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center">
+                <span class="material-symbols-outlined text-xl text-green-600">psychology</span>
+              </div>
+              <span class="text-xs font-semibold text-green-600 bg-green-50 px-2 py-0.5 rounded">Layer 2</span>
+            </div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="technology.architecture.layer_2_title">AI/ML 분석 계층</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.architecture.layer_2_desc">수집된 데이터를 분석하여 이상 징후를 감지하고, CPT 코드별 요건에 맞는 리포트를 자동 생성합니다.</p>
+          </div>
+
+          <!-- Layer 3: Billing -->
+          <div class="relative bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-primary-50 rounded-xl flex items-center justify-center">
+                <span class="material-symbols-outlined text-xl text-primary-600">receipt_long</span>
+              </div>
+              <span class="text-xs font-semibold text-primary-600 bg-primary-50 px-2 py-0.5 rounded">Layer 3</span>
+            </div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="technology.architecture.layer_3_title">청구 연계 계층</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.architecture.layer_3_desc">관리 시간, 상담 내역, 모니터링 기록을 문서화하여 Medicare 보험 청구에 필요한 산출물을 자동으로 만듭니다.</p>
+          </div>
+        </div>
+
+        <!-- Flow Diagram Placeholder -->
+        <div class="bg-neutral-50 rounded-2xl border border-neutral-200 p-8 text-center" data-animate="fade-up">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+            <div class="flex items-center gap-2 px-4 py-3 bg-primary-100 rounded-xl">
+              <span class="material-symbols-outlined text-primary-700">smartphone</span>
+              <span class="text-sm font-medium text-primary-800" data-i18n="technology.architecture.flow_device">환자 앱/기기</span>
+            </div>
+            <span class="material-symbols-outlined text-neutral-400 rotate-90 md:rotate-0">arrow_forward</span>
+            <div class="flex items-center gap-2 px-4 py-3 bg-green-100 rounded-xl">
+              <span class="material-symbols-outlined text-green-700">cloud</span>
+              <span class="text-sm font-medium text-green-800" data-i18n="technology.architecture.flow_cloud">클라우드 분석</span>
+            </div>
+            <span class="material-symbols-outlined text-neutral-400 rotate-90 md:rotate-0">arrow_forward</span>
+            <div class="flex items-center gap-2 px-4 py-3 bg-primary-100 rounded-xl">
+              <span class="material-symbols-outlined text-primary-700">description</span>
+              <span class="text-sm font-medium text-primary-800" data-i18n="technology.architecture.flow_billing">수가 청구 산출물</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platform Notes -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center text-sm text-neutral-500" data-animate="fade-up">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-lg">devices</span>
+            <span data-i18n="technology.architecture.platform_note">Android, iOS, 태블릿, 웹 크로스플랫폼 지원</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-lg">science</span>
+            <span data-i18n="technology.architecture.lab_note">제1 기업부설연구소 운영, R&D 인력 전체 직원의 45%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: AI Technology -->
+    <section class="py-16 md:py-24 bg-neutral-50" aria-label="AI 기술">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-animate="fade-up">
+          <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-4" data-i18n="technology.ai.title">AI 기반 의료 데이터 분석</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <!-- AI Card 1: Report Generation -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-primary-600">auto_awesome</span>
+            </div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="technology.ai.report.title">AI 리포트 자동 생성</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.ai.report.desc">환자의 생체 데이터와 관리 기록을 분석하여, RPM/CCM CPT 코드별 요건에 맞는 리포트를 자동으로 생성합니다. 의료진의 행정 업무 부담을 줄이고, 청구 누락을 방지합니다.</p>
+          </div>
+
+          <!-- AI Card 2: Anomaly Detection -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="100">
+            <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-green-600">monitoring</span>
+            </div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3" data-i18n="technology.ai.anomaly.title">이상 징후 예측</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.ai.anomaly.desc">환자 생체 데이터의 패턴을 지속적으로 학습하여, 비정상 수치가 나타나기 전에 위험 신호를 감지합니다. 의료진에게 우선순위에 따라 알림을 전송하여 선제적 대응을 지원합니다.</p>
+          </div>
+
+          <!-- AI Card 2.5: Auto Code Optimization -->
+          <div class="bg-white rounded-2xl shadow-sm border border-primary-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="150">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-primary-600">auto_fix_high</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <h3 class="text-lg font-semibold text-neutral-900" data-i18n="technology.ai.codeopt.title">자동 코드 최적화</h3>
+              <span class="inline-flex items-center px-2 py-0.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full">2026 NEW</span>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.ai.codeopt.desc">환자별 데이터 전송일 수와 관리 시간을 실시간 추적하여, 99445 vs 99454(디바이스), 99470 vs 99457(치료 관리) 중 최적 CPT 코드를 자동 선택합니다. 2026년 CMS 신규 코드를 포함한 전체 빌링 코드를 지원합니다.</p>
+          </div>
+
+          <!-- AI Card 3: Pneumonia Diagnosis -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="200">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-primary-600">radiology</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <h3 class="text-lg font-semibold text-neutral-900" data-i18n="technology.ai.pneumonia.title">AI 폐렴 진단 지원 의료기기</h3>
+              <span class="inline-flex items-center px-2 py-0.5 bg-amber-100 text-amber-700 text-xs font-semibold rounded-full" data-i18n="technology.ai.pneumonia.badge">FDA 추진 중</span>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.ai.pneumonia.desc">AI 기반 폐렴 진단 지원 의료기기를 개발하고 있으며, 현재 FDA 승인을 추진 중입니다.</p>
+          </div>
+
+          <!-- AI Card 4: Dementia Diagnosis -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="300">
+            <div class="w-12 h-12 bg-neutral-100 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-neutral-500">neurology</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <h3 class="text-lg font-semibold text-neutral-900" data-i18n="technology.ai.dementia.title">AI 치매 진단 지원 의료기기</h3>
+              <span class="inline-flex items-center px-2 py-0.5 bg-neutral-200 text-neutral-600 text-xs font-semibold rounded-full" data-i18n="technology.ai.dementia.badge">준비 단계</span>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.ai.dementia.desc">AI 기반 치매 진단 지원 의료기기는 현재 준비 단계에 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section D: Security & Certifications -->
+    <section class="py-16 md:py-24 bg-white" aria-label="보안 및 인증">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-animate="fade-up">
+          <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-4" data-i18n="technology.security.title">보안 및 인증</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <!-- HIPAA -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-primary-600">verified_user</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <h3 class="text-lg font-semibold text-neutral-900" data-i18n="technology.security.hipaa.title">HIPAA 준수</h3>
+              <span class="inline-flex items-center px-2.5 py-1 bg-primary-50 text-primary-700 text-xs font-semibold rounded">HIPAA</span>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.security.hipaa.desc">미국 의료정보 보호법(HIPAA)을 준수합니다. 환자의 건강 정보를 수집, 저장, 전송하는 전 과정에서 연방 규정이 요구하는 보안 기준을 충족합니다.</p>
+          </div>
+
+          <!-- ISO 27001 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="100">
+            <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-green-600">shield</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <h3 class="text-lg font-semibold text-neutral-900" data-i18n="technology.security.iso27001.title">ISO 27001 인증</h3>
+              <span class="inline-flex items-center px-2.5 py-1 bg-green-50 text-green-700 text-xs font-semibold rounded">ISO 27001</span>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.security.iso27001.desc">정보보안 경영시스템 국제 표준 인증을 획득했습니다. 조직의 정보 자산을 체계적으로 보호하기 위한 관리 체계를 운영합니다.</p>
+          </div>
+
+          <!-- ISO 27701 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-100 p-6 lg:p-8 hover:shadow-md transition-shadow" data-animate="fade-up" data-animate-delay="200">
+            <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-2xl text-primary-600">privacy_tip</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <h3 class="text-lg font-semibold text-neutral-900" data-i18n="technology.security.iso27701.title">ISO 27701 인증</h3>
+              <span class="inline-flex items-center px-2.5 py-1 bg-primary-50 text-primary-700 text-xs font-semibold rounded">ISO 27701</span>
+            </div>
+            <p class="text-sm text-neutral-600 leading-relaxed" data-i18n="technology.security.iso27701.desc">개인정보보호 경영시스템 국제 표준 인증을 획득했습니다. 개인 식별 정보(PII)의 수집과 처리에 대한 글로벌 수준의 관리 체계를 갖추고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section E: Medical Domain Heritage -->
+    <section class="py-16 md:py-24 bg-neutral-50" aria-label="의료 도메인 기술">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <!-- Text Content -->
+          <div data-animate="fade-up">
+            <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-6" data-i18n="technology.heritage.title">20년간 축적한 의료 도메인 기술</h2>
+            <p class="text-base text-neutral-600 leading-relaxed mb-6" data-i18n="technology.heritage.body">
+              하이케어넷의 기술은 2000년대부터 인성정보 헬스케어 사업부에서 축적해온 원격 환자 모니터링 역량에 기반합니다.
+            </p>
+            <div class="space-y-4 mb-6">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-600 mt-0.5">bluetooth</span>
+                <p class="text-sm text-neutral-700 leading-relaxed" data-i18n="technology.heritage.devices_count">120종 이상의 FDA 승인 의료기기와 블루투스 기반으로 자동 연동하는 기술을 보유하고 있습니다. 혈압계, 혈당계, 산소포화도 측정기, 체중계, 체온계 등 다양한 기기를 오토페어링으로 연결하며, 고령 환자도 음성 안내에 따라 쉽게 사용할 수 있도록 설계했습니다.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-green-600 mt-0.5">military_tech</span>
+                <p class="text-sm text-neutral-700 leading-relaxed" data-i18n="technology.heritage.gateway_export">이 기술은 미국 VA(보훈부) 사업을 통해 게이트웨이 10,000대 이상을 수출하면서 검증되었고, 이탈리아와 프랑스 의료기관에도 공급되었습니다.</p>
+              </div>
+            </div>
+            <p class="text-sm text-neutral-500 leading-relaxed" data-i18n="technology.heritage.closing">이 의료 도메인 기술의 축적이 있었기에, 미국 Medicare 시장의 요구 사항을 깊이 이해하고 Care Portal을 설계할 수 있었습니다.</p>
+          </div>
+
+          <!-- Medical Device Technology Image -->
+          <div class="rounded-2xl aspect-[4/3] overflow-hidden" data-animate="fade-up" data-animate-delay="100">
+            <div class="w-full h-64 bg-neutral-200 flex items-center justify-center rounded-2xl">
+              <span class="text-neutral-400 text-sm">need the image</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-neutral-300">
+    <!-- Medical Disclaimer -->
+    <div class="border-b border-neutral-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex items-start gap-3">
+          <span class="material-symbols-outlined text-xl text-neutral-500 mt-0.5 shrink-0">info</span>
+          <p class="text-xs leading-relaxed text-neutral-500" data-i18n="footer.disclaimer">
+            하이케어넷은 의료 서비스를 직접 제공하는 기관이 아닙니다. 소프트웨어 플랫폼을 통해 의료기관의 환자 관리를 지원합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <!-- Company Info -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-lg font-bold text-white" data-i18n="footer.company_name">하이케어넷 주식회사</span>
+          </div>
+          <address class="not-italic text-sm leading-loose text-neutral-400">
+            <p data-i18n="footer.ceo">대표이사: 김홍진, 원종윤</p>
+            <p data-i18n="footer.address">주소: 서울특별시 송파구 위례성대로22길 28, 5층</p>
+            <p data-i18n="footer.phone">전화: 02-3400-7247</p>
+            <p data-i18n="footer.email">이메일: contact@hicare.co.kr</p>
+          </address>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.quicklinks_title">바로가기</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.about">회사소개</a></li>
+            <li><a href="business.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.business">사업영역</a></li>
+            <li><a href="technology.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.technology">기술</a></li>
+            <li><a href="global.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
+            <li><a href="careers.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.careers">채용</a></li>
+            <li><a href="ir.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.ir">IR/뉴스룸</a></li>
+            <li><a href="faq.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Certs -->
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4" data-i18n="footer.legal_title">법적 고지</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="privacy.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.privacy">개인정보처리방침</a></li>
+            <li><a href="terms.html" class="text-neutral-400 hover:text-white transition-colors" data-i18n="footer.terms">이용약관</a></li>
+            <li><a href="https://hicare.net" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors"><span data-i18n="footer.us_site">미국 사이트 (hicare.net)</span> <span class="material-symbols-outlined text-xs align-middle">open_in_new</span></a></li>
+          </ul>
+
+          <!-- Certification Badges -->
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">HIPAA</span>
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">ISO 27001</span>
+            <span class="inline-flex items-center px-2.5 py-1 bg-neutral-800 text-neutral-400 text-xs font-medium rounded">ISO 27701</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-8 border-t border-neutral-800 text-center">
+        <p class="text-xs text-neutral-500">&copy; 2025 HicareNet Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-30 w-12 h-12 bg-primary-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2" aria-label="맨 위로 이동">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
