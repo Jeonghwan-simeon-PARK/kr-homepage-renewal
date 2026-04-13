@@ -3,8 +3,24 @@
    Adapted from ov3 alternating image/text layout
    ============================================= */
 
-/* Body lang variant */
-body.lang-ko { word-break: keep-all; }
+/* Global Reset */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; overflow-x: hidden; }
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a1a2e; background: #fff; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body.lang-ko {
+  font-family: 'Noto Sans KR', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  word-break: keep-all;
+}
+
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
 
 /* ============================
    LANGUAGE TOGGLE VISIBILITY

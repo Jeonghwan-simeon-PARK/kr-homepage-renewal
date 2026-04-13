@@ -6,56 +6,82 @@
   <meta name="description" content="HicareNet - Healthcare Technology, Proven Globally. RPM, CCM, AWV & Value-Based Care solutions.">
   <title>HicareNet</title>
   <link rel="icon" href="../assets/hicare_pavicon2.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { 50:'#E8F4FD', 100:'#C5E4F9', 200:'#9DD0F4', 300:'#6BB8ED', 400:'#44A5E7', 500:'#1A8FD8', 600:'#1578B8', 700:'#105D91', 800:'#0B4369', 900:'#062F4C' },
+            green: { 50:'#EAFAF2', 100:'#C9F2DD', 200:'#A3E9C6', 300:'#7AE0AE', 400:'#56D893', 500:'#2EBE74', 600:'#26A564', 700:'#1E8A53', 800:'#166E42', 900:'#0E5232' },
+            neutral: { 50:'#F8FAFC', 100:'#F1F5F9', 200:'#E2E8F0', 300:'#CBD5E1', 400:'#94A3B8', 500:'#64748B', 600:'#475569', 700:'#334155', 800:'#1E293B', 900:'#0F172A' }
+          },
+          fontFamily: {
+            sans: ['Pretendard Variable', 'Pretendard', 'Inter', 'Apple SD Gothic Neo', 'Noto Sans KR', 'sans-serif'],
+            display: ['Inter', 'Pretendard Variable', 'Pretendard', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="css/home.css">
 </head>
 <body class="lang-ko">
 
-  <!-- NAV -->
-  <header class="nav nav--dark" id="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo"><img src="../assets/images/hicare-logo.png" alt="HicareNet" height="28"></a>
-      <nav class="nav__menu">
-        <a href="about.html" class="nav__link lang-en-only">About</a>
-        <a href="business.html" class="nav__link lang-en-only">Business</a>
-        <a href="technology.html" class="nav__link lang-en-only">Technology</a>
-        <a href="global.html" class="nav__link lang-en-only">Global</a>
-        <a href="careers.html" class="nav__link lang-en-only">Careers</a>
-        <a href="ir.html" class="nav__link lang-en-only">IR / Newsroom</a>
-        <a href="about.html" class="nav__link lang-ko-only">회사소개</a>
-        <a href="business.html" class="nav__link lang-ko-only">사업영역</a>
-        <a href="technology.html" class="nav__link lang-ko-only">기술</a>
-        <a href="global.html" class="nav__link lang-ko-only">글로벌 실적</a>
-        <a href="careers.html" class="nav__link lang-ko-only">채용</a>
-        <a href="ir.html" class="nav__link lang-ko-only">IR/뉴스룸</a>
-      </nav>
-      <div class="nav__actions">
-        <div class="lang-toggle">
-          <button class="lang-toggle__btn" data-lang="en" onclick="setLanguage('en')">EN</button>
-          <button class="lang-toggle__btn is-active" data-lang="ko" onclick="setLanguage('ko')">KO</button>
+  <!-- GNB (same as sub-pages) -->
+  <header id="gnb" class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="주요 네비게이션">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="하이케어넷 홈">
+          <img src="../assets/images/hicare-logo.png" alt="하이케어넷 로고" class="h-8 lg:h-10 w-auto">
+        </a>
+        <ul class="hidden lg:flex items-center gap-1" role="menubar">
+          <li role="none"><a role="menuitem" href="about.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.about">회사소개</a></li>
+          <li role="none"><a role="menuitem" href="business.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.business">사업영역</a></li>
+          <li role="none"><a role="menuitem" href="technology.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.technology">기술</a></li>
+          <li role="none"><a role="menuitem" href="global.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.global">글로벌 실적</a></li>
+          <li role="none"><a role="menuitem" href="careers.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.careers">채용</a></li>
+          <li role="none"><a role="menuitem" href="ir.html" class="gnb-link px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors" data-i18n="nav.ir">IR/뉴스룸</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <div class="hidden md:flex items-center gap-1 text-sm">
+            <button id="lang-ko" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
+          </div>
+          <a href="contact.html" class="hidden md:inline-flex items-center gap-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+            <span class="material-symbols-outlined text-lg">mail</span>
+            <span data-i18n="nav.contact">문의하기</span>
+          </a>
+          <button id="mobile-toggle" class="lg:hidden p-2 text-neutral-700 hover:text-primary-600" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
         </div>
-        <a href="contact.html" class="nav__cta lang-en-only">Contact</a>
-        <a href="contact.html" class="nav__cta lang-ko-only">문의하기</a>
-        <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
-    </div>
-    <nav class="nav__mobile" id="mobile-menu">
-      <a href="about.html" class="nav__mobile-link lang-en-only">About</a>
-      <a href="business.html" class="nav__mobile-link lang-en-only">Business</a>
-      <a href="technology.html" class="nav__mobile-link lang-en-only">Technology</a>
-      <a href="global.html" class="nav__mobile-link lang-en-only">Global</a>
-      <a href="careers.html" class="nav__mobile-link lang-en-only">Careers</a>
-      <a href="ir.html" class="nav__mobile-link lang-en-only">IR / Newsroom</a>
-      <a href="about.html" class="nav__mobile-link lang-ko-only">회사소개</a>
-      <a href="business.html" class="nav__mobile-link lang-ko-only">사업영역</a>
-      <a href="technology.html" class="nav__mobile-link lang-ko-only">기술</a>
-      <a href="global.html" class="nav__mobile-link lang-ko-only">글로벌 실적</a>
-      <a href="careers.html" class="nav__mobile-link lang-ko-only">채용</a>
-      <a href="ir.html" class="nav__mobile-link lang-ko-only">IR/뉴스룸</a>
-      <a href="contact.html" class="nav__mobile-link lang-en-only">Contact</a>
-      <a href="contact.html" class="nav__mobile-link lang-ko-only">문의하기</a>
+      <div id="mobile-menu" class="lg:hidden hidden pb-4" role="menu">
+        <div class="flex flex-col gap-1 pt-2 border-t border-neutral-200">
+          <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">회사소개</a>
+          <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">사업영역</a>
+          <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">기술</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.global">글로벌 실적</a>
+          <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">채용</a>
+          <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/뉴스룸</a>
+          <a role="menuitem" href="contact.html" class="mt-2 flex items-center justify-center gap-1 px-4 py-3 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700">
+            <span class="material-symbols-outlined text-lg">mail</span>
+            <span data-i18n="nav.contact">문의하기</span>
+          </a>
+          <div class="flex items-center justify-center gap-1 text-sm mt-2">
+            <button id="lang-ko-mobile" onclick="setLanguage('ko')" class="px-2 py-1 rounded font-semibold text-primary-600" aria-label="한국어로 전환">KO</button>
+            <span class="text-neutral-300">|</span>
+            <button id="lang-en-mobile" onclick="setLanguage('en')" class="px-2 py-1 rounded text-neutral-500 hover:text-neutral-700" aria-label="Switch to English">EN</button>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -68,7 +94,7 @@
   <main>
 
     <!-- ========== #0 HERO ========== -->
-    <section class="section-image" id="hero">
+    <section class="section-image" id="hero" aria-label="히어로">
       <div class="section-image__bg">
         <img src="images/1_main_img.jpg" alt="Healthcare professional" loading="eager">
       </div>

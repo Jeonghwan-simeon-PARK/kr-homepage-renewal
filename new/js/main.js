@@ -4,17 +4,14 @@
  */
 
 // ============================================================
-// 1. Home Page: Nav dark/light mode + scroll indicator
+// 1. Home Page: Scroll animations, counter, scroll indicator
 //    Only runs if .section-image exists (home page)
 // ============================================================
-function initHomeNav() {
-  var nav = document.getElementById('nav');
+function initHomeEffects() {
   var scrollIndicator = document.getElementById('scroll-indicator');
-  if (!nav || !document.querySelector('.section-image')) return;
+  if (!document.querySelector('.section-image')) return;
 
-  var navMode = 'dark';
-
-  // Scroll animation for home sections
+  // Scroll animation for home sections (IntersectionObserver)
   var animObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
@@ -30,34 +27,12 @@ function initHomeNav() {
     animObserver.observe(s);
   });
 
-  function updateNavMode() {
-    var navBottom = 72;
-    var sections = document.querySelectorAll('.section-image, .section-text');
-    var mode = 'light';
-
-    for (var i = sections.length - 1; i >= 0; i--) {
-      var rect = sections[i].getBoundingClientRect();
-      if (rect.top <= navBottom) {
-        mode = sections[i].classList.contains('section-image') ? 'dark' : 'light';
-        break;
-      }
-    }
-
-    if (mode !== navMode) {
-      navMode = mode;
-      nav.classList.remove('nav--dark', 'nav--light');
-      nav.classList.add('nav--' + mode);
-    }
-  }
-
-  updateNavMode();
-  window.addEventListener('scroll', function () {
-    updateNavMode();
-    nav.classList.toggle('is-scrolled', window.scrollY > 50);
-    if (scrollIndicator) {
+  // Scroll indicator hide on scroll
+  if (scrollIndicator) {
+    window.addEventListener('scroll', function () {
       scrollIndicator.classList.toggle('is-hidden', window.scrollY > 200);
-    }
-  }, { passive: true });
+    }, { passive: true });
+  }
 
   // Home page counter animation (data-count based)
   var countersAnimated = false;
@@ -66,9 +41,8 @@ function initHomeNav() {
     var statsObserver = new IntersectionObserver(function (entries) {
       if (entries[0].isIntersecting && !countersAnimated) {
         countersAnimated = true;
-        // Only animate visible counters (respect lang toggle)
         document.querySelectorAll('[data-count]').forEach(function (el) {
-          if (el.offsetParent === null) return; // skip hidden elements
+          if (el.offsetParent === null) return;
           var target = parseInt(el.getAttribute('data-count'), 10);
           var duration = 2000, startTime = null;
           function step(ts) {
@@ -83,22 +57,6 @@ function initHomeNav() {
       }
     }, { threshold: 0.4 });
     statsObserver.observe(statsSection);
-  }
-
-  // Hamburger menu for home nav
-  var hamburger = document.getElementById('nav-hamburger');
-  var mobileMenu = document.getElementById('mobile-menu');
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', function () {
-      var open = hamburger.classList.toggle('is-open');
-      mobileMenu.classList.toggle('is-open', open);
-    });
-    mobileMenu.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        hamburger.classList.remove('is-open');
-        mobileMenu.classList.remove('is-open');
-      });
-    });
   }
 }
 
@@ -482,7 +440,7 @@ async function initI18n() {
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
   // Home page modules (gated on .section-image)
-  initHomeNav();
+  initHomeEffects();
 
   // Sub-page modules (gated on #gnb)
   initGNB();
