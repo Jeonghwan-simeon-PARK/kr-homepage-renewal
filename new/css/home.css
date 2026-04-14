@@ -9,12 +9,12 @@
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
-  font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, Inter, 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #1a1a2e; background: #fff; line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 body.lang-ko {
-  font-family: 'Noto Sans KR', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   word-break: keep-all;
 }
 
