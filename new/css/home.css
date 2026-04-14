@@ -24,27 +24,16 @@ ul { list-style: none; }
 
 /* ============================
    LANGUAGE TOGGLE VISIBILITY
+   - Each element keeps its native display (grid / flex / block).
+   - We only force-hide the inactive language. !important is required
+     because component rules like `.service-flow { display: flex }`
+     share specificity with `.lang-ko-only { display: none }` and win
+     by source order.
    ============================ */
-.lang-en-only { display: block; }
-.lang-ko-only { display: none; }
-body.lang-ko .lang-en-only { display: none; }
-body.lang-ko .lang-ko-only { display: block; }
-/* Grid/flex variants */
-body.lang-ko .solutions-grid.lang-en-only { display: none; }
-body.lang-ko .service-flow.lang-ko-only { display: flex; }
-body.lang-ko .service-tags.lang-ko-only { display: flex; }
-body.lang-ko .tech-grid.lang-en-only { display: none; }
-body.lang-ko .timeline.lang-ko-only { display: flex; }
-body.lang-ko .stats-grid.lang-en-only { display: none; }
-body.lang-ko .stats-grid.lang-ko-only { display: grid; }
-body.lang-ko .resource-grid.lang-en-only { display: none; }
-body.lang-ko .resource-grid.lang-ko-only { display: grid; }
-body.lang-ko .cta-group.lang-en-only { display: none; }
-body.lang-ko .cta-group.lang-ko-only { display: flex; }
-body.lang-ko .footer-en { display: none; }
-body.lang-ko .footer-ko { display: block; }
-body:not(.lang-ko) .footer-en { display: block; }
-body:not(.lang-ko) .footer-ko { display: none; }
+body:not(.lang-ko) .lang-ko-only,
+body:not(.lang-ko) .footer-ko { display: none !important; }
+body.lang-ko .lang-en-only,
+body.lang-ko .footer-en { display: none !important; }
 
 /* ============================
    NAVIGATION — dark/light mode
@@ -263,7 +252,7 @@ body:not(.lang-ko) .footer-ko { display: none; }
   position: absolute; bottom: 0; left: 0; right: 0;
   padding: 28px 24px; z-index: 2;
 }
-.solution-card__number { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; color: #1A8FD8; margin-bottom: 8px; display: block; }
+.solution-card__number { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; color: #fff; margin-bottom: 8px; display: block; }
 .solution-card__title { font-size: 1.2rem; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 8px; }
 .solution-card__desc {
   font-size: 0.83rem; color: rgba(255,255,255,0.65); line-height: 1.5;
@@ -271,7 +260,7 @@ body:not(.lang-ko) .footer-ko { display: none; }
   transition: max-height 0.5s, opacity 0.4s;
 }
 .solution-card:hover .solution-card__desc { max-height: 120px; opacity: 1; }
-.solution-card__link { font-size: 0.82rem; font-weight: 600; color: #1A8FD8; margin-top: 10px; opacity: 0; transition: opacity 0.4s; display: inline-block; }
+.solution-card__link { font-size: 0.82rem; font-weight: 600; color: #fff; margin-top: 10px; opacity: 0; transition: opacity 0.4s; display: inline-block; }
 .solution-card:hover .solution-card__link { opacity: 1; }
 
 /* ============================
@@ -342,15 +331,15 @@ body:not(.lang-ko) .footer-ko { display: none; }
   transition: transform 0.3s;
 }
 .timeline__item:hover .timeline__dot { transform: translate(-50%, -50%) scale(1.4); }
-.timeline__year { font-size: 0.9rem; font-weight: 800; color: #1A8FD8; margin-bottom: 44px; }
-.timeline__text { font-size: 0.78rem; color: #888; line-height: 1.5; margin-top: 44px; }
+.timeline__year { font-size: 0.9rem; font-weight: 800; color: #1A8FD8; margin-bottom: 20px; }
+.timeline__text { font-size: 0.78rem; color: #888; line-height: 1.5; margin-top: 20px; word-break: keep-all; }
 
 /* ============================
    STATS (on brand image)
    ============================ */
 .stats-grid {
   display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 48px; margin-top: 48px; width: 100%; max-width: 900px;
+  gap: 48px; margin: 48px auto 0; width: 100%; max-width: 900px;
 }
 .stat-item { text-align: center; }
 .stat-item__number { font-size: clamp(3rem, 5vw, 4.5rem); font-weight: 800; color: #fff; line-height: 1; display: inline; }
