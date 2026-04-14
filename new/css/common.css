@@ -1,0 +1,16 @@
+/* =============================================
+   HicareNet NEW — Shared sub-page styles
+   ============================================= */
+
+/*
+ * Language toggle visibility — based on <html lang> attribute.
+ * main.js::applyTranslations sets document.documentElement.lang on each
+ * language switch, which covers both initial i18n load and user toggle.
+ *
+ * Default HTML is <html lang="ko"> so KO is visible without JS.
+ */
+.lang-en-only { display: none; }
+.lang-ko-only { display: block; }
+
+html[lang="en"] .lang-en-only { display: block; }
+html[lang="en"] .lang-ko-only { display: none; }

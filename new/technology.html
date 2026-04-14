@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
   <script>
     tailwind.config = {
       theme: {
@@ -105,12 +106,23 @@
         <div class="absolute bottom-10 left-10 w-72 h-72 bg-green-400 rounded-full blur-3xl"></div>
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div class="max-w-3xl">
-          <p class="text-primary-200 text-sm md:text-base font-medium tracking-widest mb-4 uppercase" data-i18n="technology.hero.tag">Technology</p>
-          <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6" data-i18n-html="technology.hero.headline">
+        <!-- EN copy -->
+        <div class="lang-en-only max-w-5xl">
+          <p class="text-primary-200 text-sm md:text-base font-medium tracking-widest mb-4 uppercase">Technology</p>
+          <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
+            The Technical Foundation Behind<br>a Platform You Can Trust
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl text-white/80 leading-normal max-w-3xl">
+            Cloud infrastructure, AI-powered medical data analysis, and 20 years of domain expertise. The technology that enables accurate billing and reliable operations.
+          </p>
+        </div>
+        <!-- KO copy -->
+        <div class="lang-ko-only max-w-3xl">
+          <p class="text-primary-200 text-sm md:text-base font-medium tracking-widest mb-4 uppercase">Technology</p>
+          <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
             신뢰할 수 있는 플랫폼을 만드는<br>기술적 기반
           </h1>
-          <p class="text-lg md:text-xl lg:text-2xl text-white/80 leading-normal max-w-2xl" data-i18n-html="technology.hero.subtext">
+          <p class="text-lg md:text-xl lg:text-2xl text-white/80 leading-normal max-w-2xl">
             클라우드 인프라, AI 의료 데이터 분석, 20년간 축적한 도메인 기술.<br>정확한 청구와 안정적 운영을 가능하게 하는 기술입니다.
           </p>
         </div>
