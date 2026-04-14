@@ -201,6 +201,8 @@ body.lang-ko .footer-en { display: none !important; }
   font-size: clamp(1rem, 1.3vw, 1.2rem);
   color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 640px; margin: 0 auto;
 }
+/* Wider variant for descriptions that need 2 lines with longer sentences */
+.section-image__desc--wide { max-width: 760px; }
 
 /* ============================
    TEXT SECTIONS (white/light bg, dark text)
