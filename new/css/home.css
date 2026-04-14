@@ -341,12 +341,13 @@ body.lang-ko .footer-en { display: none !important; }
    ============================ */
 .stats-grid {
   display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 48px; margin: 48px auto 0; width: 100%; max-width: 900px;
+  gap: 32px; margin: 48px auto 0; width: 100%; max-width: 1100px;
+  font-variant-numeric: tabular-nums;
 }
-.stat-item { text-align: center; }
+.stat-item { text-align: center; white-space: nowrap; }
 .stat-item__number { font-size: clamp(3rem, 5vw, 4.5rem); font-weight: 800; color: #fff; line-height: 1; display: inline; }
 .stat-item__suffix { font-size: clamp(2rem, 3vw, 3rem); font-weight: 700; color: rgba(255,255,255,0.8); }
-.stat-item__label { display: block; margin-top: 8px; font-size: 0.9rem; color: rgba(255,255,255,0.75); font-weight: 500; }
+.stat-item__label { display: block; margin-top: 8px; font-size: 0.9rem; color: rgba(255,255,255,0.75); font-weight: 500; white-space: normal; }
 
 /* ============================
    COMPLIANCE CARDS
