@@ -49,7 +49,7 @@ function initHomeEffects() {
             if (!startTime) startTime = ts;
             var p = Math.min((ts - startTime) / duration, 1);
             var eased = 1 - Math.pow(1 - p, 3);
-            el.textContent = Math.round(eased * target).toLocaleString();
+            el.innerHTML = Math.round(eased * target).toLocaleString().replace(/,/g, '<span class="stat-item__sep">,</span>');
             if (p < 1) requestAnimationFrame(step);
           }
           requestAnimationFrame(step);
@@ -155,7 +155,7 @@ function initCounters() {
         if (isNaN(target)) return;
 
         if (prefersReducedMotion) {
-          el.textContent = target.toLocaleString();
+          el.innerHTML = target.toLocaleString().replace(/,/g, '<span class="stat-item__sep">,</span>');
           observer.unobserve(el);
           return;
         }
@@ -183,7 +183,7 @@ function animateCounter(el, target) {
     const easedProgress = easeOutCubic(progress);
     const current = Math.round(easedProgress * target);
 
-    el.textContent = current.toLocaleString();
+    el.innerHTML = current.toLocaleString().replace(/,/g, '<span class="stat-item__sep">,</span>');
 
     if (progress < 1) {
       requestAnimationFrame(update);
@@ -397,7 +397,7 @@ window.setLanguage = async function (lang) {
       document.querySelectorAll('[data-count]').forEach(function (el) {
         if (el.offsetParent === null) return;
         var target = parseInt(el.getAttribute('data-count'), 10);
-        el.textContent = target.toLocaleString();
+        el.innerHTML = target.toLocaleString().replace(/,/g, '<span class="stat-item__sep">,</span>');
       });
     }
     document.documentElement.lang = lang;

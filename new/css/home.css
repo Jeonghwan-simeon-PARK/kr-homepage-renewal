@@ -346,6 +346,7 @@ body.lang-ko .footer-en { display: none !important; }
 }
 .stat-item { text-align: center; white-space: nowrap; }
 .stat-item__number { font-size: clamp(3rem, 5vw, 4.5rem); font-weight: 800; color: #fff; line-height: 1; display: inline; }
+.stat-item__sep { font-weight: 500; opacity: 0.7; margin: 0 -0.03em; }
 .stat-item__suffix { font-size: clamp(2rem, 3vw, 3rem); font-weight: 700; color: rgba(255,255,255,0.8); }
 .stat-item__label { display: block; margin-top: 8px; font-size: 0.9rem; color: rgba(255,255,255,0.75); font-weight: 500; white-space: normal; }
 
