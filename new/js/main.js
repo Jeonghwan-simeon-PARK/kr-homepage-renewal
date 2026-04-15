@@ -409,6 +409,9 @@ window.setLanguage = async function (lang) {
     await loadTranslations(lang);
     applyTranslations();
   }
+
+  // Reveal page after translations applied (Issue #8 anti-flicker)
+  document.documentElement.classList.remove('i18n-pending');
 };
 
 async function initI18n() {
@@ -434,6 +437,9 @@ async function initI18n() {
     await loadTranslations(currentLang);
     applyTranslations();
   }
+
+  // Reveal page after initial translations applied (Issue #8 anti-flicker)
+  document.documentElement.classList.remove('i18n-pending');
 }
 
 // ============================================================

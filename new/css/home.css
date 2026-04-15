@@ -8,6 +8,9 @@
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
+/* Anti-flicker: hide page until i18n applied (Issue #8) */
+html.i18n-pending body { visibility: hidden; }
+
 body {
   font-family: 'Pretendard Variable', Pretendard, Inter, 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #1a1a2e; background: #fff; line-height: 1.6;

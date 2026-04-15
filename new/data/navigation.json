@@ -9,8 +9,7 @@
         {"id": "overview", "label": "회사 개요", "href": "/kr/about.html#overview"},
         {"id": "mission", "label": "미션", "href": "/kr/about.html#mission"},
         {"id": "history", "label": "연혁", "href": "/kr/about.html#history"},
-        {"id": "organization", "label": "조직 구성", "href": "/kr/about.html#organization"},
-        {"id": "leadership", "label": "경영진", "href": "/kr/about.html#leadership"}
+        {"id": "organization", "label": "조직 구성", "href": "/kr/about.html#organization"}
       ]
     },
     {

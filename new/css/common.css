@@ -14,3 +14,51 @@
 
 html[lang="en"] .lang-en-only { display: block; }
 html[lang="en"] .lang-ko-only { display: none; }
+
+/* Anti-flicker: hide page body until i18n translations applied (when lang=en).
+   Inline script in <head> sets .i18n-pending; main.js removes it. */
+html.i18n-pending body { visibility: hidden; }
+
+/* =============================================
+   Sub-page typography (Issue #9, #10)
+   - Section title: Pretendard semibold 35px, #000, letter-spacing -4px
+   - Section body:  Pretendard regular 20px, #5A5A5A, letter-spacing -0.8px
+   Scoped to <main> content sections, excluding hero/header sections
+   that use bespoke typography (large white-on-dark headings).
+   `!important` is required to win over Tailwind utility classes
+   (text-2xl, font-bold, text-neutral-900) loaded via Tailwind CDN.
+   ============================================= */
+main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div h2,
+main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) h2.section-title {
+  font-family: 'Pretendard Variable', 'Pretendard', 'Inter', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+  font-size: 35px !important;
+  font-weight: 600 !important; /* semibold */
+  color: #000000 !important;
+  letter-spacing: -4px !important;
+  line-height: 1.25 !important;
+}
+
+main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div p:not(.text-sm):not(.text-xs):not(.text-base):not([class*="text-primary"]):not([class*="text-white"]):not([class*="text-green"]) {
+  font-family: 'Pretendard Variable', 'Pretendard', 'Inter', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #5A5A5A !important;
+  letter-spacing: -0.8px !important;
+  line-height: 1.6 !important;
+}
+
+/* Mobile readability */
+@media (max-width: 640px) {
+  main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div h2,
+  main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) h2.section-title {
+    font-size: 28px !important;
+    letter-spacing: -2px !important;
+  }
+  main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div p:not(.text-sm):not(.text-xs):not(.text-base):not([class*="text-primary"]):not([class*="text-white"]):not([class*="text-green"]) {
+    font-size: 17px !important;
+    letter-spacing: -0.6px !important;
+  }
+}
+
+/* Global letter-spacing baseline for body text (Issue #9) */
+body { letter-spacing: -1px; }
