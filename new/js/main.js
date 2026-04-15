@@ -268,6 +268,85 @@ function initScrollReveal() {
 // ============================================================
 // 6. Back to Top Button
 // ============================================================
+// ============================================================
+// Home: Right-side section navigator (Hanwha Ocean-style)
+//   Lists the page's sections with numeric indices on the right;
+//   highlights the currently visible section. Only on home page.
+// ============================================================
+function initSectionNav() {
+  if (!document.querySelector('.section-image')) return; // home only
+  const sections = [
+    { id: 'hero', en: 'Home', ko: 'Home' },
+    { id: 'solutions', en: 'Solutions', ko: '사업영역' },
+    { id: 'about', en: 'About', ko: '회사소개' },
+    { id: 'technology', en: 'Technology', ko: '기술' },
+    { id: 'stats', en: 'Track Record', ko: '실적' },
+    { id: 'compliance', en: 'Compliance', ko: '인증' },
+    { id: 'resources', en: 'Resources', ko: '리소스' }
+  ].filter((s) => document.getElementById(s.id));
+  if (!sections.length) return;
+
+  // Inject styles
+  if (!document.getElementById('section-nav-style')) {
+    const style = document.createElement('style');
+    style.id = 'section-nav-style';
+    style.textContent = `
+      #section-nav{position:fixed;top:50%;right:24px;transform:translateY(-50%);z-index:25;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity 220ms ease;font-family:'Pretendard Variable','Pretendard','Inter',sans-serif;}
+      #section-nav.is-visible{opacity:1;pointer-events:auto;}
+      .section-nav__item{display:flex;align-items:center;justify-content:flex-end;gap:14px;padding:6px 12px;color:#9CA3AF;font-size:14px;text-decoration:none;transition:color 160ms ease;border-radius:8px;min-width:170px;}
+      .section-nav__item:hover{color:#374151;}
+      .section-nav__item.is-active{color:#111827;font-weight:700;}
+      .section-nav__item.is-active .section-nav__num{color:#111827;}
+      .section-nav__num{display:inline-block;min-width:24px;text-align:right;color:#9CA3AF;font-variant-numeric:tabular-nums;}
+      @media (max-width:1023px){#section-nav{display:none !important;}}
+    `;
+    document.head.appendChild(style);
+  }
+
+  const nav = document.createElement('nav');
+  nav.id = 'section-nav';
+  nav.setAttribute('aria-label', '페이지 섹션 네비게이션');
+  sections.forEach((s, i) => {
+    const a = document.createElement('a');
+    a.className = 'section-nav__item';
+    a.href = `#${s.id}`;
+    a.dataset.section = s.id;
+    a.innerHTML = `<span class="section-nav__label" data-i18n="section_nav.${s.id}">${s.ko}</span><span class="section-nav__num">${String(i + 1).padStart(2, '0')}</span>`;
+    nav.appendChild(a);
+  });
+  document.body.appendChild(nav);
+
+  const items = Array.from(nav.querySelectorAll('.section-nav__item'));
+  const sectionEls = sections.map((s) => document.getElementById(s.id));
+
+  // Smooth scroll on click (account for fixed header height)
+  const headerH = document.getElementById('gnb')?.getBoundingClientRect().height || 80;
+  items.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById(item.dataset.section);
+      if (!target) return;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerH;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+
+  // Visibility + active state
+  const update = () => {
+    const y = window.scrollY;
+    nav.classList.toggle('is-visible', y > 100);
+    let activeIdx = 0;
+    const offset = headerH + 80;
+    sectionEls.forEach((el, i) => {
+      if (el.getBoundingClientRect().top + window.scrollY <= y + offset) activeIdx = i;
+    });
+    items.forEach((it, i) => it.classList.toggle('is-active', i === activeIdx));
+  };
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+}
+
 function initBackToTop() {
   const btn = document.getElementById('back-to-top');
   if (!btn) return;
@@ -469,28 +548,31 @@ function initMegaMenu() {
     style.id = 'gnb-mega-style';
     style.textContent = `
       @media (min-width:1280px){#gnb > nav{max-width:85rem !important;padding-left:2rem !important;padding-right:2rem !important;}}
-      #gnb .gnb-link{position:relative;font-size:16px !important;font-weight:700 !important;transition:padding 260ms ease,color 140ms ease,background-color 140ms ease;}
+      /* Font: rolled back to original size, kept bold per prior round. */
+      #gnb .gnb-link{position:relative;font-size:14px !important;font-weight:700 !important;transition:padding 260ms ease,color 140ms ease,background-color 140ms ease;}
       #gnb ul[role="menubar"]{transition:gap 260ms ease;}
       #gnb.gnb-mega-open ul[role="menubar"]{gap:3rem;}
       #gnb.gnb-mega-open .gnb-link{padding-left:18px;padding-right:18px;}
       #gnb ul[role="menubar"] > li{position:relative;}
-      /* Underline under hovered top-level when panel is open */
-      #gnb ul[role="menubar"] > li > a.gnb-link::after{content:'';position:absolute;left:18px;right:18px;bottom:4px;height:2px;background:#111827;transform:scaleX(0);transform-origin:center;transition:transform 200ms ease;pointer-events:none;}
+      /* Underline anchored to header's bottom edge (uses runtime gap). */
+      #gnb ul[role="menubar"] > li > a.gnb-link::after{content:'';position:absolute;left:18px;right:18px;bottom:calc(-1 * var(--gnb-sub-gap,18px));height:2px;background:#111827;transform:scaleX(0);transform-origin:center;transition:transform 200ms ease;pointer-events:none;}
       #gnb.gnb-mega-open ul[role="menubar"] > li:hover > a.gnb-link::after,
       #gnb.gnb-mega-open ul[role="menubar"] > li:focus-within > a.gnb-link::after{transform:scaleX(1);}
-      /* White panel behind header + submenus (clean, no line/shadow at rest) */
-      #gnb::after{content:'';position:absolute;top:100%;left:0;right:0;height:0;background:#fff;box-shadow:none;transition:height 240ms ease,box-shadow 240ms ease;pointer-events:none;z-index:1;}
-      #gnb.gnb-mega-open::after{height:240px;box-shadow:0 10px 24px rgba(0,0,0,.06);pointer-events:auto;}
-      /* Dim overlay (Hanwha-style) behind the page content while panel open */
-      #gnb-dim{position:fixed;inset:0;background:rgba(17,24,39,.5);opacity:0;pointer-events:none;transition:opacity 220ms ease;z-index:30;}
-      #gnb-dim.is-open{opacity:1;}
+      /* Translucent + blurred panel so the page background shows through. */
+      #gnb::after{content:'';position:absolute;top:100%;left:0;right:0;height:0;background:rgba(255,255,255,.55);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);box-shadow:none;transition:height 240ms ease,box-shadow 240ms ease;pointer-events:none;z-index:1;}
+      #gnb.gnb-mega-open::after{height:240px;box-shadow:0 10px 24px rgba(0,0,0,.04);pointer-events:auto;}
+      /* Dim overlay sits ONLY below the panel area (top set via --gnb-panel-bottom). */
+      #gnb-dim{position:fixed;left:0;right:0;bottom:0;top:0;background:rgba(17,24,39,.5);opacity:0;pointer-events:none;transition:opacity 220ms ease,top 240ms ease;z-index:30;}
+      #gnb-dim.is-open{opacity:1;top:var(--gnb-panel-bottom,320px);}
       .gnb-sub{position:absolute;top:calc(100% + var(--gnb-sub-gap,18px));left:0;min-width:100%;padding:22px 0 24px;margin:0;list-style:none;opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity 200ms ease,transform 200ms ease;z-index:5;}
       #gnb.gnb-mega-open .gnb-sub{opacity:1;pointer-events:auto;transform:translateY(0);}
       .gnb-sub li{list-style:none;}
-      .gnb-sub__link{display:block;padding:7px 18px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:15px;font-weight:700;color:#374151;white-space:nowrap;text-decoration:none;transition:color 140ms ease;}
+      .gnb-sub__link{display:block;padding:7px 18px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:13px;font-weight:700;color:#1F2937;white-space:nowrap;text-decoration:none;transition:color 140ms ease;}
       .gnb-sub__link:hover,.gnb-sub__link:focus-visible{color:#1578B8;outline:none;}
       @media (max-width:1023px){.gnb-sub,#gnb::after,#gnb-dim{display:none !important;}}
-      #gnb.gnb-at-top.gnb-mega-open{background-color:rgba(255,255,255,.98) !important;backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(0,0,0,.04);}
+      /* When mega is open over a dark hero, give the bar itself the
+         same translucent + blur treatment so the bg image bleeds through. */
+      #gnb.gnb-at-top.gnb-mega-open{background-color:rgba(255,255,255,.55) !important;backdrop-filter:blur(20px) saturate(160%) !important;-webkit-backdrop-filter:blur(20px) saturate(160%) !important;box-shadow:none !important;}
       #gnb.gnb-at-top.gnb-mega-open .gnb-link{color:#111827 !important;}
       #gnb.gnb-at-top.gnb-mega-open .gnb-link:hover{color:#1578B8 !important;background-color:transparent !important;}
       #gnb.gnb-at-top.gnb-mega-open img[alt*="로고"]{filter:none !important;}
@@ -578,7 +660,9 @@ function initMegaMenu() {
   const subLinks = Array.from(gnb.querySelectorAll('.gnb-sub__link'));
 
   // Keep the submenu top aligned with the header bottom edge regardless
-  // of theme height changes (h-16 on small, h-20 on large).
+  // of theme height changes (h-16 on small, h-20 on large). Also export
+  // header-bottom + panel-height so the dim overlay can sit below it.
+  const PANEL_H = 240;
   const syncSubGap = () => {
     const firstLi = topItems.find((li) => li.querySelector(':scope > ul.gnb-sub'));
     if (!firstLi) return;
@@ -586,6 +670,7 @@ function initMegaMenu() {
     const gnbRect = gnb.getBoundingClientRect();
     const gap = Math.max(0, Math.round(gnbRect.bottom - liRect.bottom));
     gnb.style.setProperty('--gnb-sub-gap', `${gap}px`);
+    document.documentElement.style.setProperty('--gnb-panel-bottom', `${Math.round(gnbRect.bottom + PANEL_H)}px`);
   };
   syncSubGap();
   window.addEventListener('resize', syncSubGap);
@@ -595,9 +680,9 @@ function initMegaMenu() {
   const isCoarse = window.matchMedia('(hover: none)').matches;
   if (isCoarse) return;
 
-  let openTimer = null;
   let closeTimer = null;
   const applyOpen = () => {
+    syncSubGap();
     gnb.classList.add('gnb-mega-open');
     dim.classList.add('is-open');
   };
@@ -605,32 +690,40 @@ function initMegaMenu() {
     gnb.classList.remove('gnb-mega-open');
     dim.classList.remove('is-open');
   };
-  // Small intent delay so an accidental scroll wheel touching the top
-  // edge doesn't pop the panel — user must actually dwell over it.
-  const open = () => {
-    if (!mq.matches) return;
-    clearTimeout(closeTimer);
-    clearTimeout(openTimer);
-    openTimer = setTimeout(applyOpen, 120);
-  };
   const close = () => {
-    clearTimeout(openTimer);
     clearTimeout(closeTimer);
     closeTimer = setTimeout(applyClose, 180);
   };
   const closeImmediate = () => {
-    clearTimeout(openTimer);
     clearTimeout(closeTimer);
     applyClose();
   };
 
-  // Trigger only from the menubar area (not logo / CTA / lang toggle).
-  // This also prevents a passive scroll over the header from opening.
-  menubar.addEventListener('mouseenter', open);
-  // Close when leaving the whole header (includes the submenu panel).
+  // Open requires an actual mousemove inside the menubar — mouseenter
+  // alone fires from layout shifts (e.g., the page settling, scroll
+  // changing element-under-cursor), and we don't want a passive scroll
+  // to pop the panel. Listener is attached on enter, removed on leave.
+  let mmListener = null;
+  const onMenubarEnter = () => {
+    if (!mq.matches) return;
+    clearTimeout(closeTimer);
+    if (mmListener) return;
+    mmListener = () => {
+      menubar.removeEventListener('mousemove', mmListener);
+      mmListener = null;
+      applyOpen();
+    };
+    menubar.addEventListener('mousemove', mmListener);
+  };
+  const onMenubarLeave = () => {
+    if (mmListener) {
+      menubar.removeEventListener('mousemove', mmListener);
+      mmListener = null;
+    }
+  };
+  menubar.addEventListener('mouseenter', onMenubarEnter);
+  menubar.addEventListener('mouseleave', onMenubarLeave);
   gnb.addEventListener('mouseleave', close);
-  // Cancel pending-open if mouse darts across header (e.g., quick scroll).
-  gnb.addEventListener('mouseleave', () => clearTimeout(openTimer));
 
   // Keyboard: focus on a top-level link opens; Escape closes.
   topLinks.forEach((a) => a.addEventListener('focus', applyOpen));
@@ -657,6 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters();
   initScrollReveal();
   initBackToTop();
+  initSectionNav();
 
   // i18n (both home and sub-pages)
   initI18n();
