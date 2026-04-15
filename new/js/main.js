@@ -457,28 +457,34 @@ function initMegaMenu() {
   const menubar = gnb.querySelector('ul[role="menubar"]');
   if (!menubar) return;
 
-  // Inline styles so this works on pages that only load home.css.
-  // Style strategy: top-level items gain spacing + slightly larger
-  // font on hover; each <li> has its own absolutely-positioned
-  // submenu that drops directly underneath that parent.
+  // Hanwha Ocean-style mega menu:
+  //   - Header hover expands a continuous white panel downward
+  //   - Each top-level link's padding widens (items spread apart)
+  //   - Font size stays the same (matches hanwhaocean behavior)
+  //   - Submenus sit on that white panel, left-aligned under each parent
+  // Styles are injected from JS so it works on pages that load only
+  // home.css (e.g., index.html).
   if (!document.getElementById('gnb-mega-style')) {
     const style = document.createElement('style');
     style.id = 'gnb-mega-style';
     style.textContent = `
+      @media (min-width:1280px){#gnb > nav{max-width:none !important;padding-left:2.5rem !important;padding-right:2.5rem !important;}}
+      #gnb .gnb-link{transition:padding 260ms ease,color 140ms ease,background-color 140ms ease;}
+      #gnb ul[role="menubar"]{transition:gap 260ms ease;}
+      #gnb.gnb-mega-open ul[role="menubar"]{gap:1.25rem;}
+      #gnb.gnb-mega-open .gnb-link{padding-left:18px;padding-right:18px;}
       #gnb ul[role="menubar"] > li{position:relative;}
-      #gnb ul[role="menubar"]{transition:gap 220ms ease;}
-      #gnb .gnb-link{transition:font-size 220ms ease,padding 220ms ease,color 140ms ease,background-color 140ms ease;}
-      #gnb.gnb-mega-open ul[role="menubar"]{gap:1.75rem;}
-      #gnb.gnb-mega-open .gnb-link{font-size:15px;padding-left:6px;padding-right:6px;}
-      .gnb-sub{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);min-width:180px;padding:10px 8px;margin:0;list-style:none;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;box-shadow:0 12px 28px rgba(0,0,0,.1);opacity:0;pointer-events:none;transition:opacity 180ms ease,transform 180ms ease;z-index:50;}
-      #gnb.gnb-mega-open .gnb-sub{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(10px);}
+      #gnb::after{content:'';position:absolute;top:100%;left:0;right:0;height:0;background:#fff;box-shadow:0 10px 24px rgba(0,0,0,.06);border-top:1px solid rgba(0,0,0,.04);transition:height 240ms ease;pointer-events:none;z-index:1;}
+      #gnb.gnb-mega-open::after{height:220px;pointer-events:auto;}
+      .gnb-sub{position:absolute;top:calc(100% + var(--gnb-sub-gap,18px));left:0;min-width:100%;padding:22px 0 24px;margin:0;list-style:none;opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity 200ms ease,transform 200ms ease;z-index:5;}
+      #gnb.gnb-mega-open .gnb-sub{opacity:1;pointer-events:auto;transform:translateY(0);}
       .gnb-sub li{list-style:none;}
-      .gnb-sub__link{display:block;padding:8px 14px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:14px;font-weight:500;color:#4B5563;border-radius:8px;white-space:nowrap;text-decoration:none;transition:background-color 140ms ease,color 140ms ease;}
-      .gnb-sub__link:hover,.gnb-sub__link:focus-visible{background-color:#EFF6FF;color:#1578B8;outline:none;}
-      @media (max-width:1023px){.gnb-sub{display:none !important;}}
+      .gnb-sub__link{display:block;padding:7px 18px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:13px;font-weight:400;color:#4B5563;white-space:nowrap;text-decoration:none;transition:color 140ms ease;}
+      .gnb-sub__link:hover,.gnb-sub__link:focus-visible{color:#1578B8;outline:none;}
+      @media (max-width:1023px){.gnb-sub,#gnb::after{display:none !important;}}
       #gnb.gnb-at-top.gnb-mega-open{background-color:rgba(255,255,255,.98) !important;backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(0,0,0,.04);}
       #gnb.gnb-at-top.gnb-mega-open .gnb-link{color:#374151 !important;}
-      #gnb.gnb-at-top.gnb-mega-open .gnb-link:hover{color:#1578B8 !important;background-color:#EFF6FF !important;}
+      #gnb.gnb-at-top.gnb-mega-open .gnb-link:hover{color:#1578B8 !important;background-color:transparent !important;}
       #gnb.gnb-at-top.gnb-mega-open img[alt*="로고"]{filter:none !important;}
       #gnb.gnb-at-top.gnb-mega-open #lang-ko,#gnb.gnb-at-top.gnb-mega-open #lang-en{color:#6B7280 !important;}
       #gnb.gnb-at-top.gnb-mega-open .bg-primary-600{background:#1578B8 !important;}
@@ -552,6 +558,19 @@ function initMegaMenu() {
 
   const topLinks = topItems.map((li) => li.querySelector(':scope > a')).filter(Boolean);
   const subLinks = Array.from(gnb.querySelectorAll('.gnb-sub__link'));
+
+  // Keep the submenu top aligned with the header bottom edge regardless
+  // of theme height changes (h-16 on small, h-20 on large).
+  const syncSubGap = () => {
+    const firstLi = topItems.find((li) => li.querySelector(':scope > ul.gnb-sub'));
+    if (!firstLi) return;
+    const liRect = firstLi.getBoundingClientRect();
+    const gnbRect = gnb.getBoundingClientRect();
+    const gap = Math.max(0, Math.round(gnbRect.bottom - liRect.bottom));
+    gnb.style.setProperty('--gnb-sub-gap', `${gap}px`);
+  };
+  syncSubGap();
+  window.addEventListener('resize', syncSubGap);
 
   // Desktop-only hover (>=1024px); skip on coarse pointers.
   const mq = window.matchMedia('(min-width: 1024px)');
