@@ -100,3 +100,36 @@ main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) 
 main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div > p[class*="max-w-"] {
   max-width: none !important;
 }
+
+/* =============================================
+   Issue #15: Solution cards (Care Portal 해결 방식).
+   Solid brand-blue cards with white icon well and white title.
+   Rules beat Tailwind utility classes via !important.
+   ============================================= */
+.solution-card {
+  background-color: #1578B8 !important;
+  border: none !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.solution-card__icon {
+  background-color: #ffffff !important;
+}
+
+.solution-card__icon .material-symbols-outlined {
+  color: #1578B8 !important;
+}
+
+.solution-card__title {
+  font-family: 'Pretendard Variable', 'Pretendard', 'Inter', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  letter-spacing: -0.8px !important;
+  line-height: 1.3 !important;
+}
+
+.solution-card__desc {
+  font-size: 14px !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+}
