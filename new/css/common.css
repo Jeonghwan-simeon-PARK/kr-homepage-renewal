@@ -133,3 +133,6 @@ main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) 
   font-size: 14px !important;
   color: rgba(255, 255, 255, 0.92) !important;
 }
+
+/* Mega-menu CSS is injected from js/main.js (initMegaMenu) so it
+   works uniformly on pages that load home.css instead of common.css. */

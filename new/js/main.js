@@ -443,6 +443,165 @@ async function initI18n() {
 }
 
 // ============================================================
+// GNB Mega Menu (Hanwha Ocean-style hover panel)
+//   Hovering the header reveals one full-width dropdown that
+//   shows every top-level item's children as columns aligned
+//   to their parent. Mouseleave closes with a short grace.
+// ============================================================
+function initMegaMenu() {
+  const gnb = document.getElementById('gnb');
+  if (!gnb) return;
+  if (document.getElementById('gnb-mega')) return; // idempotent
+
+  const menubar = gnb.querySelector('ul[role="menubar"]');
+  if (!menubar) return;
+
+  // Inject styles (kept here so it works on pages that load home.css,
+  // not common.css — index.html in particular).
+  if (!document.getElementById('gnb-mega-style')) {
+    const style = document.createElement('style');
+    style.id = 'gnb-mega-style';
+    style.textContent = `
+      #gnb-mega{position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid rgba(0,0,0,.06);box-shadow:0 10px 24px rgba(0,0,0,.08);max-height:0;overflow:hidden;opacity:0;pointer-events:none;transition:max-height 240ms ease,opacity 180ms ease;}
+      #gnb.gnb-mega-open #gnb-mega{max-height:420px;opacity:1;pointer-events:auto;}
+      .gnb-mega__inner{max-width:80rem;margin:0 auto;padding:20px 32px 28px;}
+      .gnb-mega__columns{display:grid;gap:8px;}
+      .gnb-mega__col{min-height:1px;}
+      .gnb-mega__col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px;}
+      .gnb-mega__link{display:block;padding:8px 12px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:14px;font-weight:500;color:#4B5563;border-radius:8px;transition:background-color 140ms ease,color 140ms ease;text-decoration:none;}
+      .gnb-mega__link:hover,.gnb-mega__link:focus-visible{background-color:#EFF6FF;color:#1578B8;outline:none;}
+      @media (max-width:1023px){#gnb-mega{display:none !important;}}
+      #gnb.gnb-at-top.gnb-mega-open{background-color:rgba(255,255,255,.98) !important;backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(0,0,0,.04);}
+      #gnb.gnb-at-top.gnb-mega-open .gnb-link{color:#374151 !important;}
+      #gnb.gnb-at-top.gnb-mega-open .gnb-link:hover{color:#1578B8 !important;background-color:#EFF6FF !important;}
+      #gnb.gnb-at-top.gnb-mega-open img[alt*="로고"]{filter:none !important;}
+      #gnb.gnb-at-top.gnb-mega-open #lang-ko,#gnb.gnb-at-top.gnb-mega-open #lang-en{color:#6B7280 !important;}
+      #gnb.gnb-at-top.gnb-mega-open .bg-primary-600{background:#1578B8 !important;}
+      #gnb.gnb-at-top.gnb-mega-open .bg-primary-600 span{color:#fff !important;}
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Submenu map keyed by top-level link href (relative).
+  // Source of truth: data/navigation.json children[]. Kept in sync
+  // with those ids + labels; href uses page-local anchors.
+  const megaData = {
+    'about.html': [
+      { l: '회사 개요', h: 'about.html#overview' },
+      { l: '미션', h: 'about.html#mission' },
+      { l: '연혁', h: 'about.html#history' },
+      { l: '조직 구성', h: 'about.html#organization' }
+    ],
+    'business.html': [
+      { l: 'Care Portal', h: 'business.html#care-portal' },
+      { l: '서비스 확장 로드맵', h: 'business.html#expansion' },
+      { l: '의료기기/게이트웨이', h: 'business.html#devices' },
+      { l: '시장 및 경쟁 환경', h: 'business.html#market' }
+    ],
+    'technology.html': [
+      { l: '플랫폼 아키텍처', h: 'technology.html#architecture' },
+      { l: 'AI 기술', h: 'technology.html#ai' },
+      { l: '보안 및 인증', h: 'technology.html#security' },
+      { l: '의료 도메인 축적 기술', h: 'technology.html#heritage' }
+    ],
+    'global.html': [
+      { l: '미국 Care Portal 실적', h: 'global.html#us-service' },
+      { l: '의료기기 수출 실적', h: 'global.html#device-export' },
+      { l: '파트너십', h: 'global.html#partnerships' }
+    ],
+    'careers.html': [
+      { l: '왜 하이케어넷인가', h: 'careers.html#why-hicarenet' },
+      { l: '팀 소개', h: 'careers.html#teams' },
+      { l: '기술적 도전', h: 'careers.html#challenges' },
+      { l: '채용 공고', h: 'careers.html#positions' }
+    ],
+    'ir.html': [
+      { l: 'IR', h: 'ir.html#ir' },
+      { l: '뉴스룸', h: 'ir.html#newsroom' }
+    ]
+  };
+
+  const topLinks = Array.from(menubar.querySelectorAll(':scope > li > a'));
+  if (!topLinks.length) return;
+
+  // Build panel
+  const panel = document.createElement('div');
+  panel.id = 'gnb-mega';
+  panel.setAttribute('aria-hidden', 'true');
+
+  const inner = document.createElement('div');
+  inner.className = 'gnb-mega__inner';
+
+  const columns = document.createElement('div');
+  columns.className = 'gnb-mega__columns';
+  columns.style.gridTemplateColumns = `repeat(${topLinks.length}, 1fr)`;
+
+  topLinks.forEach((a) => {
+    const href = a.getAttribute('href');
+    const col = document.createElement('div');
+    col.className = 'gnb-mega__col';
+    const subs = megaData[href] || [];
+    if (subs.length) {
+      const ul = document.createElement('ul');
+      subs.forEach((sub) => {
+        const li = document.createElement('li');
+        const subA = document.createElement('a');
+        subA.href = sub.h;
+        subA.textContent = sub.l;
+        subA.className = 'gnb-mega__link';
+        subA.setAttribute('role', 'menuitem');
+        li.appendChild(subA);
+        ul.appendChild(li);
+      });
+      col.appendChild(ul);
+    }
+    columns.appendChild(col);
+  });
+
+  inner.appendChild(columns);
+  panel.appendChild(inner);
+  gnb.appendChild(panel);
+
+  // Desktop-only hover (>=1024px); skip on coarse pointers.
+  const mq = window.matchMedia('(min-width: 1024px)');
+  const isCoarse = window.matchMedia('(hover: none)').matches;
+  if (isCoarse) return;
+
+  let closeTimer = null;
+  const open = () => {
+    if (!mq.matches) return;
+    clearTimeout(closeTimer);
+    gnb.classList.add('gnb-mega-open');
+    panel.setAttribute('aria-hidden', 'false');
+  };
+  const close = () => {
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(() => {
+      gnb.classList.remove('gnb-mega-open');
+      panel.setAttribute('aria-hidden', 'true');
+    }, 150);
+  };
+  const closeImmediate = () => {
+    clearTimeout(closeTimer);
+    gnb.classList.remove('gnb-mega-open');
+    panel.setAttribute('aria-hidden', 'true');
+  };
+
+  gnb.addEventListener('mouseenter', open);
+  gnb.addEventListener('mouseleave', close);
+
+  // Keyboard: focus on a top-level link opens panel; Escape closes.
+  topLinks.forEach((a) => a.addEventListener('focus', open));
+  panel.querySelectorAll('a').forEach((a) => {
+    a.addEventListener('focus', open);
+    a.addEventListener('blur', close);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeImmediate();
+  });
+}
+
+// ============================================================
 // Initialize all modules on DOM ready
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -452,6 +611,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sub-page modules (gated on #gnb)
   initGNB();
   initMobileMenu();
+  initMegaMenu();
   initCounters();
   initScrollReveal();
   initBackToTop();
