@@ -323,21 +323,40 @@ body.lang-ko .footer-en { display: none !important; }
 .timeline {
   position: relative; display: flex; gap: 0;
   width: 100%; max-width: 1100px; margin: 0 auto; justify-content: center;
+  /* CSS var controls the fixed vertical position of the dot row inside each item.
+     This anchors the connecting line ::before to a consistent Y across all items,
+     regardless of year/text length differences. */
+  --timeline-year-row: 40px;
 }
 .timeline::before {
-  content: ''; position: absolute; top: 50%;
+  content: ''; position: absolute;
+  top: calc(var(--timeline-year-row) + 32px); /* year row + top padding before dot */
   left: 5%; right: 5%; height: 2px; background: #e0e2e6;
 }
-.timeline__item { flex: 1; position: relative; text-align: center; padding: 0 12px; }
+.timeline__item {
+  flex: 1; position: relative; text-align: center; padding: 0 12px;
+  display: grid;
+  grid-template-rows: var(--timeline-year-row) auto auto;
+  justify-items: center;
+}
+.timeline__year {
+  grid-row: 1; align-self: start;
+  font-size: 0.9rem; font-weight: 800; color: #1A8FD8; margin-bottom: 0;
+}
 .timeline__dot {
+  grid-row: 2;
   width: 14px; height: 14px; border-radius: 50%;
   background: #1A8FD8; border: 3px solid #fff; box-shadow: 0 0 0 2px #1A8FD8;
-  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 2;
+  position: relative; z-index: 2;
+  margin: 24px 0; /* breathing room above/below dot */
   transition: transform 0.3s;
 }
-.timeline__item:hover .timeline__dot { transform: translate(-50%, -50%) scale(1.4); }
-.timeline__year { font-size: 0.9rem; font-weight: 800; color: #1A8FD8; margin-bottom: 20px; }
-.timeline__text { font-size: 0.78rem; color: #888; line-height: 1.5; margin-top: 20px; word-break: keep-all; }
+.timeline__item:hover .timeline__dot { transform: scale(1.4); }
+.timeline__text {
+  grid-row: 3;
+  font-size: 0.78rem; color: #888; line-height: 1.5; margin-top: 0;
+  word-break: keep-all;
+}
 
 /* ============================
    STATS (on brand image)
@@ -470,7 +489,10 @@ body.lang-ko .footer-en { display: none !important; }
 
   .timeline { flex-wrap: wrap; gap: 16px; }
   .timeline::before { display: none; }
-  .timeline__item { flex: 0 0 calc(33% - 16px); padding: 16px; }
+  .timeline__item {
+    flex: 0 0 calc(33% - 16px); padding: 16px;
+    display: block; /* drop the grid rows on tablet */
+  }
   .timeline__dot { display: none; }
   .timeline__year { margin-bottom: 8px; }
   .timeline__text { margin-top: 0; }
