@@ -469,21 +469,29 @@ function initMegaMenu() {
     style.id = 'gnb-mega-style';
     style.textContent = `
       @media (min-width:1280px){#gnb > nav{max-width:85rem !important;padding-left:2rem !important;padding-right:2rem !important;}}
-      #gnb .gnb-link{transition:padding 260ms ease,color 140ms ease,background-color 140ms ease;}
+      #gnb .gnb-link{position:relative;font-size:16px !important;font-weight:700 !important;transition:padding 260ms ease,color 140ms ease,background-color 140ms ease;}
       #gnb ul[role="menubar"]{transition:gap 260ms ease;}
       #gnb.gnb-mega-open ul[role="menubar"]{gap:3rem;}
       #gnb.gnb-mega-open .gnb-link{padding-left:18px;padding-right:18px;}
       #gnb ul[role="menubar"] > li{position:relative;}
+      /* Underline under hovered top-level when panel is open */
+      #gnb ul[role="menubar"] > li > a.gnb-link::after{content:'';position:absolute;left:18px;right:18px;bottom:4px;height:2px;background:#111827;transform:scaleX(0);transform-origin:center;transition:transform 200ms ease;pointer-events:none;}
+      #gnb.gnb-mega-open ul[role="menubar"] > li:hover > a.gnb-link::after,
+      #gnb.gnb-mega-open ul[role="menubar"] > li:focus-within > a.gnb-link::after{transform:scaleX(1);}
+      /* White panel behind header + submenus (clean, no line/shadow at rest) */
       #gnb::after{content:'';position:absolute;top:100%;left:0;right:0;height:0;background:#fff;box-shadow:none;transition:height 240ms ease,box-shadow 240ms ease;pointer-events:none;z-index:1;}
-      #gnb.gnb-mega-open::after{height:220px;box-shadow:0 10px 24px rgba(0,0,0,.06);pointer-events:auto;}
+      #gnb.gnb-mega-open::after{height:240px;box-shadow:0 10px 24px rgba(0,0,0,.06);pointer-events:auto;}
+      /* Dim overlay (Hanwha-style) behind the page content while panel open */
+      #gnb-dim{position:fixed;inset:0;background:rgba(17,24,39,.5);opacity:0;pointer-events:none;transition:opacity 220ms ease;z-index:30;}
+      #gnb-dim.is-open{opacity:1;}
       .gnb-sub{position:absolute;top:calc(100% + var(--gnb-sub-gap,18px));left:0;min-width:100%;padding:22px 0 24px;margin:0;list-style:none;opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity 200ms ease,transform 200ms ease;z-index:5;}
       #gnb.gnb-mega-open .gnb-sub{opacity:1;pointer-events:auto;transform:translateY(0);}
       .gnb-sub li{list-style:none;}
-      .gnb-sub__link{display:block;padding:7px 18px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:13px;font-weight:400;color:#4B5563;white-space:nowrap;text-decoration:none;transition:color 140ms ease;}
+      .gnb-sub__link{display:block;padding:7px 18px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:15px;font-weight:700;color:#374151;white-space:nowrap;text-decoration:none;transition:color 140ms ease;}
       .gnb-sub__link:hover,.gnb-sub__link:focus-visible{color:#1578B8;outline:none;}
-      @media (max-width:1023px){.gnb-sub,#gnb::after{display:none !important;}}
+      @media (max-width:1023px){.gnb-sub,#gnb::after,#gnb-dim{display:none !important;}}
       #gnb.gnb-at-top.gnb-mega-open{background-color:rgba(255,255,255,.98) !important;backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(0,0,0,.04);}
-      #gnb.gnb-at-top.gnb-mega-open .gnb-link{color:#374151 !important;}
+      #gnb.gnb-at-top.gnb-mega-open .gnb-link{color:#111827 !important;}
       #gnb.gnb-at-top.gnb-mega-open .gnb-link:hover{color:#1578B8 !important;background-color:transparent !important;}
       #gnb.gnb-at-top.gnb-mega-open img[alt*="로고"]{filter:none !important;}
       #gnb.gnb-at-top.gnb-mega-open #lang-ko,#gnb.gnb-at-top.gnb-mega-open #lang-en{color:#6B7280 !important;}
@@ -494,41 +502,41 @@ function initMegaMenu() {
   }
 
   // Submenu map keyed by top-level link href (relative).
-  // Source of truth: data/navigation.json children[]. Kept in sync
-  // with those ids + labels; href uses page-local anchors.
+  // Each entry carries an i18n key; initial `l` is the KO fallback
+  // (KO is the default lang). initI18n will swap to EN when active.
   const megaData = {
     'about.html': [
-      { l: '회사 개요', h: 'about.html#overview' },
-      { l: '미션', h: 'about.html#mission' },
-      { l: '연혁', h: 'about.html#history' },
-      { l: '조직 구성', h: 'about.html#organization' }
+      { k: 'gnb.sub.about.overview', l: '회사 개요', h: 'about.html#overview' },
+      { k: 'gnb.sub.about.mission', l: '미션', h: 'about.html#mission' },
+      { k: 'gnb.sub.about.history', l: '연혁', h: 'about.html#history' },
+      { k: 'gnb.sub.about.organization', l: '조직 구성', h: 'about.html#organization' }
     ],
     'business.html': [
-      { l: 'Care Portal', h: 'business.html#care-portal' },
-      { l: '서비스 확장 로드맵', h: 'business.html#expansion' },
-      { l: '의료기기/게이트웨이', h: 'business.html#devices' },
-      { l: '시장 및 경쟁 환경', h: 'business.html#market' }
+      { k: 'gnb.sub.business.care_portal', l: 'Care Portal', h: 'business.html#care-portal' },
+      { k: 'gnb.sub.business.expansion', l: '서비스 확장 로드맵', h: 'business.html#expansion' },
+      { k: 'gnb.sub.business.devices', l: '의료기기/게이트웨이', h: 'business.html#devices' },
+      { k: 'gnb.sub.business.market', l: '시장 및 경쟁 환경', h: 'business.html#market' }
     ],
     'technology.html': [
-      { l: '플랫폼 아키텍처', h: 'technology.html#architecture' },
-      { l: 'AI 기술', h: 'technology.html#ai' },
-      { l: '보안 및 인증', h: 'technology.html#security' },
-      { l: '의료 도메인 축적 기술', h: 'technology.html#heritage' }
+      { k: 'gnb.sub.technology.architecture', l: '플랫폼 아키텍처', h: 'technology.html#architecture' },
+      { k: 'gnb.sub.technology.ai', l: 'AI 기술', h: 'technology.html#ai' },
+      { k: 'gnb.sub.technology.security', l: '보안 및 인증', h: 'technology.html#security' },
+      { k: 'gnb.sub.technology.heritage', l: '의료 도메인 축적 기술', h: 'technology.html#heritage' }
     ],
     'global.html': [
-      { l: '미국 Care Portal 실적', h: 'global.html#us-service' },
-      { l: '의료기기 수출 실적', h: 'global.html#device-export' },
-      { l: '파트너십', h: 'global.html#partnerships' }
+      { k: 'gnb.sub.global.us_service', l: '미국 Care Portal 실적', h: 'global.html#us-service' },
+      { k: 'gnb.sub.global.device_export', l: '의료기기 수출 실적', h: 'global.html#device-export' },
+      { k: 'gnb.sub.global.partnerships', l: '파트너십', h: 'global.html#partnerships' }
     ],
     'careers.html': [
-      { l: '왜 하이케어넷인가', h: 'careers.html#why-hicarenet' },
-      { l: '팀 소개', h: 'careers.html#teams' },
-      { l: '기술적 도전', h: 'careers.html#challenges' },
-      { l: '채용 공고', h: 'careers.html#positions' }
+      { k: 'gnb.sub.careers.why_hicarenet', l: '왜 하이케어넷인가', h: 'careers.html#why-hicarenet' },
+      { k: 'gnb.sub.careers.teams', l: '팀 소개', h: 'careers.html#teams' },
+      { k: 'gnb.sub.careers.challenges', l: '기술적 도전', h: 'careers.html#challenges' },
+      { k: 'gnb.sub.careers.positions', l: '채용 공고', h: 'careers.html#positions' }
     ],
     'ir.html': [
-      { l: 'IR', h: 'ir.html#ir' },
-      { l: '뉴스룸', h: 'ir.html#newsroom' }
+      { k: 'gnb.sub.ir.ir', l: 'IR', h: 'ir.html#ir' },
+      { k: 'gnb.sub.ir.newsroom', l: '뉴스룸', h: 'ir.html#newsroom' }
     ]
   };
 
@@ -550,11 +558,21 @@ function initMegaMenu() {
       subA.textContent = sub.l;
       subA.className = 'gnb-sub__link';
       subA.setAttribute('role', 'menuitem');
+      if (sub.k) subA.setAttribute('data-i18n', sub.k);
       subLi.appendChild(subA);
       ul.appendChild(subLi);
     });
     li.appendChild(ul);
   });
+
+  // Dim overlay (hanwhaocean-style) — covers page behind the panel.
+  if (!document.getElementById('gnb-dim')) {
+    const dim = document.createElement('div');
+    dim.id = 'gnb-dim';
+    dim.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(dim);
+  }
+  const dim = document.getElementById('gnb-dim');
 
   const topLinks = topItems.map((li) => li.querySelector(':scope > a')).filter(Boolean);
   const subLinks = Array.from(gnb.querySelectorAll('.gnb-sub__link'));
@@ -577,30 +595,47 @@ function initMegaMenu() {
   const isCoarse = window.matchMedia('(hover: none)').matches;
   if (isCoarse) return;
 
+  let openTimer = null;
   let closeTimer = null;
+  const applyOpen = () => {
+    gnb.classList.add('gnb-mega-open');
+    dim.classList.add('is-open');
+  };
+  const applyClose = () => {
+    gnb.classList.remove('gnb-mega-open');
+    dim.classList.remove('is-open');
+  };
+  // Small intent delay so an accidental scroll wheel touching the top
+  // edge doesn't pop the panel — user must actually dwell over it.
   const open = () => {
     if (!mq.matches) return;
     clearTimeout(closeTimer);
-    gnb.classList.add('gnb-mega-open');
+    clearTimeout(openTimer);
+    openTimer = setTimeout(applyOpen, 120);
   };
   const close = () => {
+    clearTimeout(openTimer);
     clearTimeout(closeTimer);
-    closeTimer = setTimeout(() => {
-      gnb.classList.remove('gnb-mega-open');
-    }, 150);
+    closeTimer = setTimeout(applyClose, 180);
   };
   const closeImmediate = () => {
+    clearTimeout(openTimer);
     clearTimeout(closeTimer);
-    gnb.classList.remove('gnb-mega-open');
+    applyClose();
   };
 
-  gnb.addEventListener('mouseenter', open);
+  // Trigger only from the menubar area (not logo / CTA / lang toggle).
+  // This also prevents a passive scroll over the header from opening.
+  menubar.addEventListener('mouseenter', open);
+  // Close when leaving the whole header (includes the submenu panel).
   gnb.addEventListener('mouseleave', close);
+  // Cancel pending-open if mouse darts across header (e.g., quick scroll).
+  gnb.addEventListener('mouseleave', () => clearTimeout(openTimer));
 
   // Keyboard: focus on a top-level link opens; Escape closes.
-  topLinks.forEach((a) => a.addEventListener('focus', open));
+  topLinks.forEach((a) => a.addEventListener('focus', applyOpen));
   subLinks.forEach((a) => {
-    a.addEventListener('focus', open);
+    a.addEventListener('focus', applyOpen);
     a.addEventListener('blur', close);
   });
   document.addEventListener('keydown', (e) => {
