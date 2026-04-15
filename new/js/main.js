@@ -451,26 +451,31 @@ async function initI18n() {
 function initMegaMenu() {
   const gnb = document.getElementById('gnb');
   if (!gnb) return;
-  if (document.getElementById('gnb-mega')) return; // idempotent
+  if (gnb.dataset.megaInited === '1') return; // idempotent
+  gnb.dataset.megaInited = '1';
 
   const menubar = gnb.querySelector('ul[role="menubar"]');
   if (!menubar) return;
 
-  // Inject styles (kept here so it works on pages that load home.css,
-  // not common.css — index.html in particular).
+  // Inline styles so this works on pages that only load home.css.
+  // Style strategy: top-level items gain spacing + slightly larger
+  // font on hover; each <li> has its own absolutely-positioned
+  // submenu that drops directly underneath that parent.
   if (!document.getElementById('gnb-mega-style')) {
     const style = document.createElement('style');
     style.id = 'gnb-mega-style';
     style.textContent = `
-      #gnb-mega{position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid rgba(0,0,0,.06);box-shadow:0 10px 24px rgba(0,0,0,.08);max-height:0;overflow:hidden;opacity:0;pointer-events:none;transition:max-height 240ms ease,opacity 180ms ease;}
-      #gnb.gnb-mega-open #gnb-mega{max-height:420px;opacity:1;pointer-events:auto;}
-      .gnb-mega__inner{max-width:80rem;margin:0 auto;padding:20px 32px 28px;}
-      .gnb-mega__columns{display:grid;gap:8px;}
-      .gnb-mega__col{min-height:1px;}
-      .gnb-mega__col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px;}
-      .gnb-mega__link{display:block;padding:8px 12px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:14px;font-weight:500;color:#4B5563;border-radius:8px;transition:background-color 140ms ease,color 140ms ease;text-decoration:none;}
-      .gnb-mega__link:hover,.gnb-mega__link:focus-visible{background-color:#EFF6FF;color:#1578B8;outline:none;}
-      @media (max-width:1023px){#gnb-mega{display:none !important;}}
+      #gnb ul[role="menubar"] > li{position:relative;}
+      #gnb ul[role="menubar"]{transition:gap 220ms ease;}
+      #gnb .gnb-link{transition:font-size 220ms ease,padding 220ms ease,color 140ms ease,background-color 140ms ease;}
+      #gnb.gnb-mega-open ul[role="menubar"]{gap:1.75rem;}
+      #gnb.gnb-mega-open .gnb-link{font-size:15px;padding-left:6px;padding-right:6px;}
+      .gnb-sub{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);min-width:180px;padding:10px 8px;margin:0;list-style:none;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;box-shadow:0 12px 28px rgba(0,0,0,.1);opacity:0;pointer-events:none;transition:opacity 180ms ease,transform 180ms ease;z-index:50;}
+      #gnb.gnb-mega-open .gnb-sub{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(10px);}
+      .gnb-sub li{list-style:none;}
+      .gnb-sub__link{display:block;padding:8px 14px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:14px;font-weight:500;color:#4B5563;border-radius:8px;white-space:nowrap;text-decoration:none;transition:background-color 140ms ease,color 140ms ease;}
+      .gnb-sub__link:hover,.gnb-sub__link:focus-visible{background-color:#EFF6FF;color:#1578B8;outline:none;}
+      @media (max-width:1023px){.gnb-sub{display:none !important;}}
       #gnb.gnb-at-top.gnb-mega-open{background-color:rgba(255,255,255,.98) !important;backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(0,0,0,.04);}
       #gnb.gnb-at-top.gnb-mega-open .gnb-link{color:#374151 !important;}
       #gnb.gnb-at-top.gnb-mega-open .gnb-link:hover{color:#1578B8 !important;background-color:#EFF6FF !important;}
@@ -521,46 +526,32 @@ function initMegaMenu() {
     ]
   };
 
-  const topLinks = Array.from(menubar.querySelectorAll(':scope > li > a'));
-  if (!topLinks.length) return;
+  const topItems = Array.from(menubar.querySelectorAll(':scope > li'));
+  if (!topItems.length) return;
 
-  // Build panel
-  const panel = document.createElement('div');
-  panel.id = 'gnb-mega';
-  panel.setAttribute('aria-hidden', 'true');
-
-  const inner = document.createElement('div');
-  inner.className = 'gnb-mega__inner';
-
-  const columns = document.createElement('div');
-  columns.className = 'gnb-mega__columns';
-  columns.style.gridTemplateColumns = `repeat(${topLinks.length}, 1fr)`;
-
-  topLinks.forEach((a) => {
-    const href = a.getAttribute('href');
-    const col = document.createElement('div');
-    col.className = 'gnb-mega__col';
-    const subs = megaData[href] || [];
-    if (subs.length) {
-      const ul = document.createElement('ul');
-      subs.forEach((sub) => {
-        const li = document.createElement('li');
-        const subA = document.createElement('a');
-        subA.href = sub.h;
-        subA.textContent = sub.l;
-        subA.className = 'gnb-mega__link';
-        subA.setAttribute('role', 'menuitem');
-        li.appendChild(subA);
-        ul.appendChild(li);
-      });
-      col.appendChild(ul);
-    }
-    columns.appendChild(col);
+  topItems.forEach((li) => {
+    const a = li.querySelector(':scope > a');
+    if (!a) return;
+    const subs = megaData[a.getAttribute('href')] || [];
+    if (!subs.length) return;
+    const ul = document.createElement('ul');
+    ul.className = 'gnb-sub';
+    ul.setAttribute('role', 'menu');
+    subs.forEach((sub) => {
+      const subLi = document.createElement('li');
+      const subA = document.createElement('a');
+      subA.href = sub.h;
+      subA.textContent = sub.l;
+      subA.className = 'gnb-sub__link';
+      subA.setAttribute('role', 'menuitem');
+      subLi.appendChild(subA);
+      ul.appendChild(subLi);
+    });
+    li.appendChild(ul);
   });
 
-  inner.appendChild(columns);
-  panel.appendChild(inner);
-  gnb.appendChild(panel);
+  const topLinks = topItems.map((li) => li.querySelector(':scope > a')).filter(Boolean);
+  const subLinks = Array.from(gnb.querySelectorAll('.gnb-sub__link'));
 
   // Desktop-only hover (>=1024px); skip on coarse pointers.
   const mq = window.matchMedia('(min-width: 1024px)');
@@ -572,27 +563,24 @@ function initMegaMenu() {
     if (!mq.matches) return;
     clearTimeout(closeTimer);
     gnb.classList.add('gnb-mega-open');
-    panel.setAttribute('aria-hidden', 'false');
   };
   const close = () => {
     clearTimeout(closeTimer);
     closeTimer = setTimeout(() => {
       gnb.classList.remove('gnb-mega-open');
-      panel.setAttribute('aria-hidden', 'true');
     }, 150);
   };
   const closeImmediate = () => {
     clearTimeout(closeTimer);
     gnb.classList.remove('gnb-mega-open');
-    panel.setAttribute('aria-hidden', 'true');
   };
 
   gnb.addEventListener('mouseenter', open);
   gnb.addEventListener('mouseleave', close);
 
-  // Keyboard: focus on a top-level link opens panel; Escape closes.
+  // Keyboard: focus on a top-level link opens; Escape closes.
   topLinks.forEach((a) => a.addEventListener('focus', open));
-  panel.querySelectorAll('a').forEach((a) => {
+  subLinks.forEach((a) => {
     a.addEventListener('focus', open);
     a.addEventListener('blur', close);
   });
