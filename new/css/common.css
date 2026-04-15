@@ -62,3 +62,41 @@ main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) 
 
 /* Global letter-spacing baseline for body text (Issue #9) */
 body { letter-spacing: -1px; }
+
+/* =============================================
+   Issue #12: English needs looser tracking than Korean.
+   KO uses -4px titles / -0.8px body (correct for 한글 glyphs),
+   but English Latin glyphs look "stuck together" at those values.
+   Override to a uniform -1px across all EN typography.
+   ============================================= */
+html[lang="en"] body { letter-spacing: -1px; }
+
+html[lang="en"] main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div h2,
+html[lang="en"] main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) h2.section-title {
+  letter-spacing: -1px !important;
+}
+
+html[lang="en"] main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div p:not(.text-sm):not(.text-xs):not(.text-base):not([class*="text-primary"]):not([class*="text-white"]):not([class*="text-green"]) {
+  letter-spacing: -1px !important;
+}
+
+@media (max-width: 640px) {
+  html[lang="en"] main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div h2,
+  html[lang="en"] main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) h2.section-title,
+  html[lang="en"] main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div p:not(.text-sm):not(.text-xs):not(.text-base):not([class*="text-primary"]):not([class*="text-white"]):not([class*="text-green"]) {
+    letter-spacing: -1px !important;
+  }
+}
+
+/* =============================================
+   Issue #13: Body content should span the full section container.
+   Sub-pages wrap text blocks in extra max-w-3xl/4xl wrappers that
+   leave large empty gutters on wide viewports. Drop those caps for
+   pure text blocks (paragraphs, spacing stacks) in content sections.
+   Card grids / form wrappers keep their widths (they're not `.space-y-*`
+   stacks and most use `mx-auto` which we don't touch anyway).
+   ============================================= */
+main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div > div[class*="space-y-"],
+main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) > div > p[class*="max-w-"] {
+  max-width: none !important;
+}
