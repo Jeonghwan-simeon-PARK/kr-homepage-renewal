@@ -599,7 +599,7 @@ function initMegaMenu() {
       .gnb-sub{position:absolute;top:calc(100% + var(--gnb-sub-gap,18px));left:0;min-width:100%;padding:22px 0 24px;margin:0;list-style:none;opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity 200ms ease,transform 200ms ease;z-index:5;}
       #gnb.gnb-mega-open .gnb-sub{opacity:1;pointer-events:auto;transform:translateY(0);}
       .gnb-sub li{list-style:none;}
-      .gnb-sub__link{display:block;padding:7px 18px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:13px;font-weight:700;color:#1F2937;white-space:nowrap;text-decoration:none;transition:color 140ms ease;}
+      .gnb-sub__link{display:block;padding:7px 18px;font-family:'Pretendard Variable','Pretendard','Inter','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:13px;font-weight:700;letter-spacing:-0.01em;color:#1F2937;white-space:nowrap;text-decoration:none;transition:color 140ms ease;}
       .gnb-sub__link:hover,.gnb-sub__link:focus-visible{color:#1578B8;outline:none;}
       @media (max-width:1023px){.gnb-sub,#gnb::after,#gnb-dim{display:none !important;}}
       /* When mega is open over a dark hero, frosted-glass header bar. */
