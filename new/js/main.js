@@ -269,6 +269,38 @@ function initScrollReveal() {
 // 6. Back to Top Button
 // ============================================================
 // ============================================================
+// Latin-run tracking override on KO pages.
+//   common.css applies tight Korean-tuned tracking (-4px on section
+//   titles, -1.5px on the careers h1 etc.) that cramps Latin glyphs
+//   when the heading mixes English. For any H1/H2/H3 that contains
+//   a Latin word, override letter-spacing to -1px — the same value
+//   used for the EN page baseline. Runs again whenever <html lang>
+//   flips so EN toggles restore the stylesheet-driven tracking.
+// ============================================================
+function initLatinTracking() {
+  const LATIN_RUN = /[A-Za-z]{2,}/;
+  const apply = () => {
+    // Clear prior overrides first
+    document.querySelectorAll('[data-latin-tracked]').forEach((el) => {
+      el.style.removeProperty('letter-spacing');
+      delete el.dataset.latinTracked;
+    });
+    const lang = document.documentElement.lang || 'ko';
+    if (lang !== 'ko') return;
+    document.querySelectorAll('h1, h2, h3').forEach((el) => {
+      if (!LATIN_RUN.test(el.innerText || '')) return;
+      el.style.setProperty('letter-spacing', '-1px', 'important');
+      el.dataset.latinTracked = '1';
+    });
+  };
+  apply();
+  new MutationObserver(apply).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['lang']
+  });
+}
+
+// ============================================================
 // Home: Right-side section navigator (Hanwha Ocean-style)
 //   Lists the page's sections with numeric indices on the right;
 //   highlights the currently visible section. Only on home page.
@@ -754,4 +786,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // i18n (both home and sub-pages)
   initI18n();
+  initLatinTracking();
 });
