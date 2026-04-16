@@ -730,7 +730,7 @@
   "business.careportal.feat5.title": "Patient App (Hicare App)",
   "business.careportal.feat5.desc": "Senior-friendly interface with voice-guided measurement prompts",
   "business.careportal.revenue.desc1": "<strong>A SaaS monthly subscription model.</strong> Clinics pay HicareNet a platform usage fee. Clinics use Care Portal to manage patients and bill Medicare for reimbursement.",
-  "business.careportal.revenue.desc2": "Generate $73-$147 per patient per month in Medicare reimbursement (including 2026 CMS new codes, revenue even with partial compliance).",
+  "business.careportal.revenue.desc2": "Generate <strong class=\"text-neutral-800\">$73-$147</strong> per patient per month in Medicare reimbursement (including 2026 CMS new codes, revenue even with partial compliance).",
   "business.careportal.performance.title": "Performance",
   "business.careportal.performance.clinics_label": "Clinic Contracts",
   "business.careportal.performance.patients_label": "Patients Enrolled",

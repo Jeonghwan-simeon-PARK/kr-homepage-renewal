@@ -730,7 +730,7 @@
   "business.careportal.feat5.title": "환자용 앱(Hicare App)",
   "business.careportal.feat5.desc": "고령층 친화적 인터페이스, 음성 안내 기반 측정 유도",
   "business.careportal.revenue.desc1": "<strong>SaaS 월 구독형 모델</strong>입니다. 클리닉이 하이케어넷에 플랫폼 이용료를 지급합니다. 클리닉은 Care Portal을 활용하여 환자를 관리하고, Medicare에 수가를 청구하여 수익을 확보합니다.",
-  "business.careportal.revenue.desc2": "환자 1인당 월 $73~$147의 보험수익 창출이 가능합니다 (2026년 CMS 신규 코드 포함, 부분 달성 시에도 수익 확보).",
+  "business.careportal.revenue.desc2": "환자 1인당 월 <strong class=\"text-neutral-800\">$73~$147</strong>의 보험수익 창출이 가능합니다 (2026년 CMS 신규 코드 포함, 부분 달성 시에도 수익 확보).",
   "business.careportal.performance.title": "실적",
   "business.careportal.performance.clinics_label": "클리닉 계약",
   "business.careportal.performance.patients_label": "환자 등록",
