@@ -459,6 +459,12 @@ function applyTranslations() {
     var val = getNestedValue(translations, key);
     if (val) el.innerHTML = val;
   });
+  // data-i18n-content: set the `content` attribute (meta tags, og:/twitter:)
+  document.querySelectorAll('[data-i18n-content]').forEach(function (el) {
+    var key = el.getAttribute('data-i18n-content');
+    var val = getNestedValue(translations, key);
+    if (val) el.setAttribute('content', val);
+  });
   // Update language toggle button states (v6 GNB)
   ['en', 'ko'].forEach(function (lang) {
     var btn = document.getElementById('lang-' + lang);
@@ -483,6 +489,11 @@ function applyTranslations() {
     }
   });
   document.documentElement.lang = currentLang;
+
+  // Expose translations globally + notify listeners (e.g., Leaflet map popups,
+  // custom meta-tag updaters) that content has been re-translated.
+  window.__i18nTranslations = translations;
+  window.dispatchEvent(new CustomEvent('hicarenet:langchange', { detail: { lang: currentLang } }));
 }
 
 // Global setLanguage — works for both home page and sub-pages
@@ -615,43 +626,45 @@ function initMegaMenu() {
   }
 
   // Submenu map keyed by top-level link href (relative).
-  // Each entry carries an i18n key; initial `l` is the KO fallback
-  // (KO is the default lang). initI18n will swap to EN when active.
+  // `l` = KO label, `le` = EN label. We pick based on current <html lang>
+  // so we don't flash Korean text when the user is already on EN mode.
+  // data-i18n (`k`) still drives post-load i18n updates via applyTranslations.
   const megaData = {
     'about.html': [
-      { k: 'gnb.sub.about.overview', l: '회사 개요', h: 'about.html#overview' },
-      { k: 'gnb.sub.about.mission', l: '미션', h: 'about.html#mission' },
-      { k: 'gnb.sub.about.history', l: '연혁', h: 'about.html#history' },
-      { k: 'gnb.sub.about.organization', l: '조직 구성', h: 'about.html#organization' }
+      { k: 'gnb.sub.about.overview', l: '회사 개요', le: 'Overview', h: 'about.html#overview' },
+      { k: 'gnb.sub.about.mission', l: '미션', le: 'Mission', h: 'about.html#mission' },
+      { k: 'gnb.sub.about.history', l: '연혁', le: 'History', h: 'about.html#history' },
+      { k: 'gnb.sub.about.organization', l: '조직 구성', le: 'Organization', h: 'about.html#organization' }
     ],
     'business.html': [
-      { k: 'gnb.sub.business.care_portal', l: 'Care Portal', h: 'business.html#care-portal' },
-      { k: 'gnb.sub.business.expansion', l: '서비스 확장 로드맵', h: 'business.html#expansion' },
-      { k: 'gnb.sub.business.devices', l: '의료기기/게이트웨이', h: 'business.html#devices' },
-      { k: 'gnb.sub.business.market', l: '시장 및 경쟁 환경', h: 'business.html#market' }
+      { k: 'gnb.sub.business.care_portal', l: 'Care Portal', le: 'Hicare Care Portal', h: 'business.html#care-portal' },
+      { k: 'gnb.sub.business.expansion', l: '서비스 확장 로드맵', le: 'Service Roadmap', h: 'business.html#expansion' },
+      { k: 'gnb.sub.business.devices', l: '의료기기/게이트웨이', le: 'Devices / Gateway', h: 'business.html#devices' },
+      { k: 'gnb.sub.business.market', l: '시장 및 경쟁 환경', le: 'Market & Competition', h: 'business.html#market' }
     ],
     'technology.html': [
-      { k: 'gnb.sub.technology.architecture', l: '플랫폼 아키텍처', h: 'technology.html#architecture' },
-      { k: 'gnb.sub.technology.ai', l: 'AI 기술', h: 'technology.html#ai' },
-      { k: 'gnb.sub.technology.security', l: '보안 및 인증', h: 'technology.html#security' },
-      { k: 'gnb.sub.technology.heritage', l: '의료 도메인 축적 기술', h: 'technology.html#heritage' }
+      { k: 'gnb.sub.technology.architecture', l: '플랫폼 아키텍처', le: 'Platform Architecture', h: 'technology.html#architecture' },
+      { k: 'gnb.sub.technology.ai', l: 'AI 기술', le: 'AI Technology', h: 'technology.html#ai' },
+      { k: 'gnb.sub.technology.security', l: '보안 및 인증', le: 'Security & Compliance', h: 'technology.html#security' },
+      { k: 'gnb.sub.technology.heritage', l: '의료 도메인 축적 기술', le: 'Healthcare Domain Heritage', h: 'technology.html#heritage' }
     ],
     'global.html': [
-      { k: 'gnb.sub.global.us_service', l: '미국 Care Portal 실적', h: 'global.html#us-service' },
-      { k: 'gnb.sub.global.device_export', l: '의료기기 수출 실적', h: 'global.html#device-export' },
-      { k: 'gnb.sub.global.partnerships', l: '파트너십', h: 'global.html#partnerships' }
+      { k: 'gnb.sub.global.us_service', l: '미국 Care Portal 실적', le: 'US Hicare Care Portal Results', h: 'global.html#us-service' },
+      { k: 'gnb.sub.global.device_export', l: '의료기기 수출 실적', le: 'Medical Device Exports', h: 'global.html#device-export' },
+      { k: 'gnb.sub.global.partnerships', l: '파트너십', le: 'Partnerships', h: 'global.html#partnerships' }
     ],
     'careers.html': [
-      { k: 'gnb.sub.careers.why_hicarenet', l: '왜 하이케어넷인가', h: 'careers.html#why-hicarenet' },
-      { k: 'gnb.sub.careers.teams', l: '팀 소개', h: 'careers.html#teams' },
-      { k: 'gnb.sub.careers.challenges', l: '기술적 도전', h: 'careers.html#challenges' },
-      { k: 'gnb.sub.careers.positions', l: '채용 공고', h: 'careers.html#positions' }
+      { k: 'gnb.sub.careers.why_hicarenet', l: '왜 하이케어넷인가', le: 'Why HicareNet', h: 'careers.html#why-hicarenet' },
+      { k: 'gnb.sub.careers.teams', l: '팀 소개', le: 'Our Teams', h: 'careers.html#teams' },
+      { k: 'gnb.sub.careers.challenges', l: '기술적 도전', le: 'Technical Challenges', h: 'careers.html#challenges' },
+      { k: 'gnb.sub.careers.positions', l: '채용 공고', le: 'Open Positions', h: 'careers.html#positions' }
     ],
     'ir.html': [
-      { k: 'gnb.sub.ir.ir', l: 'IR', h: 'ir.html#ir' },
-      { k: 'gnb.sub.ir.newsroom', l: '뉴스룸', h: 'ir.html#newsroom' }
+      { k: 'gnb.sub.ir.ir', l: 'IR', le: 'IR', h: 'ir.html#ir' },
+      { k: 'gnb.sub.ir.newsroom', l: '뉴스룸', le: 'Newsroom', h: 'ir.html#newsroom' }
     ]
   };
+  const initialLang = document.documentElement.lang || 'ko';
 
   const topItems = Array.from(menubar.querySelectorAll(':scope > li'));
   if (!topItems.length) return;
@@ -668,7 +681,7 @@ function initMegaMenu() {
       const subLi = document.createElement('li');
       const subA = document.createElement('a');
       subA.href = sub.h;
-      subA.textContent = sub.l;
+      subA.textContent = initialLang === 'en' && sub.le ? sub.le : sub.l;
       subA.className = 'gnb-sub__link';
       subA.setAttribute('role', 'menuitem');
       if (sub.k) subA.setAttribute('data-i18n', sub.k);

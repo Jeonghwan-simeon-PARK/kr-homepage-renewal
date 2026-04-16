@@ -4,8 +4,8 @@
   <script>(function(){try{var l=localStorage.getItem("hicarenet-lang");if(l==="en"){document.documentElement.lang="en";document.documentElement.classList.add("i18n-pending");setTimeout(function(){document.documentElement.classList.remove("i18n-pending");},2500);}}catch(e){}})();/* i18n-pending early init */</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="하이케어넷 글로벌 실적 - 미국, 이탈리아, 프랑스, 태국 4개국 사업 현황. 40개 클리닉, 3,000+ 환자, 게이트웨이 누적 14,000대+ 수출.">
-  <title>글로벌 실적 | 하이케어넷</title>
+  <meta name="description" content="하이케어넷 글로벌 실적 - 미국, 이탈리아, 프랑스, 태국 4개국 사업 현황. 40개 클리닉, 3,000+ 환자, 게이트웨이 누적 14,000대+ 수출." data-i18n-content="page.global.description">
+  <title data-i18n="page.global.title">글로벌 실적 | 하이케어넷</title>
   <link rel="icon" href="../assets/hicare_pavicon2.png" type="image/png">
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" crossorigin="anonymous">
@@ -77,7 +77,7 @@
           <a role="menuitem" href="about.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.about">About</a>
           <a role="menuitem" href="business.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.business">Business</a>
           <a role="menuitem" href="technology.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.technology">Technology</a>
-          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-semibold text-primary-600 bg-primary-50">글로벌 실적</a>
+          <a role="menuitem" href="global.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-semibold text-primary-600 bg-primary-50" data-i18n="nav.global">글로벌 실적</a>
           <a role="menuitem" href="careers.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.careers">Careers</a>
           <a role="menuitem" href="ir.html" class="gnb-link px-3 py-3 rounded-lg text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:text-primary-600" data-i18n="nav.ir">IR/Newsroom</a>
           <div class="flex items-center gap-1 text-sm px-3 py-2">
@@ -177,25 +177,70 @@
             });
           }
 
-          // Marker data
+          // Marker data — i18n keys (text resolved via window.__i18nTranslations).
+          // KO fallback used before translations load or for missing keys.
+          var fallback = {
+            'global.map.marker_us_portal_title': '미국 (캘리포니아)',
+            'global.map.marker_us_portal': 'Care Portal SaaS 서비스 운영',
+            'global.map.marker_us_metric': '40개 클리닉 계약',
+            'global.map.marker_france_title': '프랑스',
+            'global.map.marker_france': '약국 체인 게이트웨이 수출',
+            'global.map.marker_france_metric': '3,000대',
+            'global.map.marker_italy_title': '이탈리아 (Puglia)',
+            'global.map.marker_italy': '심장질환 퇴원환자 관리',
+            'global.map.marker_italy_metric': '1,000대',
+            'global.map.marker_korea_title': '한국 (서울) — HQ',
+            'global.map.marker_korea_desc': '본사, R&D 센터',
+            'global.map.marker_korea_metric': '하이케어넷 주식회사',
+            'global.map.marker_thailand_title': '태국',
+            'global.map.marker_thailand': '의료기관 및 약국 체인 협력',
+            'global.map.marker_thailand_metric': 'Partner'
+          };
+          function t(key) {
+            var tr = window.__i18nTranslations;
+            return (tr && tr[key]) || fallback[key] || key;
+          }
+
           var locations = [
-            { coords: [34.05, -118.25], icon: createIcon('#1578B8', 'US', 36), title: '미국 (캘리포니아)', desc: 'Care Portal SaaS 서비스 운영', metric: '40개 클리닉 계약' },
-            { coords: [46.60, 2.35], icon: createIcon('#1A8FD8', 'FR', 36), title: '프랑스', desc: '약국 체인 게이트웨이 수출', metric: '3,000대' },
-            { coords: [41.12, 16.87], icon: createIcon('#1A8FD8', 'IT', 36), title: '이탈리아 (Puglia)', desc: '심장질환 퇴원환자 관리', metric: '1,000대' },
-            { coords: [37.57, 127.00], icon: createIcon('#0B4369', 'KR', 42), title: '한국 (서울) — HQ', desc: '본사, R&D 센터', metric: '하이케어넷 주식회사' },
-            { coords: [13.75, 100.52], icon: createIcon('#2EBE74', 'TH', 36), title: '태국', desc: '의료기관 및 약국 체인 협력', metric: 'Partner' }
+            { coords: [34.05, -118.25], icon: createIcon('#1578B8', 'US', 36),
+              titleKey: 'global.map.marker_us_portal_title',
+              descKey:  'global.map.marker_us_portal',
+              metricKey:'global.map.marker_us_metric' },
+            { coords: [46.60, 2.35], icon: createIcon('#1A8FD8', 'FR', 36),
+              titleKey: 'global.map.marker_france_title',
+              descKey:  'global.map.marker_france',
+              metricKey:'global.map.marker_france_metric' },
+            { coords: [41.12, 16.87], icon: createIcon('#1A8FD8', 'IT', 36),
+              titleKey: 'global.map.marker_italy_title',
+              descKey:  'global.map.marker_italy',
+              metricKey:'global.map.marker_italy_metric' },
+            { coords: [37.57, 127.00], icon: createIcon('#0B4369', 'KR', 42),
+              titleKey: 'global.map.marker_korea_title',
+              descKey:  'global.map.marker_korea_desc',
+              metricKey:'global.map.marker_korea_metric' },
+            { coords: [13.75, 100.52], icon: createIcon('#2EBE74', 'TH', 36),
+              titleKey: 'global.map.marker_thailand_title',
+              descKey:  'global.map.marker_thailand',
+              metricKey:'global.map.marker_thailand_metric' }
           ];
 
-          // Add markers with popups
+          function popupHtml(loc) {
+            return '<div style="min-width:160px;">' +
+                   '<strong style="font-size:14px;">' + t(loc.titleKey) + '</strong><br>' +
+                   '<span style="color:#475569;font-size:12px;">' + t(loc.descKey) + '</span><br>' +
+                   '<span style="color:#1578B8;font-weight:600;font-size:13px;">' + t(loc.metricKey) + '</span></div>';
+          }
+
+          // Add markers with popups; keep marker refs for later refresh
           locations.forEach(function(loc) {
-            L.marker(loc.coords, { icon: loc.icon })
+            loc.marker = L.marker(loc.coords, { icon: loc.icon })
               .addTo(map)
-              .bindPopup(
-                '<div style="font-family:Noto Sans KR,sans-serif;min-width:160px;">' +
-                '<strong style="font-size:14px;">' + loc.title + '</strong><br>' +
-                '<span style="color:#475569;font-size:12px;">' + loc.desc + '</span><br>' +
-                '<span style="color:#1578B8;font-weight:600;font-size:13px;">' + loc.metric + '</span></div>'
-              );
+              .bindPopup(popupHtml(loc));
+          });
+
+          // Re-render popup content when language toggles
+          window.addEventListener('hicarenet:langchange', function() {
+            locations.forEach(function(loc) { loc.marker.setPopupContent(popupHtml(loc)); });
           });
 
           // Connection lines: US → FR → IT, KR → TH (HQ connects to Thailand)
