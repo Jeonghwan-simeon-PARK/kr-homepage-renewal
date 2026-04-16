@@ -134,5 +134,19 @@ main section:not([aria-label="히어로"]):not([aria-label="페이지 헤더"]) 
   color: rgba(255, 255, 255, 0.92) !important;
 }
 
+/* =============================================
+   Issue #17: Korean-mode English text letter-spacing.
+   In KO mode, h2/body text gets tight tracking (-4px / -0.8px)
+   which is appropriate for Korean glyphs but too cramped for
+   Latin characters. Use the font-display class (Inter-first stack)
+   or the .tracking-latin utility to opt specific elements into
+   looser -1px tracking, matching the EN-mode value.
+   ============================================= */
+html[lang="ko"] .tracking-latin,
+html[lang="ko"] h2.tracking-latin,
+html[lang="ko"] h3.tracking-latin {
+  letter-spacing: -1px !important;
+}
+
 /* Mega-menu CSS is injected from js/main.js (initMegaMenu) so it
    works uniformly on pages that load home.css instead of common.css. */
