@@ -590,8 +590,8 @@ function initMegaMenu() {
       #gnb ul[role="menubar"] > li > a.gnb-link::after{content:'';position:absolute;left:18px;right:18px;bottom:calc(-1 * var(--gnb-sub-gap,18px));height:2px;background:#111827;transform:scaleX(0);transform-origin:center;transition:transform 200ms ease;pointer-events:none;}
       #gnb.gnb-mega-open ul[role="menubar"] > li:hover > a.gnb-link::after,
       #gnb.gnb-mega-open ul[role="menubar"] > li:focus-within > a.gnb-link::after{transform:scaleX(1);}
-      /* Frosted-glass panel — 85% white + strong blur keeps bg hint visible while ensuring text readability. */
-      #gnb::after{content:'';position:absolute;top:100%;left:0;right:0;height:0;background:rgba(255,255,255,.85);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);box-shadow:none;transition:height 240ms ease,box-shadow 240ms ease;pointer-events:none;z-index:1;}
+      /* Frosted-glass panel — 93% white + heavy blur: bg tints through but text is invisible. */
+      #gnb::after{content:'';position:absolute;top:100%;left:0;right:0;height:0;background:rgba(255,255,255,.93);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);box-shadow:none;transition:height 240ms ease,box-shadow 240ms ease;pointer-events:none;z-index:1;}
       #gnb.gnb-mega-open::after{height:240px;box-shadow:0 10px 24px rgba(0,0,0,.04);pointer-events:auto;}
       /* Dim overlay sits ONLY below the panel area (top set via --gnb-panel-bottom). */
       #gnb-dim{position:fixed;left:0;right:0;bottom:0;top:0;background:rgba(17,24,39,.5);opacity:0;pointer-events:none;transition:opacity 220ms ease,top 240ms ease;z-index:30;}
@@ -603,7 +603,7 @@ function initMegaMenu() {
       .gnb-sub__link:hover,.gnb-sub__link:focus-visible{color:#1578B8;outline:none;}
       @media (max-width:1023px){.gnb-sub,#gnb::after,#gnb-dim{display:none !important;}}
       /* When mega is open over a dark hero, frosted-glass header bar. */
-      #gnb.gnb-at-top.gnb-mega-open{background-color:rgba(255,255,255,.85) !important;backdrop-filter:blur(24px) saturate(180%) !important;-webkit-backdrop-filter:blur(24px) saturate(180%) !important;box-shadow:none !important;}
+      #gnb.gnb-at-top.gnb-mega-open{background-color:rgba(255,255,255,.93) !important;backdrop-filter:blur(40px) saturate(180%) !important;-webkit-backdrop-filter:blur(40px) saturate(180%) !important;box-shadow:none !important;}
       #gnb.gnb-at-top.gnb-mega-open .gnb-link{color:#111827 !important;}
       #gnb.gnb-at-top.gnb-mega-open .gnb-link:hover{color:#1578B8 !important;background-color:transparent !important;}
       #gnb.gnb-at-top.gnb-mega-open img[alt*="로고"]{filter:none !important;}
