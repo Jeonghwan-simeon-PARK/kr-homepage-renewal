@@ -466,8 +466,8 @@
   "kr.footer.terms": "이용약관",
   "footer.us_site": "미국 사이트: hicare.net",
   "kr.footer.us_site": "미국 사이트: hicare.net",
-  "footer.copyright": "Copyright 2025 HicareNet Inc. All rights reserved.",
-  "kr.footer.copyright": "Copyright 2025 HicareNet Inc. All rights reserved.",
+  "footer.copyright": "© 2026 하이케어넷 주식회사. All rights reserved.",
+  "kr.footer.copyright": "© 2026 하이케어넷 주식회사. All rights reserved.",
   "footer.disclaimer": "하이케어넷 주식회사는 의료 서비스를 직접 제공하는 기관이 아닙니다. 하이케어넷은 미국 Medicare 제도 하에서 의료기관(클리닉)이 원격 환자 모니터링(RPM) 및 만성질환 관리(CCM) 서비스를 수행할 때 필요한 환자 관리 워크플로우, 문서화, 수가 청구를 지원하는 소프트웨어 플랫폼(Hicare Care Portal)을 제공합니다.",
   "kr.footer.disclaimer": "하이케어넷 주식회사는 의료 서비스를 직접 제공하는 기관이 아닙니다. 하이케어넷은 미국 Medicare 제도 하에서 의료기관(클리닉)이 원격 환자 모니터링(RPM) 및 만성질환 관리(CCM) 서비스를 수행할 때 필요한 환자 관리 워크플로우, 문서화, 수가 청구를 지원하는 소프트웨어 플랫폼(Hicare Care Portal)을 제공합니다.",
   "home.hero.headline": "미국 클리닉이 선택한<br>원격환자관리 기술 파트너",
@@ -917,8 +917,8 @@
   "faq.investor.q4.answer": "네. CMS CY2026 PFS Final Rule에서 CPT 99445(2-15일 디바이스 모니터링, ~$47-52)와 99470(10분 치료 관리, ~$26)이 신설되었습니다. 기존에는 16일/20분 미달 시 청구가 불가했으나, 이제 부분 달성 시에도 수가를 청구할 수 있습니다. Care Portal은 두 코드를 자동으로 지원합니다.",
   "faq.investor.q5.question": "CCM에서 99439 코드는 무엇인가요?",
   "faq.investor.q5.answer": "99439는 기본 CCM(99490)에 대한 추가 20분 add-on 코드로, 월 최대 2회 청구 가능합니다. CCM 수익을 $64/월에서 최대 $164/월까지 확대할 수 있습니다. Care Portal이 관리 시간을 자동 추적하여 99439 청구 가능 여부를 자동 판단합니다.",
-  "page.index.title": "HicareNet",
-  "page.index.description": "HicareNet - Healthcare Technology, Proven Globally. RPM, CCM, AWV & Value-Based Care solutions.",
+  "page.index.title": "하이케어넷",
+  "page.index.description": "하이케어넷 - 글로벌 헬스케어 기술 기업. RPM, CCM, AWV 및 가치기반진료(VBC) 솔루션을 제공합니다.",
   "page.about.title": "회사소개 | 하이케어넷",
   "page.about.description": "하이케어넷 회사소개 - 인성정보 20년 헬스케어 기술을 기반으로 미국 Medicare RPM/CCM 시장에서 성장하는 디지털 헬스케어 기업.",
   "page.business.title": "사업영역 | 하이케어넷",
@@ -938,5 +938,6 @@
   "page.privacy.title": "개인정보처리방침 | 하이케어넷",
   "page.privacy.description": "하이케어넷 주식회사 개인정보처리방침 - 개인정보 보호법에 따른 개인정보 처리 및 보호에 관한 안내.",
   "page.terms.title": "이용약관 | 하이케어넷",
-  "page.terms.description": "하이케어넷 주식회사 이용약관 - 웹사이트 서비스 이용 조건 및 절차에 관한 기본 사항."
+  "page.terms.description": "하이케어넷 주식회사 이용약관 - 웹사이트 서비스 이용 조건 및 절차에 관한 기본 사항.",
+  "footer.copyright_text": "© 2026 하이케어넷 주식회사. All rights reserved."
 }

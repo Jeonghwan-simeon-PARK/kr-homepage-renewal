@@ -938,5 +938,6 @@
   "page.privacy.title": "Privacy Policy | HicareNet",
   "page.privacy.description": "HicareNet Privacy Policy — how we process and protect personal information in accordance with the Personal Information Protection Act.",
   "page.terms.title": "Terms of Service | HicareNet",
-  "page.terms.description": "HicareNet Terms of Service — the basic conditions and procedures for using our website services."
+  "page.terms.description": "HicareNet Terms of Service — the basic conditions and procedures for using our website services.",
+  "footer.copyright_text": "© 2026 HicareNet, Inc. All rights reserved."
 }
