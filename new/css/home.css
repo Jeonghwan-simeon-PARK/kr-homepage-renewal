@@ -288,7 +288,7 @@ body.lang-ko .footer-en { display: none !important; }
 
 .service-tags {
   display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
-  width: 100%; max-width: 900px; margin: 0 auto;
+  width: 100%; max-width: 900px; margin: 56px auto 0;
 }
 .service-tag {
   display: flex; align-items: center; gap: 10px;

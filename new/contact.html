@@ -230,15 +230,14 @@ tailwind.config = {
 
       <div class="max-w-4xl mx-auto" data-animate="fade-up" data-animate-delay="100">
         <!-- Map / Office image -->
-        <div class="relative rounded-2xl h-64 md:h-80 overflow-hidden mb-6">
-          <div class="w-full h-full bg-neutral-200 flex items-center justify-center">
-            <span class="text-neutral-400 text-sm">need the image</span>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/40 to-transparent"></div>
-          <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
-            <span class="material-symbols-outlined text-[20px]">location_on</span>
-            <span class="text-sm font-medium" data-i18n="contact.location.label">서울특별시 송파구</span>
-          </div>
+        <div class="relative rounded-2xl h-64 md:h-80 overflow-hidden mb-6 shadow-sm border border-neutral-100">
+          <iframe
+            src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%86%A1%ED%8C%8C%EA%B5%AC+%EC%9C%84%EB%A1%80%EC%84%B1%EB%8C%80%EB%A1%9C22%EA%B8%B8+28&output=embed"
+            class="w-full h-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="HicareNet 위치"
+            allowfullscreen></iframe>
         </div>
         <!-- Address text -->
         <div class="flex items-start gap-3 text-neutral-600 text-sm">
@@ -272,7 +271,7 @@ tailwind.config = {
             <span class="material-symbols-outlined text-primary-600 text-[24px]">mail</span>
           </div>
           <p class="text-xs text-neutral-400 font-medium uppercase tracking-wider mb-1" data-i18n="contact.direct.email_label">이메일</p>
-          <p class="text-base font-semibold text-neutral-500" data-i18n="kr.contact.direct.email">확인 후 업데이트 예정</p>
+          <p class="text-base font-semibold text-neutral-900 font-display"><a href="mailto:contact@hicare.co.kr" class="hover:text-primary-600 transition-colors" data-i18n="kr.contact.direct.email">contact@hicare.co.kr</a></p>
         </div>
 
         <!-- Address -->
