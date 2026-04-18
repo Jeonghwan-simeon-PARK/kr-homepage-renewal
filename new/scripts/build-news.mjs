@@ -32,12 +32,85 @@ function escapeJsonStr(s) {
   return String(s ?? '').replace(/[\\"]/g, '\\$&').replace(/\n/g, '\\n').replace(/\r/g, '');
 }
 
+/**
+ * Convert raw body text into HTML. Supports inline layout markers so a
+ * plain Korean notice can render with the same visual hierarchy as the
+ * original disclosure document:
+ *
+ *   ::CENTER::   line is centered (useful for sub-headings, "아 래" divider)
+ *   ::RIGHT::    line is right-aligned (signature, date)
+ *   ::DIVIDER::  renders the "--------- 아   래 ---------" horizontal divider
+ *   ::SIGNATURE-START::
+ *   ...          right-aligned signature block (company name, title, CEO)
+ *   ::SIGNATURE-END::
+ *
+ * Any line starting with "::" but not matching a known marker is kept verbatim.
+ * Blank line separates paragraphs (standard Markdown-like behavior).
+ */
 function paragraphify(text) {
   if (!text) return '';
-  return text
-    .split(/\n{2,}/)
-    .map((p) => `<p>${escapeHtml(p.trim()).replace(/\n/g, '<br>')}</p>`)
-    .join('\n');
+  const lines = text.split('\n');
+  const out = [];
+  let para = [];
+  let inSig = false;
+
+  const flushPara = () => {
+    if (!para.length) return;
+    // Preserve leading whitespace per line (indentation) by converting
+    // runs of leading spaces to &nbsp; after HTML escaping.
+    const lines2 = para.map((ln) => {
+      const m = ln.match(/^(\s*)(.*)$/);
+      const indent = (m[1] || '').replace(/ /g, '&nbsp;').replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;');
+      return indent + escapeHtml(m[2]);
+    });
+    para = [];
+    out.push(`<p>${lines2.join('<br>')}</p>`);
+  };
+
+  for (const rawLine of lines) {
+    const line = rawLine.replace(/\r$/, '');
+    const trimmed = line.trim();
+
+    if (trimmed === '') {
+      flushPara();
+      continue;
+    }
+
+    if (trimmed === '::SIGNATURE-START::') {
+      flushPara();
+      out.push('<div class="news-signature">');
+      inSig = true;
+      continue;
+    }
+    if (trimmed === '::SIGNATURE-END::') {
+      flushPara();
+      out.push('</div>');
+      inSig = false;
+      continue;
+    }
+    if (trimmed === '::DIVIDER::') {
+      flushPara();
+      out.push('<div class="news-divider"><span class="news-divider__line"></span><span class="news-divider__label">아&nbsp;&nbsp;&nbsp;&nbsp;래</span><span class="news-divider__line"></span></div>');
+      continue;
+    }
+    if (trimmed.startsWith('::CENTER::')) {
+      flushPara();
+      const content = trimmed.substring('::CENTER::'.length).trim();
+      out.push(`<p class="text-center">${escapeHtml(content)}</p>`);
+      continue;
+    }
+    if (trimmed.startsWith('::RIGHT::')) {
+      flushPara();
+      const content = trimmed.substring('::RIGHT::'.length).trim();
+      out.push(`<p class="text-right">${escapeHtml(content)}</p>`);
+      continue;
+    }
+
+    para.push(line);
+  }
+  flushPara();
+  if (inSig) out.push('</div>');
+  return out.join('\n');
 }
 
 function formatDate(iso, lang) {
