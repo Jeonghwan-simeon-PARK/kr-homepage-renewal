@@ -519,30 +519,42 @@
       const panelIR = document.getElementById('panel-ir');
       const panelNewsroom = document.getElementById('panel-newsroom');
 
+      function activate(which) {
+        tabs.forEach(function(t) {
+          t.classList.remove('text-primary-600', 'font-semibold', 'border-primary-600');
+          t.classList.add('text-neutral-500', 'font-medium', 'border-transparent');
+          t.setAttribute('aria-selected', 'false');
+        });
+        const active = which === 'newsroom' ? document.getElementById('tab-newsroom') : document.getElementById('tab-ir');
+        if (active) {
+          active.classList.remove('text-neutral-500', 'font-medium', 'border-transparent');
+          active.classList.add('text-primary-600', 'font-semibold', 'border-primary-600');
+          active.setAttribute('aria-selected', 'true');
+        }
+        if (which === 'newsroom') {
+          panelIR.classList.add('hidden');
+          panelNewsroom.classList.remove('hidden');
+        } else {
+          panelIR.classList.remove('hidden');
+          panelNewsroom.classList.add('hidden');
+        }
+      }
+
       tabs.forEach(function(tab) {
         tab.addEventListener('click', function() {
-          // Reset all tabs
-          tabs.forEach(function(t) {
-            t.classList.remove('text-primary-600', 'font-semibold', 'border-primary-600');
-            t.classList.add('text-neutral-500', 'font-medium', 'border-transparent');
-            t.setAttribute('aria-selected', 'false');
-          });
-
-          // Activate clicked tab
-          tab.classList.remove('text-neutral-500', 'font-medium', 'border-transparent');
-          tab.classList.add('text-primary-600', 'font-semibold', 'border-primary-600');
-          tab.setAttribute('aria-selected', 'true');
-
-          // Show/hide panels
-          if (tab.id === 'tab-ir') {
-            panelIR.classList.remove('hidden');
-            panelNewsroom.classList.add('hidden');
-          } else {
-            panelIR.classList.add('hidden');
-            panelNewsroom.classList.remove('hidden');
-          }
+          activate(tab.id === 'tab-newsroom' ? 'newsroom' : 'ir');
         });
       });
+
+      // Honor URL hash on load / hashchange so deep links from news detail
+      // pages (ir.html#panel-newsroom) open the right tab.
+      function syncFromHash() {
+        const h = (location.hash || '').replace('#', '');
+        if (h === 'panel-newsroom') activate('newsroom');
+        else if (h === 'panel-ir') activate('ir');
+      }
+      syncFromHash();
+      window.addEventListener('hashchange', syncFromHash);
     })();
   </script>
 </body>
