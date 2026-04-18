@@ -669,10 +669,26 @@ function initMegaMenu() {
   const topItems = Array.from(menubar.querySelectorAll(':scope > li'));
   if (!topItems.length) return;
 
+  // megaData keys are the bare top-level file names (e.g. "about.html").
+  // Top-level links may be served from a deeper directory (e.g. news/{slug}/
+  // uses href="../../about.html"), so match by the final path segment and
+  // preserve any prefix so submenu hrefs resolve relative to the current page.
+  const splitHref = (href) => {
+    const q = href.indexOf('?');
+    const h = href.indexOf('#');
+    const stop = [q, h].filter((n) => n !== -1);
+    const base = stop.length ? href.slice(0, Math.min(...stop)) : href;
+    const lastSlash = base.lastIndexOf('/');
+    const prefix = lastSlash === -1 ? '' : base.slice(0, lastSlash + 1);
+    const file = lastSlash === -1 ? base : base.slice(lastSlash + 1);
+    return { prefix, file };
+  };
+
   topItems.forEach((li) => {
     const a = li.querySelector(':scope > a');
     if (!a) return;
-    const subs = megaData[a.getAttribute('href')] || [];
+    const { prefix, file } = splitHref(a.getAttribute('href') || '');
+    const subs = megaData[file] || [];
     if (!subs.length) return;
     const ul = document.createElement('ul');
     ul.className = 'gnb-sub';
@@ -680,7 +696,9 @@ function initMegaMenu() {
     subs.forEach((sub) => {
       const subLi = document.createElement('li');
       const subA = document.createElement('a');
-      subA.href = sub.h;
+      // sub.h is already the top-level relative form ("about.html#overview");
+      // re-prefix so it works from deeper pages too.
+      subA.href = prefix + sub.h;
       subA.textContent = initialLang === 'en' && sub.le ? sub.le : sub.l;
       subA.className = 'gnb-sub__link';
       subA.setAttribute('role', 'menuitem');
