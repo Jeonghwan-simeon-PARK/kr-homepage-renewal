@@ -119,7 +119,7 @@
     </nav>
   </header>
 
-  <main id="main-content" class="pt-16 lg:pt-20">
+  <main id="main-content" class="pt-16 lg:pt-20 news-detail news-detail--disclosure">
 
     <!-- IR / Newsroom sub-tabs (matches ir.html) -->
     <section class="bg-white border-b border-neutral-200 sticky top-16 lg:top-20 z-30">
@@ -135,59 +135,65 @@
       </div>
     </section>
 
-    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    <div class="news-detail__container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
 
       <!-- Breadcrumb -->
-      <nav class="mb-8 text-sm text-neutral-500" aria-label="breadcrumb">
+      <nav class="news-detail__crumbs mb-8 text-sm text-neutral-500" aria-label="breadcrumb">
         <ol class="flex items-center gap-2 flex-wrap">
           <li><a href="../../index.html" class="hover:text-primary-600 transition-colors" data-i18n="news.breadcrumb.home">홈</a></li>
           <li class="text-neutral-300">/</li>
           <li><a href="../../ir.html#panel-newsroom" class="hover:text-primary-600 transition-colors" data-i18n="newsroom.title">뉴스룸</a></li>
           <li class="text-neutral-300">/</li>
-          <li class="text-neutral-700 font-medium truncate">제5기 정기주주총회 소집공고</li>
+          <li class="text-neutral-700 font-medium truncate">
+            <span class="lang-ko-only">제5기 정기주주총회 소집공고</span><span class="lang-en-only">Notice of the 5th Annual General Meeting</span>
+          </li>
         </ol>
       </nav>
 
-      <!-- Header -->
-      <header class="mb-10 pb-8 border-b border-neutral-200">
-        <div class="flex items-center gap-3 mb-5">
-          <span class="inline-flex items-center px-2.5 py-1 bg-primary-50 text-primary-700 text-xs font-semibold rounded">
-            <span class="lang-ko-only">주주총회</span><span class="lang-en-only">Shareholders</span>
-          </span>
-          <time class="text-sm text-neutral-500" datetime="2025-03-06">2025년 3월 6일</time>
-        </div>
-        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 leading-tight">
-          <span class="lang-ko-only">제5기 정기주주총회 소집공고</span><span class="lang-en-only">Notice of the 5th Annual General Meeting</span>
-        </h1>
-        <p class="mt-4 text-base md:text-lg text-neutral-600 leading-relaxed">
-          <span class="lang-ko-only">상법 제363조에 의거한 제5기 정기주주총회 소집 공고.</span><span class="lang-en-only">Notice of the 5th Annual General Meeting of Shareholders pursuant to Article 363 of the Korean Commercial Act.</span>
-        </p>
-      </header>
+      <article class="news-article">
 
-      <!-- Body -->
-      <div class="news-body">
-        <div class="lang-ko-only"><p>상법 제363조 및 당사 정관에 의거하여 제5기 정기주주총회를 아래와 같이 소집하오니 참석하여 주시기 바랍니다.</p>
+        <!-- Header -->
+        <header class="news-article__header">
+          <div class="news-article__meta">
+            <span class="news-article__tag">
+              <span class="lang-ko-only">주주총회</span><span class="lang-en-only">Shareholders</span>
+            </span>
+            <time class="news-article__date" datetime="2025-03-06">2025년 3월 6일</time>
+          </div>
+          <h1 class="news-article__title">
+            <span class="lang-ko-only">제5기 정기주주총회 소집공고</span><span class="lang-en-only">Notice of the 5th Annual General Meeting</span>
+          </h1>
+          <p class="news-article__lede">
+            <span class="lang-ko-only">상법 제363조에 의거한 제5기 정기주주총회 소집 공고.</span><span class="lang-en-only">Notice of the 5th Annual General Meeting of Shareholders pursuant to Article 363 of the Korean Commercial Act.</span>
+          </p>
+        </header>
+
+        <!-- Body -->
+        <div class="news-body news-body--disclosure">
+          <div class="lang-ko-only"><p>상법 제363조 및 당사 정관에 의거하여 제5기 정기주주총회를 아래와 같이 소집하오니 참석하여 주시기 바랍니다.</p>
 <p>[PLACEHOLDER: 일시·장소·의안 세부 내용은 당시 원본 공고(이미지)를 기반으로 이관 중입니다. 내부 검토 후 확정 내용이 반영됩니다.]</p>
 <p>1. 일시: 2025년 3월 중 (원본 공고일 기준 확정 예정)<br>2. 장소: 서울특별시 송파구 위례성대로22길 28, 5층 본사 회의실<br>3. 회의 목적사항<br>&nbsp;&nbsp;&nbsp;- 제1호 의안: 제5기(2024년 1월 1일 ~ 2024년 12월 31일) 재무제표 승인의 건<br>&nbsp;&nbsp;&nbsp;- 기타 이사회에서 상정한 안건</p>
 <p>4. 경영참고사항 등 비치<br>상법 제542조의4에 의한 경영참고사항 등은 당사 본점 및 관련 기관에 비치하였습니다.</p>
 <p>2025년 3월 6일</p>
 <p>하이케어넷 주식회사<br>서울특별시 송파구 위례성대로22길 28, 5층(오금동)<br>대표이사 김홍진, 원종윤</p></div>
-        <div class="lang-en-only"><p>Pursuant to Article 363 of the Korean Commercial Act and our Articles of Incorporation, notice is hereby given of the 5th Annual General Meeting of Shareholders of HicareNet Inc.</p>
+          <div class="lang-en-only"><p>Pursuant to Article 363 of the Korean Commercial Act and our Articles of Incorporation, notice is hereby given of the 5th Annual General Meeting of Shareholders of HicareNet Inc.</p>
 <p>[PLACEHOLDER: Meeting date, location, and detailed agenda are being migrated from the original image-based notice. Finalized details will be reflected after internal review.]</p>
 <p>1. Date &amp; Time: March 2025 (to be confirmed per the original notice)<br>2. Location: Conference Room, 5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul<br>3. Agenda<br>&nbsp;&nbsp;&nbsp;- Item 1: Approval of financial statements for FY2024 (Jan 1 – Dec 31, 2024)<br>&nbsp;&nbsp;&nbsp;- Other matters submitted by the Board</p>
 <p>4. Availability of reference materials<br>Reference materials under Article 542-4 of the Commercial Act are available at the Company&#39;s head office and at the relevant institutions.</p>
 <p>March 6, 2025</p>
 <p>HicareNet Inc.<br>5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul (Ogeum-dong)<br>Co-CEOs: Hongjin Kim, Jongyoon Won</p></div>
-      </div>
+        </div>
+
+      </article>
 
       <!-- Back to newsroom -->
-      <div class="mt-14 pt-8 border-t border-neutral-200">
+      <div class="news-detail__back">
         <a href="../../ir.html#panel-newsroom" class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors">
-          <span class="material-symbols-outlined text-lg">arrow_back</span>
+          <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_back</span>
           <span class="lang-ko-only">뉴스룸으로 돌아가기</span><span class="lang-en-only">Back to Newsroom</span>
         </a>
       </div>
-    </article>
+    </div>
   </main>
 
   <!-- Footer -->

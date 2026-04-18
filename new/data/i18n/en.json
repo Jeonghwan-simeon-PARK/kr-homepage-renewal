@@ -645,6 +645,8 @@
   "ir.contact.phone": "Phone: [To be announced]",
   "newsroom.title": "Newsroom",
   "newsroom.loading": "Loading news…",
+  "news.breadcrumb.home": "Home",
+  "news.breadcrumb.back": "Back to Newsroom",
   "newsroom.news1.title": "Reached 40 US Clinic Contracts",
   "newsroom.news1.body": "As of H1 2025, the number of US clinics contracted for Hicare Care Portal services reached 40. Over 3,000 patients are enrolled, and more than 300 Medicare insurance claims are processed monthly. H1 revenue reached $816,668.",
   "newsroom.news2.title": "MoU Signed with AMC Health",

@@ -119,7 +119,7 @@
     </nav>
   </header>
 
-  <main id="main-content" class="pt-16 lg:pt-20">
+  <main id="main-content" class="pt-16 lg:pt-20 news-detail news-detail--milestone">
 
     <!-- IR / Newsroom sub-tabs (matches ir.html) -->
     <section class="bg-white border-b border-neutral-200 sticky top-16 lg:top-20 z-30">
@@ -135,49 +135,55 @@
       </div>
     </section>
 
-    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    <div class="news-detail__container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
 
       <!-- Breadcrumb -->
-      <nav class="mb-8 text-sm text-neutral-500" aria-label="breadcrumb">
+      <nav class="news-detail__crumbs mb-8 text-sm text-neutral-500" aria-label="breadcrumb">
         <ol class="flex items-center gap-2 flex-wrap">
           <li><a href="../../index.html" class="hover:text-primary-600 transition-colors" data-i18n="news.breadcrumb.home">홈</a></li>
           <li class="text-neutral-300">/</li>
           <li><a href="../../ir.html#panel-newsroom" class="hover:text-primary-600 transition-colors" data-i18n="newsroom.title">뉴스룸</a></li>
           <li class="text-neutral-300">/</li>
-          <li class="text-neutral-700 font-medium truncate">NIPA 미주 ICT 비즈니스 파트너십 참가</li>
+          <li class="text-neutral-700 font-medium truncate">
+            <span class="lang-ko-only">NIPA 미주 ICT 비즈니스 파트너십 참가</span><span class="lang-en-only">Joined NIPA Americas ICT Business Partnership</span>
+          </li>
         </ol>
       </nav>
 
-      <!-- Header -->
-      <header class="mb-10 pb-8 border-b border-neutral-200">
-        <div class="flex items-center gap-3 mb-5">
-          <span class="inline-flex items-center px-2.5 py-1 bg-primary-50 text-primary-700 text-xs font-semibold rounded">
-            <span class="lang-ko-only">글로벌</span><span class="lang-en-only">Global</span>
-          </span>
-          <time class="text-sm text-neutral-500" datetime="2025-02-15">2025년 2월 15일</time>
-        </div>
-        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 leading-tight">
-          <span class="lang-ko-only">NIPA 미주 ICT 비즈니스 파트너십 참가</span><span class="lang-en-only">Joined NIPA Americas ICT Business Partnership</span>
-        </h1>
-        <p class="mt-4 text-base md:text-lg text-neutral-600 leading-relaxed">
-          <span class="lang-ko-only">정보통신산업진흥원(NIPA) 주관 미주 ICT 비즈니스 파트너십 프로그램에 참가하여, 미국 현지 네트워크를 확대하고 있습니다.</span><span class="lang-en-only">Joined the Americas ICT Business Partnership program hosted by the National IT Industry Promotion Agency (NIPA), expanding our US network.</span>
-        </p>
-      </header>
+      <article class="news-article">
 
-      <!-- Body -->
-      <div class="news-body">
-        <div class="lang-ko-only"><p>정보통신산업진흥원(NIPA) 주관 미주 ICT 비즈니스 파트너십 프로그램에 참가하여, 미국 현지 네트워크를 확대하고 있습니다.</p></div>
-        <div class="lang-en-only"><p>Joined the Americas ICT Business Partnership program hosted by the National IT Industry Promotion Agency (NIPA), expanding our US network.</p></div>
-      </div>
+        <!-- Header -->
+        <header class="news-article__header">
+          <div class="news-article__meta">
+            <span class="news-article__tag">
+              <span class="lang-ko-only">글로벌</span><span class="lang-en-only">Global</span>
+            </span>
+            <time class="news-article__date" datetime="2025-02-15">2025년 2월 15일</time>
+          </div>
+          <h1 class="news-article__title">
+            <span class="lang-ko-only">NIPA 미주 ICT 비즈니스 파트너십 참가</span><span class="lang-en-only">Joined NIPA Americas ICT Business Partnership</span>
+          </h1>
+          <p class="news-article__lede">
+            <span class="lang-ko-only">정보통신산업진흥원(NIPA) 주관 미주 ICT 비즈니스 파트너십 프로그램에 참가하여, 미국 현지 네트워크를 확대하고 있습니다.</span><span class="lang-en-only">Joined the Americas ICT Business Partnership program hosted by the National IT Industry Promotion Agency (NIPA), expanding our US network.</span>
+          </p>
+        </header>
+
+        <!-- Body -->
+        <div class="news-body news-body--milestone">
+          <div class="lang-ko-only"><p>정보통신산업진흥원(NIPA) 주관 미주 ICT 비즈니스 파트너십 프로그램에 참가하여, 미국 현지 네트워크를 확대하고 있습니다.</p></div>
+          <div class="lang-en-only"><p>Joined the Americas ICT Business Partnership program hosted by the National IT Industry Promotion Agency (NIPA), expanding our US network.</p></div>
+        </div>
+
+      </article>
 
       <!-- Back to newsroom -->
-      <div class="mt-14 pt-8 border-t border-neutral-200">
+      <div class="news-detail__back">
         <a href="../../ir.html#panel-newsroom" class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors">
-          <span class="material-symbols-outlined text-lg">arrow_back</span>
+          <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_back</span>
           <span class="lang-ko-only">뉴스룸으로 돌아가기</span><span class="lang-en-only">Back to Newsroom</span>
         </a>
       </div>
-    </article>
+    </div>
   </main>
 
   <!-- Footer -->

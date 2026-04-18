@@ -197,6 +197,7 @@ async function main() {
 
     const vars = {
       SLUG: slug,
+      CATEGORY: item.category || 'news',
       DATE: item.date,
       DATE_FORMATTED: formatDate(item.date, 'ko'),
       TAG_KO: escapeHtml(item.tag_ko || ''),

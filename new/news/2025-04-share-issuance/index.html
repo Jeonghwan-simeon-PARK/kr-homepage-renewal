@@ -119,7 +119,7 @@
     </nav>
   </header>
 
-  <main id="main-content" class="pt-16 lg:pt-20">
+  <main id="main-content" class="pt-16 lg:pt-20 news-detail news-detail--disclosure">
 
     <!-- IR / Newsroom sub-tabs (matches ir.html) -->
     <section class="bg-white border-b border-neutral-200 sticky top-16 lg:top-20 z-30">
@@ -135,57 +135,63 @@
       </div>
     </section>
 
-    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    <div class="news-detail__container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
 
       <!-- Breadcrumb -->
-      <nav class="mb-8 text-sm text-neutral-500" aria-label="breadcrumb">
+      <nav class="news-detail__crumbs mb-8 text-sm text-neutral-500" aria-label="breadcrumb">
         <ol class="flex items-center gap-2 flex-wrap">
           <li><a href="../../index.html" class="hover:text-primary-600 transition-colors" data-i18n="news.breadcrumb.home">홈</a></li>
           <li class="text-neutral-300">/</li>
           <li><a href="../../ir.html#panel-newsroom" class="hover:text-primary-600 transition-colors" data-i18n="newsroom.title">뉴스룸</a></li>
           <li class="text-neutral-300">/</li>
-          <li class="text-neutral-700 font-medium truncate">신주발행 공고 (2025-04)</li>
+          <li class="text-neutral-700 font-medium truncate">
+            <span class="lang-ko-only">신주발행 공고 (2025-04)</span><span class="lang-en-only">Notice of New Share Issuance (Apr 2025)</span>
+          </li>
         </ol>
       </nav>
 
-      <!-- Header -->
-      <header class="mb-10 pb-8 border-b border-neutral-200">
-        <div class="flex items-center gap-3 mb-5">
-          <span class="inline-flex items-center px-2.5 py-1 bg-primary-50 text-primary-700 text-xs font-semibold rounded">
-            <span class="lang-ko-only">신주발행</span><span class="lang-en-only">Share Issuance</span>
-          </span>
-          <time class="text-sm text-neutral-500" datetime="2025-04-14">2025년 4월 14일</time>
-        </div>
-        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 leading-tight">
-          <span class="lang-ko-only">신주발행 공고 (2025-04)</span><span class="lang-en-only">Notice of New Share Issuance (Apr 2025)</span>
-        </h1>
-        <p class="mt-4 text-base md:text-lg text-neutral-600 leading-relaxed">
-          <span class="lang-ko-only">하이케어넷 주식회사의 2025년 4월 신주발행 공고입니다.</span><span class="lang-en-only">HicareNet Inc.&#39;s new share issuance notice dated April 2025.</span>
-        </p>
-      </header>
+      <article class="news-article">
 
-      <!-- Body -->
-      <div class="news-body">
-        <div class="lang-ko-only"><p>하이케어넷 주식회사는 정관 및 이사회 결의에 따라 신주 발행을 아래와 같이 공고합니다.</p>
+        <!-- Header -->
+        <header class="news-article__header">
+          <div class="news-article__meta">
+            <span class="news-article__tag">
+              <span class="lang-ko-only">신주발행</span><span class="lang-en-only">Share Issuance</span>
+            </span>
+            <time class="news-article__date" datetime="2025-04-14">2025년 4월 14일</time>
+          </div>
+          <h1 class="news-article__title">
+            <span class="lang-ko-only">신주발행 공고 (2025-04)</span><span class="lang-en-only">Notice of New Share Issuance (Apr 2025)</span>
+          </h1>
+          <p class="news-article__lede">
+            <span class="lang-ko-only">하이케어넷 주식회사의 2025년 4월 신주발행 공고입니다.</span><span class="lang-en-only">HicareNet Inc.&#39;s new share issuance notice dated April 2025.</span>
+          </p>
+        </header>
+
+        <!-- Body -->
+        <div class="news-body news-body--disclosure">
+          <div class="lang-ko-only"><p>하이케어넷 주식회사는 정관 및 이사회 결의에 따라 신주 발행을 아래와 같이 공고합니다.</p>
 <p>1. 신주의 종류: 기명식 보통주식<br>2. 신주의 인수방법: 정관에 따른 제3자배정<br>3. 발행 주식수, 발행가액, 납입기일 등 상세 사항은 내부 IR 자료에 보관되어 있으며, 확인이 필요한 경우 아래 연락처로 문의하여 주시기 바랍니다.</p>
 <p>[PLACEHOLDER: 2025년 4월 신주발행 공고 상세 수치는 내부 확인 후 본 페이지에 반영 예정입니다.]</p>
 <p>2025년 4월 14일</p>
 <p>하이케어넷 주식회사<br>서울특별시 송파구 위례성대로22길 28, 5층(오금동)<br>대표이사 김홍진</p></div>
-        <div class="lang-en-only"><p>HicareNet Inc. hereby announces a new share issuance pursuant to its Articles of Incorporation and Board resolution.</p>
+          <div class="lang-en-only"><p>HicareNet Inc. hereby announces a new share issuance pursuant to its Articles of Incorporation and Board resolution.</p>
 <p>1. Type of new shares: Registered common shares<br>2. Subscription method: Third-party allotment per the Articles of Incorporation<br>3. The number of shares, issue price, and payment due date are retained in internal IR records. For verification, please contact us using the information below.</p>
 <p>[PLACEHOLDER: Full figures for the April 2025 share issuance will be reflected on this page once confirmed internally.]</p>
 <p>April 14, 2025</p>
 <p>HicareNet Inc.<br>5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul (Ogeum-dong)<br>CEO Hongjin Kim</p></div>
-      </div>
+        </div>
+
+      </article>
 
       <!-- Back to newsroom -->
-      <div class="mt-14 pt-8 border-t border-neutral-200">
+      <div class="news-detail__back">
         <a href="../../ir.html#panel-newsroom" class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors">
-          <span class="material-symbols-outlined text-lg">arrow_back</span>
+          <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_back</span>
           <span class="lang-ko-only">뉴스룸으로 돌아가기</span><span class="lang-en-only">Back to Newsroom</span>
         </a>
       </div>
-    </article>
+    </div>
   </main>
 
   <!-- Footer -->
