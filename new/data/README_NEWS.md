@@ -1,40 +1,68 @@
 # 뉴스 & 팝업 운영 가이드
 
-뉴스룸 표시 항목과 사이트 팝업은 모두 **`new/data/news.json`** 파일 하나로 관리합니다.
+뉴스 상세 페이지와 사이트 팝업은 모두 **`new/data/news/{slug}.json`** 개별 파일로 관리합니다.
 
-## 파일 위치
+## 파일 구조
 
-- 데이터: `new/data/news.json`
-- 렌더 로직: `new/js/news.js`
-- 팝업 스타일: `new/css/popup.css`
+```
+new/
+├── data/
+│   ├── news.json              ← 목록 인덱스 (빌드 스크립트가 자동 생성, 직접 편집 금지)
+│   └── news/
+│       ├── 2026-03-agm-6.json ← ✏️ 여기를 편집 (상세 원본 데이터)
+│       ├── 2025-12-share-issuance.json
+│       └── ...
+├── news/                      ← 빌드 산출물 (스크립트가 생성, git에 포함)
+│   ├── 2026-03-agm-6/
+│   │   └── index.html         ← /new/news/2026-03-agm-6/ URL로 접근
+│   └── ...
+├── scripts/
+│   └── build-news.mjs         ← JSON → HTML 변환 (Node.js)
+└── templates/
+    └── news-detail.html       ← 상세 페이지 공통 템플릿
+```
 
-## 기본 구조
+## 운영 흐름 (가장 중요)
+
+```bash
+# 1. 새 뉴스 파일 추가
+#    new/data/news/2026-06-new-partner.json  ← 아래 스키마대로 작성
+
+# 2. 빌드 (인덱스 + 상세 페이지 자동 생성)
+npm run build:news
+
+# 3. 커밋 & 푸시
+git add new/data/news/ new/news/ new/data/news.json
+git commit -m "news: 신규 파트너십 공지 추가"
+git push
+```
+
+개발 단계(GitHub Pages) 및 배포 단계(AWS S3+CloudFront) 모두 이 구조로 작동.
+
+## JSON 스키마
 
 ```jsonc
 {
-  "items": [
-    {
-      "id": "2026-03-agm-6",        // 고유 식별자 (URL slug, dismiss 키로도 쓰임)
-      "date": "2026-03-10",         // 게시일 (YYYY-MM-DD)
-      "category": "disclosure",     // disclosure | milestone
-      "tag_ko": "주주총회",           // 뱃지 텍스트 (KO)
-      "tag_en": "Shareholders",     // 뱃지 텍스트 (EN)
-      "title_ko": "제6기 정기주주총회 소집공고",
-      "title_en": "Notice of the 6th Annual General Meeting",
-      "summary_ko": "뉴스룸 목록에 보일 짧은 요약",
-      "summary_en": "Short summary shown in the newsroom list",
-      "body_ko": "팝업 본문(상세) — 여러 줄 가능",
-      "body_en": "Popup body (detailed) — multi-line allowed",
-      "source_url": "https://...",  // (선택) 원문 링크. 있으면 '원문 보기' 버튼 노출
-      "popup": {
-        "enabled": true,            // true면 팝업으로도 노출
-        "start_date": "2026-02-20", // 팝업 시작일 (포함)
-        "end_date":   "2026-03-10", // 팝업 종료일 (포함)
-        "dismissible": true,        // false면 '다시 보지 않기' 버튼 숨김
-        "priority": 10              // 같은 기간에 여러 팝업이 enable이면 높은 값 1건만
-      }
-    }
-  ]
+  "id": "2026-03-agm-6",              // 고유 식별자 (파일명과 동일하게 권장)
+  "slug": "2026-03-agm-6",             // URL slug. 영문/숫자/하이픈. 배포 후 변경 금지!
+  "date": "2026-03-10",                // 게시일 (YYYY-MM-DD)
+  "category": "disclosure",            // "disclosure" (공시) | "milestone" (사업성과)
+  "tag_ko": "주주총회",                 // 뱃지 텍스트 (KO)
+  "tag_en": "Shareholders",            // 뱃지 텍스트 (EN)
+  "title_ko": "제6기 정기주주총회 소집공고",
+  "title_en": "Notice of the 6th Annual General Meeting",
+  "summary_ko": "목록·팝업 헤드라인에 보일 짧은 요약",
+  "summary_en": "Short summary shown in list/popup header",
+  "body_ko": "상세 페이지 본문.\n\n빈 줄 2개로 단락이 구분됩니다.\n줄바꿈 한 번은 <br>로 유지됩니다.",
+  "body_en": "Detail page body (multi-paragraph allowed)",
+  "source_url": "https://...",         // (선택) 외부 원문 링크. 상세 페이지 하단에 노출
+  "popup": {
+    "enabled": true,                   // true면 사이트 전역에 팝업
+    "start_date": "2026-02-20",        // 팝업 시작 (포함)
+    "end_date":   "2026-03-10",        // 팝업 종료 (포함)
+    "dismissible": true,               // false면 '다시 보지 않기' 숨김
+    "priority": 10                     // 같은 기간 여러 팝업 활성 시 높은 것 1개만 노출
+  }
 }
 ```
 
@@ -42,12 +70,12 @@
 
 ### 1. 새 뉴스 추가 (팝업 없이)
 
-`items` 배열 맨 앞에 항목 하나를 추가하고 `popup.enabled: false`로 둡니다.
-날짜 기준 자동 정렬되므로 위치는 중요하지 않습니다.
+`new/data/news/2026-06-example.json` 생성 후 `popup.enabled: false` 또는 `popup` 블록 생략.
+이후 `npm run build:news`.
 
-### 2. 새 공지를 팝업으로 띄우기
+### 2. 공지를 팝업으로 띄우기 (주총 등)
 
-새 항목을 추가하면서 `popup` 블록을 채웁니다:
+`popup` 블록에 날짜 범위 지정:
 
 ```jsonc
 "popup": {
@@ -59,44 +87,53 @@
 }
 ```
 
-- `end_date`가 지나면 자동으로 더 이상 뜨지 않습니다 (JSON 수정 불필요).
-- 방문자가 '다시 보지 않기'를 누르면 `localStorage`에 기록되어 해당 브라우저에서 재노출 안 됨.
-- 여러 팝업이 동시에 활성화되면 `priority` 높은 것 **1개만** 노출.
+- `category: "disclosure"`인 항목은 팝업 열릴 때 **본문(body)까지 처음부터 펼쳐진 상태**로 노출됩니다.
+- `milestone`은 summary만 짧게 노출, "자세히 보기" 버튼 → 상세 페이지로 이동.
+- `end_date`가 지나면 자동으로 더 이상 안 뜹니다.
+- 방문자가 '다시 보지 않기' 누르면 `localStorage`에 기록되어 해당 브라우저에서 재노출 안 됨.
 
 ### 3. 팝업 즉시 내리기
 
-방법 A — `popup.enabled: false` 로 바꾸기 (뉴스룸에는 계속 남음)
-방법 B — `popup.end_date`를 어제 날짜로 변경
+- 방법 A — `popup.enabled: false` 변경 후 빌드
+- 방법 B — `popup.end_date`를 어제 날짜로 변경 후 빌드
 
 ### 4. 뉴스 삭제
 
-해당 객체를 `items` 배열에서 제거하세요.
-
-### 5. 배포
-
-```bash
-git add new/data/news.json
-git commit -m "news: 제6기 주주총회 공고 추가"
-git push
-```
-
-GitHub Pages가 1~2분 내에 반영합니다.
+1. `new/data/news/{slug}.json` 파일 삭제
+2. `new/news/{slug}/` 디렉토리 삭제 (또는 빌드 후 수동 정리)
+3. `npm run build:news`
+4. 커밋 & 푸시
 
 ## 필드 규칙
 
-| 필드 | 필수 | 설명 |
+| 필드 | 필수 | 비고 |
 |---|---|---|
-| `id` | ✅ | 고유 ID. 한 번 배포 후에는 바꾸지 마세요 (dismiss 기록이 ID 기준). |
-| `date` | ✅ | `YYYY-MM-DD` 형식. 뉴스룸 연도 그룹화에 사용. |
-| `category` | ✅ | `disclosure`(공시) 또는 `milestone`(사업성과) |
-| `tag_ko` / `tag_en` | ✅ | 뱃지에 표시될 짧은 분류명 |
-| `title_ko` / `title_en` | ✅ | 뉴스룸 목록과 팝업 제목 |
-| `summary_ko` / `summary_en` | ✅ | 뉴스룸 목록에 보일 1~3문장 |
-| `body_ko` / `body_en` | 권장 | 팝업 본문. 없으면 `summary`가 대신 표시됨. `\n`으로 줄바꿈 가능. |
-| `source_url` | 선택 | 원문(PDF, 구 홈페이지 공고 등) 외부 링크 |
-| `popup` | 선택 | 팝업 표시 여부/기간. 생략 시 팝업 안 뜸. |
+| `id` / `slug` | ✅ | 영문/숫자/하이픈. 한 번 배포 후 **절대 바꾸지 말 것** (외부 링크·검색 인덱스·dismiss 기록이 모두 이 ID 기반) |
+| `date` | ✅ | `YYYY-MM-DD` |
+| `category` | ✅ | `disclosure` 또는 `milestone` — 팝업 기본 동작이 달라짐 |
+| `title_ko` / `title_en` | ✅ | |
+| `summary_ko` / `summary_en` | ✅ | 목록·팝업 헤드라인용 (1~3문장 권장) |
+| `body_ko` / `body_en` | 권장 | 상세 페이지 본문. 없으면 summary가 대체 표시. `\n\n`로 단락 구분. |
+| `source_url` | 선택 | 외부 원문 링크 (PDF, 구 홈페이지 공고 등) |
+| `popup` | 선택 | 생략 시 팝업 안 뜸 |
+
+## URL 규칙
+
+- 상세 페이지: `/new/news/{slug}/` (슬래시로 끝남)
+- GitHub Pages: `https://{user}.github.io/{repo}/new/news/2026-03-agm-6/`
+- AWS 배포: `https://www.hicare.co.kr/news/2026-03-agm-6/`
+  - CloudFront Function으로 `/news/foo`도 `/news/foo/index.html`로 리라이트 처리 예정
 
 ## 테스트 팁
 
-- 브라우저 DevTools → Application → Local Storage → 사이트 도메인 → `hicare-popup-dismissed:{id}` 키 삭제하면 팝업이 다시 보입니다.
-- 특정 페이지에서 팝업만 막고 싶다면 해당 HTML `<body>`에 `data-no-popup` 속성을 추가하세요 (권장하지 않음).
+- 팝업을 다시 보려면: 브라우저 DevTools → Application → Local Storage → `hicare-popup-dismissed:{id}` 키 삭제
+- 특정 페이지에서 팝업 차단: 해당 HTML의 `<body>`에 `data-no-popup` 속성 추가 (기본적으로 상세 페이지에는 이미 적용됨)
+- 로컬에서 확인: `npx serve new` 후 `http://localhost:3000/news/2026-03-agm-6/` 접속
+
+## 빌드 스크립트 동작
+
+`node new/scripts/build-news.mjs`가 하는 일:
+1. `new/data/news/*.json` 스캔
+2. 각 파일 → `new/news/{slug}/index.html` 생성 (`new/templates/news-detail.html` 템플릿 사용)
+3. 메타데이터(title, summary, tag, date, popup)만 뽑아 `new/data/news.json` 인덱스 재생성
+4. 인덱스는 프런트엔드의 뉴스룸 목록·팝업 선택 로직이 읽음

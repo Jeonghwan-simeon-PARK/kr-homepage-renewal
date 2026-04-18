@@ -1,0 +1,17 @@
+{
+  "id": "2024-overseas-revenue",
+  "date": "2024-12-31",
+  "category": "milestone",
+  "tag_ko": "매출실적",
+  "tag_en": "Revenue",
+  "title_ko": "2024년 해외 매출 $998,404 달성",
+  "title_en": "2024 Overseas Revenue Reaches $998,404",
+  "summary_ko": "Care Portal 서비스의 미국 내 확산에 힘입어, 2024년 해외 매출 $998,404를 기록했습니다. 37개 클리닉, 2,000명 이상 환자가 서비스를 이용했습니다.",
+  "summary_en": "Driven by Care Portal adoption in the US, 2024 overseas revenue reached $998,404 across 37 clinics and 2,000+ patients.",
+  "body_ko": "Care Portal 서비스의 미국 내 확산에 힘입어, 2024년 해외 매출 $998,404를 기록했습니다. 37개 클리닉, 2,000명 이상 환자가 서비스를 이용했습니다.",
+  "body_en": "Driven by Care Portal adoption in the US, 2024 overseas revenue reached $998,404 across 37 clinics and 2,000+ patients.",
+  "popup": {
+    "enabled": false
+  },
+  "slug": "2024-overseas-revenue"
+}

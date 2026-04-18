@@ -1,0 +1,17 @@
+{
+  "id": "2025-h1-40-clinics",
+  "date": "2025-06-30",
+  "category": "milestone",
+  "tag_ko": "사업성과",
+  "tag_en": "Milestone",
+  "title_ko": "미국 40개 클리닉 계약 달성",
+  "title_en": "40 US Clinics Contracted",
+  "summary_ko": "2025년 상반기 기준, 미국 내 Care Portal 서비스 계약 클리닉이 40개에 도달했습니다. 등록 환자 3,000명 이상, 월 300건 이상의 보험 수가 청구를 처리하고 있습니다. 상반기 매출 $816,668을 기록했습니다.",
+  "summary_en": "As of H1 2025, Care Portal contracts in the US reached 40 clinics. 3,000+ enrolled patients, 300+ monthly reimbursement claims, and H1 revenue of $816,668.",
+  "body_ko": "2025년 상반기 기준, 미국 내 Care Portal 서비스 계약 클리닉이 40개에 도달했습니다. 등록 환자 3,000명 이상, 월 300건 이상의 보험 수가 청구를 처리하고 있습니다. 상반기 매출 $816,668을 기록했습니다.",
+  "body_en": "As of H1 2025, Care Portal contracts in the US reached 40 clinics with 3,000+ enrolled patients and 300+ monthly reimbursement claims, generating $816,668 in H1 revenue.",
+  "popup": {
+    "enabled": false
+  },
+  "slug": "2025-h1-40-clinics"
+}

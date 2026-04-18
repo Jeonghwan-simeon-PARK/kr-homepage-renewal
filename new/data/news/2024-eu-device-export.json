@@ -1,0 +1,17 @@
+{
+  "id": "2024-eu-device-export",
+  "date": "2024-10-01",
+  "category": "milestone",
+  "tag_ko": "글로벌",
+  "tag_en": "Global",
+  "title_ko": "이탈리아/프랑스 의료기기 수출",
+  "title_en": "Medical Device Exports to Italy and France",
+  "summary_ko": "이탈리아 CEGLIE MESSAPICA 병원에 게이트웨이 1,000대, 프랑스 약국 체인에 3,000대를 수출했습니다. 누적 기기 수출 14,000대 이상을 달성했습니다.",
+  "summary_en": "Exported 1,000 gateway devices to CEGLIE MESSAPICA hospital in Italy and 3,000 units to a French pharmacy chain, surpassing 14,000 total devices exported.",
+  "body_ko": "이탈리아 CEGLIE MESSAPICA 병원에 게이트웨이 1,000대, 프랑스 약국 체인에 3,000대를 수출했습니다. 누적 기기 수출 14,000대 이상을 달성했습니다.",
+  "body_en": "Exported 1,000 gateway devices to CEGLIE MESSAPICA hospital in Italy and 3,000 units to a French pharmacy chain, surpassing 14,000 total devices exported cumulatively.",
+  "popup": {
+    "enabled": false
+  },
+  "slug": "2024-eu-device-export"
+}

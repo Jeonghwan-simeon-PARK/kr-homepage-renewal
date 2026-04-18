@@ -1,4 +1,11 @@
 {
+  "name": "hicarenet-homepage-renewal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:news": "node new/scripts/build-news.mjs",
+    "build": "npm run build:news"
+  },
   "dependencies": {
     "playwright": "^1.59.0"
   }
