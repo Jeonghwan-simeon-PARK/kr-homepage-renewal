@@ -50,8 +50,8 @@
       {"id": "patient-app", "title_key": "kr.business.care_portal.feat5", "description": "고령층 친화 UI, 음성 안내 측정 유도"}
     ],
     "service_flow": {
-      "description": "하이케어넷(Care Portal 제공) -> 클리닉(환자 관리/모니터링) -> 환자 -> CMS(보험 수가 지급)",
-      "note": "기기 연동은 하이케어넷의 역할이 아님"
+      "description": "하이케어(Care Portal 제공) -> 클리닉(환자 관리/모니터링) -> 환자 -> CMS(보험 수가 지급)",
+      "note": "기기 연동은 하이케어의 역할이 아님"
     },
     "revenue_model": {
       "type": "SaaS 월 구독형",

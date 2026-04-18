@@ -53,7 +53,7 @@
       "href": "/kr/careers.html",
       "phase": 1,
       "children": [
-        {"id": "why-hicarenet", "label": "왜 하이케어넷인가", "href": "/kr/careers.html#why-hicarenet"},
+        {"id": "why-hicarenet", "label": "왜 하이케어인가", "href": "/kr/careers.html#why-hicarenet"},
         {"id": "teams", "label": "팀 소개", "href": "/kr/careers.html#teams"},
         {"id": "challenges", "label": "기술적 도전", "href": "/kr/careers.html#challenges"},
         {"id": "positions", "label": "채용 공고", "href": "/kr/careers.html#positions"}

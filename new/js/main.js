@@ -1,5 +1,5 @@
 /**
- * HicareNet NEW — Unified Main JavaScript
+ * Hicare NEW — Unified Main JavaScript
  * Merges ov3 home page logic + v6 sub-page logic
  */
 
@@ -654,7 +654,7 @@ function initMegaMenu() {
       { k: 'gnb.sub.global.partnerships', l: '파트너십', le: 'Partnerships', h: 'global.html#partnerships' }
     ],
     'careers.html': [
-      { k: 'gnb.sub.careers.why_hicarenet', l: '왜 하이케어넷인가', le: 'Why HicareNet', h: 'careers.html#why-hicarenet' },
+      { k: 'gnb.sub.careers.why_hicarenet', l: '왜 하이케어인가', le: 'Why Hicare', h: 'careers.html#why-hicarenet' },
       { k: 'gnb.sub.careers.teams', l: '팀 소개', le: 'Our Teams', h: 'careers.html#teams' },
       { k: 'gnb.sub.careers.challenges', l: '기술적 도전', le: 'Technical Challenges', h: 'careers.html#challenges' },
       { k: 'gnb.sub.careers.positions', l: '채용 공고', le: 'Open Positions', h: 'careers.html#positions' }
