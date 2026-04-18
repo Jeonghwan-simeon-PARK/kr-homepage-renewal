@@ -1,5 +1,6 @@
 {
   "id": "2025-03-agm-5",
+  "slug": "2025-03-agm-5",
   "date": "2025-03-06",
   "category": "disclosure",
   "tag_ko": "주주총회",
@@ -8,11 +9,9 @@
   "title_en": "Notice of the 5th Annual General Meeting",
   "summary_ko": "상법 제363조에 의거한 제5기 정기주주총회 소집 공고.",
   "summary_en": "Notice of the 5th Annual General Meeting of Shareholders pursuant to Article 363 of the Korean Commercial Act.",
-  "body_ko": "상법 제363조에 의거하여 제5기 정기주주총회 소집을 공고합니다.",
-  "body_en": "Pursuant to Article 363 of the Korean Commercial Act, HicareNet announced the convocation of the 5th Annual General Meeting of Shareholders.",
-  "source_url": "https://www.hicare.co.kr/%ec%a0%9c-5%ea%b8%b0-%ec%a0%95%ea%b8%b0%ec%a3%bc%ec%a3%bc%ec%b4%9d%ed%9a%8c-%ec%86%8c%ec%a7%91%ea%b3%a0/",
+  "body_ko": "상법 제363조 및 당사 정관에 의거하여 제5기 정기주주총회를 아래와 같이 소집하오니 참석하여 주시기 바랍니다.\n\n[PLACEHOLDER: 일시·장소·의안 세부 내용은 당시 원본 공고(이미지)를 기반으로 이관 중입니다. 내부 검토 후 확정 내용이 반영됩니다.]\n\n1. 일시: 2025년 3월 중 (원본 공고일 기준 확정 예정)\n2. 장소: 서울특별시 송파구 위례성대로22길 28, 5층 본사 회의실\n3. 회의 목적사항\n   - 제1호 의안: 제5기(2024년 1월 1일 ~ 2024년 12월 31일) 재무제표 승인의 건\n   - 기타 이사회에서 상정한 안건\n\n4. 경영참고사항 등 비치\n상법 제542조의4에 의한 경영참고사항 등은 당사 본점 및 관련 기관에 비치하였습니다.\n\n2025년 3월 6일\n\n하이케어넷 주식회사\n서울특별시 송파구 위례성대로22길 28, 5층(오금동)\n대표이사 김홍진, 원종윤",
+  "body_en": "Pursuant to Article 363 of the Korean Commercial Act and our Articles of Incorporation, notice is hereby given of the 5th Annual General Meeting of Shareholders of HicareNet Inc.\n\n[PLACEHOLDER: Meeting date, location, and detailed agenda are being migrated from the original image-based notice. Finalized details will be reflected after internal review.]\n\n1. Date & Time: March 2025 (to be confirmed per the original notice)\n2. Location: Conference Room, 5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul\n3. Agenda\n   - Item 1: Approval of financial statements for FY2024 (Jan 1 – Dec 31, 2024)\n   - Other matters submitted by the Board\n\n4. Availability of reference materials\nReference materials under Article 542-4 of the Commercial Act are available at the Company's head office and at the relevant institutions.\n\nMarch 6, 2025\n\nHicareNet Inc.\n5F, 28 Wiryeseong-daero 22-gil, Songpa-gu, Seoul (Ogeum-dong)\nCo-CEOs: Hongjin Kim, Jongyoon Won",
   "popup": {
     "enabled": false
-  },
-  "slug": "2025-03-agm-5"
+  }
 }

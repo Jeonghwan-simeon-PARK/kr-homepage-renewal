@@ -117,24 +117,10 @@ async function main() {
       title_en: item.title_en,
       summary_ko: item.summary_ko || '',
       summary_en: item.summary_en || '',
-      source_url: item.source_url || null,
       popup: item.popup || { enabled: false },
     });
 
     const url = `https://www.hicare.co.kr/new/news/${slug}/`;
-
-    const sourceLinkBlock = item.source_url
-      ? `<div class="mt-10 p-5 bg-neutral-50 border border-neutral-200 rounded-xl">
-        <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500 mb-2">
-          <span class="lang-ko-only">원문</span><span class="lang-en-only">Original source</span>
-        </p>
-        <a href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-primary-700 break-all">
-          <span class="material-symbols-outlined text-[18px]" aria-hidden="true">link</span>
-          <span>${escapeHtml(item.source_url)}</span>
-          <span class="material-symbols-outlined text-[16px]" aria-hidden="true">open_in_new</span>
-        </a>
-      </div>`
-      : '';
 
     const vars = {
       SLUG: slug,
@@ -153,7 +139,6 @@ async function main() {
       META_TITLE: `${item.title_ko} | 하이케어`,
       META_DESCRIPTION: (item.summary_ko || item.title_ko || '').slice(0, 160),
       JSONLD_ARTICLE: buildJsonLd(item, url),
-      SOURCE_LINK_BLOCK: sourceLinkBlock,
     };
 
     const html = render(template, vars);
