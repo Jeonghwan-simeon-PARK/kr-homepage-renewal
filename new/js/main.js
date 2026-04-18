@@ -413,9 +413,25 @@ function detectLanguage() {
   return 'ko';
 }
 
+// Resolve a base URL from the <script> tag's own src so that sub-paths
+// like "data/i18n/ko.json" work from any directory depth (e.g. flat
+// top-level pages AND /news/{slug}/ detail pages).
+function resolveSiteBase() {
+  try {
+    const scripts = document.getElementsByTagName('script');
+    for (let i = scripts.length - 1; i >= 0; i--) {
+      const src = scripts[i].src || '';
+      const m = src.match(/^(.*\/)js\/main\.js(\?.*)?$/);
+      if (m) return m[1];
+    }
+  } catch (e) {}
+  return '';
+}
+const SITE_BASE = resolveSiteBase();
+
 async function loadTranslations(lang) {
   try {
-    const res = await fetch('data/i18n/' + lang + '.json');
+    const res = await fetch(SITE_BASE + 'data/i18n/' + lang + '.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
     translations = await res.json();
   } catch (e) {
@@ -525,6 +541,11 @@ window.setLanguage = async function (lang) {
     }
     document.documentElement.lang = lang;
   }
+
+  // Always reflect the active language on the <html> tag so CSS
+  // selectors like :lang(en) and KO/EN-conditional body blocks work
+  // on every page, not just the home.
+  document.documentElement.lang = lang;
 
   // Sub-pages: apply i18n translations
   if (document.querySelector('[data-i18n]')) {

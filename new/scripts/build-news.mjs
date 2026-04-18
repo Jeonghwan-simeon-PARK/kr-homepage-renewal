@@ -54,14 +54,20 @@ function paragraphify(text) {
   let para = [];
   let inSig = false;
 
+  // Lightweight inline-markdown: **bold**. Apply AFTER HTML-escape so the
+  // real <strong> tags survive escaping and nothing else executes.
+  const applyInlineMarks = (s) =>
+    s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+
   const flushPara = () => {
     if (!para.length) return;
     // Preserve leading whitespace per line (indentation) by converting
-    // runs of leading spaces to &nbsp; after HTML escaping.
+    // runs of leading spaces to &nbsp; after HTML escaping, then apply
+    // inline **bold** marks.
     const lines2 = para.map((ln) => {
       const m = ln.match(/^(\s*)(.*)$/);
       const indent = (m[1] || '').replace(/ /g, '&nbsp;').replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;');
-      return indent + escapeHtml(m[2]);
+      return indent + applyInlineMarks(escapeHtml(m[2]));
     });
     para = [];
     out.push(`<p>${lines2.join('<br>')}</p>`);

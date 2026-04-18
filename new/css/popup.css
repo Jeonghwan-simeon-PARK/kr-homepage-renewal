@@ -316,12 +316,22 @@
   line-height: 1.95;
 }
 .news-body--disclosure p {
-  margin-bottom: 1.35em;
-}
-/* Soft "notebook" stripe on numbered clauses (1., 2., …) by visual emphasis */
-.news-body--disclosure p {
+  margin-bottom: 1.1em;
   padding-left: 2px;
 }
+/* Strong clause labels: "1. 일 시", "3. 회의목적사항", etc. */
+.news-body--disclosure strong {
+  font-weight: 800;
+  color: #0F172A;
+  letter-spacing: -0.005em;
+}
+/* Give the top-level numbered clauses (the <p> whose first child is
+   <strong>) a bit more visual separation from the body below. */
+.news-body--disclosure p:has(> strong:first-child) {
+  margin-top: 1.4em;
+}
+/* Safari < 15 / older browsers that don't support :has fall back to
+   the uniform spacing above — still readable, just less emphatic. */
 
 .news-divider {
   display: flex;
