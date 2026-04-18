@@ -440,7 +440,8 @@ body.lang-ko .footer-en { display: none !important; }
 .footer__menu-list { display: flex; flex-direction: column; gap: 10px; list-style: none; padding: 0; margin: 0; }
 .footer__menu-list li a { font-size: 0.85rem; color: rgba(255,255,255,0.45); transition: color 0.3s; }
 .footer__menu-list li a:hover { color: rgba(255,255,255,0.9); }
-.footer__disclaimer { padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.75rem; color: rgba(255,255,255,0.3); line-height: 1.7; }
+.footer__disclaimer { padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
+.footer__disclaimer .footer__inner { max-width: 960px; }
 .footer__bottom { padding: 24px 0; }
 .footer__bottom .footer__inner { display: flex; justify-content: space-between; align-items: center; }
 .footer__copyright { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
